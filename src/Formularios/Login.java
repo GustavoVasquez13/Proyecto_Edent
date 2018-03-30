@@ -1,4 +1,4 @@
-package Formularios;
+package formularios;
 
 import Clases.vlogin;
 import Clases.vusuario;
