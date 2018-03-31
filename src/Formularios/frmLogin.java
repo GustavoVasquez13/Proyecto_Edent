@@ -1,64 +1,31 @@
-package formularios;
-
-import Clases.vlogin;
-import Clases.vusuario;
-
-
-import java.awt.Color;
-import java.awt.MouseInfo;
-import java.awt.Point;
-
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.ImageIcon;
-
-import javax.swing.JOptionPane;
-import javax.swing.UIManager;
-import javax.swing.UnsupportedLookAndFeelException;
-import javax.swing.table.DefaultTableModel;
-import org.apache.commons.codec.digest.DigestUtils;
-
 /*
  * To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package Formularios;
+
+import Clases.vlogin;
+import Clases.vusuario;
+import java.awt.Color;
+import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
+import org.apache.commons.codec.digest.DigestUtils;
+
 /**
  *
- * @author Rojeru San
+ * @author marvi
  */
-public class Login extends javax.swing.JFrame {
-
-   
-   
+public class frmLogin extends javax.swing.JFrame {
 
     /**
-     * Creates new form Login
+     * Creates new form frmLogin
      */
-    public Login() {
+    public frmLogin() {
         initComponents();
-        
-        
-       this.setLocationRelativeTo(null);
-      this.msj.setVisible(false);
-       this.setIconImage(new ImageIcon(getClass().getResource("/imagenes/about.png")).getImage());
-       ContarUsuarios();
+        ContarUsuarios();
     }
 
-    
- public void ContarUsuarios() {
-
-        vlogin funcion = new vlogin();
-        int cantidadUsuarios = funcion.ContarUsuarios();
-        if (cantidadUsuarios == 0) {
-            JOptionPane.showMessageDialog(rootPane, "DEBE CREAR EL ADMINISTRADOR DEL SISTEMA");
-            FrmInstalacion form = new FrmInstalacion();
-            form.setResizable(false);
-            form.toFront();
-            form.setVisible(true);
-            //form.setLocationRelativeTo();
-        }//cierre
-    }
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -85,7 +52,6 @@ public class Login extends javax.swing.JFrame {
         msj1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setUndecorated(true);
 
         panel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondoL.png"))); // NOI18N
         panel1.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
@@ -163,7 +129,7 @@ public class Login extends javax.swing.JFrame {
         msj.setForeground(new java.awt.Color(255, 255, 255));
         msj.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         msj.setText("¡Datos incorrectos, intente nuevamente!");
-        jPanel1.add(msj, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 400, 20));
+        jPanel1.add(msj, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 220, 360, 20));
 
         tablalistado.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -234,7 +200,7 @@ public class Login extends javax.swing.JFrame {
                         .addGap(0, 0, 0)
                         .addComponent(aqui, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 432, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         panel1Layout.setVerticalGroup(
             panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -247,7 +213,7 @@ public class Login extends javax.swing.JFrame {
                 .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(msj1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(aqui, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(63, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -263,17 +229,29 @@ public class Login extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+public void ContarUsuarios() {
 
-    private void minActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minActionPerformed
-       
-    }//GEN-LAST:event_minActionPerformed
+        vlogin funcion = new vlogin();
+        int cantidadUsuarios = funcion.ContarUsuarios();
+        if (cantidadUsuarios == 0) {
+            JOptionPane.showMessageDialog(rootPane, "DEBE CREAR EL ADMINISTRADOR DEL SISTEMA");
+            formularios.FrmInstalacion form = new formularios.FrmInstalacion();
+            form.setResizable(false);
+            form.toFront();
+            form.setVisible(true);
+            //form.setLocationRelativeTo();
+        }//cierre
+    }
+    private void txtcontraseñaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcontraseñaKeyTyped
+
+    }//GEN-LAST:event_txtcontraseñaKeyTyped
 
     private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
         System.exit(0);
     }//GEN-LAST:event_salirActionPerformed
 
     private void entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarActionPerformed
-      if (txtusuario.getText().length() == 0) {
+        if (txtusuario.getText().length() == 0) {
             JOptionPane.showMessageDialog(null, "Debes ingresar un UserName");
             txtusuario.requestFocus();
             return;
@@ -293,45 +271,47 @@ public class Login extends javax.swing.JFrame {
             dts.setContrasenia(String.valueOf(DigestUtils.md5Hex(txtcontraseña.getText())));
             modelo = func.login(dts.getNom_usuario(), dts.getContrasenia());
 
-           tablalistado.setModel(modelo);
+            tablalistado.setModel(modelo);
 
             if (func.totalRegistros > 0) {
+                frmPrincipal fr=new frmPrincipal();
+                fr.toFront();
+                fr.setVisible(true);
                 this.dispose();
-               
-                
-              }
-             
-             else{
-                 JOptionPane.showMessageDialog(rootPane, "Acceso Denegado","Acceso al Sistema",JOptionPane.ERROR_MESSAGE);
-             }
+
+            }
+
+            else{
+                JOptionPane.showMessageDialog(rootPane, "Acceso Denegado","Acceso al Sistema",JOptionPane.ERROR_MESSAGE);
+            }
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "ERROR " + e);
         }
     }//GEN-LAST:event_entrarActionPerformed
+
+    private void minActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_minActionPerformed
+
+    }//GEN-LAST:event_minActionPerformed
 
     private void aquiMouseMoved(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquiMouseMoved
         this.aqui.setForeground(new Color(224, 255, 255));
     }//GEN-LAST:event_aquiMouseMoved
 
     private void aquiMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquiMouseClicked
-        
+
     }//GEN-LAST:event_aquiMouseClicked
 
     private void aquiMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_aquiMouseExited
         this.aqui.setForeground(new Color(51, 153, 255));
     }//GEN-LAST:event_aquiMouseExited
 
-    private void txtcontraseñaKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcontraseñaKeyTyped
-        
-    }//GEN-LAST:event_txtcontraseñaKeyTyped
+    private void panel1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel1MouseDragged
+
+    }//GEN-LAST:event_panel1MouseDragged
 
     private void panel1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel1MousePressed
-       
-    }//GEN-LAST:event_panel1MousePressed
 
-    private void panel1MouseDragged(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel1MouseDragged
-     
-    }//GEN-LAST:event_panel1MouseDragged
+    }//GEN-LAST:event_panel1MousePressed
 
     /**
      * @param args the command line arguments
@@ -350,31 +330,20 @@ public class Login extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(Login.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(frmLogin.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                try {
-                    UIManager.setLookAndFeel(UIManager.getSystemLookAndFeelClassName());
-                    new Login().setVisible(true);
-                } catch (ClassNotFoundException ex) {
-                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (InstantiationException ex) {
-                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (IllegalAccessException ex) {
-                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (UnsupportedLookAndFeelException ex) {
-                    Logger.getLogger(Login.class.getName()).log(Level.SEVERE, null, ex);
-                }
+                new frmLogin().setVisible(true);
             }
         });
     }
