@@ -4,9 +4,11 @@ import Formularios.frmServBasicos;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
+import java.sql.Statement;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import org.apache.commons.codec.digest.DigestUtils;
 
 public class InsertarDatosBD {
     conexionBD con = new conexionBD();
@@ -28,4 +30,43 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
         }
     }
+     public void insertUsuarioA(String nom,String apel,String us,String con,String tip,String corre){
+     try {
+            PreparedStatement pst = cn.prepareStatement( "INSERT INTO usuario (`nombre_usuario`,`apellido_usuario`,`usuario`,`clave`,`TipoUsuario_id_tipoUsuario`,`correo_usuario`) "
+            + "VALUES(?,?,?,?,?,?);");
+
+        
+
+            
+            pst.setString(1, nom);
+            pst.setString(2, apel);
+            pst.setString(3, us);
+            pst.setString(4, con);
+            pst.setString(5, tip);
+            pst.setString(6, corre);
+
+             pst.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados");
+        } catch (SQLException ex) {
+            Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+        }
+     }
+     public void insertTipoU(String ti){
+     try {
+           PreparedStatement pst = cn.prepareStatement("INSERT INTO tipousuario (`tipo_usuario`) "
+            + "VALUES(?);");
+
+           
+
+           
+            pst.setString(1, ti);
+               pst.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados");
+        } catch (SQLException ex) {
+            Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+        }
+     }
+    
 }

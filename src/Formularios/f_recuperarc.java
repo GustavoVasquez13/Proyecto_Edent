@@ -7,6 +7,7 @@ package formularios;
 
 import Clases.conexionBD;
 import Clases.control;
+import Clases.*;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -25,6 +26,7 @@ import javax.mail.internet.MimeMessage;
 import javax.mail.internet.MimeMultipart;
 import javax.swing.JOptionPane;
 import org.apache.commons.codec.digest.DigestUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 
 /**
  *
@@ -35,7 +37,7 @@ public class f_recuperarc extends javax.swing.JFrame {
     /**
      * Creates new form f_recuperarc
      */
-    control c=new control();
+    funciones v=new funciones();
     public f_recuperarc() {
         initComponents();
     }
@@ -136,9 +138,9 @@ public class f_recuperarc extends javax.swing.JFrame {
                                     .addComponent(txtcorreo, javax.swing.GroupLayout.PREFERRED_SIZE, 342, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addComponent(jLabel2)))
                             .addGroup(panel1Layout.createSequentialGroup()
-                                .addGap(76, 76, 76)
+                                .addGap(117, 117, 117)
                                 .addComponent(entrar)
-                                .addGap(47, 47, 47)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(salir)))
                         .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
@@ -159,14 +161,11 @@ public class f_recuperarc extends javax.swing.JFrame {
                 .addComponent(jLabel2)
                 .addGap(18, 18, 18)
                 .addComponent(txtcorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel1Layout.createSequentialGroup()
-                        .addGap(59, 59, 59)
-                        .addComponent(entrar))
-                    .addGroup(panel1Layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(salir)))
-                .addContainerGap(30, Short.MAX_VALUE))
+                .addGap(42, 42, 42)
+                .addGroup(panel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addComponent(salir)
+                    .addComponent(entrar))
+                .addContainerGap(47, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -197,105 +196,7 @@ public class f_recuperarc extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-private boolean presionoRecu = false;
-String usu="edent.recuperacion@gmail.com";
-String contra="*h123456";
-  
-public void SendMail(String m,String pa) {
-   
-              try {
 
-    Properties props = new Properties();
-        props.put("mail.smtp.host", "smtp.gmail.com");
-       
-        props.setProperty("mail.smtp.starttls.enable", "true");
-        props.setProperty("mail.smtp.port", "587");
-        props.setProperty("mail.smtp.user", usu);
-        
-         props.setProperty("mail.smtp.auth", "true");
-
-         Session session = Session.getDefaultInstance(props,null);
-                BodyPart texto=new MimeBodyPart();
-                texto.setText(pa);
-                MimeMultipart t = new MimeMultipart();
-                t.addBodyPart(texto);
-                
-
-
-            Message message = new MimeMessage(session);
-            message.setFrom(new InternetAddress(usu));
-            message.addRecipient(Message.RecipientType.TO,new
-                    InternetAddress(m));
-            message.setSubject("recuperacion de contraseña");
-            message.setContent(t);
-
-           Transport transport = session.getTransport("smtp");
-        transport.connect("smtp.gmail.com", usu, contra);
-        transport.sendMessage(message, message.getAllRecipients());
-        transport.close();
-            JOptionPane.showMessageDialog(this, "Su mensaje ha sido enviado");
-
-        } catch (MessagingException e) {
-            throw new RuntimeException(e);
-        }
-    }
- conexionBD cc = new conexionBD();
-Connection cn = cc.conectar();
-
-    private void verificaCorreo(String correo) {
-        try {
-            String sql = "SELECT * FROM usuario WHERE correo_usuario = '" + correo + "'";
-            String sql1= "update  usuario set  clave=? "
-                    + "where id_usuario=?";
-            
-            Statement st = cn.createStatement();
-            ResultSet rs = st.executeQuery(sql);
-            String user = null;
-            String pass = "contraseña";
-            String id=null;
-            String cor=null;
-            if (rs.next()) {
-                
-                id=rs.getString(1);
-                user = rs.getString(4);
-                cor=rs.getString(7);
-               try {           
-            PreparedStatement pst=cn.prepareStatement(sql1);
-            pst.setString(1,DigestUtils.md5Hex(pass));                   
-            pst.setString(2,id);
-            
-            int n=pst.executeUpdate();
-            
-        } catch (Exception e) {
-            JOptionPane.showConfirmDialog(null, e);
-           
-        }
-
-                String user1 = "USUARIO: " + user, pass1 = "CONTRASEÑA: " + pass;
-
-                if (JOptionPane.showConfirmDialog(this, "SU USUARIO Y CONTRASEÑA SON:\n\n"
-                         +"USUARIO: " + user + "\nCONTRASEÑA: "+cor+ "\n\n¿GUARDAR DATOS?", "CÓDIGO DE RECUPERACIÓN", JOptionPane.YES_NO_OPTION, 
-                        JOptionPane.INFORMATION_MESSAGE) == JOptionPane.YES_OPTION) {
-                    String men= "SU USUARIO Y CONTRASEÑA SON:\n\n"
-                         +"USUARIO: " + user + "\nCONTRASEÑA: "+pass;
-                    SendMail(cor,men);
-                    
-                } else {
-                    this.dispose();
-                }
-            } else {
-                this.entrar.setVisible(true);
-                this.salir.setVisible(true);
-               
-                presionoRecu = false;
-                JOptionPane.showMessageDialog(this, "EL CÓDIGO INGRESADO NO ES VÁLIDO,\nINGRESE UN CÓDIGO DE RECUPERACIÓN\n"
-                        + "VÁLIDO O CONTACTE AL ADMINISTRADOR DEL SISTEMA.", "¡ERROR AL RECUPERAR!", JOptionPane.ERROR_MESSAGE);
-            }
-
-        } catch (SQLException ex) {
-            
-        }
-    }
     private void entrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_entrarActionPerformed
         String cod = txtcorreo.getText();
         if (cod.equals("")) {
@@ -305,9 +206,12 @@ Connection cn = cc.conectar();
                 this.entrar.setVisible(false);
                 this.salir.setVisible(false);
                 //                new EfectoPanel(capa, new PanelCargando()).play();
-                presionoRecu = true;
-                verificaCorreo(cod);
                 
+                v.verificaCorreo(cod);
+                Formularios.frmLogin fr=new Formularios.frmLogin();
+                fr.toFront();
+                fr.setVisible(true);
+                this.dispose();
                 //                startThread();
             } else {
                 JOptionPane.showMessageDialog(this, "EL CÓDIDO DEBE CONTENER 36 CARÁCTERES.", "CÓDGIO", JOptionPane.WARNING_MESSAGE);

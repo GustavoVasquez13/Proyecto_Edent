@@ -1,6 +1,8 @@
 package formularios;
 
+import Clases.InsertarDatosBD;
 import Clases.conexionBD;
+import Clases.funciones;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,9 +15,12 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 public final class FrmInstalacion extends javax.swing.JFrame {
 String[] arraytipo;
+funciones v=new funciones();
+InsertarDatosBD i=new InsertarDatosBD();
     public FrmInstalacion() {
       
         initComponents();
+         
                  consultar();
         inhabilitar();
     }
@@ -317,7 +322,8 @@ String[] arraytipo;
     }//GEN-LAST:event_txtNombre_personaActionPerformed
 
     private void btnNuevoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnNuevoActionPerformed
-        habilitar();
+
+ habilitar();
     }//GEN-LAST:event_btnNuevoActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
@@ -340,29 +346,9 @@ String[] arraytipo;
             return;
         }
 
-        conexionBD cnn=new conexionBD();
-        Connection reg=cnn.conectar();
+        
 
-        try {
-            String query = "INSERT INTO usuario (nombre_usuario,apellido_usuario,usuario,clave,TipoUsuario_id_tipoUsuario,correo_usuario) "
-            + "VALUES(?,?,?,?,?,?);";
-
-            Statement stmt = reg.createStatement() ;
-
-            PreparedStatement pst  = reg.prepareStatement(query);
-            pst.setString(1, this.txtNombre_persona.getText().toUpperCase());
-            pst.setString(2, this.txtape.getText().toUpperCase());
-            pst.setString(3, txtusua.getText());
-            pst.setString(4, String.valueOf(DigestUtils.md5Hex(txtcont.getText())));
-            pst.setString(5, arraytipo[this.tipo.getSelectedIndex()]);
-            pst.setString(6, this.txtcorreo.getText());
-
-            int n=pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "usuario almacenado");
-
-        } catch (SQLException ex) {
-
-        }
+        i.insertUsuarioA(this.txtNombre_persona.getText().toUpperCase(),this.txtape.getText().toUpperCase(),txtusua.getText(),String.valueOf(DigestUtils.md5Hex(txtcont.getText())),arraytipo[this.tipo.getSelectedIndex()],this.txtcorreo.getText());
         dispose();
     }//GEN-LAST:event_btnGuardarActionPerformed
 

@@ -1,6 +1,7 @@
 package formularios;
 
 
+import Clases.InsertarDatosBD;
 import Clases.conexionBD;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -14,6 +15,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 public class FR_nuevoUsuario extends javax.swing.JFrame {
 String[] arraytipo;
+InsertarDatosBD i=new InsertarDatosBD();
 
     public FR_nuevoUsuario() {
         initComponents();
@@ -31,7 +33,7 @@ String[] arraytipo;
         pnlcontainer = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txtnom = new javax.swing.JTextField();
+        txtNombre_persona = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         txtape = new javax.swing.JTextField();
         jLabel4 = new javax.swing.JLabel();
@@ -135,7 +137,7 @@ String[] arraytipo;
                             .addComponent(cbtipo, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(txtusu, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtape, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtnom, javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtNombre_persona, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(txtcont, javax.swing.GroupLayout.DEFAULT_SIZE, 98, Short.MAX_VALUE))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlcontainerLayout.createSequentialGroup()
@@ -164,7 +166,7 @@ String[] arraytipo;
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pnlcontainerLayout.createSequentialGroup()
                         .addGroup(pnlcontainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
-                            .addComponent(txtnom, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtNombre_persona, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addGroup(pnlcontainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
@@ -185,10 +187,10 @@ String[] arraytipo;
                         .addGroup(pnlcontainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel7)
                             .addComponent(txtcorreo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(pnlcontainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(VOLVER, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jButton1))
+                        .addGap(86, 86, 86)
+                        .addGroup(pnlcontainerLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(VOLVER, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                         .addGap(98, 98, 98))))
         );
 
@@ -231,7 +233,7 @@ private void consultar()
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
 //llenado de tablas relacionadas
 //esta es la consulta que hago
-        String nom = this.txtnom.getText().toUpperCase();
+        String nom = this.txtNombre_persona.getText().toUpperCase();
         String ape = this.txtape.getText().toUpperCase();
         String usu = this.txtusu.getText();
         String clav = DigestUtils.md5Hex(this.txtcont.getText());
@@ -241,29 +243,13 @@ private void consultar()
         if(nom.equals("")||ape.equals("")||usu.equals("")||clav.equals("")){
             JOptionPane.showMessageDialog(null, "POR FAVOR LLENAR TODOS LOS CAMPOS");
         }else{
-        try {
-            String query = "INSERT INTO usuario (nombre_usuario,apellido_usuario,usuario,clave,TipoUsuario_id_tipoUsuario,correo_usuario) "
-            + "VALUES(?,?,?,?,?,?);";
-
-            Statement stmt = reg.createStatement() ;
-
-            PreparedStatement pst  = reg.prepareStatement(query);
-            pst.setString(1, nom);
-            pst.setString(2, ape);
-            pst.setString(3, usu);
-            pst.setString(4, clav);
-            pst.setString(5, arraytipo[this.cbtipo.getSelectedIndex()]);
-           pst.setString(6, correo);
-            int n=pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "USUARIO ALMACENADO");
-           
-            this.txtnom.setText("");
+             i.insertUsuarioA(this.txtNombre_persona.getText().toUpperCase(),this.txtape.getText().toUpperCase(),txtusu.getText(),String.valueOf(DigestUtils.md5Hex(txtcont.getText())),arraytipo[this.cbtipo.getSelectedIndex()],this.txtcorreo.getText());
+        
+            this.txtNombre_persona.setText("");
             this.txtape.setText("");
             this.txtusu.setText("");
             this.txtcont.setText("");
-        } catch (SQLException ex) {
-            JOptionPane.showMessageDialog(null, "ERROR AL INTRODUCIR LOS DATOS: "+ex);
-        }
+        this.txtcorreo.setText("");
     }
     }//GEN-LAST:event_jButton1ActionPerformed
 
@@ -323,10 +309,10 @@ private void consultar()
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel pnlcontainer;
+    private javax.swing.JTextField txtNombre_persona;
     private javax.swing.JTextField txtape;
     private javax.swing.JPasswordField txtcont;
     public static javax.swing.JTextField txtcorreo;
-    private javax.swing.JTextField txtnom;
     public static javax.swing.JTextField txtusu;
     // End of variables declaration//GEN-END:variables
 }
