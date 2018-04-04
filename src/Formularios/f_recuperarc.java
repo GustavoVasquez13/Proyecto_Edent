@@ -6,7 +6,7 @@
 package formularios;
 
 import Clases.conexionBD;
-import Clases.control;
+
 import Clases.*;
 
 import java.sql.Connection;
