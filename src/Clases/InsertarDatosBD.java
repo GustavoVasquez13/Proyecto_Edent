@@ -25,9 +25,11 @@ public class InsertarDatosBD {
             pps.setString(4, telefono);
             pps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados");
+            con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
         }
     }
      public void insertUsuarioA(String nom,String apel,String us,String con,String tip,String corre){
