@@ -68,5 +68,19 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
         }
      }
-    
+      public void insertProveedor(String servicio,String direccion,String correo,String telefono){
+        try {
+            PreparedStatement pps = cn.prepareStatement("INSERT INTO proveedores(`nombre_prov`,`direccion_prov`,`correo_prov`,`tel_prov`) "
+                    + "VALUES(?,?,?,?);");
+            pps.setString(1, servicio);
+            pps.setString(2, direccion);
+            pps.setString(3, correo);
+            pps.setString(4, telefono);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados");
+        } catch (SQLException ex) {
+            Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+        }
+    }    
 }
