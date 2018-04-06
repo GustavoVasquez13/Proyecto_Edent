@@ -472,6 +472,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         lblnombre6 = new javax.swing.JLabel();
         txtnombre6 = new javax.swing.JTextField();
         btnGuardar = new javax.swing.JButton();
+        fi = new com.toedter.calendar.JDateChooser();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -2624,7 +2625,10 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
         btnGuardar.setText("Guardar");
         btnGuardar.setToolTipText("");
-        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 980, 80, 60));
+        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 450, 80, 60));
+
+        fi.setDateFormatString("yyyy-MM-dd");
+        getContentPane().add(fi, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 100, 110, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3672,6 +3676,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
+    private com.toedter.calendar.JDateChooser fi;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox100;
