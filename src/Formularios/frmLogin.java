@@ -22,6 +22,7 @@ funciones v=new funciones();
     /** Creates new form frmLogin */
     public frmLogin() {
         initComponents();
+        
         v.ContarUsuarios();
     }
 
