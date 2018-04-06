@@ -208,9 +208,7 @@ public class f_recuperarc extends javax.swing.JFrame {
                 //                new EfectoPanel(capa, new PanelCargando()).play();
                 
                 v.verificaCorreo(cod);
-                Formularios.frmLogin fr=new Formularios.frmLogin();
-                fr.toFront();
-                fr.setVisible(true);
+                
                 this.dispose();
                 //                startThread();
             } else {
