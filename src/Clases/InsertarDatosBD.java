@@ -68,7 +68,8 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
         }
      }
-      public void insertProveedor(String servicio,String direccion,String correo,String telefono){
+
+     public void insertProveedor(String servicio,String direccion,String correo,String telefono){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO proveedores(`nombre_prov`,`direccion_prov`,`correo_prov`,`tel_prov`) "
                     + "VALUES(?,?,?,?);");
@@ -83,4 +84,5 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
         }
     }    
+    
 }
