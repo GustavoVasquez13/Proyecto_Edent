@@ -18,11 +18,10 @@ import org.apache.commons.codec.digest.DigestUtils;
  * @author marvi
  */
 public class frmLogin extends javax.swing.JFrame {
-funciones v=new funciones();
+funciones v=new funciones(); 
     /** Creates new form frmLogin */
     public frmLogin() {
         initComponents();
-        
         v.ContarUsuarios();
     }
 
@@ -174,11 +173,6 @@ funciones v=new funciones();
         });
 
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_salir2.png"))); // NOI18N
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
-            }
-        });
 
         btnentrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/btn_entrar1.png"))); // NOI18N
         btnentrar.addActionListener(new java.awt.event.ActionListener() {
@@ -359,10 +353,6 @@ funciones v=new funciones();
         t.toFront();
         t.setVisible(true);        // TODO add your handling code here:
     }//GEN-LAST:event_jButton3ActionPerformed
-
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
-this.dispose();        // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments

@@ -1,7 +1,6 @@
 package Clases;
 
-
-import formularios.FR_nuevoUsuario;
+import formularios.*;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.Statement;
