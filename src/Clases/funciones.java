@@ -5,8 +5,7 @@
  */
 package Clases;
 
-import Formularios.ad;
-import Formularios.frmPrincipal;
+import formularios.*;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
