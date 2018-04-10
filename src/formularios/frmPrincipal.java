@@ -1,4 +1,4 @@
-package Formularios;
+package formularios;
 
 public class frmPrincipal extends javax.swing.JFrame {
 

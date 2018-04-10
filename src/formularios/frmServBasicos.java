@@ -1,4 +1,4 @@
-package Formularios;
+package formularios;
 
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;

@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Formularios;
+package formularios;
 
 /**
  *
@@ -3644,63 +3644,63 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jLabel88.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel88.setText("Expediente Ortodoncia");
         jInternalFrame1.getContentPane().add(jLabel88);
-        jLabel88.setBounds(480, 40, 162, 17);
+        jLabel88.setBounds(480, 40, 180, 17);
 
         jLabel89.setText("Fecha:");
         jInternalFrame1.getContentPane().add(jLabel89);
-        jLabel89.setBounds(210, 100, 33, 14);
+        jLabel89.setBounds(210, 100, 46, 17);
 
         lbltelefono1.setText("Telefono:");
         jInternalFrame1.getContentPane().add(lbltelefono1);
-        lbltelefono1.setBounds(450, 100, 46, 14);
+        lbltelefono1.setBounds(450, 100, 68, 17);
         jInternalFrame1.getContentPane().add(txttelefono1);
-        txttelefono1.setBounds(500, 100, 99, 20);
+        txttelefono1.setBounds(500, 100, 99, 27);
 
         lbledad1.setText("Edad:");
         jInternalFrame1.getContentPane().add(lbledad1);
-        lbledad1.setBounds(700, 100, 28, 14);
+        lbledad1.setBounds(700, 100, 39, 17);
         jInternalFrame1.getContentPane().add(txtedad1);
-        txtedad1.setBounds(730, 100, 99, 20);
+        txtedad1.setBounds(730, 100, 99, 27);
 
         lblnombre16.setText("Nombre: ");
         jInternalFrame1.getContentPane().add(lblnombre16);
-        lblnombre16.setBounds(270, 130, 44, 14);
+        lblnombre16.setBounds(270, 130, 64, 17);
         jInternalFrame1.getContentPane().add(txtnombre6);
-        txtnombre6.setBounds(330, 130, 284, 20);
+        txtnombre6.setBounds(330, 130, 284, 27);
 
         lbldireccion2.setText("Dirección: ");
         jInternalFrame1.getContentPane().add(lbldireccion2);
-        lbldireccion2.setBounds(270, 190, 50, 14);
+        lbldireccion2.setBounds(270, 190, 73, 17);
         jInternalFrame1.getContentPane().add(txtdirección2);
         txtdirección2.setBounds(330, 170, 531, 53);
 
         lblnombre21.setText("Motivo de la Consulta: ");
         jInternalFrame1.getContentPane().add(lblnombre21);
-        lblnombre21.setBounds(210, 260, 110, 14);
+        lblnombre21.setBounds(210, 260, 155, 17);
         jInternalFrame1.getContentPane().add(txtnombre7);
         txtnombre7.setBounds(330, 260, 380, 20);
 
         lblnombre22.setText("Historia Medica:");
         jInternalFrame1.getContentPane().add(lblnombre22);
-        lblnombre22.setBounds(240, 300, 80, 14);
+        lblnombre22.setBounds(240, 300, 80, 17);
         jInternalFrame1.getContentPane().add(txtnombre8);
         txtnombre8.setBounds(330, 300, 380, 50);
 
         lblnombre23.setText("Historia Odontologica:");
         jInternalFrame1.getContentPane().add(lblnombre23);
-        lblnombre23.setBounds(210, 360, 106, 14);
+        lblnombre23.setBounds(210, 360, 155, 17);
         jInternalFrame1.getContentPane().add(txtnombre9);
         txtnombre9.setBounds(330, 360, 380, 40);
 
         lblnombre24.setText("Examen Clinico:");
         jInternalFrame1.getContentPane().add(lblnombre24);
-        lblnombre24.setBounds(240, 410, 80, 14);
+        lblnombre24.setBounds(240, 410, 80, 17);
         jInternalFrame1.getContentPane().add(txtnombre10);
         txtnombre10.setBounds(330, 410, 380, 20);
 
         lblnombre25.setText("DX Odontologico:");
         jInternalFrame1.getContentPane().add(lblnombre25);
-        lblnombre25.setBounds(230, 440, 90, 14);
+        lblnombre25.setBounds(230, 440, 90, 17);
         jInternalFrame1.getContentPane().add(txtnombre11);
         txtnombre11.setBounds(330, 440, 380, 70);
 
@@ -3746,7 +3746,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox370);
         jCheckBox370.setBounds(200, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox371);
-        jCheckBox371.setBounds(200, 590, 20, 21);
+        jCheckBox371.setBounds(200, 590, 20, 24);
 
         jCheckBox372.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3790,7 +3790,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox377);
         jCheckBox377.setBounds(240, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox378);
-        jCheckBox378.setBounds(240, 590, 20, 21);
+        jCheckBox378.setBounds(240, 590, 20, 24);
 
         jCheckBox379.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3834,7 +3834,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox384);
         jCheckBox384.setBounds(280, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox385);
-        jCheckBox385.setBounds(280, 590, 20, 21);
+        jCheckBox385.setBounds(280, 590, 20, 24);
 
         jCheckBox386.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3878,7 +3878,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox391);
         jCheckBox391.setBounds(320, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox392);
-        jCheckBox392.setBounds(320, 590, 20, 21);
+        jCheckBox392.setBounds(320, 590, 20, 24);
 
         jCheckBox393.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3922,7 +3922,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox398);
         jCheckBox398.setBounds(360, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox399);
-        jCheckBox399.setBounds(360, 590, 20, 21);
+        jCheckBox399.setBounds(360, 590, 20, 24);
 
         jCheckBox400.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3966,7 +3966,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox405);
         jCheckBox405.setBounds(400, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox406);
-        jCheckBox406.setBounds(400, 590, 20, 21);
+        jCheckBox406.setBounds(400, 590, 20, 24);
 
         jCheckBox407.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4010,7 +4010,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox412);
         jCheckBox412.setBounds(440, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox413);
-        jCheckBox413.setBounds(440, 590, 20, 21);
+        jCheckBox413.setBounds(440, 590, 20, 24);
 
         jCheckBox414.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4054,7 +4054,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox419);
         jCheckBox419.setBounds(480, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox420);
-        jCheckBox420.setBounds(480, 590, 20, 21);
+        jCheckBox420.setBounds(480, 590, 20, 24);
 
         jCheckBox421.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4098,7 +4098,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox426);
         jCheckBox426.setBounds(540, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox427);
-        jCheckBox427.setBounds(540, 590, 20, 21);
+        jCheckBox427.setBounds(540, 590, 20, 24);
 
         jCheckBox428.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4142,7 +4142,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox433);
         jCheckBox433.setBounds(580, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox434);
-        jCheckBox434.setBounds(580, 590, 20, 21);
+        jCheckBox434.setBounds(580, 590, 20, 24);
 
         jCheckBox435.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4186,7 +4186,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox440);
         jCheckBox440.setBounds(620, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox441);
-        jCheckBox441.setBounds(620, 590, 20, 21);
+        jCheckBox441.setBounds(620, 590, 20, 24);
 
         jCheckBox442.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4230,7 +4230,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox447);
         jCheckBox447.setBounds(660, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox448);
-        jCheckBox448.setBounds(660, 590, 20, 21);
+        jCheckBox448.setBounds(660, 590, 20, 24);
 
         jCheckBox449.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4274,7 +4274,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox454);
         jCheckBox454.setBounds(700, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox455);
-        jCheckBox455.setBounds(700, 590, 20, 21);
+        jCheckBox455.setBounds(700, 590, 20, 24);
 
         jCheckBox456.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4318,7 +4318,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox461);
         jCheckBox461.setBounds(740, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox462);
-        jCheckBox462.setBounds(740, 590, 20, 21);
+        jCheckBox462.setBounds(740, 590, 20, 24);
 
         jCheckBox463.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4362,7 +4362,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox468);
         jCheckBox468.setBounds(780, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox469);
-        jCheckBox469.setBounds(780, 590, 20, 21);
+        jCheckBox469.setBounds(780, 590, 20, 24);
 
         jCheckBox470.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4406,7 +4406,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox475);
         jCheckBox475.setBounds(820, 570, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox476);
-        jCheckBox476.setBounds(820, 590, 20, 21);
+        jCheckBox476.setBounds(820, 590, 20, 24);
 
         jCheckBox477.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4450,7 +4450,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox482);
         jCheckBox482.setBounds(200, 630, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox483);
-        jCheckBox483.setBounds(200, 650, 20, 21);
+        jCheckBox483.setBounds(200, 650, 20, 24);
 
         jCheckBox484.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4494,7 +4494,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox489);
         jCheckBox489.setBounds(240, 630, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox490);
-        jCheckBox490.setBounds(240, 650, 20, 21);
+        jCheckBox490.setBounds(240, 650, 20, 24);
 
         jCheckBox491.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4538,7 +4538,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox496);
         jCheckBox496.setBounds(280, 630, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox497);
-        jCheckBox497.setBounds(280, 650, 20, 21);
+        jCheckBox497.setBounds(280, 650, 20, 24);
 
         jCheckBox498.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4582,7 +4582,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox503);
         jCheckBox503.setBounds(320, 630, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox504);
-        jCheckBox504.setBounds(320, 650, 20, 21);
+        jCheckBox504.setBounds(320, 650, 20, 24);
 
         jCheckBox505.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4626,7 +4626,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox510);
         jCheckBox510.setBounds(360, 630, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox511);
-        jCheckBox511.setBounds(360, 650, 20, 21);
+        jCheckBox511.setBounds(360, 650, 20, 24);
 
         jCheckBox512.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4670,7 +4670,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox517);
         jCheckBox517.setBounds(400, 630, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox518);
-        jCheckBox518.setBounds(400, 650, 20, 21);
+        jCheckBox518.setBounds(400, 650, 20, 24);
 
         jCheckBox519.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4714,7 +4714,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox524);
         jCheckBox524.setBounds(440, 630, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox525);
-        jCheckBox525.setBounds(440, 650, 20, 21);
+        jCheckBox525.setBounds(440, 650, 20, 24);
 
         jCheckBox526.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4758,7 +4758,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox531);
         jCheckBox531.setBounds(480, 630, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox532);
-        jCheckBox532.setBounds(480, 650, 20, 21);
+        jCheckBox532.setBounds(480, 650, 20, 24);
 
         jCheckBox533.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4766,7 +4766,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox533);
-        jCheckBox533.setBounds(540, 640, 21, 23);
+        jCheckBox533.setBounds(540, 640, 22, 23);
 
         jCheckBox534.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4774,7 +4774,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox534);
-        jCheckBox534.setBounds(530, 640, 21, 23);
+        jCheckBox534.setBounds(530, 640, 22, 23);
 
         jCheckBox535.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4782,7 +4782,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox535);
-        jCheckBox535.setBounds(550, 640, 21, 23);
+        jCheckBox535.setBounds(550, 640, 22, 23);
 
         jCheckBox536.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4790,7 +4790,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox536);
-        jCheckBox536.setBounds(540, 640, 21, 23);
+        jCheckBox536.setBounds(540, 640, 22, 23);
 
         jCheckBox537.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4798,11 +4798,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox537);
-        jCheckBox537.setBounds(540, 640, 21, 23);
+        jCheckBox537.setBounds(540, 640, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox538);
-        jCheckBox538.setBounds(540, 630, 21, 23);
+        jCheckBox538.setBounds(540, 630, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox539);
-        jCheckBox539.setBounds(540, 650, 21, 21);
+        jCheckBox539.setBounds(540, 650, 22, 24);
 
         jCheckBox540.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4810,7 +4810,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox540);
-        jCheckBox540.setBounds(580, 640, 21, 23);
+        jCheckBox540.setBounds(580, 640, 22, 23);
 
         jCheckBox541.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4818,7 +4818,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox541);
-        jCheckBox541.setBounds(570, 640, 21, 23);
+        jCheckBox541.setBounds(570, 640, 22, 23);
 
         jCheckBox542.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4826,7 +4826,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox542);
-        jCheckBox542.setBounds(590, 640, 21, 23);
+        jCheckBox542.setBounds(590, 640, 22, 23);
 
         jCheckBox543.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4834,7 +4834,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox543);
-        jCheckBox543.setBounds(580, 640, 21, 23);
+        jCheckBox543.setBounds(580, 640, 22, 23);
 
         jCheckBox544.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4842,11 +4842,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox544);
-        jCheckBox544.setBounds(580, 640, 21, 23);
+        jCheckBox544.setBounds(580, 640, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox545);
-        jCheckBox545.setBounds(580, 630, 21, 23);
+        jCheckBox545.setBounds(580, 630, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox546);
-        jCheckBox546.setBounds(580, 650, 21, 21);
+        jCheckBox546.setBounds(580, 650, 22, 24);
 
         jCheckBox547.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4854,7 +4854,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox547);
-        jCheckBox547.setBounds(620, 640, 21, 23);
+        jCheckBox547.setBounds(620, 640, 22, 23);
 
         jCheckBox548.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4862,7 +4862,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox548);
-        jCheckBox548.setBounds(610, 640, 21, 23);
+        jCheckBox548.setBounds(610, 640, 22, 23);
 
         jCheckBox549.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4870,7 +4870,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox549);
-        jCheckBox549.setBounds(630, 640, 21, 23);
+        jCheckBox549.setBounds(630, 640, 22, 23);
 
         jCheckBox550.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4878,7 +4878,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox550);
-        jCheckBox550.setBounds(620, 640, 21, 23);
+        jCheckBox550.setBounds(620, 640, 22, 23);
 
         jCheckBox551.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4886,11 +4886,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox551);
-        jCheckBox551.setBounds(620, 640, 21, 23);
+        jCheckBox551.setBounds(620, 640, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox552);
-        jCheckBox552.setBounds(620, 630, 21, 23);
+        jCheckBox552.setBounds(620, 630, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox553);
-        jCheckBox553.setBounds(620, 650, 21, 21);
+        jCheckBox553.setBounds(620, 650, 22, 24);
 
         jCheckBox554.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4898,7 +4898,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox554);
-        jCheckBox554.setBounds(660, 640, 21, 23);
+        jCheckBox554.setBounds(660, 640, 22, 23);
 
         jCheckBox555.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4906,7 +4906,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox555);
-        jCheckBox555.setBounds(650, 640, 21, 23);
+        jCheckBox555.setBounds(650, 640, 22, 23);
 
         jCheckBox556.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4914,7 +4914,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox556);
-        jCheckBox556.setBounds(670, 640, 21, 23);
+        jCheckBox556.setBounds(670, 640, 22, 23);
 
         jCheckBox557.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4922,7 +4922,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox557);
-        jCheckBox557.setBounds(660, 640, 21, 23);
+        jCheckBox557.setBounds(660, 640, 22, 23);
 
         jCheckBox558.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4930,11 +4930,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox558);
-        jCheckBox558.setBounds(660, 640, 21, 23);
+        jCheckBox558.setBounds(660, 640, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox559);
-        jCheckBox559.setBounds(660, 630, 21, 23);
+        jCheckBox559.setBounds(660, 630, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox560);
-        jCheckBox560.setBounds(660, 650, 21, 21);
+        jCheckBox560.setBounds(660, 650, 22, 24);
 
         jCheckBox561.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4942,7 +4942,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox561);
-        jCheckBox561.setBounds(700, 640, 21, 23);
+        jCheckBox561.setBounds(700, 640, 22, 23);
 
         jCheckBox562.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4950,7 +4950,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox562);
-        jCheckBox562.setBounds(690, 640, 21, 23);
+        jCheckBox562.setBounds(690, 640, 22, 23);
 
         jCheckBox563.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4958,7 +4958,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox563);
-        jCheckBox563.setBounds(710, 640, 21, 23);
+        jCheckBox563.setBounds(710, 640, 22, 23);
 
         jCheckBox564.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4966,7 +4966,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox564);
-        jCheckBox564.setBounds(700, 640, 21, 23);
+        jCheckBox564.setBounds(700, 640, 22, 23);
 
         jCheckBox565.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4974,11 +4974,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox565);
-        jCheckBox565.setBounds(700, 640, 21, 23);
+        jCheckBox565.setBounds(700, 640, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox566);
-        jCheckBox566.setBounds(700, 630, 21, 23);
+        jCheckBox566.setBounds(700, 630, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox567);
-        jCheckBox567.setBounds(700, 650, 21, 21);
+        jCheckBox567.setBounds(700, 650, 22, 24);
 
         jCheckBox568.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4986,7 +4986,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox568);
-        jCheckBox568.setBounds(740, 640, 21, 23);
+        jCheckBox568.setBounds(740, 640, 22, 23);
 
         jCheckBox569.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -4994,7 +4994,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox569);
-        jCheckBox569.setBounds(730, 640, 21, 23);
+        jCheckBox569.setBounds(730, 640, 22, 23);
 
         jCheckBox570.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5002,7 +5002,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox570);
-        jCheckBox570.setBounds(750, 640, 21, 23);
+        jCheckBox570.setBounds(750, 640, 22, 23);
 
         jCheckBox571.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5010,7 +5010,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox571);
-        jCheckBox571.setBounds(740, 640, 21, 23);
+        jCheckBox571.setBounds(740, 640, 22, 23);
 
         jCheckBox572.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5018,11 +5018,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox572);
-        jCheckBox572.setBounds(740, 640, 21, 23);
+        jCheckBox572.setBounds(740, 640, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox573);
-        jCheckBox573.setBounds(740, 630, 21, 23);
+        jCheckBox573.setBounds(740, 630, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox574);
-        jCheckBox574.setBounds(740, 650, 21, 21);
+        jCheckBox574.setBounds(740, 650, 22, 24);
 
         jCheckBox575.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5030,7 +5030,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox575);
-        jCheckBox575.setBounds(780, 640, 21, 23);
+        jCheckBox575.setBounds(780, 640, 22, 23);
 
         jCheckBox576.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5038,7 +5038,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox576);
-        jCheckBox576.setBounds(770, 640, 21, 23);
+        jCheckBox576.setBounds(770, 640, 22, 23);
 
         jCheckBox577.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5046,7 +5046,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox577);
-        jCheckBox577.setBounds(790, 640, 21, 23);
+        jCheckBox577.setBounds(790, 640, 22, 23);
 
         jCheckBox578.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5054,7 +5054,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox578);
-        jCheckBox578.setBounds(780, 640, 21, 23);
+        jCheckBox578.setBounds(780, 640, 22, 23);
 
         jCheckBox579.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5062,11 +5062,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox579);
-        jCheckBox579.setBounds(780, 640, 21, 23);
+        jCheckBox579.setBounds(780, 640, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox580);
-        jCheckBox580.setBounds(780, 630, 21, 23);
+        jCheckBox580.setBounds(780, 630, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox581);
-        jCheckBox581.setBounds(780, 650, 21, 21);
+        jCheckBox581.setBounds(780, 650, 22, 24);
 
         jCheckBox582.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5074,7 +5074,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox582);
-        jCheckBox582.setBounds(820, 640, 21, 23);
+        jCheckBox582.setBounds(820, 640, 22, 23);
 
         jCheckBox583.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5082,7 +5082,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox583);
-        jCheckBox583.setBounds(810, 640, 21, 23);
+        jCheckBox583.setBounds(810, 640, 22, 23);
 
         jCheckBox584.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5090,7 +5090,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox584);
-        jCheckBox584.setBounds(830, 640, 21, 23);
+        jCheckBox584.setBounds(830, 640, 22, 23);
 
         jCheckBox585.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5098,7 +5098,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox585);
-        jCheckBox585.setBounds(820, 640, 21, 23);
+        jCheckBox585.setBounds(820, 640, 22, 23);
 
         jCheckBox586.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5106,11 +5106,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(jCheckBox586);
-        jCheckBox586.setBounds(820, 640, 21, 23);
+        jCheckBox586.setBounds(820, 640, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox587);
-        jCheckBox587.setBounds(820, 630, 21, 23);
+        jCheckBox587.setBounds(820, 630, 22, 23);
         jInternalFrame1.getContentPane().add(jCheckBox588);
-        jCheckBox588.setBounds(820, 650, 21, 21);
+        jCheckBox588.setBounds(820, 650, 22, 24);
 
         jSeparator34.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Dientes Adultos"));
         jInternalFrame1.getContentPane().add(jSeparator34);
@@ -5304,7 +5304,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox594);
         jCheckBox594.setBounds(320, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox595);
-        jCheckBox595.setBounds(320, 760, 20, 21);
+        jCheckBox595.setBounds(320, 760, 20, 24);
 
         jCheckBox596.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5348,7 +5348,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox601);
         jCheckBox601.setBounds(360, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox602);
-        jCheckBox602.setBounds(360, 760, 20, 21);
+        jCheckBox602.setBounds(360, 760, 20, 24);
 
         jCheckBox603.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5392,7 +5392,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox608);
         jCheckBox608.setBounds(400, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox609);
-        jCheckBox609.setBounds(400, 760, 20, 21);
+        jCheckBox609.setBounds(400, 760, 20, 24);
 
         jCheckBox610.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5436,7 +5436,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox615);
         jCheckBox615.setBounds(440, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox616);
-        jCheckBox616.setBounds(440, 760, 20, 21);
+        jCheckBox616.setBounds(440, 760, 20, 24);
 
         jCheckBox617.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5480,7 +5480,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox622);
         jCheckBox622.setBounds(480, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox623);
-        jCheckBox623.setBounds(480, 760, 20, 21);
+        jCheckBox623.setBounds(480, 760, 20, 24);
 
         jCheckBox624.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5524,7 +5524,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox629);
         jCheckBox629.setBounds(540, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox630);
-        jCheckBox630.setBounds(540, 760, 20, 21);
+        jCheckBox630.setBounds(540, 760, 20, 24);
 
         jCheckBox631.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5568,7 +5568,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox636);
         jCheckBox636.setBounds(580, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox637);
-        jCheckBox637.setBounds(580, 760, 20, 21);
+        jCheckBox637.setBounds(580, 760, 20, 24);
 
         jCheckBox638.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5612,7 +5612,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox643);
         jCheckBox643.setBounds(620, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox644);
-        jCheckBox644.setBounds(620, 760, 20, 21);
+        jCheckBox644.setBounds(620, 760, 20, 24);
 
         jCheckBox645.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5656,7 +5656,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox650);
         jCheckBox650.setBounds(660, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox651);
-        jCheckBox651.setBounds(660, 760, 20, 21);
+        jCheckBox651.setBounds(660, 760, 20, 24);
 
         jCheckBox652.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5700,7 +5700,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox657);
         jCheckBox657.setBounds(700, 740, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox658);
-        jCheckBox658.setBounds(700, 760, 20, 21);
+        jCheckBox658.setBounds(700, 760, 20, 24);
 
         jCheckBox659.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5744,7 +5744,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox664);
         jCheckBox664.setBounds(320, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox665);
-        jCheckBox665.setBounds(320, 820, 20, 21);
+        jCheckBox665.setBounds(320, 820, 20, 24);
 
         jCheckBox666.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5788,7 +5788,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox671);
         jCheckBox671.setBounds(360, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox672);
-        jCheckBox672.setBounds(360, 820, 20, 21);
+        jCheckBox672.setBounds(360, 820, 20, 24);
 
         jCheckBox673.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5832,7 +5832,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox678);
         jCheckBox678.setBounds(400, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox679);
-        jCheckBox679.setBounds(400, 820, 20, 21);
+        jCheckBox679.setBounds(400, 820, 20, 24);
 
         jCheckBox680.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5876,7 +5876,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox685);
         jCheckBox685.setBounds(440, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox686);
-        jCheckBox686.setBounds(440, 820, 20, 21);
+        jCheckBox686.setBounds(440, 820, 20, 24);
 
         jCheckBox687.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5920,7 +5920,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox692);
         jCheckBox692.setBounds(480, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox693);
-        jCheckBox693.setBounds(480, 820, 20, 21);
+        jCheckBox693.setBounds(480, 820, 20, 24);
 
         jCheckBox694.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -5964,7 +5964,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox699);
         jCheckBox699.setBounds(540, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox700);
-        jCheckBox700.setBounds(540, 820, 20, 21);
+        jCheckBox700.setBounds(540, 820, 20, 24);
 
         jCheckBox701.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6008,7 +6008,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox706);
         jCheckBox706.setBounds(580, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox707);
-        jCheckBox707.setBounds(580, 820, 20, 21);
+        jCheckBox707.setBounds(580, 820, 20, 24);
 
         jCheckBox708.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6052,7 +6052,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox713);
         jCheckBox713.setBounds(620, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox714);
-        jCheckBox714.setBounds(620, 820, 20, 21);
+        jCheckBox714.setBounds(620, 820, 20, 24);
 
         jCheckBox715.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6096,7 +6096,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox720);
         jCheckBox720.setBounds(660, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox721);
-        jCheckBox721.setBounds(660, 820, 20, 21);
+        jCheckBox721.setBounds(660, 820, 20, 24);
 
         jCheckBox722.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6140,7 +6140,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jInternalFrame1.getContentPane().add(jCheckBox727);
         jCheckBox727.setBounds(700, 800, 20, 23);
         jInternalFrame1.getContentPane().add(jCheckBox728);
-        jCheckBox728.setBounds(700, 820, 20, 21);
+        jCheckBox728.setBounds(700, 820, 20, 24);
 
         jLabel122.setText("51");
         jInternalFrame1.getContentPane().add(jLabel122);
@@ -6233,7 +6233,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jSeparator41.setBackground(new java.awt.Color(0, 0, 0));
         jInternalFrame1.getContentPane().add(jSeparator41);
-        jSeparator41.setBounds(20, 900, 1140, 2);
+        jSeparator41.setBounds(20, 900, 1140, 6);
 
         jSeparator42.setBackground(new java.awt.Color(0, 0, 0));
         jInternalFrame1.getContentPane().add(jSeparator42);
@@ -6250,7 +6250,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel142.setText("IS-LS");
         jInternalFrame1.getContentPane().add(jLabel142);
-        jLabel142.setBounds(570, 910, 30, 14);
+        jLabel142.setBounds(570, 910, 30, 17);
 
         jSeparator45.setBackground(new java.awt.Color(0, 0, 0));
         jInternalFrame1.getContentPane().add(jSeparator45);
@@ -6258,7 +6258,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel143.setText("4");
         jInternalFrame1.getContentPane().add(jLabel143);
-        jLabel143.setBounds(580, 940, 30, 14);
+        jLabel143.setBounds(580, 940, 30, 17);
 
         txtEJE1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6266,7 +6266,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtEJE1);
-        txtEJE1.setBounds(470, 980, 59, 20);
+        txtEJE1.setBounds(470, 980, 59, 27);
 
         jSeparator46.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator46.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6275,11 +6275,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel144.setText("Angulo Articular");
         jInternalFrame1.getContentPane().add(jLabel144);
-        jLabel144.setBounds(30, 910, 80, 14);
+        jLabel144.setBounds(30, 910, 80, 17);
 
         jLabel145.setText("150°");
         jInternalFrame1.getContentPane().add(jLabel145);
-        jLabel145.setBounds(60, 940, 34, 14);
+        jLabel145.setBounds(60, 940, 34, 17);
 
         txtanguloA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6287,7 +6287,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtanguloA2);
-        txtanguloA2.setBounds(40, 980, 59, 20);
+        txtanguloA2.setBounds(40, 980, 59, 27);
 
         jSeparator47.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator47.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6296,15 +6296,15 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel146.setText("Angulo Goniaco Inferior");
         jInternalFrame1.getContentPane().add(jLabel146);
-        jLabel146.setBounds(120, 910, 120, 14);
+        jLabel146.setBounds(120, 910, 120, 17);
 
         jLabel147.setText("75°");
         jInternalFrame1.getContentPane().add(jLabel147);
-        jLabel147.setBounds(170, 940, 20, 14);
+        jLabel147.setBounds(170, 940, 20, 17);
 
         jLabel148.setText("75°");
         jInternalFrame1.getContentPane().add(jLabel148);
-        jLabel148.setBounds(170, 940, 20, 14);
+        jLabel148.setBounds(170, 940, 20, 17);
 
         txtanguloG2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6312,7 +6312,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtanguloG2);
-        txtanguloG2.setBounds(150, 980, 59, 20);
+        txtanguloG2.setBounds(150, 980, 59, 27);
 
         jSeparator48.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator48.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6321,11 +6321,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel149.setText("IMPA");
         jInternalFrame1.getContentPane().add(jLabel149);
-        jLabel149.setBounds(280, 910, 30, 14);
+        jLabel149.setBounds(280, 910, 30, 17);
 
         jLabel150.setText("85-93-97°");
         jInternalFrame1.getContentPane().add(jLabel150);
-        jLabel150.setBounds(270, 940, 50, 14);
+        jLabel150.setBounds(270, 940, 50, 17);
 
         txtIMPA2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6333,23 +6333,23 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtIMPA2);
-        txtIMPA2.setBounds(260, 980, 59, 20);
+        txtIMPA2.setBounds(260, 980, 59, 27);
 
         jLabel151.setText("Porcentaje JARABAK");
         jInternalFrame1.getContentPane().add(jLabel151);
-        jLabel151.setBounds(350, 910, 100, 14);
+        jLabel151.setBounds(350, 910, 100, 17);
 
         jLabel152.setText("EJE FACIAL");
         jInternalFrame1.getContentPane().add(jLabel152);
-        jLabel152.setBounds(470, 910, 60, 14);
+        jLabel152.setBounds(470, 910, 60, 17);
 
         jLabel153.setText("56%");
         jInternalFrame1.getContentPane().add(jLabel153);
-        jLabel153.setBounds(390, 940, 30, 14);
+        jLabel153.setBounds(390, 940, 30, 17);
 
         jLabel154.setText("90");
         jInternalFrame1.getContentPane().add(jLabel154);
-        jLabel154.setBounds(490, 940, 20, 14);
+        jLabel154.setBounds(490, 940, 20, 17);
 
         txtJa2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6357,7 +6357,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtJa2);
-        txtJa2.setBounds(370, 980, 59, 20);
+        txtJa2.setBounds(370, 980, 59, 27);
 
         txtIS1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6365,11 +6365,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtIS1);
-        txtIS1.setBounds(550, 980, 59, 20);
+        txtIS1.setBounds(550, 980, 59, 27);
 
         jLabel155.setText("II-LS");
         jInternalFrame1.getContentPane().add(jLabel155);
-        jLabel155.setBounds(640, 910, 30, 14);
+        jLabel155.setBounds(640, 910, 30, 17);
 
         jSeparator49.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator49.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6378,7 +6378,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel156.setText("0");
         jInternalFrame1.getContentPane().add(jLabel156);
-        jLabel156.setBounds(650, 940, 10, 14);
+        jLabel156.setBounds(650, 940, 10, 17);
 
         txtII1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6386,7 +6386,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtII1);
-        txtII1.setBounds(630, 980, 59, 20);
+        txtII1.setBounds(630, 980, 59, 27);
 
         jSeparator50.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator50.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6395,11 +6395,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel157.setText("FHIS");
         jInternalFrame1.getContentPane().add(jLabel157);
-        jLabel157.setBounds(730, 910, 30, 14);
+        jLabel157.setBounds(730, 910, 30, 17);
 
         jLabel158.setText("110°-115°");
         jInternalFrame1.getContentPane().add(jLabel158);
-        jLabel158.setBounds(720, 940, 50, 14);
+        jLabel158.setBounds(720, 940, 50, 17);
 
         txtFHIS1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6407,7 +6407,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtFHIS1);
-        txtFHIS1.setBounds(720, 980, 59, 20);
+        txtFHIS1.setBounds(720, 980, 59, 27);
 
         jSeparator51.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator51.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6421,11 +6421,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel159.setText("ANB");
         jInternalFrame1.getContentPane().add(jLabel159);
-        jLabel159.setBounds(830, 910, 30, 14);
+        jLabel159.setBounds(830, 910, 30, 17);
 
         jLabel160.setText("2°");
         jInternalFrame1.getContentPane().add(jLabel160);
-        jLabel160.setBounds(860, 940, 20, 14);
+        jLabel160.setBounds(860, 940, 20, 17);
 
         txtANB83.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6433,7 +6433,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtANB83);
-        txtANB83.setBounds(800, 980, 20, 20);
+        txtANB83.setBounds(800, 980, 20, 27);
 
         jSeparator53.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator53.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6447,19 +6447,19 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel161.setText("82°");
         jInternalFrame1.getContentPane().add(jLabel161);
-        jLabel161.setBounds(800, 940, 20, 14);
+        jLabel161.setBounds(800, 940, 20, 17);
 
         jLabel162.setText("80°");
         jInternalFrame1.getContentPane().add(jLabel162);
-        jLabel162.setBounds(830, 940, 20, 14);
+        jLabel162.setBounds(830, 940, 20, 17);
 
         jLabel163.setText("PALS");
         jInternalFrame1.getContentPane().add(jLabel163);
-        jLabel163.setBounds(920, 910, 30, 14);
+        jLabel163.setBounds(920, 910, 30, 17);
 
         jLabel164.setText("4 mm");
         jInternalFrame1.getContentPane().add(jLabel164);
-        jLabel164.setBounds(920, 940, 30, 14);
+        jLabel164.setBounds(920, 940, 30, 17);
 
         jSeparator55.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator55.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6477,7 +6477,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtPALS1);
-        txtPALS1.setBounds(900, 980, 59, 20);
+        txtPALS1.setBounds(900, 980, 59, 27);
 
         txtANB81.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6485,7 +6485,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtANB81);
-        txtANB81.setBounds(830, 980, 20, 20);
+        txtANB81.setBounds(830, 980, 20, 27);
 
         txtANB3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6493,11 +6493,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtANB3);
-        txtANB3.setBounds(860, 980, 20, 20);
+        txtANB3.setBounds(860, 980, 20, 27);
 
         jLabel165.setText("PALI");
         jInternalFrame1.getContentPane().add(jLabel165);
-        jLabel165.setBounds(1010, 910, 40, 14);
+        jLabel165.setBounds(1010, 910, 40, 17);
 
         jLabel166.setText("2 mm");
         jInternalFrame1.getContentPane().add(jLabel166);
@@ -6509,7 +6509,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtPALI1);
-        txtPALI1.setBounds(1000, 980, 59, 20);
+        txtPALI1.setBounds(1000, 980, 59, 27);
 
         jSeparator57.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator57.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6518,11 +6518,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel167.setText("PTB");
         jInternalFrame1.getContentPane().add(jLabel167);
-        jLabel167.setBounds(1100, 910, 30, 14);
+        jLabel167.setBounds(1100, 910, 30, 17);
 
         jLabel168.setText("-3 mm");
         jInternalFrame1.getContentPane().add(jLabel168);
-        jLabel168.setBounds(1090, 940, 30, 14);
+        jLabel168.setBounds(1090, 940, 30, 17);
 
         txtPTB1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6530,7 +6530,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
             }
         });
         jInternalFrame1.getContentPane().add(txtPTB1);
-        txtPTB1.setBounds(1090, 980, 59, 20);
+        txtPTB1.setBounds(1090, 980, 59, 27);
 
         jSeparator58.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator58.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -6544,45 +6544,45 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         lblnombre26.setText("Curva de Spee: ");
         jInternalFrame1.getContentPane().add(lblnombre26);
-        lblnombre26.setBounds(250, 1030, 80, 14);
+        lblnombre26.setBounds(250, 1030, 80, 17);
 
         chcurvaleve2.setText("Leve");
         jInternalFrame1.getContentPane().add(chcurvaleve2);
-        chcurvaleve2.setBounds(340, 1030, 60, 23);
+        chcurvaleve2.setBounds(340, 1030, 60, 24);
 
         chcurvamoderada2.setText("Moderada");
         jInternalFrame1.getContentPane().add(chcurvamoderada2);
-        chcurvamoderada2.setBounds(430, 1030, 80, 23);
+        chcurvamoderada2.setBounds(430, 1030, 80, 24);
 
         chcurvasevera1.setText("Severa");
         jInternalFrame1.getContentPane().add(chcurvasevera1);
-        chcurvasevera1.setBounds(530, 1030, 70, 23);
+        chcurvasevera1.setBounds(530, 1030, 70, 24);
 
         lblnombre27.setText("DSD:");
         jInternalFrame1.getContentPane().add(lblnombre27);
-        lblnombre27.setBounds(620, 1030, 40, 14);
+        lblnombre27.setBounds(620, 1030, 40, 17);
         jInternalFrame1.getContentPane().add(txtDSD1);
-        txtDSD1.setBounds(670, 1030, 60, 20);
+        txtDSD1.setBounds(670, 1030, 60, 27);
 
         lblnombre28.setText("mm.");
         jInternalFrame1.getContentPane().add(lblnombre28);
-        lblnombre28.setBounds(740, 1030, 30, 14);
+        lblnombre28.setBounds(740, 1030, 30, 17);
 
         lblnombre29.setText("Clasificación Maxilares:");
         jInternalFrame1.getContentPane().add(lblnombre29);
-        lblnombre29.setBounds(300, 1090, 110, 14);
+        lblnombre29.setBounds(300, 1090, 159, 17);
         jInternalFrame1.getContentPane().add(txtmaxilares1);
         txtmaxilares1.setBounds(420, 1090, 380, 20);
 
         lblnombre30.setText("Entorno Dental:");
         jInternalFrame1.getContentPane().add(lblnombre30);
-        lblnombre30.setBounds(340, 1130, 76, 14);
+        lblnombre30.setBounds(340, 1130, 111, 17);
         jInternalFrame1.getContentPane().add(txtEntornoD1);
         txtEntornoD1.setBounds(420, 1130, 380, 20);
 
         lblnombre31.setText("Bandas en:");
         jInternalFrame1.getContentPane().add(lblnombre31);
-        lblnombre31.setBounds(120, 1220, 60, 14);
+        lblnombre31.setBounds(120, 1220, 60, 17);
         jInternalFrame1.getContentPane().add(txtbandas1);
         txtbandas1.setBounds(190, 1220, 380, 20);
 
@@ -6594,43 +6594,43 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         lblnombre33.setText("Otros:");
         jInternalFrame1.getContentPane().add(lblnombre33);
-        lblnombre33.setBounds(140, 1280, 40, 14);
+        lblnombre33.setBounds(140, 1280, 40, 17);
         jInternalFrame1.getContentPane().add(txtotros1);
         txtotros1.setBounds(190, 1280, 380, 20);
 
         lblnombre34.setText("Aparato tipo:");
         jInternalFrame1.getContentPane().add(lblnombre34);
-        lblnombre34.setBounds(110, 1310, 70, 14);
+        lblnombre34.setBounds(110, 1310, 70, 17);
         jInternalFrame1.getContentPane().add(txtAparato1);
         txtAparato1.setBounds(190, 1310, 380, 20);
 
         lblnombre35.setText("Exodoncia:");
         jInternalFrame1.getContentPane().add(lblnombre35);
-        lblnombre35.setBounds(120, 1350, 60, 14);
+        lblnombre35.setBounds(120, 1350, 60, 17);
         jInternalFrame1.getContentPane().add(txtexodoncia1);
         txtexodoncia1.setBounds(190, 1350, 380, 20);
 
         lblnombre36.setText("Brackets:");
         jInternalFrame1.getContentPane().add(lblnombre36);
-        lblnombre36.setBounds(130, 1400, 50, 14);
+        lblnombre36.setBounds(130, 1400, 50, 17);
         jInternalFrame1.getContentPane().add(txtBrakets3);
         txtBrakets3.setBounds(190, 1400, 380, 20);
 
         lblnombre37.setText("RETENCIONES MX:");
         jInternalFrame1.getContentPane().add(lblnombre37);
-        lblnombre37.setBounds(90, 1440, 100, 14);
+        lblnombre37.setBounds(90, 1440, 100, 17);
         jInternalFrame1.getContentPane().add(txtBrakets4);
         txtBrakets4.setBounds(190, 1440, 510, 20);
 
         lblnombre38.setText("Secuencia de Arcos:");
         jInternalFrame1.getContentPane().add(lblnombre38);
-        lblnombre38.setBounds(640, 1400, 100, 14);
+        lblnombre38.setBounds(640, 1400, 100, 17);
         jInternalFrame1.getContentPane().add(txtsecuencia1);
         txtsecuencia1.setBounds(760, 1400, 380, 20);
 
         lblnombre39.setText("MD:");
         jInternalFrame1.getContentPane().add(lblnombre39);
-        lblnombre39.setBounds(730, 1440, 30, 14);
+        lblnombre39.setBounds(730, 1440, 30, 17);
         jInternalFrame1.getContentPane().add(txtBrakets5);
         txtBrakets5.setBounds(760, 1440, 380, 20);
 
@@ -6642,7 +6642,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jLabel170.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
         jLabel170.setText("Plan de Tratamiento");
         jInternalFrame1.getContentPane().add(jLabel170);
-        jLabel170.setBounds(500, 1180, 139, 17);
+        jLabel170.setBounds(500, 1180, 158, 17);
 
         jSeparator60.setBackground(new java.awt.Color(0, 0, 0));
         jInternalFrame1.getContentPane().add(jSeparator60);
@@ -6654,15 +6654,15 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel171.setText("Tomar imp.");
         jInternalFrame1.getContentPane().add(jLabel171);
-        jLabel171.setBounds(210, 1540, 60, 14);
+        jLabel171.setBounds(210, 1540, 60, 17);
 
         jLabel172.setText("Repetir Fotos");
         jInternalFrame1.getContentPane().add(jLabel172);
-        jLabel172.setBounds(210, 1510, 80, 14);
+        jLabel172.setBounds(210, 1510, 80, 17);
 
         jLabel173.setText("Tomar Rx");
         jInternalFrame1.getContentPane().add(jLabel173);
-        jLabel173.setBounds(210, 1570, 50, 14);
+        jLabel173.setBounds(210, 1570, 50, 17);
 
         jSeparator62.setForeground(new java.awt.Color(0, 0, 0));
         jInternalFrame1.getContentPane().add(jSeparator62);
@@ -6674,7 +6674,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         jLabel174.setText("Repetir Fotos");
         jInternalFrame1.getContentPane().add(jLabel174);
-        jLabel174.setBounds(800, 1240, 80, 14);
+        jLabel174.setBounds(800, 1240, 80, 17);
 
         jSeparator64.setForeground(new java.awt.Color(0, 0, 0));
         jInternalFrame1.getContentPane().add(jSeparator64);
