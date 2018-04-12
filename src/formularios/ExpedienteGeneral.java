@@ -2624,6 +2624,11 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
         btnGuardar.setText("Guardar");
         btnGuardar.setToolTipText("");
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnGuardarActionPerformed(evt);
+            }
+        });
         getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 980, 80, 60));
 
         pack();
@@ -3668,6 +3673,10 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private void jCheckBox363ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox363ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox363ActionPerformed
+
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
