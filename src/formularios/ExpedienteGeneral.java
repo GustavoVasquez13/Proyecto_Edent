@@ -6,7 +6,9 @@
 package formularios;
 
 import Clases.InsertarDatosBD;
+import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
+import javax.swing.JScrollPane;
 
 /**
  *
@@ -19,6 +21,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
      */
     public ExpedienteGeneral() {
         initComponents();
+        JScrollPane scroll = new JScrollPane(jScrollBar1);
     }
 
     /**
@@ -477,7 +480,10 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         btnGuardar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtapellido = new javax.swing.JTextField();
+        jScrollBar2 = new javax.swing.JScrollBar();
 
+        setEnabled(false);
+        setVisible(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         lbltitulo.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
@@ -2639,6 +2645,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         jLabel2.setText("Apellido:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
         getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 200, -1));
+        getContentPane().add(jScrollBar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 710, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3691,7 +3698,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
       String edad = this.txtedad.getText();
       InsertarDatosBD insertar = new InsertarDatosBD();
       insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
-      JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del proveedor y su telefono");        // TODO add your handling code here:
+      //JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del proveedor y su telefono");        // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarActionPerformed
 
 
@@ -4115,6 +4122,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
+    private javax.swing.JScrollBar jScrollBar2;
     private javax.swing.JSeparator jSeparator10;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
