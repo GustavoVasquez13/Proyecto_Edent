@@ -89,12 +89,12 @@ public class InsertarDatosBD {
     }
     
     //este metodo inserta los productos en la base de datos
-    public void insertProductos(String servicio,String descripcion){
+    public void insertProductos(String nombre,String descripcion){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO productos"
                     + "(`nombre_prodto`,`descripcion_prodto`) "
                     + "VALUES(?,?);");
-            pps.setString(1, servicio);
+            pps.setString(1, nombre);
             pps.setString(2, descripcion);
             JOptionPane.showMessageDialog(null, "Datos Guardados");
         } catch (SQLException ex) {
