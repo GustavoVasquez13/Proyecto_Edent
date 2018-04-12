@@ -5,6 +5,9 @@
  */
 package formularios;
 
+import Clases.InsertarDatosBD;
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author ricar
@@ -472,6 +475,8 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         lblnombre6 = new javax.swing.JLabel();
         txtnombre6 = new javax.swing.JTextField();
         btnGuardar = new javax.swing.JButton();
+        jLabel2 = new javax.swing.JLabel();
+        txtapellido = new javax.swing.JTextField();
 
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
@@ -484,19 +489,19 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
         lbltelefono.setText("Telefono:");
         getContentPane().add(lbltelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, -1, -1));
-        getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 100, 99, -1));
+        getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 99, -1));
 
         lbledad.setText("Edad:");
         getContentPane().add(lbledad, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, -1, -1));
-        getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 100, 99, -1));
+        getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 99, -1));
 
         lblnombre.setText("Nombre: ");
-        getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, -1, -1));
-        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 130, 284, -1));
+        getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, -1, -1));
+        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 160, -1));
 
         lbldireccion.setText("Dirección: ");
         getContentPane().add(lbldireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, -1, -1));
-        getContentPane().add(txtdirección, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 170, 531, 53));
+        getContentPane().add(txtdirección, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 531, 53));
 
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2600,27 +2605,27 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
         lblnombre1.setText("Motivo de la Consulta: ");
         getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 610, -1, -1));
-        getContentPane().add(txtnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 610, 380, -1));
+        getContentPane().add(txtnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 600, 380, -1));
 
         lblnombre2.setText("Historia Medica:");
         getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 650, 80, -1));
-        getContentPane().add(txtnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 650, 380, 50));
+        getContentPane().add(txtnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 640, 380, 50));
 
         lblnombre3.setText("Historia Odontologica:");
         getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 710, -1, -1));
-        getContentPane().add(txtnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 710, 380, 40));
+        getContentPane().add(txtnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 710, 380, 40));
 
         lblnombre4.setText("Examen Clinico:");
-        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 760, 80, -1));
-        getContentPane().add(txtnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 760, 380, -1));
+        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 760, 120, -1));
+        getContentPane().add(txtnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 760, 380, -1));
 
         lblnombre5.setText("DX Odontologico:");
-        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 790, 90, -1));
-        getContentPane().add(txtnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 790, 380, 70));
+        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 790, 130, -1));
+        getContentPane().add(txtnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 790, 380, 70));
 
         lblnombre6.setText("Presupuesto:");
-        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 890, 70, 10));
-        getContentPane().add(txtnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 880, 380, 70));
+        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 870, 140, 20));
+        getContentPane().add(txtnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 870, 380, 70));
 
         btnGuardar.setText("Guardar");
         btnGuardar.setToolTipText("");
@@ -2629,7 +2634,11 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
                 btnGuardarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(670, 980, 80, 60));
+        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 470, 80, 60));
+
+        jLabel2.setText("Apellido:");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
+        getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 200, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3675,7 +3684,14 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jCheckBox363ActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        // TODO add your handling code here:
+ String nombre = this.txtnombre.getText().toUpperCase();
+      String apellido = this.txtapellido.getText().toUpperCase();
+      String direccion = this.txtdirección.getText().toUpperCase();
+      String telefono = this.txttelefono.getText().toUpperCase();
+      String edad = this.txtedad.getText();
+      InsertarDatosBD insertar = new InsertarDatosBD();
+      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
+      JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del proveedor y su telefono");        // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarActionPerformed
 
 
@@ -4054,6 +4070,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel15;
     private javax.swing.JLabel jLabel16;
     private javax.swing.JLabel jLabel17;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
@@ -4115,6 +4132,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lblnombre6;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltitulo;
+    private javax.swing.JTextField txtapellido;
     private javax.swing.JTextField txtdirección;
     private javax.swing.JTextField txtedad;
     private javax.swing.JTextField txtnombre;
