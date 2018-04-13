@@ -14,7 +14,7 @@ public class frmPagoServBasicos extends internalFrameImagen {
 ArrayList arraytipo = new ArrayList();
     public frmPagoServBasicos() {
         initComponents();
-        setImagenw("img2.jpg");
+        //setImagenw("img2.jpg");
         consultar();
         consu();
     }
