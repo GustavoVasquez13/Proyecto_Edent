@@ -38,6 +38,9 @@ public class frmProducto extends javax.swing.JInternalFrame {
         btnGuardar = new javax.swing.JButton();
         btnCerrar = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+
         jLabel1.setFont(new java.awt.Font("Cambria Math", 1, 24)); // NOI18N
         jLabel1.setText("Agregar nuevo producto");
 
