@@ -21,7 +21,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
      */
     public ExpedienteGeneral() {
         initComponents();
-        JScrollPane scroll = new JScrollPane(jScrollBar1);
+       
     }
 
     /**
@@ -466,21 +466,23 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         jLabel77 = new javax.swing.JLabel();
         jSeparator10 = new javax.swing.JSeparator();
         lblnombre1 = new javax.swing.JLabel();
-        txtnombre1 = new javax.swing.JTextField();
+        txtMotivoC = new javax.swing.JTextField();
         lblnombre2 = new javax.swing.JLabel();
-        txtnombre2 = new javax.swing.JTextField();
+        txtHistoriaM = new javax.swing.JTextField();
         lblnombre3 = new javax.swing.JLabel();
-        txtnombre3 = new javax.swing.JTextField();
+        txtHistoriaO = new javax.swing.JTextField();
         lblnombre4 = new javax.swing.JLabel();
-        txtnombre4 = new javax.swing.JTextField();
+        txtExamenC = new javax.swing.JTextField();
         lblnombre5 = new javax.swing.JLabel();
-        txtnombre5 = new javax.swing.JTextField();
+        txtDX = new javax.swing.JTextField();
         lblnombre6 = new javax.swing.JLabel();
-        txtnombre6 = new javax.swing.JTextField();
+        txtpresupuesto = new javax.swing.JTextField();
         btnGuardar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtapellido = new javax.swing.JTextField();
-        jScrollBar2 = new javax.swing.JScrollBar();
+        jSeparator1 = new javax.swing.JSeparator();
+        jSeparator2 = new javax.swing.JSeparator();
+        fi = new com.toedter.calendar.JDateChooser();
 
         setEnabled(false);
         setVisible(true);
@@ -491,7 +493,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         getContentPane().add(lbltitulo, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 40, -1, -1));
 
         jLabel1.setText("Fecha:");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 100, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 100, -1, -1));
 
         lbltelefono.setText("Telefono:");
         getContentPane().add(lbltelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, -1, -1));
@@ -502,7 +504,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 99, -1));
 
         lblnombre.setText("Nombre: ");
-        getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 140, -1, -1));
+        getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
         getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 160, -1));
 
         lbldireccion.setText("Dirección: ");
@@ -2610,28 +2612,28 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         getContentPane().add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 490, 150));
 
         lblnombre1.setText("Motivo de la Consulta: ");
-        getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 610, -1, -1));
-        getContentPane().add(txtnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 600, 380, -1));
+        getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 130, -1, -1));
+        getContentPane().add(txtMotivoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 120, 350, -1));
 
         lblnombre2.setText("Historia Medica:");
-        getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 650, 80, -1));
-        getContentPane().add(txtnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 640, 380, 50));
+        getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 170, 80, -1));
+        getContentPane().add(txtHistoriaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 160, 350, 50));
 
         lblnombre3.setText("Historia Odontologica:");
-        getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 710, -1, -1));
-        getContentPane().add(txtnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 710, 380, 40));
+        getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 230, -1, -1));
+        getContentPane().add(txtHistoriaO, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 230, 350, 40));
 
         lblnombre4.setText("Examen Clinico:");
-        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 760, 120, -1));
-        getContentPane().add(txtnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 760, 380, -1));
+        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 280, 120, -1));
+        getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 280, 350, -1));
 
         lblnombre5.setText("DX Odontologico:");
-        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 790, 130, -1));
-        getContentPane().add(txtnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 790, 380, 70));
+        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 310, 130, -1));
+        getContentPane().add(txtDX, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 310, 350, 70));
 
         lblnombre6.setText("Presupuesto:");
-        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 870, 140, 20));
-        getContentPane().add(txtnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 870, 380, 70));
+        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 390, 80, 20));
+        getContentPane().add(txtpresupuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 390, 350, 70));
 
         btnGuardar.setText("Guardar");
         btnGuardar.setToolTipText("");
@@ -2640,12 +2642,19 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
                 btnGuardarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 470, 80, 60));
+        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 520, 80, 60));
 
         jLabel2.setText("Apellido:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
         getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 200, -1));
-        getContentPane().add(jScrollBar2, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 710, -1, -1));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 250, -1, -1));
+
+        jSeparator2.setForeground(new java.awt.Color(0, 0, 0));
+        jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
+        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 10, 630));
+
+        fi.setDateFormatString("yyyy-MM-dd");
+        getContentPane().add(fi, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 110, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3691,7 +3700,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     }//GEN-LAST:event_jCheckBox363ActionPerformed
 
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
- String nombre = this.txtnombre.getText().toUpperCase();
+      String nombre = this.txtnombre.getText().toUpperCase();
       String apellido = this.txtapellido.getText().toUpperCase();
       String direccion = this.txtdirección.getText().toUpperCase();
       String telefono = this.txttelefono.getText().toUpperCase();
@@ -3704,6 +3713,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
+    private com.toedter.calendar.JDateChooser fi;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox100;
@@ -4122,8 +4132,9 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
-    private javax.swing.JScrollBar jScrollBar2;
+    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
+    private javax.swing.JSeparator jSeparator2;
     private javax.swing.JSeparator jSeparator4;
     private javax.swing.JSeparator jSeparator5;
     private javax.swing.JSeparator jSeparator7;
@@ -4140,16 +4151,16 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lblnombre6;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltitulo;
+    private javax.swing.JTextField txtDX;
+    private javax.swing.JTextField txtExamenC;
+    private javax.swing.JTextField txtHistoriaM;
+    private javax.swing.JTextField txtHistoriaO;
+    private javax.swing.JTextField txtMotivoC;
     private javax.swing.JTextField txtapellido;
     private javax.swing.JTextField txtdirección;
     private javax.swing.JTextField txtedad;
     private javax.swing.JTextField txtnombre;
-    private javax.swing.JTextField txtnombre1;
-    private javax.swing.JTextField txtnombre2;
-    private javax.swing.JTextField txtnombre3;
-    private javax.swing.JTextField txtnombre4;
-    private javax.swing.JTextField txtnombre5;
-    private javax.swing.JTextField txtnombre6;
+    private javax.swing.JTextField txtpresupuesto;
     private javax.swing.JTextField txttelefono;
     // End of variables declaration//GEN-END:variables
 }
