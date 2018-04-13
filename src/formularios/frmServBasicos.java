@@ -1,18 +1,30 @@
 package formularios;
 
+import Clases.ConsultarDatosBD;
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 
 public class frmServBasicos extends internalFrameImagen {
 
     public frmServBasicos() {
         initComponents();
         //se utiliza el metodo setImagenw de la clase internalFrameImagen ya que esta clase fue heredada en este formulario
-        setImagenw("img2.jpg");
+        //setImagenw("img2.jpg");
+        mostrarServ();
     }
-
+public void mostrarServ() {
+        try {
+            DefaultTableModel modelo;
+            ConsultarDatosBD funcion = new ConsultarDatosBD();
+            modelo = funcion.mostrarServicios();
+            jtServicios.setModel(modelo);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Prestamo");
+        }
+    }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -51,7 +63,6 @@ public class frmServBasicos extends internalFrameImagen {
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnGuardar.setForeground(new java.awt.Color(0, 102, 204));
-        btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnGuardar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -69,7 +80,6 @@ public class frmServBasicos extends internalFrameImagen {
 
         btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnCancelar.setForeground(new java.awt.Color(0, 102, 204));
-        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -124,7 +134,7 @@ public class frmServBasicos extends internalFrameImagen {
                             .addComponent(txtCorreo)
                             .addComponent(txtProveedor)
                             .addComponent(txtServicio))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 70, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
