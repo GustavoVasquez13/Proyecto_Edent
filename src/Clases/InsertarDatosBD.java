@@ -96,6 +96,8 @@ public class InsertarDatosBD {
                     + "VALUES(?,?);");
             pps.setString(1, nombre);
             pps.setString(2, descripcion);
+            pps.executeUpdate();
+            
             JOptionPane.showMessageDialog(null, "Datos Guardados");
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
