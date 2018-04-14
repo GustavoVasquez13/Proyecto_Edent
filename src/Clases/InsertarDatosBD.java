@@ -32,14 +32,11 @@ public class InsertarDatosBD {
             con.closeBd();
         }
     }
-     public void insertUsuarioA(String nom,String apel,String us,String con,String tip,String corre){
+    
+    public void insertUsuarioA(String nom,String apel,String us,String con,String tip,String corre){
      try {
             PreparedStatement pst = cn.prepareStatement( "INSERT INTO usuario (`nombre_usuario`,`apellido_usuario`,`usuario`,`clave`,`TipoUsuario_id_tipoUsuario`,`correo_usuario`) "
             + "VALUES(?,?,?,?,?,?);");
-
-        
-
-            
             pst.setString(1, nom);
             pst.setString(2, apel);
             pst.setString(3, us);
@@ -54,14 +51,11 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
         }
      }
-     public void insertTipoU(String ti){
+     
+    public void insertTipoU(String ti){
      try {
            PreparedStatement pst = cn.prepareStatement("INSERT INTO tipousuario (`tipo_usuario`) "
             + "VALUES(?);");
-
-           
-
-           
             pst.setString(1, ti);
                pst.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados");
@@ -104,6 +98,7 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
         }
     }
+    
      public void insertarPaciente(String nombre, String apellido ,String direccion, String telefono,String edad){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,`direccion_pacte`,`tel_pacte`,`DientesPacte_id_diente`,`TipoPaciente_id_tipoPaciente`,`edad`) "
@@ -122,7 +117,9 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
         }
     }
-       public void insertarPacienteO(String nombre, String apellido ,String direccion, String telefono,String edad){
+     
+     // metodo insertar paciente odontologico
+    public void insertarPacienteO(String nombre, String apellido ,String direccion, String telefono,String edad){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,`direccion_pacte`,`tel_pacte`,`DientesPacte_id_diente`,`TipoPaciente_id_tipoPaciente`,`edad`) "
                     + "VALUES(?,?,?,?,?,?,?);");
@@ -141,7 +138,8 @@ public class InsertarDatosBD {
         }
     }
        
-       public void insertarPacienteGC(String motivoC, String fecha ,Double presupuesto, String HistoriaM,String HistoriaO,
+       //metodo de expediente general
+    public void insertarPacienteGC(String motivoC, String fecha ,Double presupuesto, String HistoriaM,String HistoriaO,
                                      String ExamenC, String DXodontologico){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO consulta(`motivo_consulta`,`fecha_consulta`,`PacienteN_id_pacienteN`,`Total_pagar`,`HistoriaM`,`HistoriaO`,`ExamenC`,`DXodon`) "
@@ -159,6 +157,22 @@ public class InsertarDatosBD {
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+        }
+    }
+       
+       //metodo para insertar un pago de los servicios basicos
+    public void insertPagoServicioBasic(String servicio,String proveedor,double costo,String fecha){
+        try {
+            PreparedStatement pps = cn.prepareStatement("insert into serviciobasico(`costo_servicio`,`fechaPago_servicio`,`TipoServicio_id_tipoServicio`) "
+                    + "VALUES(?,?,(select id_tipoServicio from tiposervicio where nombre_servicio='"+servicio+"' and proveedor_servicio='"+proveedor+"'));");
+            pps.setDouble(1, costo);
+            pps.setString(2, fecha);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados");
+            con.closeBd();
+        } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
         }
     }
 }
