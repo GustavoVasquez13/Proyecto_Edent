@@ -6,6 +6,7 @@
 package formularios;
 
 import Clases.InsertarDatosBD;
+import java.util.Calendar;
 import javax.swing.JInternalFrame;
 import javax.swing.JOptionPane;
 import javax.swing.JScrollPane;
@@ -482,8 +483,10 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         txtapellido = new javax.swing.JTextField();
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
-        fi = new com.toedter.calendar.JDateChooser();
+        fecha = new com.toedter.calendar.JDateChooser();
 
+        setClosable(true);
+        setIconifiable(true);
         setEnabled(false);
         setVisible(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -2653,8 +2656,8 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         jSeparator2.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 10, 630));
 
-        fi.setDateFormatString("yyyy-MM-dd");
-        getContentPane().add(fi, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 110, -1));
+        fecha.setDateFormatString("yyyy-MM-dd");
+        getContentPane().add(fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 110, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3706,21 +3709,38 @@ public void limpiarTxt(){
         txtedad.setText("");
     }
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-      String nombre = this.txtnombre.getText().toUpperCase();
-      String apellido = this.txtapellido.getText().toUpperCase();
-      String direccion = this.txtdirección.getText().toUpperCase();
-      String telefono = this.txttelefono.getText().toUpperCase();
-      String edad = this.txtedad.getText();
-      InsertarDatosBD insertar = new InsertarDatosBD();
-      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
+//      String nombre = this.txtnombre.getText().toUpperCase();
+//      String apellido = this.txtapellido.getText().toUpperCase();
+//      String direccion = this.txtdirección.getText().toUpperCase();
+//      String telefono = this.txttelefono.getText().toUpperCase();
+//      String edad = this.txtedad.getText();
+//      InsertarDatosBD insertar = new InsertarDatosBD();
+//      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
+//      
+      String motivo = this.txtMotivoC.getText().toUpperCase();
+//      String fecha = this.fecha.getDateFormatString();
+      Double total = Double.parseDouble( this.txtpresupuesto.getText());
+      String historiam = this.txtHistoriaM.getText().toUpperCase();
+      String historiao = this.txtHistoriaO.getText().toUpperCase();
+      String examen = this.txtExamenC.getText().toUpperCase();
+      String dx = this.txtDX.getText().toUpperCase();
+      
+      String dia = Integer.toString(fecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes = Integer.toString(fecha.getCalendar().get(Calendar.MONTH) + 1);
+      String year = Integer.toString(fecha.getCalendar().get(Calendar.YEAR));
+      String fechaA = (year + "-" + mes+ "-" + dia);
+      String date = fechaA; 
+      
+      InsertarDatosBD insertar2 = new InsertarDatosBD();
+      insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx);
       limpiarTxt();
-      //JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del proveedor y su telefono");        // TODO add your handling code here:
+      //JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del proveedor y su telefono");     
     }//GEN-LAST:event_btnGuardarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
-    private com.toedter.calendar.JDateChooser fi;
+    private com.toedter.calendar.JDateChooser fecha;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox100;
