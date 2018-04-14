@@ -3709,14 +3709,14 @@ public void limpiarTxt(){
         txtedad.setText("");
     }
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-//      String nombre = this.txtnombre.getText().toUpperCase();
-//      String apellido = this.txtapellido.getText().toUpperCase();
-//      String direccion = this.txtdirección.getText().toUpperCase();
-//      String telefono = this.txttelefono.getText().toUpperCase();
-//      String edad = this.txtedad.getText();
-//      InsertarDatosBD insertar = new InsertarDatosBD();
-//      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
-//      
+      String nombre = this.txtnombre.getText().toUpperCase();
+      String apellido = this.txtapellido.getText().toUpperCase();
+      String direccion = this.txtdirección.getText().toUpperCase();
+      String telefono = this.txttelefono.getText().toUpperCase();
+      String edad = this.txtedad.getText();
+      InsertarDatosBD insertar = new InsertarDatosBD();
+      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
+      
       String motivo = this.txtMotivoC.getText().toUpperCase();
 //      String fecha = this.fecha.getDateFormatString();
       Double total = Double.parseDouble( this.txtpresupuesto.getText());
