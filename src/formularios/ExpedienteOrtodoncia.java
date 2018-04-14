@@ -1138,6 +1138,8 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         txtapellido = new javax.swing.JTextField();
         jSeparator71 = new javax.swing.JSeparator();
 
+        setClosable(true);
+        setIconifiable(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel82.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
