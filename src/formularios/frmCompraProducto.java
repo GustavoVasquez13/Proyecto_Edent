@@ -18,6 +18,8 @@ public class frmCompraProducto extends javax.swing.JInternalFrame {
     /**
      * Creates new form frmCompraProducto
      */
+    int codigoProv;
+    int codigoProd;
     public frmCompraProducto() {
         initComponents();
         mostrarProv();
@@ -72,7 +74,7 @@ public void mostrarProd() {
         jtProv = new javax.swing.JTable();
         txtProveedor = new javax.swing.JTextField();
         jLabel8 = new javax.swing.JLabel();
-        txtNombreProd = new javax.swing.JTextField();
+        txtProducto = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         jScrollPane2 = new javax.swing.JScrollPane();
         jtProd = new javax.swing.JTable();
@@ -135,6 +137,11 @@ public void mostrarProd() {
 
             }
         ));
+        jtProv.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jtProvMouseClicked(evt);
+            }
+        });
         jScrollPane1.setViewportView(jtProv);
 
         jLabel8.setText("Proveedor seleccionado:");
@@ -152,20 +159,21 @@ public void mostrarProd() {
 
             }
         ));
+        jtProd.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jtProdMouseClicked(evt);
+            }
+        });
         jScrollPane2.setViewportView(jtProd);
 
         jLabel9.setText("Fecha de compra:");
 
-        fechaPago.setDateFormatString("yyyy-MM-dd");
+        fechaPago.setDateFormatString("dd-MM-yyyy");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(144, 144, 144)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -191,7 +199,7 @@ public void mostrarProd() {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtNombreProd, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
@@ -227,6 +235,10 @@ public void mostrarProd() {
                             .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                             .addComponent(fechaPago, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(40, 40, 40))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(392, 392, 392))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -256,7 +268,7 @@ public void mostrarProd() {
                         .addGap(18, 18, 18)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
-                            .addComponent(txtNombreProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                            .addComponent(txtProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addGap(26, 26, 26)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel7)
@@ -273,7 +285,7 @@ public void mostrarProd() {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(fechaPago, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 57, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -298,6 +310,23 @@ public void mostrarProd() {
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
         dispose();
     }//GEN-LAST:event_btnCerrarActionPerformed
+
+    private void jtProvMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtProvMouseClicked
+        int filaSelect = jtProv.getSelectedRow();
+        String codigoProve = (String)jtProv.getValueAt(filaSelect, 0);
+        codigoProv=Integer.parseInt(codigoProve);
+        String nombreProv = (String)jtProv.getValueAt(filaSelect, 1);
+        txtProveedor.setText(nombreProv);
+        
+    }//GEN-LAST:event_jtProvMouseClicked
+
+    private void jtProdMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtProdMouseClicked
+        int filaSelect = jtProd.getSelectedRow();
+        String codigoProdu = (String)jtProd.getValueAt(filaSelect, 0);
+        codigoProd = Integer.parseInt(codigoProdu);
+        String nombreProd = (String)jtProd.getValueAt(filaSelect, 1);
+        txtProducto.setText(nombreProd);
+    }//GEN-LAST:event_jtProdMouseClicked
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -324,7 +353,7 @@ public void mostrarProd() {
     private javax.swing.JTextField txtCantidad;
     private javax.swing.JTextField txtCosto;
     private javax.swing.JTextField txtCosto1;
-    private javax.swing.JTextField txtNombreProd;
+    private javax.swing.JTextField txtProducto;
     private javax.swing.JTextField txtProveedor;
     // End of variables declaration//GEN-END:variables
 }
