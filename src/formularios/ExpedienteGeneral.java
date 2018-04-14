@@ -3698,7 +3698,13 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private void jCheckBox363ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox363ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox363ActionPerformed
-
+public void limpiarTxt(){
+        txtnombre.setText("");
+        txtapellido.setText("");
+        txtdirección.setText("");
+        txttelefono.setText("");
+        txtedad.setText("");
+    }
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
       String nombre = this.txtnombre.getText().toUpperCase();
       String apellido = this.txtapellido.getText().toUpperCase();
@@ -3707,6 +3713,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
       String edad = this.txtedad.getText();
       InsertarDatosBD insertar = new InsertarDatosBD();
       insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
+      limpiarTxt();
       //JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del proveedor y su telefono");        // TODO add your handling code here:
     }//GEN-LAST:event_btnGuardarActionPerformed
 
