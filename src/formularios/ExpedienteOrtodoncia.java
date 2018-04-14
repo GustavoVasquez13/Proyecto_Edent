@@ -8969,7 +8969,13 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
     private void txtdirecciónActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdirecciónActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtdirecciónActionPerformed
-
+public void limpiarTxt(){
+        txtnombre.setText("");
+        txtapellido.setText("");
+        txtdirección.setText("");
+        txttelefono.setText("");
+        txtedad.setText("");
+    }
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
       String nombre = this.txtnombre.getText().toUpperCase();
       String apellido = this.txtapellido.getText().toUpperCase();
@@ -8978,6 +8984,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
       String edad = this.txtedad.getText();
       InsertarDatosBD insertar = new InsertarDatosBD();
       insertar.insertarPacienteO(nombre, apellido, direccion, telefono, edad);
+      limpiarTxt();
     }//GEN-LAST:event_btnguardarActionPerformed
 
 
