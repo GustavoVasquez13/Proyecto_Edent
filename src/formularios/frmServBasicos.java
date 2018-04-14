@@ -187,6 +187,7 @@ public void mostrarServ() {
             InsertarDatosBD insertDatos = new InsertarDatosBD();
             insertDatos.insertServicioBasic(servicio,proveedor,correo,telefono);
             limpiarTxt();
+            mostrarServ();
         }else{
             JOptionPane.showMessageDialog(null, "Debe Ingresar un Servicio y un Proveedor");
         }
