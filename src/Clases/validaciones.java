@@ -13,5 +13,14 @@ public class validaciones {
               evt.consume(); 
               JOptionPane.showMessageDialog(null,"INGRESE SOLO NUMEROS"); 
           } 
-    } 
+    }
+   //metodo para validar que no se ingresen numeros en un campo al precionar una tecla
+   public void validarCaracter(java.awt.event.KeyEvent evt){
+        char c=evt.getKeyChar(); 
+          if(Character.isDigit(c)) { 
+              Toolkit.getDefaultToolkit().beep();
+              evt.consume(); 
+              JOptionPane.showMessageDialog(null,"NO SE ADMITEN NÚMEROS"); 
+          } 
+    }
 }
