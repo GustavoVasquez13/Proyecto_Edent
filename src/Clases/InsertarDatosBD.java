@@ -2,6 +2,7 @@ package Clases;
 
 import formularios.frmServBasicos;
 import java.sql.Connection;
+//import java.sql.Date;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -17,8 +18,8 @@ public class InsertarDatosBD {
     //este metodo ingresa los datos recopilados del formulario de servicios basicos en la BD
     public void insertServicioBasic(String servicio,String proveedor,String correo,String telefono){
         try {
-            PreparedStatement pps = cn.prepareStatement("INSERT INTO tiposervicio(`nombre_servicio`,`proveedor_servicio`,`correo_provS`,`tel_provS`) "
-                    + "VALUES(?,?,?,?);");
+            PreparedStatement pps = cn.prepareStatement("INSERT INTO tiposervicio(`nombre_servicio`,"
+                    + "`proveedor_servicio`,`correo_provS`,`tel_provS`) VALUES(?,?,?,?);");
             pps.setString(1, servicio);
             pps.setString(2, proveedor);
             pps.setString(3, correo);
@@ -33,10 +34,12 @@ public class InsertarDatosBD {
         }
     }
     
+    //Este metodo no permite cerrar la coneccion a la base de datos
     public void insertUsuarioA(String nom,String apel,String us,String con,String tip,String corre){
      try {
-            PreparedStatement pst = cn.prepareStatement( "INSERT INTO usuario (`nombre_usuario`,`apellido_usuario`,`usuario`,`clave`,`TipoUsuario_id_tipoUsuario`,`correo_usuario`) "
-            + "VALUES(?,?,?,?,?,?);");
+            PreparedStatement pst = cn.prepareStatement( "INSERT INTO usuario (`nombre_usuario`,`apellido_usuario`"
+                    + ",`usuario`,`clave`,`TipoUsuario_id_tipoUsuario`,`correo_usuario`) "
+                    + "VALUES(?,?,?,?,?,?);");
             pst.setString(1, nom);
             pst.setString(2, apel);
             pst.setString(3, us);
@@ -46,25 +49,29 @@ public class InsertarDatosBD {
 
              pst.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados");
+            //con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            //con.closeBd();
         }
      }
      
     public void insertTipoU(String ti){
      try {
            PreparedStatement pst = cn.prepareStatement("INSERT INTO tipousuario (`tipo_usuario`) "
-            + "VALUES(?);");
+                + "VALUES(?);");
             pst.setString(1, ti);
-               pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Datos Guardados");
+            pst.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados");    
+            con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
         }
      }
-     
+    //Este medoto inserta un nuevo proveedor a la base de datos en el formulario frmProveedores 
     public void insertProveedor(String servicio,String direccion,String correo,String telefono){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO proveedores"
@@ -75,14 +82,16 @@ public class InsertarDatosBD {
             pps.setString(3, correo);
             pps.setString(4, telefono);
             pps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Datos Guardados");
+            JOptionPane.showMessageDialog(null, "Datos Guardados Correctamente");
+            con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
         }
     }
     
-    //este metodo inserta los productos en la base de datos
+    //este metodo inserta los productos en la base de datos en el formulario frmProducto
     public void insertProductos(String nombre,String descripcion){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO productos"
@@ -90,18 +99,20 @@ public class InsertarDatosBD {
                     + "VALUES(?,?);");
             pps.setString(1, nombre);
             pps.setString(2, descripcion);
-            pps.executeUpdate();
-            
+            pps.executeUpdate();            
             JOptionPane.showMessageDialog(null, "Datos Guardados");
+            con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
         }
     }
     
      public void insertarPaciente(String nombre, String apellido ,String direccion, String telefono,String edad){
         try {
-            PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,`direccion_pacte`,`tel_pacte`,`DientesPacte_id_diente`,`TipoPaciente_id_tipoPaciente`,`edad`) "
+            PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,"
+                    + "`direccion_pacte`,`tel_pacte`,`DientesPacte_id_diente`,`TipoPaciente_id_tipoPaciente`,`edad`)"
                     + "VALUES(?,?,?,?,?,?,?);");
             pps.setString(1, nombre);
             pps.setString(2, apellido);
@@ -112,16 +123,19 @@ public class InsertarDatosBD {
             pps.setString(7, edad);
             pps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados");
+            con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
         }
     }
      
      // metodo insertar paciente odontologico
     public void insertarPacienteO(String nombre, String apellido ,String direccion, String telefono,String edad){
         try {
-            PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,`direccion_pacte`,`tel_pacte`,`DientesPacte_id_diente`,`TipoPaciente_id_tipoPaciente`,`edad`) "
+            PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,"
+                    + "`direccion_pacte`,`tel_pacte`,`DientesPacte_id_diente`,`TipoPaciente_id_tipoPaciente`,`edad`) "
                     + "VALUES(?,?,?,?,?,?,?);");
             pps.setString(1, nombre);
             pps.setString(2, apellido);
@@ -132,9 +146,11 @@ public class InsertarDatosBD {
             pps.setString(7, edad);
             pps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados");
+            con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
         }
     }
        
@@ -142,8 +158,9 @@ public class InsertarDatosBD {
     public void insertarPacienteGC(String motivoC, String fecha ,Double presupuesto, String HistoriaM,String HistoriaO,
                                      String ExamenC, String DXodontologico){
         try {
-            PreparedStatement pps = cn.prepareStatement("INSERT INTO consulta(`motivo_consulta`,`fecha_consulta`,`PacienteN_id_pacienteN`,`Total_pagar`,`HistoriaM`,`HistoriaO`,`ExamenC`,`DXodon`) "
-                    + "VALUES(?,?,?,?,?,?,?,?);");
+            PreparedStatement pps = cn.prepareStatement("INSERT INTO consulta(`motivo_consulta`,"
+                    + "`fecha_consulta`,`PacienteN_id_pacienteN`,`Total_pagar`,`HistoriaM`,`HistoriaO`,"
+                    + "`ExamenC`,`DXodon`) VALUES(?,?,?,?,?,?,?,?);");
             pps.setString(1, motivoC);
             pps.setString(2, fecha);
             pps.setString(3, "4");
@@ -154,23 +171,51 @@ public class InsertarDatosBD {
             pps.setString(8, DXodontologico);
             pps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados Exitosamente");
+            con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
         }
     }
        
        //metodo para insertar un pago de los servicios basicos
     public void insertPagoServicioBasic(String servicio,String proveedor,double costo,String fecha){
         try {
-            PreparedStatement pps = cn.prepareStatement("insert into serviciobasico(`costo_servicio`,`fechaPago_servicio`,`TipoServicio_id_tipoServicio`) "
-                    + "VALUES(?,?,(select id_tipoServicio from tiposervicio where nombre_servicio='"+servicio+"' and proveedor_servicio='"+proveedor+"'));");
+            PreparedStatement pps = cn.prepareStatement("insert into serviciobasico(`costo_servicio`,"
+                    + "`fechaPago_servicio`,`TipoServicio_id_tipoServicio`) VALUES(?,?,"
+                    + "(select id_tipoServicio from tiposervicio where nombre_servicio='"+servicio+""
+                            + "' and proveedor_servicio='"+proveedor+"'));");
             pps.setDouble(1, costo);
             pps.setString(2, fecha);
             pps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados");
             con.closeBd();
         } catch (SQLException ex) {
+            JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
+        }
+    }
+    
+    //este metodo inserta los productos en la base de datos y es utilizado por el formulario frmComprarProductos
+    public void insertComprasProduc(int idProd, double costo, int cantidad, String marca, 
+            String fechaComp, int idProv){
+        try {
+            PreparedStatement pps = cn.prepareStatement("INSERT INTO  detallecompra"
+                    + "(`productos_id_prodto`, `costo_prodto`, "
+                    + "`cantidad_prodto`, `marca_producto`, `fecha_compra`, "
+                    + "`Proveedores_id_proveedor`)"+ "VALUES(?,?,?,?,?,?);");
+            pps.setInt(1, idProd);
+            pps.setDouble(2, costo);
+            pps.setInt(3, cantidad);
+            pps.setString(4, marca);
+            pps.setString(5, fechaComp);
+            pps.setInt(6, idProv);
+            pps.executeUpdate();            
+            JOptionPane.showMessageDialog(null, "Datos Guardados");
+            con.closeBd();
+        } catch (SQLException ex) {
+            Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
             con.closeBd();
         }
