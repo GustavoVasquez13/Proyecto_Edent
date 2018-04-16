@@ -40,15 +40,15 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         lbldireccion1 = new javax.swing.JLabel();
         txtdirección = new javax.swing.JTextField();
         lblnombre1 = new javax.swing.JLabel();
-        txtnombre1 = new javax.swing.JTextField();
+        txtMotivoC = new javax.swing.JTextField();
         lblnombre2 = new javax.swing.JLabel();
-        txtnombre2 = new javax.swing.JTextField();
+        txtHistoriaM = new javax.swing.JTextField();
         lblnombre3 = new javax.swing.JLabel();
-        txtnombre3 = new javax.swing.JTextField();
+        txtMotivoO = new javax.swing.JTextField();
         lblnombre4 = new javax.swing.JLabel();
-        txtnombre4 = new javax.swing.JTextField();
+        txtExamenC = new javax.swing.JTextField();
         lblnombre5 = new javax.swing.JLabel();
-        txtnombre5 = new javax.swing.JTextField();
+        txtDX = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
         jCheckBox3 = new javax.swing.JCheckBox();
@@ -556,11 +556,11 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         lblnombre17 = new javax.swing.JLabel();
         txtBrakets = new javax.swing.JTextField();
         lblnombre19 = new javax.swing.JLabel();
-        txtBrakets1 = new javax.swing.JTextField();
+        txtRetenciones = new javax.swing.JTextField();
         lblnombre18 = new javax.swing.JLabel();
         txtsecuencia = new javax.swing.JTextField();
         lblnombre20 = new javax.swing.JLabel();
-        txtBrakets2 = new javax.swing.JTextField();
+        txtMD = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jLabel83 = new javax.swing.JLabel();
         jSeparator28 = new javax.swing.JSeparator();
@@ -1133,7 +1133,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         jSeparator70 = new javax.swing.JSeparator();
         txtrocabado = new javax.swing.JTextField();
         btnguardar = new javax.swing.JButton();
-        fi = new com.toedter.calendar.JDateChooser();
+        fecha = new com.toedter.calendar.JDateChooser();
         lblnombre40 = new javax.swing.JLabel();
         txtapellido = new javax.swing.JTextField();
         jSeparator71 = new javax.swing.JSeparator();
@@ -1173,23 +1173,29 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         lblnombre1.setText("Motivo de la Consulta: ");
         getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
-        getContentPane().add(txtnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 380, -1));
+        getContentPane().add(txtMotivoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 380, -1));
 
         lblnombre2.setText("Historia Medica:");
         getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 80, -1));
-        getContentPane().add(txtnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 380, 40));
+        getContentPane().add(txtHistoriaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 380, 40));
 
         lblnombre3.setText("Historia Odontologica:");
         getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
-        getContentPane().add(txtnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 380, 40));
+        getContentPane().add(txtMotivoO, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 380, 40));
 
         lblnombre4.setText("Examen Clinico:");
         getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 80, -1));
-        getContentPane().add(txtnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 380, -1));
+        getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 380, -1));
 
         lblnombre5.setText("DX Odontologico:");
         getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 90, -1));
-        getContentPane().add(txtnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 380, 30));
+
+        txtDX.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtDXActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtDX, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 380, 30));
 
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -3583,6 +3589,12 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         lblnombre13.setText("Otros:");
         getContentPane().add(lblnombre13, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 150, 40, 20));
+
+        txtotros.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtotrosActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtotros, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 150, 380, 20));
 
         lblnombre14.setText("Aparato tipo:");
@@ -3595,11 +3607,23 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         lblnombre17.setText("Brackets:");
         getContentPane().add(lblnombre17, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, 50, 20));
+
+        txtBrakets.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtBraketsActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtBrakets, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 270, 380, 20));
 
         lblnombre19.setText("RETENCIONES MX:");
         getContentPane().add(lblnombre19, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 310, 100, 20));
-        getContentPane().add(txtBrakets1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 310, 380, 20));
+
+        txtRetenciones.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtRetencionesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txtRetenciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 310, 380, 20));
 
         lblnombre18.setText("Secuencia de Arcos:");
         getContentPane().add(lblnombre18, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 340, 100, 20));
@@ -3607,7 +3631,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
 
         lblnombre20.setText("MD:");
         getContentPane().add(lblnombre20, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 380, 30, 20));
-        getContentPane().add(txtBrakets2, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 380, 380, 20));
+        getContentPane().add(txtMD, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 380, 380, 20));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         jLabel1.setText("Indicacion especial antes de colocar Brackets");
@@ -3636,7 +3660,7 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         getContentPane().add(jSeparator29, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 440, 400, -1));
 
         jSeparator30.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator30, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 470, 400, 50));
+        getContentPane().add(jSeparator30, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 470, 400, 50));
 
         jLabel87.setText("RX Rocabado");
         getContentPane().add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 540, 80, -1));
@@ -6758,10 +6782,10 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
         });
         getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 590, 90, 50));
 
-        fi.setDateFormatString("yyyy-MM-dd");
-        getContentPane().add(fi, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 110, -1));
+        fecha.setDateFormatString("yyyy-MM-dd");
+        getContentPane().add(fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 110, -1));
 
-        lblnombre40.setText("Nombre: ");
+        lblnombre40.setText("Apellido:");
         getContentPane().add(lblnombre40, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, -1, -1));
         getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 190, -1));
 
@@ -8971,7 +8995,8 @@ public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
     private void txtdirecciónActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdirecciónActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtdirecciónActionPerformed
-public void limpiarTxt(){
+     //metodo para limpiar los jtextfield despues de cada click al boton guardar
+    public void limpiarTxt(){
         txtnombre.setText("");
         txtapellido.setText("");
         txtdirección.setText("");
@@ -8979,15 +9004,35 @@ public void limpiarTxt(){
         txtedad.setText("");
     }
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
+      // se crean variables para guardar en ellas los datos recibidos de los jtextfield
       String nombre = this.txtnombre.getText().toUpperCase();
       String apellido = this.txtapellido.getText().toUpperCase();
       String direccion = this.txtdirección.getText().toUpperCase();
       String telefono = this.txttelefono.getText().toUpperCase();
       String edad = this.txtedad.getText();
+      //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
+      //a la clase los parametros obtenidos por los jtextfield
       InsertarDatosBD insertar = new InsertarDatosBD();
       insertar.insertarPacienteO(nombre, apellido, direccion, telefono, edad);
+      //Se manda a llamar el metodo limpiarTxt el cual limpiara los jtextfiel despues de cada click al boton guardar
       limpiarTxt();
     }//GEN-LAST:event_btnguardarActionPerformed
+
+    private void txtDXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDXActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtDXActionPerformed
+
+    private void txtotrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtotrosActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtotrosActionPerformed
+
+    private void txtBraketsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBraketsActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtBraketsActionPerformed
+
+    private void txtRetencionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRetencionesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtRetencionesActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -9005,7 +9050,7 @@ public void limpiarTxt(){
     private javax.swing.JCheckBox chmodelo;
     private javax.swing.JCheckBox chmodeloMD;
     private javax.swing.JCheckBox chpanoramica;
-    private com.toedter.calendar.JDateChooser fi;
+    private com.toedter.calendar.JDateChooser fecha;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox100;
@@ -10036,19 +10081,20 @@ public void limpiarTxt(){
     private javax.swing.JTextField txtAparato;
     private javax.swing.JTextField txtAparato1;
     private javax.swing.JTextField txtBrakets;
-    private javax.swing.JTextField txtBrakets1;
-    private javax.swing.JTextField txtBrakets2;
     private javax.swing.JTextField txtBrakets3;
     private javax.swing.JTextField txtBrakets4;
     private javax.swing.JTextField txtBrakets5;
     private javax.swing.JTextField txtDSD;
     private javax.swing.JTextField txtDSD1;
+    private javax.swing.JTextField txtDX;
     private javax.swing.JTextField txtEJE;
     private javax.swing.JTextField txtEJE1;
     private javax.swing.JTextField txtEntornoD;
     private javax.swing.JTextField txtEntornoD1;
+    private javax.swing.JTextField txtExamenC;
     private javax.swing.JTextField txtFHIS;
     private javax.swing.JTextField txtFHIS1;
+    private javax.swing.JTextField txtHistoriaM;
     private javax.swing.JTextField txtII;
     private javax.swing.JTextField txtII1;
     private javax.swing.JTextField txtIMPA1;
@@ -10057,12 +10103,16 @@ public void limpiarTxt(){
     private javax.swing.JTextField txtIS1;
     private javax.swing.JTextField txtJa1;
     private javax.swing.JTextField txtJa2;
+    private javax.swing.JTextField txtMD;
+    private javax.swing.JTextField txtMotivoC;
+    private javax.swing.JTextField txtMotivoO;
     private javax.swing.JTextField txtPALI;
     private javax.swing.JTextField txtPALI1;
     private javax.swing.JTextField txtPALS;
     private javax.swing.JTextField txtPALS1;
     private javax.swing.JTextField txtPTB;
     private javax.swing.JTextField txtPTB1;
+    private javax.swing.JTextField txtRetenciones;
     private javax.swing.JTextField txtanguloA1;
     private javax.swing.JTextField txtanguloA2;
     private javax.swing.JTextField txtanguloG1;
@@ -10079,13 +10129,8 @@ public void limpiarTxt(){
     private javax.swing.JTextField txtmaxilares;
     private javax.swing.JTextField txtmaxilares1;
     private javax.swing.JTextField txtnombre;
-    private javax.swing.JTextField txtnombre1;
     private javax.swing.JTextField txtnombre10;
     private javax.swing.JTextField txtnombre11;
-    private javax.swing.JTextField txtnombre2;
-    private javax.swing.JTextField txtnombre3;
-    private javax.swing.JTextField txtnombre4;
-    private javax.swing.JTextField txtnombre5;
     private javax.swing.JTextField txtnombre6;
     private javax.swing.JTextField txtnombre7;
     private javax.swing.JTextField txtnombre8;
