@@ -109,6 +109,7 @@ public class InsertarDatosBD {
         }
     }
     
+    //metodo para insertar pacientes generales a la tabla pacienten se utiliza en el formulario ExpedienteGeneral
      public void insertarPaciente(String nombre, String apellido ,String direccion, String telefono,String edad){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,"
@@ -131,7 +132,7 @@ public class InsertarDatosBD {
         }
     }
      
-     // metodo insertar paciente odontologico
+   //metodo para insertar pacientes de ortodoncia a la tabla pacienten se utiliza en el formulario ExpedieneOrtodoncia
     public void insertarPacienteO(String nombre, String apellido ,String direccion, String telefono,String edad){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,"
@@ -154,7 +155,7 @@ public class InsertarDatosBD {
         }
     }
        
-       //metodo de expediente general
+    //metodo para insertar pacientes generales a la tabla consulta se utiliza en el formulario ExpedienteGeneral
     public void insertarPacienteGC(String motivoC, String fecha ,Double presupuesto, String HistoriaM,String HistoriaO,
                                      String ExamenC, String DXodontologico){
         try {
