@@ -6,10 +6,9 @@
 package formularios;
 
 import Clases.InsertarDatosBD;
+import Clases.validaciones;
 import java.util.Calendar;
-import javax.swing.JInternalFrame;
-import javax.swing.JOptionPane;
-import javax.swing.JScrollPane;
+
 
 /**
  *
@@ -508,6 +507,12 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
         lblnombre.setText("Nombre: ");
         getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
+
+        txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtnombreKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 140, 160, -1));
 
         lbldireccion.setText("Dirección: ");
@@ -2649,6 +2654,12 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
         jLabel2.setText("Apellido:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
+
+        txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtapellidoKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 140, 200, -1));
         getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 250, -1, -1));
 
@@ -3701,41 +3712,66 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private void jCheckBox363ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox363ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox363ActionPerformed
-public void limpiarTxt(){
+    //metodo para limpiar los jtextfield despues de cada click al boton guardar
+    public void limpiarTxt(){
         txtnombre.setText("");
         txtapellido.setText("");
         txtdirección.setText("");
         txttelefono.setText("");
         txtedad.setText("");
+        txtMotivoC.setText("");
+        txtpresupuesto.setText("");
+        txtHistoriaM.setText("");
+        txtHistoriaO.setText("");
+        txtExamenC.setText("");
+        txtDX.setText("");
     }
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
+      // se crean variables para guardar en ellas los datos recibidos de los jtextfield
       String nombre = this.txtnombre.getText().toUpperCase();
       String apellido = this.txtapellido.getText().toUpperCase();
       String direccion = this.txtdirección.getText().toUpperCase();
       String telefono = this.txttelefono.getText().toUpperCase();
       String edad = this.txtedad.getText();
+      //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
+      //a la clase los parametros obtenidos por los jtextfield
       InsertarDatosBD insertar = new InsertarDatosBD();
       insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
-      
+      // se crean variables para guardar en ellas los datos recibidos de los jtextfield
       String motivo = this.txtMotivoC.getText().toUpperCase();
-//      String fecha = this.fecha.getDateFormatString();
       Double total = Double.parseDouble( this.txtpresupuesto.getText());
       String historiam = this.txtHistoriaM.getText().toUpperCase();
       String historiao = this.txtHistoriaO.getText().toUpperCase();
       String examen = this.txtExamenC.getText().toUpperCase();
       String dx = this.txtDX.getText().toUpperCase();
-      
+      // se crean variables para almacenar en ellas el dia mes y año que se obtienen del control jcalendar
       String dia = Integer.toString(fecha.getCalendar().get(Calendar.DAY_OF_MONTH));
       String mes = Integer.toString(fecha.getCalendar().get(Calendar.MONTH) + 1);
       String year = Integer.toString(fecha.getCalendar().get(Calendar.YEAR));
       String fechaA = (year + "-" + mes+ "-" + dia);
       String date = fechaA; 
-      
+      //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
+      //a la clase los parametros obtenidos por los jtextfield
       InsertarDatosBD insertar2 = new InsertarDatosBD();
       insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx);
+      //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
       limpiarTxt();
-      //JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del proveedor y su telefono");     
+  
     }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void txtnombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnombreKeyTyped
+      //se crea un objeto de la clase validaciones para luego validar en el evento KeyTyped del jtextfield 
+      //que no se introduzcan numeros
+      validaciones val = new validaciones();
+      val.validarCaracter(evt);
+    }//GEN-LAST:event_txtnombreKeyTyped
+
+    private void txtapellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtapellidoKeyTyped
+      //se crea un objeto de la clase validaciones para luego validar en el evento KeyTyped del jtextfield 
+      //que no se introduzcan numeros
+        validaciones val = new validaciones();
+        val.validarCaracter(evt);
+    }//GEN-LAST:event_txtapellidoKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
