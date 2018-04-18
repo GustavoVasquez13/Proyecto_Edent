@@ -2,90 +2,43 @@ package formularios;
 
 import Clases.ConsultarDatosBD;
 import Clases.InsertarDatosBD;
-import Clases.conexionBD;
 import Clases.internalFrameImagen;
-import java.sql.Connection;
-import java.sql.Date;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
-import java.util.ArrayList;
 import javax.swing.JOptionPane;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 public class frmPagoServBasicos extends internalFrameImagen {
-//String[] arraytipo;
-ArrayList arraytipo = new ArrayList();
+private TableRowSorter trsFiltro;
+
     public frmPagoServBasicos() {
         initComponents();
         //setImagenw("img2.jpg");
-        //consultar();
-        //consu();
         mostrarServ();
     }
     
+    // este metodo muestra en la tabla todos los servicios basicos que estan registrados y es llamado en el load del form
+    //tiene instancia con la clase ConsultarDatosBD y el metodo mostrarServicios()
     public void mostrarServ() {
         try {
             DefaultTableModel modelo;
-            ConsultarDatosBD funcion = new ConsultarDatosBD();
-            modelo = funcion.mostrarServicios();
+            ConsultarDatosBD MostrarSB = new ConsultarDatosBD();
+            modelo = MostrarSB.mostrarServicios();
             jtServ.setModel(modelo);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Prestamo");
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Servicios Basicos");
         }
     }
-private void consultar()
-    {
-        conexionBD cnn=new conexionBD();
-        Connection reg=cnn.conectar();
-       try {
-            Statement stmt = reg.createStatement();
-            String query = "SELECT `id_tipoServicio`,`nombre_servicio`,`proveedor_servicio` FROM `tiposervicio`;";
-
-            ResultSet rs = stmt.executeQuery(query);
-            //arraytipo = new String[10];
-            int i = 0;
-            while(rs.next())
-            {
-                String cod=rs.getString(1);
-                String servicio=rs.getString(2);
-                String prov=rs.getString(3);
-                //this.cmbServicio.addItem(servicio);
-                //arraytipo.add(rs.getString(2));
-                //txtProveedor.setText(rs.getString(2));
-                i++;
-            }
-        } catch (SQLException ex) { 
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de la Persona");
-        }
-    }
-    private void consu()
-    {
-        conexionBD cnn=new conexionBD();
-        Connection reg=cnn.conectar();
-        //String s = cmbServicio.getSelectedItem().toString();
-        //jLabel2.setText(s);
-       try {
-            Statement stmt = reg.createStatement();
-            String query = "SELECT `id_tipoServicio`,`nombre_servicio`,`proveedor_servicio` FROM `tiposervicio` WHERE `nombre_servicio`='+s+';";
-
-            ResultSet rs = stmt.executeQuery(query);
-            //arraytipo = new String[10];
-            int i = 0;
-            while(rs.next())
-            {
-                String cod=rs.getString(1);
-                String servicio=rs.getString(2);
-                String prov=rs.getString(3);
-                //this.cmbServicio.addItem(servicio);
-                //arraytipo.add(rs.getString(2));
-                txtProveedor.setText(prov);
-                i++;
-            }
-        } catch (SQLException ex) { 
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de la Persona");
-        }
+    
+    // este metodo limpia las cajas de texto con un valor vacio y se utiliza en el boton registrar
+    public void limpiarTxt(){
+        txtServicio.setText("");
+        txtProveedor.setText("");
+        txtTotalPago.setText("");
+        fechaPago.setDate(null);
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -106,6 +59,8 @@ private void consultar()
         txtServicio = new javax.swing.JTextField();
         btnAggNS = new javax.swing.JButton();
         btnActualizar = new javax.swing.JButton();
+        jLabel6 = new javax.swing.JLabel();
+        txtBuscar = new javax.swing.JTextField();
 
         setClosable(true);
         setIconifiable(true);
@@ -177,12 +132,33 @@ private void consultar()
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel6.setText("Buscar");
+
+        txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtBuscarKeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(50, 50, 50)
+                        .addComponent(jLabel2)
+                        .addGap(14, 14, 14)
+                        .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(28, 28, 28)
+                        .addComponent(jLabel6)
+                        .addGap(12, 12, 12)
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(40, 40, 40)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -194,10 +170,6 @@ private void consultar()
                                 .addGap(2, 2, 2)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel2)
-                                        .addGap(22, 22, 22)
-                                        .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
                                         .addComponent(jLabel3)
                                         .addGap(10, 10, 10)
                                         .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -206,97 +178,98 @@ private void consultar()
                                         .addGap(18, 18, 18)
                                         .addComponent(txtTotalPago, javax.swing.GroupLayout.PREFERRED_SIZE, 165, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addGap(17, 17, 17)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.DEFAULT_SIZE, 503, Short.MAX_VALUE))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(42, 42, 42)
-                                .addComponent(jLabel1))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(80, 80, 80)
-                                .addComponent(btnRegistrar)
-                                .addGap(73, 73, 73)
-                                .addComponent(btnCancelar)
-                                .addGap(49, 49, 49)
-                                .addComponent(btnAggNS)
-                                .addGap(41, 41, 41)
-                                .addComponent(btnActualizar)))
-                        .addGap(0, 0, Short.MAX_VALUE)))
-                .addContainerGap())
+                        .addGap(80, 80, 80)
+                        .addComponent(btnRegistrar)
+                        .addGap(73, 73, 73)
+                        .addComponent(btnCancelar)
+                        .addGap(49, 49, 49)
+                        .addComponent(btnAggNS)
+                        .addGap(41, 41, 41)
+                        .addComponent(btnActualizar)))
+                .addGap(10, 10, 10))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(17, 17, 17)
                 .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addGap(24, 24, 24)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(6, 6, 6)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(25, 25, 25)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(5, 5, 5)
-                                .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(28, 28, 28)
+                                .addGap(1, 1, 1)
+                                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(txtTotalPago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(23, 23, 23)
+                                .addGap(25, 25, 25)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(5, 5, 5)
+                                        .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(28, 28, 28)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 36, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(6, 6, 6)
+                                        .addComponent(txtTotalPago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGap(23, 23, 23)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(fechaPago, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(13, 13, 13)
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(26, 26, 26)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(fechaPago, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 231, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(26, 26, 26)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnRegistrar)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(btnCancelar)
-                        .addComponent(btnAggNS)
-                        .addComponent(btnActualizar)))
-                .addContainerGap(61, Short.MAX_VALUE))
+                            .addComponent(btnRegistrar)
+                            .addComponent(btnCancelar)
+                            .addComponent(btnAggNS)
+                            .addComponent(btnActualizar)))
+                    .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(1, 1, 1)
+                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(85, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRegistrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRegistrarActionPerformed
-        if(this.txtServicio.getText().length()!=0 && this.txtProveedor.getText().length()!=0){
+        if(this.txtServicio.getText().length()!=0 && this.txtProveedor.getText().length()!=0 && this.txtTotalPago.getText().length()!=0 
+                && this.fechaPago.getDate()!=null){
             String servicio = this.txtServicio.getText();
             String proveedor = this.txtProveedor.getText();
             double totalPagar = Double.parseDouble(this.txtTotalPago.getText());
             SimpleDateFormat formatofecha = new SimpleDateFormat("yyyy-MM-dd");
             String pasofecha = (formatofecha.format(fechaPago.getDate()));
-            //Date fecha = Date.valueOf(this.fechaPago.getDate());
-            
+ 
             InsertarDatosBD insertDatos = new InsertarDatosBD();
             insertDatos.insertPagoServicioBasic(servicio, proveedor, totalPagar, pasofecha);
+            limpiarTxt();
         }else{
-            JOptionPane.showMessageDialog(null, "SELECCIONE UN REGISTRO DE LA TABLA");
+            JOptionPane.showMessageDialog(null, "SELECCIONE UN REGISTRO DE LA TABLA Y COMPLETE TODOS LOS CAMPOS");
         }
     }//GEN-LAST:event_btnRegistrarActionPerformed
 
     private void jtServMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtServMousePressed
         if(evt.getClickCount()==1){
            if (jtServ.getSelectedRowCount() != 0)
-        {
-            int filaSelect = jtServ.getSelectedRow();
-            String serv = (String)jtServ.getValueAt(filaSelect, 0);
-            String prov = (String)jtServ.getValueAt(filaSelect, 1);
-            this.txtServicio.setText(serv);
-            this.txtProveedor.setText(prov);
+            {
+                int filaSelect = jtServ.getSelectedRow();
+                String serv = (String)jtServ.getValueAt(filaSelect, 0);
+                String prov = (String)jtServ.getValueAt(filaSelect, 1);
+                this.txtServicio.setText(serv);
+                this.txtProveedor.setText(prov);
+            }else{
+                JOptionPane.showMessageDialog(null, "SELECCIONE UN REGISTRO DE LA TABLA");
+            }
         }
-        else
-        {
-            JOptionPane.showMessageDialog(null, "SELECCIONE UN REGISTRO");
-        }
-       }
     }//GEN-LAST:event_jtServMousePressed
 
     private void btnAggNSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAggNSActionPerformed
@@ -313,6 +286,22 @@ private void consultar()
         this.dispose();
     }//GEN-LAST:event_btnCancelarActionPerformed
 
+    private void txtBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyTyped
+        // mostrar dato buscado desde el textbox
+        txtBuscar.addKeyListener(new KeyAdapter() {
+            public void keyReleased(final KeyEvent e) {
+                String cadena = (txtBuscar.getText().toUpperCase());
+                txtBuscar.setText(cadena);
+                repaint();
+                trsFiltro.setRowFilter(RowFilter.regexFilter(txtBuscar.getText(), 0));
+                jtServ.getSelectionModel().setSelectionInterval(0,0);
+            }
+        });
+        
+        trsFiltro = new TableRowSorter(jtServ.getModel());
+        jtServ.setRowSorter(trsFiltro); 
+    }//GEN-LAST:event_txtBuscarKeyTyped
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnActualizar;
@@ -325,8 +314,10 @@ private void consultar()
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jtServ;
+    private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtProveedor;
     private javax.swing.JTextField txtServicio;
     private javax.swing.JFormattedTextField txtTotalPago;
