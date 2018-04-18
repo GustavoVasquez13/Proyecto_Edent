@@ -13,20 +13,20 @@ public class ConsultarDatosBD {
     conexionBD con = new conexionBD();
     Connection cn = con.conectar();
     
+    // este metodo muestra los datos de los servicios registrados en la tabla del formulario frmServBasico
     public DefaultTableModel mostrarServicios() {
         DefaultTableModel modelo;
-//Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
+        //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulos
                 = {"SERVICIO","PROVEEDOR", "CORREO","TELEFONO"};
         String[] registros = new String[4];
         totalRegistros = 0;
-//se agregan los campos del arreglo al modelo de la tabla
+        //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulos);
-//consulta para mostrar los datos de la base de datos
+        //consulta para mostrar los datos de la base de datos
         sSQL = "SELECT  `nombre_servicio`,`proveedor_servicio`, `correo_provS`, `tel_provS` FROM tiposervicio;";
 
         try {
-
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
             while (rs.next()) {
@@ -38,28 +38,29 @@ public class ConsultarDatosBD {
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
             }
+            con.closeBd();
             return modelo;
-
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos");
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Servicios");
+            con.closeBd();
             return null;
         }
     }
     
+    //se muestran los proveedores registrados en el formulario frmCompraProducto
     public DefaultTableModel mostrarProveedores() {
         DefaultTableModel modelo;
-//Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
+        //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulos
                 = {"CODIGO","NOMBRE","DIRECCION", "CORREO","TELEFONO"};
         String[] registros = new String[5];
         totalRegistros = 0;
-//se agregan los campos del arreglo al modelo de la tabla
+        //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulos);
-//consulta para mostrar los datos de la base de datos
+        //consulta para mostrar los datos de la base de datos
         sSQL = "SELECT * FROM proveedores;";
 
         try {
-
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
             while (rs.next()) {
@@ -72,28 +73,30 @@ public class ConsultarDatosBD {
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
             }
+            con.closeBd();
             return modelo;
 
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos");
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de proveedores");
+            con.closeBd();
             return null;
         }
     }
     
+    //muestra lo sproductos registrados en la tabla del form frmComprarProducto
     public DefaultTableModel mostrarProductos() {
         DefaultTableModel modelo;
-//Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
+        //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulos
                 = {"CODIGO","NOMBRE","DESCRIPCION"};
         String[] registros = new String[3];
         totalRegistros = 0;
-//se agregan los campos del arreglo al modelo de la tabla
+        //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulos);
-//consulta para mostrar los datos de la base de datos
+        //consulta para mostrar los datos de la base de datos
         sSQL = "SELECT * FROM productos;";
 
         try {
-
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
             while (rs.next()) {
@@ -104,10 +107,12 @@ public class ConsultarDatosBD {
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
             }
+            con.closeBd();
             return modelo;
 
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos");
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Productos");
+            con.closeBd();
             return null;
         }
     }
