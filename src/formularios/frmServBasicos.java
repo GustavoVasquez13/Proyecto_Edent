@@ -1,5 +1,6 @@
 package formularios;
 
+import Clases.ActualizarDatosBD;
 import Clases.ConsultarDatosBD;
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
@@ -18,7 +19,7 @@ public class frmServBasicos extends internalFrameImagen {
     
     // este metodo muestra en la tabla todos los servicios basicos que estan registrados y es llamado en el load del form
     //tiene instancia con la clase ConsultarDatosBD y el metodo mostrarServicios()
-    public void mostrarServ() {
+    private void mostrarServ() {
         try {
             DefaultTableModel modelo;
             ConsultarDatosBD MostrarSB = new ConsultarDatosBD();
@@ -28,6 +29,15 @@ public class frmServBasicos extends internalFrameImagen {
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Servicios Basicos");
         }
+    }
+    
+    //este metodo extrae el codigo del servicio para poder ser modificado
+    private void codServ(String serv, String prov){
+        int cod;
+        ConsultarDatosBD codServ = new ConsultarDatosBD();
+        cod = codServ.codServicio(serv, prov);
+        this.lblServicio.setText("Codigo");
+        this.lblCod.setText(Integer.toString(cod));
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
@@ -47,6 +57,8 @@ public class frmServBasicos extends internalFrameImagen {
         jScrollPane1 = new javax.swing.JScrollPane();
         jtServicios = new javax.swing.JTable();
         btnModificarReg = new javax.swing.JButton();
+        lblCod = new javax.swing.JLabel();
+        lblServicio = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
@@ -113,6 +125,11 @@ public class frmServBasicos extends internalFrameImagen {
         jScrollPane1.setViewportView(jtServicios);
 
         btnModificarReg.setText("Editar");
+        btnModificarReg.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarRegActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -130,10 +147,15 @@ public class frmServBasicos extends internalFrameImagen {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
-                                .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(lblServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 49, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                        .addComponent(lblCod, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 181, javax.swing.GroupLayout.PREFERRED_SIZE))))
                         .addGap(31, 31, 31))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addGap(0, 0, Short.MAX_VALUE)
@@ -166,7 +188,11 @@ public class frmServBasicos extends internalFrameImagen {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel5)
-                .addGap(44, 44, 44)
+                .addGap(4, 4, 4)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(lblServicio, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
+                    .addComponent(lblCod, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -186,7 +212,7 @@ public class frmServBasicos extends internalFrameImagen {
                                 .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(26, 26, 26)
                             .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnCancelar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnGuardar, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -197,7 +223,7 @@ public class frmServBasicos extends internalFrameImagen {
         pack();
     }// </editor-fold>//GEN-END:initComponents
     // este metodo limpia las cajas de texto con un valor vacio y se utiliza en el boton guardar
-    public void limpiarTxt(){
+    private void limpiarTxt(){
         txtServicio.setText("");
         txtProveedor.setText("");
         txtCorreo.setText("");
@@ -242,11 +268,35 @@ public class frmServBasicos extends internalFrameImagen {
                 this.txtTelefono.setText(tel);
                 this.btnGuardar.setEnabled(false);
                 this.btnModificarReg.setEnabled(true);
+                
+                codServ(servicio,proveedor);
             }else{
                 JOptionPane.showMessageDialog(null, "SELECCIONE UN REGISTRO DE LA TABLA");
             }
         }
     }//GEN-LAST:event_jtServiciosMousePressed
+
+    private void btnModificarRegActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarRegActionPerformed
+        if(this.txtServicio.getText().length()!=0 && this.txtProveedor.getText().length()!=0){
+            String servicio = this.txtServicio.getText().toUpperCase();
+            String proveedor = this.txtProveedor.getText().toUpperCase();
+            String corrreo = this.txtCorreo.getText();
+            String telefono = this.txtTelefono.getText();
+            int cod = Integer.valueOf(this.lblCod.getText());
+            
+            ActualizarDatosBD serv = new ActualizarDatosBD();
+            serv.actualizarDatosServicios(servicio, proveedor, corrreo, telefono, cod);
+            this.btnGuardar.setEnabled(true);
+            this.btnModificarReg.setEnabled(false);
+            this.lblCod.setText("");
+            this.lblServicio.setText("");
+            limpiarTxt();
+            mostrarServ();
+            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
+        }else{
+            JOptionPane.showMessageDialog(null, "Debe Ingresar un Servicio y un Proveedor");
+        }
+    }//GEN-LAST:event_btnModificarRegActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -260,6 +310,8 @@ public class frmServBasicos extends internalFrameImagen {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jtServicios;
+    private javax.swing.JLabel lblCod;
+    private javax.swing.JLabel lblServicio;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtProveedor;
     private javax.swing.JTextField txtServicio;

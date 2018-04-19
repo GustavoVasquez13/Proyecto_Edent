@@ -2,6 +2,7 @@ package Clases;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
@@ -115,5 +116,23 @@ public class ConsultarDatosBD {
             con.closeBd();
             return null;
         }
+    }
+    
+    public int codServicio(String servicio, String proveedor){
+        sSQL = "SELECT `id_tipoServicio` FROM `tiposervicio` WHERE `nombre_servicio`='"+servicio+"' and `proveedor_servicio`='"+proveedor+"';";
+        try {
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sSQL);
+            while(rs.next()){
+                int cod = rs.getInt("id_tipoServicio");
+                return cod;
+            }
+            
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null,"Problemas al consultar los datos de servicio");
+            con.closeBd();
+            return 0;
+        }
+        return 0;
     }
 }
