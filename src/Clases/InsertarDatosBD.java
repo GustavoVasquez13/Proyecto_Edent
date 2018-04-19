@@ -221,4 +221,20 @@ public class InsertarDatosBD {
             con.closeBd();
         }
     }
+    
+    //este metodo ingresa nuevos tipos de pacientes a la BD
+   public void insertarTipoPaciente(String tipo){
+     try {
+           PreparedStatement pst = cn.prepareStatement("INSERT INTO tipopaciente (`nombre_tipo`) "
+                + "VALUES(?);");
+            pst.setString(1, tipo);
+            pst.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados");    
+            con.closeBd();
+        } catch (SQLException ex) {
+            Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
+            con.closeBd();
+        }
+     }
 }
