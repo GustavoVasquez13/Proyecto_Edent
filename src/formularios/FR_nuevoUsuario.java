@@ -4,13 +4,11 @@ package formularios;
 import Clases.InsertarDatosBD;
 import Clases.conexionBD;
 import java.sql.Connection;
-import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
-import javax.swing.JPanel;
-import javax.swing.table.DefaultTableModel;
+//import javax.swing.table.DefaultTableModel;
 import org.apache.commons.codec.digest.DigestUtils;
 
 public class FR_nuevoUsuario extends javax.swing.JFrame {
@@ -231,8 +229,6 @@ private void consultar()
 
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-//llenado de tablas relacionadas
-//esta es la consulta que hago
         String nom = this.txtNombre_persona.getText().toUpperCase();
         String ape = this.txtape.getText().toUpperCase();
         String usu = this.txtusu.getText();
@@ -257,15 +253,9 @@ private void consultar()
         dispose();
     }//GEN-LAST:event_VOLVERActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+   
     public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
+        
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -282,10 +272,8 @@ private void consultar()
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(FR_nuevoUsuario.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
-        //</editor-fold>
-
-        /* Create and display the form */
+       
+       
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
                 new FR_nuevoUsuario().setVisible(true);
