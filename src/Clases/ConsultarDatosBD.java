@@ -118,6 +118,7 @@ public class ConsultarDatosBD {
         }
     }
     
+    //este metodo extrae el codigo del servicio para poder modificarlo en frmServicioBasico
     public int codServicio(String servicio, String proveedor){
         sSQL = "SELECT `id_tipoServicio` FROM `tiposervicio` WHERE `nombre_servicio`='"+servicio+"' and `proveedor_servicio`='"+proveedor+"';";
         try {
@@ -127,7 +128,7 @@ public class ConsultarDatosBD {
                 int cod = rs.getInt("id_tipoServicio");
                 return cod;
             }
-            
+            con.closeBd();
         }catch(SQLException ex){
             JOptionPane.showMessageDialog(null,"Problemas al consultar los datos de servicio");
             con.closeBd();

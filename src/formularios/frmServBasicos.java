@@ -292,7 +292,6 @@ public class frmServBasicos extends internalFrameImagen {
             this.lblServicio.setText("");
             limpiarTxt();
             mostrarServ();
-            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
         }else{
             JOptionPane.showMessageDialog(null, "Debe Ingresar un Servicio y un Proveedor");
         }
