@@ -5,11 +5,16 @@ import Clases.ConsultarDatosBD;
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 public class frmServBasicos extends internalFrameImagen {
-
+    private TableRowSorter trsFiltro;
+    
     public frmServBasicos() {
         initComponents();
         //se utiliza el metodo setImagenw de la clase internalFrameImagen ya que esta clase fue heredada en este formulario
@@ -59,12 +64,20 @@ public class frmServBasicos extends internalFrameImagen {
         btnModificarReg = new javax.swing.JButton();
         lblCod = new javax.swing.JLabel();
         lblServicio = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        txtBuscar = new javax.swing.JTextField();
 
         setClosable(true);
         setIconifiable(true);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
         jLabel1.setText("Servicio");
+
+        txtServicio.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtServicioKeyTyped(evt);
+            }
+        });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
         jLabel2.setText("Correo");
@@ -74,6 +87,12 @@ public class frmServBasicos extends internalFrameImagen {
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
         jLabel4.setText("Proveedor");
+
+        txtProveedor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtProveedorKeyTyped(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
         jLabel5.setText("Agregar Servicios Basicos");
@@ -131,6 +150,15 @@ public class frmServBasicos extends internalFrameImagen {
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel6.setText("Buscar");
+
+        txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtBuscarKeyTyped(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -176,7 +204,12 @@ public class frmServBasicos extends internalFrameImagen {
                         .addGap(28, 28, 28)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnModificarReg, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnModificarReg, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jLabel6)
+                        .addGap(12, 12, 12)
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(10, 10, 10))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -188,11 +221,20 @@ public class frmServBasicos extends internalFrameImagen {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel5)
-                .addGap(4, 4, 4)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(lblServicio, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
-                    .addComponent(lblCod, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(lblServicio, javax.swing.GroupLayout.DEFAULT_SIZE, 22, Short.MAX_VALUE)
+                            .addComponent(lblCod, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -212,7 +254,7 @@ public class frmServBasicos extends internalFrameImagen {
                                 .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(26, 26, 26)
                             .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnCancelar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnGuardar, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -229,18 +271,25 @@ public class frmServBasicos extends internalFrameImagen {
         txtCorreo.setText("");
         txtTelefono.setText("");
     }
+    
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         if(txtServicio.getText().length() !=0 && txtProveedor.getText().length()!=0){
             String servicio = txtServicio.getText().toUpperCase();
             String proveedor = txtProveedor.getText().toUpperCase();
             String correo = txtCorreo.getText();
             String telefono = txtTelefono.getText();
-            InsertarDatosBD insertDatos = new InsertarDatosBD();
-            insertDatos.insertServicioBasic(servicio,proveedor,correo,telefono);
+            
+            ConsultarDatosBD val = new ConsultarDatosBD();
+            if(val.valExistServicio(servicio,proveedor)!=true){
+                InsertarDatosBD insertDatos = new InsertarDatosBD();
+                insertDatos.insertServicioBasic(servicio,proveedor,correo,telefono);
+            }else{
+                JOptionPane.showMessageDialog(null, "ya existe");
+            }
             limpiarTxt();
             mostrarServ();
         }else{
-            JOptionPane.showMessageDialog(null, "Debe Ingresar un Servicio y un Proveedor");
+            JOptionPane.showMessageDialog(null, "DEBE INGRESAR UN SERVICIO Y UN PROVEEDOR");
         }
     }//GEN-LAST:event_btnGuardarActionPerformed
 
@@ -297,6 +346,29 @@ public class frmServBasicos extends internalFrameImagen {
         }
     }//GEN-LAST:event_btnModificarRegActionPerformed
 
+    private void txtServicioKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtServicioKeyTyped
+
+    }//GEN-LAST:event_txtServicioKeyTyped
+
+    private void txtProveedorKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtProveedorKeyTyped
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtProveedorKeyTyped
+
+    private void txtBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyTyped
+        // mostrar dato buscado desde el textbox
+        this.txtBuscar.addKeyListener(new KeyAdapter(){
+            public void keyReleased(final KeyEvent e){
+                String cadena = (txtBuscar.getText());
+                txtBuscar.setText(cadena);
+                repaint();
+                trsFiltro.setRowFilter(RowFilter.regexFilter(txtBuscar.getText().toUpperCase(), 0));
+                jtServicios.getSelectionModel().setSelectionInterval(0, 0);
+            }
+        });
+        trsFiltro = new TableRowSorter(jtServicios.getModel());
+        jtServicios.setRowSorter(trsFiltro);
+    }//GEN-LAST:event_txtBuscarKeyTyped
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCancelar;
@@ -307,10 +379,12 @@ public class frmServBasicos extends internalFrameImagen {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JTable jtServicios;
     private javax.swing.JLabel lblCod;
     private javax.swing.JLabel lblServicio;
+    private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtCorreo;
     private javax.swing.JTextField txtProveedor;
     private javax.swing.JTextField txtServicio;

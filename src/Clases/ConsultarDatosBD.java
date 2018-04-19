@@ -1,6 +1,7 @@
 package Clases;
 
 import java.sql.Connection;
+import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
@@ -164,5 +165,25 @@ public class ConsultarDatosBD {
             con.closeBd();
             return null;
         }
+    }
+    
+    //este metodo valida qsi existe un servicio registrado en  la base de datos
+    public boolean valExistServicio(String serv, String prov) {
+        try{
+            PreparedStatement pstm = cn.prepareStatement("SELECT `nombre_servicio`,`proveedor_servicio` FROM tiposervicio"
+                    + " WHERE `nombre_servicio`='"+serv+"' and `proveedor_servicio`='"+prov+"';");
+            ResultSet res = pstm.executeQuery();
+            if(res.next()){
+                  return true;
+            } else{
+            return false;
+            }
+            //con.closeBd();
+        } catch(SQLException e){
+            JOptionPane.showMessageDialog(null, e);
+            con.closeBd();
+        }
+        con.closeBd();
+        return true;
     }
 }

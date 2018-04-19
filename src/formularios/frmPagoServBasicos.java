@@ -12,7 +12,7 @@ import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
 
 public class frmPagoServBasicos extends internalFrameImagen {
-private TableRowSorter trsFiltro;
+    private TableRowSorter trsFiltro;
 
     public frmPagoServBasicos() {
         initComponents();
@@ -22,7 +22,7 @@ private TableRowSorter trsFiltro;
     
     // este metodo muestra en la tabla todos los servicios basicos que estan registrados y es llamado en el load del form
     //tiene instancia con la clase ConsultarDatosBD y el metodo mostrarServicios()
-    public void mostrarServ() {
+    private void mostrarServ() {
         try {
             DefaultTableModel modelo;
             ConsultarDatosBD MostrarSB = new ConsultarDatosBD();
@@ -34,7 +34,7 @@ private TableRowSorter trsFiltro;
     }
     
     // este metodo limpia las cajas de texto con un valor vacio y se utiliza en el boton registrar
-    public void limpiarTxt(){
+    private void limpiarTxt(){
         txtServicio.setText("");
         txtProveedor.setText("");
         txtTotalPago.setText("");
@@ -297,7 +297,6 @@ private TableRowSorter trsFiltro;
                 jtServ.getSelectionModel().setSelectionInterval(0,0);
             }
         });
-        
         trsFiltro = new TableRowSorter(jtServ.getModel());
         jtServ.setRowSorter(trsFiltro); 
     }//GEN-LAST:event_txtBuscarKeyTyped
