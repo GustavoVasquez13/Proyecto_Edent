@@ -1,4 +1,4 @@
-package Clases;
+package entidades;
 
 public class vusuario {
     public String nombre;
@@ -6,17 +6,15 @@ public class vusuario {
     public String nom_usuario;
     public String contrasenia;
     public String tipo;
-    public String correo_usuario;
     public vusuario() {
     }
 
-    public vusuario(String nombre, String apellido, String nom_usuario, String contrasenia, String tipo,String correo_usuario) {
+    public vusuario(String nombre, String apellido, String nom_usuario, String contrasenia, String tipo) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.nom_usuario = nom_usuario;
         this.contrasenia = contrasenia;
         this.tipo = tipo;
-        this.correo_usuario=correo_usuario;
     }
 
     public String getNombre() {
@@ -58,13 +56,4 @@ public class vusuario {
     public void setTipo(String tipo) {
         this.tipo = tipo;
     }
-
-    public String getCorreo_usuario() {
-        return correo_usuario;
-    }
-
-    public void setCorreo_usuario(String correo_usuario) {
-        this.correo_usuario = correo_usuario;
-    }
-    
 }

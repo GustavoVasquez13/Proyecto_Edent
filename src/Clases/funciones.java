@@ -12,17 +12,13 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.Properties;
-import java.util.Properties;
-import javax.mail.BodyPart;
 import javax.mail.Message;
 import javax.mail.MessagingException;
 import javax.mail.PasswordAuthentication;
 import javax.mail.Session;
 import javax.mail.Transport;
 import javax.mail.internet.InternetAddress;
-import javax.mail.internet.MimeBodyPart;
 import javax.mail.internet.MimeMessage;
-import javax.mail.internet.MimeMultipart;
 import javax.swing.JOptionPane;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.RandomStringUtils;
@@ -34,22 +30,20 @@ import org.apache.commons.lang3.RandomStringUtils;
 public class funciones {
     public String usu="edent.recuperacion@gmail.com";
     public String contra="h123456h";
-
+//este metodo funciona para la recuperacion de la contraseña con el se envia el correo con contraseña nueva
  public void SendMail(String c,String m) {
         Properties props = new Properties();
         props.put("mail.smtp.auth", "true");
         props.put("mail.smtp.starttls.enable", "true");
         props.put("mail.smtp.host", "smtp.gmail.com");
         props.put("mail.smtp.port", "587");
- 
-        Session session = Session.getInstance(props,
+         Session session = Session.getInstance(props,
                 new javax.mail.Authenticator() {
                     protected PasswordAuthentication getPasswordAuthentication() {
                         return new PasswordAuthentication(usu, contra);
                     }
                 });
- 
-        try {
+         try {
  
             Message message = new MimeMessage(session);
             message.setFrom(new InternetAddress(usu));
@@ -57,20 +51,16 @@ public class funciones {
                     InternetAddress.parse(c));
             message.setSubject("recuperacion de contraseña");
             message.setText(m);
- 
-            Transport.send(message);
+             Transport.send(message);
             JOptionPane.showMessageDialog(null, "Su mensaje ha sido enviado");
- 
-        } catch (MessagingException e) {
+         } catch (MessagingException e) {
             throw new RuntimeException(e);
         }
     }
- 
- private boolean presionoRecu = false;
-
+  private boolean presionoRecu = false;
  conexionBD cc = new conexionBD();
 Connection cn = cc.conectar();
-
+//se verificac que el correo en el formulario recuperacion sea igual al de la base de datos para mandar el ususario y contraseña recuperado
     public void verificaCorreo(String correo) {
         try {
             String sql = "SELECT * FROM usuario WHERE correo_usuario = '" + correo + "'";
@@ -117,7 +107,7 @@ Connection cn = cc.conectar();
                 
                
                 presionoRecu = false;
-                JOptionPane.showMessageDialog(null, "EL CÓDIGO INGRESADO NO ES VÁLIDO,\nINGRESE UN CÓDIGO DE RECUPERACIÓN\n"
+                JOptionPane.showMessageDialog(null, "EL CORREO INGRESADO NO ES VÁLIDO,\nINGRESE EL CORREO CON EL QUE SE REGISTRO\n"
                         + "VÁLIDO O CONTACTE AL ADMINISTRADOR DEL SISTEMA.", "¡ERROR AL RECUPERAR!", JOptionPane.ERROR_MESSAGE);
             }
 
@@ -125,11 +115,9 @@ Connection cn = cc.conectar();
             
         }
     }
+    //se utiliza en el primer login mira si hay usuarios registrados si no pide registrar uno
     public void ContarUsuarios() {
-
-        vlogin funcion = new vlogin();
-   
-      
+        vlogin funcion = new vlogin();    
         int cantidadUsuarios = funcion.ContarUsuarios();
         if (cantidadUsuarios == 0) {
              ad fr=new ad();

@@ -33,9 +33,8 @@ public class InsertarDatosBD {
             con.closeBd();
         }
     }
-    
-    //Este metodo no permite cerrar la coneccion a la base de datos
-    public void insertUsuarioA(String nom,String apel,String us,String con,String tip,String corre){
+    //Este metodo nos permite ingresar nuevos usuarios
+    public void insertUsuarioA(String nom,String apel,String us,String cont,String tip,String corre){
      try {
             PreparedStatement pst = cn.prepareStatement( "INSERT INTO usuario (`nombre_usuario`,`apellido_usuario`"
                     + ",`usuario`,`clave`,`TipoUsuario_id_tipoUsuario`,`correo_usuario`) "
@@ -43,20 +42,20 @@ public class InsertarDatosBD {
             pst.setString(1, nom);
             pst.setString(2, apel);
             pst.setString(3, us);
-            pst.setString(4, con);
+            pst.setString(4, cont);
             pst.setString(5, tip);
             pst.setString(6, corre);
 
              pst.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados");
-            //con.closeBd();
+            con.closeBd();
         } catch (SQLException ex) {
             Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
-            //con.closeBd();
+            con.closeBd();
         }
      }
-     
+     //Este metodo es utilizado para insertar el tipo de usuario administrador el el primer inicio de sesion
     public void insertTipoU(String ti){
      try {
            PreparedStatement pst = cn.prepareStatement("INSERT INTO tipousuario (`tipo_usuario`) "
@@ -90,8 +89,7 @@ public class InsertarDatosBD {
             con.closeBd();
         }
     }
-    
-    //este metodo inserta los productos en la base de datos en el formulario frmProducto
+//este metodo inserta los productos en la base de datos en el formulario frmProducto
     public void insertProductos(String nombre,String descripcion){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO productos"
@@ -107,8 +105,7 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
             con.closeBd();
         }
-    }
-    
+    }   
     //metodo para insertar pacientes generales a la tabla pacienten se utiliza en el formulario ExpedienteGeneral
      public void insertarPaciente(String nombre, String apellido ,String direccion, String telefono,String edad){
         try {
@@ -131,7 +128,6 @@ public class InsertarDatosBD {
             con.closeBd();
         }
     }
-     
    //metodo para insertar pacientes de ortodoncia a la tabla pacienten se utiliza en el formulario ExpedieneOrtodoncia
     public void insertarPacienteO(String nombre, String apellido ,String direccion, String telefono,String edad){
         try {
@@ -153,8 +149,7 @@ public class InsertarDatosBD {
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
             con.closeBd();
         }
-    }
-       
+    }  
     //metodo para insertar pacientes generales a la tabla consulta se utiliza en el formulario ExpedienteGeneral
     public void insertarPacienteGC(String motivoC, String fecha ,Double presupuesto, String HistoriaM,String HistoriaO,
                                      String ExamenC, String DXodontologico){
@@ -179,8 +174,7 @@ public class InsertarDatosBD {
             con.closeBd();
         }
     }
-       
-       //metodo para insertar un pago de los servicios basicos
+   //metodo para insertar un pago de los servicios basicos
     public void insertPagoServicioBasic(String servicio,String proveedor,double costo,String fecha){
         try {
             PreparedStatement pps = cn.prepareStatement("insert into serviciobasico(`costo_servicio`,"
@@ -197,8 +191,7 @@ public class InsertarDatosBD {
             con.closeBd();
         }
     }
-    
-    //este metodo inserta los productos en la base de datos y es utilizado por el formulario frmComprarProductos
+   //este metodo inserta los productos en la base de datos y es utilizado por el formulario frmComprarProductos
     public void insertComprasProduc(int idProd, double costo, int cantidad, String marca, 
             String fechaComp, int idProv){
         try {
@@ -221,8 +214,7 @@ public class InsertarDatosBD {
             con.closeBd();
         }
     }
-    
-    //este metodo ingresa nuevos tipos de pacientes a la BD
+       //este metodo ingresa nuevos tipos de pacientes a la BD
    public void insertarTipoPaciente(String tipo){
      try {
            PreparedStatement pst = cn.prepareStatement("INSERT INTO tipopaciente (`nombre_tipo`) "

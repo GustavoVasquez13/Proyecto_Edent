@@ -11,34 +11,27 @@ public class vlogin {
    private conexionBD mysql = new conexionBD(); //Instanciando la clase conexion
     private Connection cn = mysql.conectar();
     private String sSQL = ""; //Sentencia SQL para almacenar consulta
-    private String sSQL2 = "";
     public Integer totalRegistros; // Obtener los registros
-
+//este metodo retoma todos los ususarios y las contraseñas de la base de datos para hacer la commpararacion y dar entrada al al formulario principal
     public DefaultTableModel login(String login,String password) {
         DefaultTableModel modelo;
-
         String[] titulos = {"id_usuario", "nombre_usuario", "apellido_usuario", "usuario","clsve","TipoUsuario_id_tipoUsuario","correo_usuario"};
         String[] registro = new String[9];
-
         totalRegistros = 0;
         modelo = new DefaultTableModel(null, titulos);
-
         sSQL =  sSQL = "SELECT usuario.id_usuario,usuario.nombre_usuario,usuario.apellido_usuario,usuario.usuario,usuario.clave,tipousuario.tipo_usuario,usuario.correo_usuario "
                + "FROM usuario "
                + "INNER JOIN tipousuario ON usuario.TipoUsuario_id_tipoUsuario = tipousuario.id_tipoUsuario "
                 +"  where usuario.usuario ='" +login +"' "
                 +" and usuario.clave ='" + password + "'";
-
         try {
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
-
             while (rs.next()) {
                 registro[0] = rs.getString("id_usuario");
                 registro[1] = rs.getString("nombre_usuario");
                 registro[2] = rs.getString("apellido_usuario");
-                registro[3] = rs.getString("usuario");
-                
+                registro[3] = rs.getString("usuario");              
                 registro[4] = rs.getString("clave");
                 registro[5] = rs.getString("tipousuario.tipo_usuario");
                 registro[6] = rs.getString("correo_usuario");
@@ -51,7 +44,7 @@ public class vlogin {
             return null;
         }
     }
-
+//este metodo hace un conteo de usuarios para ver si necesita registrarse el primer usuario o no 
     public int ContarUsuarios (){
       sSQL ="select count(*)AS cantidadUsuarios from usuario";
         
@@ -68,7 +61,7 @@ public class vlogin {
             return 0;
         }
     }
-
+//este metodo ayudada distinguir si el ususario logeado es admin. o usuario comun
     public int verificarLogin (){
         String login = FR_nuevoUsuario.txtusu.getText();
         sSQL ="SELECT COUNT(login) AS login FROM usuario WHERE login = "+login;
