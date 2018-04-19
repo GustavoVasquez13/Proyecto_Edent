@@ -1,4 +1,4 @@
-package entidades;
+package Clases;
 
 public class vusuario {
     public String nombre;
