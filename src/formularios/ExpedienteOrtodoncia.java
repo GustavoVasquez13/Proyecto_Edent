@@ -6,15 +6,17 @@
 package formularios;
 
 import Clases.InsertarDatosBD;
+import Clases.internalFrameImagen;
 
 
 
 
-public class ExpedienteOrtodoncia extends javax.swing.JInternalFrame {
+public class ExpedienteOrtodoncia extends internalFrameImagen {
 
 
     public ExpedienteOrtodoncia() {
         initComponents(); 
+        setImagenw("img2.jpg");
     }
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
