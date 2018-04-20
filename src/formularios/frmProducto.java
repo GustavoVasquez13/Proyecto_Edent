@@ -1,12 +1,14 @@
 package formularios;
 
+import Clases.internalFrameImagen;
 import Clases.InsertarDatosBD;
 import javax.swing.JOptionPane;
 
-public class frmProducto extends javax.swing.JInternalFrame {
+public class frmProducto extends internalFrameImagen {
 
     public frmProducto() {
         initComponents();
+        setImagenw("img2.jpg"); 
     }
 
     @SuppressWarnings("unchecked")
