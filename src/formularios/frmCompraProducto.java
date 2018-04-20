@@ -323,7 +323,7 @@ public class frmCompraProducto extends internalFrameImagen {
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         if(txtProveedor.getText().length() !=0 && txtProducto.getText().length()!=0 
                 && txtCosto.getText().length() !=0 && txtMarca.getText().length() !=0
-                && txtCantidad.getText().length() !=0 && fechaCompra.isValid()){
+                && txtCantidad.getText().length() !=0 ){
             int IdProd = codigoProd;
             double costo = Double.parseDouble(txtCosto.getText());
             int cantidad = Integer.parseInt(txtCantidad.getText());
