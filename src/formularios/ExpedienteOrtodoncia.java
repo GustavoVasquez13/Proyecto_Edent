@@ -7,6 +7,7 @@ package formularios;
 
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
+import Clases.validaciones;
 
 
 
@@ -1145,14 +1146,32 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         lbltelefono.setText("Telefono:");
         getContentPane().add(lbltelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
+
+        txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txttelefonoKeyTyped(evt);
+            }
+        });
         getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 99, -1));
 
         lbledad.setText("Edad:");
         getContentPane().add(lbledad, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, -1, -1));
+
+        txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtedadKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, 99, -1));
 
         lblnombre.setText("Nombre: ");
         getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+
+        txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtnombreKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 190, -1));
 
         lbldireccion1.setText("Dirección: ");
@@ -6781,6 +6800,12 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         lblnombre40.setText("Apellido:");
         getContentPane().add(lblnombre40, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, -1, -1));
+
+        txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtapellidoKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 190, -1));
 
         jSeparator71.setForeground(new java.awt.Color(0, 0, 0));
@@ -9041,6 +9066,26 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
        this.dispose();
     }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void txtnombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnombreKeyTyped
+        validaciones val = new validaciones();
+        val.validarCaracter(evt);
+    }//GEN-LAST:event_txtnombreKeyTyped
+
+    private void txtapellidoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtapellidoKeyTyped
+        validaciones val = new validaciones();
+        val.validarCaracter(evt);
+    }//GEN-LAST:event_txtapellidoKeyTyped
+
+    private void txttelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttelefonoKeyTyped
+       validaciones val = new validaciones();
+        val.validarNum(evt);
+    }//GEN-LAST:event_txttelefonoKeyTyped
+
+    private void txtedadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtedadKeyTyped
+        validaciones val = new validaciones();
+        val.validarNum(evt);
+    }//GEN-LAST:event_txtedadKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
