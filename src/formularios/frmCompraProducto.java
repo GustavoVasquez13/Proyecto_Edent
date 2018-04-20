@@ -108,6 +108,12 @@ public class frmCompraProducto extends internalFrameImagen {
         jLabel1.setFont(new java.awt.Font("Cambria Math", 1, 24)); // NOI18N
         jLabel1.setText("Comprar productos");
 
+        txtCantidad.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCantidadKeyTyped(evt);
+            }
+        });
+
         jLabel2.setText(" Buscar Producto:");
 
         jLabel4.setText("Buscar Proveedor:");
@@ -369,6 +375,11 @@ public class frmCompraProducto extends internalFrameImagen {
         validaciones val = new validaciones();
         val.validarNum(evt);
     }//GEN-LAST:event_txtCostoKeyTyped
+
+    private void txtCantidadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadKeyTyped
+        validaciones val=new validaciones();
+        val.validarNum(evt);
+    }//GEN-LAST:event_txtCantidadKeyTyped
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCerrar;
