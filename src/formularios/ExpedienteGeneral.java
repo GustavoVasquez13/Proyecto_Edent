@@ -504,10 +504,22 @@ public class ExpedienteGeneral extends internalFrameImagen {
 
         lbltelefono.setText("Telefono:");
         getContentPane().add(lbltelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, -1, -1));
+
+        txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txttelefonoKeyTyped(evt);
+            }
+        });
         getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 100, 99, -1));
 
         lbledad.setText("Edad:");
         getContentPane().add(lbledad, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, -1, -1));
+
+        txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtedadKeyTyped(evt);
+            }
+        });
         getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 100, 99, -1));
 
         lblnombre.setText("Nombre: ");
@@ -3807,8 +3819,18 @@ public class ExpedienteGeneral extends internalFrameImagen {
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
-        // TODO add your handling code here:
+        this.dispose();
     }//GEN-LAST:event_btnsalirActionPerformed
+
+    private void txttelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttelefonoKeyTyped
+         validaciones val = new validaciones();
+        val.validarNum(evt);
+    }//GEN-LAST:event_txttelefonoKeyTyped
+
+    private void txtedadKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtedadKeyTyped
+        validaciones val = new validaciones();
+        val.validarNum(evt);
+    }//GEN-LAST:event_txtedadKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
