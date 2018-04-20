@@ -6,6 +6,7 @@
 package formularios;
 
 import Clases.InsertarDatosBD;
+import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
 import java.util.Calendar;
@@ -15,14 +16,14 @@ import java.util.Calendar;
  *
  * @author ricar
  */
-public class ExpedienteGeneral extends javax.swing.JInternalFrame {
+public class ExpedienteGeneral extends internalFrameImagen {
 
     /**
      * Creates new form ExpedienteGeneral
      */
     public ExpedienteGeneral() {
         initComponents();
-       
+       setImagenw("img2.jpg");
     }
 
     /**
@@ -486,6 +487,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         fecha = new com.toedter.calendar.JDateChooser();
         jButton1 = new javax.swing.JButton();
         lbtipoo = new javax.swing.JLabel();
+        btnsalir = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -2646,14 +2648,14 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 390, 80, 20));
         getContentPane().add(txtpresupuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 390, 350, 70));
 
-        btnGuardar.setText("Guardar");
+        btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setToolTipText("");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1230, 520, 80, 60));
+        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 500, 60, 60));
 
         jLabel2.setText("Apellido:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
@@ -2684,6 +2686,15 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
         lbtipoo.setText("el tipo de paciente es:");
         getContentPane().add(lbtipoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 140, 160, -1));
+
+        btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
+        btnsalir.setToolTipText("");
+        btnsalir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsalirActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 500, 60, 60));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3795,9 +3806,14 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
        formProd.show();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnsalirActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnsalir;
     private com.toedter.calendar.JDateChooser fecha;
     private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
