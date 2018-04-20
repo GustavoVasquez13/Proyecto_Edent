@@ -68,6 +68,11 @@ public class frmInsertarTipoPaciente extends javax.swing.JInternalFrame {
 
             }
         ));
+        jtpacientes.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jtpacientesMousePressed(evt);
+            }
+        });
         jScrollPane1.setViewportView(jtpacientes);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
@@ -149,6 +154,17 @@ public class frmInsertarTipoPaciente extends javax.swing.JInternalFrame {
             JOptionPane.showMessageDialog(null, "Debe Ingresar un Servicio y un Proveedor");
         }
     }//GEN-LAST:event_btnGuardarActionPerformed
+
+    private void jtpacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtpacientesMousePressed
+if(evt.getClickCount()==2){
+            int fila =jtpacientes.getSelectedRow();
+            String cod;
+            String nombre;
+            cod=jtpacientes.getValueAt(fila, 0).toString(); 
+            ExpedienteGeneral.txttip.setText(cod);
+            this.dispose();
+        }         // TODO add your handling code here:
+    }//GEN-LAST:event_jtpacientesMousePressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
