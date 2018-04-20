@@ -20,14 +20,14 @@ public class frmInsertarTipoPaciente extends javax.swing.JInternalFrame {
     // En este metodo se muestran en el control Jtable todos los datos que se encuentran almacenados en la tabla tipopaciente
     
         private void mostrarTP() {
-        try {
-            DefaultTableModel modelo;
-            ConsultarDatosBD MostrarTP = new ConsultarDatosBD();
-            modelo = MostrarTP.mostrarTipoPaciente();
-            jtpacientes.setModel(modelo);
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Tipos de Paciente");
-        }
+            try {
+                DefaultTableModel modelo;
+                ConsultarDatosBD MostrarTP = new ConsultarDatosBD();
+                modelo = MostrarTP.mostrarTipoPaciente();
+                jtpacientes.setModel(modelo);
+            }catch (Exception e) {
+                JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Tipos de Paciente");
+            }
         }
 
   
@@ -161,7 +161,9 @@ if(evt.getClickCount()==2){
             String cod;
             String nombre;
             cod=jtpacientes.getValueAt(fila, 0).toString(); 
+            nombre=jtpacientes.getValueAt(fila, 1).toString();
             ExpedienteGeneral.txttip.setText(cod);
+            ExpedienteGeneral.lbtipoo.setText(nombre);
             this.dispose();
         }         // TODO add your handling code here:
     }//GEN-LAST:event_jtpacientesMousePressed

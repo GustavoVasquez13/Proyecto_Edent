@@ -7,6 +7,7 @@ package formularios;
 
 import Clases.InsertarDatosBD;
 import Clases.validaciones;
+import static formularios.frmPrincipal.Dpanel;
 import java.util.Calendar;
 
 
@@ -483,6 +484,8 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         jSeparator1 = new javax.swing.JSeparator();
         jSeparator2 = new javax.swing.JSeparator();
         fecha = new com.toedter.calendar.JDateChooser();
+        jButton1 = new javax.swing.JButton();
+        lbtipoo = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
@@ -2669,6 +2672,18 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
 
         fecha.setDateFormatString("yyyy-MM-dd");
         getContentPane().add(fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 110, -1));
+        getContentPane().add(txttip, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 0, 10));
+
+        jButton1.setText("Elegir tipo de paciente");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 160, -1, -1));
+
+        lbtipoo.setText("el tipo de paciente es:");
+        getContentPane().add(lbtipoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 140, 160, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3733,10 +3748,11 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
       String direccion = this.txtdirección.getText().toUpperCase();
       String telefono = this.txttelefono.getText().toUpperCase();
       String edad = this.txtedad.getText();
+      String tip=this.txttip.getText();
       //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
       //a la clase los parametros obtenidos por los jtextfield
       InsertarDatosBD insertar = new InsertarDatosBD();
-      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad);
+      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad,tip);
       // se crean variables para guardar en ellas los datos recibidos de los jtextfield
       String motivo = this.txtMotivoC.getText().toUpperCase();
       Double total = Double.parseDouble( this.txtpresupuesto.getText());
@@ -3773,10 +3789,17 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
         val.validarCaracter(evt);
     }//GEN-LAST:event_txtapellidoKeyTyped
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+       frmInsertarTipoPaciente formProd = new frmInsertarTipoPaciente();
+       Dpanel.add(formProd);
+       formProd.show();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnGuardar;
     private com.toedter.calendar.JDateChooser fecha;
+    private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox100;
@@ -4214,6 +4237,7 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private javax.swing.JLabel lblnombre6;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltitulo;
+    public static javax.swing.JLabel lbtipoo;
     private javax.swing.JTextField txtDX;
     private javax.swing.JTextField txtExamenC;
     private javax.swing.JTextField txtHistoriaM;
@@ -4225,5 +4249,6 @@ public class ExpedienteGeneral extends javax.swing.JInternalFrame {
     private javax.swing.JTextField txtnombre;
     private javax.swing.JTextField txtpresupuesto;
     private javax.swing.JTextField txttelefono;
+    public static final javax.swing.JTextField txttip = new javax.swing.JTextField();
     // End of variables declaration//GEN-END:variables
 }

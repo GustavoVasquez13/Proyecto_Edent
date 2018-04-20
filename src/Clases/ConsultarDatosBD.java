@@ -143,18 +143,19 @@ public class ConsultarDatosBD {
         DefaultTableModel modelo;
         //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulo
-                = {"Tipo de Paciente"};
-        String[] registros = new String[1];
+                = {"Codigo","Tipo de Paciente"};
+        String[] registros = new String[2];
         totalRegistros = 0;
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
         //consulta para mostrar los datos de la base de datos
-        sSQL = "SELECT  `nombre_tipo` FROM tipopaciente;";
+        sSQL = "SELECT * FROM tipopaciente;";
         try {
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
             while (rs.next()) {
-                registros[0] = rs.getString("nombre_tipo");
+                registros[0] = rs.getString("id_tipoPaciente");
+                registros[1] = rs.getString("nombre_tipo");
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
             }
