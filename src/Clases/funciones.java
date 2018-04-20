@@ -77,7 +77,7 @@ Connection cn = cc.conectar();
             if (rs.next()) {
                 
                 id=rs.getString(1);
-                user = rs.getString(4);
+                user = rs.getString(5);
                 cor=rs.getString(7);
                try {           
             PreparedStatement pst=cn.prepareStatement(sql1);
