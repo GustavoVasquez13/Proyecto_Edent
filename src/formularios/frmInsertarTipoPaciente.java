@@ -3,14 +3,16 @@ package formularios;
 
 import Clases.ConsultarDatosBD;
 import Clases.InsertarDatosBD;
+import Clases.internalFrameImagen;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
 
-public class frmInsertarTipoPaciente extends javax.swing.JInternalFrame {
+public class frmInsertarTipoPaciente extends internalFrameImagen {
 
     public frmInsertarTipoPaciente() {
         initComponents();
+        setImagenw("img2.jpg");
         mostrarTP();
     }
     // En este metodo se muestran en el control Jtable todos los datos que se encuentran almacenados en la tabla tipopaciente
@@ -41,7 +43,7 @@ public class frmInsertarTipoPaciente extends javax.swing.JInternalFrame {
 
         btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnCancelar.setForeground(new java.awt.Color(0, 102, 204));
-        btnCancelar.setText("Cancelar");
+        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -76,7 +78,7 @@ public class frmInsertarTipoPaciente extends javax.swing.JInternalFrame {
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnGuardar.setForeground(new java.awt.Color(0, 102, 204));
-        btnGuardar.setText("Guardar");
+        btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnGuardar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -92,19 +94,23 @@ public class frmInsertarTipoPaciente extends javax.swing.JInternalFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(66, 66, 66)
-                        .addComponent(btnGuardar)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnCancelar))
-                    .addGroup(layout.createSequentialGroup()
                         .addGap(57, 57, 57)
                         .addComponent(jLabel5))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel1)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(66, 66, 66)
+                                .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
+                                .addGap(42, 42, 42)
+                                .addComponent(jLabel1)))
                         .addGap(18, 18, 18)
-                        .addComponent(txtpaciente)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 47, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtpaciente, javax.swing.GroupLayout.DEFAULT_SIZE, 118, Short.MAX_VALUE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(0, 0, Short.MAX_VALUE)))))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -124,7 +130,7 @@ public class frmInsertarTipoPaciente extends javax.swing.JInternalFrame {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(btnGuardar)
                             .addComponent(btnCancelar))))
-                .addContainerGap(25, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
