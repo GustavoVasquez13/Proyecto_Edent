@@ -1,17 +1,20 @@
 package formularios;
 
 import Clases.ConsultarDatosBD;
+import Clases.internalFrameImagen;
 import Clases.InsertarDatosBD;
+import Clases.validaciones;
 import java.util.Calendar;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-public class frmCompraProducto extends javax.swing.JInternalFrame {
+public class frmCompraProducto extends internalFrameImagen {
 
     int codigoProv;
     int codigoProd;
     public frmCompraProducto() {
         initComponents();
+        setImagenw("img2.jpg");        
         mostrarProv();
         mostrarProd();
     }
@@ -94,6 +97,12 @@ public class frmCompraProducto extends javax.swing.JInternalFrame {
 
         jLabel5.setText("Costo:");
 
+        txtCosto.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtCostoKeyTyped(evt);
+            }
+        });
+
         jLabel6.setText("Cantidad:");
 
         jLabel1.setFont(new java.awt.Font("Cambria Math", 1, 24)); // NOI18N
@@ -144,7 +153,11 @@ public class frmCompraProducto extends javax.swing.JInternalFrame {
         });
         jScrollPane1.setViewportView(jtProv);
 
+        txtProveedor.setEditable(false);
+
         jLabel8.setText("Proveedor seleccionado:");
+
+        txtProducto.setEditable(false);
 
         jLabel3.setText(" Producto seleccionado:");
 
@@ -287,7 +300,7 @@ public class frmCompraProducto extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(fechaCompra, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(btnComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(btnCerrar, javax.swing.GroupLayout.PREFERRED_SIZE, 43, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -351,6 +364,12 @@ public class frmCompraProducto extends javax.swing.JInternalFrame {
         String nombreProd = (String)jtProd.getValueAt(filaSelect, 1);
         txtProducto.setText(nombreProd);
     }//GEN-LAST:event_jtProdMouseClicked
+
+    private void txtCostoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCostoKeyTyped
+        validaciones val = new validaciones();
+        val.validarNum(evt);
+    }//GEN-LAST:event_txtCostoKeyTyped
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnComprar;
