@@ -1,9 +1,12 @@
 package formularios;
 
-public class frmEmpleados extends javax.swing.JInternalFrame {
+import Clases.internalFrameImagen;
+
+public class frmEmpleados extends internalFrameImagen {
 
     public frmEmpleados() {
         initComponents();
+        setImagenw("img2.jpg");
     }
 
 

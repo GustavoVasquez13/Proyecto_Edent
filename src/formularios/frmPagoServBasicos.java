@@ -17,7 +17,7 @@ public class frmPagoServBasicos extends internalFrameImagen {
 
     public frmPagoServBasicos() {
         initComponents();
-        //setImagenw("img2.jpg");
+        setImagenw("img2.jpg");
         mostrarServ();
     }
     
@@ -91,14 +91,24 @@ public class frmPagoServBasicos extends internalFrameImagen {
 
         fechaPago.setDateFormatString("yyyy-MM-dd");
 
+        btnRegistrar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnRegistrar.setForeground(new java.awt.Color(51, 102, 255));
+        btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/pago.png"))); // NOI18N
         btnRegistrar.setText("Registrar");
+        btnRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnRegistrar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnRegistrar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnRegistrarActionPerformed(evt);
             }
         });
 
+        btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(51, 102, 255));
+        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
+        btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnCancelarActionPerformed(evt);
@@ -131,14 +141,24 @@ public class frmPagoServBasicos extends internalFrameImagen {
 
         txtServicio.setEditable(false);
 
+        btnAggNS.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnAggNS.setForeground(new java.awt.Color(51, 102, 255));
+        btnAggNS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/nuevo.png"))); // NOI18N
         btnAggNS.setText("Agregar Nuevo Servicio");
+        btnAggNS.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnAggNS.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnAggNS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAggNSActionPerformed(evt);
             }
         });
 
+        btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnActualizar.setForeground(new java.awt.Color(51, 102, 255));
+        btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/actualizar.png"))); // NOI18N
         btnActualizar.setText("Actualizar Tabla");
+        btnActualizar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnActualizar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnActualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnActualizarActionPerformed(evt);
@@ -247,7 +267,7 @@ public class frmPagoServBasicos extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(85, Short.MAX_VALUE))
+                .addContainerGap(21, Short.MAX_VALUE))
         );
 
         pack();
