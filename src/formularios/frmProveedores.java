@@ -1,15 +1,17 @@
 package formularios;
 
 import Clases.InsertarDatosBD;
+import Clases.internalFrameImagen;
 import Clases.validaciones;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
-public class frmProveedores extends javax.swing.JInternalFrame {
+public class frmProveedores extends internalFrameImagen {
     
     DefaultTableModel model;
     public frmProveedores() {
-        initComponents();   
+        initComponents();
+        setImagenw("img2.jpg");
     }
 
     @SuppressWarnings("unchecked")
