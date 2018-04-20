@@ -3,6 +3,7 @@ package formularios;
 import Clases.ConsultarDatosBD;
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
+import Clases.validaciones;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
@@ -79,6 +80,12 @@ public class frmPagoServBasicos extends internalFrameImagen {
         jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel4.setText("Total a pagar");
 
+        txtTotalPago.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtTotalPagoKeyTyped(evt);
+            }
+        });
+
         jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
         jLabel5.setText("Fecha de pago");
 
@@ -98,6 +105,11 @@ public class frmPagoServBasicos extends internalFrameImagen {
             }
         });
 
+        jtServ = new javax.swing.JTable(){
+            public boolean isCellEditable(int rowIndex, int colIndex){
+                return false;
+            }
+        };
         jtServ.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
@@ -109,6 +121,7 @@ public class frmPagoServBasicos extends internalFrameImagen {
 
             }
         ));
+        jtServ.getTableHeader().setReorderingAllowed(false);
         jtServ.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jtServMousePressed(evt);
@@ -300,6 +313,11 @@ public class frmPagoServBasicos extends internalFrameImagen {
         trsFiltro = new TableRowSorter(jtServ.getModel());
         jtServ.setRowSorter(trsFiltro); 
     }//GEN-LAST:event_txtBuscarKeyTyped
+
+    private void txtTotalPagoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTotalPagoKeyTyped
+        validaciones val = new validaciones();
+        val.validarNum(evt);
+    }//GEN-LAST:event_txtTotalPagoKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

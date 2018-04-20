@@ -32,7 +32,7 @@ public class frmServBasicos extends internalFrameImagen {
             jtServicios.setModel(modelo);
             this.btnModificarReg.setEnabled(false);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Servicios Basicos");
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE SERVICIOS");
         }
     }
     
@@ -116,7 +116,7 @@ public class frmServBasicos extends internalFrameImagen {
 
         btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnCancelar.setForeground(new java.awt.Color(0, 102, 204));
-        btnCancelar.setText("Cancelar");
+        btnCancelar.setText("Cerrar");
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnCancelar.addActionListener(new java.awt.event.ActionListener() {
@@ -125,6 +125,11 @@ public class frmServBasicos extends internalFrameImagen {
             }
         });
 
+        jtServicios = new javax.swing.JTable(){
+            public boolean isCellEditable(int rowIndex, int colIndex){
+                return false;
+            }
+        };
         jtServicios.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
@@ -136,6 +141,7 @@ public class frmServBasicos extends internalFrameImagen {
 
             }
         ));
+        jtServicios.getTableHeader().setReorderingAllowed(false);
         jtServicios.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 jtServiciosMousePressed(evt);
@@ -191,8 +197,8 @@ public class frmServBasicos extends internalFrameImagen {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(18, 18, 18)
                                 .addComponent(btnGuardar)
-                                .addGap(53, 53, 53)
-                                .addComponent(btnCancelar))
+                                .addGap(50, 50, 50)
+                                .addComponent(btnModificarReg, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addComponent(jLabel3)
@@ -204,12 +210,12 @@ public class frmServBasicos extends internalFrameImagen {
                         .addGap(28, 28, 28)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnModificarReg, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addComponent(jLabel6)
                         .addGap(12, 12, 12)
-                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(btnCancelar))
                 .addGap(10, 10, 10))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -254,7 +260,7 @@ public class frmServBasicos extends internalFrameImagen {
                                 .addComponent(txtServicio, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGap(26, 26, 26)
                             .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 48, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 52, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnCancelar, javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnGuardar, javax.swing.GroupLayout.Alignment.TRAILING)
@@ -284,7 +290,7 @@ public class frmServBasicos extends internalFrameImagen {
                 InsertarDatosBD insertDatos = new InsertarDatosBD();
                 insertDatos.insertServicioBasic(servicio,proveedor,correo,telefono);
             }else{
-                JOptionPane.showMessageDialog(null, "ya existe");
+                JOptionPane.showMessageDialog(null, "YA EXISTE EL REGISTRO EN LA TABLA");
             }
             limpiarTxt();
             mostrarServ();
@@ -333,8 +339,14 @@ public class frmServBasicos extends internalFrameImagen {
             String telefono = this.txtTelefono.getText();
             int cod = Integer.valueOf(this.lblCod.getText());
             
-            ActualizarDatosBD serv = new ActualizarDatosBD();
-            serv.actualizarDatosServicios(servicio, proveedor, corrreo, telefono, cod);
+            ConsultarDatosBD val = new ConsultarDatosBD();
+            if(val.valExistServicio(servicio,proveedor)!=true){
+                ActualizarDatosBD serv = new ActualizarDatosBD();
+                serv.actualizarDatosServicios(servicio, proveedor, corrreo, telefono, cod);
+            }else{
+                ActualizarDatosBD sv = new ActualizarDatosBD();
+                sv.actualizarSB(corrreo, telefono, cod);
+            }
             this.btnGuardar.setEnabled(true);
             this.btnModificarReg.setEnabled(false);
             this.lblCod.setText("");
@@ -342,7 +354,7 @@ public class frmServBasicos extends internalFrameImagen {
             limpiarTxt();
             mostrarServ();
         }else{
-            JOptionPane.showMessageDialog(null, "Debe Ingresar un Servicio y un Proveedor");
+            JOptionPane.showMessageDialog(null, "DEBE INGRESAR UN SERVICIO Y UN PROVEEDOR");
         }
     }//GEN-LAST:event_btnModificarRegActionPerformed
 

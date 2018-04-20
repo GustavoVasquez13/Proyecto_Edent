@@ -26,4 +26,20 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+    //este metodo solo actualiza el correo y el telefono de los servicios basicos
+    public void actualizarSB(String correo,String tel, int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update tiposervicio set `correo_provS`=?, `tel_provS`=? "
+                    + "where id_tipoServicio='"+code+"';");
+            pst.setString(1, correo);
+            pst.setString(2, tel);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "SE MODIFICO EL REGISTRO CORRECTAMENTE");
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "OCURRIO UN PROBLEMA AL ACTUALIZAR LOS DATOS DE SERVICIO "+e);
+            con.closeBd();
+        }
+    }
 }

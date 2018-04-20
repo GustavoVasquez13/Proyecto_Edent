@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2018-03-31 07:04:55.374
+-- Last modification date: 2018-04-19 23:55:15.385
 
 -- tables
 -- Table: AbonoCompra
@@ -19,6 +19,10 @@ CREATE TABLE Consulta (
     fecha_consulta date NULL,
     PacienteN_id_pacienteN int NOT NULL,
     Total_pagar double(9,2) NULL,
+    HistoriaM varchar(100) NOT NULL,
+    HistoriaO varchar(100) NOT NULL,
+    ExamenC varchar(100) NOT NULL,
+    DXodon varchar(100) NOT NULL,
     CONSTRAINT Consulta_pk PRIMARY KEY (id_consulta)
 ) COMMENT 'registra las consulta registradas para establecer su historial';
 
@@ -70,6 +74,7 @@ CREATE TABLE Empleado (
     cargo_empl varchar(50) NOT NULL,
     sueldo_empl double(9,2) NULL,
     dui_empl char(10) NULL,
+    estado_empl bool NULL,
     CONSTRAINT Empleado_pk PRIMARY KEY (id_empleado)
 ) COMMENT 'esta tabla regista el personal empleado por la clinica';
 
@@ -127,16 +132,11 @@ CREATE TABLE PacienteN (
     nombre_pacte varchar(25) NOT NULL,
     apellido_pacte varchar(25) NOT NULL,
     direccion_pacte varchar(100) NULL,
-    correo_pacte varchar(75) NULL,
     tel_pacte varchar(15) NULL,
-    genero_pacte char(1) NULL,
-    fechaNac_pacte date NULL,
-    clasificacion_maxilares varchar(100) NULL,
-    entorno_dental varchar(100) NULL,
-    objetivos varchar(150) NULL,
     estado_paciente bool NULL,
     DientesPacte_id_diente int NOT NULL,
     TipoPaciente_id_tipoPaciente int NOT NULL,
+    edad int NOT NULL,
     CONSTRAINT PacienteN_pk PRIMARY KEY (id_pacienteN)
 ) COMMENT 'guarda los datos generales de un paciente de categoria normal';
 
@@ -235,6 +235,30 @@ CREATE TABLE ingresos_productos (
     costo_producto double(9,2) NULL,
     CONSTRAINT ingresos_productos_pk PRIMARY KEY (id_ingresoP)
 ) COMMENT 'ingresos por venta de algunos productos clinicos ';
+
+-- Table: plan_trata_ortodon
+CREATE TABLE plan_trata_ortodon (
+    id_ortodoncia int NOT NULL AUTO_INCREMENT,
+    bandas varchar(100) NULL,
+    tubos varchar(100) NULL,
+    otros varchar(150) NULL,
+    aparato varchar(100) NULL,
+    exodoncia varchar(100) NULL,
+    brackets varchar(100) NULL,
+    retenciones varchar(100) NULL,
+    arcos varchar(100) NULL,
+    md varchar(100) NULL,
+    f_faciales bool NULL,
+    f_intraorales bool NOT NULL,
+    modelo_mx bool NOT NULL,
+    modelo_md bool NOT NULL,
+    rx_panoramica bool NOT NULL,
+    rx_cefalometrica bool NOT NULL,
+    rx_incicivos bool NOT NULL,
+    rx_rocabado varchar(150) NOT NULL,
+    Consulta_id_consulta int NOT NULL,
+    CONSTRAINT plan_trata_ortodon_pk PRIMARY KEY (id_ortodoncia)
+) COMMENT 'registra las consulta de ortodoncias registradas para establecer su historial';
 
 -- Table: productos
 CREATE TABLE productos (
@@ -336,6 +360,10 @@ ALTER TABLE detalleCompra ADD CONSTRAINT detalleCompra_Proveedores FOREIGN KEY d
 -- Reference: detalleCompra_productos (table: detalleCompra)
 ALTER TABLE detalleCompra ADD CONSTRAINT detalleCompra_productos FOREIGN KEY detalleCompra_productos (productos_id_prodto)
     REFERENCES productos (id_prodto);
+
+-- Reference: plan_trata_ortodon_Consulta (table: plan_trata_ortodon)
+ALTER TABLE plan_trata_ortodon ADD CONSTRAINT plan_trata_ortodon_Consulta FOREIGN KEY plan_trata_ortodon_Consulta (Consulta_id_consulta)
+    REFERENCES Consulta (id_consulta);
 
 -- End of file.
 
