@@ -109,6 +109,11 @@ public class frmServBasicos extends internalFrameImagen {
             }
         });
 
+        txtTelefono.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtTelefonoActionPerformed(evt);
+            }
+        });
         txtTelefono.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTelefonoKeyTyped(evt);
@@ -388,6 +393,10 @@ public class frmServBasicos extends internalFrameImagen {
         trsFiltro = new TableRowSorter(jtServicios.getModel());
         jtServicios.setRowSorter(trsFiltro);
     }//GEN-LAST:event_txtBuscarKeyTyped
+
+    private void txtTelefonoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtTelefonoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtTelefonoActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
