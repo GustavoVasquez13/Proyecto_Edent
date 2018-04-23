@@ -63,7 +63,7 @@ public class vlogin {
     }
 //este metodo ayudada distinguir si el ususario logeado es admin. o usuario comun
     public int verificarLogin (){
-        String login = FR_nuevoUsuario.txtusu.getText();
+        String login = fr_nuevoUsuario.txtusu.getText();
         sSQL ="SELECT COUNT(login) AS login FROM usuario WHERE login = "+login;
         
         try {
