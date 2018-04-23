@@ -1,9 +1,18 @@
 package formularios;
 
-public class frmPrincipal extends javax.swing.JFrame {
+import java.util.Calendar;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
+public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
+ String hora, minutos, segundos, ampm;
+    Calendar calendario;
+    Thread h1;
     public frmPrincipal() {
         initComponents();
+        this.setTitle("E-DENT");
+        h1 = new Thread(this);
+        h1.start();
     }
 
     @SuppressWarnings("unchecked")
@@ -11,6 +20,10 @@ public class frmPrincipal extends javax.swing.JFrame {
     private void initComponents() {
 
         Dpanel = new javax.swing.JDesktopPane();
+        lbhora = new javax.swing.JLabel();
+        lblapellidos = new javax.swing.JLabel();
+        lblnombres = new javax.swing.JLabel();
+        lblacceso = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -31,15 +44,49 @@ public class frmPrincipal extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
+        lbhora.setBackground(new java.awt.Color(0, 0, 0));
+        lbhora.setFont(new java.awt.Font("MV Boli", 1, 24)); // NOI18N
+        lbhora.setForeground(new java.awt.Color(102, 102, 255));
+        lbhora.setText("hora de sistema");
+
+        lblapellidos.setForeground(new java.awt.Color(255, 255, 255));
+        lblapellidos.setText("jLabel4");
+
+        lblnombres.setForeground(new java.awt.Color(255, 255, 255));
+        lblnombres.setText("jLabel3");
+
+        lblacceso.setForeground(new java.awt.Color(255, 255, 255));
+        lblacceso.setText("jLabel5");
+
+        Dpanel.setLayer(lbhora, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Dpanel.setLayer(lblapellidos, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Dpanel.setLayer(lblnombres, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Dpanel.setLayer(lblacceso, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
         javax.swing.GroupLayout DpanelLayout = new javax.swing.GroupLayout(Dpanel);
         Dpanel.setLayout(DpanelLayout);
         DpanelLayout.setHorizontalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 890, Short.MAX_VALUE)
+            .addGroup(DpanelLayout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(lblnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(lblapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblacceso, javax.swing.GroupLayout.PREFERRED_SIZE, 78, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 428, Short.MAX_VALUE)
+                .addComponent(lbhora))
         );
         DpanelLayout.setVerticalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 525, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DpanelLayout.createSequentialGroup()
+                .addContainerGap(484, Short.MAX_VALUE)
+                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblapellidos)
+                    .addComponent(lblacceso)
+                    .addComponent(lblnombres)
+                    .addComponent(lbhora))
+                .addContainerGap())
         );
 
         getContentPane().add(Dpanel);
@@ -148,7 +195,32 @@ public class frmPrincipal extends javax.swing.JFrame {
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+public void run() {
+        Thread ct = Thread.currentThread();
+        while (ct == h1) {
+            calcula();
+            lbhora.setText(hora + ":" + minutos + ":" + segundos + " " + ampm);
+            try {
+                Thread.sleep(1000);
+            } catch (InterruptedException e) {
+            }
+        }
+    }
+ public void calcula() {
+        Calendar calendario = new GregorianCalendar();
+        Date fechaHoraActual = new Date();
+        calendario.setTime(fechaHoraActual);
+        ampm = calendario.get(Calendar.AM_PM) == Calendar.AM ? "AM" : "PM";
 
+        if (ampm.equals("PM")) {
+            int h = calendario.get(Calendar.HOUR_OF_DAY) - 12;
+            hora = h > 9 ? "" + h : "0" + h;
+        } else {
+            hora = calendario.get(Calendar.HOUR_OF_DAY) > 9 ? "" + calendario.get(Calendar.HOUR_OF_DAY) : "0" + calendario.get(Calendar.HOUR_OF_DAY);
+        }
+        minutos = calendario.get(Calendar.MINUTE) > 9 ? "" + calendario.get(Calendar.MINUTE) : "0" + calendario.get(Calendar.MINUTE);
+        segundos = calendario.get(Calendar.SECOND) > 9 ? "" + calendario.get(Calendar.SECOND) : "0" + calendario.get(Calendar.SECOND);
+    }
     //Atravez del evento del MenuItem se crea un objeto del formulario Interno para mostrar
     private void jMenuItem1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem1ActionPerformed
         frmServBasicos formSB = new frmServBasicos();
@@ -256,5 +328,9 @@ fr_nuevoUsuario formusu = new fr_nuevoUsuario();
     private javax.swing.JMenuItem jMenuItem7;
     private javax.swing.JMenuItem jMenuItem8;
     private javax.swing.JMenuItem jMenuItem9;
+    private javax.swing.JLabel lbhora;
+    public static javax.swing.JLabel lblacceso;
+    public static javax.swing.JLabel lblapellidos;
+    public static javax.swing.JLabel lblnombres;
     // End of variables declaration//GEN-END:variables
 }
