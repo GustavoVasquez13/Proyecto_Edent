@@ -215,10 +215,18 @@ funciones v=new funciones();
                 fr.toFront();
                 fr.setVisible(true);
                 this.dispose();
-            }
-            else{
-                JOptionPane.showMessageDialog(rootPane, "Acceso Denegado","Acceso al Sistema",JOptionPane.ERROR_MESSAGE);
-            }
+                frmPrincipal.lblnombres.setText(tablalistado.getValueAt(0, 1).toString());
+              frmPrincipal.lblapellidos.setText(tablalistado.getValueAt(0, 2).toString());
+              frmPrincipal.lblacceso.setText(tablalistado.getValueAt(0, 5).toString());
+              
+              if(!frmPrincipal.lblacceso.getText().equals("Administrador")){
+                  
+              }
+             }
+             else{
+                 JOptionPane.showMessageDialog(rootPane, "Acceso Denegado","Acceso al Sistema",JOptionPane.ERROR_MESSAGE);
+             }
+            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "ERROR " + e);
         }        
