@@ -187,4 +187,24 @@ public class ConsultarDatosBD {
         con.closeBd();
         return true;
     }
+    
+    //este metodo valida que ya exista un empleado registrado en la base de datos y es usado en el formulario de empleados
+    public boolean valExistEmpleado(String dui){
+        try{
+            PreparedStatement pst2 = cn.prepareStatement("select dui_empl from empleado "
+                    + "where `dui_empl`='"+dui+"';");
+
+            ResultSet res2 = pst2.executeQuery();
+            if(res2.next()){
+                return true;
+            }else{
+                return false;
+            }
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(null, ex);
+            con.closeBd();
+        }
+        con.closeBd();
+        return true;
+    }
 }
