@@ -35,7 +35,7 @@ funciones v=new funciones();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        panel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/fondoL.png"))); // NOI18N
+        panel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Clases/img2.jpg"))); // NOI18N
         panel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 panel2MouseDragged(evt);
