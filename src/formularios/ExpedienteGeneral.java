@@ -3792,7 +3792,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
       //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
       //a la clase los parametros obtenidos por los jtextfield
       InsertarDatosBD insertar2 = new InsertarDatosBD();
-      insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx);
+      insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx,tip);
       //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
       limpiarTxt();
   
