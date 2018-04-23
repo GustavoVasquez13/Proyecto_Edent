@@ -152,14 +152,14 @@ public class InsertarDatosBD {
     }  
     //metodo para insertar pacientes generales a la tabla consulta se utiliza en el formulario ExpedienteGeneral
     public void insertarPacienteGC(String motivoC, String fecha ,Double presupuesto, String HistoriaM,String HistoriaO,
-                                     String ExamenC, String DXodontologico){
+                                     String ExamenC, String DXodontologico,String tipo){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO consulta(`motivo_consulta`,"
                     + "`fecha_consulta`,`PacienteN_id_pacienteN`,`Total_pagar`,`HistoriaM`,`HistoriaO`,"
                     + "`ExamenC`,`DXodon`) VALUES(?,?,?,?,?,?,?,?);");
             pps.setString(1, motivoC);
             pps.setString(2, fecha);
-            pps.setString(3, "4");
+            pps.setString(3, tipo);
             pps.setDouble(4, presupuesto);
             pps.setString(5,HistoriaM );
             pps.setString(6, HistoriaO);
