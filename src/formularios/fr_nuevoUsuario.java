@@ -19,6 +19,7 @@ InsertarDatosBD i=new InsertarDatosBD();
     public fr_nuevoUsuario() {
         initComponents();
          setImagenw("img2.jpg"); 
+         
          consultar();
     }
 
