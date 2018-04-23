@@ -18,8 +18,7 @@ InsertarDatosBD i=new InsertarDatosBD();
     public FrmInstalacion() {
       
         initComponents();
-         
-                 consultar();
+         consultar();
         inhabilitar();
     }
 
