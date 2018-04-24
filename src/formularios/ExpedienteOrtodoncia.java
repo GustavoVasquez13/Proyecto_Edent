@@ -8,6 +8,7 @@ package formularios;
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
+import static formularios.frmPrincipal.Dpanel;
 
 
 
@@ -465,109 +466,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
         jSeparator10 = new javax.swing.JSeparator();
-        jSeparator1 = new javax.swing.JSeparator();
-        jSeparator2 = new javax.swing.JSeparator();
-        jSeparator6 = new javax.swing.JSeparator();
-        jSeparator11 = new javax.swing.JSeparator();
-        jSeparator12 = new javax.swing.JSeparator();
-        jLabel3 = new javax.swing.JLabel();
-        jSeparator13 = new javax.swing.JSeparator();
-        jLabel4 = new javax.swing.JLabel();
-        txtEJE = new javax.swing.JTextField();
-        jSeparator14 = new javax.swing.JSeparator();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        txtanguloA1 = new javax.swing.JTextField();
-        jSeparator15 = new javax.swing.JSeparator();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        txtanguloG1 = new javax.swing.JTextField();
-        jSeparator16 = new javax.swing.JSeparator();
-        jLabel18 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        txtIMPA1 = new javax.swing.JTextField();
-        jLabel20 = new javax.swing.JLabel();
-        jLabel21 = new javax.swing.JLabel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel23 = new javax.swing.JLabel();
-        txtJa1 = new javax.swing.JTextField();
-        txtIS = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
-        jSeparator17 = new javax.swing.JSeparator();
-        jLabel25 = new javax.swing.JLabel();
-        txtII = new javax.swing.JTextField();
-        jSeparator18 = new javax.swing.JSeparator();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        txtFHIS = new javax.swing.JTextField();
-        jSeparator19 = new javax.swing.JSeparator();
-        jSeparator20 = new javax.swing.JSeparator();
-        jLabel28 = new javax.swing.JLabel();
-        jLabel29 = new javax.swing.JLabel();
-        txtANB82 = new javax.swing.JTextField();
-        jSeparator21 = new javax.swing.JSeparator();
-        jSeparator22 = new javax.swing.JSeparator();
-        jLabel30 = new javax.swing.JLabel();
-        jLabel31 = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        jLabel33 = new javax.swing.JLabel();
-        jSeparator24 = new javax.swing.JSeparator();
-        jSeparator25 = new javax.swing.JSeparator();
-        txtPALS = new javax.swing.JTextField();
-        txtANB80 = new javax.swing.JTextField();
-        txtANB2 = new javax.swing.JTextField();
-        jLabel78 = new javax.swing.JLabel();
-        jLabel79 = new javax.swing.JLabel();
-        txtPALI = new javax.swing.JTextField();
-        jSeparator23 = new javax.swing.JSeparator();
-        jLabel80 = new javax.swing.JLabel();
-        jLabel81 = new javax.swing.JLabel();
-        txtPTB = new javax.swing.JTextField();
-        jSeparator26 = new javax.swing.JSeparator();
-        jSeparator27 = new javax.swing.JSeparator();
-        lblnombre10 = new javax.swing.JLabel();
-        chcurvaleve1 = new javax.swing.JCheckBox();
-        chcurvamoderada1 = new javax.swing.JCheckBox();
-        chcurvasevera = new javax.swing.JCheckBox();
-        lblnombre6 = new javax.swing.JLabel();
-        txtDSD = new javax.swing.JTextField();
-        lblnombre9 = new javax.swing.JLabel();
-        lblnombre8 = new javax.swing.JLabel();
-        txtmaxilares = new javax.swing.JTextField();
-        lblnombre7 = new javax.swing.JLabel();
-        txtEntornoD = new javax.swing.JTextField();
-        lblnombre11 = new javax.swing.JLabel();
-        txtbandas = new javax.swing.JTextField();
-        lblnombre12 = new javax.swing.JLabel();
-        txttubos = new javax.swing.JTextField();
-        lblnombre13 = new javax.swing.JLabel();
-        txtotros = new javax.swing.JTextField();
-        lblnombre14 = new javax.swing.JLabel();
-        txtAparato = new javax.swing.JTextField();
-        lblnombre15 = new javax.swing.JLabel();
-        txtexodoncia = new javax.swing.JTextField();
-        lblnombre17 = new javax.swing.JLabel();
-        txtBrakets = new javax.swing.JTextField();
-        lblnombre19 = new javax.swing.JLabel();
-        txtRetenciones = new javax.swing.JTextField();
-        lblnombre18 = new javax.swing.JLabel();
-        txtsecuencia = new javax.swing.JTextField();
-        lblnombre20 = new javax.swing.JLabel();
-        txtMD = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel83 = new javax.swing.JLabel();
-        jSeparator28 = new javax.swing.JSeparator();
-        jSeparator3 = new javax.swing.JSeparator();
-        jLabel84 = new javax.swing.JLabel();
-        jLabel85 = new javax.swing.JLabel();
-        jLabel86 = new javax.swing.JLabel();
-        jSeparator29 = new javax.swing.JSeparator();
-        jSeparator30 = new javax.swing.JSeparator();
-        jLabel87 = new javax.swing.JLabel();
-        jSeparator31 = new javax.swing.JSeparator();
-        jSeparator32 = new javax.swing.JSeparator();
-        jSeparator33 = new javax.swing.JSeparator();
         jInternalFrame1 = new javax.swing.JInternalFrame();
         jLabel88 = new javax.swing.JLabel();
         jLabel89 = new javax.swing.JLabel();
@@ -1114,24 +1012,12 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         jSeparator64 = new javax.swing.JSeparator();
         jSeparator65 = new javax.swing.JSeparator();
         jSeparator66 = new javax.swing.JSeparator();
-        jSeparator67 = new javax.swing.JSeparator();
-        chmodelo = new javax.swing.JCheckBox();
-        chfaciales1 = new javax.swing.JCheckBox();
-        chpanoramica = new javax.swing.JCheckBox();
-        chintraorales = new javax.swing.JCheckBox();
-        jSeparator68 = new javax.swing.JSeparator();
-        chmodeloMD = new javax.swing.JCheckBox();
-        chcefalometrica = new javax.swing.JCheckBox();
-        chincicivos = new javax.swing.JCheckBox();
-        jSeparator69 = new javax.swing.JSeparator();
-        jSeparator70 = new javax.swing.JSeparator();
-        txtrocabado = new javax.swing.JTextField();
         btnguardar = new javax.swing.JButton();
         fecha = new com.toedter.calendar.JDateChooser();
         lblnombre40 = new javax.swing.JLabel();
         txtapellido = new javax.swing.JTextField();
-        jSeparator71 = new javax.swing.JSeparator();
         btnsalir = new javax.swing.JButton();
+        btnsiguiente = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -1139,2556 +1025,2176 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         jLabel82.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel82.setText("Expediente Ortodoncia");
-        getContentPane().add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 10, 280, 30));
+        getContentPane().add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 10, 280, 30));
 
         jLabel2.setText("Fecha:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 40, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 60, -1, -1));
 
         lbltelefono.setText("Telefono:");
-        getContentPane().add(lbltelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 40, -1, -1));
+        getContentPane().add(lbltelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 60, -1, -1));
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txttelefonoKeyTyped(evt);
             }
         });
-        getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 40, 99, -1));
+        getContentPane().add(txttelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 60, 99, -1));
 
         lbledad.setText("Edad:");
-        getContentPane().add(lbledad, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 40, -1, -1));
+        getContentPane().add(lbledad, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 60, -1, -1));
 
         txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtedadKeyTyped(evt);
             }
         });
-        getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 40, 99, -1));
+        getContentPane().add(txtedad, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 60, 99, -1));
 
         lblnombre.setText("Nombre: ");
-        getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 90, -1, -1));
+        getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 100, -1, -1));
 
         txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtnombreKeyTyped(evt);
             }
         });
-        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 90, 190, -1));
+        getContentPane().add(txtnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 100, 190, -1));
 
         lbldireccion1.setText("Dirección: ");
-        getContentPane().add(lbldireccion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 140, -1, -1));
+        getContentPane().add(lbldireccion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 140, 50, 10));
 
         txtdirección.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtdirecciónActionPerformed(evt);
             }
         });
-        getContentPane().add(txtdirección, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 130, 460, 30));
+        getContentPane().add(txtdirección, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 130, 500, 20));
 
         lblnombre1.setText("Motivo de la Consulta: ");
-        getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 180, -1, -1));
-        getContentPane().add(txtMotivoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 180, 380, -1));
+        getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 160, -1, -1));
+        getContentPane().add(txtMotivoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 160, 380, -1));
 
         lblnombre2.setText("Historia Medica:");
-        getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 210, 80, -1));
-        getContentPane().add(txtHistoriaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 210, 380, 40));
+        getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, 80, -1));
+        getContentPane().add(txtHistoriaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 190, 500, 20));
 
         lblnombre3.setText("Historia Odontologica:");
-        getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 260, -1, -1));
-        getContentPane().add(txtMotivoO, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 260, 380, 40));
+        getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
+        getContentPane().add(txtMotivoO, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, 500, 30));
 
         lblnombre4.setText("Examen Clinico:");
-        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 310, 80, -1));
-        getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 310, 380, -1));
+        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 80, -1));
+        getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 380, -1));
 
         lblnombre5.setText("DX Odontologico:");
-        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 340, 90, -1));
+        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 290, 90, -1));
 
         txtDX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDXActionPerformed(evt);
             }
         });
-        getContentPane().add(txtDX, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 350, 380, 30));
+        getContentPane().add(txtDX, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 290, 500, 20));
 
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 20, 23));
+        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 20, 23));
 
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 440, 20, 23));
+        getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 20, 23));
 
         jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 440, 20, 23));
+        getContentPane().add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 360, 20, 23));
 
         jCheckBox4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox4ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 20, 23));
+        getContentPane().add(jCheckBox4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 20, 23));
 
         jCheckBox5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox5ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 440, 20, 23));
-        getContentPane().add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 430, 20, 23));
-        getContentPane().add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 450, 20, -1));
+        getContentPane().add(jCheckBox5, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 360, 20, 23));
+        getContentPane().add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 350, 20, 23));
+        getContentPane().add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 370, 20, -1));
 
         jCheckBox8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox8ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 20, 23));
+        getContentPane().add(jCheckBox8, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 20, 23));
 
         jCheckBox9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox9ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 440, 20, 23));
+        getContentPane().add(jCheckBox9, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 360, 20, 23));
 
         jCheckBox10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox10ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 20, 23));
+        getContentPane().add(jCheckBox10, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 360, 20, 23));
 
         jCheckBox11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox11ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 20, 23));
+        getContentPane().add(jCheckBox11, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 20, 23));
 
         jCheckBox12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox12ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 440, 20, 23));
-        getContentPane().add(jCheckBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 430, 20, 23));
-        getContentPane().add(jCheckBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 450, 20, -1));
+        getContentPane().add(jCheckBox12, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 360, 20, 23));
+        getContentPane().add(jCheckBox13, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 350, 20, 23));
+        getContentPane().add(jCheckBox14, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 370, 20, -1));
 
         jCheckBox15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox15ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 20, 23));
+        getContentPane().add(jCheckBox15, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 20, 23));
 
         jCheckBox16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox16ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 440, 20, 23));
+        getContentPane().add(jCheckBox16, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 360, 20, 23));
 
         jCheckBox17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox17ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox17, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 440, 20, 23));
+        getContentPane().add(jCheckBox17, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 360, 20, 23));
 
         jCheckBox18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox18ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 20, 23));
+        getContentPane().add(jCheckBox18, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 20, 23));
 
         jCheckBox19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox19ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 440, 20, 23));
-        getContentPane().add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 430, 20, 23));
-        getContentPane().add(jCheckBox21, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 450, 20, -1));
+        getContentPane().add(jCheckBox19, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 360, 20, 23));
+        getContentPane().add(jCheckBox20, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 350, 20, 23));
+        getContentPane().add(jCheckBox21, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 370, 20, -1));
 
         jCheckBox22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox22ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 20, 23));
+        getContentPane().add(jCheckBox22, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 20, 23));
 
         jCheckBox23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox23ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 440, 20, 23));
+        getContentPane().add(jCheckBox23, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 360, 20, 23));
 
         jCheckBox24.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox24ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 440, 20, 23));
+        getContentPane().add(jCheckBox24, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 20, 23));
 
         jCheckBox25.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox25ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 20, 23));
+        getContentPane().add(jCheckBox25, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 20, 23));
 
         jCheckBox26.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox26ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox26, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 440, 20, 23));
-        getContentPane().add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 20, 23));
-        getContentPane().add(jCheckBox28, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 450, 20, -1));
+        getContentPane().add(jCheckBox26, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 360, 20, 23));
+        getContentPane().add(jCheckBox27, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 350, 20, 23));
+        getContentPane().add(jCheckBox28, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 370, 20, -1));
 
         jCheckBox29.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox29ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 20, 23));
+        getContentPane().add(jCheckBox29, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 20, 23));
 
         jCheckBox30.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox30ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox30, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 440, 20, 23));
+        getContentPane().add(jCheckBox30, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 360, 20, 23));
 
         jCheckBox31.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox31ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox31, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 20, 23));
+        getContentPane().add(jCheckBox31, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 360, 20, 23));
 
         jCheckBox32.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox32ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox32, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 20, 23));
+        getContentPane().add(jCheckBox32, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 20, 23));
 
         jCheckBox33.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox33ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox33, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 440, 20, 23));
-        getContentPane().add(jCheckBox34, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, 20, 23));
-        getContentPane().add(jCheckBox35, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 450, 20, -1));
+        getContentPane().add(jCheckBox33, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 360, 20, 23));
+        getContentPane().add(jCheckBox34, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 350, 20, 23));
+        getContentPane().add(jCheckBox35, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 370, 20, -1));
 
         jCheckBox36.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox36ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox36, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, 20, 23));
+        getContentPane().add(jCheckBox36, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 20, 23));
 
         jCheckBox37.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox37ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox37, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 440, 20, 23));
+        getContentPane().add(jCheckBox37, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 360, 20, 23));
 
         jCheckBox38.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox38ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox38, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 440, 20, 23));
+        getContentPane().add(jCheckBox38, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 360, 20, 23));
 
         jCheckBox39.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox39ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox39, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, 20, 23));
+        getContentPane().add(jCheckBox39, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 20, 23));
 
         jCheckBox40.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox40ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox40, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 440, 20, 23));
-        getContentPane().add(jCheckBox41, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 20, 23));
-        getContentPane().add(jCheckBox42, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 450, 20, -1));
+        getContentPane().add(jCheckBox40, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 360, 20, 23));
+        getContentPane().add(jCheckBox41, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 350, 20, 23));
+        getContentPane().add(jCheckBox42, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 370, 20, -1));
 
         jCheckBox43.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox43ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox43, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 440, 20, 23));
+        getContentPane().add(jCheckBox43, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 20, 23));
 
         jCheckBox44.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox44ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox44, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 440, 20, 23));
+        getContentPane().add(jCheckBox44, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 360, 20, 23));
 
         jCheckBox45.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox45ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox45, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 440, 20, 23));
+        getContentPane().add(jCheckBox45, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 360, 20, 23));
 
         jCheckBox46.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox46ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox46, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 440, 20, 23));
+        getContentPane().add(jCheckBox46, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 20, 23));
 
         jCheckBox47.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox47ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox47, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 440, 20, 23));
-        getContentPane().add(jCheckBox48, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, 20, 23));
-        getContentPane().add(jCheckBox49, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 450, 20, -1));
+        getContentPane().add(jCheckBox47, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 360, 20, 23));
+        getContentPane().add(jCheckBox48, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 350, 20, 23));
+        getContentPane().add(jCheckBox49, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 370, 20, -1));
 
         jCheckBox50.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox50ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox50, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 440, 20, 23));
+        getContentPane().add(jCheckBox50, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 20, 23));
 
         jCheckBox51.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox51ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox51, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 440, 20, 23));
+        getContentPane().add(jCheckBox51, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 360, 20, 23));
 
         jCheckBox52.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox52ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox52, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 440, 20, 23));
+        getContentPane().add(jCheckBox52, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 360, 20, 23));
 
         jCheckBox53.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox53ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox53, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 440, 20, 23));
+        getContentPane().add(jCheckBox53, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 20, 23));
 
         jCheckBox54.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox54ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox54, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 440, 20, 23));
-        getContentPane().add(jCheckBox55, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, 20, 23));
-        getContentPane().add(jCheckBox56, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 450, 20, -1));
+        getContentPane().add(jCheckBox54, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 360, 20, 23));
+        getContentPane().add(jCheckBox55, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 350, 20, 23));
+        getContentPane().add(jCheckBox56, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 370, 20, -1));
 
         jCheckBox57.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox57ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox57, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 440, 20, 23));
+        getContentPane().add(jCheckBox57, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 20, 23));
 
         jCheckBox58.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox58ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox58, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 440, 20, 23));
+        getContentPane().add(jCheckBox58, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 360, 20, 23));
 
         jCheckBox59.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox59ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox59, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 440, 20, 23));
+        getContentPane().add(jCheckBox59, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 360, 20, 23));
 
         jCheckBox60.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox60ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox60, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 440, 20, 23));
+        getContentPane().add(jCheckBox60, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 20, 23));
 
         jCheckBox61.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox61ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox61, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 440, 20, 23));
-        getContentPane().add(jCheckBox62, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 430, 20, 23));
-        getContentPane().add(jCheckBox63, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 450, 20, -1));
+        getContentPane().add(jCheckBox61, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 360, 20, 23));
+        getContentPane().add(jCheckBox62, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 350, 20, 23));
+        getContentPane().add(jCheckBox63, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 370, 20, -1));
 
         jCheckBox64.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox64ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox64, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, 20, 23));
+        getContentPane().add(jCheckBox64, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 20, 23));
 
         jCheckBox65.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox65ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox65, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 440, 20, 23));
+        getContentPane().add(jCheckBox65, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 360, 20, 23));
 
         jCheckBox66.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox66ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox66, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 440, 20, 23));
+        getContentPane().add(jCheckBox66, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 360, 20, 23));
 
         jCheckBox68.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox68ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox68, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, 20, 23));
+        getContentPane().add(jCheckBox68, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 20, 23));
 
         jCheckBox69.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox69ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox69, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 440, 20, 23));
-        getContentPane().add(jCheckBox70, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 430, 20, 23));
-        getContentPane().add(jCheckBox71, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 450, 20, -1));
+        getContentPane().add(jCheckBox69, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 360, 20, 23));
+        getContentPane().add(jCheckBox70, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 350, 20, 23));
+        getContentPane().add(jCheckBox71, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 370, 20, -1));
 
         jCheckBox72.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox72ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox72, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 440, 20, 23));
+        getContentPane().add(jCheckBox72, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 360, 20, 23));
 
         jCheckBox73.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox73ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox73, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 440, 20, 23));
+        getContentPane().add(jCheckBox73, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 360, 20, 23));
 
         jCheckBox74.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox74ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox74, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 440, 20, 23));
+        getContentPane().add(jCheckBox74, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 360, 20, 23));
 
         jCheckBox75.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox75ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox75, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 440, 20, 23));
+        getContentPane().add(jCheckBox75, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 360, 20, 23));
 
         jCheckBox76.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox76ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox76, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 440, 20, 23));
-        getContentPane().add(jCheckBox77, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, 20, 23));
-        getContentPane().add(jCheckBox78, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 450, 20, -1));
+        getContentPane().add(jCheckBox76, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 360, 20, 23));
+        getContentPane().add(jCheckBox77, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 350, 20, 23));
+        getContentPane().add(jCheckBox78, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 370, 20, -1));
 
         jCheckBox79.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox79ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox79, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, 20, 23));
+        getContentPane().add(jCheckBox79, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 20, 23));
 
         jCheckBox80.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox80ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox80, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 440, 20, 23));
+        getContentPane().add(jCheckBox80, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 360, 20, 23));
 
         jCheckBox81.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox81ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox81, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 440, 20, 23));
+        getContentPane().add(jCheckBox81, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 360, 20, 23));
 
         jCheckBox82.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox82ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox82, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, 20, 23));
+        getContentPane().add(jCheckBox82, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 20, 23));
 
         jCheckBox83.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox83ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox83, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 440, 20, 23));
-        getContentPane().add(jCheckBox84, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 430, 20, 23));
-        getContentPane().add(jCheckBox85, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 450, 20, -1));
+        getContentPane().add(jCheckBox83, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 360, 20, 23));
+        getContentPane().add(jCheckBox84, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 350, 20, 23));
+        getContentPane().add(jCheckBox85, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 370, 20, -1));
 
         jCheckBox86.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox86ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox86, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 440, 20, 23));
+        getContentPane().add(jCheckBox86, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 20, 23));
 
         jCheckBox87.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox87ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox87, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 440, 20, 23));
+        getContentPane().add(jCheckBox87, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 360, 20, 23));
 
         jCheckBox88.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox88ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox88, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 440, 20, 23));
+        getContentPane().add(jCheckBox88, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 360, 20, 23));
 
         jCheckBox89.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox89ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox89, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 440, 20, 23));
+        getContentPane().add(jCheckBox89, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 20, 23));
 
         jCheckBox90.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox90ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox90, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 440, 20, 23));
-        getContentPane().add(jCheckBox91, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, 20, 23));
-        getContentPane().add(jCheckBox92, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 450, 20, -1));
+        getContentPane().add(jCheckBox90, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 360, 20, 23));
+        getContentPane().add(jCheckBox91, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 350, 20, 23));
+        getContentPane().add(jCheckBox92, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 370, 20, -1));
 
         jCheckBox93.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox93ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox93, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, 20, 23));
+        getContentPane().add(jCheckBox93, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 360, 20, 23));
 
         jCheckBox94.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox94ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox94, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 440, 20, 23));
+        getContentPane().add(jCheckBox94, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 360, 20, 23));
 
         jCheckBox95.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox95ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox95, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 440, 20, 23));
+        getContentPane().add(jCheckBox95, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 360, 20, 23));
 
         jCheckBox96.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox96ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox96, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, 20, 23));
+        getContentPane().add(jCheckBox96, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 360, 20, 23));
 
         jCheckBox97.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox97ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox97, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, 20, 23));
-        getContentPane().add(jCheckBox98, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, 20, 23));
-        getContentPane().add(jCheckBox99, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 450, 20, -1));
+        getContentPane().add(jCheckBox97, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 360, 20, 23));
+        getContentPane().add(jCheckBox98, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 350, 20, 23));
+        getContentPane().add(jCheckBox99, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 370, 20, -1));
 
         jCheckBox100.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox100ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox100, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 440, 20, 23));
+        getContentPane().add(jCheckBox100, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, 20, 23));
 
         jCheckBox101.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox101ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox101, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 440, 20, 23));
+        getContentPane().add(jCheckBox101, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 360, 20, 23));
 
         jCheckBox102.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox102ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox102, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 440, 20, 23));
+        getContentPane().add(jCheckBox102, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 360, 20, 23));
 
         jCheckBox103.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox103ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox103, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 440, 20, 23));
+        getContentPane().add(jCheckBox103, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, 20, 23));
 
         jCheckBox104.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox104ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox104, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 440, 20, 23));
-        getContentPane().add(jCheckBox105, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 430, 20, 23));
-        getContentPane().add(jCheckBox106, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 450, 20, -1));
+        getContentPane().add(jCheckBox104, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 360, 20, 23));
+        getContentPane().add(jCheckBox105, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 350, 20, 23));
+        getContentPane().add(jCheckBox106, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 370, 20, -1));
 
         jCheckBox107.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox107ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox107, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 440, 20, 23));
+        getContentPane().add(jCheckBox107, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 20, 23));
 
         jCheckBox108.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox108ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox108, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 440, 20, 23));
+        getContentPane().add(jCheckBox108, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 360, 20, 23));
 
         jCheckBox109.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox109ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox109, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 440, 20, 23));
+        getContentPane().add(jCheckBox109, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 360, 20, 23));
 
         jCheckBox110.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox110ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox110, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 440, 20, 23));
+        getContentPane().add(jCheckBox110, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 20, 23));
 
         jCheckBox111.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox111ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox111, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 440, 20, 23));
-        getContentPane().add(jCheckBox112, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 430, 20, 23));
-        getContentPane().add(jCheckBox113, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 450, 20, -1));
+        getContentPane().add(jCheckBox111, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 360, 20, 23));
+        getContentPane().add(jCheckBox112, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 350, 20, 23));
+        getContentPane().add(jCheckBox113, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 370, 20, -1));
 
         jCheckBox114.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox114ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox114, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, 20, 23));
+        getContentPane().add(jCheckBox114, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 20, 23));
 
         jCheckBox115.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox115ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox115, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 500, 20, 23));
+        getContentPane().add(jCheckBox115, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 420, 20, 23));
 
         jCheckBox116.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox116ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox116, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 500, 20, 23));
+        getContentPane().add(jCheckBox116, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 420, 20, 23));
 
         jCheckBox117.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox117ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox117, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, 20, 23));
+        getContentPane().add(jCheckBox117, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 20, 23));
 
         jCheckBox118.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox118ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox118, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 500, 20, 23));
-        getContentPane().add(jCheckBox119, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 490, 20, 23));
-        getContentPane().add(jCheckBox120, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 510, 20, -1));
+        getContentPane().add(jCheckBox118, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 420, 20, 23));
+        getContentPane().add(jCheckBox119, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 410, 20, 23));
+        getContentPane().add(jCheckBox120, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 430, 20, -1));
 
         jCheckBox121.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox121ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox121, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, 20, 23));
+        getContentPane().add(jCheckBox121, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, 20, 23));
 
         jCheckBox122.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox122ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox122, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 500, 20, 23));
+        getContentPane().add(jCheckBox122, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 420, 20, 23));
 
         jCheckBox123.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox123ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox123, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 500, 20, 23));
+        getContentPane().add(jCheckBox123, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 420, 20, 23));
 
         jCheckBox124.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox124ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox124, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, 20, 23));
+        getContentPane().add(jCheckBox124, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, 20, 23));
 
         jCheckBox125.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox125ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox125, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 500, 20, 23));
-        getContentPane().add(jCheckBox126, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 490, 20, 23));
-        getContentPane().add(jCheckBox127, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 510, 20, -1));
+        getContentPane().add(jCheckBox125, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 420, 20, 23));
+        getContentPane().add(jCheckBox126, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 410, 20, 23));
+        getContentPane().add(jCheckBox127, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 430, 20, -1));
 
         jCheckBox128.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox128ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox128, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 500, 20, 23));
+        getContentPane().add(jCheckBox128, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 20, 23));
 
         jCheckBox129.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox129ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox129, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 500, 20, 23));
+        getContentPane().add(jCheckBox129, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 420, 20, 23));
 
         jCheckBox130.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox130ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox130, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 500, 20, 23));
+        getContentPane().add(jCheckBox130, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 420, 20, 23));
 
         jCheckBox131.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox131ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox131, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 500, 20, 23));
+        getContentPane().add(jCheckBox131, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 20, 23));
 
         jCheckBox132.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox132ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox132, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 500, 20, 23));
-        getContentPane().add(jCheckBox133, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 490, 20, 23));
-        getContentPane().add(jCheckBox134, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 510, 20, -1));
+        getContentPane().add(jCheckBox132, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 420, 20, 23));
+        getContentPane().add(jCheckBox133, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 410, 20, 23));
+        getContentPane().add(jCheckBox134, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 20, -1));
 
         jCheckBox135.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox135ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox135, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 500, 20, 23));
+        getContentPane().add(jCheckBox135, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 20, 23));
 
         jCheckBox136.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox136ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox136, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 500, 20, 23));
+        getContentPane().add(jCheckBox136, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 420, 20, 23));
 
         jCheckBox137.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox137ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox137, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 500, 20, 23));
+        getContentPane().add(jCheckBox137, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 420, 20, 23));
 
         jCheckBox138.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox138ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox138, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 500, 20, 23));
+        getContentPane().add(jCheckBox138, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 20, 23));
 
         jCheckBox139.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox139ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox139, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 500, 20, 23));
-        getContentPane().add(jCheckBox140, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 490, 20, 23));
-        getContentPane().add(jCheckBox141, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 510, 20, -1));
+        getContentPane().add(jCheckBox139, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 420, 20, 23));
+        getContentPane().add(jCheckBox140, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 410, 20, 23));
+        getContentPane().add(jCheckBox141, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 430, 20, -1));
 
         jCheckBox142.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox142ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox142, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, 20, 23));
+        getContentPane().add(jCheckBox142, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, 20, 23));
 
         jCheckBox143.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox143ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox143, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 500, 20, 23));
+        getContentPane().add(jCheckBox143, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 420, 20, 23));
 
         jCheckBox144.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox144ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox144, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 500, 20, 23));
+        getContentPane().add(jCheckBox144, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 420, 20, 23));
 
         jCheckBox145.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox145ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox145, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, 20, 23));
+        getContentPane().add(jCheckBox145, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, 20, 23));
 
         jCheckBox146.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox146ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox146, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, 20, 23));
-        getContentPane().add(jCheckBox147, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 490, 20, 23));
-        getContentPane().add(jCheckBox148, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 510, 20, -1));
+        getContentPane().add(jCheckBox146, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 420, 20, 23));
+        getContentPane().add(jCheckBox147, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 410, 20, 23));
+        getContentPane().add(jCheckBox148, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 430, 20, -1));
 
         jCheckBox149.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox149ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox149, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 20, 23));
+        getContentPane().add(jCheckBox149, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 420, 20, 23));
 
         jCheckBox150.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox150ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox150, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 500, 20, 23));
+        getContentPane().add(jCheckBox150, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 420, 20, 23));
 
         jCheckBox151.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox151ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox151, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 500, 20, 23));
+        getContentPane().add(jCheckBox151, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 420, 20, 23));
 
         jCheckBox152.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox152ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox152, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 20, 23));
+        getContentPane().add(jCheckBox152, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 420, 20, 23));
 
         jCheckBox153.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox153ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox153, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 20, 23));
-        getContentPane().add(jCheckBox154, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 490, 20, 23));
-        getContentPane().add(jCheckBox155, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 510, 20, -1));
+        getContentPane().add(jCheckBox153, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 420, 20, 23));
+        getContentPane().add(jCheckBox154, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 410, 20, 23));
+        getContentPane().add(jCheckBox155, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 430, 20, -1));
 
         jCheckBox156.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox156ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox156, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 20, 23));
+        getContentPane().add(jCheckBox156, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, 20, 23));
 
         jCheckBox157.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox157ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox157, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 500, 20, 23));
+        getContentPane().add(jCheckBox157, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 420, 20, 23));
 
         jCheckBox158.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox158ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox158, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 500, 20, 23));
+        getContentPane().add(jCheckBox158, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 420, 20, 23));
 
         jCheckBox159.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox159ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox159, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 20, 23));
+        getContentPane().add(jCheckBox159, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, 20, 23));
 
         jCheckBox160.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox160ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox160, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 20, 23));
-        getContentPane().add(jCheckBox161, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 490, 20, 23));
-        getContentPane().add(jCheckBox162, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 510, 20, -1));
+        getContentPane().add(jCheckBox160, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 420, 20, 23));
+        getContentPane().add(jCheckBox161, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 410, 20, 23));
+        getContentPane().add(jCheckBox162, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 430, 20, -1));
 
         jCheckBox163.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox163ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox163, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 20, 23));
+        getContentPane().add(jCheckBox163, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 420, 20, 23));
 
         jCheckBox164.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox164ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox164, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 500, 20, 23));
+        getContentPane().add(jCheckBox164, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 420, 20, 23));
 
         jCheckBox165.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox165ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox165, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 500, 20, 23));
+        getContentPane().add(jCheckBox165, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 420, 20, 23));
 
         jCheckBox166.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox166ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox166, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 20, 23));
+        getContentPane().add(jCheckBox166, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 420, 20, 23));
 
         jCheckBox167.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox167ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox167, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 20, 23));
-        getContentPane().add(jCheckBox168, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 490, 20, 23));
-        getContentPane().add(jCheckBox169, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, 20, -1));
+        getContentPane().add(jCheckBox167, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 420, 20, 23));
+        getContentPane().add(jCheckBox168, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 410, 20, 23));
+        getContentPane().add(jCheckBox169, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 430, 20, -1));
 
         jCheckBox170.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox170ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox170, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 500, -1, 23));
+        getContentPane().add(jCheckBox170, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 420, -1, 23));
 
         jCheckBox171.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox171ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox171, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 500, -1, 23));
+        getContentPane().add(jCheckBox171, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 420, -1, 23));
 
         jCheckBox172.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox172ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox172, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 500, -1, 23));
+        getContentPane().add(jCheckBox172, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 420, -1, 23));
 
         jCheckBox173.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox173ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox173, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 500, -1, 23));
+        getContentPane().add(jCheckBox173, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 420, -1, 23));
 
         jCheckBox174.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox174ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox174, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 500, -1, 23));
-        getContentPane().add(jCheckBox175, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 490, -1, 23));
-        getContentPane().add(jCheckBox176, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 510, -1, -1));
+        getContentPane().add(jCheckBox174, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 420, -1, 23));
+        getContentPane().add(jCheckBox175, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 410, -1, 23));
+        getContentPane().add(jCheckBox176, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 430, -1, -1));
 
         jCheckBox177.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox177ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox177, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 500, -1, 23));
+        getContentPane().add(jCheckBox177, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, -1, 23));
 
         jCheckBox178.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox178ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox178, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 500, -1, 23));
+        getContentPane().add(jCheckBox178, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 420, -1, 23));
 
         jCheckBox179.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox179ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox179, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 500, -1, 23));
+        getContentPane().add(jCheckBox179, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 420, -1, 23));
 
         jCheckBox180.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox180ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox180, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 500, -1, 23));
+        getContentPane().add(jCheckBox180, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, -1, 23));
 
         jCheckBox181.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox181ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox181, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 500, -1, 23));
-        getContentPane().add(jCheckBox182, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 490, -1, 23));
-        getContentPane().add(jCheckBox183, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, -1, -1));
+        getContentPane().add(jCheckBox181, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 420, -1, 23));
+        getContentPane().add(jCheckBox182, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 410, -1, 23));
+        getContentPane().add(jCheckBox183, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 430, -1, -1));
 
         jCheckBox184.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox184ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox184, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, -1, 23));
+        getContentPane().add(jCheckBox184, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, -1, 23));
 
         jCheckBox185.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox185ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox185, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 500, -1, 23));
+        getContentPane().add(jCheckBox185, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 420, -1, 23));
 
         jCheckBox186.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox186ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox186, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 500, -1, 23));
+        getContentPane().add(jCheckBox186, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 420, -1, 23));
 
         jCheckBox187.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox187ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox187, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, -1, 23));
+        getContentPane().add(jCheckBox187, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, -1, 23));
 
         jCheckBox188.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox188ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox188, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, -1, 23));
-        getContentPane().add(jCheckBox189, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 490, -1, 23));
-        getContentPane().add(jCheckBox190, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 510, -1, -1));
+        getContentPane().add(jCheckBox188, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 420, -1, 23));
+        getContentPane().add(jCheckBox189, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 410, -1, 23));
+        getContentPane().add(jCheckBox190, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 430, -1, -1));
 
         jCheckBox191.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox191ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox191, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 500, -1, 23));
+        getContentPane().add(jCheckBox191, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 420, -1, 23));
 
         jCheckBox192.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox192ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox192, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 500, -1, 23));
+        getContentPane().add(jCheckBox192, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 420, -1, 23));
 
         jCheckBox193.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox193ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox193, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 500, -1, 23));
+        getContentPane().add(jCheckBox193, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 420, -1, 23));
 
         jCheckBox194.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox194ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox194, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 500, -1, 23));
+        getContentPane().add(jCheckBox194, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 420, -1, 23));
 
         jCheckBox195.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox195ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox195, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 500, -1, 23));
-        getContentPane().add(jCheckBox196, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 490, -1, 23));
-        getContentPane().add(jCheckBox197, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 510, -1, -1));
+        getContentPane().add(jCheckBox195, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 420, -1, 23));
+        getContentPane().add(jCheckBox196, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 410, -1, 23));
+        getContentPane().add(jCheckBox197, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 430, -1, -1));
 
         jCheckBox198.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox198ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox198, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 500, -1, 23));
+        getContentPane().add(jCheckBox198, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, -1, 23));
 
         jCheckBox199.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox199ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox199, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 500, -1, 23));
+        getContentPane().add(jCheckBox199, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 420, -1, 23));
 
         jCheckBox200.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox200ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox200, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 500, -1, 23));
+        getContentPane().add(jCheckBox200, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 420, -1, 23));
 
         jCheckBox201.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox201ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox201, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 500, -1, 23));
+        getContentPane().add(jCheckBox201, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, -1, 23));
 
         jCheckBox202.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox202ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox202, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 500, -1, 23));
-        getContentPane().add(jCheckBox203, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 490, -1, 23));
-        getContentPane().add(jCheckBox204, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 510, -1, -1));
+        getContentPane().add(jCheckBox202, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 420, -1, 23));
+        getContentPane().add(jCheckBox203, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 410, -1, 23));
+        getContentPane().add(jCheckBox204, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 430, -1, -1));
 
         jCheckBox205.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox205ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox205, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, 23));
+        getContentPane().add(jCheckBox205, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 420, -1, 23));
 
         jCheckBox206.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox206ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox206, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 500, -1, 23));
+        getContentPane().add(jCheckBox206, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 420, -1, 23));
 
         jCheckBox207.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox207ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox207, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 500, -1, 23));
+        getContentPane().add(jCheckBox207, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 420, -1, 23));
 
         jCheckBox208.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox208ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox208, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, 23));
+        getContentPane().add(jCheckBox208, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 420, -1, 23));
 
         jCheckBox209.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox209ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox209, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, -1, 23));
-        getContentPane().add(jCheckBox210, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 490, -1, 23));
-        getContentPane().add(jCheckBox211, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, -1, -1));
+        getContentPane().add(jCheckBox209, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 420, -1, 23));
+        getContentPane().add(jCheckBox210, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 410, -1, 23));
+        getContentPane().add(jCheckBox211, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 430, -1, -1));
 
         jCheckBox212.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox212ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox212, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 500, -1, 23));
+        getContentPane().add(jCheckBox212, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 420, -1, 23));
 
         jCheckBox213.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox213ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox213, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 500, -1, 23));
+        getContentPane().add(jCheckBox213, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 420, -1, 23));
 
         jCheckBox214.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox214ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox214, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 500, -1, 23));
+        getContentPane().add(jCheckBox214, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 420, -1, 23));
 
         jCheckBox215.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox215ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox215, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 500, -1, 23));
+        getContentPane().add(jCheckBox215, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 420, -1, 23));
 
         jCheckBox216.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox216ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox216, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 500, -1, 23));
-        getContentPane().add(jCheckBox217, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 490, -1, 23));
-        getContentPane().add(jCheckBox218, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 510, -1, -1));
+        getContentPane().add(jCheckBox216, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 420, -1, 23));
+        getContentPane().add(jCheckBox217, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 410, -1, 23));
+        getContentPane().add(jCheckBox218, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 430, -1, -1));
 
         jCheckBox219.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox219ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox219, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, -1, 23));
+        getContentPane().add(jCheckBox219, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, -1, 23));
 
         jCheckBox220.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox220ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox220, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 500, -1, 23));
+        getContentPane().add(jCheckBox220, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 420, -1, 23));
 
         jCheckBox221.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox221ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox221, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 500, -1, 23));
+        getContentPane().add(jCheckBox221, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 420, -1, 23));
 
         jCheckBox222.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox222ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox222, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, -1, 23));
+        getContentPane().add(jCheckBox222, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, -1, 23));
 
         jCheckBox223.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox223ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox223, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 500, -1, 23));
-        getContentPane().add(jCheckBox224, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 490, -1, 23));
-        getContentPane().add(jCheckBox225, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 510, -1, -1));
+        getContentPane().add(jCheckBox223, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 420, -1, 23));
+        getContentPane().add(jCheckBox224, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 410, -1, 23));
+        getContentPane().add(jCheckBox225, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 430, -1, -1));
 
         jSeparator7.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Dientes Adultos"));
-        getContentPane().add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 690, 150));
+        getContentPane().add(jSeparator7, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 320, 690, 150));
 
         jLabel10.setText("21");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 410, 20, 20));
+        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 330, 20, 20));
 
         jLabel11.setText("28");
-        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 410, 20, 20));
+        getContentPane().add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 330, 20, 20));
 
         jLabel12.setText("25");
-        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 410, 20, 20));
+        getContentPane().add(jLabel12, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 330, 20, 20));
 
         jLabel13.setText("27");
-        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 410, 20, 20));
+        getContentPane().add(jLabel13, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 330, 20, 20));
 
         jLabel14.setText("26");
-        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 410, 20, 20));
+        getContentPane().add(jLabel14, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 330, 20, 20));
 
         jLabel15.setText("24");
-        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 410, 20, 20));
+        getContentPane().add(jLabel15, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 330, 20, 20));
 
         jLabel16.setText("23");
-        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 410, 20, 20));
+        getContentPane().add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 330, 20, 20));
 
         jLabel17.setText("22");
-        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 410, 20, 20));
+        getContentPane().add(jLabel17, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 330, 20, 20));
 
         jLabel34.setText("18");
-        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 410, 20, 20));
+        getContentPane().add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 330, 20, 20));
 
         jLabel35.setText("11");
-        getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 410, 20, 20));
+        getContentPane().add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 330, 20, 20));
 
         jLabel36.setText("14");
-        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 410, 20, 20));
+        getContentPane().add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 330, 20, 20));
 
         jLabel37.setText("12");
-        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 410, 20, 20));
+        getContentPane().add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 330, 20, 20));
 
         jLabel38.setText("13");
-        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 410, 20, 20));
+        getContentPane().add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 330, 20, 20));
 
         jLabel39.setText("15");
-        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 410, 20, 20));
+        getContentPane().add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 330, 20, 20));
 
         jLabel40.setText("16");
-        getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 410, 20, 20));
+        getContentPane().add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 330, 20, 20));
 
         jLabel41.setText("17");
-        getContentPane().add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 410, 20, 20));
+        getContentPane().add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 330, 20, 20));
 
         jLabel42.setText("48");
-        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 530, 20, 20));
+        getContentPane().add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 450, 20, 20));
 
         jLabel43.setText("41");
-        getContentPane().add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 530, 20, 20));
+        getContentPane().add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 450, 20, 20));
 
         jLabel44.setText("44");
-        getContentPane().add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 530, 20, 20));
+        getContentPane().add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 450, 20, 20));
 
         jLabel45.setText("42");
-        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 530, 20, 20));
+        getContentPane().add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 450, 20, 20));
 
         jLabel46.setText("43");
-        getContentPane().add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 530, 20, 20));
+        getContentPane().add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 450, 20, 20));
 
         jLabel47.setText("45");
-        getContentPane().add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 530, 20, 20));
+        getContentPane().add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 450, 20, 20));
 
         jLabel48.setText("46");
-        getContentPane().add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 530, 20, 20));
+        getContentPane().add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 450, 20, 20));
 
         jLabel49.setText("47");
-        getContentPane().add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 530, 20, 20));
+        getContentPane().add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 450, 20, 20));
 
         jLabel50.setText("31");
-        getContentPane().add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 530, 20, 20));
+        getContentPane().add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 450, 20, 20));
 
         jLabel51.setText("38");
-        getContentPane().add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 530, 20, 20));
+        getContentPane().add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 450, 20, 20));
 
         jLabel52.setText("35");
-        getContentPane().add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 530, 20, 20));
+        getContentPane().add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 450, 20, 20));
 
         jLabel53.setText("37");
-        getContentPane().add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 530, 20, 20));
+        getContentPane().add(jLabel53, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 450, 20, 20));
 
         jLabel54.setText("36");
-        getContentPane().add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 530, 20, 20));
+        getContentPane().add(jLabel54, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 450, 20, 20));
 
         jLabel55.setText("34");
-        getContentPane().add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 530, 20, 20));
+        getContentPane().add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 450, 20, 20));
 
         jLabel56.setText("33");
-        getContentPane().add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 530, 20, 20));
+        getContentPane().add(jLabel56, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 450, 20, 20));
 
         jLabel57.setText("32");
-        getContentPane().add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 530, 20, 20));
+        getContentPane().add(jLabel57, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 450, 20, 20));
 
         jSeparator8.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 480, 650, 90));
+        getContentPane().add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 400, 650, 90));
 
         jSeparator9.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator9.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 440, 200, 90));
+        getContentPane().add(jSeparator9, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 360, 200, 90));
 
         jSeparator4.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 630, 440, 40));
+        getContentPane().add(jSeparator4, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 550, 440, 40));
 
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 580, 200, 110));
+        getContentPane().add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 500, 200, 110));
 
         jCheckBox226.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox226ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox226, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 590, 20, 23));
+        getContentPane().add(jCheckBox226, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 510, 20, 23));
 
         jCheckBox227.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox227ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox227, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 590, 20, 23));
+        getContentPane().add(jCheckBox227, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 510, 20, 23));
 
         jCheckBox228.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox228ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox228, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 590, 20, 23));
+        getContentPane().add(jCheckBox228, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, 20, 23));
 
         jCheckBox229.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox229ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox229, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 590, 20, 23));
+        getContentPane().add(jCheckBox229, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 510, 20, 23));
 
         jCheckBox230.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox230ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox230, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 590, 20, 23));
-        getContentPane().add(jCheckBox231, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 580, 20, 23));
-        getContentPane().add(jCheckBox232, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 600, 20, -1));
+        getContentPane().add(jCheckBox230, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 510, 20, 23));
+        getContentPane().add(jCheckBox231, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 500, 20, 23));
+        getContentPane().add(jCheckBox232, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 520, 20, -1));
 
         jCheckBox233.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox233ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox233, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, 20, 23));
+        getContentPane().add(jCheckBox233, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 510, 20, 23));
 
         jCheckBox234.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox234ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox234, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 590, 20, 23));
+        getContentPane().add(jCheckBox234, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 510, 20, 23));
 
         jCheckBox235.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox235ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox235, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 590, 20, 23));
+        getContentPane().add(jCheckBox235, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 510, 20, 23));
 
         jCheckBox236.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox236ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox236, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, 20, 23));
+        getContentPane().add(jCheckBox236, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 510, 20, 23));
 
         jCheckBox237.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox237ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox237, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 590, 20, 23));
-        getContentPane().add(jCheckBox238, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 580, 20, 23));
-        getContentPane().add(jCheckBox239, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 600, 20, -1));
+        getContentPane().add(jCheckBox237, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 510, 20, 23));
+        getContentPane().add(jCheckBox238, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 500, 20, 23));
+        getContentPane().add(jCheckBox239, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 520, 20, -1));
 
         jCheckBox240.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox240ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox240, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 590, 20, 23));
+        getContentPane().add(jCheckBox240, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 510, 20, 23));
 
         jCheckBox241.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox241ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox241, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 590, 20, 23));
+        getContentPane().add(jCheckBox241, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 510, 20, 23));
 
         jCheckBox242.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox242ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox242, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 590, 20, 23));
+        getContentPane().add(jCheckBox242, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 510, 20, 23));
 
         jCheckBox243.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox243ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox243, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 590, 20, 23));
+        getContentPane().add(jCheckBox243, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 510, 20, 23));
 
         jCheckBox244.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox244ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox244, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 590, 20, 23));
-        getContentPane().add(jCheckBox245, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 580, 20, 23));
-        getContentPane().add(jCheckBox246, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 600, 20, -1));
+        getContentPane().add(jCheckBox244, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 510, 20, 23));
+        getContentPane().add(jCheckBox245, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 500, 20, 23));
+        getContentPane().add(jCheckBox246, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 520, 20, -1));
 
         jCheckBox247.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox247ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox247, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 590, 20, 23));
+        getContentPane().add(jCheckBox247, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, 20, 23));
 
         jCheckBox248.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox248ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox248, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 590, 20, 23));
+        getContentPane().add(jCheckBox248, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 510, 20, 23));
 
         jCheckBox249.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox249ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox249, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 590, 20, 23));
+        getContentPane().add(jCheckBox249, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 510, 20, 23));
 
         jCheckBox250.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox250ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox250, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 590, 20, 23));
+        getContentPane().add(jCheckBox250, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, 20, 23));
 
         jCheckBox251.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox251ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox251, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 590, 20, 23));
-        getContentPane().add(jCheckBox252, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 580, 20, 23));
-        getContentPane().add(jCheckBox253, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 600, 20, -1));
+        getContentPane().add(jCheckBox251, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 510, 20, 23));
+        getContentPane().add(jCheckBox252, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 500, 20, 23));
+        getContentPane().add(jCheckBox253, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 520, 20, -1));
 
         jCheckBox254.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox254ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox254, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 590, 20, 23));
+        getContentPane().add(jCheckBox254, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, 20, 23));
 
         jCheckBox255.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox255ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox255, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 590, 20, 23));
+        getContentPane().add(jCheckBox255, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 510, 20, 23));
 
         jCheckBox256.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox256ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox256, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 590, 20, 23));
+        getContentPane().add(jCheckBox256, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 510, 20, 23));
 
         jCheckBox257.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox257ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox257, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 590, 20, 23));
+        getContentPane().add(jCheckBox257, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, 20, 23));
 
         jCheckBox258.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox258ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox258, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 590, 20, 23));
-        getContentPane().add(jCheckBox259, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 580, 20, 23));
-        getContentPane().add(jCheckBox260, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 600, 20, -1));
+        getContentPane().add(jCheckBox258, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 510, 20, 23));
+        getContentPane().add(jCheckBox259, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 500, 20, 23));
+        getContentPane().add(jCheckBox260, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 520, 20, -1));
 
         jCheckBox261.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox261ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox261, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 590, 20, 23));
+        getContentPane().add(jCheckBox261, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 20, 23));
 
         jCheckBox262.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox262ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox262, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 590, 20, 23));
+        getContentPane().add(jCheckBox262, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 510, 20, 23));
 
         jCheckBox263.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox263ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox263, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 590, 20, 23));
+        getContentPane().add(jCheckBox263, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 510, 20, 23));
 
         jCheckBox264.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox264ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox264, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 590, 20, 23));
+        getContentPane().add(jCheckBox264, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 20, 23));
 
         jCheckBox265.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox265ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox265, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 590, 20, 23));
-        getContentPane().add(jCheckBox266, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 580, 20, 23));
-        getContentPane().add(jCheckBox267, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 600, 20, -1));
+        getContentPane().add(jCheckBox265, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 510, 20, 23));
+        getContentPane().add(jCheckBox266, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 500, 20, 23));
+        getContentPane().add(jCheckBox267, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 520, 20, -1));
 
         jCheckBox268.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox268ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox268, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 590, 20, 23));
+        getContentPane().add(jCheckBox268, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 510, 20, 23));
 
         jCheckBox269.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox269ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox269, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 590, 20, 23));
+        getContentPane().add(jCheckBox269, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 510, 20, 23));
 
         jCheckBox270.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox270ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox270, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 590, 20, 23));
+        getContentPane().add(jCheckBox270, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 510, 20, 23));
 
         jCheckBox271.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox271ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox271, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 590, 20, 23));
+        getContentPane().add(jCheckBox271, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 510, 20, 23));
 
         jCheckBox272.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox272ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox272, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 590, 20, 23));
-        getContentPane().add(jCheckBox273, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 580, 20, 23));
-        getContentPane().add(jCheckBox274, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 600, 20, -1));
+        getContentPane().add(jCheckBox272, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 510, 20, 23));
+        getContentPane().add(jCheckBox273, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 500, 20, 23));
+        getContentPane().add(jCheckBox274, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 520, 20, -1));
 
         jCheckBox275.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox275ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox275, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 590, 20, 23));
+        getContentPane().add(jCheckBox275, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 510, 20, 23));
 
         jCheckBox276.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox276ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox276, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 590, 20, 23));
+        getContentPane().add(jCheckBox276, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 510, 20, 23));
 
         jCheckBox277.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox277ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox277, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 590, 20, 23));
+        getContentPane().add(jCheckBox277, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 510, 20, 23));
 
         jCheckBox278.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox278ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox278, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 590, 20, 23));
+        getContentPane().add(jCheckBox278, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 510, 20, 23));
 
         jCheckBox279.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox279ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox279, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 590, 20, 23));
-        getContentPane().add(jCheckBox280, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 580, 20, 23));
-        getContentPane().add(jCheckBox281, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 600, 20, -1));
+        getContentPane().add(jCheckBox279, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 510, 20, 23));
+        getContentPane().add(jCheckBox280, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 500, 20, 23));
+        getContentPane().add(jCheckBox281, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 520, 20, -1));
 
         jCheckBox282.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox282ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox282, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 590, 20, 23));
+        getContentPane().add(jCheckBox282, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 510, 20, 23));
 
         jCheckBox283.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox283ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox283, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 590, 20, 23));
+        getContentPane().add(jCheckBox283, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 510, 20, 23));
 
         jCheckBox284.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox284ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox284, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 590, 20, 23));
+        getContentPane().add(jCheckBox284, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 510, 20, 23));
 
         jCheckBox285.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox285ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox285, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 590, 20, 23));
+        getContentPane().add(jCheckBox285, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 510, 20, 23));
 
         jCheckBox286.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox286ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox286, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 590, 20, 23));
-        getContentPane().add(jCheckBox287, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 580, 20, 23));
-        getContentPane().add(jCheckBox288, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 600, 20, -1));
+        getContentPane().add(jCheckBox286, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 510, 20, 23));
+        getContentPane().add(jCheckBox287, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 500, 20, 23));
+        getContentPane().add(jCheckBox288, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 520, 20, -1));
 
         jCheckBox289.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox289ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox289, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 590, 20, 23));
+        getContentPane().add(jCheckBox289, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, 20, 23));
 
         jCheckBox290.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox290ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox290, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 590, 20, 23));
+        getContentPane().add(jCheckBox290, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 510, 20, 23));
 
         jCheckBox291.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox291ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox291, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 590, 20, 23));
+        getContentPane().add(jCheckBox291, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 510, 20, 23));
 
         jCheckBox292.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox292ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox292, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 590, 20, 23));
+        getContentPane().add(jCheckBox292, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, 20, 23));
 
         jCheckBox293.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox293ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox293, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 590, 20, 23));
-        getContentPane().add(jCheckBox294, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 580, 20, 23));
-        getContentPane().add(jCheckBox295, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 600, 20, -1));
+        getContentPane().add(jCheckBox293, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 510, 20, 23));
+        getContentPane().add(jCheckBox294, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 500, 20, 23));
+        getContentPane().add(jCheckBox295, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 520, 20, -1));
 
         jCheckBox296.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox296ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox296, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 650, 20, 23));
+        getContentPane().add(jCheckBox296, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 570, 20, 23));
 
         jCheckBox297.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox297ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox297, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 650, 20, 23));
+        getContentPane().add(jCheckBox297, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 570, 20, 23));
 
         jCheckBox298.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox298ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox298, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 650, 20, 23));
+        getContentPane().add(jCheckBox298, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 570, 20, 23));
 
         jCheckBox299.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox299ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox299, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 650, 20, 23));
+        getContentPane().add(jCheckBox299, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 570, 20, 23));
 
         jCheckBox300.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox300ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox300, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 650, 20, 23));
-        getContentPane().add(jCheckBox301, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 640, 20, 23));
-        getContentPane().add(jCheckBox302, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 660, 20, -1));
+        getContentPane().add(jCheckBox300, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 570, 20, 23));
+        getContentPane().add(jCheckBox301, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 560, 20, 23));
+        getContentPane().add(jCheckBox302, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 580, 20, -1));
 
         jCheckBox303.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox303ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox303, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 650, 20, 23));
+        getContentPane().add(jCheckBox303, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 570, 20, 23));
 
         jCheckBox304.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox304ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox304, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 650, 20, 23));
+        getContentPane().add(jCheckBox304, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 570, 20, 23));
 
         jCheckBox305.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox305ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox305, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 650, 20, 23));
+        getContentPane().add(jCheckBox305, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 570, 20, 23));
 
         jCheckBox306.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox306ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox306, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 650, 20, 23));
+        getContentPane().add(jCheckBox306, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 570, 20, 23));
 
         jCheckBox307.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox307ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox307, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 650, 20, 23));
-        getContentPane().add(jCheckBox308, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 640, 20, 23));
-        getContentPane().add(jCheckBox309, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 660, 20, -1));
+        getContentPane().add(jCheckBox307, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 570, 20, 23));
+        getContentPane().add(jCheckBox308, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 560, 20, 23));
+        getContentPane().add(jCheckBox309, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 580, 20, -1));
 
         jCheckBox310.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox310ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox310, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 650, 20, 23));
+        getContentPane().add(jCheckBox310, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 570, 20, 23));
 
         jCheckBox311.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox311ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox311, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 650, 20, 23));
+        getContentPane().add(jCheckBox311, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 570, 20, 23));
 
         jCheckBox312.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox312ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox312, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 650, 20, 23));
+        getContentPane().add(jCheckBox312, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 570, 20, 23));
 
         jCheckBox313.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox313ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox313, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 650, 20, 23));
+        getContentPane().add(jCheckBox313, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 570, 20, 23));
 
         jCheckBox314.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox314ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox314, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 650, 20, 23));
-        getContentPane().add(jCheckBox315, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 640, 20, 23));
-        getContentPane().add(jCheckBox316, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 660, 20, -1));
+        getContentPane().add(jCheckBox314, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 570, 20, 23));
+        getContentPane().add(jCheckBox315, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 560, 20, 23));
+        getContentPane().add(jCheckBox316, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 580, 20, -1));
 
         jCheckBox317.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox317ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox317, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 650, 20, 23));
+        getContentPane().add(jCheckBox317, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 570, 20, 23));
 
         jCheckBox318.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox318ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox318, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 650, 20, 23));
+        getContentPane().add(jCheckBox318, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 570, 20, 23));
 
         jCheckBox319.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox319ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox319, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 650, 20, 23));
+        getContentPane().add(jCheckBox319, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 570, 20, 23));
 
         jCheckBox320.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox320ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox320, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 650, 20, 23));
+        getContentPane().add(jCheckBox320, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 570, 20, 23));
 
         jCheckBox321.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox321ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox321, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 650, 20, 23));
-        getContentPane().add(jCheckBox322, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 640, 20, 23));
-        getContentPane().add(jCheckBox323, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 660, 20, -1));
+        getContentPane().add(jCheckBox321, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 570, 20, 23));
+        getContentPane().add(jCheckBox322, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 560, 20, 23));
+        getContentPane().add(jCheckBox323, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 580, 20, -1));
 
         jCheckBox324.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox324ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox324, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 650, 20, 23));
+        getContentPane().add(jCheckBox324, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 570, 20, 23));
 
         jCheckBox325.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox325ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox325, new org.netbeans.lib.awtextra.AbsoluteConstraints(300, 650, 20, 23));
+        getContentPane().add(jCheckBox325, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 570, 20, 23));
 
         jCheckBox326.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox326ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox326, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 650, 20, 23));
+        getContentPane().add(jCheckBox326, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 570, 20, 23));
 
         jCheckBox327.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox327ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox327, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 650, 20, 23));
+        getContentPane().add(jCheckBox327, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 570, 20, 23));
 
         jCheckBox328.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox328ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox328, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 650, 20, 23));
-        getContentPane().add(jCheckBox329, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 640, 20, 23));
-        getContentPane().add(jCheckBox330, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 660, 20, -1));
+        getContentPane().add(jCheckBox328, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 570, 20, 23));
+        getContentPane().add(jCheckBox329, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 560, 20, 23));
+        getContentPane().add(jCheckBox330, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 580, 20, -1));
 
         jCheckBox331.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox331ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox331, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 650, 20, 23));
+        getContentPane().add(jCheckBox331, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 570, 20, 23));
 
         jCheckBox332.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox332ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox332, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 650, 20, 23));
+        getContentPane().add(jCheckBox332, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 570, 20, 23));
 
         jCheckBox333.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox333ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox333, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 650, 20, 23));
+        getContentPane().add(jCheckBox333, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 570, 20, 23));
 
         jCheckBox334.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox334ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox334, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 650, 20, 23));
+        getContentPane().add(jCheckBox334, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 570, 20, 23));
 
         jCheckBox335.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox335ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox335, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 650, 20, 23));
-        getContentPane().add(jCheckBox336, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 640, 20, 23));
-        getContentPane().add(jCheckBox337, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 660, 20, -1));
+        getContentPane().add(jCheckBox335, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 570, 20, 23));
+        getContentPane().add(jCheckBox336, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 560, 20, 23));
+        getContentPane().add(jCheckBox337, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 580, 20, -1));
 
         jCheckBox338.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox338ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox338, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 650, 20, 23));
+        getContentPane().add(jCheckBox338, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 570, 20, 23));
 
         jCheckBox339.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox339ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox339, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 650, 20, 23));
+        getContentPane().add(jCheckBox339, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 570, 20, 23));
 
         jCheckBox340.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox340ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox340, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 650, 20, 23));
+        getContentPane().add(jCheckBox340, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 570, 20, 23));
 
         jCheckBox341.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox341ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox341, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 650, 20, 23));
+        getContentPane().add(jCheckBox341, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 570, 20, 23));
 
         jCheckBox342.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox342ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox342, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 650, 20, 23));
-        getContentPane().add(jCheckBox343, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 640, 20, 23));
-        getContentPane().add(jCheckBox344, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 660, 20, -1));
+        getContentPane().add(jCheckBox342, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 570, 20, 23));
+        getContentPane().add(jCheckBox343, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 560, 20, 23));
+        getContentPane().add(jCheckBox344, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 580, 20, -1));
 
         jCheckBox345.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox345ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox345, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 650, 20, 23));
+        getContentPane().add(jCheckBox345, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 570, 20, 23));
 
         jCheckBox346.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox346ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox346, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 650, 20, 23));
+        getContentPane().add(jCheckBox346, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 570, 20, 23));
 
         jCheckBox347.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox347ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox347, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 650, 20, 23));
+        getContentPane().add(jCheckBox347, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 570, 20, 23));
 
         jCheckBox348.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox348ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox348, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 650, 20, 23));
+        getContentPane().add(jCheckBox348, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 570, 20, 23));
 
         jCheckBox349.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox349ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox349, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 650, 20, 23));
-        getContentPane().add(jCheckBox350, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 640, 20, 23));
-        getContentPane().add(jCheckBox351, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 660, 20, -1));
+        getContentPane().add(jCheckBox349, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 570, 20, 23));
+        getContentPane().add(jCheckBox350, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 560, 20, 23));
+        getContentPane().add(jCheckBox351, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 580, 20, -1));
 
         jCheckBox352.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox352ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox352, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 650, 20, 23));
+        getContentPane().add(jCheckBox352, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 570, 20, 23));
 
         jCheckBox353.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox353ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox353, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 650, 20, 23));
+        getContentPane().add(jCheckBox353, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 570, 20, 23));
 
         jCheckBox354.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox354ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox354, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 650, 20, 23));
+        getContentPane().add(jCheckBox354, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 570, 20, 23));
 
         jCheckBox355.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox355ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox355, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 650, 20, 23));
+        getContentPane().add(jCheckBox355, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 570, 20, 23));
 
         jCheckBox356.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox356ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox356, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 650, 20, 23));
-        getContentPane().add(jCheckBox357, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 640, 20, 23));
-        getContentPane().add(jCheckBox358, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 660, 20, -1));
+        getContentPane().add(jCheckBox356, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 570, 20, 23));
+        getContentPane().add(jCheckBox357, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 560, 20, 23));
+        getContentPane().add(jCheckBox358, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 580, 20, -1));
 
         jCheckBox359.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox359ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox359, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 650, 20, 23));
+        getContentPane().add(jCheckBox359, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 570, 20, 23));
 
         jCheckBox360.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox360ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox360, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 650, 20, 23));
+        getContentPane().add(jCheckBox360, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 570, 20, 23));
 
         jCheckBox361.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox361ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox361, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 650, 20, 23));
+        getContentPane().add(jCheckBox361, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 570, 20, 23));
 
         jCheckBox362.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox362ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox362, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 650, 20, 23));
+        getContentPane().add(jCheckBox362, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 570, 20, 23));
 
         jCheckBox363.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox363ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox363, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 650, 20, 23));
-        getContentPane().add(jCheckBox364, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 640, 20, 23));
-        getContentPane().add(jCheckBox365, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 660, 20, -1));
+        getContentPane().add(jCheckBox363, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 570, 20, 23));
+        getContentPane().add(jCheckBox364, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 560, 20, 23));
+        getContentPane().add(jCheckBox365, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 580, 20, -1));
 
         jLabel58.setText("51");
-        getContentPane().add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 560, 20, 20));
+        getContentPane().add(jLabel58, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 480, 20, 20));
 
         jLabel59.setText("54");
-        getContentPane().add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 560, 20, 20));
+        getContentPane().add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 480, 20, 20));
 
         jLabel60.setText("52");
-        getContentPane().add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 560, 20, 20));
+        getContentPane().add(jLabel60, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 480, 20, 20));
 
         jLabel61.setText("53");
-        getContentPane().add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 560, 20, 20));
+        getContentPane().add(jLabel61, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 480, 20, 20));
 
         jLabel62.setText("55");
-        getContentPane().add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 560, 20, 20));
+        getContentPane().add(jLabel62, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 480, 20, 20));
 
         jLabel63.setText("65");
-        getContentPane().add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 560, 20, 20));
+        getContentPane().add(jLabel63, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 480, 20, 20));
 
         jLabel64.setText("62");
-        getContentPane().add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 560, 20, 20));
+        getContentPane().add(jLabel64, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 480, 20, 20));
 
         jLabel65.setText("64");
-        getContentPane().add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 560, 20, 20));
+        getContentPane().add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 480, 20, 20));
 
         jLabel66.setText("63");
-        getContentPane().add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 560, 20, 20));
+        getContentPane().add(jLabel66, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 480, 20, 20));
 
         jLabel67.setText("61");
-        getContentPane().add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 560, 20, 20));
+        getContentPane().add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 480, 20, 20));
 
         jLabel68.setText("81");
-        getContentPane().add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 680, 20, 20));
+        getContentPane().add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 600, 20, 20));
 
         jLabel69.setText("84");
-        getContentPane().add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 680, 20, 20));
+        getContentPane().add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 600, 20, 20));
 
         jLabel70.setText("82");
-        getContentPane().add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 680, 20, 20));
+        getContentPane().add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 600, 20, 20));
 
         jLabel71.setText("83");
-        getContentPane().add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 680, 20, 20));
+        getContentPane().add(jLabel71, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 600, 20, 20));
 
         jLabel73.setText("85");
-        getContentPane().add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 680, 20, 20));
+        getContentPane().add(jLabel73, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 600, 20, 20));
 
         jLabel72.setText("75");
-        getContentPane().add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 680, 20, 20));
+        getContentPane().add(jLabel72, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 600, 20, 20));
 
         jLabel74.setText("72");
-        getContentPane().add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 680, 20, 20));
+        getContentPane().add(jLabel74, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 600, 20, 20));
 
         jLabel75.setText("74");
-        getContentPane().add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 680, 20, 20));
+        getContentPane().add(jLabel75, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 600, 20, 20));
 
         jLabel76.setText("73");
-        getContentPane().add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 680, 20, 20));
+        getContentPane().add(jLabel76, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 600, 20, 20));
 
         jLabel77.setText("71");
-        getContentPane().add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 680, 20, 20));
+        getContentPane().add(jLabel77, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 600, 20, 20));
 
         jSeparator10.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Dientes Niños"));
-        getContentPane().add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 550, 490, 150));
-
-        jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 750, 740, 110));
-
-        jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 750, 1140, -1));
-
-        jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 860, 1140, 10));
-
-        jSeparator11.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 780, 1140, 10));
-
-        jSeparator12.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator12.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(970, 750, 740, 110));
-
-        jLabel3.setText("IS-LS");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 760, 30, -1));
-
-        jSeparator13.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 810, 1140, 20));
-
-        jLabel4.setText("4");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 790, 30, -1));
-
-        txtEJE.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtEJEActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtEJE, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 830, 59, -1));
-
-        jSeparator14.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator14.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 750, 740, 110));
-
-        jLabel5.setText("Angulo Articular");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 760, 80, -1));
-
-        jLabel6.setText("150°");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 790, 34, -1));
-
-        txtanguloA1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtanguloA1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtanguloA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 830, 59, -1));
-
-        jSeparator15.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator15.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 750, 740, 110));
-
-        jLabel7.setText("Angulo Goniaco Inferior");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(110, 760, 120, -1));
-
-        jLabel8.setText("75°");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 790, 20, -1));
-
-        jLabel9.setText("75°");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 790, 20, -1));
-
-        txtanguloG1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtanguloG1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtanguloG1, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 830, 59, -1));
-
-        jSeparator16.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator16.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 750, 740, 110));
-
-        jLabel18.setText("IMPA");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 760, 30, -1));
-
-        jLabel19.setText("85-93-97°");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(260, 790, 50, -1));
-
-        txtIMPA1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIMPA1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtIMPA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 830, 59, -1));
-
-        jLabel20.setText("Porcentaje JARABAK");
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 760, -1, -1));
-
-        jLabel21.setText("EJE FACIAL");
-        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 760, 60, -1));
-
-        jLabel22.setText("56%");
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 790, 30, -1));
-
-        jLabel23.setText("90");
-        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 790, 20, -1));
-
-        txtJa1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtJa1ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtJa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 830, 59, -1));
-
-        txtIS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtISActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 830, 59, -1));
-
-        jLabel24.setText("II-LS");
-        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 760, 30, -1));
-
-        jSeparator17.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator17.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 750, 740, 110));
-
-        jLabel25.setText("0");
-        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 790, 10, -1));
-
-        txtII.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtIIActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtII, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 830, 59, -1));
-
-        jSeparator18.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator18.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 750, 740, 110));
-
-        jLabel26.setText("FHIS");
-        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 760, 30, -1));
-
-        jLabel27.setText("110°-115°");
-        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 790, -1, -1));
-
-        txtFHIS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtFHISActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtFHIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 830, 59, -1));
-
-        jSeparator19.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator19.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator19, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 750, 740, 110));
-
-        jSeparator20.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator20.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(230, 750, 740, 110));
-
-        jLabel28.setText("ANB");
-        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 760, 30, -1));
-
-        jLabel29.setText("2°");
-        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 790, 20, -1));
-
-        txtANB82.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtANB82ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtANB82, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 830, 20, -1));
-
-        jSeparator21.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator21.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator21, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 750, 740, 110));
-
-        jSeparator22.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator22.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator22, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 750, 740, 110));
-
-        jLabel30.setText("82°");
-        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 790, 20, -1));
-
-        jLabel31.setText("80°");
-        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 790, 20, -1));
-
-        jLabel32.setText("PALS");
-        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 760, 30, -1));
-
-        jLabel33.setText("4 mm");
-        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 790, 30, -1));
-
-        jSeparator24.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator24.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 780, 740, 80));
-
-        jSeparator25.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator25.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator25, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 780, 740, 80));
-
-        txtPALS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPALSActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtPALS, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 830, 59, -1));
-
-        txtANB80.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtANB80ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtANB80, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 830, 20, -1));
-
-        txtANB2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtANB2ActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtANB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 830, 20, -1));
-
-        jLabel78.setText("PALI");
-        getContentPane().add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 760, 40, -1));
-
-        jLabel79.setText("2 mm");
-        getContentPane().add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(1000, 790, 30, 20));
-
-        txtPALI.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPALIActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtPALI, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 830, 59, -1));
-
-        jSeparator23.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator23.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator23, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 750, 740, 110));
-
-        jLabel80.setText("PTB");
-        getContentPane().add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 760, 30, -1));
-
-        jLabel81.setText("-3 mm");
-        getContentPane().add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 790, 30, -1));
-
-        txtPTB.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtPTBActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtPTB, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 830, 59, -1));
-
-        jSeparator26.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator26.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator26, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 750, 740, 110));
-
-        jSeparator27.setBackground(new java.awt.Color(0, 0, 0));
-        jSeparator27.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 750, 740, 110));
-
-        lblnombre10.setText("Curva de Spee: ");
-        getContentPane().add(lblnombre10, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 880, 80, -1));
-
-        chcurvaleve1.setText("Leve");
-        getContentPane().add(chcurvaleve1, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 880, 60, -1));
-
-        chcurvamoderada1.setText("Moderada");
-        getContentPane().add(chcurvamoderada1, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 880, 80, -1));
-
-        chcurvasevera.setText("Severa");
-        getContentPane().add(chcurvasevera, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 880, 70, -1));
-
-        lblnombre6.setText("DSD:");
-        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 880, 40, -1));
-        getContentPane().add(txtDSD, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 880, 60, -1));
-
-        lblnombre9.setText("mm.");
-        getContentPane().add(lblnombre9, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 880, 30, -1));
-
-        lblnombre8.setText("Clasificación Maxilares:");
-        getContentPane().add(lblnombre8, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 910, -1, -1));
-        getContentPane().add(txtmaxilares, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 910, 380, -1));
-
-        lblnombre7.setText("Entorno Dental:");
-        getContentPane().add(lblnombre7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 950, -1, -1));
-        getContentPane().add(txtEntornoD, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 950, 380, -1));
-
-        lblnombre11.setText("Bandas en:");
-        getContentPane().add(lblnombre11, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 90, 60, 20));
-        getContentPane().add(txtbandas, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 90, 380, 20));
-
-        lblnombre12.setText("tubos:");
-        getContentPane().add(lblnombre12, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 120, 40, 10));
-        getContentPane().add(txttubos, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 120, 380, 20));
-
-        lblnombre13.setText("Otros:");
-        getContentPane().add(lblnombre13, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 150, 40, 20));
-
-        txtotros.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtotrosActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtotros, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 150, 380, 20));
-
-        lblnombre14.setText("Aparato tipo:");
-        getContentPane().add(lblnombre14, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 180, 70, 20));
-        getContentPane().add(txtAparato, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 180, 380, 20));
-
-        lblnombre15.setText("Exodoncia:");
-        getContentPane().add(lblnombre15, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 220, 60, 20));
-        getContentPane().add(txtexodoncia, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 220, 380, 20));
-
-        lblnombre17.setText("Brackets:");
-        getContentPane().add(lblnombre17, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 270, 50, 20));
-
-        txtBrakets.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtBraketsActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtBrakets, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 270, 380, 20));
-
-        lblnombre19.setText("RETENCIONES MX:");
-        getContentPane().add(lblnombre19, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 310, 100, 20));
-
-        txtRetenciones.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtRetencionesActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtRetenciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 310, 380, 20));
-
-        lblnombre18.setText("Secuencia de Arcos:");
-        getContentPane().add(lblnombre18, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 340, 100, 20));
-        getContentPane().add(txtsecuencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 340, 380, 20));
-
-        lblnombre20.setText("MD:");
-        getContentPane().add(lblnombre20, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 380, 30, 20));
-        getContentPane().add(txtMD, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 380, 380, 20));
-
-        jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel1.setText("Indicacion especial antes de colocar Brackets");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 420, 330, -1));
-
-        jLabel83.setFont(new java.awt.Font("Arial", 1, 14)); // NOI18N
-        jLabel83.setText("Plan de Tratamiento");
-        getContentPane().add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 50, -1, 20));
-
-        jSeparator28.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator28, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 780, 1140, 10));
-
-        jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 570, 400, 10));
-
-        jLabel84.setText("Tomar imp.");
-        getContentPane().add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 480, 60, -1));
-
-        jLabel85.setText("Repetir Fotos");
-        getContentPane().add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 450, 80, -1));
-
-        jLabel86.setText("Tomar Rx");
-        getContentPane().add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 510, 50, -1));
-
-        jSeparator29.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator29, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 440, 400, -1));
-
-        jSeparator30.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator30, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 470, 380, 50));
-
-        jLabel87.setText("RX Rocabado");
-        getContentPane().add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 540, 80, -1));
-
-        jSeparator31.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator31, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 500, 400, 70));
-
-        jSeparator32.setForeground(new java.awt.Color(0, 0, 0));
-        jSeparator32.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        jSeparator32.setToolTipText("");
-        getContentPane().add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 440, 60, 130));
-
-        jSeparator33.setForeground(new java.awt.Color(0, 0, 0));
-        jSeparator33.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator33, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 440, -1, 90));
+        getContentPane().add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 470, 490, 150));
 
         jInternalFrame1.getContentPane().setLayout(null);
 
@@ -6742,50 +6248,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         jInternalFrame1.getContentPane().add(jSeparator66);
         jSeparator66.setBounds(720, 1290, 80, 60);
 
-        getContentPane().add(jInternalFrame1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, -150, -1, 634));
-
-        jSeparator67.setForeground(new java.awt.Color(0, 0, 0));
-        jSeparator67.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator67, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 440, 80, 90));
-
-        chmodelo.setText("Modelo mx ");
-        getContentPane().add(chmodelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 470, 93, -1));
-
-        chfaciales1.setText("Faciales");
-        getContentPane().add(chfaciales1, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 440, -1, -1));
-
-        chpanoramica.setText("Panoramica");
-        getContentPane().add(chpanoramica, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 500, 93, -1));
-
-        chintraorales.setText("Intraorales");
-        getContentPane().add(chintraorales, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 440, 93, -1));
-
-        jSeparator68.setForeground(new java.awt.Color(0, 0, 0));
-        jSeparator68.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator68, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 440, -1, 90));
-
-        chmodeloMD.setText("Modelo md");
-        getContentPane().add(chmodeloMD, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 470, 93, -1));
-
-        chcefalometrica.setText("Cefalometrica");
-        getContentPane().add(chcefalometrica, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 500, 93, -1));
-
-        chincicivos.setText("Incicivos");
-        getContentPane().add(chincicivos, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 500, 70, -1));
-
-        jSeparator69.setForeground(new java.awt.Color(0, 0, 0));
-        jSeparator69.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator69, new org.netbeans.lib.awtextra.AbsoluteConstraints(1250, 440, -1, 130));
-
-        jSeparator70.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator70, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 530, 400, 50));
-
-        txtrocabado.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtrocabadoActionPerformed(evt);
-            }
-        });
-        getContentPane().add(txtrocabado, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 540, 280, -1));
+        getContentPane().add(jInternalFrame1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, -220, -1, 634));
 
         btnguardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnguardar.addActionListener(new java.awt.event.ActionListener() {
@@ -6793,24 +6256,20 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                 btnguardarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 590, 60, 70));
+        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 480, 60, 70));
 
         fecha.setDateFormatString("yyyy-MM-dd");
-        getContentPane().add(fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 40, 110, -1));
+        getContentPane().add(fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 60, 110, -1));
 
         lblnombre40.setText("Apellido:");
-        getContentPane().add(lblnombre40, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 90, -1, -1));
+        getContentPane().add(lblnombre40, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 100, -1, -1));
 
         txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtapellidoKeyTyped(evt);
             }
         });
-        getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 90, 190, -1));
-
-        jSeparator71.setForeground(new java.awt.Color(0, 0, 0));
-        jSeparator71.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator71, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 40, 10, 670));
+        getContentPane().add(txtapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 100, 190, -1));
 
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnsalir.addActionListener(new java.awt.event.ActionListener() {
@@ -6818,7 +6277,15 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                 btnsalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 590, 60, 70));
+        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 550, 60, 70));
+
+        btnsiguiente.setText("siguiente");
+        btnsiguiente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnsiguienteActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnsiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 490, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -7862,62 +7329,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private void jCheckBox363ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox363ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jCheckBox363ActionPerformed
-
-    private void txtEJEActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtEJEActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtEJEActionPerformed
-
-    private void txtanguloA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtanguloA1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtanguloA1ActionPerformed
-
-    private void txtanguloG1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtanguloG1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtanguloG1ActionPerformed
-
-    private void txtIMPA1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIMPA1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtIMPA1ActionPerformed
-
-    private void txtJa1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtJa1ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtJa1ActionPerformed
-
-    private void txtISActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtISActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtISActionPerformed
-
-    private void txtIIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtIIActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtIIActionPerformed
-
-    private void txtFHISActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtFHISActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtFHISActionPerformed
-
-    private void txtANB82ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtANB82ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtANB82ActionPerformed
-
-    private void txtPALSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPALSActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPALSActionPerformed
-
-    private void txtANB80ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtANB80ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtANB80ActionPerformed
-
-    private void txtANB2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtANB2ActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtANB2ActionPerformed
-
-    private void txtPALIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPALIActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPALIActionPerformed
-
-    private void txtPTBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtPTBActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtPTBActionPerformed
 
     private void jCheckBox67ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox67ActionPerformed
         // TODO add your handling code here:
@@ -9015,10 +8426,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtPTB1ActionPerformed
 
-    private void txtrocabadoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtrocabadoActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtrocabadoActionPerformed
-
     private void txtdirecciónActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdirecciónActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtdirecciónActionPerformed
@@ -9051,18 +8458,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         // TODO add your handling code here:
     }//GEN-LAST:event_txtDXActionPerformed
 
-    private void txtotrosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtotrosActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtotrosActionPerformed
-
-    private void txtBraketsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtBraketsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtBraketsActionPerformed
-
-    private void txtRetencionesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtRetencionesActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_txtRetencionesActionPerformed
-
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
        this.dispose();
     }//GEN-LAST:event_btnsalirActionPerformed
@@ -9087,23 +8482,20 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         val.validarNum(evt);
     }//GEN-LAST:event_txtedadKeyTyped
 
+    private void btnsiguienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsiguienteActionPerformed
+       ExpedienteO formExGral = new ExpedienteO();
+       Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_btnsiguienteActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnguardar;
     private javax.swing.JButton btnsalir;
-    private javax.swing.JCheckBox chcefalometrica;
-    private javax.swing.JCheckBox chcurvaleve1;
+    private javax.swing.JButton btnsiguiente;
     private javax.swing.JCheckBox chcurvaleve2;
-    private javax.swing.JCheckBox chcurvamoderada1;
     private javax.swing.JCheckBox chcurvamoderada2;
-    private javax.swing.JCheckBox chcurvasevera;
     private javax.swing.JCheckBox chcurvasevera1;
-    private javax.swing.JCheckBox chfaciales1;
-    private javax.swing.JCheckBox chincicivos;
-    private javax.swing.JCheckBox chintraorales;
-    private javax.swing.JCheckBox chmodelo;
-    private javax.swing.JCheckBox chmodeloMD;
-    private javax.swing.JCheckBox chpanoramica;
     private com.toedter.calendar.JDateChooser fecha;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
@@ -9834,7 +9226,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JCheckBox jCheckBox98;
     private javax.swing.JCheckBox jCheckBox99;
     private javax.swing.JInternalFrame jInternalFrame1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel100;
     private javax.swing.JLabel jLabel101;
@@ -9918,31 +9309,13 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel jLabel172;
     private javax.swing.JLabel jLabel173;
     private javax.swing.JLabel jLabel174;
-    private javax.swing.JLabel jLabel18;
-    private javax.swing.JLabel jLabel19;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel20;
-    private javax.swing.JLabel jLabel21;
-    private javax.swing.JLabel jLabel22;
-    private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
-    private javax.swing.JLabel jLabel25;
-    private javax.swing.JLabel jLabel26;
-    private javax.swing.JLabel jLabel27;
-    private javax.swing.JLabel jLabel28;
-    private javax.swing.JLabel jLabel29;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
-    private javax.swing.JLabel jLabel31;
-    private javax.swing.JLabel jLabel32;
-    private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
-    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
@@ -9953,7 +9326,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel jLabel47;
     private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
-    private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel52;
@@ -9964,7 +9336,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
     private javax.swing.JLabel jLabel59;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel60;
     private javax.swing.JLabel jLabel61;
     private javax.swing.JLabel jLabel62;
@@ -9975,7 +9346,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel jLabel67;
     private javax.swing.JLabel jLabel68;
     private javax.swing.JLabel jLabel69;
-    private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel71;
     private javax.swing.JLabel jLabel72;
@@ -9984,20 +9354,9 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel jLabel75;
     private javax.swing.JLabel jLabel76;
     private javax.swing.JLabel jLabel77;
-    private javax.swing.JLabel jLabel78;
-    private javax.swing.JLabel jLabel79;
-    private javax.swing.JLabel jLabel8;
-    private javax.swing.JLabel jLabel80;
-    private javax.swing.JLabel jLabel81;
     private javax.swing.JLabel jLabel82;
-    private javax.swing.JLabel jLabel83;
-    private javax.swing.JLabel jLabel84;
-    private javax.swing.JLabel jLabel85;
-    private javax.swing.JLabel jLabel86;
-    private javax.swing.JLabel jLabel87;
     private javax.swing.JLabel jLabel88;
     private javax.swing.JLabel jLabel89;
-    private javax.swing.JLabel jLabel9;
     private javax.swing.JLabel jLabel90;
     private javax.swing.JLabel jLabel91;
     private javax.swing.JLabel jLabel92;
@@ -10008,33 +9367,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel jLabel97;
     private javax.swing.JLabel jLabel98;
     private javax.swing.JLabel jLabel99;
-    private javax.swing.JSeparator jSeparator1;
     private javax.swing.JSeparator jSeparator10;
-    private javax.swing.JSeparator jSeparator11;
-    private javax.swing.JSeparator jSeparator12;
-    private javax.swing.JSeparator jSeparator13;
-    private javax.swing.JSeparator jSeparator14;
-    private javax.swing.JSeparator jSeparator15;
-    private javax.swing.JSeparator jSeparator16;
-    private javax.swing.JSeparator jSeparator17;
-    private javax.swing.JSeparator jSeparator18;
-    private javax.swing.JSeparator jSeparator19;
-    private javax.swing.JSeparator jSeparator2;
-    private javax.swing.JSeparator jSeparator20;
-    private javax.swing.JSeparator jSeparator21;
-    private javax.swing.JSeparator jSeparator22;
-    private javax.swing.JSeparator jSeparator23;
-    private javax.swing.JSeparator jSeparator24;
-    private javax.swing.JSeparator jSeparator25;
-    private javax.swing.JSeparator jSeparator26;
-    private javax.swing.JSeparator jSeparator27;
-    private javax.swing.JSeparator jSeparator28;
-    private javax.swing.JSeparator jSeparator29;
-    private javax.swing.JSeparator jSeparator3;
-    private javax.swing.JSeparator jSeparator30;
-    private javax.swing.JSeparator jSeparator31;
-    private javax.swing.JSeparator jSeparator32;
-    private javax.swing.JSeparator jSeparator33;
     private javax.swing.JSeparator jSeparator34;
     private javax.swing.JSeparator jSeparator35;
     private javax.swing.JSeparator jSeparator36;
@@ -10063,7 +9396,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JSeparator jSeparator57;
     private javax.swing.JSeparator jSeparator58;
     private javax.swing.JSeparator jSeparator59;
-    private javax.swing.JSeparator jSeparator6;
     private javax.swing.JSeparator jSeparator60;
     private javax.swing.JSeparator jSeparator61;
     private javax.swing.JSeparator jSeparator62;
@@ -10071,12 +9403,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JSeparator jSeparator64;
     private javax.swing.JSeparator jSeparator65;
     private javax.swing.JSeparator jSeparator66;
-    private javax.swing.JSeparator jSeparator67;
-    private javax.swing.JSeparator jSeparator68;
-    private javax.swing.JSeparator jSeparator69;
     private javax.swing.JSeparator jSeparator7;
-    private javax.swing.JSeparator jSeparator70;
-    private javax.swing.JSeparator jSeparator71;
     private javax.swing.JSeparator jSeparator8;
     private javax.swing.JSeparator jSeparator9;
     private javax.swing.JLabel lbldireccion1;
@@ -10085,18 +9412,8 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel lbledad1;
     private javax.swing.JLabel lblnombre;
     private javax.swing.JLabel lblnombre1;
-    private javax.swing.JLabel lblnombre10;
-    private javax.swing.JLabel lblnombre11;
-    private javax.swing.JLabel lblnombre12;
-    private javax.swing.JLabel lblnombre13;
-    private javax.swing.JLabel lblnombre14;
-    private javax.swing.JLabel lblnombre15;
     private javax.swing.JLabel lblnombre16;
-    private javax.swing.JLabel lblnombre17;
-    private javax.swing.JLabel lblnombre18;
-    private javax.swing.JLabel lblnombre19;
     private javax.swing.JLabel lblnombre2;
-    private javax.swing.JLabel lblnombre20;
     private javax.swing.JLabel lblnombre21;
     private javax.swing.JLabel lblnombre22;
     private javax.swing.JLabel lblnombre23;
@@ -10120,67 +9437,40 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel lblnombre4;
     private javax.swing.JLabel lblnombre40;
     private javax.swing.JLabel lblnombre5;
-    private javax.swing.JLabel lblnombre6;
-    private javax.swing.JLabel lblnombre7;
-    private javax.swing.JLabel lblnombre8;
-    private javax.swing.JLabel lblnombre9;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltelefono1;
-    private javax.swing.JTextField txtANB2;
     private javax.swing.JTextField txtANB3;
-    private javax.swing.JTextField txtANB80;
     private javax.swing.JTextField txtANB81;
-    private javax.swing.JTextField txtANB82;
     private javax.swing.JTextField txtANB83;
-    private javax.swing.JTextField txtAparato;
     private javax.swing.JTextField txtAparato1;
-    private javax.swing.JTextField txtBrakets;
     private javax.swing.JTextField txtBrakets3;
     private javax.swing.JTextField txtBrakets4;
     private javax.swing.JTextField txtBrakets5;
-    private javax.swing.JTextField txtDSD;
     private javax.swing.JTextField txtDSD1;
     private javax.swing.JTextField txtDX;
-    private javax.swing.JTextField txtEJE;
     private javax.swing.JTextField txtEJE1;
-    private javax.swing.JTextField txtEntornoD;
     private javax.swing.JTextField txtEntornoD1;
     private javax.swing.JTextField txtExamenC;
-    private javax.swing.JTextField txtFHIS;
     private javax.swing.JTextField txtFHIS1;
     private javax.swing.JTextField txtHistoriaM;
-    private javax.swing.JTextField txtII;
     private javax.swing.JTextField txtII1;
-    private javax.swing.JTextField txtIMPA1;
     private javax.swing.JTextField txtIMPA2;
-    private javax.swing.JTextField txtIS;
     private javax.swing.JTextField txtIS1;
-    private javax.swing.JTextField txtJa1;
     private javax.swing.JTextField txtJa2;
-    private javax.swing.JTextField txtMD;
     private javax.swing.JTextField txtMotivoC;
     private javax.swing.JTextField txtMotivoO;
-    private javax.swing.JTextField txtPALI;
     private javax.swing.JTextField txtPALI1;
-    private javax.swing.JTextField txtPALS;
     private javax.swing.JTextField txtPALS1;
-    private javax.swing.JTextField txtPTB;
     private javax.swing.JTextField txtPTB1;
-    private javax.swing.JTextField txtRetenciones;
-    private javax.swing.JTextField txtanguloA1;
     private javax.swing.JTextField txtanguloA2;
-    private javax.swing.JTextField txtanguloG1;
     private javax.swing.JTextField txtanguloG2;
     private javax.swing.JTextField txtapellido;
-    private javax.swing.JTextField txtbandas;
     private javax.swing.JTextField txtbandas1;
     private javax.swing.JTextField txtdirección;
     private javax.swing.JTextField txtdirección2;
     private javax.swing.JTextField txtedad;
     private javax.swing.JTextField txtedad1;
-    private javax.swing.JTextField txtexodoncia;
     private javax.swing.JTextField txtexodoncia1;
-    private javax.swing.JTextField txtmaxilares;
     private javax.swing.JTextField txtmaxilares1;
     private javax.swing.JTextField txtnombre;
     private javax.swing.JTextField txtnombre10;
@@ -10189,14 +9479,10 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JTextField txtnombre7;
     private javax.swing.JTextField txtnombre8;
     private javax.swing.JTextField txtnombre9;
-    private javax.swing.JTextField txtotros;
     private javax.swing.JTextField txtotros1;
-    private javax.swing.JTextField txtrocabado;
-    private javax.swing.JTextField txtsecuencia;
     private javax.swing.JTextField txtsecuencia1;
     private javax.swing.JTextField txttelefono;
     private javax.swing.JTextField txttelefono1;
-    private javax.swing.JTextField txttubos;
     private javax.swing.JTextField txttubos1;
     // End of variables declaration//GEN-END:variables
 }
