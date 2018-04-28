@@ -4,14 +4,21 @@ import Clases.ConsultarDatosBD;
 import Clases.internalFrameImagen;
 import Clases.InsertarDatosBD;
 import Clases.validaciones;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 import java.util.Calendar;
 import javax.swing.JOptionPane;
+import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
+import javax.swing.table.TableRowSorter;
 
 public class frmCompraProducto extends internalFrameImagen {
 
+    private TableRowSorter trsFiltrarProv;
+    private TableRowSorter trsFiltrarProd;
     int codigoProv;
     int codigoProd;
+    
     public frmCompraProducto() {
         initComponents();
         setImagenw("img2.jpg");        
@@ -39,7 +46,8 @@ public class frmCompraProducto extends internalFrameImagen {
         txtCantidad.setText("");
         txtProducto.setText("");
         txtProveedor.setText("");
-        txtMarca.setText("");                     
+        txtMarca.setText("");   
+        fechaCompra.setDate(null);
     }
     
     //este metodo muestra los productos en el grid jtProd
@@ -83,12 +91,18 @@ public class frmCompraProducto extends internalFrameImagen {
         jtProd = new javax.swing.JTable();
         jLabel9 = new javax.swing.JLabel();
         fechaCompra = new com.toedter.calendar.JDateChooser();
+        btnActualizar = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
         setAutoscrolls(true);
 
-        btnSelectProd.setText("Agregar Nuevo");
+        btnSelectProd.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnSelectProd.setForeground(new java.awt.Color(0, 102, 204));
+        btnSelectProd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/producto_1.png"))); // NOI18N
+        btnSelectProd.setText("Nuevo Producto");
+        btnSelectProd.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSelectProd.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnSelectProd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSelectProdActionPerformed(evt);
@@ -118,8 +132,21 @@ public class frmCompraProducto extends internalFrameImagen {
 
         jLabel4.setText("Buscar Proveedor:");
 
+        txtBuscarProd.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtBuscarProdKeyTyped(evt);
+            }
+        });
+
+        txtBuscarProv.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtBuscarProvKeyTyped(evt);
+            }
+        });
+
         btnComprar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnComprar.setForeground(new java.awt.Color(0, 102, 204));
+        btnComprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/compra.png"))); // NOI18N
         btnComprar.setText("Comprar");
         btnComprar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnComprar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -129,7 +156,11 @@ public class frmCompraProducto extends internalFrameImagen {
             }
         });
 
-        btnSelectProve.setText("Agregar Nuevo");
+        btnSelectProve.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnSelectProve.setForeground(new java.awt.Color(0, 102, 204));
+        btnSelectProve.setText("Nuevo Proveedor");
+        btnSelectProve.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnSelectProve.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnSelectProve.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSelectProveActionPerformed(evt);
@@ -150,6 +181,7 @@ public class frmCompraProducto extends internalFrameImagen {
             }
         });
 
+        jtProv = new javax.swing.JTable(){     public boolean isCellEditable(int rowIndex, int colIndex){         return false;     } };
         jtProv.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
@@ -176,6 +208,7 @@ public class frmCompraProducto extends internalFrameImagen {
 
         jLabel3.setText(" Producto seleccionado:");
 
+        jtProd = new javax.swing.JTable(){     public boolean isCellEditable(int rowIndex, int colIndex){         return false;     } };
         jtProd.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
@@ -187,6 +220,7 @@ public class frmCompraProducto extends internalFrameImagen {
 
             }
         ));
+        jtProd.setCellSelectionEnabled(true);
         jtProd.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jtProdMouseClicked(evt);
@@ -198,14 +232,22 @@ public class frmCompraProducto extends internalFrameImagen {
 
         fechaCompra.setDateFormatString("yyy-MM-dd");
 
+        btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnActualizar.setForeground(new java.awt.Color(0, 102, 204));
+        btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/actualizar.png"))); // NOI18N
+        btnActualizar.setText("Actualizar");
+        btnActualizar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnActualizar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnActualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnActualizarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(392, 392, 392))
             .addGroup(layout.createSequentialGroup()
                 .addGap(49, 49, 49)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
@@ -234,41 +276,54 @@ public class frmCompraProducto extends internalFrameImagen {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnCerrar))
+                        .addComponent(jLabel4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(txtBuscarProv, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
+                        .addGap(8, 8, 8)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(txtBuscarProv, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnSelectProve, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(btnComprar)
+                                .addGap(121, 121, 121)
+                                .addComponent(btnSelectProve))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addComponent(jLabel8)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                        .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 81, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel3)
+                                .addComponent(jLabel8)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addComponent(txtProveedor, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 157, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtBuscarProd, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(btnSelectProd, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addComponent(txtBuscarProd, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(53, 53, 53)
+                                .addComponent(btnSelectProd)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(txtProducto, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(btnActualizar)
+                                .addGap(110, 110, 110)
+                                .addComponent(btnCerrar)))))
                 .addGap(40, 40, 40))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(392, 392, 392))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -280,8 +335,7 @@ public class frmCompraProducto extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel4)
-                            .addComponent(txtBuscarProv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(btnSelectProve, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtBuscarProv, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
@@ -291,7 +345,6 @@ public class frmCompraProducto extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel2)
-                            .addComponent(btnSelectProd, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtBuscarProd, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(18, 18, 18)
                         .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -299,29 +352,30 @@ public class frmCompraProducto extends internalFrameImagen {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel3)
                             .addComponent(txtProducto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel7)
-                            .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel5)
-                            .addComponent(txtCosto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel6)
-                            .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(fechaCompra, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
-                            .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 66, Short.MAX_VALUE)
-                        .addComponent(btnComprar, javax.swing.GroupLayout.PREFERRED_SIZE, 62, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(btnCerrar)))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel7)
+                    .addComponent(txtMarca, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel5)
+                    .addComponent(txtCosto, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel6)
+                    .addComponent(txtCantidad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(fechaCompra, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                        .addComponent(btnSelectProve, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnSelectProd, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnCerrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(btnComprar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addComponent(btnActualizar))
                 .addContainerGap())
         );
 
@@ -329,15 +383,17 @@ public class frmCompraProducto extends internalFrameImagen {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnSelectProdActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelectProdActionPerformed
-        // TODO add your handling code here:
+     frmProducto formProd = new frmProducto();
+     frmPrincipal.Dpanel.add(formProd);
+     formProd.show();
     }//GEN-LAST:event_btnSelectProdActionPerformed
 
     private void btnComprarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnComprarActionPerformed
         if(txtProveedor.getText().length() !=0 && txtProducto.getText().length()!=0 
                 && txtCosto.getText().length() !=0 && txtMarca.getText().length() !=0
-                && txtCantidad.getText().length() !=0 ){
+                && txtCantidad.getText().length() !=0 && fechaCompra.getDate()!=null){
             int IdProd = codigoProd;
-            double costo = Double.parseDouble(txtCosto.getText());
+            double costo = Double.parseDouble(txtCosto.getText()); 
             int cantidad = Integer.parseInt(txtCantidad.getText());
             String marca = txtMarca.getText().toUpperCase();
             int IdProv = codigoProv;
@@ -356,7 +412,9 @@ public class frmCompraProducto extends internalFrameImagen {
     }//GEN-LAST:event_btnComprarActionPerformed
 
     private void btnSelectProveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSelectProveActionPerformed
-        
+       frmProveedores formProv= new frmProveedores();
+       frmPrincipal.Dpanel.add(formProv);
+       formProv.show();
     }//GEN-LAST:event_btnSelectProveActionPerformed
 
     private void btnCerrarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCerrarActionPerformed
@@ -370,7 +428,8 @@ public class frmCompraProducto extends internalFrameImagen {
         String codigoProve = (String)jtProv.getValueAt(filaSelect, 0);
         codigoProv=Integer.parseInt(codigoProve);
         String nombreProv = (String)jtProv.getValueAt(filaSelect, 1);
-        txtProveedor.setText(nombreProv);        
+        txtProveedor.setText(nombreProv);
+        txtBuscarProv.setText("");
     }//GEN-LAST:event_jtProvMouseClicked
 
     /*en este metodo de MouseClicked paso el nombre del contenido seleccionado del 
@@ -381,6 +440,7 @@ public class frmCompraProducto extends internalFrameImagen {
         codigoProd = Integer.parseInt(codigoProdu);
         String nombreProd = (String)jtProd.getValueAt(filaSelect, 1);
         txtProducto.setText(nombreProd);
+        txtBuscarProd.setText("");
     }//GEN-LAST:event_jtProdMouseClicked
 
     private void txtCostoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCostoKeyTyped
@@ -393,7 +453,45 @@ public class frmCompraProducto extends internalFrameImagen {
         val.validarNum(evt);
     }//GEN-LAST:event_txtCantidadKeyTyped
 
+    private void txtBuscarProvKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarProvKeyTyped
+        //muestra lo que queremos buscar desde el textbox
+        txtBuscarProv.addKeyListener(new KeyAdapter()
+        {
+            public void keyReleased(final KeyEvent e){
+                String cadenaProv = (txtBuscarProv.getText().toUpperCase());
+                txtBuscarProv.setText(cadenaProv);
+                repaint();
+                trsFiltrarProv.setRowFilter(RowFilter.regexFilter(txtBuscarProv.getText(),1));
+                jtProv.getSelectionModel().setSelectionInterval(0,1);
+            }
+        });
+        trsFiltrarProv = new TableRowSorter(jtProv.getModel());
+        jtProv.setRowSorter(trsFiltrarProv);
+    }//GEN-LAST:event_txtBuscarProvKeyTyped
+
+    private void txtBuscarProdKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarProdKeyTyped
+        //muestra lo que queremos buscar desde el textbox
+        txtBuscarProd.addKeyListener(new KeyAdapter()
+        {
+            public void keyReleased(final KeyEvent e){
+                String cadenaProv = (txtBuscarProd.getText().toUpperCase());
+                txtBuscarProd.setText(cadenaProv);
+                repaint();
+                trsFiltrarProd.setRowFilter(RowFilter.regexFilter(txtBuscarProd.getText(),1));
+                jtProd.getSelectionModel().setSelectionInterval(0,1);
+            }
+        });
+        trsFiltrarProd = new TableRowSorter(jtProd.getModel());
+        jtProd.setRowSorter(trsFiltrarProd);
+    }//GEN-LAST:event_txtBuscarProdKeyTyped
+
+    private void btnActualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnActualizarActionPerformed
+        mostrarProv();
+        mostrarProd();
+    }//GEN-LAST:event_btnActualizarActionPerformed
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnComprar;
     private javax.swing.JButton btnSelectProd;
