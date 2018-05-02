@@ -6,6 +6,7 @@ import Clases.internalFrameImagen;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
+import javax.swing.JTable;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -18,6 +19,7 @@ public class frmvistapacientes extends internalFrameImagen{
         initComponents();
         setImagenw("img2.jpg");
         mostrarpacientes();
+        
     }
     // este metodo muestra en la tabla todos los pacientes registrados 
     //tiene instancia con la clase ConsultarDatosBD y el metodo mostrarpacientes()
@@ -31,6 +33,7 @@ public class frmvistapacientes extends internalFrameImagen{
             JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE SERVICIOS");
         }
     }
+    
 
     
     @SuppressWarnings("unchecked")
