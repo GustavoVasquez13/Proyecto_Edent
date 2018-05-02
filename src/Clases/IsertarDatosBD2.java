@@ -1,7 +1,11 @@
 package Clases;
 
+import formularios.frmServBasicos;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
 
 public class IsertarDatosBD2 {
@@ -29,6 +33,29 @@ public class IsertarDatosBD2 {
             con.closeBd();
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "Problemas al Ingresar los Datos del empleado");
+            con.closeBd();
+        }
+    }
+      //metodo para insertar pacientes de ortodoncia a la tabla consulta se utiliza en el formulario ExpedienteOrtodoncia
+    public void insertarPacienteOC(String motivoC, String fecha , String HistoriaM,String HistoriaO,
+                                     String ExamenC, String DXodontologico,String tipo){
+        try {
+            PreparedStatement pps = cn.prepareStatement("INSERT INTO consulta(`motivo_consulta`,"
+                    + "`fecha_consulta`,`PacienteN_id_pacienteN`,`HistoriaM`,`HistoriaO`,"
+                    + "`ExamenC`,`DXodon`) VALUES(?,?,?,?,?,?,?);");
+            pps.setString(1, motivoC);
+            pps.setString(2, fecha);
+            pps.setString(3, tipo);
+            pps.setString(4,HistoriaM );
+            pps.setString(5, HistoriaO);
+            pps.setString(6, ExamenC);
+            pps.setString(7, DXodontologico);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados Exitosamente");
+            con.closeBd();
+        } catch (SQLException ex) {
+            Logger.getLogger(frmServBasicos.class.getName()).log(Level.SEVERE, null, ex);
+            JOptionPane.showMessageDialog(null, "Problemas al Ingresar datos "+ex);
             con.closeBd();
         }
     }
