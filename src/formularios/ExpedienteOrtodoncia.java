@@ -6,9 +6,11 @@
 package formularios;
 
 import Clases.InsertarDatosBD;
+import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
+import java.util.Calendar;
 
 
 
@@ -18,8 +20,11 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
     public ExpedienteOrtodoncia() {
         initComponents(); 
+        
+        
         setImagenw("img2.jpg");
     }
+    
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -39,7 +44,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lblnombre2 = new javax.swing.JLabel();
         txtHistoriaM = new javax.swing.JTextField();
         lblnombre3 = new javax.swing.JLabel();
-        txtMotivoO = new javax.swing.JTextField();
+        txtHistoriaO = new javax.swing.JTextField();
         lblnombre4 = new javax.swing.JLabel();
         txtExamenC = new javax.swing.JTextField();
         lblnombre5 = new javax.swing.JLabel();
@@ -1018,6 +1023,8 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         txtapellido = new javax.swing.JTextField();
         btnsalir = new javax.swing.JButton();
         btnsiguiente = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
+        lbtipoo = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
@@ -1080,10 +1087,16 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         lblnombre3.setText("Historia Odontologica:");
         getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 220, -1, -1));
-        getContentPane().add(txtMotivoO, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, 500, 30));
+        getContentPane().add(txtHistoriaO, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 220, 500, 30));
 
         lblnombre4.setText("Examen Clinico:");
         getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 260, 80, -1));
+
+        txtExamenC.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtExamenCActionPerformed(evt);
+            }
+        });
         getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 260, 380, -1));
 
         lblnombre5.setText("DX Odontologico:");
@@ -2391,7 +2404,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         jSeparator5.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator5.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 500, 200, 110));
+        getContentPane().add(jSeparator5, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 490, 200, 110));
 
         jCheckBox226.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -6287,6 +6300,24 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         });
         getContentPane().add(btnsiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 490, -1, -1));
 
+        jButton1.setText("Elegir tipo de paciente");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 290, -1, -1));
+
+        lbtipoo.setText("el tipo de paciente es:");
+        getContentPane().add(lbtipoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 270, 130, -1));
+
+        txttip.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttipActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txttip, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 0, 10));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -8444,13 +8475,28 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
       String direccion = this.txtdirección.getText().toUpperCase();
       String telefono = this.txttelefono.getText().toUpperCase();
       String edad = this.txtedad.getText();
+      String tip=this.txttip.getText();
       //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
       //a la clase los parametros obtenidos por los jtextfield
       InsertarDatosBD insertar = new InsertarDatosBD();
-      insertar.insertarPacienteO(nombre, apellido, direccion, telefono, edad);
-      //Se manda a llamar el metodo limpiarTxt el cual limpiara los jtextfiel despues de cada click al boton guardar
+      insertar.insertarPacienteO(nombre, apellido, direccion, telefono, edad,tip);
       
-      
+      String motivo = this.txtMotivoC.getText().toUpperCase();
+      String historiam = this.txtHistoriaM.getText().toUpperCase();
+      String historiao = this.txtHistoriaO.getText().toUpperCase();
+      String examen = this.txtExamenC.getText().toUpperCase();
+      String dx = this.txtDX.getText().toUpperCase();
+      // se crean variables para almacenar en ellas el dia mes y año que se obtienen del control jcalendar
+      String dia = Integer.toString(fecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes = Integer.toString(fecha.getCalendar().get(Calendar.MONTH) + 1);
+      String year = Integer.toString(fecha.getCalendar().get(Calendar.YEAR));
+      String fechaA = (year + "-" + mes+ "-" + dia);
+      String date = fechaA; 
+      //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
+      //a la clase los parametros obtenidos por los jtextfield
+      IsertarDatosBD2 insertar2 = new IsertarDatosBD2();
+      insertar2.insertarPacienteOC(motivo, date, historiam, historiao, examen, dx,tip);
+      //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
       limpiarTxt();
     }//GEN-LAST:event_btnguardarActionPerformed
 
@@ -8488,6 +8534,20 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         formExGral.show();
     }//GEN-LAST:event_btnsiguienteActionPerformed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        frmInsertarTipoPaciente formProd = new frmInsertarTipoPaciente();
+        Dpanel.add(formProd);
+        formProd.show();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void txttipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttipActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttipActionPerformed
+
+    private void txtExamenCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtExamenCActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtExamenCActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnguardar;
@@ -8497,6 +8557,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JCheckBox chcurvamoderada2;
     private javax.swing.JCheckBox chcurvasevera1;
     private com.toedter.calendar.JDateChooser fecha;
+    private javax.swing.JButton jButton1;
     private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JCheckBox jCheckBox10;
     private javax.swing.JCheckBox jCheckBox100;
@@ -9439,6 +9500,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel lblnombre5;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltelefono1;
+    public static javax.swing.JLabel lbtipoo;
     private javax.swing.JTextField txtANB3;
     private javax.swing.JTextField txtANB81;
     private javax.swing.JTextField txtANB83;
@@ -9453,12 +9515,12 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JTextField txtExamenC;
     private javax.swing.JTextField txtFHIS1;
     private javax.swing.JTextField txtHistoriaM;
+    private javax.swing.JTextField txtHistoriaO;
     private javax.swing.JTextField txtII1;
     private javax.swing.JTextField txtIMPA2;
     private javax.swing.JTextField txtIS1;
     private javax.swing.JTextField txtJa2;
     private javax.swing.JTextField txtMotivoC;
-    private javax.swing.JTextField txtMotivoO;
     private javax.swing.JTextField txtPALI1;
     private javax.swing.JTextField txtPALS1;
     private javax.swing.JTextField txtPTB1;
@@ -9483,6 +9545,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JTextField txtsecuencia1;
     private javax.swing.JTextField txttelefono;
     private javax.swing.JTextField txttelefono1;
+    public static final javax.swing.JTextField txttip = new javax.swing.JTextField();
     private javax.swing.JTextField txttubos1;
     // End of variables declaration//GEN-END:variables
 }
