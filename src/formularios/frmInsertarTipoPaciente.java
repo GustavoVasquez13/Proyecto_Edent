@@ -27,6 +27,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
                 JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Tipos de Paciente");
             }
         }
+        
 
   
     @SuppressWarnings("unchecked")
@@ -127,9 +128,9 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
                             .addComponent(jLabel1)
                             .addComponent(txtpaciente, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(149, 149, 149)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(btnGuardar)
-                            .addComponent(btnCancelar))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnCancelar)
+                            .addComponent(btnGuardar))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
@@ -158,7 +159,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void jtpacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtpacientesMousePressed
-if(evt.getClickCount()==2){
+            if(evt.getClickCount()==2){
             int fila =jtpacientes.getSelectedRow();
             String cod;
             String nombre;
@@ -167,7 +168,18 @@ if(evt.getClickCount()==2){
             ExpedienteGeneral.txttip.setText(cod);
             ExpedienteGeneral.lbtipoo.setText(nombre);
             this.dispose();
-        }         // TODO add your handling code here:
+        }         
+            
+            if(evt.getClickCount()==1){
+            int fila =jtpacientes.getSelectedRow();
+            String cod;
+            String nombre;
+            cod=jtpacientes.getValueAt(fila, 0).toString(); 
+            nombre=jtpacientes.getValueAt(fila, 1).toString();
+            ExpedienteOrtodoncia.txttip.setText(cod);
+            ExpedienteOrtodoncia.lbtipoo.setText(nombre);
+            this.dispose();
+        } 
     }//GEN-LAST:event_jtpacientesMousePressed
 
 
