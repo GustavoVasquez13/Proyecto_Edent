@@ -129,7 +129,7 @@ public class InsertarDatosBD {
         }
     }
    //metodo para insertar pacientes de ortodoncia a la tabla pacienten se utiliza en el formulario ExpedieneOrtodoncia
-    public void insertarPacienteO(String nombre, String apellido ,String direccion, String telefono,String edad){
+    public void insertarPacienteO(String nombre, String apellido ,String direccion, String telefono,String edad,String tipo){
         try {
             PreparedStatement pps = cn.prepareStatement("INSERT INTO pacienten(`nombre_pacte`,`apellido_pacte`,"
                     + "`direccion_pacte`,`tel_pacte`,`DientesPacte_id_diente`,`TipoPaciente_id_tipoPaciente`,`edad`) "
@@ -139,7 +139,7 @@ public class InsertarDatosBD {
             pps.setString(3, direccion);
             pps.setString(4, telefono);
             pps.setString(5, "1");
-            pps.setString(6, "2");
+            pps.setString(6, tipo);
             pps.setString(7, edad);
             pps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados");
