@@ -239,5 +239,38 @@ public class ConsultarDatosBD {
             return null;
         }
     }
+    
+     // este metodo muestra los datos de los pacientes registrados en la tabla pacienten
+    public DefaultTableModel mostrarPacientes() {
+        DefaultTableModel modelo;
+        //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
+        String[] titulo
+                = {"Id","Nombre","Apellido","Direccion", "Telefono"};
+        String[] registros = new String[5];
+        totalRegistros = 0;
+        //se agregan los campos del arreglo al modelo de la tabla
+        modelo = new DefaultTableModel(null, titulo);
+        //consulta para mostrar los datos de la base de datos
+        sSQL = "SELECT * FROM pacienten ORDER BY `apellido_pacte` ASC;";
+        try {
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sSQL);
+            while (rs.next()) {
+                registros[0] = rs.getString("id_pacienteN");
+                registros[1] = rs.getString("nombre_pacte");
+                registros[2] = rs.getString("apellido_pacte");
+                registros[3] = rs.getString("direccion_pacte");
+                registros[4] = rs.getString("tel_pacte");
+                totalRegistros = totalRegistros + 1;
+                modelo.addRow(registros);
+            }
+            con.closeBd();
+            return modelo;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Tipos de Paciente");
+            con.closeBd();
+            return null;
+        }
+    }
  
 }
