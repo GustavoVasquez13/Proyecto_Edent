@@ -2686,6 +2686,12 @@ public class ExpedienteGeneral extends internalFrameImagen {
 
         fecha.setDateFormatString("yyyy-MM-dd");
         getContentPane().add(fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 110, -1));
+
+        txttip.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttipActionPerformed(evt);
+            }
+        });
         getContentPane().add(txttip, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 140, 0, 10));
 
         jButton1.setText("Elegir tipo de paciente");
@@ -3831,6 +3837,10 @@ public class ExpedienteGeneral extends internalFrameImagen {
         validaciones val = new validaciones();
         val.validarNum(evt);
     }//GEN-LAST:event_txtedadKeyTyped
+
+    private void txttipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttipActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttipActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
