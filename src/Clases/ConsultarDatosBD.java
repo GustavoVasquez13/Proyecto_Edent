@@ -61,7 +61,6 @@ public class ConsultarDatosBD {
         modelo = new DefaultTableModel(null, titulos);
         //consulta para mostrar los datos de la base de datos
         sSQL = "SELECT * FROM proveedores;";
-
         try {
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
@@ -240,4 +239,5 @@ public class ConsultarDatosBD {
             return null;
         }
     }
+ 
 }
