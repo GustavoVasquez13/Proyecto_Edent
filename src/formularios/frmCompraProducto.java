@@ -34,7 +34,7 @@ public class frmCompraProducto extends internalFrameImagen {
             modelo = funcion.mostrarProveedores();
             jtProv.setModel(modelo);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Prestamo");
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Proveedores");
         }
     }
     
@@ -58,7 +58,7 @@ public class frmCompraProducto extends internalFrameImagen {
             modelo = funcion.mostrarProductos();
             jtProd.setModel(modelo);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Prestamo");
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Producto");
         }
     }
     
@@ -158,6 +158,7 @@ public class frmCompraProducto extends internalFrameImagen {
 
         btnSelectProve.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnSelectProve.setForeground(new java.awt.Color(0, 102, 204));
+        btnSelectProve.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/proveedor_.png"))); // NOI18N
         btnSelectProve.setText("Nuevo Proveedor");
         btnSelectProve.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnSelectProve.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -367,7 +368,7 @@ public class frmCompraProducto extends internalFrameImagen {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(fechaCompra, javax.swing.GroupLayout.DEFAULT_SIZE, 28, Short.MAX_VALUE)
                     .addComponent(jLabel9, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 82, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnSelectProve, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
