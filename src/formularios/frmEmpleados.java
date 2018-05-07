@@ -99,6 +99,18 @@ public class frmEmpleados extends internalFrameImagen {
 
         jLabel9.setText("Sueldo Menssual");
 
+        txtApellidoEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtApellidoEmpKeyTyped(evt);
+            }
+        });
+
+        txtNombreEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtNombreEmpKeyTyped(evt);
+            }
+        });
+
         txtDuiEmp.setToolTipText("FORMATO: ########-#");
         txtDuiEmp.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
@@ -378,6 +390,16 @@ public class frmEmpleados extends internalFrameImagen {
         trsFiltro = new TableRowSorter(jtEmpleados.getModel());
         jtEmpleados.setRowSorter(trsFiltro);
     }//GEN-LAST:event_txtBuscarKeyTyped
+
+    private void txtNombreEmpKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreEmpKeyTyped
+        validaciones val= new validaciones ();
+        val.validarCaracter(evt);
+    }//GEN-LAST:event_txtNombreEmpKeyTyped
+
+    private void txtApellidoEmpKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtApellidoEmpKeyTyped
+        validaciones val = new validaciones();
+        val.validarCaracter(evt);
+    }//GEN-LAST:event_txtApellidoEmpKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

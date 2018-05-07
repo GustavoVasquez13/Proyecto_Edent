@@ -253,8 +253,14 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtApellidoEmp">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtApellidoEmpKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtNombreEmp">
+      <Events>
+        <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtNombreEmpKeyTyped"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtDireccionEmp">
     </Component>
