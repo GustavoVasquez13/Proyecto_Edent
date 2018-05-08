@@ -170,16 +170,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
             this.dispose();
         }         
             
-            if(evt.getClickCount()==1){
-            int fila =jtpacientes.getSelectedRow();
-            String cod;
-            String nombre;
-            cod=jtpacientes.getValueAt(fila, 0).toString(); 
-            nombre=jtpacientes.getValueAt(fila, 1).toString();
-            ExpedienteOrtodoncia.txttip.setText(cod);
-            ExpedienteOrtodoncia.lbtipoo.setText(nombre);
-            this.dispose();
-        } 
+          
     }//GEN-LAST:event_jtpacientesMousePressed
 
 
