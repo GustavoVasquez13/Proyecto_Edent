@@ -245,8 +245,8 @@ public class ConsultarDatosBD {
         DefaultTableModel modelo;
         //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulo
-                = {"Id","Nombre","Apellido","Direccion", "Telefono"};
-        String[] registros = new String[5];
+                = {"Id","Nombre","Apellido","Direccion", "Telefono","Edad"};
+        String[] registros = new String[6];
         totalRegistros = 0;
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
@@ -261,6 +261,7 @@ public class ConsultarDatosBD {
                 registros[2] = rs.getString("apellido_pacte");
                 registros[3] = rs.getString("direccion_pacte");
                 registros[4] = rs.getString("tel_pacte");
+                registros[5] = rs.getString("edad");
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
             }
