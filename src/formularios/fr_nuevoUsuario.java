@@ -1,7 +1,7 @@
 
 package formularios;
 
-import Clases.InsertarDatosBD;
+import Clases.funciones;
 import Clases.conexionBD;
 import Clases.internalFrameImagen;
 import java.sql.Connection;
@@ -14,7 +14,7 @@ import org.apache.commons.codec.digest.DigestUtils;
 
 public class fr_nuevoUsuario extends internalFrameImagen {
 String[] arraytipo;
-InsertarDatosBD i=new InsertarDatosBD();
+funciones i=new funciones();
     
     public fr_nuevoUsuario() {
         initComponents();
@@ -214,7 +214,7 @@ private void consultar()
         if(nom.equals("")||ape.equals("")||usu.equals("")||clav.equals("")){
             JOptionPane.showMessageDialog(null, "POR FAVOR LLENAR TODOS LOS CAMPOS");
         }else{
-            i.insertUsuarioA(this.txtNombre_persona.getText().toUpperCase(),this.txtape.getText().toUpperCase(),txtusu.getText(),String.valueOf(DigestUtils.md5Hex(txtcont.getText())),arraytipo[this.cbtipo.getSelectedIndex()],this.txtcorreo.getText());
+            i.verificausu(this.txtNombre_persona.getText().toUpperCase(),this.txtape.getText().toUpperCase(),txtusu.getText(),String.valueOf(DigestUtils.md5Hex(txtcont.getText())),arraytipo[this.cbtipo.getSelectedIndex()],this.txtcorreo.getText());
 
             this.txtNombre_persona.setText("");
             this.txtape.setText("");
