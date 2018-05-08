@@ -78,4 +78,41 @@ public class IsertarDatosBD2 {
             con.closeBd();
         }
     }
+    public void insertor(String articular,String goniaco,String impa,String jarabak,String facial,String is,String ii,String fhis,String anb82,String anb80,
+                        String anb2,String pals,String pali,String ptb,String speeleve,String speemoderada,String speesvera,String dsd,String clasim,
+                        String entornod,String Consulta_id_consulta){
+        try{
+            PreparedStatement pps = cn.prepareStatement("insert into cefalometria(`articular`,`goniaco`,`impa`,`jarabak`,"
+                    + "`facial`,`is`,`ii`,`fhis`,`anb82`,`anb80`,`anb2`,`pals`,`pali`,`ptb`,`speeleve`,`speemoderada`,`speesvera`,`dsd`,`clasim`"
+                    + "`entornod`,`Consulta_id_consulta`) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            pps.setString(1, articular);
+            pps.setString(2, goniaco);
+            pps.setString(3, impa);
+            pps.setString(4, jarabak);
+            pps.setString(5, facial);
+            pps.setString(6, is);
+            pps.setString(7, ii);
+            pps.setString(8, fhis);
+            pps.setString(9, anb82);
+            pps.setString(10, anb80);
+            pps.setString(11, anb2);
+            pps.setString(12, pals);
+            pps.setString(13, pali);
+            pps.setString(14, ptb);
+            pps.setString(15, speeleve);
+            pps.setString(16, speemoderada);
+            pps.setString(17, speesvera);
+            pps.setString(18, dsd);
+            pps.setString(19, clasim);
+            pps.setString(20, entornod);
+            pps.setString(21, "1");
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados Exitosamente");
+            con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Problemas al ingresar los datos "+e);
+            con.closeBd();
+        }
+    }
+    
 }
