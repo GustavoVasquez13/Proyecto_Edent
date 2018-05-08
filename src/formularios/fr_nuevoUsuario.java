@@ -1,6 +1,7 @@
 
 package formularios;
 
+import Clases.ConsultarDatosBD2;
 import Clases.funciones;
 import Clases.conexionBD;
 import Clases.internalFrameImagen;
@@ -9,6 +10,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
 import javax.swing.JOptionPane;
+import javax.swing.table.DefaultTableModel;
 //import javax.swing.table.DefaultTableModel;
 import org.apache.commons.codec.digest.DigestUtils;
 
@@ -19,6 +21,7 @@ funciones i=new funciones();
     public fr_nuevoUsuario() {
         initComponents();
          setImagenw("img2.jpg"); 
+         mostrarusuario();
          
          consultar();
     }
@@ -43,7 +46,7 @@ funciones i=new funciones();
         jButton1 = new javax.swing.JButton();
         VOLVER = new javax.swing.JButton();
         jScrollPane2 = new javax.swing.JScrollPane();
-        jTable1 = new javax.swing.JTable();
+        jusu = new javax.swing.JTable();
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
@@ -89,7 +92,7 @@ funciones i=new funciones();
             }
         });
 
-        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+        jusu.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -100,7 +103,7 @@ funciones i=new funciones();
 
             }
         ));
-        jScrollPane2.setViewportView(jTable1);
+        jScrollPane2.setViewportView(jusu);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -203,6 +206,16 @@ private void consultar()
             JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de la Persona");
         }
     }
+private void mostrarusuario() {
+        try {
+            DefaultTableModel modelo;
+            ConsultarDatosBD2 Mostrarp = new ConsultarDatosBD2();
+            modelo = Mostrarp.mostrarus();
+            jusu.setModel(modelo);
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE SERVICIOS");
+        }
+    }
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String nom = this.txtNombre_persona.getText().toUpperCase();
         String ape = this.txtape.getText().toUpperCase();
@@ -241,7 +254,7 @@ private void consultar()
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JScrollPane jScrollPane2;
-    private javax.swing.JTable jTable1;
+    private javax.swing.JTable jusu;
     private javax.swing.JTextField txtNombre_persona;
     private javax.swing.JTextField txtape;
     private javax.swing.JPasswordField txtcont;
