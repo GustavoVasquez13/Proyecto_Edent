@@ -163,7 +163,22 @@ public class frmvistapacientes extends internalFrameImagen{
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jtPacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtPacientesMousePressed
-       
+if(evt.getClickCount()==2){
+            int fila =jtPacientes.getSelectedRow();
+            String nombre;
+            String apellido,tel,edad,direc;
+            nombre=jtPacientes.getValueAt(fila, 1).toString(); 
+            apellido=jtPacientes.getValueAt(fila, 2).toString();
+            direc=jtPacientes.getValueAt(fila, 3).toString();
+            tel=jtPacientes.getValueAt(fila, 4).toString();
+            edad=jtPacientes.getValueAt(fila, 5).toString();
+            ExpedienteOrtodoncia.txttelefono.setText(tel);
+            ExpedienteOrtodoncia.txtedad.setText(edad);
+            ExpedienteOrtodoncia.txtdirección.setText(direc);
+            ExpedienteOrtodoncia.txtnombre.setText(nombre);
+            ExpedienteOrtodoncia.txtapellido.setText(apellido);
+            this.dispose();
+        }        
     }//GEN-LAST:event_jtPacientesMousePressed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
