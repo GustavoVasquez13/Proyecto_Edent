@@ -132,4 +132,32 @@ Connection cn = cc.conectar();
             //form.setLocationRelativeTo();
         }//cierre
     }
+     public void verificausu(String nom,String apel,String us,String cont,String tip,String corre) {
+        InsertarDatosBD n= new InsertarDatosBD();
+         try {
+            String sql = "SELECT * FROM usuario WHERE usuario = '" + us + "'";
+            
+                                
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sql);
+            
+            String user;
+              if (rs.next()) {
+                
+                user = rs.getString(5);
+                   
+                if (user.equals(us)) {
+                   JOptionPane.showMessageDialog(null, "el usuario ya existe");               
+                } else {
+                  n.insertUsuarioA(nom,apel,us,cont,tip,corre);
+                }
+            } else {
+                              
+                 n.insertUsuarioA(nom,apel,us,cont,tip,corre);
+            }
+
+        } catch (SQLException ex) {
+            
+        }
+    }
 }
