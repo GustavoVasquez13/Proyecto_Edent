@@ -32,7 +32,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         jLabel82 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         lbltelefono = new javax.swing.JLabel();
-        txttelefono = new javax.swing.JTextField();
         lbledad = new javax.swing.JLabel();
         txtedad = new javax.swing.JTextField();
         lblnombre = new javax.swing.JLabel();
@@ -1024,7 +1023,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         btnsalir = new javax.swing.JButton();
         btnsiguiente = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        lbtipoo = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
@@ -6300,16 +6298,13 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         });
         getContentPane().add(btnsiguiente, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 490, -1, -1));
 
-        jButton1.setText("Elegir tipo de paciente");
+        jButton1.setText("Elegir paciente");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 290, -1, -1));
-
-        lbtipoo.setText("el tipo de paciente es:");
-        getContentPane().add(lbtipoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 270, 130, -1));
 
         txttip.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -8535,7 +8530,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     }//GEN-LAST:event_btnsiguienteActionPerformed
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-        frmInsertarTipoPaciente formProd = new frmInsertarTipoPaciente();
+        frmvistapacientes formProd = new frmvistapacientes();
         Dpanel.add(formProd);
         formProd.show();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -9500,7 +9495,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel lblnombre5;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltelefono1;
-    public static javax.swing.JLabel lbtipoo;
     private javax.swing.JTextField txtANB3;
     private javax.swing.JTextField txtANB81;
     private javax.swing.JTextField txtANB83;
@@ -9526,15 +9520,15 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JTextField txtPTB1;
     private javax.swing.JTextField txtanguloA2;
     private javax.swing.JTextField txtanguloG2;
-    private javax.swing.JTextField txtapellido;
+    public static javax.swing.JTextField txtapellido;
     private javax.swing.JTextField txtbandas1;
-    private javax.swing.JTextField txtdirección;
+    public static javax.swing.JTextField txtdirección;
     private javax.swing.JTextField txtdirección2;
-    private javax.swing.JTextField txtedad;
+    public static javax.swing.JTextField txtedad;
     private javax.swing.JTextField txtedad1;
     private javax.swing.JTextField txtexodoncia1;
     private javax.swing.JTextField txtmaxilares1;
-    private javax.swing.JTextField txtnombre;
+    public static javax.swing.JTextField txtnombre;
     private javax.swing.JTextField txtnombre10;
     private javax.swing.JTextField txtnombre11;
     private javax.swing.JTextField txtnombre6;
@@ -9543,7 +9537,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JTextField txtnombre9;
     private javax.swing.JTextField txtotros1;
     private javax.swing.JTextField txtsecuencia1;
-    private javax.swing.JTextField txttelefono;
+    public static final javax.swing.JTextField txttelefono = new javax.swing.JTextField();
     private javax.swing.JTextField txttelefono1;
     public static final javax.swing.JTextField txttip = new javax.swing.JTextField();
     private javax.swing.JTextField txttubos1;
