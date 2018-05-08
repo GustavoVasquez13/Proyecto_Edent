@@ -3789,6 +3789,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
       String historiao = this.txtHistoriaO.getText().toUpperCase();
       String examen = this.txtExamenC.getText().toUpperCase();
       String dx = this.txtDX.getText().toUpperCase();
+      String tip1=this.txttip.getText();
       // se crean variables para almacenar en ellas el dia mes y año que se obtienen del control jcalendar
       String dia = Integer.toString(fecha.getCalendar().get(Calendar.DAY_OF_MONTH));
       String mes = Integer.toString(fecha.getCalendar().get(Calendar.MONTH) + 1);
@@ -3798,7 +3799,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
       //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
       //a la clase los parametros obtenidos por los jtextfield
       InsertarDatosBD insertar2 = new InsertarDatosBD();
-      insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx,tip);
+      insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx,tip1);
       //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
       limpiarTxt();
   
