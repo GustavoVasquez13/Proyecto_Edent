@@ -1,12 +1,20 @@
 package formularios;
 
+import Clases.ActualizarDatosBD;
 import Clases.ConsultarDatosBD;
+import Clases.ConsultarDatosBD2;
 import Clases.IsertarDatosBD2;
+import Clases.conexionBD;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.sql.Connection;
+import java.sql.Date;
+import java.sql.ResultSet;
+import java.sql.Statement;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
@@ -27,6 +35,7 @@ public class frmEmpleados extends internalFrameImagen {
             ConsultarDatosBD mosEmpl = new ConsultarDatosBD();
             modelo = mosEmpl.mostrarEmpleado();
             jtEmpleados.setModel(modelo);
+            this.btnModificar.setEnabled(false);
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DEL EMPLEADO");
         }
@@ -74,6 +83,9 @@ public class frmEmpleados extends internalFrameImagen {
         jtEmpleados = new javax.swing.JTable();
         jLabel11 = new javax.swing.JLabel();
         txtBuscar = new javax.swing.JTextField();
+        btnModificar = new javax.swing.JButton();
+        lblCod = new javax.swing.JLabel();
+        lblCod2 = new javax.swing.JLabel();
 
         jTextField3.setText("jTextField3");
 
@@ -176,6 +188,11 @@ public class frmEmpleados extends internalFrameImagen {
             }
         ));
         jtEmpleados.getTableHeader().setReorderingAllowed(false);
+        jtEmpleados.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jtEmpleadosMousePressed(evt);
+            }
+        });
         jScrollPane1.setViewportView(jtEmpleados);
 
         jLabel11.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
@@ -184,6 +201,18 @@ public class frmEmpleados extends internalFrameImagen {
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtBuscarKeyTyped(evt);
+            }
+        });
+
+        btnModificar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnModificar.setForeground(new java.awt.Color(0, 102, 255));
+        btnModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
+        btnModificar.setText("Editar");
+        btnModificar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnModificar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnModificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnModificarActionPerformed(evt);
             }
         });
 
@@ -238,7 +267,11 @@ public class frmEmpleados extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel11)
                         .addGap(12, 12, 12)
-                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(41, 41, 41)
+                        .addComponent(lblCod, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblCod2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(37, 37, 37))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
@@ -247,9 +280,11 @@ public class frmEmpleados extends internalFrameImagen {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(btnGuardar)
-                .addGap(40, 40, 40)
+                .addGap(94, 94, 94)
+                .addComponent(btnModificar)
+                .addGap(101, 101, 101)
                 .addComponent(btnCerrar)
-                .addGap(738, 738, 738))
+                .addGap(510, 510, 510))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -264,7 +299,10 @@ public class frmEmpleados extends internalFrameImagen {
                     .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(lblCod2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(lblCod, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -319,8 +357,9 @@ public class frmEmpleados extends internalFrameImagen {
                 .addGap(23, 23, 23)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnCerrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(20, Short.MAX_VALUE))
+                    .addComponent(btnCerrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnModificar))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
@@ -348,6 +387,7 @@ public class frmEmpleados extends internalFrameImagen {
                 insertEmpleado.insertDatosEmpleado(nombre,apellido,direccion,correo,tel,cargo,dui,sueldo,pasofecha,estado);
                 mostrarEmpl();
                 limpiar();
+                
             }else{
                 JOptionPane.showMessageDialog(null, "YA EXISTE UN EMPLEADO REGISTRADO CON CON EL MISMO NUMERO DE DUI");
             }
@@ -401,10 +441,81 @@ public class frmEmpleados extends internalFrameImagen {
         val.validarCaracter(evt);
     }//GEN-LAST:event_txtApellidoEmpKeyTyped
 
+    private void btnModificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnModificarActionPerformed
+       
+        if(this.txtNombreEmp.getText().length()!=0 && this.txtApellidoEmp.getText().length()!=0 && this.txtDireccionEmp.getText().length()!=0 && 
+                this.txtCargoEmp.getText().length()!=0 && this.txtDuiEmp.getText().length()!=0 && this.txtSueldoEmp.getText().length()!=0 && jdFechaInicio.getDate()!=null){
+        
+            String nombre = this.txtNombreEmp.getText().toUpperCase();
+            String apellido = this.txtApellidoEmp.getText().toUpperCase();
+            String direccion = this.txtDireccionEmp.getText().toUpperCase();
+            String correo = this.txtCorreoEmp.getText();
+            String tel = this.txtTelEmp.getText();
+            String cargo = this.txtCargoEmp.getText().toUpperCase();
+            String dui = this.txtDuiEmp.getText();
+            double sueldo = Double.valueOf(this.txtSueldoEmp.getText());
+            SimpleDateFormat formatofecha = new SimpleDateFormat("yyyy-MM-dd");
+            String pasofecha = (formatofecha.format(jdFechaInicio.getDate()));
+            String estado = "ACTIVO";
+            int cod = Integer.valueOf(this.lblCod2.getText());
+            
+            ActualizarDatosBD insertEmpleado = new ActualizarDatosBD();
+            insertEmpleado.actualizarEmpl(nombre,apellido,direccion,correo,tel,cargo,dui,sueldo,pasofecha,estado,cod);
+            mostrarEmpl();
+            limpiar();
+            this.btnGuardar.setEnabled(true);
+            this.btnModificar.setEnabled(false);
+            this.lblCod.setText("");
+            this.lblCod2.setText("");
+        }else{
+            JOptionPane.showMessageDialog(null, "DEBE COMPLETAR TODOS LOS CAMPOS");
+        }
+    }//GEN-LAST:event_btnModificarActionPerformed
+
+    private void jtEmpleadosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtEmpleadosMousePressed
+
+        String sSQL = "";
+        conexionBD con = new conexionBD();
+        Connection cn = con.conectar();
+        if(evt.getClickCount()==2){
+            if(this.jtEmpleados.getSelectedRowCount()!=0){
+                int filaSelecciona = this.jtEmpleados.getSelectedRow(); 
+                String dui = (String)this.jtEmpleados.getValueAt(filaSelecciona, 4);
+                sSQL =  "select * from `empleado` where `dui_empl`='"+dui+"';";
+                try{
+                    Statement st = cn.createStatement();
+                    ResultSet rs = st.executeQuery(sSQL);
+                    while(rs.next()){
+                        this.lblCod.setText("CODIGO ");
+                        this.lblCod2.setText(rs.getString("id_empleado"));
+                        this.txtNombreEmp.setText(rs.getString("nombre_empl"));
+                        this.txtApellidoEmp.setText(rs.getString("apellido_empl"));
+                        this.txtDireccionEmp.setText(rs.getString("direccion_empl"));
+                        this.txtDuiEmp.setText(rs.getString("dui_empl"));
+                        this.txtCorreoEmp.setText(rs.getString("correo_empl"));
+                        this.txtTelEmp.setText(rs.getString("tel_empl"));
+                        this.txtCargoEmp.setText(rs.getString("cargo_empl"));
+                        this.txtSueldoEmp.setText(rs.getString("sueldo_empl"));
+                        this.jdFechaInicio.setDate(Date.valueOf(rs.getString("fecha_inicio")));
+                    }
+                    con.closeBd();
+                    this.btnModificar.setEnabled(true);
+                    this.btnGuardar.setEnabled(false);
+                }catch(Exception e){
+                    JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE MATERIALES");
+                    con.closeBd();
+                }
+            }else{
+                JOptionPane.showMessageDialog(null, "SELECCIONE UN REGISTRO DE LA TABLA");
+            }
+        }
+    }//GEN-LAST:event_jtEmpleadosMousePressed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCerrar;
     private javax.swing.JButton btnGuardar;
+    private javax.swing.JButton btnModificar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -420,6 +531,8 @@ public class frmEmpleados extends internalFrameImagen {
     private javax.swing.JTextField jTextField3;
     private com.toedter.calendar.JDateChooser jdFechaInicio;
     private javax.swing.JTable jtEmpleados;
+    private javax.swing.JLabel lblCod;
+    private javax.swing.JLabel lblCod2;
     private javax.swing.JTextField txtApellidoEmp;
     private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtCargoEmp;
