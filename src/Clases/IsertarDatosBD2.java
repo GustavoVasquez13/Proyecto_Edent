@@ -36,6 +36,23 @@ public class IsertarDatosBD2 {
             con.closeBd();
         }
     }
+    
+    //metodo para ingresar el pago de un empleado
+    public void insertPagoEmple(String nombre,String dui,double costo,String fecha){
+        try{
+            PreparedStatement pps = cn.prepareStatement("insert into  pagoempleado(`sueldo_empl`,"
+                    + "`fechaPago_empl`,`Empleado_id_empleado`) VALUES(?,?,"
+                    + "(select id_empleado from  empleado where nombre_empl='"+nombre+"' and dui_empl='"+dui+"'));");
+            pps.setDouble(1, costo);
+            pps.setString(2, fecha);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "DATOS DEL EMPLEADO GUARDADOS CORRECTAMENTE");
+            con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL REALIZAR EL PAGO DEL EMPLEADO "+e);
+            con.closeBd();
+        }
+    }
       //metodo para insertar pacientes de ortodoncia a la tabla consulta se utiliza en el formulario ExpedienteOrtodoncia
     public void insertarPacienteOC(String motivoC, String fecha , String HistoriaM,String HistoriaO,
                                      String ExamenC, String DXodontologico,String tipo){

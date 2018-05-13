@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2018-04-19 23:55:15.385
+-- Last modification date: 2018-05-13 05:50:34.734
 
 -- tables
 -- Table: AbonoCompra
@@ -11,6 +11,33 @@ CREATE TABLE AbonoCompra (
     fecha_abono date NULL,
     CONSTRAINT AbonoCompra_pk PRIMARY KEY (id_abonoCompra)
 ) COMMENT 'en esta tabla se registran los diferentes abonos que la clínica realiza por los productos comprados.';
+
+-- Table: Cefalometria
+CREATE TABLE Cefalometria (
+    id_cefalometria int NOT NULL AUTO_INCREMENT,
+    articular varchar(100) NULL,
+    goniaco varchar(100) NULL,
+    impa varchar(150) NULL,
+    jarabak varchar(100) NULL,
+    facial varchar(100) NULL,
+    `is` varchar(100) NULL,
+    ii varchar(100) NULL,
+    fhis varchar(100) NULL,
+    anb82 varchar(100) NULL,
+    anb80 varchar(100) NULL,
+    anb2 varchar(100) NULL,
+    pals varchar(100) NULL,
+    pali varchar(100) NULL,
+    ptb varchar(100) NULL,
+    speeleve bool NULL,
+    speemoderada bool NULL,
+    speesvera bool NULL,
+    dsd varchar(100) NULL,
+    clasim varchar(100) NULL,
+    entornod varchar(100) NULL,
+    Consulta_id_consulta int NOT NULL,
+    CONSTRAINT Cefalometria_pk PRIMARY KEY (id_cefalometria)
+) COMMENT 'registra las consulta de ortodoncias registradas para establecer su historial';
 
 -- Table: Consulta
 CREATE TABLE Consulta (
@@ -38,12 +65,12 @@ CREATE TABLE Contable (
 CREATE TABLE DetalleGastos (
     id_gastos int NOT NULL AUTO_INCREMENT,
     AbonoCompra_id_abonoCompra int NOT NULL,
-    Empleado_id_empleado int NOT NULL,
-    Equipo_id_equipo int NOT NULL,
-    MantoEquipo_id_manto int NOT NULL,
-    Materiales_id_material int NOT NULL,
-    ReparacionClinica_id_raparaClinica int NOT NULL,
     ServicioBasico_id_serviBasico int NOT NULL,
+    PagoEmpleado_id_pagoEmpl int NOT NULL,
+    PagoMateriales_id_pagoMaterial int NOT NULL,
+    pagoReparacion_id_pagoRepa int NOT NULL,
+    pagoMantoEq_id_pagoManto int NOT NULL,
+    pagoEquipo_id_pagoEquipo int NOT NULL,
     CONSTRAINT DetalleGastos_pk PRIMARY KEY (id_gastos)
 ) COMMENT 'en esta tabla se registran los gastos que la clinica tiene en sus diversos tipos';
 
@@ -74,7 +101,8 @@ CREATE TABLE Empleado (
     cargo_empl varchar(50) NOT NULL,
     sueldo_empl double(9,2) NULL,
     dui_empl char(10) NULL,
-    estado_empl bool NULL,
+    estado_empl varchar(10) NOT NULL,
+    fecha_inicio date NOT NULL,
     CONSTRAINT Empleado_pk PRIMARY KEY (id_empleado)
 ) COMMENT 'esta tabla regista el personal empleado por la clinica';
 
@@ -123,6 +151,7 @@ CREATE TABLE Materiales (
     nombre_material varchar(150) NULL,
     descripcion_material varchar(150) NULL,
     costo_material double(9,2) NULL,
+    cantidad int NOT NULL,
     CONSTRAINT Materiales_pk PRIMARY KEY (id_material)
 ) COMMENT 'en esta tabla se muestran los diferentes materiales que usa la clinica para saber cuanto gasta y cuales materiales tiene';
 
@@ -139,6 +168,24 @@ CREATE TABLE PacienteN (
     edad int NOT NULL,
     CONSTRAINT PacienteN_pk PRIMARY KEY (id_pacienteN)
 ) COMMENT 'guarda los datos generales de un paciente de categoria normal';
+
+-- Table: PagoEmpleado
+CREATE TABLE PagoEmpleado (
+    id_pagoEmpl int NOT NULL AUTO_INCREMENT,
+    sueldo_empl double(9,2) NULL,
+    fechaPago_empl date NULL,
+    Empleado_id_empleado int NOT NULL,
+    CONSTRAINT PagoEmpleado_pk PRIMARY KEY (id_pagoEmpl)
+) COMMENT 'almacena los pagos a los diferentes empleados que se manejan';
+
+-- Table: PagoMateriales
+CREATE TABLE PagoMateriales (
+    id_pagoMaterial int NOT NULL AUTO_INCREMENT,
+    costo_material double(9,2) NULL,
+    fechaPago_material date NULL,
+    Materiales_id_material int NOT NULL,
+    CONSTRAINT PagoMateriales_pk PRIMARY KEY (id_pagoMaterial)
+) COMMENT 'almacena los pagos a los diferentes materiales que se compran para la clinica';
 
 -- Table: Proveedores
 CREATE TABLE Proveedores (
@@ -236,6 +283,33 @@ CREATE TABLE ingresos_productos (
     CONSTRAINT ingresos_productos_pk PRIMARY KEY (id_ingresoP)
 ) COMMENT 'ingresos por venta de algunos productos clinicos ';
 
+-- Table: pagoEquipo
+CREATE TABLE pagoEquipo (
+    id_pagoEquipo int NOT NULL AUTO_INCREMENT,
+    costo_equipo double(9,2) NULL,
+    fechaPago_equuipo date NULL,
+    Equipo_id_equipo int NOT NULL,
+    CONSTRAINT pagoEquipo_pk PRIMARY KEY (id_pagoEquipo)
+) COMMENT 'almacena los pagos a los diferentes equipos que se compran para la clinica';
+
+-- Table: pagoMantoEq
+CREATE TABLE pagoMantoEq (
+    id_pagoManto int NOT NULL AUTO_INCREMENT,
+    costo_manto double(9,2) NULL,
+    fechaPago_manto date NULL,
+    MantoEquipo_id_manto int NOT NULL,
+    CONSTRAINT pagoMantoEq_pk PRIMARY KEY (id_pagoManto)
+) COMMENT 'almacena los pagos a los diferentes mantenimiento que se hacen para el equipo';
+
+-- Table: pagoReparacion
+CREATE TABLE pagoReparacion (
+    id_pagoRepa int NOT NULL AUTO_INCREMENT,
+    costo_repa double(9,2) NULL,
+    fechaPago_repa date NULL,
+    ReparacionClinica_id_raparaClinica int NOT NULL,
+    CONSTRAINT pagoReparacion_pk PRIMARY KEY (id_pagoRepa)
+) COMMENT 'almacena los pagos a los diferentes reparciones que se hacen para la clinica';
+
 -- Table: plan_trata_ortodon
 CREATE TABLE plan_trata_ortodon (
     id_ortodoncia int NOT NULL AUTO_INCREMENT,
@@ -249,13 +323,13 @@ CREATE TABLE plan_trata_ortodon (
     arcos varchar(100) NULL,
     md varchar(100) NULL,
     f_faciales bool NULL,
-    f_intraorales bool NOT NULL,
-    modelo_mx bool NOT NULL,
-    modelo_md bool NOT NULL,
-    rx_panoramica bool NOT NULL,
-    rx_cefalometrica bool NOT NULL,
-    rx_incicivos bool NOT NULL,
-    rx_rocabado varchar(150) NOT NULL,
+    f_intraorales bool NULL,
+    modelo_mx bool NULL,
+    modelo_md bool NULL,
+    rx_panoramica bool NULL,
+    rx_cefalometrica bool NULL,
+    rx_incicivos bool NULL,
+    rx_rocabado varchar(150) NULL,
     Consulta_id_consulta int NOT NULL,
     CONSTRAINT plan_trata_ortodon_pk PRIMARY KEY (id_ortodoncia)
 ) COMMENT 'registra las consulta de ortodoncias registradas para establecer su historial';
@@ -273,6 +347,10 @@ CREATE TABLE productos (
 ALTER TABLE AbonoCompra ADD CONSTRAINT AbonoCompra_detalleCompra FOREIGN KEY AbonoCompra_detalleCompra (detalleCompra_id_detalleCom)
     REFERENCES detalleCompra (id_detalleCom);
 
+-- Reference: Cefalometria_Consulta (table: Cefalometria)
+ALTER TABLE Cefalometria ADD CONSTRAINT Cefalometria_Consulta FOREIGN KEY Cefalometria_Consulta (Consulta_id_consulta)
+    REFERENCES Consulta (id_consulta);
+
 -- Reference: Consulta_PacienteN (table: Consulta)
 ALTER TABLE Consulta ADD CONSTRAINT Consulta_PacienteN FOREIGN KEY Consulta_PacienteN (PacienteN_id_pacienteN)
     REFERENCES PacienteN (id_pacienteN);
@@ -289,29 +367,29 @@ ALTER TABLE Contable ADD CONSTRAINT Contable_DetalleIngresos FOREIGN KEY Contabl
 ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_AbonoCompra FOREIGN KEY DetalleGastos_AbonoCompra (AbonoCompra_id_abonoCompra)
     REFERENCES AbonoCompra (id_abonoCompra);
 
--- Reference: DetalleGastos_Empleado (table: DetalleGastos)
-ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_Empleado FOREIGN KEY DetalleGastos_Empleado (Empleado_id_empleado)
-    REFERENCES Empleado (id_empleado);
+-- Reference: DetalleGastos_PagoEmpleado (table: DetalleGastos)
+ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_PagoEmpleado FOREIGN KEY DetalleGastos_PagoEmpleado (PagoEmpleado_id_pagoEmpl)
+    REFERENCES PagoEmpleado (id_pagoEmpl);
 
--- Reference: DetalleGastos_Equipo (table: DetalleGastos)
-ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_Equipo FOREIGN KEY DetalleGastos_Equipo (Equipo_id_equipo)
-    REFERENCES Equipo (id_equipo);
-
--- Reference: DetalleGastos_MantoEquipo (table: DetalleGastos)
-ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_MantoEquipo FOREIGN KEY DetalleGastos_MantoEquipo (MantoEquipo_id_manto)
-    REFERENCES MantoEquipo (id_manto);
-
--- Reference: DetalleGastos_Materiales (table: DetalleGastos)
-ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_Materiales FOREIGN KEY DetalleGastos_Materiales (Materiales_id_material)
-    REFERENCES Materiales (id_material);
-
--- Reference: DetalleGastos_ReparacionClinica (table: DetalleGastos)
-ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_ReparacionClinica FOREIGN KEY DetalleGastos_ReparacionClinica (ReparacionClinica_id_raparaClinica)
-    REFERENCES ReparacionClinica (id_raparaClinica);
+-- Reference: DetalleGastos_PagoMateriales (table: DetalleGastos)
+ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_PagoMateriales FOREIGN KEY DetalleGastos_PagoMateriales (PagoMateriales_id_pagoMaterial)
+    REFERENCES PagoMateriales (id_pagoMaterial);
 
 -- Reference: DetalleGastos_ServicioBasico (table: DetalleGastos)
 ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_ServicioBasico FOREIGN KEY DetalleGastos_ServicioBasico (ServicioBasico_id_serviBasico)
     REFERENCES ServicioBasico (id_serviBasico);
+
+-- Reference: DetalleGastos_pagoEquipo (table: DetalleGastos)
+ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_pagoEquipo FOREIGN KEY DetalleGastos_pagoEquipo (pagoEquipo_id_pagoEquipo)
+    REFERENCES pagoEquipo (id_pagoEquipo);
+
+-- Reference: DetalleGastos_pagoMantoEq (table: DetalleGastos)
+ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_pagoMantoEq FOREIGN KEY DetalleGastos_pagoMantoEq (pagoMantoEq_id_pagoManto)
+    REFERENCES pagoMantoEq (id_pagoManto);
+
+-- Reference: DetalleGastos_pagoReparacion (table: DetalleGastos)
+ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_pagoReparacion FOREIGN KEY DetalleGastos_pagoReparacion (pagoReparacion_id_pagoRepa)
+    REFERENCES pagoReparacion (id_pagoRepa);
 
 -- Reference: DetalleIngresos_Tratamiento_paciente (table: DetalleIngresos)
 ALTER TABLE DetalleIngresos ADD CONSTRAINT DetalleIngresos_Tratamiento_paciente FOREIGN KEY DetalleIngresos_Tratamiento_paciente (Tratamiento_paciente_id_tratamiento)
@@ -341,6 +419,14 @@ ALTER TABLE PacienteN ADD CONSTRAINT PacienteN_DientesPacte FOREIGN KEY Paciente
 ALTER TABLE PacienteN ADD CONSTRAINT PacienteN_TipoPaciente FOREIGN KEY PacienteN_TipoPaciente (TipoPaciente_id_tipoPaciente)
     REFERENCES TipoPaciente (id_tipoPaciente);
 
+-- Reference: PagoEmpleado_Empleado (table: PagoEmpleado)
+ALTER TABLE PagoEmpleado ADD CONSTRAINT PagoEmpleado_Empleado FOREIGN KEY PagoEmpleado_Empleado (Empleado_id_empleado)
+    REFERENCES Empleado (id_empleado);
+
+-- Reference: PagoMateriales_Materiales (table: PagoMateriales)
+ALTER TABLE PagoMateriales ADD CONSTRAINT PagoMateriales_Materiales FOREIGN KEY PagoMateriales_Materiales (Materiales_id_material)
+    REFERENCES Materiales (id_material);
+
 -- Reference: ServicioBasico_TipoServicio (table: ServicioBasico)
 ALTER TABLE ServicioBasico ADD CONSTRAINT ServicioBasico_TipoServicio FOREIGN KEY ServicioBasico_TipoServicio (TipoServicio_id_tipoServicio)
     REFERENCES TipoServicio (id_tipoServicio);
@@ -360,6 +446,18 @@ ALTER TABLE detalleCompra ADD CONSTRAINT detalleCompra_Proveedores FOREIGN KEY d
 -- Reference: detalleCompra_productos (table: detalleCompra)
 ALTER TABLE detalleCompra ADD CONSTRAINT detalleCompra_productos FOREIGN KEY detalleCompra_productos (productos_id_prodto)
     REFERENCES productos (id_prodto);
+
+-- Reference: pagoEquipo_Equipo (table: pagoEquipo)
+ALTER TABLE pagoEquipo ADD CONSTRAINT pagoEquipo_Equipo FOREIGN KEY pagoEquipo_Equipo (Equipo_id_equipo)
+    REFERENCES Equipo (id_equipo);
+
+-- Reference: pagoMantoEq_MantoEquipo (table: pagoMantoEq)
+ALTER TABLE pagoMantoEq ADD CONSTRAINT pagoMantoEq_MantoEquipo FOREIGN KEY pagoMantoEq_MantoEquipo (MantoEquipo_id_manto)
+    REFERENCES MantoEquipo (id_manto);
+
+-- Reference: pagoReparacion_ReparacionClinica (table: pagoReparacion)
+ALTER TABLE pagoReparacion ADD CONSTRAINT pagoReparacion_ReparacionClinica FOREIGN KEY pagoReparacion_ReparacionClinica (ReparacionClinica_id_raparaClinica)
+    REFERENCES ReparacionClinica (id_raparaClinica);
 
 -- Reference: plan_trata_ortodon_Consulta (table: plan_trata_ortodon)
 ALTER TABLE plan_trata_ortodon ADD CONSTRAINT plan_trata_ortodon_Consulta FOREIGN KEY plan_trata_ortodon_Consulta (Consulta_id_consulta)
