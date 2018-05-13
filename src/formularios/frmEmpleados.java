@@ -70,7 +70,6 @@ public class frmEmpleados extends internalFrameImagen {
         txtApellidoEmp = new javax.swing.JTextField();
         txtNombreEmp = new javax.swing.JTextField();
         txtDireccionEmp = new javax.swing.JTextField();
-        txtDuiEmp = new javax.swing.JTextField();
         txtCorreoEmp = new javax.swing.JTextField();
         txtTelEmp = new javax.swing.JTextField();
         txtCargoEmp = new javax.swing.JTextField();
@@ -86,6 +85,8 @@ public class frmEmpleados extends internalFrameImagen {
         btnModificar = new javax.swing.JButton();
         lblCod = new javax.swing.JLabel();
         lblCod2 = new javax.swing.JLabel();
+        txtDuiEmp = new javax.swing.JFormattedTextField();
+        lblFormato = new javax.swing.JLabel();
 
         jTextField3.setText("jTextField3");
 
@@ -111,6 +112,7 @@ public class frmEmpleados extends internalFrameImagen {
 
         jLabel9.setText("Sueldo Menssual");
 
+        txtApellidoEmp.setFocusCycleRoot(true);
         txtApellidoEmp.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtApellidoEmpKeyTyped(evt);
@@ -120,13 +122,6 @@ public class frmEmpleados extends internalFrameImagen {
         txtNombreEmp.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNombreEmpKeyTyped(evt);
-            }
-        });
-
-        txtDuiEmp.setToolTipText("FORMATO: ########-#");
-        txtDuiEmp.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyTyped(java.awt.event.KeyEvent evt) {
-                txtDuiEmpKeyTyped(evt);
             }
         });
 
@@ -216,6 +211,26 @@ public class frmEmpleados extends internalFrameImagen {
             }
         });
 
+        try {
+            txtDuiEmp.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("########-#")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txtDuiEmp.setToolTipText("########-#");
+        txtDuiEmp.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusGained(java.awt.event.FocusEvent evt) {
+                txtDuiEmpFocusGained(evt);
+            }
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                txtDuiEmpFocusLost(evt);
+            }
+        });
+        txtDuiEmp.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                txtDuiEmpMouseClicked(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -241,10 +256,6 @@ public class frmEmpleados extends internalFrameImagen {
                             .addGap(18, 18, 18)
                             .addComponent(txtCorreoEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                            .addComponent(jLabel5)
-                            .addGap(18, 18, 18)
-                            .addComponent(txtDuiEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addComponent(jLabel3)
                             .addGap(18, 18, 18)
                             .addComponent(txtApellidoEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -255,24 +266,30 @@ public class frmEmpleados extends internalFrameImagen {
                         .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                             .addComponent(jLabel10)
                             .addGap(18, 18, 18)
-                            .addComponent(jdFechaInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addComponent(jdFechaInicio, javax.swing.GroupLayout.PREFERRED_SIZE, 212, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                            .addComponent(jLabel5)
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                .addComponent(lblFormato, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(txtDuiEmp, javax.swing.GroupLayout.DEFAULT_SIZE, 212, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(42, 42, 42)
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
                         .addComponent(txtNombreEmp)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 69, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jLabel11)
                         .addGap(12, 12, 12)
                         .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(41, 41, 41)
+                        .addGap(104, 104, 104)
                         .addComponent(lblCod, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblCod2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(37, 37, 37))
+                .addGap(70, 70, 70))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -300,9 +317,8 @@ public class frmEmpleados extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                        .addComponent(lblCod2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblCod, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(lblCod, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lblCod2, javax.swing.GroupLayout.PREFERRED_SIZE, 24, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(20, 20, 20)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -317,13 +333,13 @@ public class frmEmpleados extends internalFrameImagen {
                                 .addGap(8, 8, 8)
                                 .addComponent(jLabel4))
                             .addComponent(txtDireccionEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(8, 8, 8)
-                                .addComponent(jLabel5))
-                            .addComponent(txtDuiEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
+                        .addGap(17, 17, 17)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(txtDuiEmp, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(1, 1, 1)
+                        .addComponent(lblFormato, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(8, 8, 8)
@@ -359,7 +375,7 @@ public class frmEmpleados extends internalFrameImagen {
                     .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCerrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnModificar))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(40, Short.MAX_VALUE))
         );
 
         pack();
@@ -396,11 +412,6 @@ public class frmEmpleados extends internalFrameImagen {
             JOptionPane.showMessageDialog(null, "DEBE COMPLETAR TODOS LOS CAMPOS");
         }
     }//GEN-LAST:event_btnGuardarActionPerformed
-
-    private void txtDuiEmpKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDuiEmpKeyTyped
-        validaciones val = new validaciones();
-        val.validarNum(evt);
-    }//GEN-LAST:event_txtDuiEmpKeyTyped
 
     private void txtTelEmpKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelEmpKeyTyped
        validaciones val = new validaciones();
@@ -511,6 +522,18 @@ public class frmEmpleados extends internalFrameImagen {
         }
     }//GEN-LAST:event_jtEmpleadosMousePressed
 
+    private void txtDuiEmpMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtDuiEmpMouseClicked
+ 
+    }//GEN-LAST:event_txtDuiEmpMouseClicked
+
+    private void txtDuiEmpFocusGained(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtDuiEmpFocusGained
+        lblFormato.setText("FORMATO: 00000000-0");
+    }//GEN-LAST:event_txtDuiEmpFocusGained
+
+    private void txtDuiEmpFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txtDuiEmpFocusLost
+        lblFormato.setText("");
+    }//GEN-LAST:event_txtDuiEmpFocusLost
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCerrar;
@@ -533,12 +556,13 @@ public class frmEmpleados extends internalFrameImagen {
     private javax.swing.JTable jtEmpleados;
     private javax.swing.JLabel lblCod;
     private javax.swing.JLabel lblCod2;
+    private javax.swing.JLabel lblFormato;
     private javax.swing.JTextField txtApellidoEmp;
     private javax.swing.JTextField txtBuscar;
     private javax.swing.JTextField txtCargoEmp;
     private javax.swing.JTextField txtCorreoEmp;
     private javax.swing.JTextField txtDireccionEmp;
-    private javax.swing.JTextField txtDuiEmp;
+    private javax.swing.JFormattedTextField txtDuiEmp;
     private javax.swing.JTextField txtNombreEmp;
     private javax.swing.JTextField txtSueldoEmp;
     private javax.swing.JTextField txtTelEmp;
