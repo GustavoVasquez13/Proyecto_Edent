@@ -80,4 +80,23 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+    //metodo para actualizar materiales
+    public void ActualizarMaterial(String nombre,String desc,String tipo,int cant,double costo,int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update materiales set `nombre_material`=?,"
+                    + "`descripcion_material`=?,`tipo_material`=?,`cantidad`=?,`costo_material`=? where id_material='"+code+"';");
+            pst.setString(1, nombre);
+            pst.setString(2, desc);
+            pst.setString(3, tipo);
+            pst.setInt(4, cant);
+            pst.setDouble(5, costo);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al Actualizar los datos de Servicio  "+ex);
+            con.closeBd();
+        }
+    }
 }

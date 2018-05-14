@@ -13,6 +13,7 @@ public class ConsultarDatosBD2 {
     conexionBD con = new conexionBD();
     Connection cn = con.conectar();
     
+    //este metodo muestra en una tabla del formulario frmmateriales los datos de un material ingresado
     public DefaultTableModel mostrarM(){
        DefaultTableModel modelo;
        String[] titulos = {"NOMBRE","DESCRIPCION","TIPO","CANTIDAD","COSTO"};
@@ -42,6 +43,8 @@ public class ConsultarDatosBD2 {
            return null;
        }
     }
+    
+    //este metodo muestra los ussuarios que tienen acceso al sistema
     public DefaultTableModel mostrarus(){
        DefaultTableModel modelo;
        String[] titulos = {"NOMBRE","APELLIDO","USUARIO","CLAVE","CORREO"};
@@ -70,5 +73,24 @@ public class ConsultarDatosBD2 {
            con.closeBd();
            return null;
        }
+    }
+    
+    //este metodo es para extraer el codigo de de materiales para usarse en la edicion del frmMateriales
+    public int codMaterial(String nombre,String desc){
+        try{
+           sSQL = "select id_material from materiales where nombre_material='"+nombre+"' and descripcion_material='"+desc+"';"; 
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           while(rs.next()){
+               int cod = rs.getInt("id_material");
+               return cod;
+           }
+           con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR EL CODIGO DE MATERIAL "+e);
+            con.closeBd();
+            return 0;
+        }
+        return 0;
     }
 }
