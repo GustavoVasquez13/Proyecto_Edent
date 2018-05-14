@@ -53,6 +53,7 @@ public class IsertarDatosBD2 {
             con.closeBd();
         }
     }
+    
       //metodo para insertar pacientes de ortodoncia a la tabla consulta se utiliza en el formulario ExpedienteOrtodoncia
     public void insertarPacienteOC(String motivoC, String fecha , String HistoriaM,String HistoriaO,
                                      String ExamenC, String DXodontologico,String tipo){
@@ -95,6 +96,24 @@ public class IsertarDatosBD2 {
             con.closeBd();
         }
     }
+    
+    //metodo para insertar el pago de materiales comprados para el uso de la clinica
+    public void insertPagoMaterial(String nombre,String desc,double costo, String fecha){
+      try{
+            PreparedStatement pps = cn.prepareStatement("insert into pagomateriales(`costo_material`,"
+                    + "`fechaPago_material`,`Materiales_id_material`) VALUES(?,?,"
+                    + "(select id_material from   materiales where nombre_material='"+nombre+"' and descripcion_material='"+desc+"'));");
+            pps.setDouble(1, costo);
+            pps.setString(2, fecha);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "DATOS DEL EMPLEADO GUARDADOS CORRECTAMENTE");
+            con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL REALIZAR EL PAGO DEL EMPLEADO "+e);
+            con.closeBd();
+        }  
+    }
+    
     public void insertor(String articular,String goniaco,String impa,String jarabak,String facial,String is,String ii,String fhis,String anb82,String anb80,
                         String anb2,String pals,String pali,String ptb,String speeleve,String speemoderada,String speesvera,String dsd,String clasim,
                         String entornod,String Consulta_id_consulta){

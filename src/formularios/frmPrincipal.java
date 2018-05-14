@@ -1,6 +1,7 @@
 package formularios;
 
 import FormulariosPagos.frmPagoEmpleado;
+import FormulariosPagos.frmPagoMateriales;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -33,6 +34,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem13 = new javax.swing.JMenuItem();
+        jMenuItem14 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
@@ -140,6 +142,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
             }
         });
         jMenu2.add(jMenuItem13);
+
+        jMenuItem14.setText("Materiales");
+        jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem14ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem14);
 
         jMenuBar1.add(jMenu2);
 
@@ -308,7 +318,7 @@ public void run() {
     private void jMenuItem10ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem10ActionPerformed
         fr_nuevoUsuario formusu = new fr_nuevoUsuario();
         Dpanel.add(formusu);
-        formusu.show();        // TODO add your handling code here:
+        formusu.show();
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
@@ -328,6 +338,12 @@ public void run() {
         Dpanel.add(PEmp);
         PEmp.show();
     }//GEN-LAST:event_jMenuItem13ActionPerformed
+
+    private void jMenuItem14ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem14ActionPerformed
+       frmPagoMateriales PMaterial = new frmPagoMateriales();
+       Dpanel.add(PMaterial);
+       PMaterial.show();
+    }//GEN-LAST:event_jMenuItem14ActionPerformed
 
     public static void main(String args[]) {
         try {
@@ -369,6 +385,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem11;
     private javax.swing.JMenuItem jMenuItem12;
     private javax.swing.JMenuItem jMenuItem13;
+    private javax.swing.JMenuItem jMenuItem14;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
