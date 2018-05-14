@@ -151,4 +151,18 @@ public class IsertarDatosBD2 {
         }
     }
     
+    //metodo para insertar las reparaciones realizadas a la clinica
+    public void insertReparacion(String repa,String desc){
+       try{
+            PreparedStatement pst = cn.prepareStatement("insert into  reparacionclinica(tipo_reparacion,descrip_reparacion) values(?,?);");
+            pst.setString(1, repa);
+            pst.setString(2, desc);
+            pst.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados Exitosamente");
+            con.closeBd();
+       }catch(Exception e){
+           JOptionPane.showMessageDialog(null, "PROBLEMAS AL INGRESAR LOS DATOS DE REPARACION "+e);
+           con.closeBd();
+       }
+    }
 }
