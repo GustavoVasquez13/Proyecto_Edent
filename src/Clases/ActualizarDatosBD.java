@@ -99,4 +99,20 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+    //metodo para actualizar las reparaciones realizadas a la clinica
+    public void actuReparacion(String repa,String desc, int cod){
+       try{
+            PreparedStatement pst = cn.prepareStatement("update reparacionclinica set tipo_reparacion=?,descrip_reparacion=? "
+                    + "where id_raparaClinica='"+cod+"';");
+            pst.setString(1, repa);
+            pst.setString(2, desc);
+            pst.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos modifico Exitosamente");
+            con.closeBd();
+       }catch(Exception e){
+           JOptionPane.showMessageDialog(null, "PROBLEMAS AL INGRESAR LOS DATOS DE REPARACION "+e);
+           con.closeBd();
+       }
+    }
 }

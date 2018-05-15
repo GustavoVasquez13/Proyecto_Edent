@@ -93,4 +93,50 @@ public class ConsultarDatosBD2 {
         }
         return 0;
     }
+    
+    //metodo para consultar las reparaciones realizadas
+    public DefaultTableModel mostRepa(){
+        DefaultTableModel modelo;
+        String[] titulos = {"REPARACION","DESCRIPCION"};
+        String[] registros = new String[2];
+        modelo = new DefaultTableModel(null,titulos);
+        
+        try{
+           sSQL = "select * from  reparacionclinica";
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           
+           while(rs.next()){
+               registros[0] = rs.getString("tipo_reparacion");
+               registros[1] = rs.getString("descrip_reparacion");
+               
+               modelo.addRow(registros);
+           }
+           con.closeBd();
+           return modelo;
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE REPARACION "+e);
+            con.closeBd();
+            return null;
+        }
+    }
+    
+    //este metodo es para extraer el codigo de de materiales para usarse en la edicion del frmMateriales
+    public int codRepa(String repa,String desc){
+        try{
+           sSQL = "select id_raparaClinica from reparacionclinica where tipo_reparacion='"+repa+"' and descrip_reparacion='"+desc+"';"; 
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           while(rs.next()){
+               int cod = rs.getInt("id_raparaClinica");
+               return cod;
+           }
+           con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR EL CODIGO DE MATERIAL "+e);
+            con.closeBd();
+            return 0;
+        }
+        return 0;
+    }
 }
