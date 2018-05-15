@@ -467,18 +467,6 @@ public class ExpedienteGeneral extends internalFrameImagen {
         jLabel76 = new javax.swing.JLabel();
         jLabel77 = new javax.swing.JLabel();
         jSeparator10 = new javax.swing.JSeparator();
-        lblnombre1 = new javax.swing.JLabel();
-        txtMotivoC = new javax.swing.JTextField();
-        lblnombre2 = new javax.swing.JLabel();
-        txtHistoriaM = new javax.swing.JTextField();
-        lblnombre3 = new javax.swing.JLabel();
-        txtHistoriaO = new javax.swing.JTextField();
-        lblnombre4 = new javax.swing.JLabel();
-        txtExamenC = new javax.swing.JTextField();
-        lblnombre5 = new javax.swing.JLabel();
-        txtDX = new javax.swing.JTextField();
-        lblnombre6 = new javax.swing.JLabel();
-        txtpresupuesto = new javax.swing.JTextField();
         btnGuardar = new javax.swing.JButton();
         jLabel2 = new javax.swing.JLabel();
         txtapellido = new javax.swing.JTextField();
@@ -2636,30 +2624,6 @@ public class ExpedienteGeneral extends internalFrameImagen {
         jSeparator10.setBorder(javax.swing.BorderFactory.createTitledBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)), "Dientes Niños"));
         getContentPane().add(jSeparator10, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 430, 490, 150));
 
-        lblnombre1.setText("Motivo de la Consulta: ");
-        getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 130, -1, -1));
-        getContentPane().add(txtMotivoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 120, 350, -1));
-
-        lblnombre2.setText("Historia Medica:");
-        getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 170, 80, -1));
-        getContentPane().add(txtHistoriaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 160, 350, 50));
-
-        lblnombre3.setText("Historia Odontologica:");
-        getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 230, -1, -1));
-        getContentPane().add(txtHistoriaO, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 230, 350, 40));
-
-        lblnombre4.setText("Examen Clinico:");
-        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 280, 120, -1));
-        getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 280, 350, -1));
-
-        lblnombre5.setText("DX Odontologico:");
-        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(820, 310, 130, -1));
-        getContentPane().add(txtDX, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 310, 350, 70));
-
-        lblnombre6.setText("Presupuesto:");
-        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 390, 80, 20));
-        getContentPane().add(txtpresupuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 390, 350, 70));
-
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setToolTipText("");
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
@@ -2667,7 +2631,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
                 btnGuardarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1130, 500, 60, 60));
+        getContentPane().add(btnGuardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 470, 60, 60));
 
         jLabel2.setText("Apellido:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
@@ -2712,7 +2676,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
                 btnsalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1200, 500, 60, 60));
+        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 540, 60, 60));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3763,12 +3727,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         txtdirección.setText("");
         txttelefono.setText("");
         txtedad.setText("");
-        txtMotivoC.setText("");
-        txtpresupuesto.setText("");
-        txtHistoriaM.setText("");
-        txtHistoriaO.setText("");
-        txtExamenC.setText("");
-        txtDX.setText("");
+       
     }
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
       // se crean variables para guardar en ellas los datos recibidos de los jtextfield
@@ -3783,24 +3742,6 @@ public class ExpedienteGeneral extends internalFrameImagen {
       InsertarDatosBD insertar = new InsertarDatosBD();
       insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad,tip);
       // se crean variables para guardar en ellas los datos recibidos de los jtextfield
-      String motivo = this.txtMotivoC.getText().toUpperCase();
-      Double total = Double.parseDouble( this.txtpresupuesto.getText());
-      String historiam = this.txtHistoriaM.getText().toUpperCase();
-      String historiao = this.txtHistoriaO.getText().toUpperCase();
-      String examen = this.txtExamenC.getText().toUpperCase();
-      String dx = this.txtDX.getText().toUpperCase();
-      String tip1=this.txttip.getText();
-      // se crean variables para almacenar en ellas el dia mes y año que se obtienen del control jcalendar
-      String dia = Integer.toString(fecha.getCalendar().get(Calendar.DAY_OF_MONTH));
-      String mes = Integer.toString(fecha.getCalendar().get(Calendar.MONTH) + 1);
-      String year = Integer.toString(fecha.getCalendar().get(Calendar.YEAR));
-      String fechaA = (year + "-" + mes+ "-" + dia);
-      String date = fechaA; 
-      //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
-      //a la clase los parametros obtenidos por los jtextfield
-      InsertarDatosBD insertar2 = new InsertarDatosBD();
-      insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx,tip1);
-      //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
       limpiarTxt();
   
     }//GEN-LAST:event_btnGuardarActionPerformed
@@ -4278,25 +4219,13 @@ public class ExpedienteGeneral extends internalFrameImagen {
     private javax.swing.JLabel lbldireccion;
     private javax.swing.JLabel lbledad;
     private javax.swing.JLabel lblnombre;
-    private javax.swing.JLabel lblnombre1;
-    private javax.swing.JLabel lblnombre2;
-    private javax.swing.JLabel lblnombre3;
-    private javax.swing.JLabel lblnombre4;
-    private javax.swing.JLabel lblnombre5;
-    private javax.swing.JLabel lblnombre6;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltitulo;
     public static javax.swing.JLabel lbtipoo;
-    private javax.swing.JTextField txtDX;
-    private javax.swing.JTextField txtExamenC;
-    private javax.swing.JTextField txtHistoriaM;
-    private javax.swing.JTextField txtHistoriaO;
-    private javax.swing.JTextField txtMotivoC;
     private javax.swing.JTextField txtapellido;
     private javax.swing.JTextField txtdirección;
     private javax.swing.JTextField txtedad;
     private javax.swing.JTextField txtnombre;
-    private javax.swing.JTextField txtpresupuesto;
     private javax.swing.JTextField txttelefono;
     public static final javax.swing.JTextField txttip = new javax.swing.JTextField();
     // End of variables declaration//GEN-END:variables
