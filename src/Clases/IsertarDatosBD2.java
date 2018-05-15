@@ -158,11 +158,28 @@ public class IsertarDatosBD2 {
             pst.setString(1, repa);
             pst.setString(2, desc);
             pst.executeUpdate();
-            JOptionPane.showMessageDialog(null, "Datos Guardados Exitosamente");
+            JOptionPane.showMessageDialog(null, "DATOS GUARDADOS EXITOSAMENTE");
             con.closeBd();
        }catch(Exception e){
            JOptionPane.showMessageDialog(null, "PROBLEMAS AL INGRESAR LOS DATOS DE REPARACION "+e);
            con.closeBd();
        }
+    }
+    
+    //metodo para insertar el pago de reparaciones para la clinica
+    public void insertPagoRepa(String rep,String desc,double costo, String fecha){
+      try{
+            PreparedStatement pps = cn.prepareStatement("insert into pagoreparacion(`costo_repa`,"
+                    + "`fechaPago_repa`,`ReparacionClinica_id_raparaClinica`) VALUES(?,?,"
+                    + "(select id_raparaClinica from reparacionclinica where tipo_reparacion='"+rep+"' and descrip_reparacion='"+desc+"'));");
+            pps.setDouble(1, costo);
+            pps.setString(2, fecha);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "PAGO DE REPARACION GUARDADOS CORRECTAMENTE");
+            con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL REALIZAR EL PAGO DEL REPARACIONES "+e);
+            con.closeBd();
+        }  
     }
 }
