@@ -33,6 +33,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem9 = new javax.swing.JMenuItem();
         jMenuItem12 = new javax.swing.JMenuItem();
         jMenuItem15 = new javax.swing.JMenuItem();
+        jMenuItem17 = new javax.swing.JMenuItem();
         jMenu2 = new javax.swing.JMenu();
         jMenuItem2 = new javax.swing.JMenuItem();
         jMenuItem13 = new javax.swing.JMenuItem();
@@ -133,6 +134,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
             }
         });
         jMenu1.add(jMenuItem15);
+
+        jMenuItem17.setText("Equipo");
+        jMenuItem17.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem17ActionPerformed(evt);
+            }
+        });
+        jMenu1.add(jMenuItem17);
 
         jMenuBar1.add(jMenu1);
 
@@ -376,6 +385,12 @@ public void run() {
         repa.show();
     }//GEN-LAST:event_jMenuItem16ActionPerformed
 
+    private void jMenuItem17ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem17ActionPerformed
+        frmEquipo eq = new frmEquipo();
+        Dpanel.add(eq);
+        eq.show();
+    }//GEN-LAST:event_jMenuItem17ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -419,6 +434,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem14;
     private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem16;
+    private javax.swing.JMenuItem jMenuItem17;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;

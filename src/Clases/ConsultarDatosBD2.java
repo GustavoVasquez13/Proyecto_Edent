@@ -139,4 +139,51 @@ public class ConsultarDatosBD2 {
         }
         return 0;
     }
+    
+    //este metodo muestra en una tabla del formulario frmmateriales los datos de un material ingresado
+    public DefaultTableModel mostrarE(){
+       DefaultTableModel modelo;
+       String[] titulos = {"EQUIPO","DESCRIPCION","ESTADO"};
+       String[] registros = new String[3];
+
+       modelo = new DefaultTableModel(null,titulos);
+       sSQL = "select * from equipo;";
+       
+       try{
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           while(rs.next()){
+               registros[0] = rs.getString("tipo_equipo");
+               registros[1] = rs.getString("descripcion_equipo");
+               registros[2] = rs.getString("estado_equipo");
+
+               modelo.addRow(registros);
+           }
+           con.closeBd();
+           return modelo;
+       }catch(Exception e){
+           JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE MATERIALES");
+           con.closeBd();
+           return null;
+       }
+    }
+    
+    //este metodo es para extraer el codigo de de materiales para usarse en la edicion del frmMateriales
+    public int codEquipo(String eq,String desc,String estado){
+        try{
+           sSQL = "select id_equipo from equipo where tipo_equipo='"+eq+"' and descripcion_equipo='"+desc+"' and estado_equipo='"+estado+"';"; 
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           while(rs.next()){
+               int cod = rs.getInt("id_equipo");
+               return cod;
+           }
+           con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR EL CODIGO DE MATERIAL "+e);
+            con.closeBd();
+            return 0;
+        }
+        return 0;
+    }
 }

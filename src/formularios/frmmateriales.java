@@ -337,7 +337,8 @@ public class frmmateriales extends internalFrameImagen {
     }//GEN-LAST:event_jtMaterialesMousePressed
 
     private void txtCostoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCostoKeyTyped
-        // TODO add your handling code here:
+        validaciones val = new validaciones();
+        val.validarNum(evt);
     }//GEN-LAST:event_txtCostoKeyTyped
 
     private void txtBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyTyped

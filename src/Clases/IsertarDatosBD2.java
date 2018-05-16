@@ -182,4 +182,20 @@ public class IsertarDatosBD2 {
             con.closeBd();
         }  
     }
+    
+    //metodo para ingresar los material que se compran en la clinica
+    public void insertEquipo(String equi, String desc, String estado){
+        try{
+            PreparedStatement pps = cn.prepareStatement("insert into equipo(`tipo_equipo`,`descripcion_equipo`,`estado_equipo`) values(?,?,?)");
+            pps.setString(1, equi);
+            pps.setString(2, desc);
+            pps.setString(3, estado);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados Exitosamente");
+            con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Problemas al ingresar los datos "+e);
+            con.closeBd();
+        }
+    }
 }

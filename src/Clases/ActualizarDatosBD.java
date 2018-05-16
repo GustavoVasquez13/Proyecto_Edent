@@ -115,4 +115,21 @@ public class ActualizarDatosBD {
            con.closeBd();
        }
     }
+    
+    //metodo para actualizar equipo
+    public void ActualizarEq(String eq,String desc,String tipo,int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update equipo set `tipo_equipo`=?,"
+                    + "`descripcion_equipo`=?,`estado_equipo`=? where id_equipo='"+code+"';");
+            pst.setString(1, eq);
+            pst.setString(2, desc);
+            pst.setString(3, tipo);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al Actualizar los datos de Servicio  "+ex);
+            con.closeBd();
+        }
+    }
 }
