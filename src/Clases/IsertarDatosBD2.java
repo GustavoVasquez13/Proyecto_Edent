@@ -183,7 +183,7 @@ public class IsertarDatosBD2 {
         }  
     }
     
-    //metodo para ingresar los material que se compran en la clinica
+    //metodo para ingresar los equipos que se compran en la clinica
     public void insertEquipo(String equi, String desc, String estado){
         try{
             PreparedStatement pps = cn.prepareStatement("insert into equipo(`tipo_equipo`,`descripcion_equipo`,`estado_equipo`) values(?,?,?)");
@@ -197,5 +197,22 @@ public class IsertarDatosBD2 {
             JOptionPane.showMessageDialog(null, "Problemas al ingresar los datos "+e);
             con.closeBd();
         }
+    }
+    
+    //metodo para insertar el pago de equipo para la clinica
+    public void insertPagoEq(String eq,String desc,String estado,double costo, String fecha){
+      try{
+            PreparedStatement pps = cn.prepareStatement("insert into  pagoequipo(`costo_equipo`,"
+                    + "`fechaPago_equuipo`,`Equipo_id_equipo`) VALUES(?,?,"
+                    + "(select id_equipo from equipo where tipo_equipo='"+eq+"' and descripcion_equipo='"+desc+"' and estado_equipo='"+estado+"'));");
+            pps.setDouble(1, costo);
+            pps.setString(2, fecha);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "PAGO DE EQUIPO GUARDADOS CORRECTAMENTE");
+            con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL REALIZAR EL PAGO DEL EQUIPO "+e);
+            con.closeBd();
+        }  
     }
 }

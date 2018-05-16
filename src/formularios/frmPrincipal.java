@@ -1,6 +1,7 @@
 package formularios;
 
 import FormulariosPagos.frmPagoEmpleado;
+import FormulariosPagos.frmPagoEquipo;
 import FormulariosPagos.frmPagoMateriales;
 import FormulariosPagos.frmPagoReparacion;
 import java.util.Calendar;
@@ -39,6 +40,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem13 = new javax.swing.JMenuItem();
         jMenuItem14 = new javax.swing.JMenuItem();
         jMenuItem16 = new javax.swing.JMenuItem();
+        jMenuItem18 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
@@ -178,6 +180,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
             }
         });
         jMenu2.add(jMenuItem16);
+
+        jMenuItem18.setText("Equipo");
+        jMenuItem18.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem18ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem18);
 
         jMenuBar1.add(jMenu2);
 
@@ -391,6 +401,12 @@ public void run() {
         eq.show();
     }//GEN-LAST:event_jMenuItem17ActionPerformed
 
+    private void jMenuItem18ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem18ActionPerformed
+        frmPagoEquipo Peq = new frmPagoEquipo();
+        Dpanel.add(Peq);
+        Peq.show();
+    }//GEN-LAST:event_jMenuItem18ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -435,6 +451,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem15;
     private javax.swing.JMenuItem jMenuItem16;
     private javax.swing.JMenuItem jMenuItem17;
+    private javax.swing.JMenuItem jMenuItem18;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
