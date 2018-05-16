@@ -27,7 +27,7 @@ public class frmvistapacientes_1 extends internalFrameImagen{
         try {
             DefaultTableModel modelo;
             ConsultarDatosBD Mostrarp = new ConsultarDatosBD();
-            modelo = Mostrarp.mostrarPacientes();
+            modelo = Mostrarp.mostrarPacientes1();
             jtPacientes.setModel(modelo);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE SERVICIOS");
@@ -166,17 +166,15 @@ public class frmvistapacientes_1 extends internalFrameImagen{
 if(evt.getClickCount()==2){
             int fila =jtPacientes.getSelectedRow();
             String nombre;
-            String apellido,tel,edad,direc;
+            String apellido,fecha,id;
             nombre=jtPacientes.getValueAt(fila, 1).toString(); 
             apellido=jtPacientes.getValueAt(fila, 2).toString();
-            direc=jtPacientes.getValueAt(fila, 3).toString();
-            tel=jtPacientes.getValueAt(fila, 4).toString();
-            edad=jtPacientes.getValueAt(fila, 5).toString();
-            ExpedienteOrtodoncia.txttelefono.setText(tel);
-            ExpedienteOrtodoncia.txtedad.setText(edad);
-            ExpedienteOrtodoncia.txtdirección.setText(direc);
-            ExpedienteOrtodoncia.txtnombre.setText(nombre);
-            ExpedienteOrtodoncia.txtapellido.setText(apellido);
+            fecha=jtPacientes.getValueAt(fila, 6).toString();
+            id=jtPacientes.getValueAt(fila, 0).toString();
+            
+            consulta.lbfecha.setText(fecha);
+            consulta.lbnombre.setText(nombre+" "+apellido);
+            consulta.lbid.setText(id);
             this.dispose();
         }        
     }//GEN-LAST:event_jtPacientesMousePressed

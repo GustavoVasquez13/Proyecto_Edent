@@ -24,6 +24,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
     public ExpedienteGeneral() {
         initComponents();
        setImagenw("img2.jpg");
+       btcon.setVisible(false);
     }
 
     /**
@@ -476,6 +477,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         jButton1 = new javax.swing.JButton();
         lbtipoo = new javax.swing.JLabel();
         btnsalir = new javax.swing.JButton();
+        btcon = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -2678,6 +2680,14 @@ public class ExpedienteGeneral extends internalFrameImagen {
         });
         getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 540, 60, 60));
 
+        btcon.setText("Agregar consulta");
+        btcon.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btconActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btcon, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 430, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -3737,13 +3747,19 @@ public class ExpedienteGeneral extends internalFrameImagen {
       String telefono = this.txttelefono.getText().toUpperCase();
       String edad = this.txtedad.getText();
       String tip=this.txttip.getText();
-      String fecha="2018-05-14";
+    
       //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
       //a la clase los parametros obtenidos por los jtextfield
+      String dia = Integer.toString(fecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes = Integer.toString(fecha.getCalendar().get(Calendar.MONTH) + 1);
+      String year = Integer.toString(fecha.getCalendar().get(Calendar.YEAR));
+      String fechaA = (year + "-" + mes+ "-" + dia);
+      String date = fechaA; 
       InsertarDatosBD insertar = new InsertarDatosBD();
-      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad,tip,fecha);
+      insertar.insertarPaciente(nombre, apellido, direccion, telefono, edad,tip,date);
       // se crean variables para guardar en ellas los datos recibidos de los jtextfield
       limpiarTxt();
+      btcon.setVisible(true);
   
     }//GEN-LAST:event_btnGuardarActionPerformed
 
@@ -3785,8 +3801,15 @@ public class ExpedienteGeneral extends internalFrameImagen {
         // TODO add your handling code here:
     }//GEN-LAST:event_txttipActionPerformed
 
+    private void btconActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btconActionPerformed
+consulta fr=new consulta();
+ Dpanel.add(fr);
+        fr.show();        // TODO add your handling code here:
+    }//GEN-LAST:event_btconActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btcon;
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnsalir;
     private com.toedter.calendar.JDateChooser fecha;

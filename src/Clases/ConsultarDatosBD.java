@@ -282,7 +282,7 @@ public class ConsultarDatosBD {
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
         //consulta para mostrar los datos de la base de datos
-        sSQL = "SELECT * FROM pacienten ORDER BY `apellido_pacte` ASC;";
+        sSQL = "SELECT * FROM `pacienten` WHERE `TipoPaciente_id_tipoPaciente` = 1 ORDER BY `id_pacienteN` ASC;";
         try {
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
