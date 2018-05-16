@@ -9,6 +9,9 @@ import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
+import java.awt.event.KeyEvent;
 import java.util.Calendar;
 
 
@@ -45,7 +48,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         lblnombre = new javax.swing.JLabel();
         txtnombre = new javax.swing.JTextField();
         lbldireccion = new javax.swing.JLabel();
-        txtdirección = new javax.swing.JTextField();
+        txtdireccion = new javax.swing.JTextField();
         jCheckBox1 = new javax.swing.JCheckBox();
         jCheckBox2 = new javax.swing.JCheckBox();
         jCheckBox3 = new javax.swing.JCheckBox();
@@ -496,6 +499,9 @@ public class ExpedienteGeneral extends internalFrameImagen {
         getContentPane().add(lbltelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 100, -1, -1));
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txttelefonoKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txttelefonoKeyTyped(evt);
             }
@@ -506,6 +512,9 @@ public class ExpedienteGeneral extends internalFrameImagen {
         getContentPane().add(lbledad, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 100, -1, -1));
 
         txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtedadKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtedadKeyTyped(evt);
             }
@@ -516,6 +525,9 @@ public class ExpedienteGeneral extends internalFrameImagen {
         getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 140, -1, -1));
 
         txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtnombreKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtnombreKeyTyped(evt);
             }
@@ -524,7 +536,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
 
         lbldireccion.setText("Dirección: ");
         getContentPane().add(lbldireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 190, -1, -1));
-        getContentPane().add(txtdirección, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 531, 53));
+        getContentPane().add(txtdireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 190, 531, 53));
 
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -2639,6 +2651,9 @@ public class ExpedienteGeneral extends internalFrameImagen {
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 140, -1, -1));
 
         txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtapellidoKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtapellidoKeyTyped(evt);
             }
@@ -2651,6 +2666,11 @@ public class ExpedienteGeneral extends internalFrameImagen {
         getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 0, 10, 630));
 
         fecha.setDateFormatString("yyyy-MM-dd");
+        fecha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                fechaKeyPressed(evt);
+            }
+        });
         getContentPane().add(fecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 100, 110, -1));
 
         txttip.addActionListener(new java.awt.event.ActionListener() {
@@ -3734,7 +3754,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
     public void limpiarTxt(){
         txtnombre.setText("");
         txtapellido.setText("");
-        txtdirección.setText("");
+        txtdireccion.setText("");
         txttelefono.setText("");
         txtedad.setText("");
        
@@ -3743,7 +3763,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
       // se crean variables para guardar en ellas los datos recibidos de los jtextfield
       String nombre = this.txtnombre.getText().toUpperCase();
       String apellido = this.txtapellido.getText().toUpperCase();
-      String direccion = this.txtdirección.getText().toUpperCase();
+      String direccion = this.txtdireccion.getText().toUpperCase();
       String telefono = this.txttelefono.getText().toUpperCase();
       String edad = this.txtedad.getText();
       String tip=this.txttip.getText();
@@ -3806,6 +3826,57 @@ consulta fr=new consulta();
  Dpanel.add(fr);
         fr.show();        // TODO add your handling code here:
     }//GEN-LAST:event_btconActionPerformed
+
+    private void txttelefonoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttelefonoKeyPressed
+        txttelefono.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            txtedad.requestFocus();
+            this.txtedad.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txttelefonoKeyPressed
+
+    private void fechaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_fechaKeyPressed
+          this.fecha.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+              java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            txttelefono.requestFocus();
+            this.txttelefono.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_fechaKeyPressed
+
+    private void txtedadKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtedadKeyPressed
+         this.txtedad.setBackground(Color.white); 
+        txtedad.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            txtnombre.requestFocus();
+            this.txtnombre.setBackground(Color.LIGHT_GRAY);
+           
+        }
+    }//GEN-LAST:event_txtedadKeyPressed
+
+    private void txtnombreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnombreKeyPressed
+         this.txtnombre.setBackground(Color.white);
+        txtnombre.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            txtapellido.requestFocus();
+            this.txtapellido.setBackground(Color.LIGHT_GRAY);
+          
+        }
+    }//GEN-LAST:event_txtnombreKeyPressed
+
+    private void txtapellidoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtapellidoKeyPressed
+              this.txtapellido.setBackground(Color.white);
+        txtapellido.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            txtdireccion.requestFocus();
+            this.txtdireccion.setBackground(Color.LIGHT_GRAY);
+          
+        }
+    }//GEN-LAST:event_txtapellidoKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -4247,7 +4318,7 @@ consulta fr=new consulta();
     private javax.swing.JLabel lbltitulo;
     public static javax.swing.JLabel lbtipoo;
     private javax.swing.JTextField txtapellido;
-    private javax.swing.JTextField txtdirección;
+    private javax.swing.JTextField txtdireccion;
     private javax.swing.JTextField txtedad;
     private javax.swing.JTextField txtnombre;
     private javax.swing.JTextField txttelefono;
