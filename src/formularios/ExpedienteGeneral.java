@@ -3737,7 +3737,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
       String telefono = this.txttelefono.getText().toUpperCase();
       String edad = this.txtedad.getText();
       String tip=this.txttip.getText();
-      String fecha="2018-15-04";
+      String fecha="2018-05-14";
       //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
       //a la clase los parametros obtenidos por los jtextfield
       InsertarDatosBD insertar = new InsertarDatosBD();
