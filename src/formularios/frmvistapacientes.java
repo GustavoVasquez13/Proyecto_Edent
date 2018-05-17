@@ -30,7 +30,7 @@ public class frmvistapacientes extends internalFrameImagen{
             modelo = Mostrarp.mostrarPacientes();
             jtPacientes.setModel(modelo);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE SERVICIOS");
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE PACIENTES");
         }
     }
     
@@ -163,15 +163,17 @@ public class frmvistapacientes extends internalFrameImagen{
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jtPacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtPacientesMousePressed
-if(evt.getClickCount()==2){
+            if(evt.getClickCount()==2){
             int fila =jtPacientes.getSelectedRow();
             String nombre;
             String apellido,tel,edad,direc;
+            
             nombre=jtPacientes.getValueAt(fila, 1).toString(); 
             apellido=jtPacientes.getValueAt(fila, 2).toString();
             direc=jtPacientes.getValueAt(fila, 3).toString();
             tel=jtPacientes.getValueAt(fila, 4).toString();
             edad=jtPacientes.getValueAt(fila, 5).toString();
+//            tipo = jtPacientes.getValueAt(fila, 6).toString();
             ExpedienteOrtodoncia.txttelefono.setText(tel);
             ExpedienteOrtodoncia.txtedad.setText(edad);
             ExpedienteOrtodoncia.txtdirección.setText(direc);
