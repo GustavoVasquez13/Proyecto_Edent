@@ -242,13 +242,13 @@ public class ConsultarDatosBD {
         DefaultTableModel modelo;
         //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulo
-                = {"Id","Nombre","Apellido","Direccion", "Telefono","Edad","tipo"};
-        String[] registros = new String[7];
+                = {"Id","Nombre","Apellido","Direccion", "Telefono","Edad","id","tipo"};
+        String[] registros = new String[8];
         totalRegistros = 0;
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
         //consulta para mostrar los datos de la base de datos
-        sSQL = "SELECT `id_pacienteN`,`nombre_pacte`,`apellido_pacte`,`direccion_pacte`,`tel_pacte`,`estado_paciente`,`edad`,`fecha`,`nombre_tipo`" 
+        sSQL = "SELECT `id_pacienteN`,`nombre_pacte`,`apellido_pacte`,`direccion_pacte`,`tel_pacte`,`estado_paciente`,`edad`,`fecha`,`TipoPaciente_id_tipoPaciente`,`nombre_tipo`" 
                 +"FROM pacienten INNER JOIN tipopaciente "
                 + "on pacienten.TipoPaciente_id_tipoPaciente=tipopaciente.id_tipoPaciente WHERE tipopaciente.nombre_tipo = 'ORTODONCIA'";
         try {
@@ -261,7 +261,8 @@ public class ConsultarDatosBD {
                 registros[3] = rs.getString("direccion_pacte");
                 registros[4] = rs.getString("tel_pacte");
                 registros[5] = rs.getString("edad");
-                registros[6] = rs.getString("nombre_tipo");
+                registros[6] = rs.getString("TipoPaciente_id_tipoPaciente");
+                registros[7] = rs.getString("nombre_tipo");
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
             }
@@ -297,6 +298,45 @@ public class ConsultarDatosBD {
                 registros[4] = rs.getString("tel_pacte");
                 registros[5] = rs.getString("edad");
                 registros[6] = rs.getString("Fecha");
+                totalRegistros = totalRegistros + 1;
+                modelo.addRow(registros);
+            }
+            con.closeBd();
+            return modelo;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Tipos de Paciente");
+            con.closeBd();
+            return null;
+        }
+    }
+    
+      // este metodo muestra los datos de los pacientes registrados en la tabla pacienten
+    public DefaultTableModel mostrarPacientesTO() {
+        DefaultTableModel modelo;
+        //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
+        String[] titulo
+                = {"Id","Nombre","Apellido","Especialidad", "ID_Consulta"};
+        String[] registros = new String[5];
+        totalRegistros = 0;
+        //se agregan los campos del arreglo al modelo de la tabla
+        modelo = new DefaultTableModel(null, titulo);
+        //consulta para mostrar los datos de la base de datos
+        sSQL = "SELECT id_pacienteN, nombre_pacte, apellido_pacte, nombre_tipo, id_consulta" 
+                +"from consulta inner join pacienten" 
+                +"on consulta.PacienteN_id_pacienteN = pacienten.id_pacienteN"
+                +"inner join tipopaciente"
+                +"on pacienten.TipoPaciente_id_tipoPaciente = tipopaciente.id_tipoPaciente"
+                +"where nombre_tipo = 'ORTODONCIA'";
+        
+        try {
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sSQL);
+            while (rs.next()) {
+                registros[0] = rs.getString("id_pacienteN");
+                registros[1] = rs.getString("nombre_pacte");
+                registros[2] = rs.getString("apellido_pacte");
+                registros[3] = rs.getString("nombre_tipo");
+                registros[4] = rs.getString("id_consulta");
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
             }
