@@ -4,6 +4,7 @@ import FormulariosPagos.frmPagoEmpleado;
 import FormulariosPagos.frmPagoEquipo;
 import FormulariosPagos.frmPagoMateriales;
 import FormulariosPagos.frmPagoReparacion;
+import Vistas.frmVistaEmpleado;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -52,6 +53,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem7 = new javax.swing.JMenuItem();
         jMenu5 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
+        jMenuItem19 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
@@ -256,7 +258,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
 
         jMenuBar1.add(jMenu4);
 
-        jMenu5.setText("Agregar nuevo usuario");
+        jMenu5.setText("Administrar");
 
         jMenuItem10.setText("Nuevo usuario");
         jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
@@ -265,6 +267,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
             }
         });
         jMenu5.add(jMenuItem10);
+
+        jMenuItem19.setText("Vista Empleados");
+        jMenuItem19.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem19ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem19);
 
         jMenuBar1.add(jMenu5);
 
@@ -408,6 +418,12 @@ public void run() {
         Peq.show();
     }//GEN-LAST:event_jMenuItem18ActionPerformed
 
+    private void jMenuItem19ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem19ActionPerformed
+        frmVistaEmpleado Emp = new frmVistaEmpleado();
+        Dpanel.add(Emp);
+        Emp.show();
+    }//GEN-LAST:event_jMenuItem19ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -453,6 +469,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem16;
     private javax.swing.JMenuItem jMenuItem17;
     private javax.swing.JMenuItem jMenuItem18;
+    private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;

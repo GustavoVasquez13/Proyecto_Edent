@@ -186,4 +186,38 @@ public class ConsultarDatosBD2 {
         }
         return 0;
     }
+    
+    public DefaultTableModel mostrarEmpleado(String estado){
+        DefaultTableModel modelo;
+        String [] titulo = {"NOMBRE","APELLIDO","DIRECCION","CORREO","TELEFONO","CARGO","SUELDO","DUI","INICIO","ESTADO"};
+        String [] registros = new String[10];
+        totalRegistros = 0;
+        modelo = new DefaultTableModel(null,titulo);
+        
+        sSQL = "SELECT * FROM `empleado` where `estado_empl`='"+estado+"';";
+        try{
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           while(rs.next()){
+                registros[0] = rs.getString("nombre_empl");
+                registros[1] = rs.getString("apellido_empl");
+                registros[2] = rs.getString("direccion_empl");
+                registros[3] = rs.getString("correo_empl");
+                registros[4] = rs.getString("tel_empl");
+                registros[5] = rs.getString("cargo_empl");
+                registros[6] = rs.getString("sueldo_empl");
+                registros[7] = rs.getString("dui_empl");
+                registros[8] = rs.getString("fecha_inicio");
+                registros[9] = rs.getString("estado_empl");
+               totalRegistros = totalRegistros+1;
+               modelo.addRow(registros);
+           }
+           con.closeBd();
+           return modelo;
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(null, "problemas al consultar los datos del Empleado "+ex);
+            con.closeBd();
+            return null;
+        }
+    }
 }

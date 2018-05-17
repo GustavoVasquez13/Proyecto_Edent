@@ -69,12 +69,12 @@ public class ActualizarDatosBD {
     }
     
     //este metodo hace un cambio de estado en el empleado para ponerlo como inactivo 
-    public void inactivarEmpl(String dui){
+    public void inactivarEmpl(String dui,String estado){
         try{
-            PreparedStatement pst = cn.prepareStatement("update empleado set estado_empl='INACTIVO' where dui_empl='"+dui+"';");
+            PreparedStatement pst = cn.prepareStatement("update empleado set estado_empl='"+estado+"' where dui_empl='"+dui+"';");
             pst.executeUpdate();
             con.closeBd();
-            JOptionPane.showMessageDialog(null, "EMPLEADO ELIMINADO CORRECTAMENTE");
+            JOptionPane.showMessageDialog(null, "EMPLEADO MOVIDO CORRECTAMENTE");
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "OCURRIO UN PROBLEMA AL ELIMINAR EL EMPLEADO "+e);
             con.closeBd();
