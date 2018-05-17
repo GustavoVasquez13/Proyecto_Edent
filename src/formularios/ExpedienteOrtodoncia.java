@@ -1023,6 +1023,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         btnsalir = new javax.swing.JButton();
         btnsiguiente = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        lbtipoo = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
@@ -6313,6 +6314,16 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         });
         getContentPane().add(txttip, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 0, 10));
 
+        lbtipoo.setText("el tipo de paciente es:");
+        getContentPane().add(lbtipoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 160, -1));
+
+        txttip2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txttip2ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(txttip2, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 0, 10));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -8465,22 +8476,23 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     }
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
       // se crean variables para guardar en ellas los datos recibidos de los jtextfield
-      String nombre = this.txtnombre.getText().toUpperCase();
-      String apellido = this.txtapellido.getText().toUpperCase();
-      String direccion = this.txtdirección.getText().toUpperCase();
-      String telefono = this.txttelefono.getText().toUpperCase();
-      String edad = this.txtedad.getText();
+//      String nombre = this.txtnombre.getText().toUpperCase();
+//      String apellido = this.txtapellido.getText().toUpperCase();
+//      String direccion = this.txtdirección.getText().toUpperCase();
+//      String telefono = this.txttelefono.getText().toUpperCase();
+//      String edad = this.txtedad.getText();
       String tip=this.txttip.getText();
-      //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
-      //a la clase los parametros obtenidos por los jtextfield
-      InsertarDatosBD insertar = new InsertarDatosBD();
-      insertar.insertarPacienteO(nombre, apellido, direccion, telefono, edad,tip);
+//      //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
+//      //a la clase los parametros obtenidos por los jtextfield
+//      InsertarDatosBD insertar = new InsertarDatosBD();
+//      insertar.insertarPacienteO(nombre, apellido, direccion, telefono, edad,tip);
       
       String motivo = this.txtMotivoC.getText().toUpperCase();
       String historiam = this.txtHistoriaM.getText().toUpperCase();
       String historiao = this.txtHistoriaO.getText().toUpperCase();
       String examen = this.txtExamenC.getText().toUpperCase();
       String dx = this.txtDX.getText().toUpperCase();
+      String tip2=this.txttip2.getText();
       // se crean variables para almacenar en ellas el dia mes y año que se obtienen del control jcalendar
       String dia = Integer.toString(fecha.getCalendar().get(Calendar.DAY_OF_MONTH));
       String mes = Integer.toString(fecha.getCalendar().get(Calendar.MONTH) + 1);
@@ -8542,6 +8554,10 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private void txtExamenCActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtExamenCActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtExamenCActionPerformed
+
+    private void txttip2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttip2ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txttip2ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -9495,6 +9511,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel lblnombre5;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltelefono1;
+    private javax.swing.JLabel lbtipoo;
     private javax.swing.JTextField txtANB3;
     private javax.swing.JTextField txtANB81;
     private javax.swing.JTextField txtANB83;
@@ -9540,6 +9557,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     public static final javax.swing.JTextField txttelefono = new javax.swing.JTextField();
     private javax.swing.JTextField txttelefono1;
     public static final javax.swing.JTextField txttip = new javax.swing.JTextField();
+    public static final javax.swing.JTextField txttip2 = new javax.swing.JTextField();
     private javax.swing.JTextField txttubos1;
     // End of variables declaration//GEN-END:variables
 }
