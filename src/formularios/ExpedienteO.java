@@ -7,6 +7,7 @@ package formularios;
 
 import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
+import static formularios.frmPrincipal.Dpanel;
 
 /**
  *
@@ -152,6 +153,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator7 = new javax.swing.JSeparator();
         btnguardar = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
+        btnpaciente = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -485,12 +487,19 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
             }
         });
 
+        btnpaciente.setText("Elegir paciente para tratamiento");
+        btnpaciente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnpacienteActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(500, 500, 500)
+                .addGap(614, 614, 614)
                 .addComponent(jLabel82, javax.swing.GroupLayout.PREFERRED_SIZE, 280, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
                 .addGap(30, 30, 30)
@@ -667,24 +676,6 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                         .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(layout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 1140, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(380, 380, 380)
-                .addComponent(lblnombre10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(chcurvaleve1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addComponent(chcurvamoderada1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(chcurvasevera, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
-                .addComponent(lblnombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(txtDSD, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
-                .addComponent(lblnombre9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addGroup(layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(lblnombre8)
                 .addGap(10, 10, 10)
@@ -802,6 +793,26 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                         .addComponent(btnguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(27, 27, 27)
                         .addComponent(btnsalir, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(30, 30, 30)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btnpaciente)
+                        .addGap(163, 163, 163)
+                        .addComponent(lblnombre10, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(chcurvaleve1, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(30, 30, 30)
+                        .addComponent(chcurvamoderada1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(chcurvasevera, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(20, 20, 20)
+                        .addComponent(lblnombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(txtDSD, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(lblnombre9, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 1140, javax.swing.GroupLayout.PREFERRED_SIZE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -963,9 +974,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                     .addComponent(jSeparator12, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addComponent(jSeparator6, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(10, 10, 10)
+                .addGap(6, 6, 6)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lblnombre10)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(lblnombre10)
+                        .addComponent(btnpaciente))
                     .addComponent(chcurvaleve1)
                     .addComponent(chcurvamoderada1)
                     .addComponent(chcurvasevera)
@@ -1087,7 +1100,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                     .addGroup(layout.createSequentialGroup()
                         .addGap(60, 60, 60)
                         .addComponent(jSeparator69, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(24, Short.MAX_VALUE))
         );
 
         pack();
@@ -1166,38 +1179,45 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     }//GEN-LAST:event_txtrocabadoActionPerformed
 
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
-String articular=this.txtanguloA1.getText();
-String goniaco=this.txtanguloG1.getText();
-String impa=this.txtIMPA1.getText();
-String jarabak=this.txtJa1.getText();
-String facial=this.txtEJE.getText();
-String is=this.txtIS.getText();
-String ii=this.txtII.getText();
-String fhis=this.txtFHIS.getText();
-String anb82=this.txtANB82.getText();
-String anb80=this.txtANB80.getText();
-String anb2=this.txtANB2.getText();
-String pals=this.txtPALS.getText();
-String pali=this.txtPALI.getText();
-String ptb=this.txtPTB.getText();
-String speeleve=null;
-String speemoderada=null;
-String speesvera=null;
-String dsd=null;
-String clasim=null;
-String entornod=null;
-String Consulta_id_consulta="1";
-i.insertor(articular,goniaco,impa,jarabak,facial,is,ii,fhis,anb82,anb80,anb2,pals,pali,ptb,speeleve,speemoderada,speesvera,
-            dsd,clasim,entornod,Consulta_id_consulta);
+        String articular=this.txtanguloA1.getText();
+        String goniaco=this.txtanguloG1.getText();
+        String impa=this.txtIMPA1.getText();
+        String jarabak=this.txtJa1.getText();
+        String facial=this.txtEJE.getText();
+        String is=this.txtIS.getText();
+        String ii=this.txtII.getText();
+        String fhis=this.txtFHIS.getText();
+        String anb82=this.txtANB82.getText();
+        String anb80=this.txtANB80.getText();
+        String anb2=this.txtANB2.getText();
+        String pals=this.txtPALS.getText();
+        String pali=this.txtPALI.getText();
+        String ptb=this.txtPTB.getText();
+        String speeleve=null;
+        String speemoderada=null;
+        String speesvera=null;
+        String dsd=null;
+        String clasim=null;
+        String entornod=null;
+        String Consulta_id_consulta="1";
+        i.insertor(articular,goniaco,impa,jarabak,facial,is,ii,fhis,anb82,anb80,anb2,pals,pali,ptb,speeleve,speemoderada,speesvera,
+                    dsd,clasim,entornod,Consulta_id_consulta);
     }//GEN-LAST:event_btnguardarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnsalirActionPerformed
 
+    private void btnpacienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpacienteActionPerformed
+       frmvistapacienteTO formExGral = new frmvistapacienteTO();
+       Dpanel.add(formExGral);
+       formExGral.show();
+    }//GEN-LAST:event_btnpacienteActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnguardar;
+    private javax.swing.JButton btnpaciente;
     private javax.swing.JButton btnsalir;
     private javax.swing.JCheckBox chcefalometrica;
     private javax.swing.JCheckBox chcurvaleve1;
