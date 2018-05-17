@@ -242,13 +242,16 @@ public class ConsultarDatosBD {
         DefaultTableModel modelo;
         //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulo
-                = {"Id","Nombre","Apellido","Direccion", "Telefono","Edad"};
-        String[] registros = new String[6];
+                = {"Id","Nombre","Apellido","Direccion", "Telefono","Edad","tipo"};
+        String[] registros = new String[7];
         totalRegistros = 0;
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
         //consulta para mostrar los datos de la base de datos
-        sSQL = "SELECT * FROM pacienten ORDER BY `apellido_pacte` ASC;";
+        sSQL = "SELECT  id_pacienteN, nombre_pacte, apellido_pacte, direccion_pacte, tel_pacte, edad, nombre_tipo" 
+             + "from pacienten inner join tipopaciente" 
+             + "on pacienten.TipoPaciente_id_tipoPaciente = tipopaciente.id_tipoPaciente" 
+             + "where nombre_tipo = 'ORTODONCIA'";
         try {
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
@@ -259,6 +262,7 @@ public class ConsultarDatosBD {
                 registros[3] = rs.getString("direccion_pacte");
                 registros[4] = rs.getString("tel_pacte");
                 registros[5] = rs.getString("edad");
+                registros[6] = rs.getString("nombre_tipo");
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
             }
