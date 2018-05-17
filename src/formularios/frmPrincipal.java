@@ -371,9 +371,12 @@ public void run() {
     }//GEN-LAST:event_jMenuItem10ActionPerformed
 
     private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
-        frmvistapacientes formEmpl = new frmvistapacientes();
-        Dpanel.add(formEmpl);
-        formEmpl.show();
+//        frmvistapacientes formEmpl = new frmvistapacientes();
+//        Dpanel.add(formEmpl);
+//        formEmpl.show();
+        frmvistapacienteTO formExGral = new frmvistapacienteTO();
+       Dpanel.add(formExGral);
+       formExGral.show();
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
