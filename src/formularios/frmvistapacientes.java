@@ -166,19 +166,24 @@ public class frmvistapacientes extends internalFrameImagen{
             if(evt.getClickCount()==2){
             int fila =jtPacientes.getSelectedRow();
             String nombre;
-            String apellido,tel,edad,direc;
+            String apellido,tel,edad,direc,idtipo,id;
             
             nombre=jtPacientes.getValueAt(fila, 1).toString(); 
             apellido=jtPacientes.getValueAt(fila, 2).toString();
             direc=jtPacientes.getValueAt(fila, 3).toString();
             tel=jtPacientes.getValueAt(fila, 4).toString();
             edad=jtPacientes.getValueAt(fila, 5).toString();
-//            tipo = jtPacientes.getValueAt(fila, 6).toString();
+            idtipo = jtPacientes.getValueAt(fila, 6).toString();
+            id= jtPacientes.getValueAt(fila, 0).toString();
             ExpedienteOrtodoncia.txttelefono.setText(tel);
             ExpedienteOrtodoncia.txtedad.setText(edad);
             ExpedienteOrtodoncia.txtdirección.setText(direc);
             ExpedienteOrtodoncia.txtnombre.setText(nombre);
             ExpedienteOrtodoncia.txtapellido.setText(apellido);
+            ExpedienteOrtodoncia.txttip.setText(id);
+            ExpedienteOrtodoncia.txttip2.setText(idtipo);
+            
+            
             this.dispose();
         }        
     }//GEN-LAST:event_jtPacientesMousePressed
