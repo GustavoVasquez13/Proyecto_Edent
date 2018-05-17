@@ -248,10 +248,9 @@ public class ConsultarDatosBD {
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
         //consulta para mostrar los datos de la base de datos
-        sSQL = "SELECT  id_pacienteN, nombre_pacte, apellido_pacte, direccion_pacte, tel_pacte, edad, nombre_tipo" 
-             + "from pacienten inner join tipopaciente" 
-             + "on pacienten.TipoPaciente_id_tipoPaciente = tipopaciente.id_tipoPaciente" 
-             + "where nombre_tipo = 'ORTODONCIA'";
+        sSQL = "SELECT `id_pacienteN`,`nombre_pacte`,`apellido_pacte`,`direccion_pacte`,`tel_pacte`,`estado_paciente`,`edad`,`fecha`,`nombre_tipo`" 
+                +"FROM pacienten INNER JOIN tipopaciente "
+                + "on pacienten.TipoPaciente_id_tipoPaciente=tipopaciente.id_tipoPaciente WHERE tipopaciente.nombre_tipo = 'ORTODONCIA'";
         try {
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
