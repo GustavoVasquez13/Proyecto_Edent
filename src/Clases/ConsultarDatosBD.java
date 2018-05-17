@@ -321,11 +321,11 @@ public class ConsultarDatosBD {
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
         //consulta para mostrar los datos de la base de datos
-        sSQL = "SELECT id_pacienteN, nombre_pacte, apellido_pacte, nombre_tipo, id_consulta" 
-                +"from consulta inner join pacienten" 
-                +"on consulta.PacienteN_id_pacienteN = pacienten.id_pacienteN"
-                +"inner join tipopaciente"
-                +"on pacienten.TipoPaciente_id_tipoPaciente = tipopaciente.id_tipoPaciente"
+        sSQL = "SELECT id_pacienteN, nombre_pacte, apellido_pacte, nombre_tipo, id_consulta " 
+                +"from consulta inner join pacienten " 
+                +"on consulta.PacienteN_id_pacienteN = pacienten.id_pacienteN "
+                +"inner join tipopaciente "
+                +"on pacienten.TipoPaciente_id_tipoPaciente = tipopaciente.id_tipoPaciente "
                 +"where nombre_tipo = 'ORTODONCIA'";
         
         try {
