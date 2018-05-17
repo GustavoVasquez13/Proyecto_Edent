@@ -35,7 +35,7 @@
   <SubComponents>
     <Component class="javax.swing.JTextField" name="jTextField1">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Adminisrador"/>
+        <Property name="text" type="java.lang.String" value="ADMINISTRADOR"/>
       </Properties>
     </Component>
   </SubComponents>

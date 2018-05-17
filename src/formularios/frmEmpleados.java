@@ -93,23 +93,40 @@ public class frmEmpleados extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 36)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Registro de Empleados");
 
+        jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Nombre");
 
+        jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("Apellido");
 
+        jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("Direccion");
 
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("No. DUI");
 
+        jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
         jLabel6.setText("Correo");
 
+        jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("No. Telefono");
 
+        jLabel8.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 102, 153));
         jLabel8.setText("Cargo");
 
+        jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 102, 153));
         jLabel9.setText("Sueldo Menssual");
 
         txtApellidoEmp.setFocusCycleRoot(true);
@@ -137,7 +154,7 @@ public class frmEmpleados extends internalFrameImagen {
             }
         });
 
-        btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnGuardar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btnGuardar.setForeground(new java.awt.Color(0, 102, 255));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("Guardar");
@@ -150,11 +167,13 @@ public class frmEmpleados extends internalFrameImagen {
             }
         });
 
+        jLabel10.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel10.setForeground(new java.awt.Color(0, 102, 153));
         jLabel10.setText("Fecha de Inicio");
 
         jdFechaInicio.setDateFormatString("yyyy-MM-dd");
 
-        btnCerrar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnCerrar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btnCerrar.setForeground(new java.awt.Color(0, 102, 255));
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCerrar.setText("Cerrar");
@@ -190,7 +209,8 @@ public class frmEmpleados extends internalFrameImagen {
         });
         jScrollPane1.setViewportView(jtEmpleados);
 
-        jLabel11.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel11.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel11.setForeground(new java.awt.Color(0, 102, 153));
         jLabel11.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -199,7 +219,7 @@ public class frmEmpleados extends internalFrameImagen {
             }
         });
 
-        btnModificar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnModificar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btnModificar.setForeground(new java.awt.Color(0, 102, 255));
         btnModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnModificar.setText("Editar");
@@ -278,7 +298,7 @@ public class frmEmpleados extends internalFrameImagen {
                         .addComponent(jLabel2)
                         .addGap(18, 18, 18)
                         .addComponent(txtNombreEmp)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addGap(18, 33, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 706, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
@@ -289,7 +309,7 @@ public class frmEmpleados extends internalFrameImagen {
                         .addComponent(lblCod, javax.swing.GroupLayout.PREFERRED_SIZE, 58, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(lblCod2, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(70, 70, 70))
+                .addGap(25, 25, 25))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel1)
@@ -375,7 +395,7 @@ public class frmEmpleados extends internalFrameImagen {
                     .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCerrar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnModificar))
-                .addContainerGap(40, Short.MAX_VALUE))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         pack();

@@ -70,8 +70,8 @@ public class frmPagoEquipo extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
-        btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnActualizar.setForeground(new java.awt.Color(51, 102, 255));
+        btnActualizar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        btnActualizar.setForeground(new java.awt.Color(0, 102, 153));
         btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/actualizar.png"))); // NOI18N
         btnActualizar.setText("Actualizar Tabla");
         btnActualizar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -82,25 +82,30 @@ public class frmPagoEquipo extends internalFrameImagen {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
         jLabel6.setText("Buscar");
 
-        jLabel1.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Pagos de Equipo");
 
-        jLabel3.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("Descripcion");
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("Fecha de pago");
 
         txtEquipo.setEditable(false);
 
-        jLabel4.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("Total a pagar");
 
-        btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnCancelar.setForeground(new java.awt.Color(51, 102, 255));
+        btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(0, 102, 153));
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -117,8 +122,8 @@ public class frmPagoEquipo extends internalFrameImagen {
             }
         });
 
-        btnAggEq.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnAggEq.setForeground(new java.awt.Color(51, 102, 255));
+        btnAggEq.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        btnAggEq.setForeground(new java.awt.Color(0, 102, 153));
         btnAggEq.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/nuevo.png"))); // NOI18N
         btnAggEq.setText("Agregar Nuevo Equipo");
         btnAggEq.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -164,13 +169,14 @@ public class frmPagoEquipo extends internalFrameImagen {
 
         jdFechaPago.setDateFormatString("yyyy-MM-dd");
 
-        jLabel2.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Equipo");
 
         txtDesc.setEditable(false);
 
-        btnRegistrar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnRegistrar.setForeground(new java.awt.Color(51, 102, 255));
+        btnRegistrar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        btnRegistrar.setForeground(new java.awt.Color(0, 102, 153));
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/pago.png"))); // NOI18N
         btnRegistrar.setText("Registrar");
         btnRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -181,7 +187,8 @@ public class frmPagoEquipo extends internalFrameImagen {
             }
         });
 
-        jLabel7.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("Estado");
 
         txtEstado.setEditable(false);
@@ -221,17 +228,8 @@ public class frmPagoEquipo extends internalFrameImagen {
                                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                         .addComponent(txtEstado, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addComponent(txtDesc, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                        .addGap(18, 55, Short.MAX_VALUE)
+                        .addGap(18, 47, Short.MAX_VALUE)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(80, 80, 80)
-                        .addComponent(btnRegistrar)
-                        .addGap(73, 73, 73)
-                        .addComponent(btnCancelar)
-                        .addGap(49, 49, 49)
-                        .addComponent(btnAggEq)
-                        .addGap(41, 41, 41)
-                        .addComponent(btnActualizar))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(354, 354, 354)
                         .addComponent(jLabel6)
@@ -239,8 +237,19 @@ public class frmPagoEquipo extends internalFrameImagen {
                         .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(46, 46, 46))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel1)
                 .addGap(279, 279, 279))
+            .addGroup(layout.createSequentialGroup()
+                .addGap(80, 80, 80)
+                .addComponent(btnRegistrar, javax.swing.GroupLayout.PREFERRED_SIZE, 107, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(59, 59, 59)
+                .addComponent(btnAggEq)
+                .addGap(41, 41, 41)
+                .addComponent(btnActualizar)
+                .addGap(65, 65, 65)
+                .addComponent(btnCancelar)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -275,18 +284,18 @@ public class frmPagoEquipo extends internalFrameImagen {
                                     .addComponent(jdFechaPago, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(13, 13, 13)
-                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(35, 35, 35)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnRegistrar)
-                            .addComponent(btnCancelar)
-                            .addComponent(btnAggEq)
-                            .addComponent(btnActualizar)))
+                                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 182, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addGap(35, 35, 35)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnRegistrar)
+                    .addComponent(btnCancelar)
+                    .addComponent(btnAggEq)
+                    .addComponent(btnActualizar))
+                .addContainerGap(59, Short.MAX_VALUE))
         );
 
         pack();

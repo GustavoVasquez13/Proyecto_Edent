@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2018-05-13 05:50:34.734
+-- Last modification date: 2018-05-16 18:30:10.985
 
 -- tables
 -- Table: AbonoCompra
@@ -82,14 +82,6 @@ CREATE TABLE DetalleIngresos (
     CONSTRAINT DetalleIngresos_pk PRIMARY KEY (id_ingresos)
 ) COMMENT 'aqui se registran los ingresos que tiene la clinica en consultas y venta de productos';
 
--- Table: DientesPacte
-CREATE TABLE DientesPacte (
-    id_diente int NOT NULL AUTO_INCREMENT,
-    num_diente char(5) NULL,
-    estado_diente varchar(25) NULL,
-    CONSTRAINT DientesPacte_pk PRIMARY KEY (id_diente)
-) COMMENT 'informacion sobre la dentadura del paciente';
-
 -- Table: Empleado
 CREATE TABLE Empleado (
     id_empleado int NOT NULL AUTO_INCREMENT,
@@ -112,7 +104,6 @@ CREATE TABLE Equipo (
     tipo_equipo varchar(50) NULL,
     estado_equipo varchar(50) NULL,
     descripcion_equipo varchar(150) NULL,
-    costo_equipo double(9,2) NULL,
     CONSTRAINT Equipo_pk PRIMARY KEY (id_equipo)
 ) COMMENT 'Equipo comprado para usos de la clinica';
 
@@ -139,7 +130,6 @@ CREATE TABLE MantoEquipo (
     id_manto int NOT NULL AUTO_INCREMENT,
     tipo_manto varchar(50) NULL,
     descripcion_manto varchar(150) NULL,
-    costo_manto double(9,2) NULL,
     Equipo_id_equipo int NOT NULL,
     CONSTRAINT MantoEquipo_pk PRIMARY KEY (id_manto)
 ) COMMENT 'esta tabla es para los gastos en mantenimiento de equipo';
@@ -163,9 +153,9 @@ CREATE TABLE PacienteN (
     direccion_pacte varchar(100) NULL,
     tel_pacte varchar(15) NULL,
     estado_paciente bool NULL,
-    DientesPacte_id_diente int NOT NULL,
     TipoPaciente_id_tipoPaciente int NOT NULL,
     edad int NOT NULL,
+    fecha date NULL,
     CONSTRAINT PacienteN_pk PRIMARY KEY (id_pacienteN)
 ) COMMENT 'guarda los datos generales de un paciente de categoria normal';
 
@@ -202,7 +192,6 @@ CREATE TABLE ReparacionClinica (
     id_raparaClinica int NOT NULL AUTO_INCREMENT,
     tipo_reparacion varchar(50) NULL,
     descrip_reparacion varchar(150) NULL,
-    costo_reparacion double(9,2) NULL,
     CONSTRAINT ReparacionClinica_pk PRIMARY KEY (id_raparaClinica)
 ) COMMENT 'enesta tabla se establecen las reparaciones y mantenimiento realizado a la clinica';
 
@@ -273,6 +262,17 @@ CREATE TABLE detalleCompra (
     Proveedores_id_proveedor int NOT NULL,
     CONSTRAINT detalleCompra_pk PRIMARY KEY (id_detalleCom)
 ) COMMENT 'esta tabla regista la compra de productos a los proveedores';
+
+-- Table: diente
+CREATE TABLE diente (
+    id_diente int NOT NULL AUTO_INCREMENT,
+    nombre_diente varchar(100) NULL,
+    ubicacion_diente varchar(100) NULL,
+    descripcion_diente varchar(100) NULL,
+    fecha date NULL,
+    PacienteN_id_pacienteN int NOT NULL,
+    CONSTRAINT diente_pk PRIMARY KEY (id_diente)
+) COMMENT 'ingresos por venta de algunos productos clinicos ';
 
 -- Table: ingresos_productos
 CREATE TABLE ingresos_productos (
@@ -411,10 +411,6 @@ ALTER TABLE HistorialPaciente ADD CONSTRAINT HistorialPaciente_Consulta FOREIGN 
 ALTER TABLE MantoEquipo ADD CONSTRAINT MantoEquipo_Equipo FOREIGN KEY MantoEquipo_Equipo (Equipo_id_equipo)
     REFERENCES Equipo (id_equipo);
 
--- Reference: PacienteN_DientesPacte (table: PacienteN)
-ALTER TABLE PacienteN ADD CONSTRAINT PacienteN_DientesPacte FOREIGN KEY PacienteN_DientesPacte (DientesPacte_id_diente)
-    REFERENCES DientesPacte (id_diente);
-
 -- Reference: PacienteN_TipoPaciente (table: PacienteN)
 ALTER TABLE PacienteN ADD CONSTRAINT PacienteN_TipoPaciente FOREIGN KEY PacienteN_TipoPaciente (TipoPaciente_id_tipoPaciente)
     REFERENCES TipoPaciente (id_tipoPaciente);
@@ -446,6 +442,10 @@ ALTER TABLE detalleCompra ADD CONSTRAINT detalleCompra_Proveedores FOREIGN KEY d
 -- Reference: detalleCompra_productos (table: detalleCompra)
 ALTER TABLE detalleCompra ADD CONSTRAINT detalleCompra_productos FOREIGN KEY detalleCompra_productos (productos_id_prodto)
     REFERENCES productos (id_prodto);
+
+-- Reference: diente_PacienteN (table: diente)
+ALTER TABLE diente ADD CONSTRAINT diente_PacienteN FOREIGN KEY diente_PacienteN (PacienteN_id_pacienteN)
+    REFERENCES PacienteN (id_pacienteN);
 
 -- Reference: pagoEquipo_Equipo (table: pagoEquipo)
 ALTER TABLE pagoEquipo ADD CONSTRAINT pagoEquipo_Equipo FOREIGN KEY pagoEquipo_Equipo (Equipo_id_equipo)

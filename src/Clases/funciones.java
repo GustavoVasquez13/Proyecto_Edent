@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package Clases;
 
 import formularios.*;
@@ -23,13 +18,13 @@ import javax.swing.JOptionPane;
 import org.apache.commons.codec.digest.DigestUtils;
 import org.apache.commons.lang3.RandomStringUtils;
 
-/**
- *
- * @author marvi
- */
 public class funciones {
     public String usu="edent.recuperacion@gmail.com";
     public String contra="h123456h";
+    private boolean presionoRecu = false;
+    conexionBD cc = new conexionBD();
+    Connection cn = cc.conectar();
+    
 //este metodo funciona para la recuperacion de la contraseña con el se envia el correo con contraseña nueva
  public void SendMail(String c,String m) {
         Properties props = new Properties();
@@ -57,9 +52,7 @@ public class funciones {
             throw new RuntimeException(e);
         }
     }
-  private boolean presionoRecu = false;
- conexionBD cc = new conexionBD();
-Connection cn = cc.conectar();
+ 
 //se verificac que el correo en el formulario recuperacion sea igual al de la base de datos para mandar el ususario y contraseña recuperado
     public void verificaCorreo(String correo) {
         try {
@@ -125,11 +118,13 @@ Connection cn = cc.conectar();
                 fr.setVisible(true);
             
             JOptionPane.showMessageDialog(null, "DEBE CREAR EL ADMINISTRADOR DEL SISTEMA");
-             formularios.FrmInstalacion form = new formularios.FrmInstalacion();
+            formularios.FrmInstalacion form = new formularios.FrmInstalacion();
             form.setResizable(false);
             form.toFront();
             form.setVisible(true);
             //form.setLocationRelativeTo();
+//            frmLogin login = new frmLogin();
+//            login.setVisible(false);
         }//cierre
     }
      public void verificausu(String nom,String apel,String us,String cont,String tip,String corre) {

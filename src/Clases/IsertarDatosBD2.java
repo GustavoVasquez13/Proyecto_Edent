@@ -106,7 +106,7 @@ public class IsertarDatosBD2 {
             pps.setDouble(1, costo);
             pps.setString(2, fecha);
             pps.executeUpdate();
-            JOptionPane.showMessageDialog(null, "DATOS DEL EMPLEADO GUARDADOS CORRECTAMENTE");
+            JOptionPane.showMessageDialog(null, "DATOS DEL MATERIAL GUARDADOS CORRECTAMENTE");
             con.closeBd();
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "PROBLEMAS AL REALIZAR EL PAGO DEL EMPLEADO "+e);
