@@ -215,4 +215,22 @@ public class IsertarDatosBD2 {
             con.closeBd();
         }  
     }
+    public void insertDiente(String id,String dient,String poc, String fecha,String descri){
+      try{
+            PreparedStatement pps = cn.prepareStatement("INSERT INTO `diente` (`nombre_diente`, `ubicacion_diente`, `descripcion_diente`,`fecha`, `PacienteN_id_pacienteN`)"
+                    +  "VALUES(?,?,?,?,?)");
+            pps.setString(1, dient);
+            pps.setString(2, poc);
+            pps.setString(3, descri);
+            pps.setString(4, fecha);
+            pps.setString(5, id);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "DIENTE GUARDADO");
+            con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL GUARDAR "+e);
+            con.closeBd();
+        }  
+    }
+    
 }

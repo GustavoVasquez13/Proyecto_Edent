@@ -48,6 +48,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem5 = new javax.swing.JMenuItem();
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
+        jMenuItem21 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -229,6 +230,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
             }
         });
         jMenu3.add(jMenuItem11);
+
+        jMenuItem21.setText("Agregar consulta");
+        jMenuItem21.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem21ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem21);
 
         jMenuBar1.add(jMenu3);
 
@@ -443,6 +452,12 @@ public void run() {
         pago.show();
     }//GEN-LAST:event_jMenuItem20ActionPerformed
 
+    private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
+consulta fr=new consulta();
+ Dpanel.add(fr);
+        fr.show();        // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem21ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -491,6 +506,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem20;
+    private javax.swing.JMenuItem jMenuItem21;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
