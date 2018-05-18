@@ -71,6 +71,7 @@ public class frmProducto extends internalFrameImagen {
 
             }
         ));
+        jtProd.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jtProd);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -151,7 +152,9 @@ public class frmProducto extends internalFrameImagen {
             String descripcion = txtDescripcion.getText().toUpperCase();
             InsertarDatosBD insertar = new InsertarDatosBD();
             insertar.insertProductos(nombre, descripcion);
-            limpiarTxt();       
+            limpiarTxt();
+            mostrarProd();
+            
         }else{
             JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del producto y su descripcion");
         }        

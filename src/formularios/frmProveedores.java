@@ -93,6 +93,7 @@ public class frmProveedores extends internalFrameImagen {
 
             }
         ));
+        jtProv.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jtProv);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -203,7 +204,8 @@ public class frmProveedores extends internalFrameImagen {
         String tel = txtTelefono.getText().toUpperCase();
         InsertarDatosBD insertar = new InsertarDatosBD();
         insertar.insertProveedor(nombre, direccion, correo, tel);
-        limpiarTxt();       
+        limpiarTxt();      
+        mostrarProv();
         }else{
             JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del proveedor y su telefono");
         }
