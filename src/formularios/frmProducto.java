@@ -251,7 +251,7 @@ public class frmProducto extends internalFrameImagen {
                 txtBuscarProd.setText(cadenaProv);
                 repaint();
                 trsFiltrarProd.setRowFilter(RowFilter.regexFilter(txtBuscarProd.getText(),1));
-                jtProd.getSelectionModel().setSelectionInterval(0,1);
+                jtProd.getSelectionModel().setSelectionInterval(0,0);
             }
         });
         trsFiltrarProd = new TableRowSorter(jtProd.getModel());
