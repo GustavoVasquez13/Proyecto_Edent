@@ -53,6 +53,9 @@ public class frm_indientes extends internalFrameImagen {
         btnGuardar = new javax.swing.JButton();
         btnsalir = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+
         jLabel1.setText("Elegir dientes");
 
         jpc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SUPERIOR", "INFERIOR", "LATERAL DERECHO", "LATERAL IZQUIERDO" }));
