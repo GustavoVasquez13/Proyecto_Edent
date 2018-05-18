@@ -119,7 +119,7 @@ public class IsertarDatosBD2 {
                         String entornod,String Consulta_id_consulta){
         try{
             PreparedStatement pps = cn.prepareStatement("insert into cefalometria(`articular`,`goniaco`,`impa`,`jarabak`,"
-                    + "`facial`,`is`,`ii`,`fhis`,`anb82`,`anb80`,`anb2`,`pals`,`pali`,`ptb`,`speeleve`,`speemoderada`,`speesvera`,`dsd`,`clasim`"
+                    + "`facial`,`is`,`ii`,`fhis`,`anb82`,`anb80`,`anb2`,`pals`,`pali`,`ptb`,`speeleve`,`speemoderada`,`speesvera`,`dsd`,`clasim`,"
                     + "`entornod`,`Consulta_id_consulta`) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
             pps.setString(1, articular);
             pps.setString(2, goniaco);
@@ -141,7 +141,7 @@ public class IsertarDatosBD2 {
             pps.setString(18, dsd);
             pps.setString(19, clasim);
             pps.setString(20, entornod);
-            pps.setString(21, "1");
+            pps.setString(21, Consulta_id_consulta);
             pps.executeUpdate();
             JOptionPane.showMessageDialog(null, "Datos Guardados Exitosamente");
             con.closeBd();
