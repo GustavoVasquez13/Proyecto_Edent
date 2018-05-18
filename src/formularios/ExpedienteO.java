@@ -1226,7 +1226,12 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     }//GEN-LAST:event_txtrocabadoActionPerformed
 
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
-    String articular=this.txtanguloA1.getText();
+        //validaciones
+        if (this.lblnombre.getText() == "" || this.lblapellido.getText() == ""|| this.lblid.getText() == ""){
+            JOptionPane.showMessageDialog(null, "Debe elegir un paciente");
+        }else{
+            
+               String articular=this.txtanguloA1.getText();
         String goniaco=this.txtanguloG1.getText();
         String impa=this.txtIMPA1.getText();
         String jarabak=this.txtJa1.getText();
@@ -1340,12 +1345,6 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         
         IsertarDatosBD2 insertar = new IsertarDatosBD2();
         insertar.insertartrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, f_faciales, f_intraorales, modelo_mx, modelo_md, rx_panoramica, rx_cefalometria, rx_incicivos, rx_rocabado, Consulta_id_consulta);
-        
-        
-        //validaciones
-        
-        if (this.lblnombre.equals("") || this.lblapellido.equals("") || this.lblid.equals("")){
-            JOptionPane.showMessageDialog(null, "Debe elegir un paciente");
         }
     }//GEN-LAST:event_btnguardarActionPerformed
 
