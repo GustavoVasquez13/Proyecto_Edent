@@ -71,6 +71,7 @@ public class frmProducto extends internalFrameImagen {
 
             }
         ));
+        jtProd.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jtProd);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
