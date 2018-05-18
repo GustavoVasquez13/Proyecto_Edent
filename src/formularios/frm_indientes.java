@@ -6,20 +6,23 @@
 package formularios;
 
 import Clases.IsertarDatosBD2;
-
+import Clases.internalFrameImagen;
+import static formularios.frmPrincipal.Dpanel;
 
 
 /**
  *
  * @author marvi
  */
-public class frm_indientes extends javax.swing.JInternalFrame {
+public class frm_indientes extends internalFrameImagen {
 
     /**
      * Creates new form frm_indientes
      */
     public frm_indientes() {
         initComponents();
+       setImagenw("img2.jpg");
+
     }
 
     /**
