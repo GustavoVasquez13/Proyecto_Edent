@@ -132,4 +132,38 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+    //metodo para actualoizar productos
+    public void ActualizarProd(String nomb,String desc, int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update productos set `nombre_prodto`=?,"
+                    + "`descripcion_prodto`=? where id_prodto='"+code+"';");
+            pst.setString(1, nomb);
+            pst.setString(2, desc);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Producto actiualizado correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al actualizar los datos del producto  "+ex);
+            con.closeBd();
+        }
+    }
+    
+    //metodo para actualoizar proveedores
+    public void ActualizarProvee(String nomb,String direc, String correo, String tel, int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update proveedores set `nombre_prov`=?,"
+                    + "`direccion_prov`=?, `correo_prov`=?,`tel_prov`=?  where id_proveedor='"+code+"';");
+            pst.setString(1, nomb);
+            pst.setString(2, direc);
+            pst.setString(3, correo);
+            pst.setString(4, tel);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Proveedor actiualizado correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al actualizar los datos del proveedor  "+ex);
+            con.closeBd();
+        }
+    }
 }
