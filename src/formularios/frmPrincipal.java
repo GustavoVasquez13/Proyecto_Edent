@@ -5,6 +5,7 @@ import FormulariosPagos.frmPagoEquipo;
 import FormulariosPagos.frmPagoMateriales;
 import FormulariosPagos.frmPagoReparacion;
 import Vistas.frmVistaEmpleado;
+import Vistas.frmVistaPagos;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -54,6 +55,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenu5 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem19 = new javax.swing.JMenuItem();
+        jMenuItem20 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
@@ -276,6 +278,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu5.add(jMenuItem19);
 
+        jMenuItem20.setText("Vista Pagos");
+        jMenuItem20.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem20ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem20);
+
         jMenuBar1.add(jMenu5);
 
         setJMenuBar(jMenuBar1);
@@ -427,6 +437,12 @@ public void run() {
         Emp.show();
     }//GEN-LAST:event_jMenuItem19ActionPerformed
 
+    private void jMenuItem20ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem20ActionPerformed
+        frmVistaPagos pago = new frmVistaPagos();
+        Dpanel.add(pago);
+        pago.show();
+    }//GEN-LAST:event_jMenuItem20ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -474,6 +490,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem18;
     private javax.swing.JMenuItem jMenuItem19;
     private javax.swing.JMenuItem jMenuItem2;
+    private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
