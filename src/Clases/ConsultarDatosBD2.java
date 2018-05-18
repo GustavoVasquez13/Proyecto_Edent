@@ -16,7 +16,7 @@ public class ConsultarDatosBD2 {
     //este metodo muestra en una tabla del formulario frmmateriales los datos de un material ingresado
     public DefaultTableModel mostrarM(){
        DefaultTableModel modelo;
-       String[] titulos = {"NOMBRE","DESCRIPCION","TIPO","CANTIDAD","COSTO"};
+       String[] titulos = {"NOMBRE","DESCRIPCION","TIPO","CANTIDAD","COSTO UNITARIO"};
        String[] registros = new String[5];
        totalRegistros = 0;
        
