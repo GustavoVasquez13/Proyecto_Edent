@@ -93,6 +93,7 @@ public class frmProveedores extends internalFrameImagen {
 
             }
         ));
+        jtProv.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jtProv);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
