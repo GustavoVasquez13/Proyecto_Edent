@@ -68,16 +68,16 @@
                       <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
                       <Component id="txtdireccion" min="-2" pref="531" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="290" pref="290" max="-2" attributes="0"/>
                       <Component id="btnGuardar" min="-2" pref="60" max="-2" attributes="0"/>
                       <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
                       <Component id="btnsalir" min="-2" pref="60" max="-2" attributes="0"/>
-                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
                       <Component id="btcon" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="20" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="jSeparator2" min="-2" pref="10" max="-2" attributes="0"/>
                   <Component id="jSeparator1" min="-2" max="-2" attributes="0"/>
@@ -98,31 +98,35 @@
           <Group type="102" attributes="0">
               <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
               <Component id="lbltitulo" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="fecha" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbltelefono" min="-2" max="-2" attributes="0"/>
-                  <Component id="txttelefono" min="-2" max="-2" attributes="0"/>
-                  <Component id="lbledad" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtedad" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="txtnombre" min="-2" max="-2" attributes="0"/>
-                  <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtapellido" min="-2" max="-2" attributes="0"/>
-                  <Component id="txttip" min="-2" pref="10" max="-2" attributes="0"/>
-                  <Component id="lbtipoo" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-              <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
-              <Component id="txtdireccion" min="-2" pref="53" max="-2" attributes="0"/>
-              <EmptySpace min="47" pref="47" max="-2" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="btnGuardar" min="-2" pref="60" max="-2" attributes="0"/>
-                  <Component id="btnsalir" min="-2" pref="60" max="-2" attributes="0"/>
                   <Group type="102" attributes="0">
-                      <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
+                      <EmptySpace min="38" pref="38" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="fecha" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbltelefono" min="-2" max="-2" attributes="0"/>
+                          <Component id="txttelefono" min="-2" max="-2" attributes="0"/>
+                          <Component id="lbledad" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtedad" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace min="20" pref="20" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="txtnombre" min="-2" max="-2" attributes="0"/>
+                          <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
+                          <Component id="txtapellido" min="-2" max="-2" attributes="0"/>
+                          <Component id="txttip" min="-2" pref="10" max="-2" attributes="0"/>
+                          <Component id="lbtipoo" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jButton1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace min="7" pref="7" max="-2" attributes="0"/>
+                      <Component id="txtdireccion" min="-2" pref="53" max="-2" attributes="0"/>
+                      <EmptySpace min="47" pref="47" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="btnGuardar" min="-2" pref="60" max="-2" attributes="0"/>
+                          <Component id="btnsalir" min="-2" pref="60" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="268" max="-2" attributes="0"/>
                       <Component id="btcon" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
@@ -266,6 +270,9 @@
     </Component>
     <Component class="javax.swing.JButton" name="btcon">
       <Properties>
+        <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+          <Image iconType="3" name="/iconos/consulta.png"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Agregar consulta"/>
       </Properties>
       <Events>
