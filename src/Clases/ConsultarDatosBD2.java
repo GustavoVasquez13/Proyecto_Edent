@@ -220,4 +220,33 @@ public class ConsultarDatosBD2 {
             return null;
         }
     }
+    
+    //este metodo muestra en una tabla del formulario frmmateriales los datos de un material ingresado
+    public DefaultTableModel mostrarPago(String tipo,String consulta,String tipoP,String costo,String fecha){
+       DefaultTableModel modelo;
+       String[] titulos = {tipo,"TOTAL PAGADO","FECHA DE PAGO"};
+       String[] registros = new String[3];
+
+       modelo = new DefaultTableModel(null,titulos);
+//       sSQL = "select nombre_servicio,costo_servicio,fechaPago_servicio from serviciobasico " +
+//                "inner join tiposervicio on TipoServicio_id_tipoServicio=id_tipoServicio;";
+       
+       try{
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(consulta);
+           while(rs.next()){
+               registros[0] = rs.getString(tipoP);
+               registros[1] = rs.getString(costo);
+               registros[2] = rs.getString(fecha);
+
+               modelo.addRow(registros);
+           }
+           con.closeBd();
+           return modelo;
+       }catch(Exception e){
+           JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE PAGOS");
+           con.closeBd();
+           return null;
+       }
+    }
 }
