@@ -151,7 +151,9 @@ public class frmProducto extends internalFrameImagen {
             String descripcion = txtDescripcion.getText().toUpperCase();
             InsertarDatosBD insertar = new InsertarDatosBD();
             insertar.insertProductos(nombre, descripcion);
-            limpiarTxt();       
+            limpiarTxt();
+            mostrarProd();
+            
         }else{
             JOptionPane.showMessageDialog(null, "Debe Ingresar El nombre del producto y su descripcion");
         }        
