@@ -68,11 +68,6 @@ public class frmVistaPagos extends internalFrameImagen {
         jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Pagos Realizados");
 
-        jtPagos = new javax.swing.JTable(){
-            public boolean isCellEditable(int fila, int columna){
-                return false;
-            }
-        };
         jtPagos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
@@ -111,8 +106,6 @@ public class frmVistaPagos extends internalFrameImagen {
         });
 
         txtTotal.setEditable(false);
-        txtTotal.setForeground(new java.awt.Color(204, 0, 0));
-        txtTotal.setFont(new java.awt.Font("Baskerville Old Face", 1, 18)); // NOI18N
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 153));
@@ -157,14 +150,14 @@ public class frmVistaPagos extends internalFrameImagen {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(243, 243, 243))
+                .addGap(263, 263, 263))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(21, 21, 21)
                 .addComponent(jLabel1)
-                .addGap(48, 48, 48)
+                .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(cmbTipoPago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
