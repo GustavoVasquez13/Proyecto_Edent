@@ -170,6 +170,7 @@ public class frmPagoMateriales extends internalFrameImagen {
 
         txtNombre.setEditable(false);
 
+        txtTotalPago.setEditable(false);
         txtTotalPago.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTotalPagoKeyTyped(evt);
@@ -377,7 +378,6 @@ public class frmPagoMateriales extends internalFrameImagen {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnActualizar;
     private javax.swing.JButton btnAggMaterial;
-    private javax.swing.JButton btnAyuda;
     private javax.swing.JButton btnAyuda1;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btnRegistrar;
