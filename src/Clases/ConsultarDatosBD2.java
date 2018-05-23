@@ -249,4 +249,6 @@ public class ConsultarDatosBD2 {
            return null;
        }
     }
+    
+
 }
