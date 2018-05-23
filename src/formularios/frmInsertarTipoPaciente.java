@@ -168,6 +168,15 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
             ExpedienteGeneral.txttip.setText(cod);
             ExpedienteGeneral.lbtipoo.setText(nombre);
             this.dispose();
+            ExpedienteGeneral.fecha.setEnabled(true);
+            ExpedienteGeneral.txtedad.setEnabled(true);
+            ExpedienteGeneral.txttelefono.setEnabled(true);
+            ExpedienteGeneral.txtnombre.setEnabled(true);
+            ExpedienteGeneral.txtapellido.setEnabled(true);
+            ExpedienteGeneral.txtdireccion.setEnabled(true);
+//            ExpedienteGeneral.btneditar.setEnabled(true);
+            ExpedienteGeneral.btnbuscaredicion.setEnabled(true);
+            ExpedienteGeneral.btnGuardar.setEnabled(true);
         }         
             
           
