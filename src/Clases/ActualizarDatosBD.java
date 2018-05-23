@@ -166,4 +166,23 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+    //metodo para actualizar equipo
+    public void ActualizarPacienteG(String nombre,String apellido,String direccion,String telefono,String edad,int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update pacienten set `nombre_pacte`=?,"
+                    + "`apellido_pacte`=?,`direccion_pacte`=?,`tel_pacte`=?,`edad`=? where id_pacienteN='"+code+"';");
+            pst.setString(1, nombre);
+            pst.setString(2, apellido);
+            pst.setString(3, direccion);
+            pst.setString(4, telefono);
+            pst.setString(5, edad);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al Actualizar los datos de Servicio  "+ex);
+            con.closeBd();
+        }
+    }
 }
