@@ -6,6 +6,7 @@ import FormulariosPagos.frmPagoMateriales;
 import FormulariosPagos.frmPagoReparacion;
 import Vistas.frmVistaEmpleado;
 import Vistas.frmVistaPagos;
+import backupBD.fr_backup;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -57,6 +58,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem19 = new javax.swing.JMenuItem();
         jMenuItem20 = new javax.swing.JMenuItem();
+        back = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
@@ -295,6 +297,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu5.add(jMenuItem20);
 
+        back.setText("Backup");
+        back.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                backActionPerformed(evt);
+            }
+        });
+        jMenu5.add(back);
+
         jMenuBar1.add(jMenu5);
 
         setJMenuBar(jMenuBar1);
@@ -458,6 +468,12 @@ consulta fr=new consulta();
         fr.show();        // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 
+    private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
+     fr_backup fr=new fr_backup();
+ Dpanel.add(fr);
+        fr.show();   // TODO add your handling code here:
+    }//GEN-LAST:event_backActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -487,6 +503,7 @@ consulta fr=new consulta();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JDesktopPane Dpanel;
+    private javax.swing.JMenuItem back;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
