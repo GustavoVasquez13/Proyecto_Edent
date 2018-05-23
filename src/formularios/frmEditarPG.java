@@ -158,6 +158,7 @@ private void mostrarpacientes() {
             ExpedienteGeneral.txttelefono.setText(telefono);
             ExpedienteGeneral.txtdireccion.setText(direccion);
             this.dispose();
+             ExpedienteGeneral.btneditar.setEnabled(true);
         }
     }//GEN-LAST:event_jtPacientesMousePressed
 
