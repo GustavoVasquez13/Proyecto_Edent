@@ -115,7 +115,7 @@ public class IsertarDatosBD2 {
     }
     
     public void insertor(String articular,String goniaco,String impa,String jarabak,String facial,String is,String ii,String fhis,String anb82,String anb80,
-                        String anb2,String pals,String pali,String ptb,String speeleve,String speemoderada,String speesvera,String dsd,String clasim,
+                        String anb2,String pals,String pali,String ptb,int speeleve,int speemoderada,int speesvera,String dsd,String clasim,
                         String entornod,String Consulta_id_consulta){
         try{
             PreparedStatement pps = cn.prepareStatement("insert into cefalometria(`articular`,`goniaco`,`impa`,`jarabak`,"
@@ -135,9 +135,9 @@ public class IsertarDatosBD2 {
             pps.setString(12, pals);
             pps.setString(13, pali);
             pps.setString(14, ptb);
-            pps.setString(15, speeleve);
-            pps.setString(16, speemoderada);
-            pps.setString(17, speesvera);
+            pps.setInt(15, speeleve);
+            pps.setInt(16, speemoderada);
+            pps.setInt(17, speesvera);
             pps.setString(18, dsd);
             pps.setString(19, clasim);
             pps.setString(20, entornod);
@@ -231,6 +231,38 @@ public class IsertarDatosBD2 {
             JOptionPane.showMessageDialog(null, "PROBLEMAS AL GUARDAR "+e);
             con.closeBd();
         }  
+    }
+    
+     public void insertartrata(String bandas,String tubos,String otros,String aparato,String exodoncia,String brackets,String retenciones,String arcos,String md,int f_faciales,
+                        int f_intraorales,int modelo_mx,int modelo_md,int rx_panoramica,int rx_cefalometrica,int rx_incicivos,String rx_rocabado,String Consulta_id_consulta){
+        try{
+            PreparedStatement pps = cn.prepareStatement("insert into plan_trata_ortodon(`bandas`,`tubos`,`otros`,`aparato`,"
+                    + "`exodoncia`,`brackets`,`retenciones`,`arcos`,`md`,`f_faciales`,`f_intraorales`,`modelo_mx`,`modelo_md`,`rx_panoramica`,`rx_cefalometrica`,`rx_incicivos`,`rx_rocabado`,`Consulta_id_consulta`) values(?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)");
+            pps.setString(1, bandas);
+            pps.setString(2, tubos);
+            pps.setString(3, otros);
+            pps.setString(4, aparato);
+            pps.setString(5, exodoncia);
+            pps.setString(6, brackets);
+            pps.setString(7, retenciones);
+            pps.setString(8, arcos);
+            pps.setString(9, md);
+            pps.setInt(10, f_faciales);
+            pps.setInt(11, f_intraorales);
+            pps.setInt(12, modelo_mx);
+            pps.setInt(13, modelo_md);
+            pps.setInt(14, rx_panoramica);
+            pps.setInt(15, rx_cefalometrica);
+            pps.setInt(16, rx_incicivos);
+            pps.setString(17, rx_rocabado);
+            pps.setString(18, Consulta_id_consulta);
+            pps.executeUpdate();
+            JOptionPane.showMessageDialog(null, "Datos Guardados Exitosamente1");
+            con.closeBd();
+        }catch(Exception e){
+            JOptionPane.showMessageDialog(null, "Problemas al ingresar los datos "+e);
+            con.closeBd();
+        }
     }
     
 }

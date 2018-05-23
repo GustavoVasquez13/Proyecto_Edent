@@ -8,6 +8,7 @@ package formularios;
 import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
 import static formularios.frmPrincipal.Dpanel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -139,7 +140,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator33 = new javax.swing.JSeparator();
         jSeparator67 = new javax.swing.JSeparator();
         chmodelo = new javax.swing.JCheckBox();
-        chfaciales1 = new javax.swing.JCheckBox();
+        chfaciales = new javax.swing.JCheckBox();
         chpanoramica = new javax.swing.JCheckBox();
         chintraorales = new javax.swing.JCheckBox();
         jSeparator68 = new javax.swing.JSeparator();
@@ -449,7 +450,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         chmodelo.setText("Modelo mx ");
 
-        chfaciales1.setText("Faciales");
+        chfaciales.setText("Faciales");
 
         chpanoramica.setText("Panoramica");
 
@@ -573,49 +574,50 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                                 .addGap(10, 10, 10)
                                 .addComponent(jLabel84, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(110, 110, 110)
-                                .addComponent(chmodelo, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addComponent(jLabel85, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jSeparator31, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(100, 100, 100)
-                                .addComponent(jSeparator67, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(200, 200, 200)
-                                .addComponent(jSeparator33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(210, 210, 210)
-                                .addComponent(chintraorales, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(110, 110, 110)
-                                .addComponent(chfaciales1))
-                            .addGroup(layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addComponent(jLabel87, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jSeparator29, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(320, 320, 320)
-                                .addComponent(chincicivos, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(310, 310, 310)
-                                .addComponent(jSeparator68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(110, 110, 110)
-                                .addComponent(chpanoramica, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(10, 10, 10)
                                 .addComponent(jLabel86, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(210, 210, 210)
-                                .addComponent(chmodeloMD, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(210, 210, 210)
-                                .addComponent(chcefalometrica, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addComponent(jSeparator30, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jSeparator32, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jSeparator32, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(100, 100, 100)
+                                .addComponent(jSeparator67, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(8, 8, 8)
+                                        .addComponent(chmodelo, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(98, 98, 98)
+                                        .addComponent(jSeparator33, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(108, 108, 108)
+                                        .addComponent(chintraorales, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(8, 8, 8)
+                                        .addComponent(chfaciales))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(218, 218, 218)
+                                        .addComponent(chincicivos, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(208, 208, 208)
+                                        .addComponent(jSeparator68, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(8, 8, 8)
+                                        .addComponent(chpanoramica, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(108, 108, 108)
+                                        .addComponent(chmodeloMD, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(108, 108, 108)
+                                        .addComponent(chcefalometrica, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                         .addComponent(jSeparator69, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(76, 76, 76)
@@ -854,7 +856,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(lbnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
                                 .addComponent(lbapellido, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE))))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap()
@@ -1101,9 +1103,6 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                             .addGroup(layout.createSequentialGroup()
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(90, 90, 90)
-                                        .addComponent(jSeparator70, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
                                         .addGap(40, 40, 40)
                                         .addComponent(jLabel84))
                                     .addGroup(layout.createSequentialGroup()
@@ -1112,13 +1111,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(60, 60, 60)
                                         .addComponent(jSeparator31, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(100, 100, 100)
-                                        .addComponent(jLabel87))
                                     .addComponent(jSeparator29, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(130, 130, 130)
-                                        .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(70, 70, 70)
                                         .addComponent(jLabel86))
@@ -1127,16 +1120,26 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                                         .addComponent(jSeparator30, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addComponent(jSeparator32, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addGap(100, 100, 100)
+                                        .addComponent(jSeparator67, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(10, 10, 10)
                                         .addComponent(txtrocabado, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(30, 30, 30)
                                         .addComponent(chmodelo))
-                                    .addComponent(jSeparator67, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(chfaciales1)
+                                    .addComponent(chfaciales)
                                     .addGroup(layout.createSequentialGroup()
                                         .addGap(60, 60, 60)
-                                        .addComponent(chpanoramica)))
+                                        .addComponent(chpanoramica))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(90, 90, 90)
+                                        .addComponent(jSeparator70, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(8, 8, 8)
+                                                .addComponent(jLabel87))
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(38, 38, 38)
+                                                .addComponent(jSeparator3, javax.swing.GroupLayout.PREFERRED_SIZE, 10, javax.swing.GroupLayout.PREFERRED_SIZE)))))
                                 .addGap(18, 18, 18)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                                     .addComponent(btnguardar, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -1144,7 +1147,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                     .addGroup(layout.createSequentialGroup()
                         .addGap(60, 60, 60)
                         .addComponent(jSeparator69, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(24, Short.MAX_VALUE))
+                .addContainerGap(26, Short.MAX_VALUE))
         );
 
         pack();
@@ -1223,7 +1226,12 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     }//GEN-LAST:event_txtrocabadoActionPerformed
 
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
-        String articular=this.txtanguloA1.getText();
+        //validaciones
+        if (this.lblnombre.getText() == "" || this.lblapellido.getText() == ""|| this.lblid.getText() == ""){
+            JOptionPane.showMessageDialog(null, "Debe elegir un paciente");
+        }else{
+            
+               String articular=this.txtanguloA1.getText();
         String goniaco=this.txtanguloG1.getText();
         String impa=this.txtIMPA1.getText();
         String jarabak=this.txtJa1.getText();
@@ -1238,16 +1246,106 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         String pali=this.txtPALI.getText();
         String ptb=this.txtPTB.getText();
         String Consulta_id_consulta = this.lbid.getText();
-        String speeleve=null;
-        String speemoderada=null;
-        String speesvera=null;
-        String dsd=null;
-        String clasim=null;
-        String entornod=null;
+        int seleccion = 0;
+        if(this.chcurvaleve1.isSelected()== true ) {
+             seleccion = 1;
+            }else{
+            seleccion = 0;
+        }
+        int speeleve= seleccion;
+         int seleccion1 = 0;
+        if(this.chcurvamoderada1.isSelected()== true ) {
+             seleccion1 = 1;
+            }else{
+            seleccion1 = 0;
+        }
+        int speemoderada= seleccion1;
+          int seleccion2 = 0;
+        if(this.chcurvasevera.isSelected()== true ) {
+             seleccion2 = 1;
+            }else{
+            seleccion2 = 0;
+        }
+        int speesvera= seleccion2;
+        String dsd= this.txtDSD.getText();
+        String clasim= this.txtmaxilares.getText();
+        String entornod= this.txtEntornoD.getText();
       
         IsertarDatosBD2 insertar2 = new IsertarDatosBD2();
         insertar2.insertor(articular,goniaco,impa,jarabak,facial,is,ii,fhis,anb82,anb80,anb2,pals,pali,ptb,speeleve,speemoderada,speesvera,
                     dsd,clasim,entornod,Consulta_id_consulta);
+        
+        
+        String bandas = this.txtbandas.getText();
+        String tubos = this.txttubos.getText();
+        String otros = this.txtotros.getText();
+        String aparato = this.txtAparato.getText();
+        String exodoncia = this.txtexodoncia.getText();
+        String brackets = this.txtBrakets.getText();
+        String retenciones = this.txtRetenciones.getText();
+        String arcos = this.txtsecuencia.getText();
+        String md = this.txtMD.getText();
+        //validacion chfaciales
+        int seleccion3 = 0;
+        if(this.chfaciales.isSelected()== true ) {
+             seleccion3 = 1;
+            }else{
+            seleccion3 = 0;
+        }
+        int f_faciales= seleccion3;
+        // validaciones chintraorales
+        int seleccion4 = 0;
+        if(this.chintraorales.isSelected()== true ) {
+             seleccion4 = 1;
+            }else{
+            seleccion4 = 0;
+        }
+        int f_intraorales = seleccion4;
+        //validacion chmodelo
+        int seleccion5 = 0;
+        if(this.chmodelo.isSelected()== true ) {
+             seleccion5 = 1;
+            }else{
+            seleccion5 = 0;
+        }
+        int modelo_mx = seleccion5;
+        //validacion chmodeloMD
+        int seleccion6 = 0;
+        if(this.chmodeloMD.isSelected()== true ) {
+             seleccion6 = 1;
+            }else{
+            seleccion6 = 0;
+        }
+        int modelo_md = seleccion6;
+        //validacion chpanoramica
+        int seleccion7 = 0;
+        if(this.chpanoramica.isSelected()== true ) {
+             seleccion7 = 1;
+            }else{
+            seleccion7 = 0;
+        }
+        int rx_panoramica = seleccion7;
+        //validacion chcefalometrica
+        int seleccion8 = 0;
+        if(this.chcefalometrica.isSelected()== true ) {
+             seleccion8 = 1;
+            }else{
+            seleccion8 = 0;
+        }
+        int rx_cefalometria = seleccion8;
+        //validacion chincicivos
+         int seleccion9 = 0;
+        if(this.chincicivos.isSelected()== true ) {
+             seleccion9 = 1;
+            }else{
+            seleccion9 = 0;
+        }
+        int rx_incicivos = seleccion9;
+        String rx_rocabado = this.txtrocabado.getText();
+        
+        IsertarDatosBD2 insertar = new IsertarDatosBD2();
+        insertar.insertartrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, f_faciales, f_intraorales, modelo_mx, modelo_md, rx_panoramica, rx_cefalometria, rx_incicivos, rx_rocabado, Consulta_id_consulta);
+        }
     }//GEN-LAST:event_btnguardarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
@@ -1269,7 +1367,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     private javax.swing.JCheckBox chcurvaleve1;
     private javax.swing.JCheckBox chcurvamoderada1;
     private javax.swing.JCheckBox chcurvasevera;
-    private javax.swing.JCheckBox chfaciales1;
+    private javax.swing.JCheckBox chfaciales;
     private javax.swing.JCheckBox chincicivos;
     private javax.swing.JCheckBox chintraorales;
     private javax.swing.JCheckBox chmodelo;

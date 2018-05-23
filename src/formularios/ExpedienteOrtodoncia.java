@@ -11,6 +11,7 @@ import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
 import java.util.Calendar;
+import javax.swing.JOptionPane;
 
 
 
@@ -1023,7 +1024,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         btnsalir = new javax.swing.JButton();
         btnsiguiente = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
-        lbtipoo = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
@@ -6314,9 +6314,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         });
         getContentPane().add(txttip, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 270, 0, 10));
 
-        lbtipoo.setText("el tipo de paciente es:");
-        getContentPane().add(lbtipoo, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 170, 160, -1));
-
         txttip2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txttip2ActionPerformed(evt);
@@ -8475,18 +8472,10 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         txtedad.setText("");
     }
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
-      // se crean variables para guardar en ellas los datos recibidos de los jtextfield
-//      String nombre = this.txtnombre.getText().toUpperCase();
-//      String apellido = this.txtapellido.getText().toUpperCase();
-//      String direccion = this.txtdirección.getText().toUpperCase();
-//      String telefono = this.txttelefono.getText().toUpperCase();
-//      String edad = this.txtedad.getText();
-      String tip=this.txttip.getText();
-//      //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
-//      //a la clase los parametros obtenidos por los jtextfield
-//      InsertarDatosBD insertar = new InsertarDatosBD();
-//      insertar.insertarPacienteO(nombre, apellido, direccion, telefono, edad,tip);
-      
+     if (this.txtnombre.getText().length() == 0 || this.txtapellido.getText().length() == 0|| this.txtedad.getText().length() == 0){
+            JOptionPane.showMessageDialog(null, "Debe elegir un paciente");
+            }else{
+          String tip=this.txttip.getText();
       String motivo = this.txtMotivoC.getText().toUpperCase();
       String historiam = this.txtHistoriaM.getText().toUpperCase();
       String historiao = this.txtHistoriaO.getText().toUpperCase();
@@ -8504,7 +8493,10 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
       IsertarDatosBD2 insertar2 = new IsertarDatosBD2();
       insertar2.insertarPacienteOC(motivo, date, historiam, historiao, examen, dx,tip);
       //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
-      limpiarTxt();
+      limpiarTxt();  
+     }
+     
+     
     }//GEN-LAST:event_btnguardarActionPerformed
 
     private void txtDXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDXActionPerformed
@@ -9511,7 +9503,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     private javax.swing.JLabel lblnombre5;
     private javax.swing.JLabel lbltelefono;
     private javax.swing.JLabel lbltelefono1;
-    private javax.swing.JLabel lbtipoo;
     private javax.swing.JTextField txtANB3;
     private javax.swing.JTextField txtANB81;
     private javax.swing.JTextField txtANB83;
