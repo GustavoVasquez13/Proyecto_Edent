@@ -4,6 +4,8 @@ import Clases.ConsultarDatosBD2;
 import Clases.internalFrameImagen;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
@@ -17,6 +19,8 @@ public class frmVistaPagos extends internalFrameImagen {
         initComponents();
         setImagenw("img2.jpg");
         //mostrarPago("SERVICIO");
+        this.jdinicio.setDate(null);
+        this.jdfin.setDate(null);
     }
 
     private void mostrarPago(String tipo,String consulta,String tipoP,String costo,String fecha){
@@ -60,13 +64,17 @@ public class frmVistaPagos extends internalFrameImagen {
         jLabel3 = new javax.swing.JLabel();
         txtBuscar = new javax.swing.JTextField();
         jLabel11 = new javax.swing.JLabel();
+        jdinicio = new com.toedter.calendar.JDateChooser();
+        jdfin = new com.toedter.calendar.JDateChooser();
+        jLabel12 = new javax.swing.JLabel();
+        jLabel13 = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel1.setText("Pagos Realizados");
+        jLabel1.setText("Mostrar Pagos Realizados");
 
         jtPagos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -121,6 +129,18 @@ public class frmVistaPagos extends internalFrameImagen {
         jLabel11.setForeground(new java.awt.Color(0, 102, 153));
         jLabel11.setText("Buscar");
 
+        jdinicio.setDateFormatString("yyyy-MM-dd");
+
+        jdfin.setDateFormatString("yyyy-MM-dd");
+
+        jLabel12.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel12.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel12.setText("Fecha Inicio");
+
+        jLabel13.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel13.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel13.setText("Fecha Fin");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -135,92 +155,155 @@ public class frmVistaPagos extends internalFrameImagen {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnCancelar))
                     .addGroup(layout.createSequentialGroup()
-                        .addContainerGap(64, Short.MAX_VALUE)
+                        .addContainerGap(42, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 601, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 635, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel11)
-                                .addGap(12, 12, 12)
-                                .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(18, 18, 18)
-                                .addComponent(jLabel2)
-                                .addGap(18, 18, 18)
-                                .addComponent(cmbTipoPago, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel11)
+                                        .addGap(12, 12, 12))
+                                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                        .addComponent(jLabel12)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)))
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jdinicio, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                        .addComponent(jLabel13)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(jdfin, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 171, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(jLabel2)
+                                        .addGap(18, 18, 18)
+                                        .addComponent(cmbTipoPago, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                 .addGap(44, 44, 44))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGap(0, 0, Short.MAX_VALUE)
                 .addComponent(jLabel1)
-                .addGap(263, 263, 263))
+                .addGap(217, 217, 217))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(21, 21, 21)
+                .addGap(19, 19, 19)
                 .addComponent(jLabel1)
-                .addGap(38, 38, 38)
+                .addGap(18, 18, 18)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(cmbTipoPago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel2))
-                    .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(1, 1, 1)
-                        .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 225, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 40, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnCancelar)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                        .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel3)))
-                .addGap(21, 21, 21))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(jdinicio, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(18, 18, 18)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(cmbTipoPago, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel2))
+                            .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(btnCancelar)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel3)))
+                        .addGap(21, 21, 21))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(jdfin, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-
+        
     private void cmbTipoPagoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cmbTipoPagoActionPerformed
+        SimpleDateFormat formatofecha = new SimpleDateFormat("yyyy-MM-dd");
+        Date fInicio = ((this.jdinicio.getDate()));
+        Date fFin = ((this.jdfin.getDate()));
         if(this.cmbTipoPago.getSelectedItem().toString()=="SERVICIOS BASICOS"){
             String serv = "SERVICIO";
             String Servicio="nombre_servicio";
             String costo="costo_servicio";
             String fecha="fechaPago_servicio";
-            String sSQL = "select nombre_servicio,costo_servicio,fechaPago_servicio from serviciobasico " +
-                "inner join tiposervicio on TipoServicio_id_tipoServicio=id_tipoServicio;";
-            mostrarPago(serv,sSQL,Servicio,costo,fecha);
+            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+                String sSQL = "select nombre_servicio,costo_servicio,fechaPago_servicio from serviciobasico " +
+                    "inner join tiposervicio on TipoServicio_id_tipoServicio=id_tipoServicio;";
+                mostrarPago(serv,sSQL,Servicio,costo,fecha);
+            }else{
+                String sSQL = "select nombre_servicio,costo_servicio,fechaPago_servicio from serviciobasico " +
+                "inner join tiposervicio on TipoServicio_id_tipoServicio=id_tipoServicio "
+                        + "where fechaPago_servicio BETWEEN CAST('"+formatofecha.format(fInicio)+"' AS DATE) AND CAST('"+formatofecha.format(fFin)+"' AS DATE);";
+                mostrarPago(serv,sSQL,Servicio,costo,fecha);
+            }
         }else if(this.cmbTipoPago.getSelectedItem().toString()=="MATERIALES"){
             String mater = "MATERIAL";
             String material="nombre_material";
             String costo="pagomateriales.costo_material";
             String fecha="fechaPago_material";
-            String sSQL = "select nombre_material,pagomateriales.costo_material,fechaPago_material from pagomateriales\n" +
-                            "inner join  materiales on Materiales_id_material=id_material;";
-            mostrarPago(mater,sSQL,material,costo,fecha);
+            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+                String sSQL = "select nombre_material,pagomateriales.costo_material,fechaPago_material from pagomateriales\n" +
+                                "inner join  materiales on Materiales_id_material=id_material;";
+                mostrarPago(mater,sSQL,material,costo,fecha);
+            }else{
+                String sSQL = "select nombre_material,pagomateriales.costo_material,fechaPago_material from pagomateriales\n" +
+                            "inner join  materiales on Materiales_id_material=id_material "
+                       + "where fechaPago_material BETWEEN CAST('"+formatofecha.format(fInicio)+"' AS DATE) AND CAST('"+formatofecha.format(fFin)+"' AS DATE);";
+                mostrarPago(mater,sSQL,material,costo,fecha); 
+            }
+            
         }else if(this.cmbTipoPago.getSelectedItem().toString()=="EMPLEADOS"){
             String emple = "EMPLEADO";
             String emplea="nombre_empl";
             String costo="pagoempleado.sueldo_empl";
             String fecha="fechaPago_empl";
-            String sSQL = "select nombre_empl,apellido_empl,pagoempleado.sueldo_empl,fechaPago_empl from pagoempleado\n" +
-                            "inner join empleado on Empleado_id_empleado=id_empleado;";
-            mostrarPago(emple,sSQL,emplea,costo,fecha);
+            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+                String sSQL = "select nombre_empl,apellido_empl,pagoempleado.sueldo_empl,fechaPago_empl from pagoempleado\n" +
+                                "inner join empleado on Empleado_id_empleado=id_empleado;";
+                mostrarPago(emple,sSQL,emplea,costo,fecha);
+            }else{
+                String sSQL = "select nombre_empl,apellido_empl,pagoempleado.sueldo_empl,fechaPago_empl from pagoempleado\n" +
+                                "inner join empleado on Empleado_id_empleado=id_empleado "
+                        + "where fechaPago_empl BETWEEN CAST('"+formatofecha.format(fInicio)+"' AS DATE) AND CAST('"+formatofecha.format(fFin)+"' AS DATE);";
+                mostrarPago(emple,sSQL,emplea,costo,fecha);
+            }
         }else if(this.cmbTipoPago.getSelectedItem().toString()=="REPARACIONES"){
             String repa = "REPARACION";
             String emplea="tipo_reparacion";
             String costo="costo_repa";
             String fecha="fechaPago_repa";
-            String sSQL = "select tipo_reparacion,costo_repa,fechaPago_repa from pagoreparacion\n" +
-                            "inner join reparacionclinica on ReparacionClinica_id_raparaClinica=id_raparaClinica;";
-            mostrarPago(repa,sSQL,emplea,costo,fecha);
+            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+                String sSQL = "select tipo_reparacion,costo_repa,fechaPago_repa from pagoreparacion\n" +
+                                "inner join reparacionclinica on ReparacionClinica_id_raparaClinica=id_raparaClinica;";
+                mostrarPago(repa,sSQL,emplea,costo,fecha);
+            }else{
+                String sSQL = "select tipo_reparacion,costo_repa,fechaPago_repa from pagoreparacion\n" +
+                                "inner join reparacionclinica on ReparacionClinica_id_raparaClinica=id_raparaClinica "
+                        + "where fechaPago_repa BETWEEN CAST('"+formatofecha.format(fInicio)+"' AS DATE) AND CAST('"+formatofecha.format(fFin)+"' AS DATE);";
+                mostrarPago(repa,sSQL,emplea,costo,fecha);
+            }
         }else if(this.cmbTipoPago.getSelectedItem().toString()=="EQUIPO"){
             String eq = "EQUIPO";
             String equipo="tipo_equipo";
             String costo="costo_equipo";
             String fecha="fechaPago_equuipo";
-            String sSQL = "select tipo_equipo,costo_equipo,fechaPago_equuipo from pagoequipo\n" +
-                            "inner join  equipo on Equipo_id_equipo=id_equipo;";
-            mostrarPago(eq,sSQL,equipo,costo,fecha);
+            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+                String sSQL = "select tipo_equipo,costo_equipo,fechaPago_equuipo from pagoequipo\n" +
+                                "inner join  equipo on Equipo_id_equipo=id_equipo;";
+                mostrarPago(eq,sSQL,equipo,costo,fecha);
+            }else{
+                String sSQL = "select tipo_equipo,costo_equipo,fechaPago_equuipo from pagoequipo\n" +
+                                "inner join  equipo on Equipo_id_equipo=id_equipo "
+                        + "where fechaPago_equuipo BETWEEN CAST('"+formatofecha.format(fInicio)+"' AS DATE) AND CAST('"+formatofecha.format(fFin)+"' AS DATE);";
+                mostrarPago(eq,sSQL,equipo,costo,fecha);
+            }
         }
     }//GEN-LAST:event_cmbTipoPagoActionPerformed
 
@@ -249,9 +332,13 @@ public class frmVistaPagos extends internalFrameImagen {
     private javax.swing.JComboBox<String> cmbTipoPago;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+    private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
+    private com.toedter.calendar.JDateChooser jdfin;
+    private com.toedter.calendar.JDateChooser jdinicio;
     private javax.swing.JTable jtPagos;
     private javax.swing.JTextField txtBuscar;
     private javax.swing.JFormattedTextField txtTotal;
