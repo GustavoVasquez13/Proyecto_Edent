@@ -180,6 +180,7 @@ private void mostrarpacientes() {
         ExpedienteOrtodoncia.txtHistoriaM.setEnabled(true);
         ExpedienteOrtodoncia.txtExamenC.setEnabled(true);
         ExpedienteOrtodoncia.txtDX.setEnabled(true);
+        
    
     }//GEN-LAST:event_jtPacientesMousePressed
 
