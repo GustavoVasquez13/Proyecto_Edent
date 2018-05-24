@@ -159,7 +159,19 @@ private void mostrarpacientes() {
             ExpedienteGeneral.txtdireccion.setText(direccion);
             this.dispose();
              ExpedienteGeneral.btneditar.setEnabled(true);
+        
         }
+        
+        
+        ExpedienteGeneral.fecha.setEnabled(true);
+        ExpedienteGeneral.txtedad.setEnabled(true);
+        ExpedienteGeneral.txttelefono.setEnabled(true);
+        ExpedienteGeneral.txtnombre.setEnabled(true);
+        ExpedienteGeneral.txtapellido.setEnabled(true);
+        ExpedienteGeneral.txtdireccion.setEnabled(true);
+        ExpedienteGeneral.btneditar.setEnabled(true);
+        ExpedienteGeneral.btnbuscaredicion.setEnabled(false);
+        ExpedienteGeneral.btnGuardar.setEnabled(false);
     }//GEN-LAST:event_jtPacientesMousePressed
 
 
