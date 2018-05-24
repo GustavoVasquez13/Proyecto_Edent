@@ -233,7 +233,7 @@ public class frmVistaPagos extends internalFrameImagen {
             String Servicio="nombre_servicio";
             String costo="costo_servicio";
             String fecha="fechaPago_servicio";
-            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+            if(this.jdinicio.getDate()==null || this.jdfin.getDate()==null){
                 String sSQL = "select nombre_servicio,costo_servicio,fechaPago_servicio from serviciobasico " +
                     "inner join tiposervicio on TipoServicio_id_tipoServicio=id_tipoServicio;";
                 mostrarPago(serv,sSQL,Servicio,costo,fecha);
@@ -248,7 +248,7 @@ public class frmVistaPagos extends internalFrameImagen {
             String material="nombre_material";
             String costo="pagomateriales.costo_material";
             String fecha="fechaPago_material";
-            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+            if(this.jdinicio.getDate()==null || this.jdfin.getDate()==null){
                 String sSQL = "select nombre_material,pagomateriales.costo_material,fechaPago_material from pagomateriales\n" +
                                 "inner join  materiales on Materiales_id_material=id_material;";
                 mostrarPago(mater,sSQL,material,costo,fecha);
@@ -264,7 +264,7 @@ public class frmVistaPagos extends internalFrameImagen {
             String emplea="nombre_empl";
             String costo="pagoempleado.sueldo_empl";
             String fecha="fechaPago_empl";
-            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+            if(this.jdinicio.getDate()==null || this.jdfin.getDate()==null){
                 String sSQL = "select nombre_empl,apellido_empl,pagoempleado.sueldo_empl,fechaPago_empl from pagoempleado\n" +
                                 "inner join empleado on Empleado_id_empleado=id_empleado;";
                 mostrarPago(emple,sSQL,emplea,costo,fecha);
@@ -279,7 +279,7 @@ public class frmVistaPagos extends internalFrameImagen {
             String emplea="tipo_reparacion";
             String costo="costo_repa";
             String fecha="fechaPago_repa";
-            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+            if(this.jdinicio.getDate()==null || this.jdfin.getDate()==null){
                 String sSQL = "select tipo_reparacion,costo_repa,fechaPago_repa from pagoreparacion\n" +
                                 "inner join reparacionclinica on ReparacionClinica_id_raparaClinica=id_raparaClinica;";
                 mostrarPago(repa,sSQL,emplea,costo,fecha);
@@ -294,7 +294,7 @@ public class frmVistaPagos extends internalFrameImagen {
             String equipo="tipo_equipo";
             String costo="costo_equipo";
             String fecha="fechaPago_equuipo";
-            if(this.jdinicio.getDate()==null && this.jdfin.getDate()==null){
+            if(this.jdinicio.getDate()==null || this.jdfin.getDate()==null){
                 String sSQL = "select tipo_equipo,costo_equipo,fechaPago_equuipo from pagoequipo\n" +
                                 "inner join  equipo on Equipo_id_equipo=id_equipo;";
                 mostrarPago(eq,sSQL,equipo,costo,fecha);
