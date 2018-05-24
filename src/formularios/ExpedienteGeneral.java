@@ -453,6 +453,7 @@ consulta fr=new consulta();
     }//GEN-LAST:event_btconActionPerformed
 
     private void txttelefonoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttelefonoKeyPressed
+
         txttelefono.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
                 java.util.Collections.EMPTY_SET);
         if (evt.getKeyCode() == KeyEvent.VK_TAB) {
