@@ -2,6 +2,7 @@ package Clases;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import javax.swing.JOptionPane;
@@ -287,4 +288,22 @@ public class ConsultarDatosBD2 {
         }
     }
 
+    //este metodo extrae el codigo del servicio para poder modificarlo en frmServicioBasico
+    public int codusuario(String nom, String ape,String correo){
+        sSQL = "SELECT `id_usuario` FROM `usuario` WHERE `nombre_usuario`='"+nom+"' and `apellido_usuario`='"+ape+"' and `correo_usuario`='"+correo+"';";
+        try {
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sSQL);
+            while(rs.next()){
+                int cod = rs.getInt("id_usuario");
+                return cod;
+            }
+            con.closeBd();
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null,"Problemas al consultar los datos de servicio");
+            con.closeBd();
+            return 0;
+        }
+        return 0;
+    }
 }

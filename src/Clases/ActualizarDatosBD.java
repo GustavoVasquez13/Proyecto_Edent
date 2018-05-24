@@ -185,4 +185,24 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+    //metodo para actualizar equipo
+    public void ActualizarUsu(String nom,String ape,String usuario,String clav,String correo,String tipo,int cod){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update usuario set `nombre_usuario`=?,"
+                    + "`apellido_usuario`=?,`usuario`=?,`clave`=?,`correo_usuario`=?,TipoUsuario_id_tipoUsuario=(select id_tipoUsuario from tipousuario where tipo_usuario='"+tipo+"')"
+                    + " where id_usuario='"+cod+"';");
+            pst.setString(1, nom);
+            pst.setString(2, ape);
+            pst.setString(3, usuario);
+            pst.setString(4, clav);
+            pst.setString(5, correo);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al Actualizar los datos de usuario  "+ex);
+            con.closeBd();
+        }
+    }
 }
