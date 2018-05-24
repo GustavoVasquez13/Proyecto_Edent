@@ -225,4 +225,23 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+     //metodo para actualizar equipo
+    public void ActualizarConsultaPO(String motivo_consulta,String HistoriaM,String HistoriaO,String ExamenC,String DXodon,int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update consulta set `motivo_consulta`=?,"
+                    + "`HistoriaM`=?,`HistoriaO`=?,`ExamenC`=?,`DXodon`=?  where id_consulta='"+code+"';");
+            pst.setString(1, motivo_consulta);
+            pst.setString(2, HistoriaM);
+            pst.setString(3, HistoriaO);
+            pst.setString(4, ExamenC);
+            pst.setString(5, DXodon);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al Actualizar los datos de Servicio  "+ex);
+            con.closeBd();
+        }
+    }
 }
