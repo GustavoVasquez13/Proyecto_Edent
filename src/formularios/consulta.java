@@ -400,7 +400,7 @@ public class consulta extends internalFrameImagen {
     public static javax.swing.JButton btnGuardar;
     public static javax.swing.JButton btneditar;
     private javax.swing.JButton btnsalir;
-    private javax.swing.JButton btnselecionaredicion;
+    public static javax.swing.JButton btnselecionaredicion;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
