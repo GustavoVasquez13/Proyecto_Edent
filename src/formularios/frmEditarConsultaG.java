@@ -161,6 +161,18 @@ private void mostrarpacientes() {
             consulta.txtDX.setText(DX);
             this.dispose();
             consulta.btneditar.setEnabled(true);
+        consulta.btnGuardar.setEnabled(false);
+        
+        consulta.txtDX.setEnabled(false);
+        consulta.txtExamenC.setEnabled(false);
+        consulta.txtHistoriaM.setEnabled(false);
+        consulta.txtHistoriaO.setEnabled(false);
+        consulta.txtMotivoC.setEnabled(false);
+        consulta.txtpresupuesto.setEnabled(false);
+        consulta.btndientes.setEnabled(false);
+        consulta.btnagregarpc.setEnabled(false);
+        consulta.btnselecionaredicion.setEnabled(false);
+            
         }
     }//GEN-LAST:event_jtPacientesMousePressed
 
