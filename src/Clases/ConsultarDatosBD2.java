@@ -250,5 +250,41 @@ public class ConsultarDatosBD2 {
        }
     }
     
+     // este metodo muestra los datos de los pacientes registrados en la tabla pacienten
+    public DefaultTableModel mostrarPacientesConsulta() {
+        DefaultTableModel modelo;
+        //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
+        String[] titulo
+                = {"Nombre","Apellido","Motivo Consulta", "Historia Medica","Historia Odontologica","Examen Clinico","DX Odontologico","Total a pagar"};
+        String[] registros = new String[8];
+        totalRegistros = 0;
+        //se agregan los campos del arreglo al modelo de la tabla
+        modelo = new DefaultTableModel(null, titulo);
+        //consulta para mostrar los datos de la base de datos
+        sSQL = "select nombre_pacte,apellido_pacte, motivo_consulta, HistoriaM, HistoriaO, ExamenC, DXodon, Total_pagar from pacienten " +
+                "inner join consulta on pacienten.id_pacienteN = consulta.PacienteN_id_pacienteN where TipoPaciente_id_tipoPaciente = '1'";
+        try {
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sSQL);
+            while (rs.next()) {
+                registros[0] = rs.getString("nombre_pacte");
+                registros[1] = rs.getString("apellido_pacte");
+                registros[2] = rs.getString("motivo_consulta");
+                registros[3] = rs.getString("HistoriaM");
+                registros[4] = rs.getString("HistoriaO");
+                registros[5] = rs.getString("ExamenC");
+                registros[6] = rs.getString("DXodon");
+                registros[7] = rs.getString("Total_pagar");
+                totalRegistros = totalRegistros + 1;
+                modelo.addRow(registros);
+            }
+            con.closeBd();
+            return modelo;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Paciente");
+            con.closeBd();
+            return null;
+        }
+    }
 
 }
