@@ -138,28 +138,29 @@ private void mostrarpacientes() {
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jtPacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtPacientesMousePressed
-        if(evt.getClickCount()==2){
+         if(evt.getClickCount()==2){
             int fila =jtPacientes.getSelectedRow();
-            String nombre, edad,telefono,direccion;
-            String apellido,fecha,id;
-            nombre=jtPacientes.getValueAt(fila, 1).toString();
-            apellido=jtPacientes.getValueAt(fila, 2).toString();
-//            fecha=jtPacientes.getValueAt(fila, 6).toString();
+            String motivoC, historiaM,historiaO,examenC;
+            String DX,presupuesto,id, nombre;
+            nombre = jtPacientes.getValueAt(fila, 1).toString();
+            motivoC=jtPacientes.getValueAt(fila, 3).toString();
+            historiaM=jtPacientes.getValueAt(fila, 4).toString();
+            presupuesto=jtPacientes.getValueAt(fila, 8).toString();
             id=jtPacientes.getValueAt(fila, 0).toString();
-            edad = jtPacientes.getValueAt(fila,5).toString();
-            telefono = jtPacientes.getValueAt(fila,4).toString();
-            direccion = jtPacientes.getValueAt(fila,3).toString();
+            historiaO = jtPacientes.getValueAt(fila,5).toString();
+            examenC = jtPacientes.getValueAt(fila,6).toString();
+            DX = jtPacientes.getValueAt(fila,7).toString();
             
-
-//            ExpedienteGeneral.fecha.setText(fecha);
-            ExpedienteGeneral.txtnombre.setText(nombre);
-            ExpedienteGeneral.lblid.setText(id);
-            ExpedienteGeneral.txtapellido.setText(apellido);
-            ExpedienteGeneral.txtedad.setText(edad);
-            ExpedienteGeneral.txttelefono.setText(telefono);
-            ExpedienteGeneral.txtdireccion.setText(direccion);
+            consulta.lbnombre.setText(nombre);
+            consulta.txtMotivoC.setText(motivoC);
+            consulta.txtHistoriaM.setText(historiaM);
+            consulta.txtpresupuesto.setText(presupuesto);
+            consulta.lblidc.setText(id);
+            consulta.txtHistoriaO.setText(historiaO);
+            consulta.txtExamenC.setText(examenC);
+            consulta.txtDX.setText(DX);
             this.dispose();
-             ExpedienteGeneral.btneditar.setEnabled(true);
+            consulta.btneditar.setEnabled(true);
         }
     }//GEN-LAST:event_jtPacientesMousePressed
 
