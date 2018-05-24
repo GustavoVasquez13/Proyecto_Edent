@@ -37,7 +37,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         ExpedienteGeneral.txtapellido.setEnabled(false);
         ExpedienteGeneral.txtdireccion.setEnabled(false);
         ExpedienteGeneral.btneditar.setEnabled(false);
-        ExpedienteGeneral.btnbuscaredicion.setEnabled(false);
+        ExpedienteGeneral.btnbuscaredicion.setEnabled(true);
         ExpedienteGeneral.btnGuardar.setEnabled(false);
     }
 
@@ -338,10 +338,9 @@ public class ExpedienteGeneral extends internalFrameImagen {
                             .addComponent(jLabel1)
                             .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtedad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                    .addComponent(lblid)
-                                    .addComponent(lblid1)))
+                                .addComponent(lblid)
+                                .addComponent(lblid1))
+                            .addComponent(txtedad, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(3, 3, 3)
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -513,6 +512,7 @@ consulta fr=new consulta();
           }else{
           JOptionPane.showMessageDialog(null, "DEBE DE LLENAR TODOS LOS CAMPOS");
       }
+      limpiarTxt();
     }//GEN-LAST:event_btneditarActionPerformed
 
     private void txtnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombreActionPerformed
