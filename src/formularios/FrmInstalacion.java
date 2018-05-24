@@ -103,7 +103,7 @@ InsertarDatosBD i=new InsertarDatosBD();
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel2.setText(" Nombre :");
+        jLabel2.setText(" Nombre:");
 
         txtNombre_persona.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtNombre_persona.setText(" ");
@@ -120,7 +120,7 @@ InsertarDatosBD i=new InsertarDatosBD();
 
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel5.setText("Apellido");
+        jLabel5.setText("Apellido:");
 
         txtape.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         txtape.setText("    ");
@@ -132,15 +132,15 @@ InsertarDatosBD i=new InsertarDatosBD();
 
         jLabel8.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel8.setText("Usuario");
+        jLabel8.setText("Usuario:");
 
         jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel9.setText("contraseña");
+        jLabel9.setText("contraseña:");
 
         jLabel11.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
         jLabel11.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel11.setText("Tipo acceso :");
+        jLabel11.setText("Tipo acceso:");
 
         tipo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         tipo.addActionListener(new java.awt.event.ActionListener() {
@@ -203,15 +203,13 @@ InsertarDatosBD i=new InsertarDatosBD();
                     .addGroup(panel2Layout.createSequentialGroup()
                         .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(javax.swing.GroupLayout.Alignment.LEADING, panel2Layout.createSequentialGroup()
+                                .addGap(21, 21, 21)
+                                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel5)
+                                    .addComponent(jLabel2))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                 .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(panel2Layout.createSequentialGroup()
-                                        .addGap(30, 30, 30)
-                                        .addComponent(jLabel8))
-                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.Alignment.TRAILING))
-                                .addGap(18, 18, 18)
-                                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtusua)
                                     .addComponent(txtape)
                                     .addComponent(txtNombre_persona)))
                             .addGroup(panel2Layout.createSequentialGroup()
@@ -227,13 +225,15 @@ InsertarDatosBD i=new InsertarDatosBD();
                                     .addComponent(jLabel10))
                                 .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(panel2Layout.createSequentialGroup()
-                                        .addGap(11, 11, 11)
-                                        .addComponent(txtcont))
-                                    .addGroup(panel2Layout.createSequentialGroup()
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                         .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                             .addComponent(txtcorreo)
-                                            .addComponent(tipo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))))
+                                            .addComponent(tipo, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                                    .addGroup(panel2Layout.createSequentialGroup()
+                                        .addGap(11, 11, 11)
+                                        .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addComponent(txtusua)
+                                            .addComponent(txtcont))))))
                         .addGap(47, 47, 47))
                     .addGroup(panel2Layout.createSequentialGroup()
                         .addComponent(jLabel19)
@@ -244,24 +244,18 @@ InsertarDatosBD i=new InsertarDatosBD();
             .addGroup(panel2Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(jLabel19)
-                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel2Layout.createSequentialGroup()
-                        .addGap(36, 36, 36)
-                        .addComponent(jLabel2))
-                    .addGroup(panel2Layout.createSequentialGroup()
-                        .addGap(33, 33, 33)
-                        .addComponent(txtNombre_persona, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(33, 33, 33)
+                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtNombre_persona, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel2))
                 .addGap(18, 18, 18)
-                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel5)
-                    .addComponent(txtape, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(panel2Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jLabel8))
-                    .addGroup(panel2Layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(txtusua, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtape, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel5))
+                .addGap(18, 18, 18)
+                .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(txtusua, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel8))
                 .addGap(18, 18, 18)
                 .addGroup(panel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel9)
