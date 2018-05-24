@@ -1,7 +1,7 @@
-
 package formularios;
 
 import Clases.ConsultarDatosBD;
+import Clases.ConsultarDatosBD2;
 import Clases.internalFrameImagen;
 import static formularios.ExpedienteGeneral.txtapellido;
 import static formularios.ExpedienteGeneral.txtdireccion;
@@ -26,8 +26,8 @@ public class frmEditarPO extends internalFrameImagen {
 private void mostrarpacientes() {
         try {
             DefaultTableModel modelo;
-            ConsultarDatosBD Mostrarp = new ConsultarDatosBD();
-            modelo = Mostrarp.mostrarPacientes1();
+            ConsultarDatosBD2 Mostrarp = new ConsultarDatosBD2();
+            modelo = Mostrarp.mostrarPacientesConsultaO();
             jtPacientes.setModel(modelo);
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE SERVICIOS");
@@ -145,39 +145,42 @@ private void mostrarpacientes() {
     private void jtPacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtPacientesMousePressed
         if(evt.getClickCount()==2){
             int fila =jtPacientes.getSelectedRow();
-            String nombre, edad,telefono,direccion;
-            String apellido,fecha,id;
+            String nombre, dx,motivoC,historiaM;
+            String historiaO,examenC,id,apellido;
             nombre=jtPacientes.getValueAt(fila, 1).toString();
-            apellido=jtPacientes.getValueAt(fila, 2).toString();
-//            fecha=jtPacientes.getValueAt(fila, 6).toString();
+            apellido=jtPacientes.getValueAt(fila,2).toString();
+            dx=jtPacientes.getValueAt(fila, 7).toString();
             id=jtPacientes.getValueAt(fila, 0).toString();
-            edad = jtPacientes.getValueAt(fila,5).toString();
-            telefono = jtPacientes.getValueAt(fila,4).toString();
-            direccion = jtPacientes.getValueAt(fila,3).toString();
+            motivoC = jtPacientes.getValueAt(fila,3).toString();
+            historiaM = jtPacientes.getValueAt(fila,4).toString();
+            historiaO = jtPacientes.getValueAt(fila,5).toString();
+            examenC = jtPacientes.getValueAt(fila,6).toString();
             
 
-//            ExpedienteGeneral.fecha.setText(fecha);
-            ExpedienteGeneral.txtnombre.setText(nombre);
-            ExpedienteGeneral.lblid.setText(id);
-            ExpedienteGeneral.txtapellido.setText(apellido);
-            ExpedienteGeneral.txtedad.setText(edad);
-            ExpedienteGeneral.txttelefono.setText(telefono);
-            ExpedienteGeneral.txtdireccion.setText(direccion);
+
+            ExpedienteOrtodoncia.txtnombre.setText(nombre);
+            ExpedienteOrtodoncia.txtapellido.setText(apellido);
+            ExpedienteOrtodoncia.lblid.setText(id);
+            ExpedienteOrtodoncia.txtDX.setText(dx);
+            ExpedienteOrtodoncia.txtMotivoC.setText(motivoC);
+            ExpedienteOrtodoncia.txtHistoriaM.setText(historiaM);
+            ExpedienteOrtodoncia.txtHistoriaO.setText(historiaO);
+            ExpedienteOrtodoncia.txtExamenC.setText(examenC);
             this.dispose();
-             ExpedienteGeneral.btneditar.setEnabled(true);
+             ExpedienteOrtodoncia.btneditar.setEnabled(true);
         
         }
         
         
-        ExpedienteGeneral.fecha.setEnabled(true);
-        ExpedienteGeneral.txtedad.setEnabled(true);
-        ExpedienteGeneral.txttelefono.setEnabled(true);
-        ExpedienteGeneral.txtnombre.setEnabled(true);
-        ExpedienteGeneral.txtapellido.setEnabled(true);
-        ExpedienteGeneral.txtdireccion.setEnabled(true);
-        ExpedienteGeneral.btneditar.setEnabled(true);
-        ExpedienteGeneral.btnbuscaredicion.setEnabled(false);
-        ExpedienteGeneral.btnGuardar.setEnabled(false);
+//        ExpedienteGeneral.fecha.setEnabled(true);
+//        ExpedienteGeneral.txtedad.setEnabled(true);
+//        ExpedienteGeneral.txttelefono.setEnabled(true);
+//        ExpedienteGeneral.txtnombre.setEnabled(true);
+//        ExpedienteGeneral.txtapellido.setEnabled(true);
+//        ExpedienteGeneral.txtdireccion.setEnabled(true);
+//        ExpedienteGeneral.btneditar.setEnabled(true);
+//        ExpedienteGeneral.btnbuscaredicion.setEnabled(false);
+//        ExpedienteGeneral.btnGuardar.setEnabled(false);
    
     }//GEN-LAST:event_jtPacientesMousePressed
 
