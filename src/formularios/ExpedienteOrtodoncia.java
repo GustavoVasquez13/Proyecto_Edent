@@ -5,6 +5,7 @@
  */
 package formularios;
 
+import Clases.ActualizarDatosBD;
 import Clases.InsertarDatosBD;
 import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
@@ -194,6 +195,11 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         btneditar.setText("Editar Consulta ");
         btneditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btneditar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btneditar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btneditarActionPerformed(evt);
+            }
+        });
 
         btnbuscaredicion.setForeground(new java.awt.Color(0, 0, 204));
         btnbuscaredicion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar edicion.png"))); // NOI18N
@@ -477,6 +483,25 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         Dpanel.add(formProd);
         formProd.show();
     }//GEN-LAST:event_btnbuscaredicionActionPerformed
+
+    private void btneditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditarActionPerformed
+        if(this.txtnombre.getText().length()!=0 && this.txtapellido.getText().length()!=0 && this.txtMotivoC.getText().length()!=0 
+              && this.txtHistoriaO.getText().length()!=0 && this.txtDX.getText().length()!=0 ) {
+          String motivo_consulta = this.txtMotivoC.getText().toUpperCase();
+          String HistoriaM = this.txtHistoriaM.getText().toUpperCase();
+          String HistoriaO = this.txtHistoriaO.getText().toUpperCase();
+          String ExamenC = this.txtExamenC.getText().toUpperCase();
+          String DXodon = this.txtDX.getText().toUpperCase();
+          int code = Integer.valueOf(this.lblid.getText());
+          
+          ActualizarDatosBD actpaciente = new ActualizarDatosBD();
+          
+          actpaciente.ActualizarConsultaPO(motivo_consulta, HistoriaM, HistoriaO, ExamenC, DXodon, code);
+          }else{
+          JOptionPane.showMessageDialog(null, "DEBE DE LLENAR TODOS LOS CAMPOS");
+      }
+      limpiarTxt();
+    }//GEN-LAST:event_btneditarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
