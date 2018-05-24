@@ -187,6 +187,7 @@ if(evt.getClickCount()==2){
         consulta.txtpresupuesto.setEnabled(true);
         consulta.btneditar.setEnabled(false);
         consulta.btnselecionaredicion.setEnabled(false);
+        consulta.btndientes.setEnabled(true);
         }     
 
     }//GEN-LAST:event_jtPacientesMousePressed
