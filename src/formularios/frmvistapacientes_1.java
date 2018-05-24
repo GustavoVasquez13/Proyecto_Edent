@@ -176,7 +176,19 @@ if(evt.getClickCount()==2){
             consulta.lbnombre.setText(nombre+" "+apellido);
             consulta.lbid.setText(id);
             this.dispose();
-        }        
+            
+        consulta.btnGuardar.setEnabled(true);
+        consulta.btneditar.setEnabled(true);
+        consulta.txtDX.setEnabled(true);
+        consulta.txtExamenC.setEnabled(true);
+        consulta.txtHistoriaM.setEnabled(true);
+        consulta.txtHistoriaO.setEnabled(true);
+        consulta.txtMotivoC.setEnabled(true);
+        consulta.txtpresupuesto.setEnabled(true);
+        consulta.btneditar.setEnabled(false);
+        consulta.btnselecionaredicion.setEnabled(false);
+        }     
+
     }//GEN-LAST:event_jtPacientesMousePressed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
