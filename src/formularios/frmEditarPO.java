@@ -1,13 +1,8 @@
 package formularios;
 
-import Clases.ConsultarDatosBD;
+
 import Clases.ConsultarDatosBD2;
 import Clases.internalFrameImagen;
-import static formularios.ExpedienteGeneral.txtapellido;
-import static formularios.ExpedienteGeneral.txtdireccion;
-import static formularios.ExpedienteGeneral.txtedad;
-import static formularios.ExpedienteGeneral.txtnombre;
-import static formularios.ExpedienteGeneral.txttelefono;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -171,15 +166,20 @@ private void mostrarpacientes() {
         }
         
         
-//        ExpedienteGeneral.fecha.setEnabled(true);
-//        ExpedienteGeneral.txtedad.setEnabled(true);
-//        ExpedienteGeneral.txttelefono.setEnabled(true);
-//        ExpedienteGeneral.txtnombre.setEnabled(true);
-//        ExpedienteGeneral.txtapellido.setEnabled(true);
-//        ExpedienteGeneral.txtdireccion.setEnabled(true);
-//        ExpedienteGeneral.btneditar.setEnabled(true);
-//        ExpedienteGeneral.btnbuscaredicion.setEnabled(false);
-//        ExpedienteGeneral.btnGuardar.setEnabled(false);
+        ExpedienteOrtodoncia.fecha.setEnabled(false);
+        ExpedienteOrtodoncia.txtedad.setEnabled(false);
+        ExpedienteOrtodoncia.txttelefono.setEnabled(false);
+        ExpedienteOrtodoncia.txtnombre.setEnabled(false);
+        ExpedienteOrtodoncia.txtapellido.setEnabled(false);
+        ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
+        ExpedienteOrtodoncia.btneditar.setEnabled(true);
+        ExpedienteOrtodoncia.btnbuscaredicion.setEnabled(false);
+        ExpedienteOrtodoncia.btnGuardar.setEnabled(false);
+        ExpedienteOrtodoncia.txtMotivoC.setEnabled(true);
+        ExpedienteOrtodoncia.txtHistoriaO.setEnabled(true);
+        ExpedienteOrtodoncia.txtHistoriaM.setEnabled(true);
+        ExpedienteOrtodoncia.txtExamenC.setEnabled(true);
+        ExpedienteOrtodoncia.txtDX.setEnabled(true);
    
     }//GEN-LAST:event_jtPacientesMousePressed
 
