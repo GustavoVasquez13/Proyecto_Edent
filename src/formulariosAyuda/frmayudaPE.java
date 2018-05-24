@@ -3,9 +3,9 @@ package formulariosAyuda;
 import Clases.internalFrameImagen;
 import java.awt.Color;
 
-public class frmayudaSB extends internalFrameImagen{
+public class frmayudaPE extends internalFrameImagen{
 
-    public frmayudaSB() {
+    public frmayudaPE() {
         initComponents();
         setImagenw("img2.jpg");
     }
@@ -14,6 +14,7 @@ public class frmayudaSB extends internalFrameImagen{
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel4 = new javax.swing.JLabel();
         lblReg = new javax.swing.JLabel();
         lblMensaje = new javax.swing.JLabel();
         lblEdit = new javax.swing.JLabel();
@@ -24,11 +25,13 @@ public class frmayudaSB extends internalFrameImagen{
         lblCL2 = new javax.swing.JLabel();
         lblCL4 = new javax.swing.JLabel();
 
+        jLabel4.setText("jLabel2");
+
         setClosable(true);
         setIconifiable(true);
 
         lblReg.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lblReg.setText("Realizar un Nuevo Registro ");
+        lblReg.setText("Realizar una Busqueda en la Tabla");
         lblReg.setToolTipText("Click Para Ver la Descripcion del Caso");
         lblReg.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -45,7 +48,7 @@ public class frmayudaSB extends internalFrameImagen{
         lblMensaje.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
 
         lblEdit.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lblEdit.setText("Editar un Registro ");
+        lblEdit.setText("Registrar un Pago");
         lblEdit.setToolTipText("Click Para Ver la Descripcion del Caso");
         lblEdit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -101,24 +104,26 @@ public class frmayudaSB extends internalFrameImagen{
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(39, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btnCancelar)
-                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblEdit)
-                            .addGap(18, 18, 18)
-                            .addComponent(lblCL2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblErrores)
-                            .addGap(18, 18, 18)
-                            .addComponent(lblCL4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addComponent(lblMensaje, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGroup(layout.createSequentialGroup()
-                            .addComponent(lblReg)
-                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                            .addComponent(lblCL1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(28, 28, 28))
+                .addContainerGap(36, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(btnCancelar)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblErrores)
+                                .addGap(18, 18, 18)
+                                .addComponent(lblCL4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addComponent(lblMensaje, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(lblEdit)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(lblCL2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(lblReg))
+                        .addGap(18, 18, 18)
+                        .addComponent(lblCL1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap())
             .addGroup(layout.createSequentialGroup()
                 .addGap(68, 68, 68)
                 .addComponent(jLabel1)
@@ -128,18 +133,17 @@ public class frmayudaSB extends internalFrameImagen{
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(lblReg, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addComponent(jLabel1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(lblReg, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblCL1, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblEdit, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblCL2, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblErrores, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblCL4, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(26, 26, 26)
@@ -153,32 +157,29 @@ public class frmayudaSB extends internalFrameImagen{
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblRegMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para <b>Agregar un Registro Nuevo</b> debe de llenar todos los campos requeridos. "
-                + "Es obligatorio ingresar los <b>Campos Requeridos </b> "
-                + "para realizar exitosamente una operacion especificada. <br><br>"
-                + "Despues debe de dar <b>Click en el boton Guardar</b> y aparecera un mensaje "
-                + "de confirmacion de que el Registro fue Guardado. Algunos campos no prioritarios pueden quedar vacios.</p></body></html>");
+        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para Realizar una <b>Busqueda</b> solo se debe de escribir en la <b>Caja de Texto</b> "
+                + "el Registro que se desea Buscar</p></body></html>");
     }//GEN-LAST:event_lblRegMouseClicked
 
     private void lblEditMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para <b>Editar un Registro</b> existente se debe seleccionar el Registro desde la "
-                + "<b>Tabla de Datos</b> y luego dar <b>Doble Click sobre el Registro seleccionado.</b> "
-                + "Los datos se cargaran en las <b>Cajas de Texto</b> correspondientes. De los datos cargados hacer los cambios que se desean, "
-                + "es obligatorio ingresar los <b>Campos Requeridos </b> "
-                + "para realizar exitosamente la <b>Edicion de un Registro</b> especificado. <br><br>"
-                + "Despues debe de dar <b>Click en el boton Editar</b> y aparecera un mensaje "
-                + "de confirmacion de que el registro fue <b>Modificado.</b> Algunos campos no prioritarios pueden quedar vacios.</p></body></html>");
+        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para <b>Agregar un pago Nuevo </b>se debe seleccionar el Registro desde la "
+                + "<b>Tabla de Datos</b> y luego dar <b>Click sobre el Registro seleccionado.</b> "
+                + "Los datos se cargaran en las <b>Cajas de Texto</b> correspondientes. Luego llenar los campos con la informacion necesaria, "
+                + "es obligatorio <b>Seleccionar un Registro de la Tabla</b> "
+                + "para realizar exitosamente <b>El Pago</b>. <br><br>"
+                + "Despues debe de dar <b>Click en el boton Registrar</b> y aparecera un mensaje "
+                + "de confirmacion de que el <b>Pago se realizo Exitosamente.</b></p></body></html>");
     }//GEN-LAST:event_lblEditMouseClicked
 
     private void lblErroresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\"><b>Problemas al Guardar o Editar los datos</b> este tipo de problemas se puede presentar"
+        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\"><b>Problemas al Realizar los pagos</b> este tipo de problemas se puede presentar"
                 + " cuando se ha perdido la <b>conexion con la base de datos,</b> causando que no se pueda realizar la operacion Solicitada.<br><br>"
                 + "Para Solucionar este problema Porfavor Comuniquese con el <b>Administrador de Sistema.</b></p></body></html>");
     }//GEN-LAST:event_lblErroresMouseClicked
 
     private void lblRegMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseEntered
         this.lblReg.setForeground(Color.blue);
-         this.lblCL1.setText("Click Aqui");
+        this.lblCL1.setText("Click Aqui");
     }//GEN-LAST:event_lblRegMouseEntered
 
     private void lblRegMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseExited
@@ -193,7 +194,7 @@ public class frmayudaSB extends internalFrameImagen{
 
     private void lblEditMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseExited
         this.lblEdit.setForeground(Color.black);
-        this.lblCL2.setText("");
+         this.lblCL2.setText("");
     }//GEN-LAST:event_lblEditMouseExited
 
     private void lblErroresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseEntered
@@ -214,6 +215,7 @@ public class frmayudaSB extends internalFrameImagen{
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCancelar;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel lblCL1;
     private javax.swing.JLabel lblCL2;
     private javax.swing.JLabel lblCL4;
