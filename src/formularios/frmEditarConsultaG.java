@@ -163,12 +163,12 @@ private void mostrarpacientes() {
             consulta.btneditar.setEnabled(true);
         consulta.btnGuardar.setEnabled(false);
         
-        consulta.txtDX.setEnabled(false);
-        consulta.txtExamenC.setEnabled(false);
-        consulta.txtHistoriaM.setEnabled(false);
-        consulta.txtHistoriaO.setEnabled(false);
-        consulta.txtMotivoC.setEnabled(false);
-        consulta.txtpresupuesto.setEnabled(false);
+        consulta.txtDX.setEnabled(true);
+        consulta.txtExamenC.setEnabled(true);
+        consulta.txtHistoriaM.setEnabled(true);
+        consulta.txtHistoriaO.setEnabled(true);
+        consulta.txtMotivoC.setEnabled(true);
+        consulta.txtpresupuesto.setEnabled(true);
         consulta.btndientes.setEnabled(false);
         consulta.btnagregarpc.setEnabled(false);
         consulta.btnselecionaredicion.setEnabled(false);
