@@ -175,8 +175,8 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
             ExpedienteGeneral.txtapellido.setEnabled(true);
             ExpedienteGeneral.txtdireccion.setEnabled(true);
 //            ExpedienteGeneral.btneditar.setEnabled(true);
-            ExpedienteGeneral.btnbuscaredicion.setEnabled(true);
-            ExpedienteGeneral.btnGuardar.setEnabled(true);
+            ExpedienteGeneral.btnbuscaredicion.setEnabled(false);
+            ExpedienteGeneral.btnGuardar.setEnabled(false);
         }         
             
           
