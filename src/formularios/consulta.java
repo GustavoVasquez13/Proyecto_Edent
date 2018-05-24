@@ -22,6 +22,14 @@ public class consulta extends internalFrameImagen {
      */
     public consulta() {
         initComponents();
+        consulta.btnGuardar.setEnabled(false);
+        consulta.btneditar.setEnabled(false);
+        consulta.txtDX.setEnabled(false);
+        consulta.txtExamenC.setEnabled(false);
+        consulta.txtHistoriaM.setEnabled(false);
+        consulta.txtHistoriaO.setEnabled(false);
+        consulta.txtMotivoC.setEnabled(false);
+        consulta.txtpresupuesto.setEnabled(false);
         setImagenw("img2.jpg");
     }
 
@@ -316,7 +324,12 @@ public class consulta extends internalFrameImagen {
         txtExamenC.setText("");
         txtDX.setText("");}
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
-        // se crean variables para guardar en ellas los datos recibidos de los jtextfield
+       if(this.txtMotivoC.getText().length() == 0 || this.lblidc.getText().length() == 0 || this.txtHistoriaM.getText().length() == 0
+               || this.txtHistoriaO.getText().length() == 0|| this.txtExamenC.getText().length() == 0 || this.txtDX.getText().length() == 0){
+           JOptionPane.showMessageDialog(null, "Debe complementar los campos requeridos");
+          
+       }else{
+           // se crean variables para guardar en ellas los datos recibidos de los jtextfield
         String motivo = this.txtMotivoC.getText().toUpperCase();
         Double total = Double.parseDouble( this.txtpresupuesto.getText());
         String historiam = this.txtHistoriaM.getText().toUpperCase();
@@ -332,6 +345,8 @@ public class consulta extends internalFrameImagen {
         insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx,tip1);
         //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
         limpiarTxt();
+       }
+        
 
     }//GEN-LAST:event_btnGuardarActionPerformed
 
@@ -382,7 +397,7 @@ public class consulta extends internalFrameImagen {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnGuardar;
+    public static javax.swing.JButton btnGuardar;
     public static javax.swing.JButton btneditar;
     private javax.swing.JButton btnsalir;
     private javax.swing.JButton btnselecionaredicion;
