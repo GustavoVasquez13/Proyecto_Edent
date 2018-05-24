@@ -3,6 +3,11 @@ package formularios;
 
 import Clases.ConsultarDatosBD;
 import Clases.internalFrameImagen;
+import static formularios.ExpedienteGeneral.txtapellido;
+import static formularios.ExpedienteGeneral.txtdireccion;
+import static formularios.ExpedienteGeneral.txtedad;
+import static formularios.ExpedienteGeneral.txtnombre;
+import static formularios.ExpedienteGeneral.txttelefono;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableRowSorter;
@@ -120,6 +125,7 @@ private void mostrarpacientes() {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+    
     private void txtBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyTyped
         //  se utiliza para filtrar los datos mostrados en el jtable
         this.txtBuscar.addKeyListener(new KeyAdapter(){
@@ -172,6 +178,7 @@ private void mostrarpacientes() {
         ExpedienteGeneral.btneditar.setEnabled(true);
         ExpedienteGeneral.btnbuscaredicion.setEnabled(false);
         ExpedienteGeneral.btnGuardar.setEnabled(false);
+   
     }//GEN-LAST:event_jtPacientesMousePressed
 
 
