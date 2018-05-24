@@ -65,6 +65,7 @@ public class ActualizarDatosBD {
         }catch(Exception e){
             JOptionPane.showMessageDialog(null, "OCURRIO UN PROBLEMA AL ACTUALIZAR LOS DATOS DEL EMPLEADO");
             con.closeBd();
+            
         }
     }
     
