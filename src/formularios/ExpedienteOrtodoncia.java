@@ -23,7 +23,20 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     public ExpedienteOrtodoncia() {
         initComponents(); 
         
-        
+        ExpedienteOrtodoncia.fecha.setEnabled(false);
+        ExpedienteOrtodoncia.txtedad.setEnabled(false);
+        ExpedienteOrtodoncia.txttelefono.setEnabled(false);
+        ExpedienteOrtodoncia.txtnombre.setEnabled(false);
+        ExpedienteOrtodoncia.txtapellido.setEnabled(false);
+        ExpedienteOrtodoncia.txtMotivoC.setEnabled(false);
+        ExpedienteOrtodoncia.btneditar.setEnabled(false);
+        ExpedienteOrtodoncia.btnbuscaredicion.setEnabled(true);
+        ExpedienteOrtodoncia.btnGuardar.setEnabled(false);
+        ExpedienteOrtodoncia.txtHistoriaO.setEnabled(false);
+        ExpedienteOrtodoncia.txtHistoriaM.setEnabled(false);
+        ExpedienteOrtodoncia.txtExamenC.setEnabled(false);
+        ExpedienteOrtodoncia.txtDX.setEnabled(false);
+        ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
         setImagenw("img2.jpg");
     }
     
@@ -39,7 +52,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lblnombre = new javax.swing.JLabel();
         txtnombre = new javax.swing.JTextField();
         lbldireccion1 = new javax.swing.JLabel();
-        txtdirección = new javax.swing.JTextField();
+        txtdireccion = new javax.swing.JTextField();
         lblnombre1 = new javax.swing.JLabel();
         txtMotivoC = new javax.swing.JTextField();
         lblnombre2 = new javax.swing.JLabel();
@@ -50,7 +63,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         txtExamenC = new javax.swing.JTextField();
         lblnombre5 = new javax.swing.JLabel();
         txtDX = new javax.swing.JTextField();
-        btnguardar = new javax.swing.JButton();
+        btnGuardar = new javax.swing.JButton();
         fecha = new com.toedter.calendar.JDateChooser();
         lblnombre40 = new javax.swing.JLabel();
         txtapellido = new javax.swing.JTextField();
@@ -97,9 +110,9 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         lbldireccion1.setText("Dirección: ");
 
-        txtdirección.addActionListener(new java.awt.event.ActionListener() {
+        txtdireccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                txtdirecciónActionPerformed(evt);
+                txtdireccionActionPerformed(evt);
             }
         });
 
@@ -125,14 +138,14 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        btnguardar.setForeground(new java.awt.Color(0, 51, 204));
-        btnguardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
-        btnguardar.setText("Guardar");
-        btnguardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnguardar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btnguardar.addActionListener(new java.awt.event.ActionListener() {
+        btnGuardar.setForeground(new java.awt.Color(0, 51, 204));
+        btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
+        btnGuardar.setText("Guardar");
+        btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnGuardar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnguardarActionPerformed(evt);
+                btnGuardarActionPerformed(evt);
             }
         });
 
@@ -258,7 +271,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(lbldireccion1)
                                         .addGap(10, 10, 10)
-                                        .addComponent(txtdirección, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                        .addComponent(txtdireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                                         .addComponent(lblnombre1)
                                         .addGap(10, 10, 10)
@@ -270,8 +283,9 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createSequentialGroup()
+                                .addGap(42, 42, 42)
                                 .addComponent(jLabel3)
-                                .addGap(72, 72, 72)
+                                .addGap(30, 30, 30)
                                 .addComponent(jButton1)
                                 .addGap(0, 23, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
@@ -293,7 +307,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                 .addGap(18, 18, 18)
                 .addComponent(btneditar)
                 .addGap(18, 18, 18)
-                .addComponent(btnguardar)
+                .addComponent(btnGuardar)
                 .addGap(18, 18, 18)
                 .addComponent(btnsalir)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -309,12 +323,13 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(jLabel82, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(jLabel3))
-                    .addComponent(jButton1))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jButton1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(41, 41, 41)
+                        .addComponent(jLabel3)))
                 .addGap(18, 18, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2)
@@ -336,10 +351,9 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtdirección, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(lblid)
-                                .addComponent(lblid1)))))
+                            .addComponent(txtdireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(lblid)
+                            .addComponent(lblid1))))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblnombre1)
@@ -369,7 +383,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(btnsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(btnguardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(btneditar)
                             .addComponent(btnbuscaredicion))
                         .addGap(28, 28, 28))))
@@ -378,14 +392,14 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void txtdirecciónActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdirecciónActionPerformed
+    private void txtdireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdireccionActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_txtdirecciónActionPerformed
+    }//GEN-LAST:event_txtdireccionActionPerformed
      //metodo para limpiar los jtextfield despues de cada click al boton guardar
     public void limpiarTxt(){
         txtnombre.setText("");
         txtapellido.setText("");
-        txtdirección.setText("");
+        txtdireccion.setText("");
         txttelefono.setText("");
         txtedad.setText("");
         txtMotivoC.setText("");
@@ -394,7 +408,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         txtExamenC.setText("");
         txtDX.setText("");
     }
-    private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
+    private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
      if (this.txtMotivoC.getText().length() == 0 || this.txtHistoriaM.getText().length() == 0|| this.txtHistoriaO.getText().length() == 0
              || this.txtExamenC.getText().length() == 0|| this.txtDX.getText().length() == 0){
             JOptionPane.showMessageDialog(null, "Debe completar todos los campos");
@@ -424,7 +438,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
      
      
      
-    }//GEN-LAST:event_btnguardarActionPerformed
+    }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void txtDXActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtDXActionPerformed
         // TODO add your handling code here:
@@ -505,12 +519,12 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static javax.swing.JButton btnGuardar;
     public static javax.swing.JButton btnbuscaredicion;
     public static javax.swing.JButton btneditar;
-    private javax.swing.JButton btnguardar;
     private javax.swing.JButton btnsalir;
     private javax.swing.JButton btnsiguiente;
-    private com.toedter.calendar.JDateChooser fecha;
+    public static com.toedter.calendar.JDateChooser fecha;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
@@ -533,7 +547,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     public static javax.swing.JTextField txtHistoriaO;
     public static javax.swing.JTextField txtMotivoC;
     public static javax.swing.JTextField txtapellido;
-    public static javax.swing.JTextField txtdirección;
+    public static javax.swing.JTextField txtdireccion;
     public static javax.swing.JTextField txtedad;
     public static javax.swing.JTextField txtnombre;
     public static final javax.swing.JTextField txttelefono = new javax.swing.JTextField();
