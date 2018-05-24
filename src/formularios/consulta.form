@@ -66,13 +66,8 @@
                               </Group>
                           </Group>
                           <Group type="102" alignment="0" attributes="0">
-                              <Group type="103" groupAlignment="0" attributes="0">
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
-                                      <Component id="lblnombre4" min="-2" pref="120" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Component id="lblnombre3" alignment="0" min="-2" max="-2" attributes="0"/>
-                              </Group>
+                              <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
+                              <Component id="lblnombre4" min="-2" pref="120" max="-2" attributes="0"/>
                               <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Component id="txtHistoriaO" min="-2" pref="350" max="-2" attributes="0"/>
@@ -94,6 +89,7 @@
                                   <EmptySpace min="-2" pref="4" max="-2" attributes="0"/>
                                   <Component id="txtHistoriaM" min="-2" pref="350" max="-2" attributes="0"/>
                               </Group>
+                              <Component id="lblnombre3" alignment="0" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -168,8 +164,8 @@
               </Group>
               <EmptySpace type="unrelated" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
-                  <Component id="lblnombre3" alignment="1" min="-2" max="-2" attributes="0"/>
-                  <Component id="txtHistoriaO" alignment="1" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="txtHistoriaO" min="-2" pref="40" max="-2" attributes="0"/>
+                  <Component id="lblnombre3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
@@ -184,9 +180,9 @@
               <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="lblnombre6" min="-2" pref="20" max="-2" attributes="0"/>
-                  <Component id="txtpresupuesto" min="-2" pref="70" max="-2" attributes="0"/>
+                  <Component id="txtpresupuesto" min="-2" pref="29" max="-2" attributes="0"/>
               </Group>
-              <EmptySpace pref="35" max="32767" attributes="0"/>
+              <EmptySpace pref="80" max="32767" attributes="0"/>
               <Group type="103" groupAlignment="0" attributes="0">
                   <Component id="btnselecionaredicion" min="-2" max="-2" attributes="0"/>
                   <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
@@ -207,6 +203,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtMotivoC">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre2">
       <Properties>
@@ -214,6 +213,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtHistoriaM">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre3">
       <Properties>
@@ -221,6 +223,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtHistoriaO">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre4">
       <Properties>
@@ -228,6 +233,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtExamenC">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre5">
       <Properties>
@@ -235,6 +243,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtDX">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre6">
       <Properties>
@@ -242,6 +253,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtpresupuesto">
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
     <Component class="javax.swing.JButton" name="btnGuardar">
       <Properties>
@@ -359,6 +373,9 @@
         <Property name="horizontalTextPosition" type="int" value="0"/>
         <Property name="verticalTextPosition" type="int" value="3"/>
       </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
+      </AuxValues>
     </Component>
   </SubComponents>
 </Form>
