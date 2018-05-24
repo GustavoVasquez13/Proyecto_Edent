@@ -380,6 +380,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         txtdireccion.setText("");
         txttelefono.setText("");
         txtedad.setText("");
+        lblid.setText("");
         
        
     }
@@ -428,6 +429,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
         this.dispose();
+        limpiarTxt();
     }//GEN-LAST:event_btnsalirActionPerformed
 
     private void txttelefonoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttelefonoKeyTyped
