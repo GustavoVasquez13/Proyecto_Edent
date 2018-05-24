@@ -47,12 +47,12 @@ public class ConsultarDatosBD2 {
     //este metodo muestra los ussuarios que tienen acceso al sistema
     public DefaultTableModel mostrarus(){
        DefaultTableModel modelo;
-       String[] titulos = {"NOMBRE","APELLIDO","USUARIO","CLAVE","CORREO"};
+       String[] titulos = {"NOMBRE","APELLIDO","USUARIO","CORREO","TIPO USUARIO"};
        String[] registros = new String[5];
        totalRegistros = 0;
        
        modelo = new DefaultTableModel(null,titulos);
-       sSQL = "select * from usuario;";
+       sSQL = "select nombre_usuario,apellido_usuario,usuario,correo_usuario,tipo_usuario from usuario inner join tipousuario on TipoUsuario_id_tipoUsuario=id_tipoUsuario;";
        
        try{
            Statement st = cn.createStatement();
@@ -61,15 +61,15 @@ public class ConsultarDatosBD2 {
                registros[0] = rs.getString("nombre_usuario");
                registros[1] = rs.getString("apellido_usuario");
                registros[2] = rs.getString("usuario");
-               registros[3] = rs.getString("clave");
-               registros[4] = rs.getString("correo_usuario");
+               registros[3] = rs.getString("correo_usuario");
+               registros[4] = rs.getString("tipo_usuario");
                totalRegistros = totalRegistros + 1;
                modelo.addRow(registros);
            }
            con.closeBd();
            return modelo;
        }catch(Exception e){
-           JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE MATERIALES");
+           JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE USUARIOS");
            con.closeBd();
            return null;
        }
