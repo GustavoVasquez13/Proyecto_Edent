@@ -5,9 +5,11 @@
  */
 package formularios;
 
+import Clases.ActualizarDatosBD;
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
 import static formularios.frmPrincipal.Dpanel;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -138,6 +140,11 @@ public class consulta extends internalFrameImagen {
         btneditar.setText("Editar Paciente");
         btneditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btneditar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btneditar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btneditarActionPerformed(evt);
+            }
+        });
 
         jLabel4.setText("ID consulta");
 
@@ -344,6 +351,24 @@ public class consulta extends internalFrameImagen {
         Dpanel.add(fr);
         fr.show();
     }//GEN-LAST:event_btnselecionaredicionActionPerformed
+
+    private void btneditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditarActionPerformed
+       if(this.lbnombre.getText().length()!=0 && this.txtHistoriaM.getText().length()!=0 && this.txtHistoriaO.getText().length()!=0
+               && this.txtExamenC.getText().length()!=0 && this.txtDX.getText().length()!=0){
+           String motivo_consulta = this.txtMotivoC.getText().toUpperCase();
+           String Total_pagar = this.txtpresupuesto.getText().toUpperCase();
+           String HistoriaM = this.txtHistoriaM.getText().toUpperCase();
+           String ExamenC = this.txtExamenC.getText().toUpperCase();
+           String DXodon = this.txtDX.getText().toUpperCase();
+           int code = Integer.valueOf(this.lblidc.getText());
+            ActualizarDatosBD actpaciente = new ActualizarDatosBD();
+            
+            actpaciente.ActualizarConsultaPG(motivo_consulta, Total_pagar, HistoriaM, HistoriaM, ExamenC, DXodon, code);
+           
+       }else{
+          JOptionPane.showMessageDialog(null, "DEBE DE LLENAR TODOS LOS CAMPOS");
+      }
+    }//GEN-LAST:event_btneditarActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
