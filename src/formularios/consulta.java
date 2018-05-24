@@ -390,6 +390,7 @@ public class consulta extends internalFrameImagen {
             ActualizarDatosBD actpaciente = new ActualizarDatosBD();
             
             actpaciente.ActualizarConsultaPG(motivo_consulta, Total_pagar, HistoriaM, HistoriaM, ExamenC, DXodon, code);
+            limpiarTxt();
            
        }else{
           JOptionPane.showMessageDialog(null, "DEBE DE LLENAR TODOS LOS CAMPOS");
