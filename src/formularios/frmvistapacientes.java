@@ -168,7 +168,7 @@ public class frmvistapacientes extends internalFrameImagen{
             id= jtPacientes.getValueAt(fila, 0).toString();
             ExpedienteOrtodoncia.txttelefono.setText(tel);
             ExpedienteOrtodoncia.txtedad.setText(edad);
-            ExpedienteOrtodoncia.txtdirección.setText(direc);
+            ExpedienteOrtodoncia.txtdireccion.setText(direc);
             ExpedienteOrtodoncia.txtnombre.setText(nombre);
             ExpedienteOrtodoncia.txtapellido.setText(apellido);
             ExpedienteOrtodoncia.txttip.setText(id);
