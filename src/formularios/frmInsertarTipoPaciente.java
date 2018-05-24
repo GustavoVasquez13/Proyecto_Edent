@@ -154,7 +154,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
             mostrarTP();
             
         }else{
-            JOptionPane.showMessageDialog(null, "Debe Ingresar un Servicio y un Proveedor");
+            JOptionPane.showMessageDialog(null, "Debe Ingresar un Tipo de Paciente");
         }
     }//GEN-LAST:event_btnGuardarActionPerformed
 
