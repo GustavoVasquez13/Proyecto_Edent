@@ -62,8 +62,8 @@ public class consulta extends internalFrameImagen {
         lbid = new javax.swing.JLabel();
         lbnombre = new javax.swing.JLabel();
         lbfecha = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
+        btnagregarpc = new javax.swing.JButton();
+        btndientes = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         btnselecionaredicion = new javax.swing.JButton();
         btneditar = new javax.swing.JButton();
@@ -116,25 +116,25 @@ public class consulta extends internalFrameImagen {
 
         jLabel3.setText("Fecha");
 
-        jButton1.setForeground(new java.awt.Color(0, 0, 204));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/agregar paciente.jpg"))); // NOI18N
-        jButton1.setText("Agregar paciente para consulta");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnagregarpc.setForeground(new java.awt.Color(0, 0, 204));
+        btnagregarpc.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/agregar paciente.jpg"))); // NOI18N
+        btnagregarpc.setText("Agregar paciente para consulta");
+        btnagregarpc.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnagregarpc.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnagregarpc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnagregarpcActionPerformed(evt);
             }
         });
 
-        jButton2.setForeground(new java.awt.Color(0, 0, 204));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/dientes.jpg"))); // NOI18N
-        jButton2.setText("insertar dientes");
-        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
+        btndientes.setForeground(new java.awt.Color(0, 0, 204));
+        btndientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/dientes.jpg"))); // NOI18N
+        btndientes.setText("insertar dientes");
+        btndientes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btndientes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btndientes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton2ActionPerformed(evt);
+                btndientesActionPerformed(evt);
             }
         });
 
@@ -242,9 +242,9 @@ public class consulta extends internalFrameImagen {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(jButton1)
+                .addComponent(btnagregarpc)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jButton2)
+                .addComponent(btndientes)
                 .addGap(95, 95, 95))
         );
         layout.setVerticalGroup(
@@ -254,9 +254,9 @@ public class consulta extends internalFrameImagen {
                 .addComponent(jLabel5)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
+                    .addComponent(btnagregarpc)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jButton2)
+                        .addComponent(btndientes)
                         .addGap(9, 9, 9)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -354,13 +354,13 @@ public class consulta extends internalFrameImagen {
         this.dispose();
     }//GEN-LAST:event_btnsalirActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnagregarpcActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnagregarpcActionPerformed
         frmvistapacientes_1 fr=new frmvistapacientes_1();
         Dpanel.add(fr);
         fr.show();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnagregarpcActionPerformed
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
    
         frm_indientes fr=new frm_indientes();
  Dpanel.add(fr);
@@ -369,7 +369,7 @@ public class consulta extends internalFrameImagen {
      frm_indientes.lbnombre.setText(lbnombre.getText());
       frm_indientes.lbfecha.setText(lbfecha.getText());
 // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+    }//GEN-LAST:event_btndientesActionPerformed
 
     private void btnselecionaredicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnselecionaredicionActionPerformed
         frmEditarConsultaG fr=new frmEditarConsultaG();
@@ -398,11 +398,11 @@ public class consulta extends internalFrameImagen {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JButton btnGuardar;
+    public static javax.swing.JButton btnagregarpc;
+    public static javax.swing.JButton btndientes;
     public static javax.swing.JButton btneditar;
     private javax.swing.JButton btnsalir;
     public static javax.swing.JButton btnselecionaredicion;
-    private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
