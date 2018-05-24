@@ -39,6 +39,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         ExpedienteGeneral.btneditar.setEnabled(false);
         ExpedienteGeneral.btnbuscaredicion.setEnabled(true);
         ExpedienteGeneral.btnGuardar.setEnabled(false);
+       
     }
 
     /**
@@ -114,6 +115,11 @@ public class ExpedienteGeneral extends internalFrameImagen {
         txtdireccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtdireccionActionPerformed(evt);
+            }
+        });
+        txtdireccion.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtdireccionKeyPressed(evt);
             }
         });
 
@@ -219,6 +225,14 @@ public class ExpedienteGeneral extends internalFrameImagen {
         txtnombre.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtnombreActionPerformed(evt);
+            }
+        });
+        txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtnombreKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtnombreKeyTyped(evt);
             }
         });
 
@@ -453,7 +467,7 @@ consulta fr=new consulta();
     }//GEN-LAST:event_btconActionPerformed
 
     private void txttelefonoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttelefonoKeyPressed
-
+        
         txttelefono.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
                 java.util.Collections.EMPTY_SET);
         if (evt.getKeyCode() == KeyEvent.VK_TAB) {
@@ -525,6 +539,26 @@ consulta fr=new consulta();
     private void txtdireccionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtdireccionActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtdireccionActionPerformed
+
+    private void txtnombreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnombreKeyPressed
+     this.txtnombre.setBackground(Color.white);
+        txtnombre.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+            txtapellido.requestFocus();
+            this.txtapellido.setBackground(Color.LIGHT_GRAY);
+          
+        }
+    }//GEN-LAST:event_txtnombreKeyPressed
+
+    private void txtdireccionKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtdireccionKeyPressed
+        this.txtdireccion.setBackground(Color.white);
+    }//GEN-LAST:event_txtdireccionKeyPressed
+
+    private void txtnombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnombreKeyTyped
+      validaciones val = new validaciones();
+        val.validarCaracter(evt);
+    }//GEN-LAST:event_txtnombreKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
