@@ -47,6 +47,9 @@ public class frmvistapacienteTO extends internalFrameImagen{
         jtPacientes = new javax.swing.JTable();
         btnCancelar = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+
         jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
         jLabel5.setText("Vista de Pacientes de Ortodoncia para tratamiento");
 
