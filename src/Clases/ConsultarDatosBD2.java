@@ -346,4 +346,47 @@ public class ConsultarDatosBD2 {
             return null;
         }
     }
+    
+    
+    // este metodo muestra los datos de los pacientes registrados en la tabla pacienten
+    public DefaultTableModel mostrarPacientesConsultaOrtodoncia() {
+        DefaultTableModel modelo;
+        //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
+        String[] titulo
+                = {"ID Cefalometria","ID ortodoncia","Nombre","Apellido", "articular","impa","jarabak","facial"
+                  ,"is","ii", "fhis","anb82", "anb80", "anb2", "pals", "pali","ptb", "speedleve","speemoderada"
+                  ,"speesevera","dsd","clasim","entornod","bandas","tubos","otros","aparato","exodoncia","brakets"
+                  ,"retenciones", "arcos", "md","f_facieles","f_intraorales","modelo_mx","modelo_md","rx_panoramica"
+                  , "rx_cefalometrica","rx_incicivos","rx_rocabado"};
+        String[] registros = new String[8];
+        totalRegistros = 0;
+        //se agregan los campos del arreglo al modelo de la tabla
+        modelo = new DefaultTableModel(null, titulo);
+        //consulta para mostrar los datos de la base de datos
+        sSQL = "select id_consulta,nombre_pacte,apellido_pacte, motivo_consulta, HistoriaM, HistoriaO, ExamenC, DXodon from pacienten " +
+                "inner join consulta on pacienten.id_pacienteN = consulta.PacienteN_id_pacienteN where TipoPaciente_id_tipoPaciente = '2'";
+        try {
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sSQL);
+            while (rs.next()) {
+                registros[0] = rs.getString("id_consulta");
+                registros[1] = rs.getString("nombre_pacte");
+                registros[2] = rs.getString("apellido_pacte");
+                registros[3] = rs.getString("motivo_consulta");
+                registros[4] = rs.getString("HistoriaM");
+                registros[5] = rs.getString("HistoriaO");
+                registros[6] = rs.getString("ExamenC");
+                registros[7] = rs.getString("DXodon");
+                
+                totalRegistros = totalRegistros + 1;
+                modelo.addRow(registros);
+            }
+            con.closeBd();
+            return modelo;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Paciente");
+            con.closeBd();
+            return null;
+        }
+    }
 }
