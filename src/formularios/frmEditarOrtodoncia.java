@@ -129,47 +129,97 @@ private void mostrarpacientes() {
         
         if(evt.getClickCount()==2){
             int fila =jtPacientes.getSelectedRow();
-            String nombre, dx,motivoC,historiaM;
-            String historiaO,examenC,id,apellido;
-            nombre=jtPacientes.getValueAt(fila, 1).toString();
-            apellido=jtPacientes.getValueAt(fila,2).toString();
-            dx=jtPacientes.getValueAt(fila, 7).toString();
-            id=jtPacientes.getValueAt(fila, 0).toString();
-            motivoC = jtPacientes.getValueAt(fila,3).toString();
-            historiaM = jtPacientes.getValueAt(fila,4).toString();
-            historiaO = jtPacientes.getValueAt(fila,5).toString();
-            examenC = jtPacientes.getValueAt(fila,6).toString();
+            String nombre, idcefalometria,idortoncia,apellido,articular,goniaco,impa,jarabak,facial,is,ii;
+            String fhis,anb82,anb80,anb2,pals,pali,ptb,dsd,clasim,entornod;
+            String bandas,tubos,otros,aparato,exodoncia,brackets,retenciones,arcos,md,rocabado;
+            nombre=jtPacientes.getValueAt(fila, 2).toString();
+            apellido=jtPacientes.getValueAt(fila,3).toString();
+            idcefalometria=jtPacientes.getValueAt(fila, 0).toString();
+            idortoncia=jtPacientes.getValueAt(fila, 1).toString();
+            articular = jtPacientes.getValueAt(fila,4).toString();
+            goniaco = jtPacientes.getValueAt(fila,5).toString();
+            impa = jtPacientes.getValueAt(fila,6).toString();
+            jarabak = jtPacientes.getValueAt(fila, 7).toString();
+            facial = jtPacientes.getValueAt(fila,8).toString();
+            is=jtPacientes.getValueAt(fila, 9).toString();
+            ii=jtPacientes.getValueAt(fila,10).toString();
+            fhis=jtPacientes.getValueAt(fila, 11).toString();
+            anb82=jtPacientes.getValueAt(fila, 12).toString();
+            anb80 = jtPacientes.getValueAt(fila,13).toString();
+            anb2 = jtPacientes.getValueAt(fila,14).toString();
+            pals = jtPacientes.getValueAt(fila,15).toString();
+            pali = jtPacientes.getValueAt(fila,16).toString();
+            ptb=jtPacientes.getValueAt(fila, 17).toString();
+            dsd=jtPacientes.getValueAt(fila,21).toString();
+            clasim=jtPacientes.getValueAt(fila, 22).toString();
+            entornod=jtPacientes.getValueAt(fila, 23).toString();
+            bandas = jtPacientes.getValueAt(fila,24).toString();
+            tubos = jtPacientes.getValueAt(fila,25).toString();
+            otros = jtPacientes.getValueAt(fila,26).toString();
+            aparato = jtPacientes.getValueAt(fila,27).toString();
+            exodoncia=jtPacientes.getValueAt(fila, 28).toString();
+            brackets=jtPacientes.getValueAt(fila,29).toString();
+            retenciones=jtPacientes.getValueAt(fila, 30).toString();
+            arcos=jtPacientes.getValueAt(fila, 31).toString();
+            md = jtPacientes.getValueAt(fila,32).toString();
+            rocabado = jtPacientes.getValueAt(fila,40).toString();
+       
             
 
 
-            ExpedienteOrtodoncia.txtnombre.setText(nombre);
-            ExpedienteOrtodoncia.txtapellido.setText(apellido);
-            ExpedienteOrtodoncia.lblid.setText(id);
-            ExpedienteOrtodoncia.txtDX.setText(dx);
-            ExpedienteOrtodoncia.txtMotivoC.setText(motivoC);
-            ExpedienteOrtodoncia.txtHistoriaM.setText(historiaM);
-            ExpedienteOrtodoncia.txtHistoriaO.setText(historiaO);
-            ExpedienteOrtodoncia.txtExamenC.setText(examenC);
+            ExpedienteO.lbnombre.setText(nombre);
+            ExpedienteO.lbapellido.setText(apellido);
+            ExpedienteO.lbidcefa.setText(idcefalometria);
+            ExpedienteO.lbidplan.setText(idortoncia);
+            ExpedienteO.txtanguloA1.setText(articular);
+            ExpedienteO.txtanguloG1.setText(goniaco);
+            ExpedienteO.txtIMPA1.setText(impa);
+            ExpedienteO.txtJa1.setText(jarabak);
+            ExpedienteO.txtEJE.setText(facial);
+            ExpedienteO.txtIS.setText(is);
+            ExpedienteO.txtII.setText(ii);
+            ExpedienteO.txtFHIS.setText(fhis);
+            ExpedienteO.txtANB82.setText(anb82);
+            ExpedienteO.txtANB80.setText(anb80);
+            ExpedienteO.txtANB2.setText(anb2);
+            ExpedienteO.txtPALS.setText(pals);
+            ExpedienteO.txtPALI.setText(pali);
+            ExpedienteO.txtPTB.setText(ptb);
+            ExpedienteO.txtDSD.setText(dsd);
+            ExpedienteO.txtmaxilares.setText(clasim);
+            ExpedienteO.txtEntornoD.setText(entornod);
+            ExpedienteO.txtbandas.setText(bandas);
+            ExpedienteO.txttubos.setText(tubos);
+            ExpedienteO.txtotros.setText(otros);
+            ExpedienteO.txtAparato.setText(aparato);
+            ExpedienteO.txtexodoncia.setText(exodoncia);
+            ExpedienteO.txtBrakets.setText(brackets);
+            ExpedienteO.txtRetenciones.setText(retenciones);
+            ExpedienteO.txtsecuencia.setText(arcos);
+            ExpedienteO.txtMD.setText(md);
+            ExpedienteO.txtrocabado.setText(rocabado);
+//            ExpedienteO.txtPALS.setText(pals);
+            
             this.dispose();
              ExpedienteOrtodoncia.btneditar.setEnabled(true);
         
         }
         
         
-        ExpedienteOrtodoncia.fecha.setEnabled(false);
-        ExpedienteOrtodoncia.txtedad.setEnabled(false);
-        ExpedienteOrtodoncia.txttelefono.setEnabled(false);
-        ExpedienteOrtodoncia.txtnombre.setEnabled(false);
-        ExpedienteOrtodoncia.txtapellido.setEnabled(false);
-        ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
-        ExpedienteOrtodoncia.btneditar.setEnabled(true);
-        ExpedienteOrtodoncia.btnbuscaredicion.setEnabled(false);
-        ExpedienteOrtodoncia.btnGuardar.setEnabled(false);
-        ExpedienteOrtodoncia.txtMotivoC.setEnabled(true);
-        ExpedienteOrtodoncia.txtHistoriaO.setEnabled(true);
-        ExpedienteOrtodoncia.txtHistoriaM.setEnabled(true);
-        ExpedienteOrtodoncia.txtExamenC.setEnabled(true);
-        ExpedienteOrtodoncia.txtDX.setEnabled(true);
+//        ExpedienteOrtodoncia.fecha.setEnabled(false);
+//        ExpedienteOrtodoncia.txtedad.setEnabled(false);
+//        ExpedienteOrtodoncia.txttelefono.setEnabled(false);
+//        ExpedienteOrtodoncia.txtnombre.setEnabled(false);
+//        ExpedienteOrtodoncia.txtapellido.setEnabled(false);
+//        ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
+//        ExpedienteOrtodoncia.btneditar.setEnabled(true);
+//        ExpedienteOrtodoncia.btnbuscaredicion.setEnabled(false);
+//        ExpedienteOrtodoncia.btnGuardar.setEnabled(false);
+//        ExpedienteOrtodoncia.txtMotivoC.setEnabled(true);
+//        ExpedienteOrtodoncia.txtHistoriaO.setEnabled(true);
+//        ExpedienteOrtodoncia.txtHistoriaM.setEnabled(true);
+//        ExpedienteOrtodoncia.txtExamenC.setEnabled(true);
+//        ExpedienteOrtodoncia.txtDX.setEnabled(true);
         
    
     }//GEN-LAST:event_jtPacientesMousePressed
