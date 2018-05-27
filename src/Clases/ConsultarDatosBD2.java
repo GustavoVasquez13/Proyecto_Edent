@@ -45,7 +45,7 @@ public class ConsultarDatosBD2 {
        }
     }
     
-    //este metodo muestra los ussuarios que tienen acceso al sistema
+    //este metodo muestra los usuarios que tienen acceso al sistema
     public DefaultTableModel mostrarus(){
        DefaultTableModel modelo;
        String[] titulos = {"NOMBRE","APELLIDO","USUARIO","CORREO","TIPO USUARIO"};
