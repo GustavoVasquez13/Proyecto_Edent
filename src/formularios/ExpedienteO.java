@@ -5,6 +5,7 @@
  */
 package formularios;
 
+import Clases.ActualizarDatosBD;
 import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
 import static formularios.frmPrincipal.Dpanel;
@@ -166,6 +167,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jButton1 = new javax.swing.JButton();
         lbid = new javax.swing.JLabel();
         lbidplan = new javax.swing.JLabel();
+        btneditar = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -614,7 +616,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 btnguardarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 530, -1, 83));
+        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 530, -1, 90));
 
         btnsalir.setForeground(new java.awt.Color(0, 0, 204));
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
@@ -626,7 +628,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 btnsalirActionPerformed(evt);
             }
         });
-        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 530, -1, 83));
+        getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 530, -1, 90));
 
         btnpaciente.setForeground(new java.awt.Color(0, 0, 204));
         btnpaciente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/elegir tp.png"))); // NOI18N
@@ -664,9 +666,21 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 jButton1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 530, -1, 80));
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 530, -1, 90));
         getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1101, 87, 57, 18));
         getContentPane().add(lbidplan, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 50, 57, 18));
+
+        btneditar.setForeground(new java.awt.Color(0, 0, 204));
+        btneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
+        btneditar.setText("Editar");
+        btneditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btneditar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btneditar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btneditarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btneditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 530, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -882,8 +896,33 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
        formExGral.show();
     }//GEN-LAST:event_jButton1ActionPerformed
 
+    private void btneditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditarActionPerformed
+          String articular = this.txtanguloA1.getText().toUpperCase();
+          String goniaco = this.txtanguloG1.getText().toUpperCase();
+          String impa = this.txtIMPA1.getText().toUpperCase();
+          String jarabak = this.txtJa1.getText().toUpperCase();
+          String facial = this.txtEJE.getText().toUpperCase();
+          String is = this.txtIS.getText().toUpperCase();
+          String ii = this.txtII.getText().toUpperCase();
+          String fhis = this.txtFHIS.getText().toUpperCase();
+          String anb82 = this.txtANB82.getText().toUpperCase();
+          String anb80 = this.txtANB80.getText().toUpperCase();
+          String anb2 = this.txtANB2.getText().toUpperCase();
+          String pals = this.txtPALS.getText().toUpperCase();
+          String pali = this.txtPALI.getText().toUpperCase();
+          String ptb = this.txtPTB.getText().toUpperCase();
+          String dsd = this.txtDSD.getText().toUpperCase();
+          String clasim = this.txtmaxilares.getText().toUpperCase();
+          String entornod = this.txtEntornoD.getText().toUpperCase();
+          int code = Integer.valueOf(this.lbidcefa.getText());
+          ActualizarDatosBD actpaciente = new ActualizarDatosBD();
+          actpaciente.ActualizarCefalometria(articular, goniaco, impa, jarabak, facial, is, ii, fhis, anb82, anb80, anb2, pals, pali, ptb, dsd, clasim, entornod, code);
+          
+    }//GEN-LAST:event_btneditarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btneditar;
     private javax.swing.JButton btnguardar;
     private javax.swing.JButton btnpaciente;
     private javax.swing.JButton btnsalir;
