@@ -358,25 +358,59 @@ public class ConsultarDatosBD2 {
                   ,"speesevera","dsd","clasim","entornod","bandas","tubos","otros","aparato","exodoncia","brakets"
                   ,"retenciones", "arcos", "md","f_facieles","f_intraorales","modelo_mx","modelo_md","rx_panoramica"
                   , "rx_cefalometrica","rx_incicivos","rx_rocabado"};
-        String[] registros = new String[8];
+        String[] registros = new String[41];
         totalRegistros = 0;
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
         //consulta para mostrar los datos de la base de datos
-        sSQL = "select id_consulta,nombre_pacte,apellido_pacte, motivo_consulta, HistoriaM, HistoriaO, ExamenC, DXodon from pacienten " +
-                "inner join consulta on pacienten.id_pacienteN = consulta.PacienteN_id_pacienteN where TipoPaciente_id_tipoPaciente = '2'";
+        sSQL = "SELECT id_cefalometria,id_ortodoncia,nombre_pacte, apellido_pacte, articular,goniaco,impa,jarabak,facial,cefalometria.is,ii,fhis,anb82,anb80,anb2,pals, pali,ptb, speeleve,speemoderada,speesvera,dsd,clasim,entornod,bandas,tubos,otros,aparato,exodoncia,brackets,retenciones,arcos,md,f_faciales, f_intraorales,modelo_mx,modelo_md,rx_panoramica,rx_cefalometrica,rx_incicivos,rx_rocabado from consulta inner join pacienten ON consulta.PacienteN_id_pacienteN = pacienten.id_pacienteN inner join cefalometria on cefalometria.Consulta_id_consulta = consulta.id_consulta inner join plan_trata_ortodon on plan_trata_ortodon.Consulta_id_consulta = consulta.id_consulta";
         try {
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
             while (rs.next()) {
-                registros[0] = rs.getString("id_consulta");
-                registros[1] = rs.getString("nombre_pacte");
+                registros[0] = rs.getString("id_cefalometria");
+                registros[1] = rs.getString("id_ortodoncia");
                 registros[2] = rs.getString("apellido_pacte");
-                registros[3] = rs.getString("motivo_consulta");
-                registros[4] = rs.getString("HistoriaM");
-                registros[5] = rs.getString("HistoriaO");
-                registros[6] = rs.getString("ExamenC");
-                registros[7] = rs.getString("DXodon");
+                registros[3] = rs.getString("nombre_pacte");
+                registros[4] = rs.getString("apellido_pacte");
+                registros[5] = rs.getString("articular");
+                registros[6] = rs.getString("goniaco");
+                registros[7] = rs.getString("impa");
+                registros[8] = rs.getString("jarabak");
+                registros[9] = rs.getString("facial");
+                registros[10] = rs.getString("cefalometria.is");
+                registros[11] = rs.getString("ii");
+                registros[12] = rs.getString("fhis");
+                registros[13] = rs.getString("anb82");
+                registros[14] = rs.getString("anb80");
+                registros[15] = rs.getString("anb2");
+                registros[16] = rs.getString("pals");
+                registros[17] = rs.getString("pali");
+                registros[18] = rs.getString("ptb");
+                registros[19] = rs.getString("speeleve");
+                registros[20] = rs.getString("HistoriaM");
+                registros[21] = rs.getString("HistoriaO");
+                registros[22] = rs.getString("ExamenC");
+                registros[23] = rs.getString("DXodon");
+                registros[24] = rs.getString("id_consulta");
+                registros[25] = rs.getString("nombre_pacte");
+                registros[26] = rs.getString("apellido_pacte");
+                registros[27] = rs.getString("motivo_consulta");
+                registros[28] = rs.getString("HistoriaM");
+                registros[29] = rs.getString("HistoriaO");
+                registros[30] = rs.getString("ExamenC");
+                registros[31] = rs.getString("DXodon");
+                registros[32] = rs.getString("id_consulta");
+                registros[33] = rs.getString("nombre_pacte");
+                registros[34] = rs.getString("apellido_pacte");
+                registros[35] = rs.getString("motivo_consulta");
+                registros[36] = rs.getString("HistoriaM");
+                registros[37] = rs.getString("HistoriaO");
+                registros[38] = rs.getString("ExamenC");
+                registros[39] = rs.getString("DXodon");
+                registros[40] = rs.getString("id_consulta");
+                registros[41] = rs.getString("nombre_pacte");
+                
                 
                 totalRegistros = totalRegistros + 1;
                 modelo.addRow(registros);
