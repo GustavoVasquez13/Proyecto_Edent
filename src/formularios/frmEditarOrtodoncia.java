@@ -117,15 +117,15 @@ private void mostrarpacientes() {
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jtPacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtPacientesMousePressed
-        if(evt.getClickCount() == 1){
-            int fila = jtPacientes.getSelectedRow();
-            String nombre, apellido;
-            nombre = jtPacientes.getValueAt(fila, 2).toString();
-            apellido = jtPacientes.getValueAt(fila, 3).toString();
-            
-            frmEditarOrtodoncia.lblnombre.setText(nombre);
-            frmEditarOrtodoncia.lblapellido.setText(apellido);
-        }
+//        if(evt.getClickCount() == 1){
+//            int fila = jtPacientes.getSelectedRow();
+//            String nombre, apellido;
+//            nombre = jtPacientes.getValueAt(fila, 2).toString();
+//            apellido = jtPacientes.getValueAt(fila, 3).toString();
+//            
+//            frmEditarOrtodoncia.lblnombre.setText(nombre);
+//            frmEditarOrtodoncia.lblapellido.setText(apellido);
+//        }
         
         if(evt.getClickCount()==2){
             int fila =jtPacientes.getSelectedRow();
@@ -162,7 +162,7 @@ private void mostrarpacientes() {
             retenciones=jtPacientes.getValueAt(fila, 30).toString();
             arcos=jtPacientes.getValueAt(fila, 31).toString();
             md = jtPacientes.getValueAt(fila,32).toString();
-            rocabado = jtPacientes.getValueAt(fila,40).toString();
+            rocabado = jtPacientes.getValueAt(fila,39).toString();
        
             
 
@@ -201,7 +201,7 @@ private void mostrarpacientes() {
 //            ExpedienteO.txtPALS.setText(pals);
             
             this.dispose();
-             ExpedienteOrtodoncia.btneditar.setEnabled(true);
+//             ExpedienteOrtodoncia.btneditar.setEnabled(true);
         
         }
         
