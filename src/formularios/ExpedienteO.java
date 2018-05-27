@@ -160,10 +160,12 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         lblid = new javax.swing.JLabel();
         lbnombre = new javax.swing.JLabel();
         lbapellido = new javax.swing.JLabel();
-        lbid = new javax.swing.JLabel();
+        lbidcefa = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
         jButton1 = new javax.swing.JButton();
+        lbid = new javax.swing.JLabel();
+        lbidplan = new javax.swing.JLabel();
 
         setClosable(true);
         setIconifiable(true);
@@ -208,7 +210,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         jSeparator14.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator14.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 116, 740, 110));
+        getContentPane().add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 116, 20, 110));
 
         jLabel5.setText("Angulo Articular");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 126, 80, -1));
@@ -225,7 +227,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         jSeparator15.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator15.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 116, 740, 110));
+        getContentPane().add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 116, 30, 110));
 
         jLabel7.setText("Angulo Goniaco Inferior");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 126, 120, -1));
@@ -245,7 +247,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         jSeparator16.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator16.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 116, 740, 110));
+        getContentPane().add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 116, 30, 110));
 
         jLabel18.setText("IMPA");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 126, 30, -1));
@@ -326,7 +328,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         jSeparator20.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator20.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 116, 740, 110));
+        getContentPane().add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 116, 90, 110));
 
         jLabel28.setText("ANB");
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 126, 30, -1));
@@ -542,7 +544,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 480, 80, -1));
 
         jSeparator31.setForeground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator31, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 440, 400, 70));
+        getContentPane().add(jSeparator31, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 440, 400, 20));
 
         jSeparator32.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator32.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -642,7 +644,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(lblid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1174, 81, -1, -1));
         getContentPane().add(lbnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(941, 87, 18, 18));
         getContentPane().add(lbapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(965, 87, 130, 18));
-        getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1101, 87, 57, 18));
+        getContentPane().add(lbidcefa, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 50, 57, 18));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         jLabel2.setText("Para poder continuar debe elegir un paciente:");
@@ -663,6 +665,8 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
             }
         });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 530, -1, 80));
+        getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1101, 87, 57, 18));
+        getContentPane().add(lbidplan, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 50, 57, 18));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -741,7 +745,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
         //validaciones
-        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbid.getText().length()==0){
+        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbidcefa.getText().length()==0){
             JOptionPane.showMessageDialog(null, "Debe elegir un paciente");
         }else{
             
@@ -759,7 +763,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         String pals=this.txtPALS.getText();
         String pali=this.txtPALI.getText();
         String ptb=this.txtPTB.getText();
-        String Consulta_id_consulta = this.lbid.getText();
+        String Consulta_id_consulta = this.lbidcefa.getText();
         int seleccion = 0;
         if(this.chcurvaleve1.isSelected()== true ) {
              seleccion = 1;
@@ -966,6 +970,8 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     private javax.swing.JSeparator jSeparator8;
     public static javax.swing.JLabel lbapellido;
     public static javax.swing.JLabel lbid;
+    public static javax.swing.JLabel lbidcefa;
+    public static javax.swing.JLabel lbidplan;
     private javax.swing.JLabel lblapellido;
     private javax.swing.JLabel lblid;
     private javax.swing.JLabel lblnombre;
@@ -984,32 +990,32 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     private javax.swing.JLabel lblnombre8;
     private javax.swing.JLabel lblnombre9;
     public static javax.swing.JLabel lbnombre;
-    private javax.swing.JTextField txtANB2;
-    private javax.swing.JTextField txtANB80;
-    private javax.swing.JTextField txtANB82;
-    private javax.swing.JTextField txtAparato;
-    private javax.swing.JTextField txtBrakets;
-    private javax.swing.JTextField txtDSD;
-    private javax.swing.JTextField txtEJE;
-    private javax.swing.JTextField txtEntornoD;
-    private javax.swing.JTextField txtFHIS;
-    private javax.swing.JTextField txtII;
-    private javax.swing.JTextField txtIMPA1;
-    private javax.swing.JTextField txtIS;
-    private javax.swing.JTextField txtJa1;
-    private javax.swing.JTextField txtMD;
-    private javax.swing.JTextField txtPALI;
-    private javax.swing.JTextField txtPALS;
-    private javax.swing.JTextField txtPTB;
-    private javax.swing.JTextField txtRetenciones;
-    private javax.swing.JTextField txtanguloA1;
-    private javax.swing.JTextField txtanguloG1;
-    private javax.swing.JTextField txtbandas;
-    private javax.swing.JTextField txtexodoncia;
-    private javax.swing.JTextField txtmaxilares;
-    private javax.swing.JTextField txtotros;
-    private javax.swing.JTextField txtrocabado;
-    private javax.swing.JTextField txtsecuencia;
-    private javax.swing.JTextField txttubos;
+    public static javax.swing.JTextField txtANB2;
+    public static javax.swing.JTextField txtANB80;
+    public static javax.swing.JTextField txtANB82;
+    public static javax.swing.JTextField txtAparato;
+    public static javax.swing.JTextField txtBrakets;
+    public static javax.swing.JTextField txtDSD;
+    public static javax.swing.JTextField txtEJE;
+    public static javax.swing.JTextField txtEntornoD;
+    public static javax.swing.JTextField txtFHIS;
+    public static javax.swing.JTextField txtII;
+    public static javax.swing.JTextField txtIMPA1;
+    public static javax.swing.JTextField txtIS;
+    public static javax.swing.JTextField txtJa1;
+    public static javax.swing.JTextField txtMD;
+    public static javax.swing.JTextField txtPALI;
+    public static javax.swing.JTextField txtPALS;
+    public static javax.swing.JTextField txtPTB;
+    public static javax.swing.JTextField txtRetenciones;
+    public static javax.swing.JTextField txtanguloA1;
+    public static javax.swing.JTextField txtanguloG1;
+    public static javax.swing.JTextField txtbandas;
+    public static javax.swing.JTextField txtexodoncia;
+    public static javax.swing.JTextField txtmaxilares;
+    public static javax.swing.JTextField txtotros;
+    public static javax.swing.JTextField txtrocabado;
+    public static javax.swing.JTextField txtsecuencia;
+    public static javax.swing.JTextField txttubos;
     // End of variables declaration//GEN-END:variables
 }
