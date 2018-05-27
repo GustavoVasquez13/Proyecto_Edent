@@ -657,6 +657,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jButton1.setText("Buscar paciente para editar");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
         getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 530, -1, 80));
 
         pack();
@@ -866,6 +871,12 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
        Dpanel.add(formExGral);
        formExGral.show();
     }//GEN-LAST:event_btnpacienteActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+      frmEditarOrtodoncia formExGral = new frmEditarOrtodoncia();
+       Dpanel.add(formExGral);
+       formExGral.show();
+    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
