@@ -163,7 +163,7 @@ public class frmvistapacienteTO extends internalFrameImagen{
             id= jtPacientes.getValueAt(fila, 4).toString();
             ExpedienteO.lbnombre.setText("Nombre: "+nombre);
             ExpedienteO.lbapellido.setText("Apellido: "+apellido);
-            ExpedienteO.lbid.setText(id);
+            ExpedienteO.lbidcefa.setText(id);
           
             
             
