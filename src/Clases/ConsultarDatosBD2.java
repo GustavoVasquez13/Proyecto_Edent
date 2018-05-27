@@ -353,7 +353,7 @@ public class ConsultarDatosBD2 {
         DefaultTableModel modelo;
         //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulo
-                = {"ID Cefalometria","ID ortodoncia","Nombre","Apellido", "articular","impa","jarabak","facial"
+                = {"ID Consulta","ID ortodoncia","Nombre","Apellido", "articular","impa","jarabak","facial"
                   ,"is","ii", "fhis","anb82", "anb80", "anb2", "pals", "pali","ptb", "speedleve","speemoderada"
                   ,"speesevera","dsd","clasim","entornod","bandas","tubos","otros","aparato","exodoncia","brakets"
                   ,"retenciones", "arcos", "md","f_facieles","f_intraorales","modelo_mx","modelo_md","rx_panoramica"
