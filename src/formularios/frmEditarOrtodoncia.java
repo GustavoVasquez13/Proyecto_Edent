@@ -169,7 +169,7 @@ private void mostrarpacientes() {
 
             ExpedienteO.lbnombre.setText(nombre);
             ExpedienteO.lbapellido.setText(apellido);
-            ExpedienteO.lbidcefa.setText(idconsulta);
+            ExpedienteO.lbidcefa.setText(idconsulta );
             ExpedienteO.lbidplan.setText(idortoncia);
             ExpedienteO.txtanguloA1.setText(articular);
             ExpedienteO.txtanguloG1.setText(goniaco);
