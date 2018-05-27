@@ -90,11 +90,11 @@ private void mostrarpacientes() {
 
         jLabel1.setText("Nombre del paciente Seleccionado:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 92, -1, -1));
-        getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(567, 84, 176, 30));
+        getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, 176, 30));
 
         jLabel3.setText("Apellido del paciente Seleccionado:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(763, 89, -1, -1));
-        getContentPane().add(lblapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 80, 176, 30));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 90, -1, -1));
+        getContentPane().add(lblapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 80, 176, 30));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -117,24 +117,24 @@ private void mostrarpacientes() {
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jtPacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtPacientesMousePressed
-//        if(evt.getClickCount() == 1){
-//            int fila = jtPacientes.getSelectedRow();
-//            String nombre, apellido;
-//            nombre = jtPacientes.getValueAt(fila, 2).toString();
-//            apellido = jtPacientes.getValueAt(fila, 3).toString();
-//            
-//            frmEditarOrtodoncia.lblnombre.setText(nombre);
-//            frmEditarOrtodoncia.lblapellido.setText(apellido);
-//        }
+        if(evt.getClickCount() == 1){
+            int fila = jtPacientes.getSelectedRow();
+            String nombre, apellido;
+            nombre = jtPacientes.getValueAt(fila, 2).toString();
+            apellido = jtPacientes.getValueAt(fila, 3).toString();
+            
+            frmEditarOrtodoncia.lblnombre.setText(nombre);
+            frmEditarOrtodoncia.lblapellido.setText(apellido);
+        }
         
         if(evt.getClickCount()==2){
             int fila =jtPacientes.getSelectedRow();
-            String nombre, idcefalometria,idortoncia,apellido,articular,goniaco,impa,jarabak,facial,is,ii;
+            String nombre, idconsulta,idortoncia,apellido,articular,goniaco,impa,jarabak,facial,is,ii;
             String fhis,anb82,anb80,anb2,pals,pali,ptb,dsd,clasim,entornod;
             String bandas,tubos,otros,aparato,exodoncia,brackets,retenciones,arcos,md,rocabado;
             nombre=jtPacientes.getValueAt(fila, 2).toString();
             apellido=jtPacientes.getValueAt(fila,3).toString();
-            idcefalometria=jtPacientes.getValueAt(fila, 0).toString();
+            idconsulta=jtPacientes.getValueAt(fila, 0).toString();
             idortoncia=jtPacientes.getValueAt(fila, 1).toString();
             articular = jtPacientes.getValueAt(fila,4).toString();
             goniaco = jtPacientes.getValueAt(fila,5).toString();
@@ -169,7 +169,7 @@ private void mostrarpacientes() {
 
             ExpedienteO.lbnombre.setText(nombre);
             ExpedienteO.lbapellido.setText(apellido);
-            ExpedienteO.lbidcefa.setText(idcefalometria);
+            ExpedienteO.lbidcefa.setText(idconsulta);
             ExpedienteO.lbidplan.setText(idortoncia);
             ExpedienteO.txtanguloA1.setText(articular);
             ExpedienteO.txtanguloG1.setText(goniaco);
