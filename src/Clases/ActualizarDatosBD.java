@@ -245,4 +245,40 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+     //metodo para actualizar equipo
+    public void ActualizarCefalometria(String articular,String goniaco,String impa,String jarabak,String facial,
+           String is,String ii,String fhis,String anb82,String anb80, String anb2,String pals,String pali,
+           String ptb,String dsd,String clasim,String entornod,int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update cefalometria set `articular`=?,"
+                    + "`goniaco`=?,`impa`=?,`jarabak`=?,`facial`=?, `is`=?,"
+                    + "`ii`=?,`fhis`=?,`anb82`=?,`anb80`=?, `anb2`=?,`pals`=?,`pali`=?,`ptb`=?, `dsd`=?,"
+                    + "`clasim`=?, `entornod`=? where id_cefalometria='"+code+"';");
+            pst.setString(1, articular);
+            pst.setString(2, goniaco);
+            pst.setString(3, impa);
+            pst.setString(4, jarabak);
+            pst.setString(5, facial);
+            pst.setString(6, is);
+            pst.setString(7, ii);
+            pst.setString(8, fhis);
+            pst.setString(9, anb82);
+            pst.setString(10, anb80);
+            pst.setString(11, anb2);
+            pst.setString(12, pals);
+            pst.setString(13, pali);
+            pst.setString(14, ptb);
+            pst.setString(15, dsd);
+            pst.setString(16, clasim);
+            pst.setString(17, entornod);
+
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al Actualizar los datos de Servicio  "+ex);
+            con.closeBd();
+        }
+    }
 }
