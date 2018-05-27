@@ -281,4 +281,30 @@ public class ActualizarDatosBD {
             con.closeBd();
         }
     }
+    
+     //metodo para actualizar equipo
+    public void ActualizarPlanTrata(String bandas,String tubos,String otros,String aparato,String exodoncia,
+            String brackets,String retenciones,String arcos,String md,String rx_rocabado,int code){
+        try{
+            PreparedStatement pst = cn.prepareStatement("update plan_trata_ortodon set `bandas`=?,"
+                    + "`tubos`=?,`otros`=?,`aparato`=?,`exodoncia`=?, `brackets`=?,"
+                    + "`retenciones`=?,`arcos`=?,`md`=?,`rx_rocabado`=?  where id_ortodoncia='"+code+"';");
+            pst.setString(1, bandas);
+            pst.setString(2, tubos);
+            pst.setString(3, otros);
+            pst.setString(4, aparato);
+            pst.setString(5, exodoncia);
+            pst.setString(6, brackets);
+            pst.setString(7, retenciones);
+            pst.setString(8, arcos);
+            pst.setString(9, md);
+            pst.setString(10, rx_rocabado);
+            pst.executeUpdate();
+            con.closeBd();
+            JOptionPane.showMessageDialog(null, "Se Modifico el registro correctamente");
+        }catch(SQLException ex){
+            JOptionPane.showMessageDialog(null, "Ocurrio un problema al Actualizar los datos de Servicio  "+ex);
+            con.closeBd();
+        }
+    }
 }
