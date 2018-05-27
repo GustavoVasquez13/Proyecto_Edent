@@ -917,6 +917,22 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
           int code = Integer.valueOf(this.lbidcefa.getText());
           ActualizarDatosBD actpaciente = new ActualizarDatosBD();
           actpaciente.ActualizarCefalometria(articular, goniaco, impa, jarabak, facial, is, ii, fhis, anb82, anb80, anb2, pals, pali, ptb, dsd, clasim, entornod, code);
+         
+          String bandas = this.txtbandas.getText().toUpperCase();
+          String tubos = this.txttubos.getText().toUpperCase();
+          String otros = this.txtotros.getText().toUpperCase();
+          String aparato = this.txtAparato.getText().toUpperCase();
+          String exodoncia = this.txtexodoncia.getText().toUpperCase();
+          String brackets = this.txtBrakets.getText().toUpperCase();
+          String retenciones = this.txtRetenciones.getText().toUpperCase();
+          String arcos = this.txtsecuencia.getText().toUpperCase();
+          String md = this.txtMD.getText().toUpperCase();
+          String rocabado = this.txtrocabado.getText().toUpperCase();
+          int code1 = Integer.valueOf(this.lbidplan.getText());
+          
+          ActualizarDatosBD actpaciente1 = new ActualizarDatosBD();
+          actpaciente1.ActualizarPlanTrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, rocabado, code1);
+          
           
     }//GEN-LAST:event_btneditarActionPerformed
 
