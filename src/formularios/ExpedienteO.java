@@ -674,7 +674,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(294, 75, 135, -1));
         getContentPane().add(lblapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(1021, 75, 135, -1));
         getContentPane().add(lblid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1174, 81, -1, -1));
-        getContentPane().add(lbnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(941, 87, 18, 18));
+        getContentPane().add(lbnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(829, 87, 130, 18));
         getContentPane().add(lbapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(965, 87, 130, 18));
         getContentPane().add(lbidcefa, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 50, 57, 18));
 
@@ -789,7 +789,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
         //validaciones
-        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbidcefa.getText().length()==0){
+        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbid.getText().length()==0){
             JOptionPane.showMessageDialog(null, "Debe elegir un paciente");
         }else{
             
