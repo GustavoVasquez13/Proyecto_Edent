@@ -101,7 +101,7 @@ public class frmCompraProducto extends internalFrameImagen {
         setAutoscrolls(true);
 
         btnSelectProd.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnSelectProd.setForeground(new java.awt.Color(0, 102, 204));
+        btnSelectProd.setForeground(new java.awt.Color(0, 102, 153));
         btnSelectProd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/producto_1.png"))); // NOI18N
         btnSelectProd.setText("Nuevo Producto");
         btnSelectProd.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -113,7 +113,7 @@ public class frmCompraProducto extends internalFrameImagen {
         });
 
         jLabel5.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("Costo:");
 
         txtCosto.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -123,11 +123,11 @@ public class frmCompraProducto extends internalFrameImagen {
         });
 
         jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
         jLabel6.setText("Cantidad:");
 
-        jLabel1.setFont(new java.awt.Font("Cambria Math", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Comprar productos");
 
         txtCantidad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -137,11 +137,11 @@ public class frmCompraProducto extends internalFrameImagen {
         });
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText(" Buscar Producto:");
 
         jLabel4.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("Buscar Proveedor:");
 
         txtBuscarProd.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -157,7 +157,7 @@ public class frmCompraProducto extends internalFrameImagen {
         });
 
         btnComprar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnComprar.setForeground(new java.awt.Color(0, 102, 204));
+        btnComprar.setForeground(new java.awt.Color(0, 102, 153));
         btnComprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/compra.png"))); // NOI18N
         btnComprar.setText("Comprar");
         btnComprar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -169,7 +169,7 @@ public class frmCompraProducto extends internalFrameImagen {
         });
 
         btnSelectProve.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnSelectProve.setForeground(new java.awt.Color(0, 102, 204));
+        btnSelectProve.setForeground(new java.awt.Color(0, 102, 153));
         btnSelectProve.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/proveedor_.png"))); // NOI18N
         btnSelectProve.setText("Nuevo Proveedor");
         btnSelectProve.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -181,11 +181,11 @@ public class frmCompraProducto extends internalFrameImagen {
         });
 
         jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("Marca:");
 
         btnCerrar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnCerrar.setForeground(new java.awt.Color(0, 102, 204));
+        btnCerrar.setForeground(new java.awt.Color(0, 102, 153));
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCerrar.setText("Cerrar");
         btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -219,13 +219,13 @@ public class frmCompraProducto extends internalFrameImagen {
         txtProveedor.setEditable(false);
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel8.setForeground(new java.awt.Color(0, 102, 153));
         jLabel8.setText("Proveedor seleccionado:");
 
         txtProducto.setEditable(false);
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText(" Producto seleccionado:");
 
         jtProd = new javax.swing.JTable(){     public boolean isCellEditable(int rowIndex, int colIndex){         return false;     } };
@@ -249,13 +249,13 @@ public class frmCompraProducto extends internalFrameImagen {
         jScrollPane2.setViewportView(jtProd);
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel9.setForeground(new java.awt.Color(0, 102, 153));
         jLabel9.setText("Fecha de compra:");
 
         fechaCompra.setDateFormatString("yyy-MM-dd");
 
         btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnActualizar.setForeground(new java.awt.Color(0, 102, 204));
+        btnActualizar.setForeground(new java.awt.Color(0, 102, 153));
         btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/actualizar.png"))); // NOI18N
         btnActualizar.setText("Actualizar");
         btnActualizar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -273,11 +273,11 @@ public class frmCompraProducto extends internalFrameImagen {
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel10.setForeground(new java.awt.Color(0, 102, 153));
         jLabel10.setText("Para seleccionar de click en un proveedor");
 
         jLabel11.setFont(new java.awt.Font("Tahoma", 1, 13)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 102, 204));
+        jLabel11.setForeground(new java.awt.Color(0, 102, 153));
         jLabel11.setText("Para seleccionar de click en un producto");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
