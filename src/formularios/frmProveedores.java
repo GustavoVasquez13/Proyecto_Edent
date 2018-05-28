@@ -50,7 +50,8 @@ public class frmProveedores extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
-        jLabel1.setFont(new java.awt.Font("Cambria Math", 1, 24)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Agregar nuevo proveedor");
 
         txtNombreP.addActionListener(new java.awt.event.ActionListener() {
@@ -59,16 +60,24 @@ public class frmProveedores extends internalFrameImagen {
             }
         });
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
         jLabel6.setText("Nombre del Proveedor:");
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("Dirección:");
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(0, 102, 153));
         jLabel8.setText("Télefono:");
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel9.setForeground(new java.awt.Color(0, 102, 153));
         jLabel9.setText("E-mail:");
 
         btnAgregar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnAgregar.setForeground(new java.awt.Color(0, 102, 204));
+        btnAgregar.setForeground(new java.awt.Color(0, 102, 153));
         btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnAgregar.setText("Agregar");
         btnAgregar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -86,7 +95,7 @@ public class frmProveedores extends internalFrameImagen {
         });
 
         btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnCancelar.setForeground(new java.awt.Color(0, 102, 204));
+        btnCancelar.setForeground(new java.awt.Color(0, 102, 153));
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -113,6 +122,8 @@ public class frmProveedores extends internalFrameImagen {
         });
         jScrollPane1.setViewportView(jtProv);
 
+        jLabel2.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Buscar Proveedor: ");
 
         txtBuscarProv.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -122,7 +133,7 @@ public class frmProveedores extends internalFrameImagen {
         });
 
         btnEditar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnEditar.setForeground(new java.awt.Color(0, 102, 204));
+        btnEditar.setForeground(new java.awt.Color(0, 102, 153));
         btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnEditar.setText("Editar");
         btnEditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -176,7 +187,7 @@ public class frmProveedores extends internalFrameImagen {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(txtCorreo, javax.swing.GroupLayout.DEFAULT_SIZE, 266, Short.MAX_VALUE)
                                     .addComponent(txtTelefono))))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 44, Short.MAX_VALUE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
