@@ -155,7 +155,7 @@ public class frmayudaEG extends internalFrameImagen {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblRegMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para realizar una consulta <b>Busqueda</b> solo necesita seleccionar <b>en el boton</b> "
+        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para realizar una consulta solo necesita seleccionar <b>en el boton</b> "
             + "Elegir tipo de paciente</p></body></html>");
     }//GEN-LAST:event_lblRegMouseClicked
 
