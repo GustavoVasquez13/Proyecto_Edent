@@ -9,6 +9,7 @@ import Clases.ActualizarDatosBD;
 import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
 import static formularios.frmPrincipal.Dpanel;
+import formulariosAyuda.frmayudaPO;
 import javax.swing.JOptionPane;
 
 /**
@@ -198,6 +199,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         lbid = new javax.swing.JLabel();
         lbidplan = new javax.swing.JLabel();
         btneditar = new javax.swing.JButton();
+        ayuda = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -712,6 +714,14 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(btneditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 530, -1, -1));
 
+        ayuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/help (1).png"))); // NOI18N
+        ayuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ayudaActionPerformed(evt);
+            }
+        });
+        getContentPane().add(ayuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 10, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -966,8 +976,15 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
           
     }//GEN-LAST:event_btneditarActionPerformed
 
+    private void ayudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ayudaActionPerformed
+        frmayudaPO ayudaPE = new frmayudaPO();
+        frmPrincipal.Dpanel.add(ayudaPE);
+        ayudaPE.show();
+    }//GEN-LAST:event_ayudaActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton ayuda;
     public static javax.swing.JButton btneditar;
     public static javax.swing.JButton btnguardar;
     public static javax.swing.JButton btnpaciente;
