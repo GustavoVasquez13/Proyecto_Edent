@@ -30,7 +30,7 @@
                       <Component id="lblReg" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="101" max="32767" attributes="0"/>
+              <EmptySpace pref="114" max="32767" attributes="0"/>
           </Group>
           <Group type="103" rootIndex="1" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
@@ -52,7 +52,7 @@
                           <Component id="lblCL1" min="-2" pref="71" max="-2" attributes="0"/>
                       </Group>
                   </Group>
-                  <EmptySpace pref="72" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
       </Group>
@@ -140,7 +140,7 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Baskerville Old Face" size="14" style="1"/>
         </Property>
-        <Property name="text" type="java.lang.String" value="Registrar un Pago"/>
+        <Property name="text" type="java.lang.String" value="Realizar una edicion de datos"/>
         <Property name="toolTipText" type="java.lang.String" value="Click Para Ver la Descripcion del Caso"/>
       </Properties>
       <Events>

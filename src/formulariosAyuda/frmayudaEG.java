@@ -64,7 +64,7 @@ public class frmayudaEG extends internalFrameImagen {
         lblMensaje.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
 
         lblEdit.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lblEdit.setText("Registrar un Pago");
+        lblEdit.setText("Realizar una edicion de datos");
         lblEdit.setToolTipText("Click Para Ver la Descripcion del Caso");
         lblEdit.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -107,7 +107,7 @@ public class frmayudaEG extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(49, 49, 49)
                         .addComponent(lblReg)))
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(114, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(51, 51, 51)
@@ -124,7 +124,7 @@ public class frmayudaEG extends internalFrameImagen {
                             .addComponent(lblCL2, javax.swing.GroupLayout.PREFERRED_SIZE, 84, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGap(18, 18, 18)
                             .addComponent(lblCL1, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addContainerGap(72, Short.MAX_VALUE)))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -190,7 +190,7 @@ public class frmayudaEG extends internalFrameImagen {
     }//GEN-LAST:event_lblEditMouseExited
 
     private void lblErroresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\"><b>Problemas al Realizar los pagos</b> este tipo de problemas se puede presentar"
+        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\"><b>Problemas al Realizar la consulta</b> este tipo de problemas se puede presentar"
             + " cuando se ha perdido la <b>conexion con la base de datos,</b> causando que no se pueda realizar la operacion Solicitada.<br><br>"
             + "Para Solucionar este problema Porfavor Comuniquese con el <b>Administrador de Sistema.</b></p></body></html>");
     }//GEN-LAST:event_lblErroresMouseClicked
