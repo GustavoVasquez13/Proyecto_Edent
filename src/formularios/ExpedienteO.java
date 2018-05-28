@@ -23,6 +23,36 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     public ExpedienteO() {
         initComponents();
         setImagenw("img2.jpg");
+
+            ExpedienteO.txtanguloA1.setEnabled(false);
+            ExpedienteO.txtanguloG1.setEnabled(false);
+            ExpedienteO.txtIMPA1.setEnabled(false);
+            ExpedienteO.txtJa1.setEnabled(false);
+            ExpedienteO.txtEJE.setEnabled(false);
+            ExpedienteO.txtIS.setEnabled(false);
+            ExpedienteO.txtII.setEnabled(false);
+            ExpedienteO.txtFHIS.setEnabled(false);
+            ExpedienteO.txtANB82.setEnabled(false);
+            ExpedienteO.txtANB80.setEnabled(false);
+            ExpedienteO.txtANB2.setEnabled(false);
+            ExpedienteO.txtPALS.setEnabled(false);
+            ExpedienteO.txtPALI.setEnabled(false);
+            ExpedienteO.txtPTB.setEnabled(false);
+            ExpedienteO.txtDSD.setEnabled(false);
+            ExpedienteO.txtmaxilares.setEnabled(false);
+            ExpedienteO.txtEntornoD.setEnabled(false);
+            ExpedienteO.txtbandas.setEnabled(false);
+            ExpedienteO.txttubos.setEnabled(false);
+            ExpedienteO.txtotros.setEnabled(false);
+            ExpedienteO.txtAparato.setEnabled(false);
+            ExpedienteO.txtexodoncia.setEnabled(false);
+            ExpedienteO.txtBrakets.setEnabled(false);
+            ExpedienteO.txtRetenciones.setEnabled(false);
+            ExpedienteO.txtsecuencia.setEnabled(false);
+            ExpedienteO.txtMD.setEnabled(false);
+            ExpedienteO.txtrocabado.setEnabled(false);
+            ExpedienteO.btnguardar.setEnabled(false);
+            ExpedienteO.btneditar.setEnabled(false);
     }
 
     /**
@@ -938,9 +968,9 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btneditar;
-    private javax.swing.JButton btnguardar;
-    private javax.swing.JButton btnpaciente;
+    public static javax.swing.JButton btneditar;
+    public static javax.swing.JButton btnguardar;
+    public static javax.swing.JButton btnpaciente;
     private javax.swing.JButton btnsalir;
     private javax.swing.JCheckBox chcefalometrica;
     private javax.swing.JCheckBox chcurvaleve1;
@@ -952,7 +982,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     private javax.swing.JCheckBox chmodelo;
     private javax.swing.JCheckBox chmodeloMD;
     private javax.swing.JCheckBox chpanoramica;
-    private javax.swing.JButton jButton1;
+    public static javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
