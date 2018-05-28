@@ -168,7 +168,38 @@ public class frmvistapacienteTO extends internalFrameImagen{
             
             
             this.dispose();
-        }        
+        }  
+            
+            ExpedienteO.txtanguloA1.setEnabled(true);
+            ExpedienteO.txtanguloG1.setEnabled(true);
+            ExpedienteO.txtIMPA1.setEnabled(true);
+            ExpedienteO.txtJa1.setEnabled(true);
+            ExpedienteO.txtEJE.setEnabled(true);
+            ExpedienteO.txtIS.setEnabled(true);
+            ExpedienteO.txtII.setEnabled(true);
+            ExpedienteO.txtFHIS.setEnabled(true);
+            ExpedienteO.txtANB82.setEnabled(true);
+            ExpedienteO.txtANB80.setEnabled(true);
+            ExpedienteO.txtANB2.setEnabled(true);
+            ExpedienteO.txtPALS.setEnabled(true);
+            ExpedienteO.txtPALI.setEnabled(true);
+            ExpedienteO.txtPTB.setEnabled(true);
+            ExpedienteO.txtDSD.setEnabled(true);
+            ExpedienteO.txtmaxilares.setEnabled(true);
+            ExpedienteO.txtEntornoD.setEnabled(true);
+            ExpedienteO.txtbandas.setEnabled(true);
+            ExpedienteO.txttubos.setEnabled(true);
+            ExpedienteO.txtotros.setEnabled(true);
+            ExpedienteO.txtAparato.setEnabled(true);
+            ExpedienteO.txtexodoncia.setEnabled(true);
+            ExpedienteO.txtBrakets.setEnabled(true);
+            ExpedienteO.txtRetenciones.setEnabled(true);
+            ExpedienteO.txtsecuencia.setEnabled(true);
+            ExpedienteO.txtMD.setEnabled(true);
+            ExpedienteO.txtrocabado.setEnabled(true);
+            ExpedienteO.jButton1.setEnabled(false);
+            ExpedienteO.btnguardar.setEnabled(true);
+            ExpedienteO.btneditar.setEnabled(false);
     }//GEN-LAST:event_jtPacientesMousePressed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
