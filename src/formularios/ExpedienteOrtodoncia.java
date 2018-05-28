@@ -170,7 +170,11 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        btnsiguiente.setText("siguiente");
+        btnsiguiente.setForeground(new java.awt.Color(0, 0, 204));
+        btnsiguiente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/siguiente.jpg"))); // NOI18N
+        btnsiguiente.setText("Especificaciones de tratamiento");
+        btnsiguiente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnsiguiente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btnsiguiente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnsiguienteActionPerformed(evt);
@@ -287,7 +291,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                                 .addComponent(jLabel3)
                                 .addGap(30, 30, 30)
                                 .addComponent(jButton1)
-                                .addGap(0, 23, Short.MAX_VALUE))
+                                .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(17, 17, 17)
