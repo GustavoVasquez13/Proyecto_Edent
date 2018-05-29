@@ -372,6 +372,7 @@ String fecha1=date;
 String fecha2=date1;
 String servicio=String.valueOf(cmbTipoPago.getSelectedItem());
 String total=txtTotal.getText();
+String fileName = System.getProperty("user.dir") +"/src/Reportes/reportePago.jasper";
 for(int i=0; i<jtPagos.getRowCount();i++)
 {
 em=new mpago(jtPagos.getValueAt(i, 0).toString(),jtPagos.getValueAt(i, 1).toString(),jtPagos.getValueAt(i, 2).toString());
@@ -382,7 +383,7 @@ lista.add(em);
     // Instaciamos el objeto reporte
          //Ponemos la localizacion del reporte creado
         try {
-           File theFile = new File("reportePago.jasper");
+           File theFile = new File(fileName);
             JasperReport reporte;  
             reporte = (JasperReport) JRLoader.loadObject(theFile);
             Map parametro=new HashMap();
