@@ -2,15 +2,30 @@ package Vistas;
 
 import Clases.ConsultarDatosBD2;
 import Clases.internalFrameImagen;
+import Modelo.mpago;
+import static formularios.ExpedienteGeneral.fecha;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
+import java.io.File;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import javax.swing.JOptionPane;
 import javax.swing.RowFilter;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableModel;
 import javax.swing.table.TableRowSorter;
+import net.sf.jasperreports.engine.JRException;
+import net.sf.jasperreports.engine.JasperFillManager;
+import net.sf.jasperreports.engine.JasperPrint;
+import net.sf.jasperreports.engine.JasperReport;
+import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource;
+import net.sf.jasperreports.engine.util.JRLoader;
+import net.sf.jasperreports.view.JasperViewer;
 
 public class frmVistaPagos extends internalFrameImagen {
     private TableRowSorter trsFiltro;
@@ -68,6 +83,7 @@ public class frmVistaPagos extends internalFrameImagen {
         jdfin = new com.toedter.calendar.JDateChooser();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -141,6 +157,13 @@ public class frmVistaPagos extends internalFrameImagen {
         jLabel13.setForeground(new java.awt.Color(0, 102, 153));
         jLabel13.setText("Fecha Fin");
 
+        jButton1.setText("Generar reporte");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -148,11 +171,17 @@ public class frmVistaPagos extends internalFrameImagen {
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(65, 65, 65)
-                        .addComponent(jLabel3)
-                        .addGap(18, 18, 18)
-                        .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(65, 65, 65)
+                                .addComponent(jLabel3)
+                                .addGap(18, 18, 18)
+                                .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 177, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jButton1)
+                                .addGap(26, 26, 26)))
                         .addComponent(btnCancelar))
                     .addGroup(layout.createSequentialGroup()
                         .addContainerGap(42, Short.MAX_VALUE)
@@ -208,17 +237,17 @@ public class frmVistaPagos extends internalFrameImagen {
                                 .addGap(1, 1, 1)
                                 .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 26, Short.MAX_VALUE)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnCancelar)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel3)))
-                        .addGap(21, 21, 21))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jdfin, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(jdfin, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(btnCancelar)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(txtTotal, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3)))
+                    .addComponent(jButton1, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGap(21, 21, 21))
         );
 
         pack();
@@ -326,10 +355,61 @@ public class frmVistaPagos extends internalFrameImagen {
         jtPagos.setRowSorter(trsFiltro);
     }//GEN-LAST:event_txtBuscarKeyTyped
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+     mpago em;
+        List<mpago> lista=new ArrayList();
+         String dia = Integer.toString(jdinicio.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes = Integer.toString(jdinicio.getCalendar().get(Calendar.MONTH) + 1);
+      String year = Integer.toString(jdinicio.getCalendar().get(Calendar.YEAR));
+      String fechaA = (year + "-" + mes+ "-" + dia);
+      String date = fechaA; 
+         String dia1 = Integer.toString(jdfin.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes1 = Integer.toString(jdfin.getCalendar().get(Calendar.MONTH) + 1);
+      String year1 = Integer.toString(jdfin.getCalendar().get(Calendar.YEAR));
+      String fechaA1 = (year + "-" + mes+ "-" + dia);
+      String date1 = fechaA1; 
+String fecha1=date;
+String fecha2=date1;
+String servicio=String.valueOf(cmbTipoPago.getSelectedItem());
+String total=txtTotal.getText();
+for(int i=0; i<jtPagos.getRowCount();i++)
+{
+em=new mpago(jtPagos.getValueAt(i, 0).toString(),jtPagos.getValueAt(i, 1).toString(),jtPagos.getValueAt(i, 2).toString());
+lista.add(em);
+}
+
+    
+    // Instaciamos el objeto reporte
+         //Ponemos la localizacion del reporte creado
+        try {
+           File theFile = new File("reportePago.jasper");
+            JasperReport reporte;  
+            reporte = (JasperReport) JRLoader.loadObject(theFile);
+            Map parametro=new HashMap();
+            JOptionPane.showMessageDialog(rootPane, "error" + fecha1+fecha2+servicio+total);
+            parametro.put("fecha1", fecha1);
+            parametro.put("fecha2",fecha2);
+            parametro.put("servicio",servicio);
+            parametro.put("total",total);
+            parametro.put("logo",this.getClass().getResourceAsStream("/iconos/logo.jpeg"));
+        JasperPrint jp = JasperFillManager.fillReport(reporte, parametro,new JRBeanCollectionDataSource(lista));  
+
+        
+                JasperViewer jv = new JasperViewer(jp, false);
+                jv.show();
+           // Se declara con dispose_on_close para que no se cierre el programa cuando se cierre el reporte
+            //Se vizualiza el reporte
+        } catch (JRException ex) {
+           JOptionPane.showMessageDialog(rootPane, "error" + ex);
+        }
+                // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnCancelar;
     private javax.swing.JComboBox<String> cmbTipoPago;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
