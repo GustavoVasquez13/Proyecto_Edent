@@ -59,7 +59,7 @@ public class frm_indientes extends internalFrameImagen {
 
         jLabel1.setText("Elegir dientes");
 
-        jpc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SUPERIOR", "INFERIOR", "LATERAL DERECHO", "LATERAL IZQUIERDO" }));
+        jpc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CENTRAL", "SUPERIOR", "INFERIOR", "LATERAL DERECHO", "LATERAL IZQUIERDO" }));
         jpc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jpcActionPerformed(evt);
