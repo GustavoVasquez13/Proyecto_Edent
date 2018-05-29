@@ -160,10 +160,10 @@ if(evt.getClickCount()==2){
             String apellido,fecha,id;
             nombre=jtPacientes.getValueAt(fila, 1).toString(); 
             apellido=jtPacientes.getValueAt(fila, 2).toString();
-            fecha=jtPacientes.getValueAt(fila, 6).toString();
+//            fecha=jtPacientes.getValueAt(fila, 6).toString();
             id=jtPacientes.getValueAt(fila, 0).toString();
             
-            consulta.lbfecha.setText(fecha);
+//            consulta.lbfecha.setText(fecha);
             consulta.lbnombre.setText(nombre+" "+apellido);
             consulta.lbid.setText(id);
             this.dispose();

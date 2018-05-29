@@ -10,6 +10,7 @@ import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
 import static formularios.frmPrincipal.Dpanel;
 import formulariosAyuda.frmayudaPO;
+import java.util.Calendar;
 import javax.swing.JOptionPane;
 
 /**
@@ -63,7 +64,6 @@ public class consulta extends internalFrameImagen {
         jLabel3 = new javax.swing.JLabel();
         lbid = new javax.swing.JLabel();
         lbnombre = new javax.swing.JLabel();
-        lbfecha = new javax.swing.JLabel();
         btnagregarpc = new javax.swing.JButton();
         btndientes = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
@@ -72,6 +72,7 @@ public class consulta extends internalFrameImagen {
         jLabel4 = new javax.swing.JLabel();
         lblidc = new javax.swing.JLabel();
         ayuda = new javax.swing.JButton();
+        jfecha = new com.toedter.calendar.JDateChooser();
 
         setBackground(new java.awt.Color(0, 0, 204));
         setClosable(true);
@@ -177,6 +178,13 @@ public class consulta extends internalFrameImagen {
             }
         });
 
+        jfecha.setDateFormatString("yyyy-MM-dd");
+        jfecha.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                jfechaKeyPressed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -217,8 +225,8 @@ public class consulta extends internalFrameImagen {
                         .addComponent(lbnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jLabel3)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lbfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -258,7 +266,7 @@ public class consulta extends internalFrameImagen {
                         .addComponent(jLabel4)
                         .addGap(18, 18, 18)
                         .addComponent(lblidc)))
-                .addGap(0, 51, Short.MAX_VALUE))
+                .addGap(0, 70, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -277,18 +285,21 @@ public class consulta extends internalFrameImagen {
                         .addComponent(ayuda, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jLabel1)
-                            .addComponent(jLabel2))
-                        .addComponent(lbnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(jLabel3))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel1)
+                                .addComponent(jLabel2))
+                            .addComponent(lbnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jfecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))))
+                        .addGap(2, 2, 2))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(lbid, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(4, 4, 4))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(lbfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 15, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(3, 3, 3)))
+                        .addGap(4, 4, 4)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGap(10, 10, 10)
@@ -319,7 +330,7 @@ public class consulta extends internalFrameImagen {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblnombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtpresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 63, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnselecionaredicion)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
@@ -353,8 +364,13 @@ public class consulta extends internalFrameImagen {
         String examen = this.txtExamenC.getText().toUpperCase();
         String dx = this.txtDX.getText().toUpperCase();
         String tip1=lbid.getText();
-        // se crean variables para almacenar en ellas el dia mes y año que se obtienen del control jcalendar       
-        String date = lbfecha.getText();
+        // se crean variables para almacenar en ellas el dia mes y año que se obtienen del control jcalendar  
+          String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
+      String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
+      String fechaA = (year + "-" + mes+ "-" + dia);
+      String date = fechaA; 
+       
         //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran
         //a la clase los parametros obtenidos por los jtextfield
         InsertarDatosBD insertar2 = new InsertarDatosBD();
@@ -377,13 +393,17 @@ public class consulta extends internalFrameImagen {
     }//GEN-LAST:event_btnagregarpcActionPerformed
 
     private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
-   
+    String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
+      String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
+      String fechaA = (year + "-" + mes+ "-" + dia);
+      String date = fechaA; 
         frm_indientes fr=new frm_indientes();
  Dpanel.add(fr);
         fr.show();
     frm_indientes.lbid.setText(lbid.getText());
      frm_indientes.lbnombre.setText(lbnombre.getText());
-      frm_indientes.lbfecha.setText(lbfecha.getText());
+      frm_indientes.lbfecha.setText(date);
 // TODO add your handling code here:
     }//GEN-LAST:event_btndientesActionPerformed
 
@@ -418,6 +438,15 @@ public class consulta extends internalFrameImagen {
         ayudaPE.show();
     }//GEN-LAST:event_ayudaActionPerformed
 
+    private void jfechaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_jfechaKeyPressed
+//        this.jfecha.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+//            java.util.Collections.EMPTY_SET);
+//        if (evt.getKeyCode() == KeyEvent.VK_TAB) {
+//            txttelefono.requestFocus();
+//            this.txttelefono.setBackground(Color.LIGHT_GRAY);
+//        }
+    }//GEN-LAST:event_jfechaKeyPressed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ayuda;
@@ -432,7 +461,7 @@ public class consulta extends internalFrameImagen {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    public static javax.swing.JLabel lbfecha;
+    public static com.toedter.calendar.JDateChooser jfecha;
     public static javax.swing.JLabel lbid;
     public static javax.swing.JLabel lblidc;
     private javax.swing.JLabel lblnombre1;
