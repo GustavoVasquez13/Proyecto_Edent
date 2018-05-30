@@ -1,5 +1,6 @@
 package formularios;
 
+import FormulariosPagos.abonoPacientes;
 import FormulariosPagos.frmPagoEmpleado;
 import FormulariosPagos.frmPagoEquipo;
 import FormulariosPagos.frmPagoMateriales;
@@ -50,6 +51,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
         jMenuItem21 = new javax.swing.JMenuItem();
+        jMenuItem22 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -241,6 +243,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem21);
 
+        jMenuItem22.setText("Pago Paciente");
+        jMenuItem22.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem22ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem22);
+
         jMenuBar1.add(jMenu3);
 
         jMenu4.setText("Comprar Productos");
@@ -403,9 +413,6 @@ public void run() {
         frmvistapacientes formEmpl = new frmvistapacientes();
         Dpanel.add(formEmpl);
         formEmpl.show();
-//        frmvistapacienteTO formExGral = new frmvistapacienteTO();
-//       Dpanel.add(formExGral);
-//       formExGral.show();
     }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
@@ -463,16 +470,22 @@ public void run() {
     }//GEN-LAST:event_jMenuItem20ActionPerformed
 
     private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
-consulta fr=new consulta();
- Dpanel.add(fr);
-        fr.show();        // TODO add your handling code here:
+        consulta fr=new consulta();
+        Dpanel.add(fr);
+        fr.show();
     }//GEN-LAST:event_jMenuItem21ActionPerformed
 
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
-     fr_backup fr=new fr_backup();
- Dpanel.add(fr);
-        fr.show();   // TODO add your handling code here:
+        fr_backup fr=new fr_backup();
+        Dpanel.add(fr);
+        fr.show();
     }//GEN-LAST:event_backActionPerformed
+
+    private void jMenuItem22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem22ActionPerformed
+        abonoPacientes AP = new abonoPacientes();
+        Dpanel.add(AP);
+        AP.show();
+    }//GEN-LAST:event_jMenuItem22ActionPerformed
 
     public static void main(String args[]) {
         try {
@@ -524,6 +537,7 @@ consulta fr=new consulta();
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JMenuItem jMenuItem21;
+    private javax.swing.JMenuItem jMenuItem22;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;

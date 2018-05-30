@@ -423,4 +423,39 @@ public class ConsultarDatosBD2 {
             return null;
         }
     }
+    
+    public DefaultTableModel MConsulta(){
+        DefaultTableModel model;
+        String[] titulos = {"CODIGO","NOMBRE","APELLIDO","EDAD","TIPO","MOTIVO","FECHA","TOTAL"};
+        String[] registros = new String[8];
+        
+        model = new DefaultTableModel(null,titulos);
+        try{
+           sSQL = "select id_consulta,nombre_pacte,apellido_pacte,pacienten.edad, tipopaciente.nombre_tipo,motivo_consulta,fecha_consulta,Total_pagar from consulta " +
+                "inner join pacienten on id_pacienteN=PacienteN_id_pacienteN " +
+                "inner join tipopaciente on id_tipoPaciente=TipoPaciente_id_tipoPaciente;";
+           
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           
+           while(rs.next()){
+              registros[0] = rs.getString("id_consulta");
+              registros[1] = rs.getString("nombre_pacte");
+              registros[2] = rs.getString("apellido_pacte");
+              registros[3] = rs.getString("pacienten.edad");
+              registros[4] = rs.getString("tipopaciente.nombre_tipo");
+              registros[5] = rs.getString("motivo_consulta");
+              registros[6] = rs.getString("fecha_consulta");
+              registros[7] = rs.getString("Total_pagar");
+              
+              model.addRow(registros);
+           }
+           con.closeBd();
+           return model;
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE CONSULTA");
+            con.closeBd();
+            return null;
+        }
+    }
 }
