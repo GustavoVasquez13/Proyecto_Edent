@@ -458,4 +458,34 @@ public class ConsultarDatosBD2 {
             return null;
         }
     }
+    
+     public DefaultTableModel mostrarpacientepago(){
+       DefaultTableModel modelo;
+       String[] titulos = {"ID Consulta","Nombre","Apellido","Total a Pagar"};
+       String[] registros = new String[4];
+
+       modelo = new DefaultTableModel(null,titulos);
+       sSQL = "SELECT id_consulta,nombre_pacte,apellido_pacte, Total_pagar from pacienten "
+             + "inner join consulta on pacienten.id_pacienteN = consulta.PacienteN_id_pacienteN where Total_pagar > 0";
+       
+       try{
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           while(rs.next()){
+               registros[0] = rs.getString("id_consulta");
+               registros[1] = rs.getString("nombre_pacte");
+               registros[2] = rs.getString("apellido_pacte");
+               registros[3] = rs.getString("Total_pagar");
+               
+
+               modelo.addRow(registros);
+           }
+           con.closeBd();
+           return modelo;
+       }catch(Exception e){
+           JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE LOS PACIENTES");
+           con.closeBd();
+           return null;
+       }
+    }
 }
