@@ -177,6 +177,14 @@ public class frmvistapacientes extends internalFrameImagen{
             
             this.dispose();
         }        
+        ExpedienteOrtodoncia.txtMotivoC.setEnabled(true);
+        ExpedienteOrtodoncia.btneditar.setEnabled(false);
+        ExpedienteOrtodoncia.btnbuscaredicion.setEnabled(false);
+        ExpedienteOrtodoncia.btnGuardar.setEnabled(true);
+        ExpedienteOrtodoncia.txtHistoriaO.setEnabled(true);
+        ExpedienteOrtodoncia.txtHistoriaM.setEnabled(true);
+        ExpedienteOrtodoncia.txtExamenC.setEnabled(true);
+        ExpedienteOrtodoncia.txtDX.setEnabled(true);
     }//GEN-LAST:event_jtPacientesMousePressed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
