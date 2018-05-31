@@ -8,6 +8,8 @@ import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import Clases.ConsultarDatosBD2;
 import formulariosAyuda.frmayudaSB;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.RowFilter;
@@ -85,19 +87,40 @@ public class frmmateriales extends internalFrameImagen {
         jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Nombre");
 
+        txtNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtNombreKeyPressed(evt);
+            }
+        });
+
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("Descripcion");
 
+        txtDesc.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDescKeyPressed(evt);
+            }
+        });
+
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("Tipo");
+
+        txtTipo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtTipoKeyPressed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("Cantidad");
 
         txtCantidad.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtCantidadKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtCantidadKeyTyped(evt);
             }
@@ -169,6 +192,9 @@ public class frmmateriales extends internalFrameImagen {
         jLabel7.setText("Agregar Materiales");
 
         txtCosto.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtCostoKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtCostoKeyTyped(evt);
             }
@@ -387,6 +413,52 @@ public class frmmateriales extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaSB);
         ayudaSB.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtNombreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreKeyPressed
+        txtNombre.setBackground(Color.WHITE);
+        txtNombre.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtDesc.requestFocus();
+            txtDesc.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtNombreKeyPressed
+
+    private void txtDescKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescKeyPressed
+        txtDesc.setBackground(Color.WHITE);
+        txtDesc.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtTipo.requestFocus();
+            txtTipo.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtDescKeyPressed
+
+    private void txtTipoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTipoKeyPressed
+          txtTipo.setBackground(Color.WHITE);
+        txtTipo.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtCantidad.requestFocus();
+            txtCantidad.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtTipoKeyPressed
+
+    private void txtCantidadKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCantidadKeyPressed
+        txtCantidad.setBackground(Color.WHITE);
+        txtCantidad.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtCosto.requestFocus();
+            txtCosto.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtCantidadKeyPressed
+
+    private void txtCostoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCostoKeyPressed
+         txtCosto.setBackground(Color.WHITE);
+        txtCosto.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtCostoKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
