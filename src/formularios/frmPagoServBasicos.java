@@ -5,6 +5,8 @@ import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import formulariosAyuda.frmayudaPE;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
@@ -80,12 +82,20 @@ public class frmPagoServBasicos extends internalFrameImagen {
         jLabel3.setText("Proveedor");
 
         txtProveedor.setEditable(false);
+        txtProveedor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtProveedorKeyPressed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("Total a pagar");
 
         txtTotalPago.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtTotalPagoKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTotalPagoKeyTyped(evt);
             }
@@ -146,6 +156,11 @@ public class frmPagoServBasicos extends internalFrameImagen {
         jScrollPane1.setViewportView(jtServ);
 
         txtServicio.setEditable(false);
+        txtServicio.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtServicioKeyPressed(evt);
+            }
+        });
 
         btnAggNS.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btnAggNS.setForeground(new java.awt.Color(0, 102, 153));
@@ -372,6 +387,32 @@ public class frmPagoServBasicos extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaPE);
         ayudaPE.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtServicioKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtServicioKeyPressed
+        txtServicio.setBackground(Color.WHITE);
+        txtServicio.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtProveedor.requestFocus();
+            txtProveedor.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtServicioKeyPressed
+
+    private void txtProveedorKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtProveedorKeyPressed
+        txtProveedor.setBackground(Color.WHITE);
+        txtProveedor.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtTotalPago.requestFocus();
+            txtTotalPago.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtProveedorKeyPressed
+
+    private void txtTotalPagoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTotalPagoKeyPressed
+        txtTotalPago.setBackground(Color.WHITE);
+        txtTotalPago.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtTotalPagoKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
