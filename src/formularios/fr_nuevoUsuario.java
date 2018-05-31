@@ -8,6 +8,8 @@ import Clases.funciones;
 import Clases.conexionBD;
 import Clases.internalFrameImagen;
 import formulariosAyuda.frmayudaSB;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -81,17 +83,41 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("NOMBRE");
 
+        txtNombre_persona.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtNombre_personaKeyPressed(evt);
+            }
+        });
+
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("APELLIDO");
+
+        txtape.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtapeKeyPressed(evt);
+            }
+        });
 
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("USUARIO");
 
+        txtusu.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtusuKeyPressed(evt);
+            }
+        });
+
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("CONTRASEÑA");
+
+        txtcont.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtcontKeyPressed(evt);
+            }
+        });
 
         jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 102, 153));
@@ -100,6 +126,12 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("CORREO:");
+
+        txtcorreo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtcorreoKeyPressed(evt);
+            }
+        });
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnGuardar.setForeground(new java.awt.Color(0, 102, 204));
@@ -435,6 +467,52 @@ private void mostrarusuario() {
         frmPrincipal.Dpanel.add(ayudaSB);
         ayudaSB.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtNombre_personaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombre_personaKeyPressed
+       txtNombre_persona.setBackground(Color.WHITE);
+       txtNombre_persona.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtape.requestFocus();
+           txtape.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtNombre_personaKeyPressed
+
+    private void txtapeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtapeKeyPressed
+         txtape.setBackground(Color.WHITE);
+       txtape.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtusu.requestFocus();
+           txtusu.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtapeKeyPressed
+
+    private void txtusuKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtusuKeyPressed
+          txtusu.setBackground(Color.WHITE);
+       txtusu.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtcont.requestFocus();
+           txtcont.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtusuKeyPressed
+
+    private void txtcontKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcontKeyPressed
+             txtcont.setBackground(Color.WHITE);
+       txtcont.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtcorreo.requestFocus();
+           txtcorreo.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtcontKeyPressed
+
+    private void txtcorreoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcorreoKeyPressed
+       txtcorreo.setBackground(Color.WHITE);
+       txtcorreo.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtcorreoKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
