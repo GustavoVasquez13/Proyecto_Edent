@@ -8,6 +8,8 @@ import formularios.frmEmpleados;
 import formularios.frmPrincipal;
 import formulariosAyuda.frmayudaPE;
 import formulariosAyuda.frmayudaSB;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.text.SimpleDateFormat;
@@ -87,6 +89,11 @@ public class frmPagoEmpleado extends internalFrameImagen {
         });
 
         txtDui.setEditable(false);
+        txtDui.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDuiKeyPressed(evt);
+            }
+        });
 
         btnActualizar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btnActualizar.setForeground(new java.awt.Color(0, 102, 153));
@@ -109,6 +116,9 @@ public class frmPagoEmpleado extends internalFrameImagen {
         jLabel6.setText("Buscar");
 
         txtTotalPago.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtTotalPagoKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTotalPagoKeyTyped(evt);
             }
@@ -183,6 +193,11 @@ public class frmPagoEmpleado extends internalFrameImagen {
         jLabel2.setText("Nombre");
 
         txtNombre.setEditable(false);
+        txtNombre.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtNombreKeyPressed(evt);
+            }
+        });
 
         btnAyuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/help (1).png"))); // NOI18N
         btnAyuda.addActionListener(new java.awt.event.ActionListener() {
@@ -374,6 +389,32 @@ public class frmPagoEmpleado extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaPE);
         ayudaPE.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtNombreKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreKeyPressed
+        txtNombre.setBackground(Color.WHITE);
+        txtNombre.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtDui.requestFocus();
+            txtDui.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtNombreKeyPressed
+
+    private void txtDuiKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDuiKeyPressed
+           txtDui.setBackground(Color.WHITE);
+        txtDui.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtTotalPago.requestFocus();
+            txtTotalPago.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtDuiKeyPressed
+
+    private void txtTotalPagoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTotalPagoKeyPressed
+       txtTotalPago.setBackground(Color.WHITE);
+        txtTotalPago.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtTotalPagoKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
