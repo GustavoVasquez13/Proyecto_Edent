@@ -5,6 +5,8 @@ import Clases.ConsultarDatosBD2;
 import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
 import formulariosAyuda.frmayudaSB;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
@@ -79,6 +81,12 @@ public class frmReparacion extends internalFrameImagen {
         jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Reparacion");
 
+        txtRepa.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtRepaKeyPressed(evt);
+            }
+        });
+
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Descripcion");
@@ -114,6 +122,12 @@ public class frmReparacion extends internalFrameImagen {
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtBuscarKeyTyped(evt);
+            }
+        });
+
+        txtDesc.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDescKeyPressed(evt);
             }
         });
 
@@ -320,6 +334,22 @@ public class frmReparacion extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaSB);
         ayudaSB.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtRepaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRepaKeyPressed
+       txtRepa.setBackground(Color.WHITE);
+       txtRepa.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtDesc.requestFocus();
+           txtDesc.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtRepaKeyPressed
+
+    private void txtDescKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescKeyPressed
+        txtDesc.setBackground(Color.WHITE);
+       txtDesc.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtDescKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
