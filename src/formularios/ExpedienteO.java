@@ -554,6 +554,12 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         lblnombre6.setText("DSD:");
         getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 242, 40, -1));
+
+        txtDSD.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDSDKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtDSD, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 242, 60, -1));
 
         lblnombre9.setText("mm.");
@@ -561,18 +567,42 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         lblnombre8.setText("Clasificación Maxilares:");
         getContentPane().add(lblnombre8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 268, -1, -1));
+
+        txtmaxilares.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtmaxilaresKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtmaxilares, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 268, 380, -1));
 
         lblnombre7.setText("Entorno Dental:");
         getContentPane().add(lblnombre7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 268, -1, -1));
+
+        txtEntornoD.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtEntornoDKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtEntornoD, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 268, 380, -1));
 
         lblnombre11.setText("Bandas en:");
         getContentPane().add(lblnombre11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 346, 60, 20));
+
+        txtbandas.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtbandasKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtbandas, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 346, 380, -1));
 
         lblnombre12.setText("tubos:");
         getContentPane().add(lblnombre12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 376, 40, 10));
+
+        txttubos.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txttubosKeyPressed(evt);
+            }
+        });
         getContentPane().add(txttubos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 376, 380, -1));
 
         lblnombre13.setText("Otros:");
@@ -583,14 +613,31 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtotrosActionPerformed(evt);
             }
         });
+        txtotros.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtotrosKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtotros, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 406, 380, -1));
 
         lblnombre14.setText("Aparato tipo:");
         getContentPane().add(lblnombre14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 436, 70, 20));
+
+        txtAparato.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtAparatoKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtAparato, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 436, 380, -1));
 
         lblnombre15.setText("Exodoncia:");
         getContentPane().add(lblnombre15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 476, 60, 20));
+
+        txtexodoncia.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtexodonciaKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtexodoncia, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 476, 380, -1));
 
         lblnombre17.setText("Brackets:");
@@ -599,6 +646,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         txtBrakets.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBraketsActionPerformed(evt);
+            }
+        });
+        txtBrakets.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtBraketsKeyPressed(evt);
             }
         });
         getContentPane().add(txtBrakets, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 514, 380, -1));
@@ -611,14 +663,31 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtRetencionesActionPerformed(evt);
             }
         });
+        txtRetenciones.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtRetencionesKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtRetenciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 554, 380, -1));
 
         lblnombre18.setText("Secuencia de Arcos:");
         getContentPane().add(lblnombre18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 584, 100, 20));
+
+        txtsecuencia.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtsecuenciaKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtsecuencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 584, 380, -1));
 
         lblnombre20.setText("MD:");
         getContentPane().add(lblnombre20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 624, 30, 20));
+
+        txtMD.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtMDKeyPressed(evt);
+            }
+        });
         getContentPane().add(txtMD, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 624, 380, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
@@ -701,6 +770,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         txtrocabado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtrocabadoActionPerformed(evt);
+            }
+        });
+        txtrocabado.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtrocabadoKeyPressed(evt);
             }
         });
         getContentPane().add(txtrocabado, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 480, 280, -1));
@@ -1198,7 +1272,152 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
     private void txtPTBKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtPTBKeyPressed
         txtPTB.setBackground(Color.WHITE);
+        txtPTB.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtDSD.requestFocus();
+          this.txtDSD.setBackground(Color.LIGHT_GRAY);
+   
+          }
     }//GEN-LAST:event_txtPTBKeyPressed
+
+    private void txtDSDKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDSDKeyPressed
+        txtDSD.setBackground(Color.WHITE);
+        txtDSD.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtmaxilares.requestFocus();
+          this.txtmaxilares.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtDSDKeyPressed
+
+    private void txtmaxilaresKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtmaxilaresKeyPressed
+        txtmaxilares.setBackground(Color.WHITE);
+        txtmaxilares.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtEntornoD.requestFocus();
+          this.txtEntornoD.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtmaxilaresKeyPressed
+
+    private void txtEntornoDKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtEntornoDKeyPressed
+        txtEntornoD.setBackground(Color.WHITE);
+        txtEntornoD.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtbandas.requestFocus();
+          this.txtbandas.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtEntornoDKeyPressed
+
+    private void txtbandasKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtbandasKeyPressed
+        txtbandas.setBackground(Color.WHITE);
+        txtbandas.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txttubos.requestFocus();
+          this.txttubos.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtbandasKeyPressed
+
+    private void txttubosKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttubosKeyPressed
+        txttubos.setBackground(Color.WHITE);
+        txttubos.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtotros.requestFocus();
+          this.txtotros.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txttubosKeyPressed
+
+    private void txtotrosKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtotrosKeyPressed
+       txtotros.setBackground(Color.WHITE);
+        txtotros.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtAparato.requestFocus();
+          this.txtAparato.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtotrosKeyPressed
+
+    private void txtAparatoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtAparatoKeyPressed
+        txtAparato.setBackground(Color.WHITE);
+        txtAparato.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtexodoncia.requestFocus();
+          this.txtexodoncia.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtAparatoKeyPressed
+
+    private void txtexodonciaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtexodonciaKeyPressed
+        txtexodoncia.setBackground(Color.WHITE);
+        txtexodoncia.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtBrakets.requestFocus();
+          this.txtBrakets.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtexodonciaKeyPressed
+
+    private void txtBraketsKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBraketsKeyPressed
+         txtBrakets.setBackground(Color.WHITE);
+        txtBrakets.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtRetenciones.requestFocus();
+          this.txtRetenciones.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtBraketsKeyPressed
+
+    private void txtRetencionesKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRetencionesKeyPressed
+           txtRetenciones.setBackground(Color.WHITE);
+        txtRetenciones.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtsecuencia.requestFocus();
+          this.txtsecuencia.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtRetencionesKeyPressed
+
+    private void txtsecuenciaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtsecuenciaKeyPressed
+          txtsecuencia.setBackground(Color.WHITE);
+        txtsecuencia.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtMD.requestFocus();
+          this.txtMD.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtsecuenciaKeyPressed
+
+    private void txtMDKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMDKeyPressed
+         txtMD.setBackground(Color.WHITE);
+        txtMD.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+      if (evt.getKeyCode() == KeyEvent.VK_TAB){
+          this.txtrocabado.requestFocus();
+          this.txtrocabado.setBackground(Color.LIGHT_GRAY);
+   
+          }
+    }//GEN-LAST:event_txtMDKeyPressed
+
+    private void txtrocabadoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtrocabadoKeyPressed
+        txtrocabado.setBackground(Color.WHITE);
+        txtrocabado.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtrocabadoKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
