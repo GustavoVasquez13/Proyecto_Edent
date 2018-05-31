@@ -3,6 +3,9 @@ package formularios;
 import Clases.InsertarDatosBD;
 import Clases.conexionBD;
 import Clases.funciones;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
+import java.awt.event.KeyEvent;
 
 import java.sql.Connection;
 import java.sql.ResultSet;
@@ -113,6 +116,9 @@ InsertarDatosBD i=new InsertarDatosBD();
             }
         });
         txtNombre_persona.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtNombre_personaKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNombre_personaKeyTyped(evt);
             }
@@ -127,6 +133,11 @@ InsertarDatosBD i=new InsertarDatosBD();
         txtape.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtapeActionPerformed(evt);
+            }
+        });
+        txtape.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtapeKeyPressed(evt);
             }
         });
 
@@ -157,6 +168,11 @@ InsertarDatosBD i=new InsertarDatosBD();
         txtcorreo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtcorreoActionPerformed(evt);
+            }
+        });
+        txtcorreo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtcorreoKeyPressed(evt);
             }
         });
 
@@ -190,6 +206,17 @@ InsertarDatosBD i=new InsertarDatosBD();
         txtusua.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtusuaActionPerformed(evt);
+            }
+        });
+        txtusua.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtusuaKeyPressed(evt);
+            }
+        });
+
+        txtcont.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtcontKeyPressed(evt);
             }
         });
 
@@ -359,6 +386,52 @@ InsertarDatosBD i=new InsertarDatosBD();
     private void panel2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_panel2MousePressed
         // TODO add your handling code here:
     }//GEN-LAST:event_panel2MousePressed
+
+    private void txtNombre_personaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombre_personaKeyPressed
+       txtNombre_persona.setBackground(Color.WHITE);
+       txtNombre_persona.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           this.txtape.requestFocus();
+           this.txtape.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtNombre_personaKeyPressed
+
+    private void txtapeKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtapeKeyPressed
+         txtape.setBackground(Color.WHITE);
+       txtape.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           this.txtusua.requestFocus();
+           this.txtusua.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtapeKeyPressed
+
+    private void txtusuaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtusuaKeyPressed
+         txtusua.setBackground(Color.WHITE);
+       txtusua.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           this.txtcont.requestFocus();
+           this.txtcont.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtusuaKeyPressed
+
+    private void txtcontKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcontKeyPressed
+          txtcont.setBackground(Color.WHITE);
+       txtcont.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           this.txtcorreo.requestFocus();
+           this.txtcorreo.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtcontKeyPressed
+
+    private void txtcorreoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcorreoKeyPressed
+       txtcorreo.setBackground(Color.WHITE);
+       txtcorreo.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtcorreoKeyPressed
  private void consultar(){
         conexionBD cnn=new conexionBD();
         Connection reg=cnn.conectar();
