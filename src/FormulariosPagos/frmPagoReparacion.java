@@ -7,6 +7,8 @@ import Clases.validaciones;
 import formularios.frmPrincipal;
 import formularios.frmReparacion;
 import formulariosAyuda.frmayudaPE;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.KeyAdapter;
@@ -96,6 +98,11 @@ public class frmPagoReparacion extends internalFrameImagen {
         jLabel3.setText("Descripcion");
 
         txtRepa.setEditable(false);
+        txtRepa.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtRepaKeyPressed(evt);
+            }
+        });
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btnCancelar.setForeground(new java.awt.Color(0, 102, 153));
@@ -110,6 +117,9 @@ public class frmPagoReparacion extends internalFrameImagen {
         });
 
         txtTotalPago.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtTotalPagoKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTotalPagoKeyTyped(evt);
             }
@@ -161,6 +171,11 @@ public class frmPagoReparacion extends internalFrameImagen {
         jScrollPane1.setViewportView(jtRepa);
 
         txtDesc.setEditable(false);
+        txtDesc.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDescKeyPressed(evt);
+            }
+        });
 
         btnActualizar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btnActualizar.setForeground(new java.awt.Color(0, 102, 153));
@@ -368,6 +383,32 @@ public class frmPagoReparacion extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaPE);
         ayudaPE.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtRepaKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtRepaKeyPressed
+        txtRepa.setBackground(Color.WHITE);
+        txtRepa.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtDesc.requestFocus();
+            txtDesc.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtRepaKeyPressed
+
+    private void txtDescKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescKeyPressed
+         txtDesc.setBackground(Color.WHITE);
+        txtDesc.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+        if (evt.getKeyCode() == KeyEvent.VK_TAB){
+            txtTotalPago.requestFocus();
+            txtTotalPago.setBackground(Color.LIGHT_GRAY);
+        }
+    }//GEN-LAST:event_txtDescKeyPressed
+
+    private void txtTotalPagoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTotalPagoKeyPressed
+      txtTotalPago.setBackground(Color.WHITE);
+        txtTotalPago.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtTotalPagoKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
