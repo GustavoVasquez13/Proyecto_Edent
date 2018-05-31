@@ -12,6 +12,9 @@ import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
 import formulariosAyuda.frmayudaEG;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
+import java.awt.event.KeyEvent;
 import java.util.Calendar;
 import javax.swing.JOptionPane;
 
@@ -38,6 +41,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         ExpedienteOrtodoncia.txtExamenC.setEnabled(false);
         ExpedienteOrtodoncia.txtDX.setEnabled(false);
         ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
+        
         setImagenw("img2.jpg");
     }
     
@@ -97,6 +101,9 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lbledad.setText("Edad:");
 
         txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtedadKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtedadKeyTyped(evt);
             }
@@ -120,9 +127,27 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         lblnombre1.setText("Motivo de la Consulta: ");
 
+        txtMotivoC.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtMotivoCKeyPressed(evt);
+            }
+        });
+
         lblnombre2.setText("Historia Medica:");
 
+        txtHistoriaM.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtHistoriaMKeyPressed(evt);
+            }
+        });
+
         lblnombre3.setText("Historia Odontologica:");
+
+        txtHistoriaO.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtHistoriaOKeyPressed(evt);
+            }
+        });
 
         lblnombre4.setText("Examen Clinico:");
 
@@ -131,12 +156,22 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                 txtExamenCActionPerformed(evt);
             }
         });
+        txtExamenC.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtExamenCKeyPressed(evt);
+            }
+        });
 
         lblnombre5.setText("DX Odontologico:");
 
         txtDX.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtDXActionPerformed(evt);
+            }
+        });
+        txtDX.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDXKeyPressed(evt);
             }
         });
 
@@ -542,6 +577,53 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaPE);
         ayudaPE.show();
     }//GEN-LAST:event_ayudaActionPerformed
+
+    private void txtedadKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtedadKeyPressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtedadKeyPressed
+
+    private void txtMotivoCKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtMotivoCKeyPressed
+       this.txtMotivoC.setBackground(Color.WHITE);
+       txtMotivoC.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtHistoriaM.requestFocus();
+           this.txtHistoriaM.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtMotivoCKeyPressed
+
+    private void txtHistoriaOKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHistoriaOKeyPressed
+         this.txtHistoriaO.setBackground(Color.WHITE);
+       txtHistoriaO.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtExamenC.requestFocus();
+           this.txtExamenC.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtHistoriaOKeyPressed
+
+    private void txtExamenCKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtExamenCKeyPressed
+        this.txtExamenC.setBackground(Color.WHITE);
+       txtExamenC.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtDX.requestFocus();
+           this.txtDX.setBackground(Color.LIGHT_GRAY);
+       }    }//GEN-LAST:event_txtExamenCKeyPressed
+
+    private void txtHistoriaMKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHistoriaMKeyPressed
+        this.txtHistoriaM.setBackground(Color.WHITE);
+       txtHistoriaM.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtHistoriaO.requestFocus();
+           this.txtHistoriaO.setBackground(Color.LIGHT_GRAY);
+       }    }//GEN-LAST:event_txtHistoriaMKeyPressed
+
+    private void txtDXKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDXKeyPressed
+        this.txtDX.setBackground(Color.WHITE);
+       txtDX.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);    }//GEN-LAST:event_txtDXKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
