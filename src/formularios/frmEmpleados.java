@@ -158,13 +158,31 @@ public class frmEmpleados extends internalFrameImagen {
             }
         });
 
+        txtCorreoEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtCorreoEmpKeyPressed(evt);
+            }
+        });
+
         txtTelEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtTelEmpKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTelEmpKeyTyped(evt);
             }
         });
 
+        txtCargoEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtCargoEmpKeyPressed(evt);
+            }
+        });
+
         txtSueldoEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtSueldoEmpKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtSueldoEmpKeyTyped(evt);
             }
@@ -264,6 +282,9 @@ public class frmEmpleados extends internalFrameImagen {
         txtDuiEmp.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 txtDuiEmpMouseClicked(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                txtDuiEmpMousePressed(evt);
             }
         });
 
@@ -624,6 +645,51 @@ public class frmEmpleados extends internalFrameImagen {
              txtDuiEmp.setBackground(Color.LIGHT_GRAY);
          }
     }//GEN-LAST:event_txtDireccionEmpKeyPressed
+
+    private void txtDuiEmpMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtDuiEmpMousePressed
+        txtDuiEmp.setBackground(Color.WHITE);
+        txtDuiEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+            txtCorreoEmp.requestFocus();
+             txtCorreoEmp.setBackground(Color.LIGHT_GRAY);
+        
+    }//GEN-LAST:event_txtDuiEmpMousePressed
+
+    private void txtCorreoEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoEmpKeyPressed
+         txtCorreoEmp.setBackground(Color.WHITE);
+        txtCorreoEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+         if (evt.getKeyCode() == KeyEvent.VK_TAB){
+             txtTelEmp.requestFocus();
+             txtTelEmp.setBackground(Color.LIGHT_GRAY);
+         }
+    }//GEN-LAST:event_txtCorreoEmpKeyPressed
+
+    private void txtTelEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelEmpKeyPressed
+        txtTelEmp.setBackground(Color.WHITE);
+        txtTelEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+         if (evt.getKeyCode() == KeyEvent.VK_TAB){
+             txtCargoEmp.requestFocus();
+             txtCargoEmp.setBackground(Color.LIGHT_GRAY);
+         }
+    }//GEN-LAST:event_txtTelEmpKeyPressed
+
+    private void txtCargoEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCargoEmpKeyPressed
+     txtCargoEmp.setBackground(Color.WHITE);
+        txtCargoEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+         if (evt.getKeyCode() == KeyEvent.VK_TAB){
+             txtSueldoEmp.requestFocus();
+             txtSueldoEmp.setBackground(Color.LIGHT_GRAY);
+         }
+    }//GEN-LAST:event_txtCargoEmpKeyPressed
+
+    private void txtSueldoEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtSueldoEmpKeyPressed
+       txtSueldoEmp.setBackground(Color.WHITE);
+        txtSueldoEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtSueldoEmpKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -353,16 +353,24 @@
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCorreoEmp">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCorreoEmpKeyPressed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtTelEmp">
       <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtTelEmpKeyPressed"/>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtTelEmpKeyTyped"/>
       </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtCargoEmp">
+      <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtCargoEmpKeyPressed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JTextField" name="txtSueldoEmp">
       <Events>
+        <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSueldoEmpKeyPressed"/>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtSueldoEmpKeyTyped"/>
       </Events>
     </Component>
@@ -499,6 +507,7 @@
         <EventHandler event="focusGained" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtDuiEmpFocusGained"/>
         <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txtDuiEmpFocusLost"/>
         <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txtDuiEmpMouseClicked"/>
+        <EventHandler event="mousePressed" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="txtDuiEmpMousePressed"/>
       </Events>
     </Component>
     <Component class="javax.swing.JLabel" name="lblFormato">
