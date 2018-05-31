@@ -8,6 +8,8 @@ import Clases.conexionBD;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import formulariosAyuda.frmayudaSB;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.sql.Connection;
@@ -133,14 +135,26 @@ public class frmEmpleados extends internalFrameImagen {
 
         txtApellidoEmp.setFocusCycleRoot(true);
         txtApellidoEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtApellidoEmpKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtApellidoEmpKeyTyped(evt);
             }
         });
 
         txtNombreEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtNombreEmpKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtNombreEmpKeyTyped(evt);
+            }
+        });
+
+        txtDireccionEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDireccionEmpKeyPressed(evt);
             }
         });
 
@@ -580,6 +594,36 @@ public class frmEmpleados extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaSB);
         ayudaSB.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtNombreEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreEmpKeyPressed
+        txtNombreEmp.setBackground(Color.WHITE);
+        txtNombreEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+         if (evt.getKeyCode() == KeyEvent.VK_TAB){
+             txtApellidoEmp.requestFocus();
+             txtApellidoEmp.setBackground(Color.LIGHT_GRAY);
+         }
+    }//GEN-LAST:event_txtNombreEmpKeyPressed
+
+    private void txtApellidoEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtApellidoEmpKeyPressed
+        txtApellidoEmp.setBackground(Color.WHITE);
+        txtApellidoEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+         if (evt.getKeyCode() == KeyEvent.VK_TAB){
+             txtDireccionEmp.requestFocus();
+             txtDireccionEmp.setBackground(Color.LIGHT_GRAY);
+         }
+    }//GEN-LAST:event_txtApellidoEmpKeyPressed
+
+    private void txtDireccionEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDireccionEmpKeyPressed
+        txtDireccionEmp.setBackground(Color.WHITE);
+        txtDireccionEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+         if (evt.getKeyCode() == KeyEvent.VK_TAB){
+             txtDuiEmp.requestFocus();
+             txtDuiEmp.setBackground(Color.LIGHT_GRAY);
+         }
+    }//GEN-LAST:event_txtDireccionEmpKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
