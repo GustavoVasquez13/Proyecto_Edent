@@ -3,6 +3,8 @@ package formularios;
 
 import Clases.ConsultarDatosBD;
 import Clases.internalFrameImagen;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
@@ -185,6 +187,8 @@ public class frmvistapacientes extends internalFrameImagen{
         ExpedienteOrtodoncia.txtHistoriaM.setEnabled(true);
         ExpedienteOrtodoncia.txtExamenC.setEnabled(true);
         ExpedienteOrtodoncia.txtDX.setEnabled(true);
+        ExpedienteOrtodoncia.txtMotivoC.setBackground(Color.LIGHT_GRAY);
+
     }//GEN-LAST:event_jtPacientesMousePressed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
