@@ -188,6 +188,7 @@ public class frmvistapacientes extends internalFrameImagen{
         ExpedienteOrtodoncia.txtExamenC.setEnabled(true);
         ExpedienteOrtodoncia.txtDX.setEnabled(true);
         ExpedienteOrtodoncia.txtMotivoC.setBackground(Color.LIGHT_GRAY);
+        
 
     }//GEN-LAST:event_jtPacientesMousePressed
 
