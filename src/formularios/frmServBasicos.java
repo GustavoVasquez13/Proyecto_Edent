@@ -6,6 +6,8 @@ import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import formulariosAyuda.frmayudaSB;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
@@ -77,6 +79,9 @@ public class frmServBasicos extends internalFrameImagen {
         jLabel1.setText("Servicio");
 
         txtServicio.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtServicioKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtServicioKeyTyped(evt);
             }
@@ -85,6 +90,12 @@ public class frmServBasicos extends internalFrameImagen {
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Correo");
+
+        txtCorreo.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtCorreoKeyPressed(evt);
+            }
+        });
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(0, 102, 153));
@@ -95,6 +106,9 @@ public class frmServBasicos extends internalFrameImagen {
         jLabel4.setText("Proveedor");
 
         txtProveedor.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtProveedorKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtProveedorKeyTyped(evt);
             }
@@ -122,6 +136,9 @@ public class frmServBasicos extends internalFrameImagen {
             }
         });
         txtTelefono.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtTelefonoKeyPressed(evt);
+            }
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtTelefonoKeyTyped(evt);
             }
@@ -435,6 +452,42 @@ public class frmServBasicos extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaSB);
         ayudaSB.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtServicioKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtServicioKeyPressed
+      txtServicio.setBackground(Color.WHITE);
+      txtServicio.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtProveedor.requestFocus();
+           txtProveedor.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtServicioKeyPressed
+
+    private void txtProveedorKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtProveedorKeyPressed
+         txtProveedor.setBackground(Color.WHITE);
+      txtProveedor.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtCorreo.requestFocus();
+           txtCorreo.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtProveedorKeyPressed
+
+    private void txtCorreoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoKeyPressed
+       txtCorreo.setBackground(Color.WHITE);
+      txtCorreo.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtTelefono.requestFocus();
+           txtTelefono.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtCorreoKeyPressed
+
+    private void txtTelefonoKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelefonoKeyPressed
+      txtTelefono.setBackground(Color.WHITE);
+      txtTelefono.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtTelefonoKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
