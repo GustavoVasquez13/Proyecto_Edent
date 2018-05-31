@@ -5,6 +5,8 @@ import Clases.ConsultarDatosBD;
 import Clases.internalFrameImagen;
 import Clases.InsertarDatosBD;
 import formulariosAyuda.frmayudaSB;
+import java.awt.Color;
+import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import javax.swing.JOptionPane;
@@ -56,6 +58,12 @@ public class frmProducto extends internalFrameImagen {
         jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("Descripcion:");
 
+        txtNombreP.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtNombrePKeyPressed(evt);
+            }
+        });
+
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         btnGuardar.setForeground(new java.awt.Color(0, 102, 204));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
@@ -65,6 +73,12 @@ public class frmProducto extends internalFrameImagen {
         btnGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGuardarActionPerformed(evt);
+            }
+        });
+
+        txtDescripcion.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDescripcionKeyPressed(evt);
             }
         });
 
@@ -287,6 +301,22 @@ public class frmProducto extends internalFrameImagen {
         frmPrincipal.Dpanel.add(ayudaSB);
         ayudaSB.show();
     }//GEN-LAST:event_btnAyudaActionPerformed
+
+    private void txtNombrePKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombrePKeyPressed
+       txtNombreP.setBackground(Color.WHITE);
+       txtNombreP.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+       if (evt.getKeyCode() == KeyEvent.VK_TAB){
+           txtDescripcion.requestFocus();
+           txtDescripcion.setBackground(Color.LIGHT_GRAY);
+       }
+    }//GEN-LAST:event_txtNombrePKeyPressed
+
+    private void txtDescripcionKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDescripcionKeyPressed
+         txtDescripcion.setBackground(Color.WHITE);
+       txtDescripcion.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+    }//GEN-LAST:event_txtDescripcionKeyPressed
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnAyuda;
