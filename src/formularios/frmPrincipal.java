@@ -1,5 +1,6 @@
 package formularios;
 
+import Clases.ImagenFondo;
 import FormulariosPagos.abonoPacientes;
 import FormulariosPagos.frmPagoEmpleado;
 import FormulariosPagos.frmPagoEquipo;
@@ -21,6 +22,8 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         this.setTitle("E-DENT");
         h1 = new Thread(this);
         h1.start();
+        Dpanel.setBorder(new ImagenFondo());
+        this.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
     }
 
     @SuppressWarnings("unchecked")
@@ -65,6 +68,12 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
 
+        Dpanel.addComponentListener(new java.awt.event.ComponentAdapter() {
+            public void componentResized(java.awt.event.ComponentEvent evt) {
+                DpanelComponentResized(evt);
+            }
+        });
+
         lbhora.setBackground(new java.awt.Color(0, 0, 0));
         lbhora.setFont(new java.awt.Font("Baskerville Old Face", 1, 36)); // NOI18N
         lbhora.setForeground(new java.awt.Color(0, 102, 153));
@@ -102,7 +111,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         DpanelLayout.setVerticalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DpanelLayout.createSequentialGroup()
-                .addContainerGap(468, Short.MAX_VALUE)
+                .addContainerGap(465, Short.MAX_VALUE)
                 .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblacceso, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -486,6 +495,10 @@ public void run() {
         Dpanel.add(AP);
         AP.show();
     }//GEN-LAST:event_jMenuItem22ActionPerformed
+
+    private void DpanelComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_DpanelComponentResized
+      
+    }//GEN-LAST:event_DpanelComponentResized
 
     public static void main(String args[]) {
         try {
