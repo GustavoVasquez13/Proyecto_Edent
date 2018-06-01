@@ -510,7 +510,7 @@ public void run() {
     }//GEN-LAST:event_backActionPerformed
 
     private void jMenuItem22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem22ActionPerformed
-        abonoPacientes AP = new abonoPacientes();
+        frmPagoconsulta AP = new frmPagoconsulta();
         Dpanel.add(AP);
         AP.show();
     }//GEN-LAST:event_jMenuItem22ActionPerformed
