@@ -35,7 +35,9 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         lblapellidos = new javax.swing.JLabel();
         lblnombres = new javax.swing.JLabel();
         lblacceso = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
+        btnexpediente = new javax.swing.JButton();
+        btnproveedores = new javax.swing.JButton();
+        btnadministracion = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -89,27 +91,39 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         lblacceso.setForeground(new java.awt.Color(0, 102, 153));
         lblacceso.setText("jLabel5");
 
-        jButton1.setBackground(new java.awt.Color(255, 255, 255));
-        jButton1.setForeground(new java.awt.Color(0, 102, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/expedientes.jpg"))); // NOI18N
-        jButton1.setText("Expedientes");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnexpediente.setBackground(new java.awt.Color(255, 255, 255));
+        btnexpediente.setForeground(new java.awt.Color(0, 102, 153));
+        btnexpediente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/expedientes.jpg"))); // NOI18N
+        btnexpediente.setText("Expedientes");
+        btnexpediente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnexpediente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        btnproveedores.setBackground(new java.awt.Color(255, 255, 255));
+        btnproveedores.setForeground(new java.awt.Color(0, 102, 153));
+        btnproveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/proveedores.jpg"))); // NOI18N
+        btnproveedores.setText("Proveedores");
+        btnproveedores.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnproveedores.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+
+        btnadministracion.setBackground(new java.awt.Color(255, 255, 255));
+        btnadministracion.setForeground(new java.awt.Color(0, 102, 153));
+        btnadministracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/admin.png"))); // NOI18N
+        btnadministracion.setText("Administracion");
+        btnadministracion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnadministracion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
 
         Dpanel.setLayer(lbhora, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(lblapellidos, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(lblnombres, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(lblacceso, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        Dpanel.setLayer(jButton1, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Dpanel.setLayer(btnexpediente, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Dpanel.setLayer(btnproveedores, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Dpanel.setLayer(btnadministracion, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout DpanelLayout = new javax.swing.GroupLayout(Dpanel);
         Dpanel.setLayout(DpanelLayout);
         DpanelLayout.setHorizontalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DpanelLayout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(504, 711, Short.MAX_VALUE))
             .addGroup(DpanelLayout.createSequentialGroup()
                 .addGap(10, 10, 10)
                 .addComponent(lblnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -117,16 +131,33 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 .addComponent(lblapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(lblacceso, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 363, Short.MAX_VALUE)
                 .addComponent(lbhora)
                 .addGap(32, 32, 32))
+            .addGroup(DpanelLayout.createSequentialGroup()
+                .addGap(110, 110, 110)
+                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGroup(DpanelLayout.createSequentialGroup()
+                        .addComponent(btnexpediente, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(322, 322, 322)
+                        .addComponent(btnadministracion, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         DpanelLayout.setVerticalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DpanelLayout.createSequentialGroup()
-                .addGap(190, 190, 190)
-                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(271, 271, 271)
+                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DpanelLayout.createSequentialGroup()
+                        .addGap(190, 190, 190)
+                        .addComponent(btnexpediente, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(124, 124, 124))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DpanelLayout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnadministracion, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(3, 3, 3)))
+                .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
                 .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DpanelLayout.createSequentialGroup()
                         .addGap(3, 3, 3)
@@ -549,7 +580,9 @@ public void run() {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     public static javax.swing.JDesktopPane Dpanel;
     private javax.swing.JMenuItem back;
-    private javax.swing.JButton jButton1;
+    private javax.swing.JButton btnadministracion;
+    private javax.swing.JButton btnexpediente;
+    private javax.swing.JButton btnproveedores;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
