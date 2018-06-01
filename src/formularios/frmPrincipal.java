@@ -9,6 +9,7 @@ import FormulariosPagos.frmPagoReparacion;
 import Vistas.frmVistaEmpleado;
 import Vistas.frmVistaPagos;
 import backupBD.fr_backup;
+import formulariosMenu.menuexpediente;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -99,6 +100,11 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         btnexpediente.setText("Expedientes");
         btnexpediente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnexpediente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnexpediente.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnexpedienteActionPerformed(evt);
+            }
+        });
 
         btnproveedores.setBackground(new java.awt.Color(255, 255, 255));
         btnproveedores.setForeground(new java.awt.Color(0, 102, 153));
@@ -575,6 +581,12 @@ public void run() {
     private void DpanelComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_DpanelComponentResized
       
     }//GEN-LAST:event_DpanelComponentResized
+
+    private void btnexpedienteActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexpedienteActionPerformed
+         menuexpediente formExGral = new menuexpediente();
+       Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_btnexpedienteActionPerformed
 
     public static void main(String args[]) {
         try {
