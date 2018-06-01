@@ -79,13 +79,13 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         lbhora.setForeground(new java.awt.Color(0, 102, 153));
         lbhora.setText("hora de sistema");
 
-        lblapellidos.setForeground(new java.awt.Color(255, 255, 255));
+        lblapellidos.setForeground(new java.awt.Color(0, 102, 153));
         lblapellidos.setText("jLabel4");
 
-        lblnombres.setForeground(new java.awt.Color(255, 255, 255));
+        lblnombres.setForeground(new java.awt.Color(0, 102, 153));
         lblnombres.setText("jLabel3");
 
-        lblacceso.setForeground(new java.awt.Color(255, 255, 255));
+        lblacceso.setForeground(new java.awt.Color(0, 102, 153));
         lblacceso.setText("jLabel5");
 
         Dpanel.setLayer(lbhora, javax.swing.JLayeredPane.DEFAULT_LAYER);
