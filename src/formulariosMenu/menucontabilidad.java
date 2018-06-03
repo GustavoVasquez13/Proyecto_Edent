@@ -5,6 +5,7 @@
  */
 package formulariosMenu;
 
+import Clases.internalFrameImagen;
 import FormulariosPagos.frmPagoEmpleado;
 import FormulariosPagos.frmPagoEquipo;
 import FormulariosPagos.frmPagoMateriales;
@@ -20,13 +21,14 @@ import formularios.frmmateriales;
  *
  * @author ricar
  */
-public class menucontabilidad extends javax.swing.JInternalFrame {
+public class menucontabilidad extends internalFrameImagen {
 
     /**
      * Creates new form menucontabilidad
      */
     public menucontabilidad() {
         initComponents();
+          setImagenw("img2.jpg");
     }
 
     /**
