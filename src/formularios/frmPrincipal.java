@@ -10,6 +10,7 @@ import Vistas.frmVistaEmpleado;
 import Vistas.frmVistaPagos;
 import backupBD.fr_backup;
 import formulariosMenu.menuexpediente;
+import formulariosMenu.menuproveedores;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -112,6 +113,11 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         btnproveedores.setText("Proveedores");
         btnproveedores.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnproveedores.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnproveedores.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnproveedoresActionPerformed(evt);
+            }
+        });
 
         btnadministracion.setBackground(new java.awt.Color(255, 255, 255));
         btnadministracion.setForeground(new java.awt.Color(0, 102, 153));
@@ -189,7 +195,6 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtreportes, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
                 .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(DpanelLayout.createSequentialGroup()
                         .addGap(3, 3, 3)
@@ -587,6 +592,12 @@ public void run() {
        Dpanel.add(formExGral);
         formExGral.show();
     }//GEN-LAST:event_btnexpedienteActionPerformed
+
+    private void btnproveedoresActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnproveedoresActionPerformed
+        menuproveedores formExGral = new menuproveedores();
+       Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_btnproveedoresActionPerformed
 
     public static void main(String args[]) {
         try {

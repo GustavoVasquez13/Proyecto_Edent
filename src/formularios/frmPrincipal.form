@@ -314,7 +314,6 @@
                       <Component id="btnproveedores" min="-2" pref="130" max="-2" attributes="0"/>
                       <Component id="txtreportes" min="-2" pref="130" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
                           <EmptySpace min="3" pref="3" max="-2" attributes="0"/>
@@ -415,6 +414,9 @@
             <Property name="horizontalTextPosition" type="int" value="0"/>
             <Property name="verticalTextPosition" type="int" value="3"/>
           </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnproveedoresActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JButton" name="btnadministracion">
           <Properties>
