@@ -9,6 +9,7 @@ import FormulariosPagos.frmPagoReparacion;
 import Vistas.frmVistaEmpleado;
 import Vistas.frmVistaPagos;
 import backupBD.fr_backup;
+import formulariosMenu.menucontabilidad;
 import formulariosMenu.menuexpediente;
 import formulariosMenu.menuproveedores;
 import java.util.Calendar;
@@ -132,6 +133,11 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         txtconta.setText("Contabilidad");
         txtconta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         txtconta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        txtconta.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtcontaActionPerformed(evt);
+            }
+        });
 
         txtreportes.setBackground(new java.awt.Color(255, 255, 255));
         txtreportes.setForeground(new java.awt.Color(0, 102, 153));
@@ -598,6 +604,12 @@ public void run() {
        Dpanel.add(formExGral);
         formExGral.show();
     }//GEN-LAST:event_btnproveedoresActionPerformed
+
+    private void txtcontaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtcontaActionPerformed
+         menucontabilidad formExGral = new menucontabilidad();
+       Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_txtcontaActionPerformed
 
     public static void main(String args[]) {
         try {
