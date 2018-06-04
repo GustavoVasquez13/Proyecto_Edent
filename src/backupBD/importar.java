@@ -61,6 +61,7 @@ public class importar extends internalFrameImagen {
         });
 
         jLabel82.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
         jLabel82.setText("Importar Base de Datos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

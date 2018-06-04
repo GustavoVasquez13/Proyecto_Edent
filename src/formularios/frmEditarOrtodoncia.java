@@ -48,10 +48,12 @@ private void mostrarpacientes() {
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("Vista de Pacientes de Odontologia General a Editar");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(478, 29, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, -1, -1));
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
         jLabel6.setText("Buscar");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 85, -1, 26));
 
@@ -88,10 +90,12 @@ private void mostrarpacientes() {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 132, 1333, 192));
 
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Nombre del paciente Seleccionado:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 92, -1, -1));
         getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, 176, 30));
 
+        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("Apellido del paciente Seleccionado:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 90, -1, -1));
         getContentPane().add(lblapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 80, 176, 30));

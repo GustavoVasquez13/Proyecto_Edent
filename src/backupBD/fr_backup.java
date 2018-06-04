@@ -61,6 +61,7 @@ public class fr_backup extends internalFrameImagen {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/sql.jpg"))); // NOI18N
 
         jLabel82.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
         jLabel82.setText("Backup Base de Datos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());

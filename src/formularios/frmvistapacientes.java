@@ -211,6 +211,8 @@ public class frmvistapacientes extends internalFrameImagen{
         ExpedienteOrtodoncia.txtHistoriaM.setEnabled(true);
         ExpedienteOrtodoncia.txtExamenC.setEnabled(true);
         ExpedienteOrtodoncia.txtDX.setEnabled(true);
+        ExpedienteOrtodoncia.jfecha.setEnabled(true);
+         ExpedienteOrtodoncia.btndientes.setEnabled(true);
         ExpedienteOrtodoncia.txtMotivoC.setBackground(Color.LIGHT_GRAY);
         
 

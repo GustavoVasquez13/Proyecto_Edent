@@ -65,6 +65,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem21 = new javax.swing.JMenuItem();
         jMenuItem22 = new javax.swing.JMenuItem();
         jMenuItem23 = new javax.swing.JMenuItem();
+        jMenuItem24 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -222,8 +223,10 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
 
         getContentPane().add(Dpanel);
 
+        jMenu1.setForeground(new java.awt.Color(0, 102, 153));
         jMenu1.setText("Agregar");
 
+        jMenuItem1.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem1.setText("Tipo de Servicio");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -232,6 +235,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu1.add(jMenuItem1);
 
+        jMenuItem9.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem9.setText("Nuevo Empleado");
         jMenuItem9.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -240,6 +244,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu1.add(jMenuItem9);
 
+        jMenuItem12.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem12.setText("Materiales");
         jMenuItem12.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -248,6 +253,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu1.add(jMenuItem12);
 
+        jMenuItem15.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem15.setText("Reparaciones de clinica");
         jMenuItem15.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -256,6 +262,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu1.add(jMenuItem15);
 
+        jMenuItem17.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem17.setText("Equipo");
         jMenuItem17.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -266,8 +273,10 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
 
         jMenuBar1.add(jMenu1);
 
+        jMenu2.setForeground(new java.awt.Color(0, 102, 153));
         jMenu2.setText("Pagos");
 
+        jMenuItem2.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem2.setText("Servicios Basicos");
         jMenuItem2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -276,6 +285,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu2.add(jMenuItem2);
 
+        jMenuItem13.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem13.setText("Empleados");
         jMenuItem13.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -284,6 +294,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu2.add(jMenuItem13);
 
+        jMenuItem14.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem14.setText("Materiales");
         jMenuItem14.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -292,6 +303,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu2.add(jMenuItem14);
 
+        jMenuItem16.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem16.setText("Reparaciones");
         jMenuItem16.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -300,6 +312,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu2.add(jMenuItem16);
 
+        jMenuItem18.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem18.setText("Equipo");
         jMenuItem18.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -310,8 +323,10 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
 
         jMenuBar1.add(jMenu2);
 
+        jMenu3.setForeground(new java.awt.Color(0, 102, 153));
         jMenu3.setText("Expediente");
 
+        jMenuItem3.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem3.setText("Expediente General");
         jMenuItem3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -320,6 +335,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem3);
 
+        jMenuItem5.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem5.setText("Expediente Ortodoncia");
         jMenuItem5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -328,6 +344,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem5);
 
+        jMenuItem8.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem8.setText("Insertar Tipo de Paciente");
         jMenuItem8.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -336,6 +353,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem8);
 
+        jMenuItem11.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem11.setText("Vista de pacientes Ortodoncia");
         jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -344,6 +362,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem11);
 
+        jMenuItem21.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem21.setText("Agregar consulta Paciente General");
         jMenuItem21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -352,6 +371,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem21);
 
+        jMenuItem22.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem22.setText("Pago Paciente");
         jMenuItem22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -360,6 +380,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem22);
 
+        jMenuItem23.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem23.setText("Vista Paciente Odontologia General");
         jMenuItem23.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -368,10 +389,21 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem23);
 
+        jMenuItem24.setForeground(new java.awt.Color(0, 102, 153));
+        jMenuItem24.setText("Tratamiento Ortodoncia");
+        jMenuItem24.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem24ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem24);
+
         jMenuBar1.add(jMenu3);
 
+        jMenu4.setForeground(new java.awt.Color(0, 102, 153));
         jMenu4.setText("Comprar Productos");
 
+        jMenuItem4.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem4.setText("Comprar Productos");
         jMenuItem4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -380,6 +412,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu4.add(jMenuItem4);
 
+        jMenuItem6.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem6.setText("Agregar Proveedor");
         jMenuItem6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -388,6 +421,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu4.add(jMenuItem6);
 
+        jMenuItem7.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem7.setText("Agregar Producto");
         jMenuItem7.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -398,8 +432,10 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
 
         jMenuBar1.add(jMenu4);
 
+        jMenu5.setForeground(new java.awt.Color(0, 102, 153));
         jMenu5.setText("Administrar");
 
+        jMenuItem10.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem10.setText("Nuevo usuario");
         jMenuItem10.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -408,6 +444,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu5.add(jMenuItem10);
 
+        jMenuItem19.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem19.setText("Vista Empleados");
         jMenuItem19.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -416,6 +453,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu5.add(jMenuItem19);
 
+        jMenuItem20.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem20.setText("Vista Pagos");
         jMenuItem20.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -424,6 +462,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu5.add(jMenuItem20);
 
+        back.setForeground(new java.awt.Color(0, 102, 153));
         back.setText("Backup");
         back.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -638,6 +677,12 @@ public void run() {
         formExGral.show();
     }//GEN-LAST:event_jMenuItem23ActionPerformed
 
+    private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
+       ExpedienteO formExGral = new ExpedienteO();
+       Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_jMenuItem24ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -693,6 +738,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem21;
     private javax.swing.JMenuItem jMenuItem22;
     private javax.swing.JMenuItem jMenuItem23;
+    private javax.swing.JMenuItem jMenuItem24;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;

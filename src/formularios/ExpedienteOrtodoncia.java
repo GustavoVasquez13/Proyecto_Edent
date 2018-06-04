@@ -11,8 +11,7 @@ import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
-import static formularios.frm_indientes.lbid;
-import static formularios.frm_indientes.lbnombre;
+
 import formulariosAyuda.frmayudaEG;
 import java.awt.Color;
 import java.awt.KeyboardFocusManager;
@@ -43,6 +42,8 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         ExpedienteOrtodoncia.txtExamenC.setEnabled(false);
         ExpedienteOrtodoncia.txtDX.setEnabled(false);
         ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
+        ExpedienteOrtodoncia.btndientes.setEnabled(false);
+        
         
         setImagenw("img2.jpg");
     }
@@ -77,6 +78,8 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         btnsalir = new javax.swing.JButton();
         btnsiguiente = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        txttip = new javax.swing.JTextField();
+        txttip2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         btneditar = new javax.swing.JButton();
         btnbuscaredicion = new javax.swing.JButton();
@@ -89,10 +92,13 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         setIconifiable(true);
 
         jLabel82.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
         jLabel82.setText("Expediente Paciente Ortodoncia");
 
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Fecha:");
 
+        lbltelefono.setForeground(new java.awt.Color(0, 102, 153));
         lbltelefono.setText("Telefono:");
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -101,6 +107,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lbledad.setForeground(new java.awt.Color(0, 102, 153));
         lbledad.setText("Edad:");
 
         txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -112,6 +119,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lblnombre.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre.setText("Nombre: ");
 
         txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -120,6 +128,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lbldireccion1.setForeground(new java.awt.Color(0, 102, 153));
         lbldireccion1.setText("Dirección: ");
 
         txtdireccion.addActionListener(new java.awt.event.ActionListener() {
@@ -128,6 +137,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lblnombre1.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre1.setText("Motivo de la Consulta: ");
 
         txtMotivoC.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -136,6 +146,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lblnombre2.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre2.setText("Historia Medica:");
 
         txtHistoriaM.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -144,6 +155,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lblnombre3.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre3.setText("Historia Odontologica:");
 
         txtHistoriaO.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -152,6 +164,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lblnombre4.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre4.setText("Examen Clinico:");
 
         txtExamenC.addActionListener(new java.awt.event.ActionListener() {
@@ -165,6 +178,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lblnombre5.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre5.setText("DX Odontologico:");
 
         txtDX.addActionListener(new java.awt.event.ActionListener() {
@@ -191,6 +205,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         jfecha.setDateFormatString("yyyy-MM-dd");
 
+        lblnombre40.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre40.setText("Apellido:");
 
         txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -245,6 +260,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         });
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("Para realizar una consulta elija el paciente:");
 
         btneditar.setForeground(new java.awt.Color(0, 0, 204));
@@ -269,9 +285,11 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        lblid1.setForeground(new java.awt.Color(0, 102, 153));
         lblid1.setText("ID paciente:");
         lblid1.setAutoscrolls(true);
 
+        lblid.setForeground(new java.awt.Color(0, 102, 153));
         lblid.setText("...");
         lblid.setAutoscrolls(true);
 
@@ -643,17 +661,25 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                 java.util.Collections.EMPTY_SET);    }//GEN-LAST:event_txtDXKeyPressed
 
     private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
-         String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+       if(jfecha.getDate() == null){
+           JOptionPane.showMessageDialog(null, "Agrege la Fecha de la consulta");
+       }else{
+        String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
       String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
       String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
       String fechaA = (year + "-" + mes+ "-" + dia);
       String date = fechaA; 
         frm_indientes fr=new frm_indientes();
-        Dpanel.add(fr);
+ Dpanel.add(fr);
         fr.show();
-        frm_indientes.lbid.setText(txttip.getText());
-        frm_indientes.lbnombre.setText(txtnombre.getText());
-        frm_indientes.lbfecha.setText(date);
+    frm_indientes.lbid.setText(txttip.getText());
+     frm_indientes.lbnombre.setText(txtnombre.getText());
+      frm_indientes.lbfecha.setText(date);
+       }
+           
+      
+        
+    
        
     }//GEN-LAST:event_btndientesActionPerformed
 
@@ -693,7 +719,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     public static javax.swing.JTextField txtedad;
     public static javax.swing.JTextField txtnombre;
     public static final javax.swing.JTextField txttelefono = new javax.swing.JTextField();
-    public static final javax.swing.JTextField txttip = new javax.swing.JTextField();
-    public static final javax.swing.JTextField txttip2 = new javax.swing.JTextField();
+    public static javax.swing.JTextField txttip;
+    public static javax.swing.JTextField txttip2;
     // End of variables declaration//GEN-END:variables
 }
