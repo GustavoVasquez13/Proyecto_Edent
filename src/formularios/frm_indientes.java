@@ -289,6 +289,7 @@ validar();        // TODO add your handling code here:
         IsertarDatosBD2 insertar2 = new IsertarDatosBD2();
         insertar2.insertDiente(id, dien, poc, fecha, desc);
         //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
+        this.dispose();
         
     }//GEN-LAST:event_btnGuardarActionPerformed
 
