@@ -77,6 +77,8 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         btnsalir = new javax.swing.JButton();
         btnsiguiente = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
+        txttip = new javax.swing.JTextField();
+        txttip2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
         btneditar = new javax.swing.JButton();
         btnbuscaredicion = new javax.swing.JButton();
@@ -643,17 +645,27 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                 java.util.Collections.EMPTY_SET);    }//GEN-LAST:event_txtDXKeyPressed
 
     private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
-         String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+       if(jfecha.getDate() == null){
+           JOptionPane.showMessageDialog(null, "Agrege la Fecha de la consulta");
+       }else{
+           String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
       String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
       String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
       String fechaA = (year + "-" + mes+ "-" + dia);
       String date = fechaA; 
-        frm_indientes fr=new frm_indientes();
-        Dpanel.add(fr);
-        fr.show();
+       
+        
         frm_indientes.lbid.setText(txttip.getText());
         frm_indientes.lbnombre.setText(txtnombre.getText());
         frm_indientes.lbfecha.setText(date);
+        frm_indientes fr=new frm_indientes();
+        Dpanel.add(fr);
+        fr.show();
+       }
+           
+      
+        
+    
        
     }//GEN-LAST:event_btndientesActionPerformed
 
@@ -693,7 +705,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     public static javax.swing.JTextField txtedad;
     public static javax.swing.JTextField txtnombre;
     public static final javax.swing.JTextField txttelefono = new javax.swing.JTextField();
-    public static final javax.swing.JTextField txttip = new javax.swing.JTextField();
-    public static final javax.swing.JTextField txttip2 = new javax.swing.JTextField();
+    public static javax.swing.JTextField txttip;
+    public static javax.swing.JTextField txttip2;
     // End of variables declaration//GEN-END:variables
 }
