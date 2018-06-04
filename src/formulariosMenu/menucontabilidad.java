@@ -213,54 +213,63 @@ public class menucontabilidad extends internalFrameImagen {
        frmServBasicos formSB = new frmServBasicos();
         Dpanel.add(formSB);
         formSB.show();
+        this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        frmmateriales mater = new frmmateriales();
         Dpanel.add(mater);
         mater.show();
+        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
            frmReparacion rep = new frmReparacion();
         Dpanel.add(rep);
         rep.show();
+        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
        frmEquipo eq = new frmEquipo();
         Dpanel.add(eq);
         eq.show();
+        this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
          frmPagoServBasicos formPSB = new frmPagoServBasicos();
        Dpanel.add(formPSB);
         formPSB.show();
+        this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
     private void jButton6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton6ActionPerformed
           frmPagoEmpleado PEmp = new frmPagoEmpleado();
         Dpanel.add(PEmp);
         PEmp.show();
+        this.dispose();
     }//GEN-LAST:event_jButton6ActionPerformed
 
     private void jButton7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton7ActionPerformed
          frmPagoMateriales PMaterial = new frmPagoMateriales();
        Dpanel.add(PMaterial);
        PMaterial.show();
+       this.dispose();
     }//GEN-LAST:event_jButton7ActionPerformed
 
     private void jButton8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton8ActionPerformed
         frmPagoReparacion repa = new frmPagoReparacion();
         Dpanel.add(repa);
         repa.show();
+        this.dispose();
     }//GEN-LAST:event_jButton8ActionPerformed
 
     private void jButton9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton9ActionPerformed
         frmPagoEquipo Peq = new frmPagoEquipo();
         Dpanel.add(Peq);
         Peq.show();
+        this.dispose();
     }//GEN-LAST:event_jButton9ActionPerformed
 
 
