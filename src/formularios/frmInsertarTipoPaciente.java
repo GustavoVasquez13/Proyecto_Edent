@@ -59,6 +59,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
         });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Tipo de Paciente:");
 
         jtpacientes.setModel(new javax.swing.table.DefaultTableModel(
@@ -80,6 +81,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
         jScrollPane1.setViewportView(jtpacientes);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("Tipos de Pacientes");
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -94,6 +96,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Inserte un nuevo tipo de paciente para la Clinica");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
