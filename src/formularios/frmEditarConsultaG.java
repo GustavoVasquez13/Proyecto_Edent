@@ -48,9 +48,11 @@ private void mostrarpacientes() {
         setIconifiable(true);
 
         jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("Vista de Pacientes de Odontologia General a Editar");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
         jLabel6.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
