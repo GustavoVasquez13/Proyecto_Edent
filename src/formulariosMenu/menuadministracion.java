@@ -142,30 +142,35 @@ public class menuadministracion extends javax.swing.JInternalFrame {
         fr_nuevoUsuario formusu = new fr_nuevoUsuario();
         Dpanel.add(formusu);
         formusu.show();
+         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
           frmEmpleados formEmpl = new frmEmpleados();
         Dpanel.add(formEmpl);
         formEmpl.show();
+         this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
 
     private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
         frmVistaEmpleado Emp = new frmVistaEmpleado();
         Dpanel.add(Emp);
         Emp.show();
+        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
     private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
         frmVistaPagos pago = new frmVistaPagos();
         Dpanel.add(pago);
         pago.show();
+        this.dispose();
     }//GEN-LAST:event_jButton4ActionPerformed
 
     private void jButton5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton5ActionPerformed
        fr_backup fr=new fr_backup();
         Dpanel.add(fr);
         fr.show();
+        this.dispose();
     }//GEN-LAST:event_jButton5ActionPerformed
 
 
