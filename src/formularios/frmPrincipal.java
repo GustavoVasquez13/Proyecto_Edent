@@ -9,6 +9,7 @@ import FormulariosPagos.frmPagoReparacion;
 import Vistas.frmVistaEmpleado;
 import Vistas.frmVistaPagos;
 import backupBD.fr_backup;
+import formulariosMenu.menuadministracion;
 import formulariosMenu.menucontabilidad;
 import formulariosMenu.menuexpediente;
 import formulariosMenu.menuproveedores;
@@ -126,6 +127,11 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         btnadministracion.setText("Administracion");
         btnadministracion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btnadministracion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnadministracion.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnadministracionActionPerformed(evt);
+            }
+        });
 
         txtconta.setBackground(new java.awt.Color(255, 255, 255));
         txtconta.setForeground(new java.awt.Color(0, 102, 153));
@@ -610,6 +616,12 @@ public void run() {
        Dpanel.add(formExGral);
         formExGral.show();
     }//GEN-LAST:event_txtcontaActionPerformed
+
+    private void btnadministracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnadministracionActionPerformed
+       menuadministracion formExGral = new menuadministracion();
+       Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_btnadministracionActionPerformed
 
     public static void main(String args[]) {
         try {
