@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="ReporExpGen_subreport1" language="groovy" pageWidth="555" pageHeight="802" columnWidth="555" leftMargin="0" rightMargin="0" topMargin="0" bottomMargin="0" uuid="14592328-a734-46e8-8d4f-031630126a6b">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="PacienteN_id_pacienteN" class="java.lang.Integer"/>
+	<queryString>
+		<![CDATA[SELECT
+     consulta.`id_consulta` AS consulta_id_consulta,
+     consulta.`motivo_consulta` AS consulta_motivo_consulta,
+     consulta.`fecha_consulta` AS consulta_fecha_consulta,
+     consulta.`Total_pagar` AS consulta_Total_pagar,
+     consulta.`HistoriaM` AS consulta_HistoriaM,
+     consulta.`HistoriaO` AS consulta_HistoriaO,
+     consulta.`ExamenC` AS consulta_ExamenC,
+     consulta.`DXodon` AS consulta_DXodon,
+     diente.`id_diente` AS diente_id_diente,
+     diente.`nombre_diente` AS diente_nombre_diente,
+     diente.`ubicacion_diente` AS diente_ubicacion_diente,
+     diente.`descripcion_diente` AS diente_descripcion_diente
+FROM
+     `consulta` consulta,
+     `diente` diente
+where diente.`PacienteN_id_pacienteN`= $P{PacienteN_id_pacienteN}
+ and consulta.`PacienteN_id_pacienteN`= $P{PacienteN_id_pacienteN}
+]]>
+	</queryString>
+	<field name="consulta_id_consulta" class="java.lang.Integer"/>
+	<field name="consulta_motivo_consulta" class="java.lang.String"/>
+	<field name="consulta_fecha_consulta" class="java.sql.Date"/>
+	<field name="consulta_Total_pagar" class="java.lang.Double"/>
+	<field name="consulta_HistoriaM" class="java.lang.String"/>
+	<field name="consulta_HistoriaO" class="java.lang.String"/>
+	<field name="consulta_ExamenC" class="java.lang.String"/>
+	<field name="consulta_DXodon" class="java.lang.String"/>
+	<field name="diente_id_diente" class="java.lang.Integer"/>
+	<field name="diente_nombre_diente" class="java.lang.String"/>
+	<field name="diente_ubicacion_diente" class="java.lang.String"/>
+	<field name="diente_descripcion_diente" class="java.lang.String"/>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="231" y="25" width="110" height="36" uuid="a723cd35-f268-4d89-a68b-7c5f9cd1181d"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Consulta]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="245" splitType="Stretch">
+			<staticText>
+				<reportElement x="48" y="42" width="100" height="20" uuid="9a0f1b09-8585-4c1d-8b58-11b2908af143"/>
+				<text><![CDATA[consulta_motivo_consulta]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="42" width="304" height="20" uuid="9037fb69-b787-49f5-8b9a-4021c3d495fd"/>
+				<textFieldExpression><![CDATA[$F{consulta_motivo_consulta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="352" y="0" width="100" height="20" uuid="42094d6c-deff-414c-a723-12c96957a6bb"/>
+				<text><![CDATA[consulta_fecha_consulta]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="452" y="0" width="100" height="20" uuid="3f0e76c4-60bd-405f-a374-10a27c3167b0"/>
+				<textFieldExpression><![CDATA[$F{consulta_fecha_consulta}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="352" y="225" width="100" height="20" uuid="4eed12c4-8bf1-4f67-939a-c87b9affa917"/>
+				<text><![CDATA[consulta_Total_pagar]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="452" y="225" width="100" height="20" uuid="f2575815-1217-4d0c-be1f-9b6dea9432aa"/>
+				<textFieldExpression><![CDATA[$F{consulta_Total_pagar}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="48" y="62" width="100" height="20" uuid="02192b76-325a-4cde-b326-2816477ae2a0"/>
+				<text><![CDATA[consulta_HistoriaM]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="62" width="304" height="20" uuid="6903b223-324d-45ea-96fd-a1716967558f"/>
+				<textFieldExpression><![CDATA[$F{consulta_HistoriaM}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="48" y="82" width="100" height="20" uuid="30a08485-4db5-4352-a145-14e05c2fb362"/>
+				<text><![CDATA[consulta_HistoriaO]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="82" width="304" height="20" uuid="5e4ef33a-5642-4103-a117-058eca2d8ba3"/>
+				<textFieldExpression><![CDATA[$F{consulta_HistoriaO}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="48" y="102" width="100" height="20" uuid="68d4abe7-e9ee-4874-a0c3-9d5357927fde"/>
+				<text><![CDATA[consulta_ExamenC]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="102" width="304" height="20" uuid="a2e6015d-3e32-419b-88cd-7df7a359f2b6"/>
+				<textFieldExpression><![CDATA[$F{consulta_ExamenC}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="48" y="122" width="100" height="20" uuid="bb283f22-ea86-426e-b560-13198c1a4bb0"/>
+				<text><![CDATA[consulta_DXodon]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="122" width="304" height="20" uuid="26bbda0c-c432-496c-a269-3a6276785462"/>
+				<textFieldExpression><![CDATA[$F{consulta_DXodon}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="48" y="142" width="100" height="20" uuid="c02864f5-5064-4d60-983a-031f7718ec84"/>
+				<text><![CDATA[diente_nombre_diente]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="148" y="142" width="64" height="20" uuid="efceb4be-a364-4e1c-9a66-cc5c7976d75e"/>
+				<textFieldExpression><![CDATA[$F{diente_nombre_diente}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="212" y="142" width="140" height="20" uuid="efa03a88-75cb-4d6f-8e10-04994646b3e0"/>
+				<text><![CDATA[diente_ubicacion_diente]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="367" y="142" width="140" height="20" uuid="a2bc10a3-d4fa-4e39-a144-cd775f0f164a"/>
+				<textFieldExpression><![CDATA[$F{diente_ubicacion_diente}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="48" y="166" width="100" height="20" uuid="121f1c81-8f6d-4da6-a82e-4160fd9bb8a0"/>
+				<text><![CDATA[diente_descripcion_diente]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="155" y="166" width="297" height="20" uuid="3aca2444-0bc0-42dc-bb04-c20799295914"/>
+				<textFieldExpression><![CDATA[$F{diente_descripcion_diente}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
