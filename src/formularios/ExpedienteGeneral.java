@@ -85,10 +85,13 @@ public class ExpedienteGeneral extends internalFrameImagen {
         setVisible(true);
 
         lbltitulo.setFont(new java.awt.Font("Arial", 1, 20)); // NOI18N
+        lbltitulo.setForeground(new java.awt.Color(0, 102, 153));
         lbltitulo.setText("Expediente Paciente Odontologia General");
 
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Fecha:");
 
+        lbltelefono.setForeground(new java.awt.Color(0, 102, 153));
         lbltelefono.setText("Telefono:");
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -100,6 +103,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
             }
         });
 
+        lbledad.setForeground(new java.awt.Color(0, 102, 153));
         lbledad.setText("Edad:");
 
         txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -111,8 +115,10 @@ public class ExpedienteGeneral extends internalFrameImagen {
             }
         });
 
+        lblnombre.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre.setText("Nombre: ");
 
+        lbldireccion.setForeground(new java.awt.Color(0, 102, 153));
         lbldireccion.setText("Dirección: ");
 
         txtdireccion.addActionListener(new java.awt.event.ActionListener() {
@@ -138,6 +144,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Apellido:");
 
         txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -175,6 +182,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         });
 
         lbtipo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        lbtipo.setForeground(new java.awt.Color(0, 102, 153));
         lbtipo.setText("el tipo de paciente Seleccionado es:");
 
         btnsalir.setForeground(new java.awt.Color(0, 0, 204));
@@ -222,6 +230,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
             }
         });
 
+        lblid.setForeground(new java.awt.Color(0, 102, 153));
         lblid.setText("...");
         lblid.setAutoscrolls(true);
 
@@ -240,11 +249,13 @@ public class ExpedienteGeneral extends internalFrameImagen {
         });
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("Para realizar una consulta elija el tipo de paciente:");
 
         lbtipoo.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
         lbtipoo.setText("..");
 
+        lblid1.setForeground(new java.awt.Color(0, 102, 153));
         lblid1.setText("ID paciente:");
         lblid1.setAutoscrolls(true);
 
