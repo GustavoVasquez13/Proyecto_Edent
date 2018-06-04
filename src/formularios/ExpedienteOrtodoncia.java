@@ -11,6 +11,8 @@ import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
+import static formularios.frm_indientes.lbid;
+import static formularios.frm_indientes.lbnombre;
 import formulariosAyuda.frmayudaEG;
 import java.awt.Color;
 import java.awt.KeyboardFocusManager;
@@ -27,7 +29,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     public ExpedienteOrtodoncia() {
         initComponents(); 
         
-        ExpedienteOrtodoncia.fecha.setEnabled(false);
+        ExpedienteOrtodoncia.jfecha.setEnabled(false);
         ExpedienteOrtodoncia.txtedad.setEnabled(false);
         ExpedienteOrtodoncia.txttelefono.setEnabled(false);
         ExpedienteOrtodoncia.txtnombre.setEnabled(false);
@@ -69,7 +71,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lblnombre5 = new javax.swing.JLabel();
         txtDX = new javax.swing.JTextField();
         btnGuardar = new javax.swing.JButton();
-        fecha = new com.toedter.calendar.JDateChooser();
+        jfecha = new com.toedter.calendar.JDateChooser();
         lblnombre40 = new javax.swing.JLabel();
         txtapellido = new javax.swing.JTextField();
         btnsalir = new javax.swing.JButton();
@@ -81,6 +83,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lblid1 = new javax.swing.JLabel();
         lblid = new javax.swing.JLabel();
         ayuda = new javax.swing.JButton();
+        btndientes = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -186,7 +189,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        fecha.setDateFormatString("yyyy-MM-dd");
+        jfecha.setDateFormatString("yyyy-MM-dd");
 
         lblnombre40.setText("Apellido:");
 
@@ -279,12 +282,25 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
+        btndientes.setForeground(new java.awt.Color(0, 0, 204));
+        btndientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/dientes.jpg"))); // NOI18N
+        btndientes.setText("insertar dientes");
+        btndientes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btndientes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btndientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btndientesActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(161, 161, 161)
+                .addGap(48, 48, 48)
+                .addComponent(btndientes)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(btnbuscaredicion)
                 .addGap(18, 18, 18)
                 .addComponent(btneditar)
@@ -351,7 +367,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
                                 .addGap(17, 17, 17)
-                                .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(150, 150, 150)
                                 .addComponent(lbltelefono)
                                 .addGap(4, 4, 4)
@@ -382,10 +398,10 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(41, 41, 41)
                                 .addComponent(jLabel3)))
-                        .addGap(18, 22, Short.MAX_VALUE)
+                        .addGap(18, 26, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
-                            .addComponent(fecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jfecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbltelefono)
                             .addComponent(txttelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(lbledad)
@@ -440,8 +456,9 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                                 .addComponent(btnsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(btneditar)
-                            .addComponent(btnbuscaredicion))
-                        .addGap(28, 28, 28))))
+                            .addComponent(btnbuscaredicion)
+                            .addComponent(btndientes))
+                        .addContainerGap())))
         );
 
         pack();
@@ -477,9 +494,9 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
       String dx = this.txtDX.getText().toUpperCase();
       String tip2=this.txttip2.getText();
       // se crean variables para almacenar en ellas el dia mes y año que se obtienen del control jcalendar
-      String dia = Integer.toString(fecha.getCalendar().get(Calendar.DAY_OF_MONTH));
-      String mes = Integer.toString(fecha.getCalendar().get(Calendar.MONTH) + 1);
-      String year = Integer.toString(fecha.getCalendar().get(Calendar.YEAR));
+      String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
+      String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
       String fechaA = (year + "-" + mes+ "-" + dia);
       String date = fechaA; 
       //se crea un objeto de la clase Insertar Datos, en este objeto se almacenaran y enviaran 
@@ -625,19 +642,35 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
        txtDX.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
                 java.util.Collections.EMPTY_SET);    }//GEN-LAST:event_txtDXKeyPressed
 
+    private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
+         String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+      String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
+      String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
+      String fechaA = (year + "-" + mes+ "-" + dia);
+      String date = fechaA; 
+        frm_indientes fr=new frm_indientes();
+        Dpanel.add(fr);
+        fr.show();
+        frm_indientes.lbid.setText(txttip.getText());
+        frm_indientes.lbnombre.setText(txtnombre.getText());
+        frm_indientes.lbfecha.setText(date);
+       
+    }//GEN-LAST:event_btndientesActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ayuda;
     public static javax.swing.JButton btnGuardar;
     public static javax.swing.JButton btnbuscaredicion;
+    public static javax.swing.JButton btndientes;
     public static javax.swing.JButton btneditar;
     private javax.swing.JButton btnsalir;
     private javax.swing.JButton btnsiguiente;
-    public static com.toedter.calendar.JDateChooser fecha;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel82;
+    public static com.toedter.calendar.JDateChooser jfecha;
     private javax.swing.JLabel lbldireccion1;
     private javax.swing.JLabel lbledad;
     public static javax.swing.JLabel lblid;
