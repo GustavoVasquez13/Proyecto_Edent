@@ -11,8 +11,7 @@ import Clases.IsertarDatosBD2;
 import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
-import static formularios.frm_indientes.lbid;
-import static formularios.frm_indientes.lbnombre;
+
 import formulariosAyuda.frmayudaEG;
 import java.awt.Color;
 import java.awt.KeyboardFocusManager;
@@ -648,19 +647,17 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
        if(jfecha.getDate() == null){
            JOptionPane.showMessageDialog(null, "Agrege la Fecha de la consulta");
        }else{
-           String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+        String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
       String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
       String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
       String fechaA = (year + "-" + mes+ "-" + dia);
       String date = fechaA; 
-       
-        
-        frm_indientes.lbid.setText(txttip.getText());
-        frm_indientes.lbnombre.setText(txtnombre.getText());
-        frm_indientes.lbfecha.setText(date);
         frm_indientes fr=new frm_indientes();
-        Dpanel.add(fr);
+ Dpanel.add(fr);
         fr.show();
+    frm_indientes.lbid.setText(txttip.getText());
+     frm_indientes.lbnombre.setText(txtnombre.getText());
+      frm_indientes.lbfecha.setText(date);
        }
            
       
