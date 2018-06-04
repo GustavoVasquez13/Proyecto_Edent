@@ -64,6 +64,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem11 = new javax.swing.JMenuItem();
         jMenuItem21 = new javax.swing.JMenuItem();
         jMenuItem22 = new javax.swing.JMenuItem();
+        jMenuItem23 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
@@ -335,7 +336,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem8);
 
-        jMenuItem11.setText("Vista de pacientes");
+        jMenuItem11.setText("Vista de pacientes Ortodoncia");
         jMenuItem11.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem11ActionPerformed(evt);
@@ -343,7 +344,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem11);
 
-        jMenuItem21.setText("Agregar consulta");
+        jMenuItem21.setText("Agregar consulta Paciente General");
         jMenuItem21.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jMenuItem21ActionPerformed(evt);
@@ -358,6 +359,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
             }
         });
         jMenu3.add(jMenuItem22);
+
+        jMenuItem23.setText("Vista Paciente Odontologia General");
+        jMenuItem23.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem23ActionPerformed(evt);
+            }
+        });
+        jMenu3.add(jMenuItem23);
 
         jMenuBar1.add(jMenu3);
 
@@ -623,6 +632,12 @@ public void run() {
         formExGral.show();
     }//GEN-LAST:event_btnadministracionActionPerformed
 
+    private void jMenuItem23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem23ActionPerformed
+        frmEditarPG formExGral = new frmEditarPG();
+       Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_jMenuItem23ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -677,6 +692,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JMenuItem jMenuItem21;
     private javax.swing.JMenuItem jMenuItem22;
+    private javax.swing.JMenuItem jMenuItem23;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
