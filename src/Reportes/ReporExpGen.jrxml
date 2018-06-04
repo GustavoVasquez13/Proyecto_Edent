@@ -3,6 +3,13 @@
 	<property name="ireport.zoom" value="1.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="0"/>
+	<parameter name="SUBREPORT_DIR" class="java.lang.String" isForPrompting="false">
+		<defaultValueExpression><![CDATA["C:\\Users\\marvi\\Desktop\\proyecto\\Proyecto_Edent\\src\\Reportes\\"]]></defaultValueExpression>
+	</parameter>
+	<parameter name="logo" class="java.io.InputStream"/>
+	<parameter name="id_pacienteN" class="java.lang.Integer">
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
 	<queryString>
 		<![CDATA[SELECT
      pacienten.`id_pacienteN` AS pacienten_id_pacienteN,
@@ -15,7 +22,8 @@
      pacienten.`fecha` AS pacienten_fecha,
      tipopaciente.`nombre_tipo` AS tipopaciente_nombre_tipo
 FROM
-     `tipopaciente` tipopaciente INNER JOIN `pacienten` pacienten ON tipopaciente.`id_tipoPaciente` = pacienten.`TipoPaciente_id_tipoPaciente`]]>
+     `tipopaciente` tipopaciente INNER JOIN `pacienten` pacienten ON tipopaciente.`id_tipoPaciente` = pacienten.`TipoPaciente_id_tipoPaciente` 
+AND pacienten.`id_pacienteN`=$P{id_pacienteN}]]>
 	</queryString>
 	<field name="pacienten_id_pacienteN" class="java.lang.Integer"/>
 	<field name="pacienten_nombre_pacte" class="java.lang.String"/>
@@ -30,16 +38,29 @@ FROM
 		<band splitType="Stretch"/>
 	</background>
 	<title>
-		<band height="79" splitType="Stretch"/>
+		<band height="79" splitType="Stretch">
+			<image hAlign="Center">
+				<reportElement x="0" y="0" width="555" height="79" uuid="273c45d8-88f9-4dde-b415-ff1bf36fcf05"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
 	</title>
 	<pageHeader>
-		<band height="35" splitType="Stretch"/>
+		<band height="78" splitType="Stretch">
+			<staticText>
+				<reportElement x="71" y="15" width="443" height="36" uuid="28c2310f-550c-422d-b9ae-ec40f4ca99b4"/>
+				<textElement>
+					<font size="26" isBold="true"/>
+				</textElement>
+				<text><![CDATA[EXPEDIENTE PACIENTE GENERAL]]></text>
+			</staticText>
+		</band>
 	</pageHeader>
 	<columnHeader>
-		<band height="61" splitType="Stretch"/>
+		<band splitType="Stretch"/>
 	</columnHeader>
 	<detail>
-		<band height="213" splitType="Stretch">
+		<band height="280" splitType="Stretch">
 			<textField>
 				<reportElement x="138" y="0" width="376" height="20" uuid="f30f5022-eada-40ec-82ef-9724e02421e2"/>
 				<textFieldExpression><![CDATA[$F{pacienten_id_pacienteN}]]></textFieldExpression>
@@ -112,6 +133,14 @@ FROM
 				<reportElement x="0" y="160" width="138" height="20" uuid="7e07bc1f-3f55-4ebb-b92b-43034f6ab2e2"/>
 				<text><![CDATA[tipopaciente_nombre_tipo]]></text>
 			</staticText>
+			<subreport>
+				<reportElement x="0" y="180" width="514" height="100" uuid="45d4a974-78ee-4373-9795-857e91f771cf"/>
+				<subreportParameter name="PacienteN_id_pacienteN">
+					<subreportParameterExpression><![CDATA[$F{pacienten_id_pacienteN}]]></subreportParameterExpression>
+				</subreportParameter>
+				<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+				<subreportExpression><![CDATA[$P{SUBREPORT_DIR}+"ReporExpGen_subreport1.jasper"]]></subreportExpression>
+			</subreport>
 		</band>
 	</detail>
 	<columnFooter>
