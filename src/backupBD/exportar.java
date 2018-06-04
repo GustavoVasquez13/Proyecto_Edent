@@ -40,6 +40,7 @@ public class exportar extends internalFrameImagen {
         jn = new javax.swing.JTextField();
         jLabel82 = new javax.swing.JLabel();
 
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("poner nombre del backup");
 
         btnexportar.setForeground(new java.awt.Color(0, 51, 204));
@@ -70,6 +71,7 @@ public class exportar extends internalFrameImagen {
         });
 
         jLabel82.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
         jLabel82.setText("Exportar Base de Datos");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
