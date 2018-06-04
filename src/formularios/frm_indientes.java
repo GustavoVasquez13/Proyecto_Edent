@@ -303,13 +303,13 @@ validar();        // TODO add your handling code here:
         insertar2.insertDiente(id, dien, poc, fecha, desc);
         //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
         this.dispose();
-        ExpedienteOrtodoncia.txtnombre.setText("");
-        ExpedienteOrtodoncia.txtapellido.setText("");
-        ExpedienteOrtodoncia.txttelefono.setText("");
-        ExpedienteOrtodoncia.txtedad.setText("");
-        ExpedienteOrtodoncia.txtdireccion.setText("");
-        ExpedienteOrtodoncia.txttip.setText("");
-        ExpedienteOrtodoncia.txttip2.setText("");
+//        ExpedienteOrtodoncia.txtnombre.setText("");
+//        ExpedienteOrtodoncia.txtapellido.setText("");
+//        ExpedienteOrtodoncia.txttelefono.setText("");
+//        ExpedienteOrtodoncia.txtedad.setText("");
+//        ExpedienteOrtodoncia.txtdireccion.setText("");
+//        ExpedienteOrtodoncia.txttip.setText("");
+//        ExpedienteOrtodoncia.txttip2.setText("");
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
