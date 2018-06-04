@@ -42,6 +42,8 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         ExpedienteOrtodoncia.txtExamenC.setEnabled(false);
         ExpedienteOrtodoncia.txtDX.setEnabled(false);
         ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
+        ExpedienteOrtodoncia.btndientes.setEnabled(false);
+        
         
         setImagenw("img2.jpg");
     }
