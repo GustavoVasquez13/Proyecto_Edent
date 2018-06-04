@@ -209,6 +209,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
         jLabel82.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
         jLabel82.setText("Expediente Ortodoncia");
         getContentPane().add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 0, 280, 30));
 
@@ -229,12 +230,14 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator12.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 116, -1, 110));
 
+        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
         jLabel3.setText("IS-LS");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 126, 30, -1));
 
         jSeparator13.setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 176, 1140, 20));
 
+        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("4");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 156, 30, -1));
 
@@ -254,9 +257,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator14.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 116, 20, 110));
 
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("Angulo Articular");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 126, 80, -1));
 
+        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
         jLabel6.setText("150°");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 156, 34, -1));
 
@@ -276,9 +281,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator15.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 116, 30, 110));
 
+        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("Angulo Goniaco Inferior");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 126, 120, -1));
 
+        jLabel8.setForeground(new java.awt.Color(0, 102, 153));
         jLabel8.setText("75°");
         getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(180, 156, 20, -1));
 
@@ -301,9 +308,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator16.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 116, 30, 110));
 
+        jLabel18.setForeground(new java.awt.Color(0, 102, 153));
         jLabel18.setText("IMPA");
         getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 126, 30, -1));
 
+        jLabel19.setForeground(new java.awt.Color(0, 102, 153));
         jLabel19.setText("85-93-97°");
         getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 156, 50, -1));
 
@@ -319,15 +328,19 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtIMPA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 196, 59, -1));
 
+        jLabel20.setForeground(new java.awt.Color(0, 102, 153));
         jLabel20.setText("Porcentaje JARABAK");
         getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 126, -1, -1));
 
+        jLabel21.setForeground(new java.awt.Color(0, 102, 153));
         jLabel21.setText("EJE FACIAL");
         getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 126, 60, -1));
 
+        jLabel22.setForeground(new java.awt.Color(0, 102, 153));
         jLabel22.setText("56%");
         getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(400, 156, 30, -1));
 
+        jLabel23.setForeground(new java.awt.Color(0, 102, 153));
         jLabel23.setText("90");
         getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 156, 20, -1));
 
@@ -355,6 +368,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 196, 59, -1));
 
+        jLabel24.setForeground(new java.awt.Color(0, 102, 153));
         jLabel24.setText("II-LS");
         getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 126, 30, -1));
 
@@ -362,6 +376,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator17.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 116, 10, 110));
 
+        jLabel25.setForeground(new java.awt.Color(0, 102, 153));
         jLabel25.setText("0");
         getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 156, 10, -1));
 
@@ -381,9 +396,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator18.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 116, 10, 110));
 
+        jLabel26.setForeground(new java.awt.Color(0, 102, 153));
         jLabel26.setText("FHIS");
         getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 126, 30, -1));
 
+        jLabel27.setForeground(new java.awt.Color(0, 102, 153));
         jLabel27.setText("110°-115°");
         getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 156, -1, -1));
 
@@ -407,9 +424,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator20.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 116, 90, 110));
 
+        jLabel28.setForeground(new java.awt.Color(0, 102, 153));
         jLabel28.setText("ANB");
         getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 126, 30, -1));
 
+        jLabel29.setForeground(new java.awt.Color(0, 102, 153));
         jLabel29.setText("2°");
         getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 156, 20, -1));
 
@@ -433,15 +452,19 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator22.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator22, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 116, 10, 110));
 
+        jLabel30.setForeground(new java.awt.Color(0, 102, 153));
         jLabel30.setText("82°");
         getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 156, 20, -1));
 
+        jLabel31.setForeground(new java.awt.Color(0, 102, 153));
         jLabel31.setText("80°");
         getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 156, 20, -1));
 
+        jLabel32.setForeground(new java.awt.Color(0, 102, 153));
         jLabel32.setText("PALS");
         getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 126, 30, -1));
 
+        jLabel33.setForeground(new java.awt.Color(0, 102, 153));
         jLabel33.setText("4 mm");
         getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 156, 30, -1));
 
@@ -489,9 +512,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtANB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 196, 20, -1));
 
+        jLabel78.setForeground(new java.awt.Color(0, 102, 153));
         jLabel78.setText("PALI");
         getContentPane().add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 126, 40, -1));
 
+        jLabel79.setForeground(new java.awt.Color(0, 102, 153));
         jLabel79.setText("2 mm");
         getContentPane().add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(1020, 156, 30, 20));
 
@@ -511,9 +536,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator23.setOrientation(javax.swing.SwingConstants.VERTICAL);
         getContentPane().add(jSeparator23, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 116, 10, 110));
 
+        jLabel80.setForeground(new java.awt.Color(0, 102, 153));
         jLabel80.setText("PTB");
         getContentPane().add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(1110, 126, 30, -1));
 
+        jLabel81.setForeground(new java.awt.Color(0, 102, 153));
         jLabel81.setText("-3 mm");
         getContentPane().add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 156, 30, -1));
 
@@ -540,6 +567,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator28.setBackground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 146, 1140, 10));
 
+        lblnombre10.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre10.setText("Curva de Spee: ");
         getContentPane().add(lblnombre10, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 242, 80, -1));
 
@@ -552,6 +580,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         chcurvasevera.setText("Severa");
         getContentPane().add(chcurvasevera, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 242, 70, -1));
 
+        lblnombre6.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre6.setText("DSD:");
         getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 242, 40, -1));
 
@@ -562,9 +591,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtDSD, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 242, 60, -1));
 
+        lblnombre9.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre9.setText("mm.");
         getContentPane().add(lblnombre9, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 242, 30, -1));
 
+        lblnombre8.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre8.setText("Clasificación Maxilares:");
         getContentPane().add(lblnombre8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 268, -1, -1));
 
@@ -575,6 +606,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtmaxilares, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 268, 380, -1));
 
+        lblnombre7.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre7.setText("Entorno Dental:");
         getContentPane().add(lblnombre7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 268, -1, -1));
 
@@ -585,6 +617,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtEntornoD, new org.netbeans.lib.awtextra.AbsoluteConstraints(760, 268, 380, -1));
 
+        lblnombre11.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre11.setText("Bandas en:");
         getContentPane().add(lblnombre11, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 346, 60, 20));
 
@@ -595,6 +628,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtbandas, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 346, 380, -1));
 
+        lblnombre12.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre12.setText("tubos:");
         getContentPane().add(lblnombre12, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 376, 40, 10));
 
@@ -605,6 +639,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txttubos, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 376, 380, -1));
 
+        lblnombre13.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre13.setText("Otros:");
         getContentPane().add(lblnombre13, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 406, 40, 20));
 
@@ -620,6 +655,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtotros, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 406, 380, -1));
 
+        lblnombre14.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre14.setText("Aparato tipo:");
         getContentPane().add(lblnombre14, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 436, 70, 20));
 
@@ -630,6 +666,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtAparato, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 436, 380, -1));
 
+        lblnombre15.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre15.setText("Exodoncia:");
         getContentPane().add(lblnombre15, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 476, 60, 20));
 
@@ -640,6 +677,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtexodoncia, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 476, 380, -1));
 
+        lblnombre17.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre17.setText("Brackets:");
         getContentPane().add(lblnombre17, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 514, 50, 20));
 
@@ -655,6 +693,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtBrakets, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 514, 380, -1));
 
+        lblnombre19.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre19.setText("RETENCIONES MX:");
         getContentPane().add(lblnombre19, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 554, 100, 20));
 
@@ -670,6 +709,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtRetenciones, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 554, 380, -1));
 
+        lblnombre18.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre18.setText("Secuencia de Arcos:");
         getContentPane().add(lblnombre18, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 584, 100, 20));
 
@@ -680,6 +720,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(txtsecuencia, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 584, 380, -1));
 
+        lblnombre20.setForeground(new java.awt.Color(0, 102, 153));
         lblnombre20.setText("MD:");
         getContentPane().add(lblnombre20, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 624, 30, 20));
 
@@ -691,22 +732,27 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(txtMD, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 624, 380, -1));
 
         jLabel1.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Indicacion especial antes de colocar Brackets");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, 330, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, 300, -1));
 
         jLabel83.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jLabel83.setForeground(new java.awt.Color(0, 102, 153));
         jLabel83.setText("Plan de Tratamiento");
         getContentPane().add(jLabel83, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 310, -1, 20));
 
         jSeparator3.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator3, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 510, 400, 10));
 
+        jLabel84.setForeground(new java.awt.Color(0, 102, 153));
         jLabel84.setText("Tomar imp.");
         getContentPane().add(jLabel84, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 420, 60, -1));
 
+        jLabel85.setForeground(new java.awt.Color(0, 102, 153));
         jLabel85.setText("Repetir Fotos");
         getContentPane().add(jLabel85, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 390, 80, -1));
 
+        jLabel86.setForeground(new java.awt.Color(0, 102, 153));
         jLabel86.setText("Tomar Rx");
         getContentPane().add(jLabel86, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 450, 50, -1));
 
@@ -716,6 +762,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator30.setForeground(new java.awt.Color(0, 0, 0));
         getContentPane().add(jSeparator30, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 410, 400, 50));
 
+        jLabel87.setForeground(new java.awt.Color(0, 102, 153));
         jLabel87.setText("RX Rocabado");
         getContentPane().add(jLabel87, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 480, 80, -1));
 
@@ -725,7 +772,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator32.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator32.setOrientation(javax.swing.SwingConstants.VERTICAL);
         jSeparator32.setToolTipText("");
-        getContentPane().add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, 60, 130));
+        getContentPane().add(jSeparator32, new org.netbeans.lib.awtextra.AbsoluteConstraints(740, 380, 10, 130));
 
         jSeparator33.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator33.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -828,6 +875,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(lbidcefa, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 50, 57, 18));
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Para poder continuar debe elegir un paciente:");
         getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 55, -1, -1));
 

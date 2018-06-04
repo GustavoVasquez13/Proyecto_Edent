@@ -34,6 +34,9 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="24" style="1"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Expediente Ortodoncia"/>
       </Properties>
       <Constraints>
@@ -106,6 +109,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="IS-LS"/>
       </Properties>
       <Constraints>
@@ -128,6 +134,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="4"/>
       </Properties>
       <Constraints>
@@ -165,6 +174,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Angulo Articular"/>
       </Properties>
       <Constraints>
@@ -175,6 +187,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="150&#xb0;"/>
       </Properties>
       <Constraints>
@@ -212,6 +227,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel7">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Angulo Goniaco Inferior"/>
       </Properties>
       <Constraints>
@@ -222,6 +240,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel8">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="75&#xb0;"/>
       </Properties>
       <Constraints>
@@ -269,6 +290,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel18">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="IMPA"/>
       </Properties>
       <Constraints>
@@ -279,6 +303,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel19">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="85-93-97&#xb0;"/>
       </Properties>
       <Constraints>
@@ -303,6 +330,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel20">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Porcentaje JARABAK"/>
       </Properties>
       <Constraints>
@@ -313,6 +343,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel21">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="EJE FACIAL"/>
       </Properties>
       <Constraints>
@@ -323,6 +356,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel22">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="56%"/>
       </Properties>
       <Constraints>
@@ -333,6 +369,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel23">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="90"/>
       </Properties>
       <Constraints>
@@ -371,6 +410,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel24">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="II-LS"/>
       </Properties>
       <Constraints>
@@ -394,6 +436,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel25">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="0"/>
       </Properties>
       <Constraints>
@@ -431,6 +476,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel26">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="FHIS"/>
       </Properties>
       <Constraints>
@@ -441,6 +489,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel27">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="110&#xb0;-115&#xb0;"/>
       </Properties>
       <Constraints>
@@ -491,6 +542,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel28">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="ANB"/>
       </Properties>
       <Constraints>
@@ -501,6 +555,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel29">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="2&#xb0;"/>
       </Properties>
       <Constraints>
@@ -551,6 +608,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel30">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="82&#xb0;"/>
       </Properties>
       <Constraints>
@@ -561,6 +621,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel31">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="80&#xb0;"/>
       </Properties>
       <Constraints>
@@ -571,6 +634,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel32">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="PALS"/>
       </Properties>
       <Constraints>
@@ -581,6 +647,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel33">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="4 mm"/>
       </Properties>
       <Constraints>
@@ -659,6 +728,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel78">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="PALI"/>
       </Properties>
       <Constraints>
@@ -669,6 +741,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel79">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="2 mm"/>
       </Properties>
       <Constraints>
@@ -706,6 +781,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel80">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="PTB"/>
       </Properties>
       <Constraints>
@@ -716,6 +794,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel81">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="-3 mm"/>
       </Properties>
       <Constraints>
@@ -778,6 +859,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre10">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Curva de Spee: "/>
       </Properties>
       <Constraints>
@@ -818,6 +902,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre6">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="DSD:"/>
       </Properties>
       <Constraints>
@@ -841,6 +928,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre9">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="mm."/>
       </Properties>
       <Constraints>
@@ -851,6 +941,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre8">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Clasificaci&#xf3;n Maxilares:"/>
       </Properties>
       <Constraints>
@@ -874,6 +967,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre7">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Entorno Dental:"/>
       </Properties>
       <Constraints>
@@ -897,6 +993,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre11">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Bandas en:"/>
       </Properties>
       <Constraints>
@@ -920,6 +1019,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre12">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="tubos:"/>
       </Properties>
       <Constraints>
@@ -943,6 +1045,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre13">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Otros:"/>
       </Properties>
       <Constraints>
@@ -967,6 +1072,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre14">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Aparato tipo:"/>
       </Properties>
       <Constraints>
@@ -990,6 +1098,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre15">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Exodoncia:"/>
       </Properties>
       <Constraints>
@@ -1013,6 +1124,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre17">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Brackets:"/>
       </Properties>
       <Constraints>
@@ -1037,6 +1151,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre19">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="RETENCIONES MX:"/>
       </Properties>
       <Constraints>
@@ -1061,6 +1178,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre18">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Secuencia de Arcos:"/>
       </Properties>
       <Constraints>
@@ -1084,6 +1204,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="lblnombre20">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="MD:"/>
       </Properties>
       <Constraints>
@@ -1110,11 +1233,14 @@
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="14" style="0"/>
         </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Indicacion especial antes de colocar Brackets"/>
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="800" y="360" width="330" height="-1"/>
+          <AbsoluteConstraints x="800" y="360" width="300" height="-1"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -1122,6 +1248,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="15" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Plan de Tratamiento"/>
       </Properties>
@@ -1145,6 +1274,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel84">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Tomar imp."/>
       </Properties>
       <Constraints>
@@ -1155,6 +1287,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel85">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Repetir Fotos"/>
       </Properties>
       <Constraints>
@@ -1165,6 +1300,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel86">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Tomar Rx"/>
       </Properties>
       <Constraints>
@@ -1199,6 +1337,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel87">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="RX Rocabado"/>
       </Properties>
       <Constraints>
@@ -1229,7 +1370,7 @@
       </Properties>
       <Constraints>
         <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-          <AbsoluteConstraints x="740" y="380" width="60" height="130"/>
+          <AbsoluteConstraints x="740" y="380" width="10" height="130"/>
         </Constraint>
       </Constraints>
     </Component>
@@ -1526,6 +1667,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Tahoma" size="14" style="0"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Para poder continuar debe elegir un paciente:"/>
       </Properties>
