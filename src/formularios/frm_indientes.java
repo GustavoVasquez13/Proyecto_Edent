@@ -57,6 +57,7 @@ public class frm_indientes extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
+        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Elegir dientes");
 
         jpc.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "CENTRAL", "SUPERIOR", "INFERIOR", "LATERAL DERECHO", "LATERAL IZQUIERDO" }));
@@ -66,19 +67,30 @@ public class frm_indientes extends internalFrameImagen {
             }
         });
 
+        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
         jLabel2.setText("Pocicion");
 
         txtdes.setColumns(20);
         txtdes.setRows(5);
         jScrollPane1.setViewportView(txtdes);
 
-        jLabel3.setText("Descricion");
+        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setText("Descripcion");
 
+        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
         jLabel4.setText("Numero de expediente");
 
+        lbid.setForeground(new java.awt.Color(0, 102, 153));
+
+        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
         jLabel5.setText("Nombre");
 
+        lbnombre.setForeground(new java.awt.Color(0, 102, 153));
+
+        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
         jLabel6.setText("Fecha");
+
+        lbfecha.setForeground(new java.awt.Color(0, 102, 153));
 
         grup.add(ja);
         ja.setText("Adulto");
@@ -121,6 +133,7 @@ public class frm_indientes extends internalFrameImagen {
         });
 
         jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("Formulario para agregar Dientes");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -133,7 +146,7 @@ public class frm_indientes extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(57, 57, 57)
                         .addComponent(jLabel3)
-                        .addGap(597, 643, Short.MAX_VALUE))
+                        .addGap(597, 637, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()

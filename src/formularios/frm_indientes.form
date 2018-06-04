@@ -33,7 +33,7 @@
                   <Group type="102" attributes="0">
                       <EmptySpace min="-2" pref="57" max="-2" attributes="0"/>
                       <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="597" pref="643" max="32767" attributes="0"/>
+                      <EmptySpace min="597" pref="637" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" attributes="0">
                       <Group type="103" groupAlignment="0" attributes="0">
@@ -134,6 +134,9 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Elegir dientes"/>
       </Properties>
     </Component>
@@ -168,6 +171,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Pocicion"/>
       </Properties>
     </Component>
@@ -188,35 +194,62 @@
     </Container>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
-        <Property name="text" type="java.lang.String" value="Descricion"/>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
+        <Property name="text" type="java.lang.String" value="Descripcion"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Numero de expediente"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbid">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
+      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel5">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Nombre"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbnombre">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
+      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel6">
       <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Fecha"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="lbfecha">
+      <Properties>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
+        </Property>
+      </Properties>
       <AuxValues>
         <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="9"/>
       </AuxValues>
@@ -281,6 +314,9 @@
       <Properties>
         <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
           <Font name="Arial" size="24" style="1"/>
+        </Property>
+        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+          <Color blue="99" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Formulario para agregar Dientes"/>
       </Properties>
