@@ -58,6 +58,39 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
             ExpedienteO.btnguardar.setEnabled(false);
             ExpedienteO.btneditar.setEnabled(false);
     }
+    public void limpiarTXT(){
+        txtanguloA1.setText("");
+        txtanguloG1.setText("");
+        txtIMPA1.setText("");
+        txtJa1.setText("");
+        txtJa1.setText("");
+        txtEJE.setText("");
+        txtIS.setText("");
+        txtII.setText("");
+        txtFHIS.setText("");
+        txtANB82.setText("");
+        txtANB80.setText("");
+        txtANB2.setText("");
+        txtPALS.setText("");
+        txtPALI.setText("");
+        txtPTB.setText("");
+        txtDSD.setText("");
+        txtmaxilares.setText("");
+        txtEntornoD.setText("");
+        txttubos.setText("");
+        txtotros.setText("");
+        txtAparato.setText("");
+        txtexodoncia.setText("");
+        txtBrakets.setText("");
+        txtRetenciones.setText("");
+        txtsecuencia.setText("");
+        txtMD.setText("");
+        txtrocabado.setText("");
+        
+        
+        
+        
+    }
 
     /**
      * This method is called from within the constructor to initialize the form.
@@ -198,7 +231,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         lbidcefa = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jSeparator8 = new javax.swing.JSeparator();
-        jButton1 = new javax.swing.JButton();
+        btnbuscaredicion = new javax.swing.JButton();
         lbid = new javax.swing.JLabel();
         lbidplan = new javax.swing.JLabel();
         btneditar = new javax.swing.JButton();
@@ -883,17 +916,17 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jSeparator8.setToolTipText("");
         getContentPane().add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 1200, -1));
 
-        jButton1.setForeground(new java.awt.Color(0, 0, 204));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar edicion.png"))); // NOI18N
-        jButton1.setText("Buscar paciente para editar");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnbuscaredicion.setForeground(new java.awt.Color(0, 0, 204));
+        btnbuscaredicion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar edicion.png"))); // NOI18N
+        btnbuscaredicion.setText("Buscar paciente para editar");
+        btnbuscaredicion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnbuscaredicion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnbuscaredicion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnbuscaredicionActionPerformed(evt);
             }
         });
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 530, -1, 90));
+        getContentPane().add(btnbuscaredicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 530, -1, 90));
         getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1101, 87, 57, 18));
         getContentPane().add(lbidplan, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 50, 57, 18));
 
@@ -1113,6 +1146,40 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         IsertarDatosBD2 insertar = new IsertarDatosBD2();
         insertar.insertartrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, f_faciales, f_intraorales, modelo_mx, modelo_md, rx_panoramica, rx_cefalometria, rx_incicivos, rx_rocabado, Consulta_id_consulta);
         }
+        limpiarTXT();
+         //se habilitan y desabilitan los campos necesarios para que el usuario continue haciendo uso del formulario
+            ExpedienteO.txtanguloA1.setEnabled(false);
+            ExpedienteO.txtanguloG1.setEnabled(false);
+            ExpedienteO.txtIMPA1.setEnabled(false);
+            ExpedienteO.txtJa1.setEnabled(false);
+            ExpedienteO.txtEJE.setEnabled(false);
+            ExpedienteO.txtIS.setEnabled(false);
+            ExpedienteO.txtII.setEnabled(false);
+            ExpedienteO.txtFHIS.setEnabled(false);
+            ExpedienteO.txtANB82.setEnabled(false);
+            ExpedienteO.txtANB80.setEnabled(false);
+            ExpedienteO.txtANB2.setEnabled(false);
+            ExpedienteO.txtPALS.setEnabled(false);
+            ExpedienteO.txtPALI.setEnabled(false);
+            ExpedienteO.txtPTB.setEnabled(false);
+            ExpedienteO.txtDSD.setEnabled(false);
+            ExpedienteO.txtmaxilares.setEnabled(false);
+            ExpedienteO.txtEntornoD.setEnabled(false);
+            ExpedienteO.txtbandas.setEnabled(false);
+            ExpedienteO.txttubos.setEnabled(false);
+            ExpedienteO.txtotros.setEnabled(false);
+            ExpedienteO.txtAparato.setEnabled(false);
+            ExpedienteO.txtexodoncia.setEnabled(false);
+            ExpedienteO.txtBrakets.setEnabled(false);
+            ExpedienteO.txtRetenciones.setEnabled(false);
+            ExpedienteO.txtsecuencia.setEnabled(false);
+            ExpedienteO.txtMD.setEnabled(false);
+            ExpedienteO.txtrocabado.setEnabled(false);
+            ExpedienteO.btnguardar.setEnabled(false);
+            ExpedienteO.btneditar.setEnabled(false);
+            ExpedienteO.btnbuscaredicion.setEnabled(true);
+            ExpedienteO.btnpaciente.setEnabled(true);
+            
     }//GEN-LAST:event_btnguardarActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
@@ -1125,11 +1192,11 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
        formExGral.show();
     }//GEN-LAST:event_btnpacienteActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnbuscaredicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscaredicionActionPerformed
       frmEditarOrtodoncia formExGral = new frmEditarOrtodoncia();
        Dpanel.add(formExGral);
        formExGral.show();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnbuscaredicionActionPerformed
 
     private void btneditarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditarActionPerformed
           String articular = this.txtanguloA1.getText().toUpperCase();
@@ -1167,7 +1234,39 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
           
           ActualizarDatosBD actpaciente1 = new ActualizarDatosBD();
           actpaciente1.ActualizarPlanTrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, rocabado, code1);
-          
+          limpiarTXT();
+            //se habilitan y desabilitan los campos necesarios para que el usuario continue haciendo uso del formulario
+          ExpedienteO.txtanguloA1.setEnabled(false);
+            ExpedienteO.txtanguloG1.setEnabled(false);
+            ExpedienteO.txtIMPA1.setEnabled(false);
+            ExpedienteO.txtJa1.setEnabled(false);
+            ExpedienteO.txtEJE.setEnabled(false);
+            ExpedienteO.txtIS.setEnabled(false);
+            ExpedienteO.txtII.setEnabled(false);
+            ExpedienteO.txtFHIS.setEnabled(false);
+            ExpedienteO.txtANB82.setEnabled(false);
+            ExpedienteO.txtANB80.setEnabled(false);
+            ExpedienteO.txtANB2.setEnabled(false);
+            ExpedienteO.txtPALS.setEnabled(false);
+            ExpedienteO.txtPALI.setEnabled(false);
+            ExpedienteO.txtPTB.setEnabled(false);
+            ExpedienteO.txtDSD.setEnabled(false);
+            ExpedienteO.txtmaxilares.setEnabled(false);
+            ExpedienteO.txtEntornoD.setEnabled(false);
+            ExpedienteO.txtbandas.setEnabled(false);
+            ExpedienteO.txttubos.setEnabled(false);
+            ExpedienteO.txtotros.setEnabled(false);
+            ExpedienteO.txtAparato.setEnabled(false);
+            ExpedienteO.txtexodoncia.setEnabled(false);
+            ExpedienteO.txtBrakets.setEnabled(false);
+            ExpedienteO.txtRetenciones.setEnabled(false);
+            ExpedienteO.txtsecuencia.setEnabled(false);
+            ExpedienteO.txtMD.setEnabled(false);
+            ExpedienteO.txtrocabado.setEnabled(false);
+            ExpedienteO.btnguardar.setEnabled(false);
+            ExpedienteO.btneditar.setEnabled(false);
+            ExpedienteO.btnbuscaredicion.setEnabled(true);
+            ExpedienteO.btnpaciente.setEnabled(true);
           
     }//GEN-LAST:event_btneditarActionPerformed
 
@@ -1470,6 +1569,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ayuda;
+    public static javax.swing.JButton btnbuscaredicion;
     public static javax.swing.JButton btneditar;
     public static javax.swing.JButton btnguardar;
     public static javax.swing.JButton btnpaciente;
@@ -1484,7 +1584,6 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     private javax.swing.JCheckBox chmodelo;
     private javax.swing.JCheckBox chmodeloMD;
     private javax.swing.JCheckBox chpanoramica;
-    public static javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel18;
     private javax.swing.JLabel jLabel19;
