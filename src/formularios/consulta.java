@@ -432,6 +432,16 @@ public class consulta extends internalFrameImagen {
         insertar2.insertarPacienteGC(motivo, date, total, historiam, historiao, examen, dx,tip1);
         //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
         limpiarTxt();
+          consulta.btnGuardar.setEnabled(false);
+        consulta.btneditar.setEnabled(false);
+        consulta.txtDX.setEnabled(false);
+        consulta.txtExamenC.setEnabled(false);
+        consulta.txtHistoriaM.setEnabled(false);
+        consulta.txtHistoriaO.setEnabled(false);
+        consulta.txtMotivoC.setEnabled(false);
+        consulta.txtpresupuesto.setEnabled(false);
+        consulta.btnagregarpc.setEnabled(true);
+        consulta.btnselecionaredicion.setEnabled(true);
        }
         
 
@@ -481,6 +491,16 @@ public class consulta extends internalFrameImagen {
             
             actpaciente.ActualizarConsultaPG(motivo_consulta, Total_pagar, HistoriaM, HistoriaM, ExamenC, DXodon, code);
             limpiarTxt();
+        consulta.btnGuardar.setEnabled(false);
+        consulta.btneditar.setEnabled(false);
+        consulta.txtDX.setEnabled(false);
+        consulta.txtExamenC.setEnabled(false);
+        consulta.txtHistoriaM.setEnabled(false);
+        consulta.txtHistoriaO.setEnabled(false);
+        consulta.txtMotivoC.setEnabled(false);
+        consulta.txtpresupuesto.setEnabled(false);
+        consulta.btnagregarpc.setEnabled(true);
+        consulta.btnselecionaredicion.setEnabled(true);
            
        }else{
           JOptionPane.showMessageDialog(null, "DEBE DE LLENAR TODOS LOS CAMPOS");
