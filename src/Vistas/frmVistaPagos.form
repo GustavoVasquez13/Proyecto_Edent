@@ -175,6 +175,9 @@
               <TableHeader reorderingAllowed="false" resizingAllowed="true"/>
             </Property>
           </Properties>
+          <AuxValues>
+            <AuxValue name="JavaCodeGenerator_InitCodePre" type="java.lang.String" value="jtPagos = new javax.swing.JTable(){&#xa;    public boolean isCellEditable(int fila, int columna){&#xa;        return false;&#xa;    }&#xa;};"/>
+          </AuxValues>
         </Component>
       </SubComponents>
     </Container>

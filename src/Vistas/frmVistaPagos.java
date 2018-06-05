@@ -95,6 +95,11 @@ public class frmVistaPagos extends internalFrameImagen {
         jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Mostrar Pagos Realizados");
 
+        jtPagos = new javax.swing.JTable(){
+            public boolean isCellEditable(int fila, int columna){
+                return false;
+            }
+        };
         jtPagos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
