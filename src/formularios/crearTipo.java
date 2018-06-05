@@ -30,7 +30,7 @@ private void mostrarusuario() {
             DefaultTableModel modelo;
             ConsultarDatosBD2 Mostrarp = new ConsultarDatosBD2();
             modelo = Mostrarp.mostrarTipo();
-            jusu.setModel(modelo);
+            jusu1.setModel(modelo);
            
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE SERVICIOS");
@@ -185,7 +185,7 @@ private void mostrarusuario() {
     
     }else{
            InsertarDatosBD b=new InsertarDatosBD(); 
-     b.insertarTipoPaciente(txtTipo.getText());
+     b.insertTipoU(txtTipo.getText()); 
       }
       mostrarusuario();
     }//GEN-LAST:event_btnGuardarActionPerformed
