@@ -31,12 +31,12 @@ import net.sf.jasperreports.view.JasperViewer;
  *
  * @author marvi
  */
-public class reporte_general extends internalFrameImagen {
+public class reporte_ortodoncia extends internalFrameImagen{
  private TableRowSorter trsFiltro;
     /**
-     * Creates new form reporte_general
+     * Creates new form reporte_ortodoncia
      */
-    public reporte_general() {
+    public reporte_ortodoncia() {
         initComponents();
          setImagenw("img2.jpg");
         mostrarpacientes();
@@ -45,10 +45,10 @@ public class reporte_general extends internalFrameImagen {
         try {
             DefaultTableModel modelo;
             ConsultarDatosBD Mostrarp = new ConsultarDatosBD();
-            modelo = Mostrarp.mostrarPacientes1();
+            modelo = Mostrarp.mostrarPacientes();
             jtPacientes.setModel(modelo);
         } catch (Exception e) {
-            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE SERVICIOS");
+            JOptionPane.showMessageDialog(null, "PROBLEMAS AL CONSULTAR LOS DATOS DE PACIENTES");
         }
     }
     /**
@@ -60,6 +60,8 @@ public class reporte_general extends internalFrameImagen {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        lbnom = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         txtBuscar = new javax.swing.JTextField();
@@ -69,15 +71,22 @@ public class reporte_general extends internalFrameImagen {
         lblnombre = new javax.swing.JLabel();
         lblcodigo = new javax.swing.JLabel();
         lbid = new javax.swing.JLabel();
-        lbnom = new javax.swing.JLabel();
-        jButton1 = new javax.swing.JButton();
 
-        setClosable(true);
-        setIconifiable(true);
+        jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 153));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/reporte.png"))); // NOI18N
+        jButton1.setText("Generar Reporte");
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(0, 102, 153));
-        jLabel5.setText("Vista de Pacientes Generales");
+        jLabel5.setText("Vista de Pacientes Ortodoncia");
 
         jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(0, 102, 153));
@@ -133,18 +142,6 @@ public class reporte_general extends internalFrameImagen {
         lblcodigo.setForeground(new java.awt.Color(0, 102, 153));
         lblcodigo.setText("Codigo");
 
-        jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jButton1.setForeground(new java.awt.Color(0, 102, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/reporte.png"))); // NOI18N
-        jButton1.setText("Generar Reporte");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -153,34 +150,31 @@ public class reporte_general extends internalFrameImagen {
                 .addGap(45, 45, 45)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(54, 54, 54)
-                                .addComponent(lbid, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(65, 65, 65)
-                                .addComponent(lbnom, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lblcodigo)
-                                .addGap(92, 92, 92)
-                                .addComponent(lblnombre)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(jButton1)
-                                .addGap(53, 53, 53)))
+                        .addComponent(lblcodigo)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbid, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(10, 10, 10)
+                        .addComponent(lblnombre)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(lbnom, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(jButton1)
+                        .addGap(53, 53, 53)
                         .addComponent(btnCancelar)
                         .addGap(50, 50, 50))
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel6)
-                                .addGap(12, 12, 12)
-                                .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 828, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(0, 50, Short.MAX_VALUE))))
+                        .addComponent(jLabel6)
+                        .addGap(12, 12, 12)
+                        .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 268, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(0, 504, Short.MAX_VALUE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel5)
                 .addGap(292, 292, 292))
+            .addGroup(layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(jScrollPane1)
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -195,23 +189,50 @@ public class reporte_general extends internalFrameImagen {
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(18, 18, 18)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 351, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(lbnom, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lbid, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(38, 38, 38)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(btnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                         .addComponent(lblcodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addComponent(lblnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(33, Short.MAX_VALUE))
+                        .addComponent(lblnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(lbid, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lbnom, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        if (lbid.getText().equals(""))
+        {
+            JOptionPane.showMessageDialog(null, "Debe selecionar un paciente de la tabla dando doble click");
+        }else{
+            String fileName = System.getProperty("user.dir") +"/src/Reportes/ReporExpGen.jasper";
+            String fileName1 = System.getProperty("user.dir") +"/src/Reportes/ReporExpGen_subreport1.jasper";
+            conexionBD cnn=new conexionBD();
+            Connection reg=cnn.conectar();
+            try {
+                File theFile = new File(fileName);
+                JasperReport reporte;
+                reporte = (JasperReport) JRLoader.loadObject(theFile);
+                Map parametro=new HashMap();
+                parametro.put("id_pacienteN",Integer.parseInt(lbid.getText()));
+                parametro.put("logo",this.getClass().getResourceAsStream("/iconos/logo.jpeg"));
+                parametro.put("pasiente","EXPEDIENTE PASIENTE ORTODONCIA");
+                JasperPrint jp = JasperFillManager.fillReport(reporte, parametro,reg);
+
+                JasperViewer jv = new JasperViewer(jp, false);
+                jv.show();
+                // Se declara con dispose_on_close para que no se cierre el programa cuando se cierre el reporte
+                //Se vizualiza el reporte
+            } catch (JRException ex) {
+                JOptionPane.showMessageDialog(rootPane, "error" + ex);
+            }
+        }     // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     private void txtBuscarKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtBuscarKeyTyped
         //  se utiliza para filtrar los datos mostrados en el jtable
@@ -226,7 +247,6 @@ public class reporte_general extends internalFrameImagen {
         });
         trsFiltro = new TableRowSorter(jtPacientes.getModel());
         jtPacientes.setRowSorter(trsFiltro);
-
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jtPacientesMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtPacientesMousePressed
@@ -242,7 +262,6 @@ public class reporte_general extends internalFrameImagen {
             //            consulta.lbfecha.setText(fecha);
             lbnom.setText(nombre+" "+apellido);
             lbid.setText(id);
-          
 
         }
     }//GEN-LAST:event_jtPacientesMousePressed
@@ -250,36 +269,6 @@ public class reporte_general extends internalFrameImagen {
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
         this.dispose();
     }//GEN-LAST:event_btnCancelarActionPerformed
-
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-if (lbid.getText().equals("")) 
-{
-    JOptionPane.showMessageDialog(null, "Debe selecionar un paciente de la tabla dando doble click");
-}else{
-    String fileName = System.getProperty("user.dir") +"/src/Reportes/ReporExpGen.jasper";
-    String fileName1 = System.getProperty("user.dir") +"/src/Reportes/ReporExpGen_subreport1.jasper";
-   conexionBD cnn=new conexionBD();
-        Connection reg=cnn.conectar();
-        try {
-           File theFile = new File(fileName);
-            JasperReport reporte;  
-            reporte = (JasperReport) JRLoader.loadObject(theFile);
-            Map parametro=new HashMap();
-            parametro.put("id_pacienteN",Integer.parseInt(lbid.getText()));
-            parametro.put("logo",this.getClass().getResourceAsStream("/iconos/logo.jpeg"));
-            parametro.put("pasiente","EXPEDIENTE PASIENTE GENERAL");
-        JasperPrint jp = JasperFillManager.fillReport(reporte, parametro,reg);  
-
-        
-                JasperViewer jv = new JasperViewer(jp, false);
-                jv.show();
-           // Se declara con dispose_on_close para que no se cierre el programa cuando se cierre el reporte
-            //Se vizualiza el reporte
-        } catch (JRException ex) {
-           JOptionPane.showMessageDialog(rootPane, "error" + ex);
-        } 
-}     // TODO add your handling code here:
-    }//GEN-LAST:event_jButton1ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
