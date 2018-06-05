@@ -7,6 +7,7 @@ import Clases.ConsultarDatosBD2;
 import Clases.funciones;
 import Clases.conexionBD;
 import Clases.internalFrameImagen;
+import static formularios.frmPrincipal.Dpanel;
 import formulariosAyuda.frmayudaSB;
 import java.awt.Color;
 import java.awt.KeyboardFocusManager;
@@ -71,6 +72,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         lblCod = new javax.swing.JLabel();
         lblServicio = new javax.swing.JLabel();
         btnAyuda = new javax.swing.JButton();
+        jButton1 = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -214,6 +216,17 @@ public class fr_nuevoUsuario extends internalFrameImagen {
             }
         });
 
+        jButton1.setForeground(new java.awt.Color(0, 102, 204));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/addUse.png"))); // NOI18N
+        jButton1.setText("NUEVO TIPO DE USUARIO");
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -228,7 +241,9 @@ public class fr_nuevoUsuario extends internalFrameImagen {
                         .addComponent(btnGuardar)
                         .addGap(48, 48, 48)
                         .addComponent(btnModificarReg, javax.swing.GroupLayout.PREFERRED_SIZE, 86, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(144, 144, 144)
+                        .addGap(35, 35, 35)
+                        .addComponent(jButton1)
+                        .addGap(36, 36, 36)
                         .addComponent(VOLVER, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -331,7 +346,9 @@ public class fr_nuevoUsuario extends internalFrameImagen {
                     .addGroup(layout.createSequentialGroup()
                         .addGap(1, 1, 1)
                         .addComponent(btnGuardar))
-                    .addComponent(VOLVER, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(jButton1)
+                        .addComponent(VOLVER, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addContainerGap(36, Short.MAX_VALUE))
         );
 
@@ -515,6 +532,12 @@ private void mostrarusuario() {
                 java.util.Collections.EMPTY_SET);
     }//GEN-LAST:event_txtcorreoKeyPressed
 
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+crearTipo formExGral = new crearTipo();
+        Dpanel.add(formExGral);
+        formExGral.show();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton VOLVER;
@@ -522,6 +545,7 @@ private void mostrarusuario() {
     private javax.swing.JButton btnGuardar;
     private javax.swing.JButton btnModificarReg;
     private javax.swing.JComboBox<String> cbtipo;
+    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
