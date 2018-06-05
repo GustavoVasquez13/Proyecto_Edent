@@ -458,7 +458,10 @@ public class consulta extends internalFrameImagen {
     }//GEN-LAST:event_btnagregarpcActionPerformed
 
     private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
-    String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+   if(this.jfecha.getDate()== null){
+       JOptionPane.showMessageDialog(null, "Debe ingresar la fecha para continuar");
+   }else{
+         String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
       String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
       String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
       String fechaA = (year + "-" + mes+ "-" + dia);
@@ -469,7 +472,9 @@ public class consulta extends internalFrameImagen {
     frm_indientes.lbid.setText(lbid.getText());
      frm_indientes.lbnombre.setText(lbnombre.getText());
       frm_indientes.lbfecha.setText(date);
-// TODO add your handling code here:
+   }
+      
+
     }//GEN-LAST:event_btndientesActionPerformed
 
     private void btnselecionaredicionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnselecionaredicionActionPerformed
