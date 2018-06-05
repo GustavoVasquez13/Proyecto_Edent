@@ -447,6 +447,16 @@ public class ExpedienteGeneral extends internalFrameImagen {
       // se crean variables para guardar en ellas los datos recibidos de los jtextfield
       limpiarTxt();
       btcon.setVisible(true);
+       ExpedienteGeneral.fecha.setEnabled(false);
+        ExpedienteGeneral.txtedad.setEnabled(false);
+        ExpedienteGeneral.txttelefono.setEnabled(false);
+        ExpedienteGeneral.txtnombre.setEnabled(false);
+        ExpedienteGeneral.txtapellido.setEnabled(false);
+        ExpedienteGeneral.txtdireccion.setEnabled(false);
+        ExpedienteGeneral.btneditar.setEnabled(false);
+        ExpedienteGeneral.btnbuscaredicion.setEnabled(true);
+        ExpedienteGeneral.btnGuardar.setEnabled(false);
+        ExpedienteGeneral.jButton1.setEnabled(true);
       
         }
        
@@ -555,6 +565,16 @@ consulta fr=new consulta();
           JOptionPane.showMessageDialog(null, "DEBE DE LLENAR TODOS LOS CAMPOS");
       }
       limpiarTxt();
+        ExpedienteGeneral.fecha.setEnabled(false);
+        ExpedienteGeneral.txtedad.setEnabled(false);
+        ExpedienteGeneral.txttelefono.setEnabled(false);
+        ExpedienteGeneral.txtnombre.setEnabled(false);
+        ExpedienteGeneral.txtapellido.setEnabled(false);
+        ExpedienteGeneral.txtdireccion.setEnabled(false);
+        ExpedienteGeneral.btneditar.setEnabled(false);
+        ExpedienteGeneral.btnbuscaredicion.setEnabled(true);
+        ExpedienteGeneral.btnGuardar.setEnabled(false);
+        ExpedienteGeneral.jButton1.setEnabled(true);
     }//GEN-LAST:event_btneditarActionPerformed
 
     private void txtnombreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtnombreActionPerformed
@@ -600,7 +620,7 @@ consulta fr=new consulta();
     public static javax.swing.JButton btneditar;
     private javax.swing.JButton btnsalir;
     public static com.toedter.calendar.JDateChooser fecha;
-    private javax.swing.JButton jButton1;
+    public static javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
