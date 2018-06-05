@@ -232,7 +232,7 @@ ExpedienteO.txtanguloA1.setEnabled(true);
             ExpedienteO.txtsecuencia.setEnabled(true);
             ExpedienteO.txtMD.setEnabled(true);
             ExpedienteO.txtrocabado.setEnabled(true);
-            ExpedienteO.jButton1.setEnabled(false);
+            ExpedienteO.btnbuscaredicion.setEnabled(false);
             ExpedienteO.btnguardar.setEnabled(false);
             ExpedienteO.btneditar.setEnabled(true);
             ExpedienteO.btnpaciente.setEnabled(false);
