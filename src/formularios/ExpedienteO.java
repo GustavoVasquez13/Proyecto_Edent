@@ -1027,7 +1027,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
         //validaciones
-        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbid.getText().length()==0){
+        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbidcefa.getText().length()==0){
             JOptionPane.showMessageDialog(null, "Debe elegir un paciente");
         }else{
             
