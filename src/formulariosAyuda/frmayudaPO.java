@@ -38,6 +38,9 @@ public class frmayudaPO extends internalFrameImagen {
         lblErrores = new javax.swing.JLabel();
         lblCL1 = new javax.swing.JLabel();
 
+        setClosable(true);
+        setIconifiable(true);
+
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 153));
         jLabel1.setText("Formulario de Ayuda");
