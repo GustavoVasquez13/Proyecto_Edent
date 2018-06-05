@@ -77,7 +77,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         txtapellido = new javax.swing.JTextField();
         btnsalir = new javax.swing.JButton();
         btnsiguiente = new javax.swing.JButton();
-        jButton1 = new javax.swing.JButton();
+        btnelegir = new javax.swing.JButton();
         txttip = new javax.swing.JTextField();
         txttip2 = new javax.swing.JTextField();
         jLabel3 = new javax.swing.JLabel();
@@ -236,14 +236,14 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        jButton1.setForeground(new java.awt.Color(0, 0, 204));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/elegir tp.png"))); // NOI18N
-        jButton1.setText("Elegir paciente");
-        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        jButton1.addActionListener(new java.awt.event.ActionListener() {
+        btnelegir.setForeground(new java.awt.Color(0, 0, 204));
+        btnelegir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/elegir tp.png"))); // NOI18N
+        btnelegir.setText("Elegir paciente");
+        btnelegir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnelegir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnelegir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButton1ActionPerformed(evt);
+                btnelegirActionPerformed(evt);
             }
         });
 
@@ -380,7 +380,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                                 .addGap(42, 42, 42)
                                 .addComponent(jLabel3)
                                 .addGap(30, 30, 30)
-                                .addComponent(jButton1)
+                                .addComponent(btnelegir)
                                 .addGap(0, 0, Short.MAX_VALUE))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel2)
@@ -412,7 +412,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jButton1))
+                                .addComponent(btnelegir))
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(41, 41, 41)
                                 .addComponent(jLabel3)))
@@ -497,10 +497,11 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         txtHistoriaO.setText("");
         txtExamenC.setText("");
         txtDX.setText("");
+        jfecha.setDateFormatString("");
     }
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
      if (this.txtMotivoC.getText().length() == 0 || this.txtHistoriaM.getText().length() == 0|| this.txtHistoriaO.getText().length() == 0
-             || this.txtExamenC.getText().length() == 0|| this.txtDX.getText().length() == 0){
+             || this.txtExamenC.getText().length() == 0|| this.txtDX.getText().length() == 0 || this.jfecha.getDate()== null){
             JOptionPane.showMessageDialog(null, "Debe completar todos los campos");
             }else{
          
@@ -523,7 +524,22 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
       insertar2.insertarPacienteOC(motivo, date, historiam, historiao, examen, dx,tip);
       //se manda a llamar el metodo para limpiar los jtextfield despues de cada click en el boton guardar
       limpiarTxt();
-     
+        ExpedienteOrtodoncia.jfecha.setEnabled(false);
+        ExpedienteOrtodoncia.txtedad.setEnabled(false);
+        ExpedienteOrtodoncia.txttelefono.setEnabled(false);
+        ExpedienteOrtodoncia.txtnombre.setEnabled(false);
+        ExpedienteOrtodoncia.txtapellido.setEnabled(false);
+        ExpedienteOrtodoncia.txtMotivoC.setEnabled(false);
+        ExpedienteOrtodoncia.btneditar.setEnabled(false);
+        ExpedienteOrtodoncia.btnbuscaredicion.setEnabled(true);
+        ExpedienteOrtodoncia.btnGuardar.setEnabled(false);
+        ExpedienteOrtodoncia.txtHistoriaO.setEnabled(false);
+        ExpedienteOrtodoncia.txtHistoriaM.setEnabled(false);
+        ExpedienteOrtodoncia.txtExamenC.setEnabled(false);
+        ExpedienteOrtodoncia.txtDX.setEnabled(false);
+        ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
+        ExpedienteOrtodoncia.btndientes.setEnabled(false);
+        ExpedienteOrtodoncia.btnelegir.setEnabled(true);
      }
      
      
@@ -564,11 +580,11 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         formExGral.show();
     }//GEN-LAST:event_btnsiguienteActionPerformed
 
-    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+    private void btnelegirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnelegirActionPerformed
         frmvistapacientes formProd = new frmvistapacientes();
         Dpanel.add(formProd);
         formProd.show();
-    }//GEN-LAST:event_jButton1ActionPerformed
+    }//GEN-LAST:event_btnelegirActionPerformed
 
     private void txttipActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txttipActionPerformed
         // TODO add your handling code here:
@@ -690,9 +706,9 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     public static javax.swing.JButton btnbuscaredicion;
     public static javax.swing.JButton btndientes;
     public static javax.swing.JButton btneditar;
+    public static javax.swing.JButton btnelegir;
     private javax.swing.JButton btnsalir;
     private javax.swing.JButton btnsiguiente;
-    private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel82;
