@@ -66,7 +66,6 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem8 = new javax.swing.JMenuItem();
         jMenuItem11 = new javax.swing.JMenuItem();
         jMenuItem21 = new javax.swing.JMenuItem();
-        jMenuItem22 = new javax.swing.JMenuItem();
         jMenuItem23 = new javax.swing.JMenuItem();
         jMenuItem24 = new javax.swing.JMenuItem();
         jMenu4 = new javax.swing.JMenu();
@@ -382,15 +381,6 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu3.add(jMenuItem21);
 
-        jMenuItem22.setForeground(new java.awt.Color(0, 102, 153));
-        jMenuItem22.setText("Pago Paciente");
-        jMenuItem22.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jMenuItem22ActionPerformed(evt);
-            }
-        });
-        jMenu3.add(jMenuItem22);
-
         jMenuItem23.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem23.setText("Vista Paciente Odontologia General");
         jMenuItem23.addActionListener(new java.awt.event.ActionListener() {
@@ -545,24 +535,12 @@ public void run() {
         formPSB.show();
     }//GEN-LAST:event_jMenuItem2ActionPerformed
 
-    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
-        ExpedienteGeneral formExGral = new ExpedienteGeneral();
-       Dpanel.add(formExGral);
-        formExGral.show();
-    }//GEN-LAST:event_jMenuItem3ActionPerformed
-
     private void jMenuItem4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem4ActionPerformed
         // Llama al formulario Comprar Productos
         frmCompraProducto formComprarProd = new frmCompraProducto();
        Dpanel.add(formComprarProd);
         formComprarProd.show();
     }//GEN-LAST:event_jMenuItem4ActionPerformed
-
-    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
-       ExpedienteOrtodoncia formExGral = new ExpedienteOrtodoncia();
-       Dpanel.add(formExGral);
-       formExGral.show();
-    }//GEN-LAST:event_jMenuItem5ActionPerformed
 
     private void jMenuItem6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem6ActionPerformed
         frmProveedores formProv = new frmProveedores();
@@ -576,12 +554,6 @@ public void run() {
        formProd.show();
     }//GEN-LAST:event_jMenuItem7ActionPerformed
 
-    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
-       frmInsertarTipoPaciente formProd = new frmInsertarTipoPaciente();
-       Dpanel.add(formProd);
-       formProd.show();
-    }//GEN-LAST:event_jMenuItem8ActionPerformed
-
     private void jMenuItem9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem9ActionPerformed
         frmEmpleados formEmpl = new frmEmpleados();
         Dpanel.add(formEmpl);
@@ -593,12 +565,6 @@ public void run() {
         Dpanel.add(formusu);
         formusu.show();
     }//GEN-LAST:event_jMenuItem10ActionPerformed
-
-    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
-        frmvistapacientes formEmpl = new frmvistapacientes();
-        Dpanel.add(formEmpl);
-        formEmpl.show();
-    }//GEN-LAST:event_jMenuItem11ActionPerformed
 
     private void jMenuItem12ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem12ActionPerformed
         frmmateriales mater = new frmmateriales();
@@ -654,23 +620,11 @@ public void run() {
         pago.show();
     }//GEN-LAST:event_jMenuItem20ActionPerformed
 
-    private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
-        consulta fr=new consulta();
-        Dpanel.add(fr);
-        fr.show();
-    }//GEN-LAST:event_jMenuItem21ActionPerformed
-
     private void backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backActionPerformed
         fr_backup fr=new fr_backup();
         Dpanel.add(fr);
         fr.show();
     }//GEN-LAST:event_backActionPerformed
-
-    private void jMenuItem22ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem22ActionPerformed
-        frmPagoconsulta AP = new frmPagoconsulta();
-        Dpanel.add(AP);
-        AP.show();
-    }//GEN-LAST:event_jMenuItem22ActionPerformed
 
     private void DpanelComponentResized(java.awt.event.ComponentEvent evt) {//GEN-FIRST:event_DpanelComponentResized
       
@@ -700,18 +654,6 @@ public void run() {
         formExGral.show();
     }//GEN-LAST:event_btnadministracionActionPerformed
 
-    private void jMenuItem23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem23ActionPerformed
-        frmEditarPG formExGral = new frmEditarPG();
-       Dpanel.add(formExGral);
-        formExGral.show();
-    }//GEN-LAST:event_jMenuItem23ActionPerformed
-
-    private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
-       ExpedienteO formExGral = new ExpedienteO();
-       Dpanel.add(formExGral);
-        formExGral.show();
-    }//GEN-LAST:event_jMenuItem24ActionPerformed
-
     private void jMenuItem25ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem25ActionPerformed
       reporte_general form = new  reporte_general();
        Dpanel.add(form);
@@ -727,6 +669,48 @@ public void run() {
     private void txtreportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtreportesActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_txtreportesActionPerformed
+
+    private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
+        ExpedienteO formExGral = new ExpedienteO();
+        Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_jMenuItem24ActionPerformed
+
+    private void jMenuItem23ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem23ActionPerformed
+        frmEditarPG formExGral = new frmEditarPG();
+        Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_jMenuItem23ActionPerformed
+
+    private void jMenuItem21ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem21ActionPerformed
+        consulta fr=new consulta();
+        Dpanel.add(fr);
+        fr.show();
+    }//GEN-LAST:event_jMenuItem21ActionPerformed
+
+    private void jMenuItem11ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem11ActionPerformed
+        frmvistapacientes formEmpl = new frmvistapacientes();
+        Dpanel.add(formEmpl);
+        formEmpl.show();
+    }//GEN-LAST:event_jMenuItem11ActionPerformed
+
+    private void jMenuItem8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem8ActionPerformed
+        frmInsertarTipoPaciente formProd = new frmInsertarTipoPaciente();
+        Dpanel.add(formProd);
+        formProd.show();
+    }//GEN-LAST:event_jMenuItem8ActionPerformed
+
+    private void jMenuItem5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem5ActionPerformed
+        ExpedienteOrtodoncia formExGral = new ExpedienteOrtodoncia();
+        Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_jMenuItem5ActionPerformed
+
+    private void jMenuItem3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem3ActionPerformed
+        ExpedienteGeneral formExGral = new ExpedienteGeneral();
+        Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_jMenuItem3ActionPerformed
 
     public static void main(String args[]) {
         try {
@@ -782,7 +766,6 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem2;
     private javax.swing.JMenuItem jMenuItem20;
     private javax.swing.JMenuItem jMenuItem21;
-    private javax.swing.JMenuItem jMenuItem22;
     private javax.swing.JMenuItem jMenuItem23;
     private javax.swing.JMenuItem jMenuItem24;
     private javax.swing.JMenuItem jMenuItem25;
