@@ -157,6 +157,11 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         txtreportes.setText("Reportes");
         txtreportes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         txtreportes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        txtreportes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                txtreportesActionPerformed(evt);
+            }
+        });
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/logo.jpeg"))); // NOI18N
@@ -718,6 +723,10 @@ public void run() {
        Dpanel.add(form);
         form.show(); // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem26ActionPerformed
+
+    private void txtreportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtreportesActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_txtreportesActionPerformed
 
     public static void main(String args[]) {
         try {
