@@ -388,6 +388,7 @@ private void mostrarusuario() {
             this.txtcont.setText("");
             this.txtcorreo.setText("");
         }
+        mostrarusuario();
     }//GEN-LAST:event_btnGuardarActionPerformed
 
     private void VOLVERActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_VOLVERActionPerformed

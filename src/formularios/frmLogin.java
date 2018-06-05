@@ -233,13 +233,14 @@ funciones v=new funciones();
               frmPrincipal.lblapellidos.setText(tablalistado.getValueAt(0, 2).toString());
               frmPrincipal.lblacceso.setText(tablalistado.getValueAt(0, 5).toString());
               
-              if(!frmPrincipal.lblacceso.getText().equals("Administrador")){
+              if(!frmPrincipal.lblacceso.getText().equals("Secretaria/o")){
                   frmPrincipal.Admin.setEnabled(false);
                   frmPrincipal.btnadministracion.setEnabled(false);
                   frmPrincipal.txtreportes.setEnabled(false);
               }
              }
              else{
+                 
                  JOptionPane.showMessageDialog(rootPane, "Acceso Denegado","Acceso al Sistema",JOptionPane.ERROR_MESSAGE);
              }
             

@@ -488,4 +488,30 @@ public class ConsultarDatosBD2 {
            return null;
        }
     }
+     public DefaultTableModel mostrarTipo(){
+        DefaultTableModel modelo;
+        String [] titulo = {"CODIGO","TIPO"};
+        String [] registros = new String[3];
+        totalRegistros = 0;
+        modelo = new DefaultTableModel(null,titulo);
+        
+        sSQL = "SELECT * FROM `tipousuario`";
+        try{
+           Statement st = cn.createStatement();
+           ResultSet rs = st.executeQuery(sSQL);
+           while(rs.next()){
+                registros[0] = rs.getString("id_tipoUsuario");
+                registros[1] = rs.getString("tipo_usuario");
+               
+               totalRegistros = totalRegistros+1;
+               modelo.addRow(registros);
+           }
+           con.closeBd();
+           return modelo;
+        }catch(Exception ex){
+            JOptionPane.showMessageDialog(null, "problemas al consultar los datos del Empleado "+ex);
+            con.closeBd();
+            return null;
+        }
+    }
 }
