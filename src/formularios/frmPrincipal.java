@@ -17,6 +17,7 @@ import formulariosMenu.menuadministracion;
 import formulariosMenu.menucontabilidad;
 import formulariosMenu.menuexpediente;
 import formulariosMenu.menuproveedores;
+import formulariosMenu.menureportes;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -667,7 +668,9 @@ public void run() {
     }//GEN-LAST:event_jMenuItem26ActionPerformed
 
     private void txtreportesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_txtreportesActionPerformed
-        // TODO add your handling code here:
+       menureportes form = new  menureportes();
+       Dpanel.add(form);
+        form.show();
     }//GEN-LAST:event_txtreportesActionPerformed
 
     private void jMenuItem24ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem24ActionPerformed
