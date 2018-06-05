@@ -37,6 +37,7 @@ public class frmayudaPG extends internalFrameImagen {
         lblEdit = new javax.swing.JLabel();
         lblErrores = new javax.swing.JLabel();
         lblCL1 = new javax.swing.JLabel();
+        salir = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -98,6 +99,17 @@ public class frmayudaPG extends internalFrameImagen {
 
         lblCL1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
 
+        salir.setForeground(new java.awt.Color(0, 102, 153));
+        salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
+        salir.setText("Salir");
+        salir.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        salir.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        salir.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                salirActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -105,12 +117,18 @@ public class frmayudaPG extends internalFrameImagen {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(93, 93, 93)
-                        .addComponent(jLabel1))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(49, 49, 49)
-                        .addComponent(lblReg)))
-                .addContainerGap(21, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(93, 93, 93)
+                                .addComponent(jLabel1))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(49, 49, 49)
+                                .addComponent(lblReg)))
+                        .addGap(0, 11, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(salir)))
+                .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(51, 51, 51)
@@ -136,7 +154,9 @@ public class frmayudaPG extends internalFrameImagen {
                 .addComponent(jLabel1)
                 .addGap(27, 27, 27)
                 .addComponent(lblReg, javax.swing.GroupLayout.PREFERRED_SIZE, 32, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(387, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 293, Short.MAX_VALUE)
+                .addComponent(salir)
+                .addContainerGap())
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(73, 73, 73)
@@ -209,6 +229,10 @@ public class frmayudaPG extends internalFrameImagen {
         this.lblCL4.setText("");
     }//GEN-LAST:event_lblErroresMouseExited
 
+    private void salirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_salirActionPerformed
+        dispose();
+    }//GEN-LAST:event_salirActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
@@ -219,5 +243,6 @@ public class frmayudaPG extends internalFrameImagen {
     private javax.swing.JLabel lblErrores;
     private javax.swing.JLabel lblMensaje;
     private javax.swing.JLabel lblReg;
+    private javax.swing.JButton salir;
     // End of variables declaration//GEN-END:variables
 }
