@@ -61,7 +61,7 @@ public class menucontabilidad extends internalFrameImagen {
 
         jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 102, 153));
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/conta.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/SB.png"))); // NOI18N
         jButton1.setText("Agregar Tipo de Servicio");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -73,7 +73,7 @@ public class menucontabilidad extends internalFrameImagen {
 
         jButton2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(0, 102, 153));
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/conta.png"))); // NOI18N
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/material.png"))); // NOI18N
         jButton2.setText("Agregar Materiales");
         jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
@@ -192,7 +192,7 @@ public class menucontabilidad extends internalFrameImagen {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(87, 87, 87)
+                .addGap(74, 74, 74)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton5, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -202,7 +202,7 @@ public class menucontabilidad extends internalFrameImagen {
                     .addComponent(jButton8, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(jButton7, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(22, Short.MAX_VALUE))
+                .addContainerGap(35, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
@@ -236,7 +236,7 @@ public class menucontabilidad extends internalFrameImagen {
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                     .addComponent(jButton9, javax.swing.GroupLayout.DEFAULT_SIZE, 97, Short.MAX_VALUE)
                                     .addComponent(btnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                .addContainerGap(48, Short.MAX_VALUE))))
+                                .addContainerGap(52, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(220, 220, 220)
                         .addComponent(jButton1)

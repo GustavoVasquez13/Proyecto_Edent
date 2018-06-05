@@ -42,6 +42,7 @@ public class menuexpediente extends internalFrameImagen {
         btneditarpg2 = new javax.swing.JButton();
         btneditarpg4 = new javax.swing.JButton();
         btneditarpg1 = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -50,6 +51,7 @@ public class menuexpediente extends internalFrameImagen {
         jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("Modulo Expedientes");
 
+        jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 102, 153));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/genera.png"))); // NOI18N
         jButton1.setText("Agregar Paciente General");
@@ -61,6 +63,7 @@ public class menuexpediente extends internalFrameImagen {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(0, 102, 153));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/consulta.png"))); // NOI18N
         jButton2.setText("Consulta Paciente General");
@@ -72,6 +75,7 @@ public class menuexpediente extends internalFrameImagen {
             }
         });
 
+        btneditarpg.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btneditarpg.setForeground(new java.awt.Color(0, 102, 153));
         btneditarpg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btneditarpg.setText("Editar Paciente General");
@@ -83,6 +87,7 @@ public class menuexpediente extends internalFrameImagen {
             }
         });
 
+        btneditarpg2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btneditarpg2.setForeground(new java.awt.Color(0, 102, 153));
         btneditarpg2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/orto.png"))); // NOI18N
         btneditarpg2.setText("Agregar Paciente Ortodoncia");
@@ -94,9 +99,10 @@ public class menuexpediente extends internalFrameImagen {
             }
         });
 
+        btneditarpg4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btneditarpg4.setForeground(new java.awt.Color(0, 102, 153));
         btneditarpg4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/consulta.png"))); // NOI18N
-        btneditarpg4.setText("Especificaciones Tratamiento Ortodoncia");
+        btneditarpg4.setText("Tratamiento Ortodoncia");
         btneditarpg4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         btneditarpg4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         btneditarpg4.addActionListener(new java.awt.event.ActionListener() {
@@ -105,6 +111,7 @@ public class menuexpediente extends internalFrameImagen {
             }
         });
 
+        btneditarpg1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         btneditarpg1.setForeground(new java.awt.Color(0, 102, 153));
         btneditarpg1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btneditarpg1.setText("Editar Paciente Ortodoncia");
@@ -116,43 +123,65 @@ public class menuexpediente extends internalFrameImagen {
             }
         });
 
+        btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(0, 102, 153));
+        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
+        btnCancelar.setText("Cerrar");
+        btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jButton1)
-                .addGap(18, 18, 18)
-                .addComponent(jButton2)
-                .addGap(18, 18, 18)
-                .addComponent(btneditarpg)
-                .addGap(18, 18, 18)
-                .addComponent(btneditarpg2)
-                .addGap(18, 18, 18)
-                .addComponent(btneditarpg4)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 21, Short.MAX_VALUE)
-                .addComponent(btneditarpg1)
-                .addContainerGap())
+                .addGap(81, 81, 81)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton2)
+                    .addComponent(jButton1))
+                .addGap(26, 26, 26)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btneditarpg1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btneditarpg, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(29, 29, 29)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btneditarpg2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btneditarpg4, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addGap(38, 38, 38)
+                .addComponent(btnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGap(21, 21, 21))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
-                .addGap(451, 451, 451))
+                .addGap(335, 335, 335))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(25, 25, 25)
                 .addComponent(jLabel7)
-                .addGap(33, 33, 33)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jButton1)
-                    .addComponent(jButton2)
-                    .addComponent(btneditarpg)
-                    .addComponent(btneditarpg2)
-                    .addComponent(btneditarpg4)
-                    .addComponent(btneditarpg1))
-                .addContainerGap(90, Short.MAX_VALUE))
+                .addGap(36, 36, 36)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jButton2)
+                            .addComponent(btneditarpg))
+                        .addGap(44, 44, 44)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addComponent(jButton1)
+                            .addComponent(btneditarpg1)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(btneditarpg4)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(btneditarpg2, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+                .addContainerGap(49, Short.MAX_VALUE))
         );
 
         pack();
@@ -200,8 +229,13 @@ public class menuexpediente extends internalFrameImagen {
         this.dispose();
     }//GEN-LAST:event_btneditarpg1ActionPerformed
 
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCancelar;
     private javax.swing.JButton btneditarpg;
     private javax.swing.JButton btneditarpg1;
     private javax.swing.JButton btneditarpg2;

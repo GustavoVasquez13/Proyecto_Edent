@@ -34,7 +34,7 @@
                   <Component id="jButton3" max="32767" attributes="0"/>
                   <Component id="jButton4" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace min="-2" pref="87" max="-2" attributes="0"/>
+              <EmptySpace min="-2" pref="74" max="-2" attributes="0"/>
               <Group type="103" groupAlignment="0" max="-2" attributes="0">
                   <Component id="jButton5" max="32767" attributes="0"/>
                   <Component id="jButton6" max="32767" attributes="0"/>
@@ -46,7 +46,7 @@
                   <Component id="jButton7" max="32767" attributes="0"/>
                   <Component id="btnCancelar" max="32767" attributes="0"/>
               </Group>
-              <EmptySpace pref="22" max="32767" attributes="0"/>
+              <EmptySpace pref="35" max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
@@ -88,7 +88,7 @@
                                   <Component id="jButton9" pref="97" max="32767" attributes="0"/>
                                   <Component id="btnCancelar" max="32767" attributes="0"/>
                               </Group>
-                              <EmptySpace pref="48" max="32767" attributes="0"/>
+                              <EmptySpace pref="52" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
@@ -123,7 +123,7 @@
           <Color blue="99" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/iconos/conta.png"/>
+          <Image iconType="3" name="/iconos/SB.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Agregar Tipo de Servicio"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>
@@ -142,7 +142,7 @@
           <Color blue="99" green="66" red="0" type="rgb"/>
         </Property>
         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-          <Image iconType="3" name="/iconos/conta.png"/>
+          <Image iconType="3" name="/iconos/material.png"/>
         </Property>
         <Property name="text" type="java.lang.String" value="Agregar Materiales"/>
         <Property name="horizontalTextPosition" type="int" value="0"/>

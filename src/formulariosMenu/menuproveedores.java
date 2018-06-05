@@ -38,6 +38,7 @@ public class menuproveedores extends internalFrameImagen {
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
+        btnCancelar = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -46,6 +47,7 @@ public class menuproveedores extends internalFrameImagen {
         jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("Modulo Proveedores");
 
+        jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jButton1.setForeground(new java.awt.Color(0, 102, 153));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/compra.png"))); // NOI18N
         jButton1.setText("Comprar Productos");
@@ -57,6 +59,7 @@ public class menuproveedores extends internalFrameImagen {
             }
         });
 
+        jButton2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jButton2.setForeground(new java.awt.Color(0, 102, 153));
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/proveedor_.png"))); // NOI18N
         jButton2.setText("Agregar Proveedor");
@@ -68,6 +71,7 @@ public class menuproveedores extends internalFrameImagen {
             }
         });
 
+        jButton3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jButton3.setForeground(new java.awt.Color(0, 102, 153));
         jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/compra.png"))); // NOI18N
         jButton3.setText("Agregar Producto");
@@ -79,34 +83,51 @@ public class menuproveedores extends internalFrameImagen {
             }
         });
 
+        btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(0, 102, 153));
+        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
+        btnCancelar.setText("Cerrar");
+        btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(265, 265, 265)
+                .addGap(88, 88, 88)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jButton1)
+                    .addComponent(jButton3))
+                .addGap(80, 80, 80)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jButton2))
+                .addContainerGap(53, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel7)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(22, 22, 22)
-                .addComponent(jButton1)
-                .addGap(164, 164, 164)
-                .addComponent(jButton3)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 165, Short.MAX_VALUE)
-                .addComponent(jButton2)
-                .addGap(41, 41, 41))
+                .addGap(152, 152, 152))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(22, 22, 22)
                 .addComponent(jLabel7)
-                .addGap(45, 45, 45)
+                .addGap(34, 34, 34)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jButton1)
-                    .addComponent(jButton2)
+                    .addComponent(jButton2))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 36, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 106, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jButton3))
-                .addContainerGap(107, Short.MAX_VALUE))
+                .addGap(35, 35, 35))
         );
 
         pack();
@@ -133,8 +154,13 @@ public class menuproveedores extends internalFrameImagen {
        this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
 
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCancelar;
     private javax.swing.JButton jButton1;
     private javax.swing.JButton jButton2;
     private javax.swing.JButton jButton3;
