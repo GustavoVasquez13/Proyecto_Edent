@@ -234,7 +234,9 @@ funciones v=new funciones();
               frmPrincipal.lblacceso.setText(tablalistado.getValueAt(0, 5).toString());
               
               if(!frmPrincipal.lblacceso.getText().equals("Administrador")){
-                  
+                  frmPrincipal.Admin.setEnabled(false);
+                  frmPrincipal.btnadministracion.setEnabled(false);
+                  frmPrincipal.txtreportes.setEnabled(false);
               }
              }
              else{

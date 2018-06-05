@@ -44,9 +44,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         lblacceso = new javax.swing.JLabel();
         btnexpediente = new javax.swing.JButton();
         btnproveedores = new javax.swing.JButton();
-        btnadministracion = new javax.swing.JButton();
         txtconta = new javax.swing.JButton();
-        txtreportes = new javax.swing.JButton();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -748,7 +746,7 @@ public void run() {
     public static final javax.swing.JMenu Admin = new javax.swing.JMenu();
     public static javax.swing.JDesktopPane Dpanel;
     private javax.swing.JMenuItem back;
-    private javax.swing.JButton btnadministracion;
+    public static final javax.swing.JButton btnadministracion = new javax.swing.JButton();
     private javax.swing.JButton btnexpediente;
     private javax.swing.JButton btnproveedores;
     private javax.swing.JMenu jMenu1;
@@ -787,6 +785,6 @@ public void run() {
     public static javax.swing.JLabel lblapellidos;
     public static javax.swing.JLabel lblnombres;
     private javax.swing.JButton txtconta;
-    private javax.swing.JButton txtreportes;
+    public static final javax.swing.JButton txtreportes = new javax.swing.JButton();
     // End of variables declaration//GEN-END:variables
 }
