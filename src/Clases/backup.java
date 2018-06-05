@@ -9,6 +9,7 @@ import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.InputStream;
 import java.io.OutputStream;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -17,8 +18,8 @@ import java.io.OutputStream;
 public class backup {
      String pas="";
     public static void Exportar(String ruta,String nom){
-        String rut="\\wamp64\\bin\\mysql\\mysql5.7.21\\bin\\mysqldump --opt -uroot  -B edent";
         try {
+            String rut="\\wamp64\\bin\\mysql\\mysql5.7.21\\bin\\mysqldump --opt -uroot  -B edent";
             Process p = 
             Runtime.getRuntime().exec(rut);
 
@@ -35,13 +36,14 @@ public class backup {
             fos.close();
             
         }catch(Exception e){
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "OCURRIO UN PROBLEMA AL EXPORTAR LA BASE DE DATOS "+e);
+            //e.printStackTrace();
         }
     }
     
     public static void restaurar(String ruta) {
-        String rut="\\wamp64\\bin\\mysql\\mysql5.7.21\\bin\\mysql -uroot  edent";
         try {
+            String rut="\\wamp64\\bin\\mysql\\mysql5.7.21\\bin\\mysql -uroot  edent";
             Process p = 
             Runtime.getRuntime().exec(rut);
 
@@ -60,7 +62,8 @@ public class backup {
             fis.close();
             
         }catch(Exception e){
-            e.printStackTrace();
+            JOptionPane.showMessageDialog(null, "OCURRIO UN PROBLEMA AL EXPORTAR LA BASE DE DATOS "+e);
+            //e.printStackTrace();
         }
-}
+    }
 }
