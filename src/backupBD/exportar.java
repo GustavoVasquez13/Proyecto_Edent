@@ -126,6 +126,7 @@ public class exportar extends internalFrameImagen {
     private void btnexportarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnexportarActionPerformed
         if(this.txtruta.getText().length()!=0 && this.jn.getText().length()!=0){
             n.Exportar(txtruta.getText(),jn.getText());
+            JOptionPane.showMessageDialog(null,"Base de Datos Creada");
         }else{
             JOptionPane.showMessageDialog(null,"LLENAR TODOS LOS CAMPOS");
         }

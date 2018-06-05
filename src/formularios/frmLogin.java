@@ -233,7 +233,7 @@ funciones v=new funciones();
               frmPrincipal.lblapellidos.setText(tablalistado.getValueAt(0, 2).toString());
               frmPrincipal.lblacceso.setText(tablalistado.getValueAt(0, 5).toString());
               
-              if(!frmPrincipal.lblacceso.getText().equals("Secretaria/o")){
+              if(!frmPrincipal.lblacceso.getText().equals("ADMINISTRADOR")){
                   frmPrincipal.Admin.setEnabled(false);
                   frmPrincipal.btnadministracion.setEnabled(false);
                   frmPrincipal.txtreportes.setEnabled(false);

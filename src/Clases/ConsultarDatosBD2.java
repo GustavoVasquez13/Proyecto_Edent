@@ -509,7 +509,7 @@ public class ConsultarDatosBD2 {
            con.closeBd();
            return modelo;
         }catch(Exception ex){
-            JOptionPane.showMessageDialog(null, "problemas al consultar los datos del Empleado "+ex);
+            JOptionPane.showMessageDialog(null, "problemas al consultar los datos del tipo "+ex);
             con.closeBd();
             return null;
         }

@@ -19,7 +19,7 @@ public class backup {
      String pas="";
     public static void Exportar(String ruta,String nom){
         try {
-            String rut="\\wamp\\bin\\mysql\\mysql5.7.21\\bin\\mysqldump  -uroot  -B edent";
+            String rut="\\xampp\\mysql\\bin\\mysqldump  -uroot  -B edent";
             Process p = 
             Runtime.getRuntime().exec(rut);
 
@@ -43,7 +43,7 @@ public class backup {
     
     public static void restaurar(String ruta) {
         try {
-            String rut="\\wamp64\\bin\\mysql\\mysql5.7.21\\bin\\mysql -uroot  edent";
+            String rut="\\xampp\\mysql\\bin\\mysql -uroot  edent";
             Process p = 
             Runtime.getRuntime().exec(rut);
 
