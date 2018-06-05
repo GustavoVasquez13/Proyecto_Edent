@@ -19,7 +19,7 @@ public class backup {
      String pas="";
     public static void Exportar(String ruta,String nom){
         try {
-            String rut="\\wamp64\\bin\\mysql\\mysql5.7.21\\bin\\mysqldump --opt -uroot  -B edent";
+            String rut="\\wamp\\bin\\mysql\\mysql5.7.21\\bin\\mysqldump  -uroot  -B edent";
             Process p = 
             Runtime.getRuntime().exec(rut);
 
