@@ -73,7 +73,6 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem4 = new javax.swing.JMenuItem();
         jMenuItem6 = new javax.swing.JMenuItem();
         jMenuItem7 = new javax.swing.JMenuItem();
-        jMenu5 = new javax.swing.JMenu();
         jMenuItem10 = new javax.swing.JMenuItem();
         jMenuItem19 = new javax.swing.JMenuItem();
         jMenuItem20 = new javax.swing.JMenuItem();
@@ -437,8 +436,8 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
 
         jMenuBar1.add(jMenu4);
 
-        jMenu5.setForeground(new java.awt.Color(0, 102, 153));
-        jMenu5.setText("Administrar");
+        Admin.setForeground(new java.awt.Color(0, 102, 153));
+        Admin.setText("Administrar");
 
         jMenuItem10.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem10.setText("Nuevo usuario");
@@ -447,7 +446,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 jMenuItem10ActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem10);
+        Admin.add(jMenuItem10);
 
         jMenuItem19.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem19.setText("Vista Empleados");
@@ -456,7 +455,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 jMenuItem19ActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem19);
+        Admin.add(jMenuItem19);
 
         jMenuItem20.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem20.setText("Vista Pagos");
@@ -465,7 +464,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 jMenuItem20ActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem20);
+        Admin.add(jMenuItem20);
 
         back.setForeground(new java.awt.Color(0, 102, 153));
         back.setText("Backup");
@@ -474,7 +473,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 backActionPerformed(evt);
             }
         });
-        jMenu5.add(back);
+        Admin.add(back);
 
         jMenuItem25.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem25.setText("Reporte expediente general");
@@ -483,7 +482,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 jMenuItem25ActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem25);
+        Admin.add(jMenuItem25);
 
         jMenuItem26.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem26.setText("Reporte expediente ortodoncia");
@@ -492,9 +491,9 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 jMenuItem26ActionPerformed(evt);
             }
         });
-        jMenu5.add(jMenuItem26);
+        Admin.add(jMenuItem26);
 
-        jMenuBar1.add(jMenu5);
+        jMenuBar1.add(Admin);
 
         setJMenuBar(jMenuBar1);
 
@@ -746,6 +745,7 @@ public void run() {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    public static final javax.swing.JMenu Admin = new javax.swing.JMenu();
     public static javax.swing.JDesktopPane Dpanel;
     private javax.swing.JMenuItem back;
     private javax.swing.JButton btnadministracion;
@@ -755,7 +755,6 @@ public void run() {
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
     private javax.swing.JMenu jMenu4;
-    private javax.swing.JMenu jMenu5;
     private javax.swing.JMenuBar jMenuBar1;
     private javax.swing.JMenuItem jMenuItem1;
     private javax.swing.JMenuItem jMenuItem10;
