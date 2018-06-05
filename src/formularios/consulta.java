@@ -8,6 +8,7 @@ package formularios;
 import Clases.ActualizarDatosBD;
 import Clases.InsertarDatosBD;
 import Clases.internalFrameImagen;
+import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
 import formulariosAyuda.frmayudaPO;
 import java.awt.Color;
@@ -132,6 +133,9 @@ public class consulta extends internalFrameImagen {
         txtpresupuesto.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtpresupuestoKeyPressed(evt);
+            }
+            public void keyTyped(java.awt.event.KeyEvent evt) {
+                txtpresupuestoKeyTyped(evt);
             }
         });
 
@@ -582,6 +586,11 @@ public class consulta extends internalFrameImagen {
         txtpresupuesto.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
                 java.util.Collections.EMPTY_SET);
     }//GEN-LAST:event_txtpresupuestoKeyPressed
+
+    private void txtpresupuestoKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtpresupuestoKeyTyped
+       validaciones val = new validaciones();
+        val.validarNum(evt);
+    }//GEN-LAST:event_txtpresupuestoKeyTyped
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
