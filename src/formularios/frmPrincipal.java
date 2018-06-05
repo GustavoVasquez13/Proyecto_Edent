@@ -3,6 +3,7 @@ package formularios;
 import Clases.ImagenFondo;
 
 import Crear_Reportes.reporte_general;
+import Crear_Reportes.reporte_ortodoncia;
 import FormulariosPagos.abonoPacientes;
 import FormulariosPagos.frmPagoEmpleado;
 import FormulariosPagos.frmPagoEquipo;
@@ -78,6 +79,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem20 = new javax.swing.JMenuItem();
         back = new javax.swing.JMenuItem();
         jMenuItem25 = new javax.swing.JMenuItem();
+        jMenuItem26 = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(new javax.swing.BoxLayout(getContentPane(), javax.swing.BoxLayout.LINE_AXIS));
@@ -483,6 +485,15 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu5.add(jMenuItem25);
 
+        jMenuItem26.setForeground(new java.awt.Color(0, 102, 153));
+        jMenuItem26.setText("Reporte expediente ortodoncia");
+        jMenuItem26.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem26ActionPerformed(evt);
+            }
+        });
+        jMenu5.add(jMenuItem26);
+
         jMenuBar1.add(jMenu5);
 
         setJMenuBar(jMenuBar1);
@@ -701,6 +712,12 @@ public void run() {
         form.show();  // TODO add your handling code here:
     }//GEN-LAST:event_jMenuItem25ActionPerformed
 
+    private void jMenuItem26ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem26ActionPerformed
+        reporte_ortodoncia form = new  reporte_ortodoncia();
+       Dpanel.add(form);
+        form.show(); // TODO add your handling code here:
+    }//GEN-LAST:event_jMenuItem26ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -758,6 +775,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem23;
     private javax.swing.JMenuItem jMenuItem24;
     private javax.swing.JMenuItem jMenuItem25;
+    private javax.swing.JMenuItem jMenuItem26;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
