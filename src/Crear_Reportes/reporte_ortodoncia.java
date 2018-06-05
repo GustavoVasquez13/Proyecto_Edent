@@ -221,7 +221,7 @@ public class reporte_ortodoncia extends internalFrameImagen{
                 Map parametro=new HashMap();
                 parametro.put("id_pacienteN",Integer.parseInt(lbid.getText()));
                 parametro.put("logo",this.getClass().getResourceAsStream("/iconos/logo.jpeg"));
-                parametro.put("pasiente","EXPEDIENTE PASIENTE ORTODONCIA");
+                parametro.put("pasiente","EXPEDIENTE PACIENTE ORTODONCIA");
                 JasperPrint jp = JasperFillManager.fillReport(reporte, parametro,reg);
 
                 JasperViewer jv = new JasperViewer(jp, false);

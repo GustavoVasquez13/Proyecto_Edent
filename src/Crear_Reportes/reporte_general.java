@@ -267,7 +267,7 @@ if (lbid.getText().equals(""))
             Map parametro=new HashMap();
             parametro.put("id_pacienteN",Integer.parseInt(lbid.getText()));
             parametro.put("logo",this.getClass().getResourceAsStream("/iconos/logo.jpeg"));
-            parametro.put("pasiente","EXPEDIENTE PASIENTE GENERAL");
+            parametro.put("pasiente","EXPEDIENTE PACIENTE GENERAL");
         JasperPrint jp = JasperFillManager.fillReport(reporte, parametro,reg);  
 
         
