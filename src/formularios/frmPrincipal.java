@@ -29,7 +29,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         this.setTitle("E-DENT");
         h1 = new Thread(this);
         h1.start();
-        Dpanel.setBorder(new ImagenFondo());
+//        Dpanel.setBorder(new ImagenFondo());
         this.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
     }
 
