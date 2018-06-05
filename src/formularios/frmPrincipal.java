@@ -12,6 +12,7 @@ import FormulariosPagos.frmPagoReparacion;
 import Vistas.frmVistaEmpleado;
 import Vistas.frmVistaPagos;
 import backupBD.fr_backup;
+import formulariosMenu.menuAdmin;
 import formulariosMenu.menuadministracion;
 import formulariosMenu.menucontabilidad;
 import formulariosMenu.menuexpediente;
@@ -689,7 +690,7 @@ public void run() {
     }//GEN-LAST:event_txtcontaActionPerformed
 
     private void btnadministracionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnadministracionActionPerformed
-       menuadministracion formExGral = new menuadministracion();
+       menuAdmin formExGral = new menuAdmin();
        Dpanel.add(formExGral);
         formExGral.show();
     }//GEN-LAST:event_btnadministracionActionPerformed
