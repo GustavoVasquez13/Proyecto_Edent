@@ -39,6 +39,9 @@ public class menuproveedores extends internalFrameImagen {
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+
         jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(0, 102, 153));
         jLabel7.setText("Modulo Proveedores");
