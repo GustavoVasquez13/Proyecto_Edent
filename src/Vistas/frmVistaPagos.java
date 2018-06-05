@@ -4,6 +4,8 @@ import Clases.ConsultarDatosBD2;
 import Clases.internalFrameImagen;
 import Modelo.mpago;
 import static formularios.ExpedienteGeneral.fecha;
+import formularios.frmPrincipal;
+import formulariosAyuda.frmayudaVP;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.io.File;
@@ -84,6 +86,7 @@ public class frmVistaPagos extends internalFrameImagen {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
+        btnAyuda = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -106,6 +109,8 @@ public class frmVistaPagos extends internalFrameImagen {
         jtPagos.getTableHeader().setReorderingAllowed(false);
         jScrollPane1.setViewportView(jtPagos);
 
+        cmbTipoPago.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        cmbTipoPago.setForeground(new java.awt.Color(0, 102, 153));
         cmbTipoPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONAR", "SERVICIOS BASICOS", "EMPLEADOS", "MATERIALES", "REPARACIONES", "EQUIPO" }));
         cmbTipoPago.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -157,10 +162,22 @@ public class frmVistaPagos extends internalFrameImagen {
         jLabel13.setForeground(new java.awt.Color(0, 102, 153));
         jLabel13.setText("Fecha Fin");
 
-        jButton1.setText("Generar reporte");
+        jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 102, 153));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/reporte.png"))); // NOI18N
+        jButton1.setText("Generar Reporte");
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
+            }
+        });
+
+        btnAyuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/help (1).png"))); // NOI18N
+        btnAyuda.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnAyudaActionPerformed(evt);
             }
         });
 
@@ -170,6 +187,11 @@ public class frmVistaPagos extends internalFrameImagen {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(102, 102, 102)
+                        .addComponent(btnAyuda, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -209,17 +231,19 @@ public class frmVistaPagos extends internalFrameImagen {
                                         .addGap(18, 18, 18)
                                         .addComponent(cmbTipoPago, javax.swing.GroupLayout.PREFERRED_SIZE, 168, javax.swing.GroupLayout.PREFERRED_SIZE)))))))
                 .addGap(44, 44, 44))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(217, 217, 217))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(19, 19, 19)
-                .addComponent(jLabel1)
-                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(19, 19, 19)
+                        .addComponent(jLabel1)
+                        .addGap(35, 35, 35))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(btnAyuda, javax.swing.GroupLayout.PREFERRED_SIZE, 65, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -239,7 +263,7 @@ public class frmVistaPagos extends internalFrameImagen {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 243, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(jdfin, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 30, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 15, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                         .addComponent(btnCancelar)
@@ -356,58 +380,67 @@ public class frmVistaPagos extends internalFrameImagen {
     }//GEN-LAST:event_txtBuscarKeyTyped
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
-     mpago em;
-        List<mpago> lista=new ArrayList();
-         String dia = Integer.toString(jdinicio.getCalendar().get(Calendar.DAY_OF_MONTH));
-      String mes = Integer.toString(jdinicio.getCalendar().get(Calendar.MONTH) + 1);
-      String year = Integer.toString(jdinicio.getCalendar().get(Calendar.YEAR));
-      String fechaA = (year + "-" + mes+ "-" + dia);
-      String date = fechaA; 
-         String dia1 = Integer.toString(jdfin.getCalendar().get(Calendar.DAY_OF_MONTH));
-      String mes1 = Integer.toString(jdfin.getCalendar().get(Calendar.MONTH) + 1);
-      String year1 = Integer.toString(jdfin.getCalendar().get(Calendar.YEAR));
-      String fechaA1 = (year + "-" + mes+ "-" + dia);
-      String date1 = fechaA1; 
-String fecha1=date;
-String fecha2=date1;
-String servicio=String.valueOf(cmbTipoPago.getSelectedItem());
-String total=txtTotal.getText();
-String fileName = System.getProperty("user.dir") +"/src/Reportes/reportePago.jasper";
-for(int i=0; i<jtPagos.getRowCount();i++)
-{
-em=new mpago(jtPagos.getValueAt(i, 0).toString(),jtPagos.getValueAt(i, 1).toString(),jtPagos.getValueAt(i, 2).toString());
-lista.add(em);
-}
+        if(this.jdinicio.getDate()!=null && this.jdfin.getDate()!=null && this.cmbTipoPago.getSelectedItem()!="SELECCIONAR"){
+            mpago em;
+            List<mpago> lista=new ArrayList();
+            String dia = Integer.toString(jdinicio.getCalendar().get(Calendar.DAY_OF_MONTH));
+            String mes = Integer.toString(jdinicio.getCalendar().get(Calendar.MONTH) + 1);
+            String year = Integer.toString(jdinicio.getCalendar().get(Calendar.YEAR));
+            String fechaA = (year + "-" + mes+ "-" + dia);
+            String date = fechaA; 
+            String dia1 = Integer.toString(jdfin.getCalendar().get(Calendar.DAY_OF_MONTH));
+            String mes1 = Integer.toString(jdfin.getCalendar().get(Calendar.MONTH) + 1);
+            String year1 = Integer.toString(jdfin.getCalendar().get(Calendar.YEAR));
+            String fechaA1 = (year + "-" + mes+ "-" + dia);
+            String date1 = fechaA1; 
+            String fecha1=date;
+            String fecha2=date1;
+            String servicio=String.valueOf(cmbTipoPago.getSelectedItem());
+            String total=txtTotal.getText();
+            String fileName = System.getProperty("user.dir") +"/src/Reportes/reportePago.jasper";
 
-    
-    // Instaciamos el objeto reporte
-         //Ponemos la localizacion del reporte creado
-        try {
-           File theFile = new File(fileName);
-            JasperReport reporte;  
-            reporte = (JasperReport) JRLoader.loadObject(theFile);
-            Map parametro=new HashMap();
-            JOptionPane.showMessageDialog(rootPane, "error" + fecha1+fecha2+servicio+total);
-            parametro.put("fecha1", fecha1);
-            parametro.put("fecha2",fecha2);
-            parametro.put("servicio",servicio);
-            parametro.put("total",total);
-            parametro.put("logo",this.getClass().getResourceAsStream("/iconos/logo.jpeg"));
-        JasperPrint jp = JasperFillManager.fillReport(reporte, parametro,new JRBeanCollectionDataSource(lista));  
+            for(int i=0; i<jtPagos.getRowCount();i++)
+            {
+                em=new mpago(jtPagos.getValueAt(i, 0).toString(),jtPagos.getValueAt(i, 1).toString(),jtPagos.getValueAt(i, 2).toString());
+                lista.add(em);
+            }
 
-        
+            // Instaciamos el objeto reporte
+            //Ponemos la localizacion del reporte creado
+            try {
+                File theFile = new File(fileName);
+                JasperReport reporte;  
+                reporte = (JasperReport) JRLoader.loadObject(theFile);
+                Map parametro=new HashMap();
+                //JOptionPane.showMessageDialog(rootPane, "error" + fecha1+fecha2+servicio+total);
+                parametro.put("fecha1", fecha1);
+                parametro.put("fecha2",fecha2);
+                parametro.put("servicio",servicio);
+                parametro.put("total",total);
+                parametro.put("logo",this.getClass().getResourceAsStream("/iconos/logo.jpeg"));
+                JasperPrint jp = JasperFillManager.fillReport(reporte, parametro,new JRBeanCollectionDataSource(lista));  
+
                 JasperViewer jv = new JasperViewer(jp, false);
                 jv.show();
-           // Se declara con dispose_on_close para que no se cierre el programa cuando se cierre el reporte
-            //Se vizualiza el reporte
-        } catch (JRException ex) {
-           JOptionPane.showMessageDialog(rootPane, "error" + ex);
+                // Se declara con dispose_on_close para que no se cierre el programa cuando se cierre el reporte
+                //Se vizualiza el reporte
+            } catch (JRException ex) {
+               JOptionPane.showMessageDialog(rootPane, "error" + ex);
+            }
+        }else{
+            JOptionPane.showMessageDialog(null, "DEBE DE INGRESAR LOS CAMPOS DE FECHAS Y SELECCIONAR UN TIPO DE PAGO");
         }
-                // TODO add your handling code here:
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void btnAyudaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnAyudaActionPerformed
+        frmayudaVP ayudaVP = new frmayudaVP();
+        frmPrincipal.Dpanel.add(ayudaVP);
+        ayudaVP.show();
+    }//GEN-LAST:event_btnAyudaActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnAyuda;
     private javax.swing.JButton btnCancelar;
     private javax.swing.JComboBox<String> cmbTipoPago;
     private javax.swing.JButton jButton1;
