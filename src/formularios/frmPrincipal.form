@@ -380,23 +380,10 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
-                  <EmptySpace min="280" pref="280" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-              </Group>
-              <Group type="102" attributes="0">
-                  <EmptySpace min="110" pref="110" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="btnexpediente" min="-2" pref="155" max="-2" attributes="0"/>
-                      <Component id="btnproveedores" min="-2" pref="155" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace min="349" pref="349" max="-2" attributes="0"/>
-                  <Component id="btnadministracion" min="-2" pref="155" max="-2" attributes="0"/>
-                  <EmptySpace min="311" pref="311" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="txtconta" min="-2" pref="155" max="-2" attributes="0"/>
-                      <Component id="txtreportes" min="-2" pref="155" max="-2" attributes="0"/>
-                  </Group>
+              <Group type="102" alignment="1" attributes="0">
+                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <Component id="lbltitulo" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
                   <EmptySpace min="110" pref="110" max="-2" attributes="0"/>
@@ -407,33 +394,41 @@
                   <Component id="lblacceso" min="-2" pref="132" max="-2" attributes="0"/>
                   <EmptySpace min="448" pref="448" max="-2" attributes="0"/>
                   <Component id="lbhora" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
+              </Group>
+              <Group type="102" alignment="0" attributes="0">
+                  <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                      <Component id="txtconta" max="32767" attributes="0"/>
+                      <Component id="btnadministracion" pref="187" max="32767" attributes="0"/>
+                      <Component id="btnproveedores" max="32767" attributes="0"/>
+                      <Component id="btnexpediente" max="32767" attributes="0"/>
+                      <Component id="txtreportes" max="32767" attributes="0"/>
+                  </Group>
+                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="61" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
-                  <EmptySpace min="30" pref="30" max="-2" attributes="0"/>
-                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="40" pref="40" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="12" pref="12" max="-2" attributes="0"/>
-                          <Component id="btnexpediente" min="-2" pref="130" max="-2" attributes="0"/>
-                          <EmptySpace min="124" pref="124" max="-2" attributes="0"/>
-                          <Component id="btnproveedores" min="-2" pref="130" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <EmptySpace min="134" pref="134" max="-2" attributes="0"/>
-                          <Component id="btnadministracion" min="-2" pref="130" max="-2" attributes="0"/>
-                      </Group>
-                      <Group type="102" attributes="0">
-                          <Component id="txtconta" min="-2" pref="130" max="-2" attributes="0"/>
-                          <EmptySpace min="120" pref="120" max="-2" attributes="0"/>
-                          <Component id="txtreportes" min="-2" pref="130" max="-2" attributes="0"/>
-                      </Group>
+                  <Component id="lbltitulo" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="48" max="-2" attributes="0"/>
+                  <Component id="btnexpediente" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="3" attributes="0">
+                      <Component id="btnproveedores" alignment="3" min="-2" pref="72" max="-2" attributes="0"/>
+                      <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
-                  <EmptySpace min="34" pref="34" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                  <Component id="btnadministracion" min="-2" pref="68" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="txtconta" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                  <Component id="txtreportes" min="-2" pref="71" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lblnombres" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="lblapellidos" min="-2" pref="44" max="-2" attributes="0"/>
@@ -501,11 +496,12 @@
               <Color blue="99" green="66" red="0" type="rgb"/>
             </Property>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/iconos/expedientes.jpg"/>
+              <Image iconType="3" name="/iconos/expedientes.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Expedientes"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="horizontalTextPosition" type="int" value="4"/>
+            <Property name="verticalAlignment" type="int" value="3"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnexpedienteActionPerformed"/>
@@ -523,8 +519,8 @@
               <Image iconType="3" name="/iconos/proveedores.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Proveedores"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="horizontalTextPosition" type="int" value="4"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnproveedoresActionPerformed"/>
@@ -542,8 +538,8 @@
               <Image iconType="3" name="/iconos/admin.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Administracion"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="horizontalTextPosition" type="int" value="4"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnadministracionActionPerformed"/>
@@ -564,8 +560,8 @@
               <Image iconType="3" name="/iconos/conta.png"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Contabilidad"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="horizontalTextPosition" type="int" value="4"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtcontaActionPerformed"/>
@@ -583,8 +579,8 @@
               <Image iconType="3" name="/iconos/reportes.jpg"/>
             </Property>
             <Property name="text" type="java.lang.String" value="Reportes"/>
-            <Property name="horizontalTextPosition" type="int" value="0"/>
-            <Property name="verticalTextPosition" type="int" value="3"/>
+            <Property name="horizontalAlignment" type="int" value="2"/>
+            <Property name="horizontalTextPosition" type="int" value="4"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtreportesActionPerformed"/>
@@ -593,7 +589,7 @@
             <AuxValue name="JavaCodeGenerator_VariableModifier" type="java.lang.Integer" value="25"/>
           </AuxValues>
         </Component>
-        <Component class="javax.swing.JLabel" name="jLabel1">
+        <Component class="javax.swing.JLabel" name="lbltitulo">
           <Properties>
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="ff" green="ff" red="ff" type="rgb"/>
@@ -601,6 +597,18 @@
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
               <Image iconType="3" name="/iconos/logo.jpeg"/>
             </Property>
+            <Property name="opaque" type="boolean" value="true"/>
+          </Properties>
+        </Component>
+        <Component class="javax.swing.JLabel" name="jLabel1">
+          <Properties>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="Arial" size="24" style="1"/>
+            </Property>
+            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+              <Color blue="ff" green="ff" red="ff" type="rgb"/>
+            </Property>
+            <Property name="text" type="java.lang.String" value="Smiling By Dr. Canizalez"/>
           </Properties>
         </Component>
       </SubComponents>

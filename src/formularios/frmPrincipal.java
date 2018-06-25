@@ -28,10 +28,16 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
     Thread h1;
     public frmPrincipal() {
         initComponents();
+//        this.btnexpediente.setOpaque (false); 
+//       this.btnexpediente.setContentAreaFilled(false);
+//        this.btnexpediente.setBorderPainted(false);
+         this.lbltitulo.setOpaque (false); 
+//       this.lbltitulo.setContentAreaFilled(false);
+//        this.lbltitulo.setBorderPainted(false);
         this.setTitle("E-DENT");
         h1 = new Thread(this);
         h1.start();
-//        Dpanel.setBorder(new ImagenFondo());
+        Dpanel.setBorder(new ImagenFondo());
         this.setExtendedState(frmPrincipal.MAXIMIZED_BOTH);
     }
 
@@ -47,6 +53,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         btnexpediente = new javax.swing.JButton();
         btnproveedores = new javax.swing.JButton();
         txtconta = new javax.swing.JButton();
+        lbltitulo = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
@@ -105,10 +112,11 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
 
         btnexpediente.setBackground(new java.awt.Color(255, 255, 255));
         btnexpediente.setForeground(new java.awt.Color(0, 102, 153));
-        btnexpediente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/expedientes.jpg"))); // NOI18N
+        btnexpediente.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/expedientes.png"))); // NOI18N
         btnexpediente.setText("Expedientes");
-        btnexpediente.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnexpediente.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnexpediente.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnexpediente.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
+        btnexpediente.setVerticalAlignment(javax.swing.SwingConstants.BOTTOM);
         btnexpediente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnexpedienteActionPerformed(evt);
@@ -119,8 +127,8 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         btnproveedores.setForeground(new java.awt.Color(0, 102, 153));
         btnproveedores.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/proveedores.jpg"))); // NOI18N
         btnproveedores.setText("Proveedores");
-        btnproveedores.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnproveedores.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnproveedores.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnproveedores.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         btnproveedores.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnproveedoresActionPerformed(evt);
@@ -131,8 +139,8 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         btnadministracion.setForeground(new java.awt.Color(0, 102, 153));
         btnadministracion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/admin.png"))); // NOI18N
         btnadministracion.setText("Administracion");
-        btnadministracion.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btnadministracion.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnadministracion.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        btnadministracion.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         btnadministracion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnadministracionActionPerformed(evt);
@@ -143,8 +151,8 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         txtconta.setForeground(new java.awt.Color(0, 102, 153));
         txtconta.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/conta.png"))); // NOI18N
         txtconta.setText("Contabilidad");
-        txtconta.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        txtconta.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        txtconta.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        txtconta.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         txtconta.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtcontaActionPerformed(evt);
@@ -155,16 +163,21 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         txtreportes.setForeground(new java.awt.Color(0, 102, 153));
         txtreportes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/reportes.jpg"))); // NOI18N
         txtreportes.setText("Reportes");
-        txtreportes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        txtreportes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        txtreportes.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        txtreportes.setHorizontalTextPosition(javax.swing.SwingConstants.RIGHT);
         txtreportes.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtreportesActionPerformed(evt);
             }
         });
 
+        lbltitulo.setForeground(new java.awt.Color(255, 255, 255));
+        lbltitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/logo.jpeg"))); // NOI18N
+        lbltitulo.setOpaque(true);
+
+        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/logo.jpeg"))); // NOI18N
+        jLabel1.setText("Smiling By Dr. Canizalez");
 
         Dpanel.setLayer(lbhora, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(lblapellidos, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -175,26 +188,17 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         Dpanel.setLayer(btnadministracion, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(txtconta, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(txtreportes, javax.swing.JLayeredPane.DEFAULT_LAYER);
+        Dpanel.setLayer(lbltitulo, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout DpanelLayout = new javax.swing.GroupLayout(Dpanel);
         Dpanel.setLayout(DpanelLayout);
         DpanelLayout.setHorizontalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DpanelLayout.createSequentialGroup()
-                .addGap(280, 280, 280)
-                .addComponent(jLabel1))
-            .addGroup(DpanelLayout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btnexpediente, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(349, 349, 349)
-                .addComponent(btnadministracion, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(311, 311, 311)
-                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(txtconta, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtreportes, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, DpanelLayout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lbltitulo)
+                .addGap(216, 216, 216))
             .addGroup(DpanelLayout.createSequentialGroup()
                 .addGap(110, 110, 110)
                 .addComponent(lblnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -203,28 +207,37 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 .addGap(17, 17, 17)
                 .addComponent(lblacceso, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(448, 448, 448)
-                .addComponent(lbhora))
+                .addComponent(lbhora)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(DpanelLayout.createSequentialGroup()
+                .addGap(98, 98, 98)
+                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(txtconta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnadministracion, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                    .addComponent(btnproveedores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnexpediente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(txtreportes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(jLabel1)
+                .addGap(61, 61, 61))
         );
         DpanelLayout.setVerticalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DpanelLayout.createSequentialGroup()
-                .addGap(30, 30, 30)
-                .addComponent(jLabel1)
-                .addGap(40, 40, 40)
-                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(DpanelLayout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(btnexpediente, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(124, 124, 124)
-                        .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(DpanelLayout.createSequentialGroup()
-                        .addGap(134, 134, 134)
-                        .addComponent(btnadministracion, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(DpanelLayout.createSequentialGroup()
-                        .addComponent(txtconta, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(120, 120, 120)
-                        .addComponent(txtreportes, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(34, 34, 34)
+                .addComponent(lbltitulo)
+                .addGap(48, 48, 48)
+                .addComponent(btnexpediente)
+                .addGap(14, 14, 14)
+                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel1))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addComponent(btnadministracion, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(txtconta)
+                .addGap(10, 10, 10)
+                .addComponent(txtreportes, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(17, 17, 17)
                 .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -784,6 +797,7 @@ public void run() {
     public static javax.swing.JLabel lblacceso;
     public static javax.swing.JLabel lblapellidos;
     public static javax.swing.JLabel lblnombres;
+    private javax.swing.JLabel lbltitulo;
     private javax.swing.JButton txtconta;
     public static final javax.swing.JButton txtreportes = new javax.swing.JButton();
     // End of variables declaration//GEN-END:variables
