@@ -66,15 +66,15 @@ public class ExpedienteGeneral extends internalFrameImagen {
         setVisible(true);
 
         lbltitulo.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        lbltitulo.setForeground(new java.awt.Color(0, 102, 153));
+        lbltitulo.setForeground(new java.awt.Color(255, 255, 255));
         lbltitulo.setText("Expediente Paciente Odontologia General");
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Fecha:");
 
         lbltelefono.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lbltelefono.setForeground(new java.awt.Color(0, 102, 153));
+        lbltelefono.setForeground(new java.awt.Color(255, 255, 255));
         lbltelefono.setText("Telefono:");
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -87,7 +87,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         });
 
         lbledad.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lbledad.setForeground(new java.awt.Color(0, 102, 153));
+        lbledad.setForeground(new java.awt.Color(255, 255, 255));
         lbledad.setText("Edad:");
 
         txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -100,11 +100,11 @@ public class ExpedienteGeneral extends internalFrameImagen {
         });
 
         lblnombre.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lblnombre.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre.setText("Nombre: ");
 
         lbldireccion.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lbldireccion.setForeground(new java.awt.Color(0, 102, 153));
+        lbldireccion.setForeground(new java.awt.Color(255, 255, 255));
         lbldireccion.setText("Dirección: ");
 
         txtdireccion.addActionListener(new java.awt.event.ActionListener() {
@@ -132,7 +132,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         });
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Apellido:");
 
         txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -171,7 +171,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         });
 
         lbtipo.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lbtipo.setForeground(new java.awt.Color(0, 102, 153));
+        lbtipo.setForeground(new java.awt.Color(255, 255, 255));
         lbtipo.setText("el tipo de paciente Seleccionado es:");
 
         btnsalir.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
@@ -243,15 +243,15 @@ public class ExpedienteGeneral extends internalFrameImagen {
         });
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Para realizar una consulta elija el tipo de paciente:");
 
         lbtipoo.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lbtipoo.setForeground(new java.awt.Color(0, 102, 153));
+        lbtipoo.setForeground(new java.awt.Color(255, 255, 255));
         lbtipoo.setText("..");
 
         lblid1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lblid1.setForeground(new java.awt.Color(0, 102, 153));
+        lblid1.setForeground(new java.awt.Color(255, 255, 255));
         lblid1.setText("ID paciente:");
         lblid1.setAutoscrolls(true);
 
