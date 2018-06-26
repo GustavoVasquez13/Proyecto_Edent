@@ -473,9 +473,9 @@ public class consulta extends internalFrameImagen {
         frm_indientes fr=new frm_indientes();
  Dpanel.add(fr);
         fr.show();
-    frm_indientes.lbid.setText(lbid.getText());
-     frm_indientes.lbnombre.setText(lbnombre.getText());
-      frm_indientes.lbfecha.setText(date);
+//    frm_indientes.lbid.setText(lbid.getText());
+//     frm_indientes.lbnombre.setText(lbnombre.getText());
+//      frm_indientes.lbfecha.setText(date);
    }
       
 
