@@ -42,7 +42,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         ExpedienteOrtodoncia.txtExamenC.setEnabled(false);
         ExpedienteOrtodoncia.txtDX.setEnabled(false);
         ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
-        ExpedienteOrtodoncia.btndientes.setEnabled(false);
+//        ExpedienteOrtodoncia.btndientes.setEnabled(false);
         
         
         setImagenw("img2.jpg");
@@ -86,7 +86,6 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lblid1 = new javax.swing.JLabel();
         lblid = new javax.swing.JLabel();
         ayuda = new javax.swing.JButton();
-        btndientes = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -300,25 +299,12 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        btndientes.setForeground(new java.awt.Color(0, 0, 204));
-        btndientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/dientes.jpg"))); // NOI18N
-        btndientes.setText("insertar dientes");
-        btndientes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        btndientes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
-        btndientes.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btndientesActionPerformed(evt);
-            }
-        });
-
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(48, 48, 48)
-                .addComponent(btndientes)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGap(161, 161, 161)
                 .addComponent(btnbuscaredicion)
                 .addGap(18, 18, 18)
                 .addComponent(btneditar)
@@ -416,7 +402,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(41, 41, 41)
                                 .addComponent(jLabel3)))
-                        .addGap(18, 26, Short.MAX_VALUE)
+                        .addGap(18, 30, Short.MAX_VALUE)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(jLabel2)
                             .addComponent(jfecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -474,8 +460,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
                                 .addComponent(btnsalir, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                                 .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addComponent(btneditar)
-                            .addComponent(btnbuscaredicion)
-                            .addComponent(btndientes))
+                            .addComponent(btnbuscaredicion))
                         .addContainerGap())))
         );
 
@@ -538,7 +523,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         ExpedienteOrtodoncia.txtExamenC.setEnabled(false);
         ExpedienteOrtodoncia.txtDX.setEnabled(false);
         ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
-        ExpedienteOrtodoncia.btndientes.setEnabled(false);
+//        ExpedienteOrtodoncia.btndientes.setEnabled(false);
         ExpedienteOrtodoncia.btnelegir.setEnabled(true);
      }
      
@@ -676,35 +661,11 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
        txtDX.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
                 java.util.Collections.EMPTY_SET);    }//GEN-LAST:event_txtDXKeyPressed
 
-    private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
-       if(jfecha.getDate() == null){
-           JOptionPane.showMessageDialog(null, "Agrege la Fecha de la consulta");
-       }else{
-        String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
-      String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
-      String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
-      String fechaA = (year + "-" + mes+ "-" + dia);
-      String date = fechaA; 
-        frm_indientes fr=new frm_indientes();
- Dpanel.add(fr);
-        fr.show();
-    frm_indientes.lbid.setText(txttip.getText());
-     frm_indientes.lbnombre.setText(txtnombre.getText());
-      frm_indientes.lbfecha.setText(date);
-       }
-           
-      
-        
-    
-       
-    }//GEN-LAST:event_btndientesActionPerformed
-
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ayuda;
     public static javax.swing.JButton btnGuardar;
     public static javax.swing.JButton btnbuscaredicion;
-    public static javax.swing.JButton btndientes;
     public static javax.swing.JButton btneditar;
     public static javax.swing.JButton btnelegir;
     private javax.swing.JButton btnsalir;
