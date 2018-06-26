@@ -236,6 +236,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         lbidplan = new javax.swing.JLabel();
         btneditar = new javax.swing.JButton();
         ayuda = new javax.swing.JButton();
+        btndientes = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -950,6 +951,18 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(ayuda, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 10, -1, -1));
 
+        btndientes.setForeground(new java.awt.Color(0, 0, 204));
+        btndientes.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/dientes.jpg"))); // NOI18N
+        btndientes.setText("insertar dientes");
+        btndientes.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btndientes.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btndientes.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btndientesActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btndientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 10, -1, -1));
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -1566,10 +1579,30 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 java.util.Collections.EMPTY_SET);
     }//GEN-LAST:event_txtrocabadoKeyPressed
 
+    private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
+//        if(this.jfecha.getDate()== null){
+//            JOptionPane.showMessageDialog(null, "Debe ingresar la fecha para continuar");
+//        }else{
+//            String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
+//            String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
+//            String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
+//            String fechaA = (year + "-" + mes+ "-" + dia);
+//            String date = fechaA;
+//            frm_indientes fr=new frm_indientes();
+//            Dpanel.add(fr);
+//            fr.show();
+//            //    frm_indientes.lbid.setText(lbid.getText());
+//            //     frm_indientes.lbnombre.setText(lbnombre.getText());
+//            //      frm_indientes.lbfecha.setText(date);
+//        }
+
+    }//GEN-LAST:event_btndientesActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ayuda;
     public static javax.swing.JButton btnbuscaredicion;
+    public static javax.swing.JButton btndientes;
     public static javax.swing.JButton btneditar;
     public static javax.swing.JButton btnguardar;
     public static javax.swing.JButton btnpaciente;
