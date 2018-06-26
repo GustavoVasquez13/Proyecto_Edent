@@ -172,7 +172,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
 
         lbltitulo.setForeground(new java.awt.Color(255, 255, 255));
-        lbltitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/logo.jpeg"))); // NOI18N
+        lbltitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/logo1.png"))); // NOI18N
         lbltitulo.setOpaque(true);
 
         jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
@@ -224,8 +224,9 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         DpanelLayout.setVerticalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(DpanelLayout.createSequentialGroup()
+                .addGap(30, 30, 30)
                 .addComponent(lbltitulo)
-                .addGap(48, 48, 48)
+                .addGap(18, 18, 18)
                 .addComponent(btnexpediente)
                 .addGap(14, 14, 14)
                 .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
