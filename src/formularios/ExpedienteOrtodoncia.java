@@ -45,7 +45,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 //        ExpedienteOrtodoncia.btndientes.setEnabled(false);
         
         
-        setImagenw("img2.jpg");
+       setImagenw("img.jpg");
     }
     
     @SuppressWarnings("unchecked")
