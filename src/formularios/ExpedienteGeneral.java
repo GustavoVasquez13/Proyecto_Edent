@@ -17,7 +17,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
 
     public ExpedienteGeneral() {
         initComponents();
-       setImagenw("fondo_1.jpg");
+       setImagenw("img.jpg");
        btcon.setVisible(false);
         ExpedienteGeneral.fecha.setEnabled(false);
         ExpedienteGeneral.txtedad.setEnabled(false);
