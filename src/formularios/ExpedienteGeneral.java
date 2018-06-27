@@ -6,7 +6,7 @@ import Clases.internalFrameImagen;
 import Clases.validaciones;
 import static formularios.frmPrincipal.Dpanel;
 import formulariosAyuda.frmayudaEG;
-import formulariosAyuda.frmayudaPE;
+
 import java.awt.Color;
 import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyEvent;

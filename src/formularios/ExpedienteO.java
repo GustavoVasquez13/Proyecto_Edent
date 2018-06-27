@@ -26,7 +26,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
      */
     public ExpedienteO() {
         initComponents();
-        setImagenw("img2.jpg");
+       setImagenw("img.jpg");
 
             ExpedienteO.txtanguloA1.setEnabled(false);
             ExpedienteO.txtanguloG1.setEnabled(false);
