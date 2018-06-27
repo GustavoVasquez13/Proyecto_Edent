@@ -37,7 +37,7 @@ public class consulta extends internalFrameImagen {
         consulta.txtMotivoC.setEnabled(false);
         consulta.txtpresupuesto.setEnabled(false);
         consulta.btndientes.setEnabled(false);
-        setImagenw("img2.jpg");
+       setImagenw("img.jpg");
     }
 
     /**
