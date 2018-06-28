@@ -136,7 +136,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardar.setForeground(new java.awt.Color(0, 51, 153));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("GUARDAR");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -148,7 +148,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         VOLVER.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        VOLVER.setForeground(new java.awt.Color(255, 255, 255));
+        VOLVER.setForeground(new java.awt.Color(0, 51, 153));
         VOLVER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         VOLVER.setText("CERRAR");
         VOLVER.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -198,7 +198,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         jLabel8.setText("Buscar");
 
         btnModificarReg.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnModificarReg.setForeground(new java.awt.Color(255, 255, 255));
+        btnModificarReg.setForeground(new java.awt.Color(0, 51, 153));
         btnModificarReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnModificarReg.setText("Editar");
         btnModificarReg.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -216,7 +216,8 @@ public class fr_nuevoUsuario extends internalFrameImagen {
             }
         });
 
-        jButton1.setForeground(new java.awt.Color(255, 255, 255));
+        jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
+        jButton1.setForeground(new java.awt.Color(0, 51, 153));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/addUse.png"))); // NOI18N
         jButton1.setText("NUEVO TIPO DE USUARIO");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

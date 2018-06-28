@@ -96,7 +96,7 @@ public class frmProveedores extends internalFrameImagen {
         jLabel9.setText("E-mail:");
 
         btnAgregar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnAgregar.setForeground(new java.awt.Color(255, 255, 255));
+        btnAgregar.setForeground(new java.awt.Color(0, 51, 153));
         btnAgregar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnAgregar.setText("Agregar");
         btnAgregar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -117,7 +117,7 @@ public class frmProveedores extends internalFrameImagen {
         });
 
         btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnCancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCancelar.setForeground(new java.awt.Color(0, 51, 153));
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -155,7 +155,7 @@ public class frmProveedores extends internalFrameImagen {
         });
 
         btnEditar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnEditar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEditar.setForeground(new java.awt.Color(0, 51, 153));
         btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnEditar.setText("Editar");
         btnEditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

@@ -178,7 +178,7 @@ InsertarDatosBD i=new InsertarDatosBD();
 
         btnNuevo.setBackground(new java.awt.Color(36, 33, 33));
         btnNuevo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnNuevo.setForeground(new java.awt.Color(255, 255, 255));
+        btnNuevo.setForeground(new java.awt.Color(0, 51, 153));
         btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/nuevo_use.png"))); // NOI18N
         btnNuevo.setText("Nuevo");
         btnNuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -191,7 +191,7 @@ InsertarDatosBD i=new InsertarDatosBD();
 
         btnGuardar.setBackground(new java.awt.Color(36, 33, 33));
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardar.setForeground(new java.awt.Color(0, 51, 153));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/addUse.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

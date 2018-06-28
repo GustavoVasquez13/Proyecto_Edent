@@ -119,7 +119,7 @@ public class frmServBasicos extends internalFrameImagen {
         jLabel5.setText("Agregar Servicios Basicos");
 
         btnGuardar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardar.setForeground(new java.awt.Color(0, 51, 153));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -145,7 +145,7 @@ public class frmServBasicos extends internalFrameImagen {
         });
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnCancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCancelar.setForeground(new java.awt.Color(0, 51, 153));
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cerrar");
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -181,7 +181,7 @@ public class frmServBasicos extends internalFrameImagen {
         jScrollPane1.setViewportView(jtServicios);
 
         btnModificarReg.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnModificarReg.setForeground(new java.awt.Color(255, 255, 255));
+        btnModificarReg.setForeground(new java.awt.Color(0, 51, 153));
         btnModificarReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnModificarReg.setText("Editar");
         btnModificarReg.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

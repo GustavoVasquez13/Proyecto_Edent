@@ -109,7 +109,7 @@ public class frmPagoServBasicos extends internalFrameImagen {
         fechaPago.setDateFormatString("yyyy-MM-dd");
 
         btnRegistrar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrar.setForeground(new java.awt.Color(0, 51, 153));
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/pago.png"))); // NOI18N
         btnRegistrar.setText("Registrar");
         btnRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -164,7 +164,7 @@ public class frmPagoServBasicos extends internalFrameImagen {
         });
 
         btnAggNS.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnAggNS.setForeground(new java.awt.Color(255, 255, 255));
+        btnAggNS.setForeground(new java.awt.Color(0, 51, 153));
         btnAggNS.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/nuevo.png"))); // NOI18N
         btnAggNS.setText("Agregar Nuevo Servicio");
         btnAggNS.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -176,7 +176,7 @@ public class frmPagoServBasicos extends internalFrameImagen {
         });
 
         btnActualizar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnActualizar.setForeground(new java.awt.Color(0, 51, 153));
         btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/actualizar.png"))); // NOI18N
         btnActualizar.setText("Actualizar Tabla");
         btnActualizar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

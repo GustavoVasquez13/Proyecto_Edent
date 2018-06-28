@@ -189,7 +189,7 @@ public class frmEmpleados extends internalFrameImagen {
         });
 
         btnGuardar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardar.setForeground(new java.awt.Color(0, 51, 153));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setToolTipText("Guarda los datos del empleado en la base de datos");
@@ -208,7 +208,7 @@ public class frmEmpleados extends internalFrameImagen {
         jdFechaInicio.setDateFormatString("yyyy-MM-dd");
 
         btnCerrar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnCerrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCerrar.setForeground(new java.awt.Color(0, 51, 153));
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCerrar.setText("Cerrar");
         btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -254,7 +254,7 @@ public class frmEmpleados extends internalFrameImagen {
         });
 
         btnModificar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnModificar.setForeground(new java.awt.Color(255, 255, 255));
+        btnModificar.setForeground(new java.awt.Color(0, 51, 153));
         btnModificar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnModificar.setText("Editar");
         btnModificar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

@@ -102,7 +102,7 @@ public class frmCompraProducto extends internalFrameImagen {
         setAutoscrolls(true);
 
         btnSelectProd.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnSelectProd.setForeground(new java.awt.Color(255, 255, 255));
+        btnSelectProd.setForeground(new java.awt.Color(0, 51, 153));
         btnSelectProd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/producto_1.png"))); // NOI18N
         btnSelectProd.setText("Nuevo Producto");
         btnSelectProd.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -158,7 +158,7 @@ public class frmCompraProducto extends internalFrameImagen {
         });
 
         btnComprar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnComprar.setForeground(new java.awt.Color(255, 255, 255));
+        btnComprar.setForeground(new java.awt.Color(0, 51, 153));
         btnComprar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/compra.png"))); // NOI18N
         btnComprar.setText("Comprar");
         btnComprar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -170,7 +170,7 @@ public class frmCompraProducto extends internalFrameImagen {
         });
 
         btnSelectProve.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnSelectProve.setForeground(new java.awt.Color(255, 255, 255));
+        btnSelectProve.setForeground(new java.awt.Color(0, 51, 153));
         btnSelectProve.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/proveedor_.png"))); // NOI18N
         btnSelectProve.setText("Nuevo Proveedor");
         btnSelectProve.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -186,7 +186,7 @@ public class frmCompraProducto extends internalFrameImagen {
         jLabel7.setText("Marca:");
 
         btnCerrar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnCerrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCerrar.setForeground(new java.awt.Color(0, 51, 153));
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCerrar.setText("Cerrar");
         btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -256,7 +256,7 @@ public class frmCompraProducto extends internalFrameImagen {
         fechaCompra.setDateFormatString("yyy-MM-dd");
 
         btnActualizar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnActualizar.setForeground(new java.awt.Color(0, 51, 153));
         btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/actualizar.png"))); // NOI18N
         btnActualizar.setText("Actualizar");
         btnActualizar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

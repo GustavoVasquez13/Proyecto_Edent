@@ -100,7 +100,7 @@ public class frmEquipo extends internalFrameImagen {
         jScrollPane1.setViewportView(jtEquipo);
 
         btnGuardar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
+        btnGuardar.setForeground(new java.awt.Color(0, 51, 153));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -112,7 +112,7 @@ public class frmEquipo extends internalFrameImagen {
         });
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnCancelar.setForeground(new java.awt.Color(255, 255, 255));
+        btnCancelar.setForeground(new java.awt.Color(0, 51, 153));
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cancelar");
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -124,7 +124,7 @@ public class frmEquipo extends internalFrameImagen {
         });
 
         btnEditar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnEditar.setForeground(new java.awt.Color(255, 255, 255));
+        btnEditar.setForeground(new java.awt.Color(0, 51, 153));
         btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnEditar.setText("Editar");
         btnEditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
