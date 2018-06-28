@@ -12,7 +12,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
 
     public frmInsertarTipoPaciente() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
         mostrarTP();
     }
     // En este metodo se muestran en el control Jtable todos los datos que se encuentran almacenados en la tabla tipopaciente
@@ -59,7 +59,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
         });
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Tipo de Paciente:");
 
         jtpacientes.setModel(new javax.swing.table.DefaultTableModel(
@@ -80,8 +80,8 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
         });
         jScrollPane1.setViewportView(jtpacientes);
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Tipos de Pacientes");
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -96,7 +96,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
             }
         });
 
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Inserte un nuevo tipo de paciente para la Clinica");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -148,7 +148,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                             .addComponent(btnGuardar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                             .addComponent(btnCancelar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-                .addContainerGap(15, Short.MAX_VALUE))
+                .addContainerGap(23, Short.MAX_VALUE))
         );
 
         pack();
