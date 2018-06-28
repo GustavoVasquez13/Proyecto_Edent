@@ -90,14 +90,14 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
-        jLabel82.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel82.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
         jLabel82.setText("Expediente Paciente Ortodoncia");
 
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Fecha:");
 
-        lbltelefono.setForeground(new java.awt.Color(0, 102, 153));
+        lbltelefono.setForeground(new java.awt.Color(255, 255, 255));
         lbltelefono.setText("Telefono:");
 
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -106,7 +106,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lbledad.setForeground(new java.awt.Color(0, 102, 153));
+        lbledad.setForeground(new java.awt.Color(255, 255, 255));
         lbledad.setText("Edad:");
 
         txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -118,7 +118,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lblnombre.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre.setText("Nombre: ");
 
         txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -127,7 +127,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lbldireccion1.setForeground(new java.awt.Color(0, 102, 153));
+        lbldireccion1.setForeground(new java.awt.Color(255, 255, 255));
         lbldireccion1.setText("Dirección: ");
 
         txtdireccion.addActionListener(new java.awt.event.ActionListener() {
@@ -136,7 +136,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lblnombre1.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre1.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre1.setText("Motivo de la Consulta: ");
 
         txtMotivoC.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -145,7 +145,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lblnombre2.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre2.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre2.setText("Historia Medica:");
 
         txtHistoriaM.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -154,7 +154,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lblnombre3.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre3.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre3.setText("Historia Odontologica:");
 
         txtHistoriaO.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -163,7 +163,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lblnombre4.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre4.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre4.setText("Examen Clinico:");
 
         txtExamenC.addActionListener(new java.awt.event.ActionListener() {
@@ -177,7 +177,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lblnombre5.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre5.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre5.setText("DX Odontologico:");
 
         txtDX.addActionListener(new java.awt.event.ActionListener() {
@@ -204,7 +204,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
         jfecha.setDateFormatString("yyyy-MM-dd");
 
-        lblnombre40.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre40.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre40.setText("Apellido:");
 
         txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -259,7 +259,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         });
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Para realizar una consulta elija el paciente:");
 
         btneditar.setForeground(new java.awt.Color(0, 0, 204));
@@ -284,11 +284,11 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
             }
         });
 
-        lblid1.setForeground(new java.awt.Color(0, 102, 153));
+        lblid1.setForeground(new java.awt.Color(255, 255, 255));
         lblid1.setText("ID paciente:");
         lblid1.setAutoscrolls(true);
 
-        lblid.setForeground(new java.awt.Color(0, 102, 153));
+        lblid.setForeground(new java.awt.Color(255, 255, 255));
         lblid.setText("...");
         lblid.setAutoscrolls(true);
 
