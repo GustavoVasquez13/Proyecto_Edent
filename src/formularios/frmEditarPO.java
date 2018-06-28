@@ -15,7 +15,7 @@ public class frmEditarPO extends internalFrameImagen {
     
     public frmEditarPO() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
         mostrarpacientes();
     }
 private void mostrarpacientes() {
@@ -46,12 +46,12 @@ private void mostrarpacientes() {
         setClosable(true);
         setIconifiable(true);
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Vista de Pacientes de Odontologia General a Editar");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -115,7 +115,7 @@ private void mostrarpacientes() {
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(31, 31, 31)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(101, Short.MAX_VALUE))
+                .addContainerGap(109, Short.MAX_VALUE))
         );
 
         pack();

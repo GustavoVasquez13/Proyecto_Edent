@@ -21,7 +21,7 @@ public class frm_indientes extends internalFrameImagen {
      */
     public frm_indientes() {
         initComponents();
-       setImagenw("img2.jpg");
+       setImagenw("img.jpg");
 
     }
 
@@ -470,19 +470,20 @@ public class frm_indientes extends internalFrameImagen {
         setIconifiable(true);
         getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Numero de expediente");
         getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 47, -1, -1));
 
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Nombre");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 47, -1, -1));
 
-        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Fecha");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(487, 47, -1, -1));
 
         grup.add(ja);
+        ja.setForeground(new java.awt.Color(255, 255, 255));
         ja.setText("Adulto");
         ja.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -492,6 +493,7 @@ public class frm_indientes extends internalFrameImagen {
         getContentPane().add(ja, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 75, -1, -1));
 
         grup.add(jn);
+        jn.setForeground(new java.awt.Color(255, 255, 255));
         jn.setText("Niño");
         jn.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -526,8 +528,8 @@ public class frm_indientes extends internalFrameImagen {
         });
         getContentPane().add(btnsalir, new org.netbeans.lib.awtextra.AbsoluteConstraints(634, 439, 76, 82));
 
-        jLabel7.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Formulario para agregar Dientes");
         getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(196, 0, -1, -1));
 
