@@ -20,7 +20,7 @@ public class frmEditarPG extends internalFrameImagen {
     
     public frmEditarPG() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
         mostrarpacientes();
     }
 private void mostrarpacientes() {
@@ -54,12 +54,12 @@ private void mostrarpacientes() {
         setClosable(true);
         setIconifiable(true);
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Vista de Pacientes de Odontologia General ");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -93,11 +93,11 @@ private void mostrarpacientes() {
         jScrollPane1.setViewportView(jtPacientes);
 
         lblcodigo.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblcodigo.setForeground(new java.awt.Color(0, 102, 153));
+        lblcodigo.setForeground(new java.awt.Color(255, 255, 255));
         lblcodigo.setText("codigo");
 
         lblnombre.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblnombre.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre.setText("nombre");
 
         btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
@@ -122,7 +122,7 @@ private void mostrarpacientes() {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel5)
                     .addComponent(txtBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, 185, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(160, Short.MAX_VALUE))
+                .addContainerGap(134, Short.MAX_VALUE))
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
@@ -149,7 +149,7 @@ private void mostrarpacientes() {
                     .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(31, 31, 31)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 61, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lblcodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE))

@@ -20,7 +20,7 @@ public class frmEleccionPaciente extends internalFrameImagen {
      */
     public frmEleccionPaciente() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
     }
 
     /**
@@ -41,12 +41,12 @@ public class frmEleccionPaciente extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
-        jLabel82.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel82.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
         jLabel82.setText("Seleccionar Paciente para Consulta");
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Para realizar una consulta elija el paciente:");
 
         btnsalir.setForeground(new java.awt.Color(0, 0, 204));
@@ -91,7 +91,7 @@ public class frmEleccionPaciente extends internalFrameImagen {
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addContainerGap(40, Short.MAX_VALUE)
+                                .addContainerGap(80, Short.MAX_VALUE)
                                 .addComponent(jLabel82)
                                 .addGap(18, 18, 18)))
                         .addComponent(ayuda, javax.swing.GroupLayout.PREFERRED_SIZE, 61, javax.swing.GroupLayout.PREFERRED_SIZE))
