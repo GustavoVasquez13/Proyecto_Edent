@@ -82,7 +82,7 @@ public class consulta extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
-        lblnombre1.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre1.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre1.setText("Motivo de la Consulta: ");
 
         txtMotivoC.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -91,7 +91,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
-        lblnombre2.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre2.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre2.setText("Historia Medica:");
 
         txtHistoriaM.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -100,7 +100,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
-        lblnombre3.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre3.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre3.setText("Historia Odontologica:");
 
         txtHistoriaO.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -109,7 +109,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
-        lblnombre4.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre4.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre4.setText("Examen Clinico:");
 
         txtExamenC.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -118,7 +118,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
-        lblnombre5.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre5.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre5.setText("DX Odontologico:");
 
         txtDX.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -127,7 +127,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
-        lblnombre6.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre6.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre6.setText("Presupuesto:");
 
         txtpresupuesto.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -163,13 +163,13 @@ public class consulta extends internalFrameImagen {
             }
         });
 
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Numero de expediente");
 
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombre");
 
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Fecha");
 
         lbid.setForeground(new java.awt.Color(0, 102, 153));
@@ -198,8 +198,8 @@ public class consulta extends internalFrameImagen {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Consulta Pacientes Odontologia General");
 
         btnselecionaredicion.setForeground(new java.awt.Color(0, 0, 255));
@@ -224,10 +224,10 @@ public class consulta extends internalFrameImagen {
             }
         });
 
-        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("ID consulta");
 
-        lblidc.setForeground(new java.awt.Color(0, 102, 153));
+        lblidc.setForeground(new java.awt.Color(255, 255, 255));
         lblidc.setText("...");
 
         ayuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/help (1).png"))); // NOI18N
@@ -389,7 +389,7 @@ public class consulta extends internalFrameImagen {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblnombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtpresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 67, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 75, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnselecionaredicion)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
