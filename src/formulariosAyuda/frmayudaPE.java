@@ -7,7 +7,7 @@ public class frmayudaPE extends internalFrameImagen{
 
     public frmayudaPE() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
     }
 
     @SuppressWarnings("unchecked")
@@ -31,6 +31,7 @@ public class frmayudaPE extends internalFrameImagen{
         setIconifiable(true);
 
         lblReg.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        lblReg.setForeground(new java.awt.Color(255, 255, 255));
         lblReg.setText("Realizar una Busqueda en la Tabla");
         lblReg.setToolTipText("Click Para Ver la Descripcion del Caso");
         lblReg.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -48,6 +49,7 @@ public class frmayudaPE extends internalFrameImagen{
         lblMensaje.setFont(new java.awt.Font("Baskerville Old Face", 0, 14)); // NOI18N
 
         lblEdit.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        lblEdit.setForeground(new java.awt.Color(255, 255, 255));
         lblEdit.setText("Registrar un Pago");
         lblEdit.setToolTipText("Click Para Ver la Descripcion del Caso");
         lblEdit.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -63,6 +65,7 @@ public class frmayudaPE extends internalFrameImagen{
         });
 
         lblErrores.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        lblErrores.setForeground(new java.awt.Color(255, 255, 255));
         lblErrores.setText("Posibles Problemas Presentados");
         lblErrores.setToolTipText("Click Para Ver la Descripcion del Caso");
         lblErrores.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -78,7 +81,7 @@ public class frmayudaPE extends internalFrameImagen{
         });
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Formulario de Ayuda");
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
