@@ -26,7 +26,8 @@ funciones v=new funciones();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        panel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Clases/img2.jpg"))); // NOI18N
+        panel2.setForeground(new java.awt.Color(255, 255, 255));
+        panel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Clases/img.jpg"))); // NOI18N
         panel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 panel2MouseDragged(evt);
@@ -54,13 +55,13 @@ funciones v=new funciones();
 
         jLabel15.setBackground(new java.awt.Color(0, 102, 153));
         jLabel15.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
-        jLabel15.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel15.setForeground(new java.awt.Color(255, 255, 255));
         jLabel15.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel15.setText("RECUPERAR USUARIO");
 
         jLabel17.setBackground(new java.awt.Color(0, 102, 153));
         jLabel17.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
-        jLabel17.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel17.setForeground(new java.awt.Color(255, 255, 255));
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel17.setText("Y CONTRASEÑA");
 

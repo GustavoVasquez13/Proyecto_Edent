@@ -87,7 +87,7 @@ InsertarDatosBD i=new InsertarDatosBD();
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setResizable(false);
 
-        panel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Clases/img2.jpg"))); // NOI18N
+        panel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Clases/img.jpg"))); // NOI18N
         panel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 panel2MouseDragged(evt);
@@ -101,11 +101,11 @@ InsertarDatosBD i=new InsertarDatosBD();
 
         jLabel19.setBackground(new java.awt.Color(255, 255, 255));
         jLabel19.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel19.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("Primera Sesion del Sistema ");
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText(" Nombre:");
 
         txtNombre_persona.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -125,7 +125,7 @@ InsertarDatosBD i=new InsertarDatosBD();
         });
 
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Apellido:");
 
         txtape.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -142,15 +142,15 @@ InsertarDatosBD i=new InsertarDatosBD();
         });
 
         jLabel8.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Usuario:");
 
         jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
-        jLabel9.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("contraseña:");
 
         jLabel11.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Tipo acceso:");
 
         tipo.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
@@ -161,7 +161,7 @@ InsertarDatosBD i=new InsertarDatosBD();
         });
 
         jLabel10.setFont(new java.awt.Font("Baskerville Old Face", 0, 18)); // NOI18N
-        jLabel10.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel10.setForeground(new java.awt.Color(255, 255, 255));
         jLabel10.setText("Correo:");
 
         txtcorreo.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
@@ -178,7 +178,7 @@ InsertarDatosBD i=new InsertarDatosBD();
 
         btnNuevo.setBackground(new java.awt.Color(36, 33, 33));
         btnNuevo.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnNuevo.setForeground(new java.awt.Color(0, 102, 204));
+        btnNuevo.setForeground(new java.awt.Color(255, 255, 255));
         btnNuevo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/nuevo_use.png"))); // NOI18N
         btnNuevo.setText("Nuevo");
         btnNuevo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -191,7 +191,7 @@ InsertarDatosBD i=new InsertarDatosBD();
 
         btnGuardar.setBackground(new java.awt.Color(36, 33, 33));
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(0, 102, 204));
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/addUse.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

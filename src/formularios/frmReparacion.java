@@ -19,7 +19,7 @@ public class frmReparacion extends internalFrameImagen {
     
     public frmReparacion() {
         initComponents();
-        setImagenw("img2.jpg");
+            setImagenw("img.jpg");
         MRepa();
     }
 
@@ -74,11 +74,11 @@ public class frmReparacion extends internalFrameImagen {
         setIconifiable(true);
 
         jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Agregar Reparaciones de la clinica");
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Reparacion");
 
         txtRepa.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -88,7 +88,7 @@ public class frmReparacion extends internalFrameImagen {
         });
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Descripcion");
 
         jtRepa = new javax.swing.JTable(){
@@ -116,7 +116,7 @@ public class frmReparacion extends internalFrameImagen {
         jScrollPane2.setViewportView(jtRepa);
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -132,7 +132,7 @@ public class frmReparacion extends internalFrameImagen {
         });
 
         btnGuardar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(0, 102, 153));
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -144,7 +144,7 @@ public class frmReparacion extends internalFrameImagen {
         });
 
         btnEditar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnEditar.setForeground(new java.awt.Color(0, 102, 153));
+        btnEditar.setForeground(new java.awt.Color(255, 255, 255));
         btnEditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnEditar.setText("Editar");
         btnEditar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -156,7 +156,7 @@ public class frmReparacion extends internalFrameImagen {
         });
 
         btnCerrar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnCerrar.setForeground(new java.awt.Color(0, 102, 153));
+        btnCerrar.setForeground(new java.awt.Color(255, 255, 255));
         btnCerrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCerrar.setText("Cerrar");
         btnCerrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

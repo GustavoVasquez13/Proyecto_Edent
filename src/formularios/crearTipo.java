@@ -22,7 +22,7 @@ public class crearTipo  extends internalFrameImagen {
      */
     public crearTipo() {
         initComponents();
-          setImagenw("img2.jpg"); 
+             setImagenw("img.jpg");
           mostrarusuario();
     }
 private void mostrarusuario() {
@@ -79,7 +79,7 @@ private void mostrarusuario() {
         jScrollPane2.setViewportView(jusu);
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(0, 102, 204));
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("GUARDAR");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -91,7 +91,7 @@ private void mostrarusuario() {
         });
 
         VOLVER.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        VOLVER.setForeground(new java.awt.Color(0, 102, 204));
+        VOLVER.setForeground(new java.awt.Color(255, 255, 255));
         VOLVER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         VOLVER.setText("CERRAR");
         VOLVER.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -103,11 +103,11 @@ private void mostrarusuario() {
         });
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("AGREGAR NUEVO TIPO DE USUARIO");
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("NUEVO TIPO DE USUARIO");
 
         jusu = new javax.swing.JTable(){

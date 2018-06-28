@@ -31,7 +31,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
     
     public fr_nuevoUsuario() {
         initComponents();
-         setImagenw("img2.jpg"); 
+           setImagenw("img.jpg");
          mostrarusuario();
          
          consultar();
@@ -78,11 +78,11 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         setIconifiable(true);
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("AGREGAR NUEVO USUARIO");
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("NOMBRE");
 
         txtNombre_persona.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -92,7 +92,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("APELLIDO");
 
         txtape.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -102,7 +102,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("USUARIO");
 
         txtusu.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -112,7 +112,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("CONTRASEÑA");
 
         txtcont.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -122,11 +122,11 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("TIPO");
 
         jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("CORREO:");
 
         txtcorreo.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -136,7 +136,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         btnGuardar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(0, 102, 204));
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("GUARDAR");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -148,7 +148,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         VOLVER.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
-        VOLVER.setForeground(new java.awt.Color(0, 102, 204));
+        VOLVER.setForeground(new java.awt.Color(255, 255, 255));
         VOLVER.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         VOLVER.setText("CERRAR");
         VOLVER.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -194,11 +194,11 @@ public class fr_nuevoUsuario extends internalFrameImagen {
         });
 
         jLabel8.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Buscar");
 
         btnModificarReg.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnModificarReg.setForeground(new java.awt.Color(0, 102, 255));
+        btnModificarReg.setForeground(new java.awt.Color(255, 255, 255));
         btnModificarReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnModificarReg.setText("Editar");
         btnModificarReg.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -216,7 +216,7 @@ public class fr_nuevoUsuario extends internalFrameImagen {
             }
         });
 
-        jButton1.setForeground(new java.awt.Color(0, 102, 204));
+        jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/addUse.png"))); // NOI18N
         jButton1.setText("NUEVO TIPO DE USUARIO");
         jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);

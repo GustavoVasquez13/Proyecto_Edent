@@ -8,7 +8,9 @@ import static formularios.frmPrincipal.Dpanel;
 import formulariosAyuda.frmayudaEG;
 
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.KeyboardFocusManager;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.util.Calendar;
 import javax.swing.JOptionPane;
@@ -28,6 +30,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         ExpedienteGeneral.btneditar.setEnabled(false);
         ExpedienteGeneral.btnbuscaredicion.setEnabled(true);
         ExpedienteGeneral.btnGuardar.setEnabled(false);
+       
        
     }
 
@@ -416,6 +419,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
         
        
     }
+  
     private void btnGuardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGuardarActionPerformed
         if (this.txtnombre.getText().length() == 0 || this.txtapellido.getText().length() == 0|| this.txtedad.getText().length() == 0){
             JOptionPane.showMessageDialog(null, "Debe complementar los campos requeridos");

@@ -38,7 +38,7 @@ funciones v=new funciones();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        panel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Clases/img2.jpg"))); // NOI18N
+        panel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Clases/fondo1.jpg"))); // NOI18N
         panel2.addMouseMotionListener(new java.awt.event.MouseMotionAdapter() {
             public void mouseDragged(java.awt.event.MouseEvent evt) {
                 panel2MouseDragged(evt);
@@ -91,7 +91,7 @@ funciones v=new funciones();
         });
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Recupere su contraseña ");
 
         txtrecu.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/btn_recu1.png"))); // NOI18N

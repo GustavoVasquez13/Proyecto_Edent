@@ -21,7 +21,7 @@ public class frmServBasicos extends internalFrameImagen {
     public frmServBasicos() {
         initComponents();
         //se utiliza el metodo setImagenw de la clase internalFrameImagen ya que esta clase fue heredada en este formulario
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
         mostrarServ();
     }
     
@@ -75,7 +75,7 @@ public class frmServBasicos extends internalFrameImagen {
         setIconifiable(true);
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Servicio");
 
         txtServicio.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -88,7 +88,7 @@ public class frmServBasicos extends internalFrameImagen {
         });
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Correo");
 
         txtCorreo.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -98,11 +98,11 @@ public class frmServBasicos extends internalFrameImagen {
         });
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Telefono");
 
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("Proveedor");
 
         txtProveedor.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -115,11 +115,11 @@ public class frmServBasicos extends internalFrameImagen {
         });
 
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Agregar Servicios Basicos");
 
         btnGuardar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnGuardar.setForeground(new java.awt.Color(0, 102, 204));
+        btnGuardar.setForeground(new java.awt.Color(255, 255, 255));
         btnGuardar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         btnGuardar.setText("Guardar");
         btnGuardar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -145,7 +145,7 @@ public class frmServBasicos extends internalFrameImagen {
         });
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnCancelar.setForeground(new java.awt.Color(0, 102, 204));
+        btnCancelar.setForeground(new java.awt.Color(255, 255, 255));
         btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         btnCancelar.setText("Cerrar");
         btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -181,7 +181,7 @@ public class frmServBasicos extends internalFrameImagen {
         jScrollPane1.setViewportView(jtServicios);
 
         btnModificarReg.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnModificarReg.setForeground(new java.awt.Color(0, 102, 255));
+        btnModificarReg.setForeground(new java.awt.Color(255, 255, 255));
         btnModificarReg.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
         btnModificarReg.setText("Editar");
         btnModificarReg.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -193,7 +193,7 @@ public class frmServBasicos extends internalFrameImagen {
         });
 
         jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Buscar");
 
         txtBuscar.addActionListener(new java.awt.event.ActionListener() {
