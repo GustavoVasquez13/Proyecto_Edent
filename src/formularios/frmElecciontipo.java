@@ -20,7 +20,7 @@ public class frmElecciontipo extends internalFrameImagen {
      */
     public frmElecciontipo() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
     }
 
     /**
@@ -41,8 +41,8 @@ public class frmElecciontipo extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
-        jLabel82.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel82.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
         jLabel82.setText("Seleccionar tipo de paciente");
 
         btnelegir.setForeground(new java.awt.Color(0, 0, 204));
@@ -57,7 +57,7 @@ public class frmElecciontipo extends internalFrameImagen {
         });
 
         jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Para realizar una consulta elija el paciente:");
 
         btnsalir.setForeground(new java.awt.Color(0, 0, 204));
@@ -91,7 +91,7 @@ public class frmElecciontipo extends internalFrameImagen {
                                 .addComponent(jLabel3)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
                             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGap(0, 79, Short.MAX_VALUE)
+                                .addGap(0, 108, Short.MAX_VALUE)
                                 .addComponent(jLabel82)
                                 .addGap(58, 58, 58))
                             .addGroup(layout.createSequentialGroup()

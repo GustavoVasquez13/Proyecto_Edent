@@ -19,7 +19,7 @@ public class frmvistapacientes extends internalFrameImagen{
    
     public frmvistapacientes() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
         mostrarpacientes();
         
     }
@@ -51,12 +51,12 @@ public class frmvistapacientes extends internalFrameImagen{
         lblcodigo = new javax.swing.JLabel();
         lblnombre = new javax.swing.JLabel();
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Vista de Pacientes Ortodoncia");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -101,11 +101,11 @@ public class frmvistapacientes extends internalFrameImagen{
         });
 
         lblcodigo.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblcodigo.setForeground(new java.awt.Color(0, 102, 153));
+        lblcodigo.setForeground(new java.awt.Color(255, 255, 255));
         lblcodigo.setText("codigo");
 
         lblnombre.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        lblnombre.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre.setText("nombre");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -151,7 +151,7 @@ public class frmvistapacientes extends internalFrameImagen{
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 26, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnCancelar, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)

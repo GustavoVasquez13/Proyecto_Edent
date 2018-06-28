@@ -17,7 +17,7 @@ public class frmvistapacientes_1 extends internalFrameImagen{
    
     public frmvistapacientes_1() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("img.jpg");
         mostrarpacientes();
         
     }
@@ -47,12 +47,12 @@ public class frmvistapacientes_1 extends internalFrameImagen{
         jtPacientes = new javax.swing.JTable();
         btnCancelar = new javax.swing.JButton();
 
-        jLabel5.setFont(new java.awt.Font("Times New Roman", 3, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Vista de Pacientes de Clinica");
 
         jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -133,7 +133,7 @@ public class frmvistapacientes_1 extends internalFrameImagen{
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 192, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(38, 38, 38)
                 .addComponent(btnCancelar, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(35, Short.MAX_VALUE))
+                .addContainerGap(43, Short.MAX_VALUE))
         );
 
         pack();
