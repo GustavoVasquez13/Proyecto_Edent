@@ -11,7 +11,7 @@ public class importar extends internalFrameImagen {
     backup n=new backup();
     public importar() {
         initComponents();
-        setImagenw("img2.jpg"); 
+        setImagenw("img.jpg");
     }
 
     @SuppressWarnings("unchecked")
@@ -51,7 +51,7 @@ public class importar extends internalFrameImagen {
         });
 
         jLabel82.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
         jLabel82.setText("Importar Base de Datos");
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N

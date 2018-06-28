@@ -19,7 +19,8 @@ public class fr_backup extends internalFrameImagen {
      */
     public fr_backup() {
         initComponents();
-        setImagenw("img2.jpg"); 
+        setImagenw("img.jpg");
+        
     }
 
     /**
@@ -67,7 +68,7 @@ public class fr_backup extends internalFrameImagen {
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/mysql.png"))); // NOI18N
 
         jLabel82.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
         jLabel82.setText("Backup Base de Datos");
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N

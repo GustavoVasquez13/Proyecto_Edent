@@ -10,7 +10,7 @@ public class exportar extends internalFrameImagen {
     backup n=new backup();
     public exportar() {
         initComponents();
-        setImagenw("img2.jpg"); 
+        setImagenw("img.jpg"); 
     }
 
     @SuppressWarnings("unchecked")
@@ -29,7 +29,7 @@ public class exportar extends internalFrameImagen {
         setIconifiable(true);
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nombre del backup");
 
         btnexportar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
@@ -47,7 +47,7 @@ public class exportar extends internalFrameImagen {
         txtruta.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         jButton2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(0, 102, 153));
+        jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Elegir Carpeta");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -62,7 +62,7 @@ public class exportar extends internalFrameImagen {
         });
 
         jLabel82.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel82.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel82.setForeground(new java.awt.Color(255, 255, 255));
         jLabel82.setText("Exportar Base de Datos");
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
