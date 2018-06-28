@@ -38,7 +38,7 @@ public class reporte_ortodoncia extends internalFrameImagen{
      */
     public reporte_ortodoncia() {
         initComponents();
-         setImagenw("img2.jpg");
+         setImagenw("img.jpg");
         mostrarpacientes();
     }
  private void mostrarpacientes() {
@@ -85,11 +85,11 @@ public class reporte_ortodoncia extends internalFrameImagen{
         });
 
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Vista de Pacientes Ortodoncia");
 
         jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -135,11 +135,11 @@ public class reporte_ortodoncia extends internalFrameImagen{
         });
 
         lblnombre.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lblnombre.setForeground(new java.awt.Color(0, 102, 153));
+        lblnombre.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre.setText("Nombre");
 
         lblcodigo.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        lblcodigo.setForeground(new java.awt.Color(0, 102, 153));
+        lblcodigo.setForeground(new java.awt.Color(255, 255, 255));
         lblcodigo.setText("Codigo");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
