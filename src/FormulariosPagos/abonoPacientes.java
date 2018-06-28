@@ -99,7 +99,7 @@ public class abonoPacientes extends internalFrameImagen {
         txtApellido.setEditable(false);
 
         btnActualizar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnActualizar.setForeground(new java.awt.Color(255, 255, 255));
+        btnActualizar.setForeground(new java.awt.Color(0, 51, 153));
         btnActualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/actualizar.png"))); // NOI18N
         btnActualizar.setText("Actualizar Tabla");
         btnActualizar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -136,7 +136,7 @@ public class abonoPacientes extends internalFrameImagen {
         jLabel2.setText("Nombre");
 
         btnRegistrar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnRegistrar.setForeground(new java.awt.Color(255, 255, 255));
+        btnRegistrar.setForeground(new java.awt.Color(0, 51, 153));
         btnRegistrar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/pago.png"))); // NOI18N
         btnRegistrar.setText("Registrar");
         btnRegistrar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
@@ -177,7 +177,7 @@ public class abonoPacientes extends internalFrameImagen {
         });
 
         btnAggRepa.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        btnAggRepa.setForeground(new java.awt.Color(255, 255, 255));
+        btnAggRepa.setForeground(new java.awt.Color(0, 51, 153));
         btnAggRepa.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/nuevo.png"))); // NOI18N
         btnAggRepa.setText("Agregar Nueva Reparacion");
         btnAggRepa.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
