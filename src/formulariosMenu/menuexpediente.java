@@ -23,7 +23,7 @@ public class menuexpediente extends internalFrameImagen {
      */
     public menuexpediente() {
         initComponents();
-         setImagenw("img2.jpg");
+         setImagenw("img.jpg");
     }
 
     /**
@@ -48,7 +48,7 @@ public class menuexpediente extends internalFrameImagen {
         setIconifiable(true);
 
         jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel7.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Modulo Expedientes");
 
         jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N

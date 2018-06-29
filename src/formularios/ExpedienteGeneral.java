@@ -66,7 +66,7 @@ public class ExpedienteGeneral extends internalFrameImagen {
 
         setClosable(true);
         setIconifiable(true);
-        setVisible(true);
+        setVisible(false);
 
         lbltitulo.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
         lbltitulo.setForeground(new java.awt.Color(255, 255, 255));
