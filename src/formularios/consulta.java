@@ -82,6 +82,7 @@ public class consulta extends internalFrameImagen {
         setClosable(true);
         setIconifiable(true);
 
+        lblnombre1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre1.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre1.setText("Motivo de la Consulta: ");
 
@@ -91,6 +92,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
+        lblnombre2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre2.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre2.setText("Historia Medica:");
 
@@ -100,6 +102,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
+        lblnombre3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre3.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre3.setText("Historia Odontologica:");
 
@@ -109,6 +112,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
+        lblnombre4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre4.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre4.setText("Examen Clinico:");
 
@@ -118,6 +122,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
+        lblnombre5.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre5.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre5.setText("DX Odontologico:");
 
@@ -127,6 +132,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
+        lblnombre6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre6.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre6.setText("Presupuesto:");
 
@@ -164,14 +170,17 @@ public class consulta extends internalFrameImagen {
         });
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Numero de expediente");
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombre");
 
         jLabel3.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Fecha");
 
@@ -229,6 +238,7 @@ public class consulta extends internalFrameImagen {
             }
         });
 
+        jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("ID consulta");
 
@@ -330,7 +340,7 @@ public class consulta extends internalFrameImagen {
                         .addComponent(jLabel4)
                         .addGap(18, 18, 18)
                         .addComponent(lblidc)))
-                .addGap(0, 29, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -396,7 +406,7 @@ public class consulta extends internalFrameImagen {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblnombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtpresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 79, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 78, Short.MAX_VALUE)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(btnselecionaredicion)
                     .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
