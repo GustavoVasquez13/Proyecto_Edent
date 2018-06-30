@@ -42,6 +42,7 @@ private void mostrarpacientes() {
         lblnombre = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         lblapellido = new javax.swing.JLabel();
+        btnCancelar = new javax.swing.JButton();
 
         setClosable(true);
         setIconifiable(true);
@@ -99,6 +100,19 @@ private void mostrarpacientes() {
         jLabel3.setText("Apellido del paciente Seleccionado:");
         getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 90, -1, -1));
         getContentPane().add(lblapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 80, 176, 30));
+
+        btnCancelar.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
+        btnCancelar.setForeground(new java.awt.Color(0, 102, 204));
+        btnCancelar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
+        btnCancelar.setText("Salir");
+        btnCancelar.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnCancelar.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnCancelar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCancelarActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnCancelar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1260, 360, -1, -1));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -245,8 +259,13 @@ ExpedienteO.txtanguloA1.setEnabled(true);
    
     }//GEN-LAST:event_jtPacientesMousePressed
 
+    private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
+        this.dispose();
+    }//GEN-LAST:event_btnCancelarActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnCancelar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel5;
