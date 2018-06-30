@@ -5,17 +5,20 @@
  */
 package FormularioDetalleCon;
 
+import Clases.internalFrameImagen;
+
 /**
  *
  * @author marvi
  */
-public class DetalleConsulta extends javax.swing.JInternalFrame {
+public class DetalleConsulta extends internalFrameImagen {
 
     /**
      * Creates new form DetalleConsulta
      */
     public DetalleConsulta() {
         initComponents();
+        setImagenw("img.jpg");
     }
 
     /**
@@ -65,58 +68,82 @@ public class DetalleConsulta extends javax.swing.JInternalFrame {
         lblnombre3 = new javax.swing.JLabel();
         txtHistoriaO = new javax.swing.JTextField();
 
+        setClosable(true);
+        setIconifiable(true);
+        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
         lblnombre4.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre4.setText("Examen Clinico:");
+        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 234, 120, -1));
 
         idconsulta.setForeground(new java.awt.Color(255, 255, 255));
         idconsulta.setText("...");
+        getContentPane().add(idconsulta, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 24, -1, -1));
 
         jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox1ActionPerformed(evt);
             }
         });
+        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 402, 20, 23));
 
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 402, 20, 23));
 
         jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox3ActionPerformed(evt);
             }
         });
+        getContentPane().add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 20, -1));
+        getContentPane().add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 392, 20, 23));
+        getContentPane().add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 412, 20, -1));
 
         jLabel5.setText("Posicion de diente");
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 402, -1, -1));
 
         jLabel6.setText("nombre del diente");
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(251, 402, -1, -1));
 
         jLabel7.setText("nombre");
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 402, -1, -1));
 
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombre");
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 45, -1, -1));
 
         jLabel8.setText("Tipo de diente");
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 402, -1, -1));
 
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Fecha");
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(487, 51, -1, -1));
 
         jLabel9.setText("tipo");
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 402, -1, -1));
 
         lbid.setForeground(new java.awt.Color(0, 102, 153));
+        getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 44, 89, 19));
 
         jButton1.setText("selecionar diente");
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 398, -1, -1));
 
         lbnombre.setForeground(new java.awt.Color(0, 102, 153));
+        getContentPane().add(lbnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 45, 210, 18));
 
         jRadioButton1.setText("relleno");
+        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 451, -1, -1));
 
         lblnombre1.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre1.setText("Motivo de la Consulta: ");
+        getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 77, -1, -1));
 
         jRadioButton2.setText("extraccion");
+        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 451, -1, -1));
 
         txtMotivoC.setEnabled(false);
         txtMotivoC.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -124,18 +151,24 @@ public class DetalleConsulta extends javax.swing.JInternalFrame {
                 txtMotivoCKeyPressed(evt);
             }
         });
+        getContentPane().add(txtMotivoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 67, 350, -1));
 
         jButton2.setText("guardar");
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(462, 467, -1, -1));
 
         lblnombre2.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre2.setText("Historia Medica:");
+        getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 116, 126, -1));
 
         jButton3.setText("salir");
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 467, -1, -1));
 
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("ID consulta");
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 70, -1, -1));
 
         jButton4.setText("elegir consulta");
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(526, 15, -1, -1));
 
         txtHistoriaM.setEnabled(false);
         txtHistoriaM.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -143,9 +176,11 @@ public class DetalleConsulta extends javax.swing.JInternalFrame {
                 txtHistoriaMKeyPressed(evt);
             }
         });
+        getContentPane().add(txtHistoriaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 106, 350, 50));
 
         lblidc.setForeground(new java.awt.Color(255, 255, 255));
         lblidc.setText("...");
+        getContentPane().add(lblidc, new org.netbeans.lib.awtextra.AbsoluteConstraints(623, 70, -1, -1));
 
         jfecha.setDateFormatString("yyyy-MM-dd");
         jfecha.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -153,6 +188,7 @@ public class DetalleConsulta extends javax.swing.JInternalFrame {
                 jfechaKeyPressed(evt);
             }
         });
+        getContentPane().add(jfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(526, 45, 110, -1));
 
         txtExamenC.setEnabled(false);
         txtExamenC.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -160,9 +196,11 @@ public class DetalleConsulta extends javax.swing.JInternalFrame {
                 txtExamenCKeyPressed(evt);
             }
         });
+        getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 234, 350, -1));
 
         lblnombre5.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre5.setText("DX Odontologico:");
+        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 265, 130, -1));
 
         txtDX.setEnabled(false);
         txtDX.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -170,9 +208,11 @@ public class DetalleConsulta extends javax.swing.JInternalFrame {
                 txtDXKeyPressed(evt);
             }
         });
+        getContentPane().add(txtDX, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 265, 350, 70));
 
         lblnombre6.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre6.setText("Presupuesto:");
+        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 345, 110, 20));
 
         txtpresupuesto.setEnabled(false);
         txtpresupuesto.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -183,12 +223,15 @@ public class DetalleConsulta extends javax.swing.JInternalFrame {
                 txtpresupuestoKeyTyped(evt);
             }
         });
+        getContentPane().add(txtpresupuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 345, 350, 29));
 
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Numero de expediente");
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 45, -1, -1));
 
         lblnombre3.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre3.setText("Historia Odontologica:");
+        getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 167, -1, -1));
 
         txtHistoriaO.setEnabled(false);
         txtHistoriaO.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -196,200 +239,7 @@ public class DetalleConsulta extends javax.swing.JInternalFrame {
                 txtHistoriaOKeyPressed(evt);
             }
         });
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGap(43, 43, 43)
-                                    .addComponent(lblnombre4, javax.swing.GroupLayout.PREFERRED_SIZE, 120, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGap(10, 10, 10)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(txtHistoriaO, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(txtExamenC, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                .addGroup(layout.createSequentialGroup()
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                                    .addGap(53, 53, 53)
-                                                    .addComponent(lblnombre6, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                                .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                                    .addGap(33, 33, 33)
-                                                    .addComponent(lblnombre5, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGap(10, 10, 10))
-                                        .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(jLabel5)
-                                                .addComponent(jRadioButton1))
-                                            .addGap(18, 18, 18)))
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addGroup(layout.createSequentialGroup()
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addGap(10, 10, 10)
-                                                    .addComponent(jCheckBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addComponent(jCheckBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addGap(10, 10, 10)
-                                                    .addComponent(jCheckBox7, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addGap(10, 10, 10)
-                                                    .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                                .addGroup(layout.createSequentialGroup()
-                                                    .addGap(20, 20, 20)
-                                                    .addComponent(jCheckBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                                            .addGap(28, 28, 28)
-                                            .addComponent(jLabel6)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel7)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel8)
-                                            .addGap(18, 18, 18)
-                                            .addComponent(jLabel9))
-                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                            .addGroup(layout.createSequentialGroup()
-                                                .addComponent(jRadioButton2)
-                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                                .addComponent(jButton2))
-                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                                .addComponent(txtDX, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                                .addComponent(txtpresupuesto, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))))))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(13, 13, 13)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblnombre1)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(160, 160, 160)
-                                        .addComponent(txtMotivoC, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(30, 30, 30)
-                                        .addComponent(lblnombre2, javax.swing.GroupLayout.PREFERRED_SIZE, 126, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addGap(4, 4, 4)
-                                        .addComponent(txtHistoriaM, javax.swing.GroupLayout.PREFERRED_SIZE, 350, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                    .addComponent(lblnombre3))))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel4)
-                                .addGap(18, 18, 18)
-                                .addComponent(lblidc))
-                            .addComponent(jButton1)
-                            .addComponent(jButton3)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jLabel1)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(lbid, javax.swing.GroupLayout.PREFERRED_SIZE, 89, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(jLabel2)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(lbnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(jLabel3))
-                            .addComponent(idconsulta))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jButton4)
-                            .addComponent(jfecha, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(idconsulta, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(jButton4, javax.swing.GroupLayout.Alignment.TRAILING))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel1)
-                                        .addComponent(jLabel2))
-                                    .addComponent(lbnombre, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                        .addComponent(jfecha, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addComponent(jLabel3)))
-                                .addGap(2, 2, 2))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addComponent(lbid, javax.swing.GroupLayout.PREFERRED_SIZE, 19, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(4, 4, 4)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(lblnombre1))
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtMotivoC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(jLabel4)
-                                .addComponent(lblidc)))
-                        .addGap(15, 15, 15)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(lblnombre2))
-                            .addComponent(txtHistoriaM, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(txtHistoriaO, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblnombre3))
-                        .addGap(27, 27, 27)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnombre4)
-                            .addComponent(txtExamenC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(11, 11, 11)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnombre5)
-                            .addComponent(txtDX, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(10, 10, 10)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblnombre6, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(txtpresupuesto, javax.swing.GroupLayout.PREFERRED_SIZE, 29, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jCheckBox6, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(jCheckBox7))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addComponent(jCheckBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(10, 10, 10)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel5)
-                                    .addComponent(jCheckBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                        .addComponent(jLabel6)
-                                        .addComponent(jLabel7)
-                                        .addComponent(jLabel8)
-                                        .addComponent(jLabel9)
-                                        .addComponent(jButton1))
-                                    .addComponent(jCheckBox3, javax.swing.GroupLayout.PREFERRED_SIZE, 23, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jRadioButton1)
-                            .addComponent(jRadioButton2))
-                        .addGap(27, 27, 27))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(jButton2)
-                            .addComponent(jButton3))
-                        .addContainerGap())))
-        );
+        getContentPane().add(txtHistoriaO, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 167, 350, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
