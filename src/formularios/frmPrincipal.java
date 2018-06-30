@@ -4,6 +4,7 @@ import Clases.ImagenFondo;
 
 import Crear_Reportes.reporte_general;
 import Crear_Reportes.reporte_ortodoncia;
+import FormularioDetalleCon.AbonoConsulta;
 import FormularioDetalleCon.DetalleConsulta;
 import FormulariosPagos.abonoPacientes;
 import FormulariosPagos.frmPagoEmpleado;
@@ -70,6 +71,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         jMenuItem16 = new javax.swing.JMenuItem();
         jMenuItem18 = new javax.swing.JMenuItem();
         jMenuItem22 = new javax.swing.JMenuItem();
+        jMenuItem27 = new javax.swing.JMenuItem();
         jMenu3 = new javax.swing.JMenu();
         jMenuItem3 = new javax.swing.JMenuItem();
         jMenuItem5 = new javax.swing.JMenuItem();
@@ -348,6 +350,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         });
         jMenu2.add(jMenuItem18);
 
+        jMenuItem22.setForeground(new java.awt.Color(0, 102, 153));
         jMenuItem22.setText("Detalle Consulta");
         jMenuItem22.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -355,6 +358,15 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
             }
         });
         jMenu2.add(jMenuItem22);
+
+        jMenuItem27.setForeground(new java.awt.Color(0, 102, 153));
+        jMenuItem27.setText("Pagos Pacientes");
+        jMenuItem27.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jMenuItem27ActionPerformed(evt);
+            }
+        });
+        jMenu2.add(jMenuItem27);
 
         jMenuBar1.add(jMenu2);
 
@@ -745,6 +757,12 @@ public void run() {
         formExGral.show();
     }//GEN-LAST:event_jMenuItem22ActionPerformed
 
+    private void jMenuItem27ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jMenuItem27ActionPerformed
+        AbonoConsulta formExGral = new AbonoConsulta();
+        Dpanel.add(formExGral);
+        formExGral.show();
+    }//GEN-LAST:event_jMenuItem27ActionPerformed
+
     public static void main(String args[]) {
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
@@ -804,6 +822,7 @@ public void run() {
     private javax.swing.JMenuItem jMenuItem24;
     private javax.swing.JMenuItem jMenuItem25;
     private javax.swing.JMenuItem jMenuItem26;
+    private javax.swing.JMenuItem jMenuItem27;
     private javax.swing.JMenuItem jMenuItem3;
     private javax.swing.JMenuItem jMenuItem4;
     private javax.swing.JMenuItem jMenuItem5;
