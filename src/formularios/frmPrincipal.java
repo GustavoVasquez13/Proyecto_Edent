@@ -761,6 +761,7 @@ public void run() {
         AbonoConsulta formExGral = new AbonoConsulta();
         Dpanel.add(formExGral);
         formExGral.show();
+        
     }//GEN-LAST:event_jMenuItem27ActionPerformed
 
     public static void main(String args[]) {
