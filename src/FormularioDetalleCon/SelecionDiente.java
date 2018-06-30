@@ -5,17 +5,21 @@
  */
 package FormularioDetalleCon;
 
+import Clases.internalFrameImagen;
+
 /**
  *
  * @author marvi
  */
-public class SelecionDiente extends javax.swing.JInternalFrame {
+public class SelecionDiente extends internalFrameImagen {
 
     /**
      * Creates new form SelecionDiente
      */
     public SelecionDiente() {
         initComponents();
+                setImagenw("img.jpg");
+
     }
 
     /**
@@ -29,22 +33,33 @@ public class SelecionDiente extends javax.swing.JInternalFrame {
 
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        jScrollPane2 = new javax.swing.JScrollPane();
-        jtEmple1 = new javax.swing.JTable();
-        jScrollPane3 = new javax.swing.JScrollPane();
-        jtEmple2 = new javax.swing.JTable();
         jLabel3 = new javax.swing.JLabel();
+        jScrollPane1 = new javax.swing.JScrollPane();
+        jtniños = new javax.swing.JTable();
+        jScrollPane3 = new javax.swing.JScrollPane();
+        jtadultos = new javax.swing.JTable();
 
+        setClosable(true);
+        setIconifiable(true);
+
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Adultos");
 
+        jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 12)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Niños");
 
-        jtEmple = new javax.swing.JTable(){
+        jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel3.setText("Seleccion de dientes");
+
+        jtniños = new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex, int colIndex){
                 return false;
             }
         };
-        jtEmple1.setModel(new javax.swing.table.DefaultTableModel(
+        jtniños.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -55,20 +70,23 @@ public class SelecionDiente extends javax.swing.JInternalFrame {
 
             }
         ));
-        jtEmple1.getTableHeader().setReorderingAllowed(false);
-        jtEmple1.addMouseListener(new java.awt.event.MouseAdapter() {
+        jtniños.getTableHeader().setReorderingAllowed(false);
+        jtniños.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jtniñosMouseClicked(evt);
+            }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jtEmple1MousePressed(evt);
+                jtniñosMousePressed(evt);
             }
         });
-        jScrollPane2.setViewportView(jtEmple1);
+        jScrollPane1.setViewportView(jtniños);
 
-        jtEmple = new javax.swing.JTable(){
+        jtniños = new javax.swing.JTable(){
             public boolean isCellEditable(int rowIndex, int colIndex){
                 return false;
             }
         };
-        jtEmple2.setModel(new javax.swing.table.DefaultTableModel(
+        jtadultos.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
                 {},
                 {},
@@ -79,39 +97,41 @@ public class SelecionDiente extends javax.swing.JInternalFrame {
 
             }
         ));
-        jtEmple2.getTableHeader().setReorderingAllowed(false);
-        jtEmple2.addMouseListener(new java.awt.event.MouseAdapter() {
+        jtadultos.getTableHeader().setReorderingAllowed(false);
+        jtadultos.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jtadultosMouseClicked(evt);
+            }
             public void mousePressed(java.awt.event.MouseEvent evt) {
-                jtEmple2MousePressed(evt);
+                jtadultosMousePressed(evt);
             }
         });
-        jScrollPane3.setViewportView(jtEmple2);
-
-        jLabel3.setText("Selecion de dientes");
+        jScrollPane3.setViewportView(jtadultos);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(214, 214, 214)
+                .addGap(204, 204, 204)
                 .addComponent(jLabel1)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jLabel2)
                 .addGap(239, 239, 239))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 503, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(494, 494, 494)
-                .addComponent(jLabel3)
-                .addContainerGap(484, Short.MAX_VALUE))
+                .addContainerGap(455, Short.MAX_VALUE)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel3)
+                        .addGap(400, 400, 400))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 494, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(27, 27, 27))))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
-                    .addGap(20, 20, 20)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 498, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addContainerGap(552, Short.MAX_VALUE)))
+                    .addGap(43, 43, 43)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 494, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(533, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -122,26 +142,34 @@ public class SelecionDiente extends javax.swing.JInternalFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel1)
                     .addComponent(jLabel2))
-                .addGap(27, 27, 27)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(72, Short.MAX_VALUE))
+                .addGap(34, 34, 34)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(67, Short.MAX_VALUE))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                    .addContainerGap(93, Short.MAX_VALUE)
-                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 230, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(71, 71, 71)))
+                    .addContainerGap(108, Short.MAX_VALUE)
+                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, 224, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(66, 66, 66)))
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jtEmple1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtEmple1MousePressed
-      
-    }//GEN-LAST:event_jtEmple1MousePressed
+    private void jtniñosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtniñosMouseClicked
 
-    private void jtEmple2MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtEmple2MousePressed
+    }//GEN-LAST:event_jtniñosMouseClicked
+
+    private void jtniñosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtniñosMousePressed
+
+    }//GEN-LAST:event_jtniñosMousePressed
+
+    private void jtadultosMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtadultosMouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jtEmple2MousePressed
+    }//GEN-LAST:event_jtadultosMouseClicked
+
+    private void jtadultosMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jtadultosMousePressed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jtadultosMousePressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -149,10 +177,8 @@ public class SelecionDiente extends javax.swing.JInternalFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JScrollPane jScrollPane1;
-    private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;
-    private javax.swing.JTable jtEmple;
-    private javax.swing.JTable jtEmple1;
-    private javax.swing.JTable jtEmple2;
+    private javax.swing.JTable jtadultos;
+    private javax.swing.JTable jtniños;
     // End of variables declaration//GEN-END:variables
 }
