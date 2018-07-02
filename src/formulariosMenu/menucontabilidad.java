@@ -28,7 +28,7 @@ public class menucontabilidad extends internalFrameImagen {
      */
     public menucontabilidad() {
         initComponents();
-          setImagenw("img.jpg");
+          setImagenw("fondo.jpg");
     }
 
     /**

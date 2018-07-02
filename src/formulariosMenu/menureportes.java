@@ -22,7 +22,7 @@ public class menureportes extends internalFrameImagen {
      */
     public menureportes() {
         initComponents();
-         setImagenw("img.jpg");
+         setImagenw("fondo.jpg");
     }
 
     /**

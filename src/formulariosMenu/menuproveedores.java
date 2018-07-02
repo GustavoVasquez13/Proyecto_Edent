@@ -22,7 +22,7 @@ public class menuproveedores extends internalFrameImagen {
      */
     public menuproveedores() {
         initComponents();
-           setImagenw("img.jpg");
+           setImagenw("fondo.jpg");
     }
 
     /**

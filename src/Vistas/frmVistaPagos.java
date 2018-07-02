@@ -34,7 +34,7 @@ public class frmVistaPagos extends internalFrameImagen {
     
     public frmVistaPagos() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("fondo.jpg");
         //mostrarPago("SERVICIO");
         this.jdinicio.setDate(null);
         this.jdfin.setDate(null);
@@ -92,7 +92,7 @@ public class frmVistaPagos extends internalFrameImagen {
         setIconifiable(true);
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Mostrar Pagos Realizados");
 
         jtPagos = new javax.swing.JTable(){
@@ -115,7 +115,7 @@ public class frmVistaPagos extends internalFrameImagen {
         jScrollPane1.setViewportView(jtPagos);
 
         cmbTipoPago.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        cmbTipoPago.setForeground(new java.awt.Color(0, 102, 153));
+        cmbTipoPago.setForeground(new java.awt.Color(255, 255, 255));
         cmbTipoPago.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "SELECCIONAR", "SERVICIOS BASICOS", "EMPLEADOS", "MATERIALES", "REPARACIONES", "EQUIPO" }));
         cmbTipoPago.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -124,7 +124,7 @@ public class frmVistaPagos extends internalFrameImagen {
         });
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Seleccione el tipo de Vista");
 
         btnCancelar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
@@ -142,7 +142,7 @@ public class frmVistaPagos extends internalFrameImagen {
         txtTotal.setEditable(false);
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Total Pagado");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -152,7 +152,7 @@ public class frmVistaPagos extends internalFrameImagen {
         });
 
         jLabel11.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Buscar");
 
         jdinicio.setDateFormatString("yyyy-MM-dd");
@@ -160,11 +160,11 @@ public class frmVistaPagos extends internalFrameImagen {
         jdfin.setDateFormatString("yyyy-MM-dd");
 
         jLabel12.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel12.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel12.setForeground(new java.awt.Color(255, 255, 255));
         jLabel12.setText("Fecha Inicio");
 
         jLabel13.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel13.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel13.setForeground(new java.awt.Color(255, 255, 255));
         jLabel13.setText("Fecha Fin");
 
         jButton1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N

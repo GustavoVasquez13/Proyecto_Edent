@@ -19,7 +19,7 @@ public class fr_backup extends internalFrameImagen {
      */
     public fr_backup() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         
     }
 

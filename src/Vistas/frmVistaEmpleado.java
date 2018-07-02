@@ -17,7 +17,7 @@ public class frmVistaEmpleado extends internalFrameImagen {
     
     public frmVistaEmpleado() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("fondo.jpg");
         mostrarEmpl();
     }
 
@@ -75,7 +75,7 @@ public class frmVistaEmpleado extends internalFrameImagen {
         setIconifiable(true);
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 36)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Empleados");
 
         jtEmpleados = new javax.swing.JTable(){
@@ -134,7 +134,7 @@ public class frmVistaEmpleado extends internalFrameImagen {
         });
 
         jLabel11.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel11.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel11.setForeground(new java.awt.Color(255, 255, 255));
         jLabel11.setText("Buscar");
 
         txtBuscar.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -151,7 +151,7 @@ public class frmVistaEmpleado extends internalFrameImagen {
         });
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jLabel2.setForeground(new java.awt.Color(0, 102, 153));
+        jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Selecione el tipo de Vista");
 
         btnActivar.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N

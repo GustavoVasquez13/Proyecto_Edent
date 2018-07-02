@@ -24,7 +24,7 @@ public class menuAdmin extends internalFrameImagen {
      */
     public menuAdmin() {
         initComponents();
-         setImagenw("img.jpg");
+         setImagenw("fondo.jpg");
     }
 
     /**

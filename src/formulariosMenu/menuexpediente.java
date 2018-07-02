@@ -23,7 +23,7 @@ public class menuexpediente extends internalFrameImagen {
      */
     public menuexpediente() {
         initComponents();
-         setImagenw("img.jpg");
+         setImagenw("fondo.jpg");
     }
 
     /**

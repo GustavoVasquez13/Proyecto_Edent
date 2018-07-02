@@ -11,7 +11,7 @@ public class importar extends internalFrameImagen {
     backup n=new backup();
     public importar() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
     }
 
     @SuppressWarnings("unchecked")

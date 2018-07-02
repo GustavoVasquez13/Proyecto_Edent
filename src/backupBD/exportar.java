@@ -10,7 +10,7 @@ public class exportar extends internalFrameImagen {
     backup n=new backup();
     public exportar() {
         initComponents();
-        setImagenw("img.jpg"); 
+        setImagenw("fondo.jpg"); 
     }
 
     @SuppressWarnings("unchecked")
