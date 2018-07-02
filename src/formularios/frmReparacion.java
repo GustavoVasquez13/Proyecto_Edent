@@ -19,7 +19,7 @@ public class frmReparacion extends internalFrameImagen {
     
     public frmReparacion() {
         initComponents();
-            setImagenw("img.jpg");
+            setImagenw("fondo.jpg");
         MRepa();
     }
 

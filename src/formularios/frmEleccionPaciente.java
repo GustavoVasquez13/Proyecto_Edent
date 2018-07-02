@@ -20,7 +20,7 @@ public class frmEleccionPaciente extends internalFrameImagen {
      */
     public frmEleccionPaciente() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
     }
 
     /**
@@ -45,7 +45,7 @@ public class frmEleccionPaciente extends internalFrameImagen {
         jLabel82.setForeground(new java.awt.Color(255, 255, 255));
         jLabel82.setText("Seleccionar Paciente para Consulta");
 
-        jLabel3.setFont(new java.awt.Font("Arial", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Para realizar una consulta elija el paciente:");
 

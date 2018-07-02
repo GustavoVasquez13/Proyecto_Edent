@@ -16,7 +16,7 @@ public class frmEditarConsultaG extends internalFrameImagen {
     
     public frmEditarConsultaG() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mostrarpacientes();
     }
 private void mostrarpacientes() {

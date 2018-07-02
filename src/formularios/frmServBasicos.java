@@ -21,7 +21,7 @@ public class frmServBasicos extends internalFrameImagen {
     public frmServBasicos() {
         initComponents();
         //se utiliza el metodo setImagenw de la clase internalFrameImagen ya que esta clase fue heredada en este formulario
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mostrarServ();
     }
     

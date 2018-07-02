@@ -15,7 +15,7 @@ public class frmEditarPO extends internalFrameImagen {
     
     public frmEditarPO() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mostrarpacientes();
     }
 private void mostrarpacientes() {

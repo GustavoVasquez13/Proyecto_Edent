@@ -20,7 +20,7 @@ public class frmPagoServBasicos extends internalFrameImagen {
 
     public frmPagoServBasicos() {
         initComponents();
-            setImagenw("img.jpg");
+            setImagenw("fondo.jpg");
         mostrarServ();
     }
     

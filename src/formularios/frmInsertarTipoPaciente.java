@@ -12,7 +12,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
 
     public frmInsertarTipoPaciente() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mostrarTP();
     }
     // En este metodo se muestran en el control Jtable todos los datos que se encuentran almacenados en la tabla tipopaciente
@@ -58,7 +58,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
             }
         });
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Tipo de Paciente:");
 
@@ -96,6 +96,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Inserte un nuevo tipo de paciente para la Clinica");
 
@@ -111,7 +112,7 @@ public class frmInsertarTipoPaciente extends internalFrameImagen {
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(jLabel1)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(txtpaciente, javax.swing.GroupLayout.DEFAULT_SIZE, 143, Short.MAX_VALUE))
+                                .addComponent(txtpaciente))
                             .addGroup(layout.createSequentialGroup()
                                 .addComponent(btnGuardar, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)

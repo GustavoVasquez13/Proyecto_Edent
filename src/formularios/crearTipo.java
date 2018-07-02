@@ -22,7 +22,7 @@ public class crearTipo  extends internalFrameImagen {
      */
     public crearTipo() {
         initComponents();
-             setImagenw("img.jpg");
+             setImagenw("fondo.jpg");
           mostrarusuario();
     }
 private void mostrarusuario() {

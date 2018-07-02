@@ -27,7 +27,7 @@ public class frmEmpleados extends internalFrameImagen {
     private TableRowSorter trsFiltro;
     public frmEmpleados() {
         initComponents();
-            setImagenw("img.jpg");
+            setImagenw("fondo.jpg");
         mostrarEmpl();
     }
 

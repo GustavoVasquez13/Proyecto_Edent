@@ -20,7 +20,7 @@ public class frmEquipo extends internalFrameImagen {
     
     public frmEquipo() {
         initComponents();
-        setImagenw("img2.jpg");
+        setImagenw("fondo.jpg");
         mosEquipo();
     }
 

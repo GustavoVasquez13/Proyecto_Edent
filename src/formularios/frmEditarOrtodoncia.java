@@ -15,7 +15,7 @@ public class frmEditarOrtodoncia extends internalFrameImagen {
     
     public frmEditarOrtodoncia() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mostrarpacientes();
     }
 private void mostrarpacientes() {
@@ -53,7 +53,7 @@ private void mostrarpacientes() {
         jLabel5.setText("Vista de Pacientes de Odontologia General a Editar");
         getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 20, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Buscar");
         getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 85, -1, 26));
@@ -91,6 +91,7 @@ private void mostrarpacientes() {
 
         getContentPane().add(jScrollPane1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 132, 1333, 192));
 
+        jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Nombre del paciente Seleccionado:");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(394, 92, -1, -1));

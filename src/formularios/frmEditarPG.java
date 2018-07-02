@@ -20,7 +20,7 @@ public class frmEditarPG extends internalFrameImagen {
     
     public frmEditarPG() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mostrarpacientes();
     }
 private void mostrarpacientes() {

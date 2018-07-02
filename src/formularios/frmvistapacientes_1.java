@@ -17,7 +17,7 @@ public class frmvistapacientes_1 extends internalFrameImagen{
    
     public frmvistapacientes_1() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mostrarpacientes();
         
     }
@@ -51,7 +51,7 @@ public class frmvistapacientes_1 extends internalFrameImagen{
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Vista de Pacientes de Clinica");
 
-        jLabel6.setFont(new java.awt.Font("Times New Roman", 3, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("Buscar");
 

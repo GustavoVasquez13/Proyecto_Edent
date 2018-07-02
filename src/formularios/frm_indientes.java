@@ -21,7 +21,7 @@ public class frm_indientes extends internalFrameImagen {
      */
     public frm_indientes() {
         initComponents();
-       setImagenw("img.jpg");
+       setImagenw("fondo.jpg");
 
     }
 

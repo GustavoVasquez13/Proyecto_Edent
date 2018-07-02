@@ -20,7 +20,7 @@ public class frmmateriales extends internalFrameImagen {
      
     public frmmateriales() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mosMaterial();
     }
 
