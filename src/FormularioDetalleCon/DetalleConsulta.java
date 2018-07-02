@@ -75,7 +75,7 @@ public class DetalleConsulta extends internalFrameImagen {
         lblnombre4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre4.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre4.setText("Examen Clinico:");
-        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 234, 120, -1));
+        getContentPane().add(lblnombre4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 320, 120, -1));
 
         idconsulta.setForeground(new java.awt.Color(255, 255, 255));
         idconsulta.setText("...");
@@ -86,68 +86,72 @@ public class DetalleConsulta extends internalFrameImagen {
                 jCheckBox1ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 402, 20, 23));
+        getContentPane().add(jCheckBox1, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 490, 20, 23));
 
         jCheckBox2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox2ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 402, 20, 23));
+        getContentPane().add(jCheckBox2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 490, 20, 23));
 
         jCheckBox3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jCheckBox3ActionPerformed(evt);
             }
         });
-        getContentPane().add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 400, 20, -1));
-        getContentPane().add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 392, 20, 23));
-        getContentPane().add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(193, 412, 20, -1));
+        getContentPane().add(jCheckBox3, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 490, 20, -1));
+        getContentPane().add(jCheckBox6, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 480, 20, 23));
+        getContentPane().add(jCheckBox7, new org.netbeans.lib.awtextra.AbsoluteConstraints(210, 500, 20, -1));
 
         jLabel5.setText("Posicion de diente");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 402, -1, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 490, -1, -1));
 
         jLabel6.setText("nombre del diente");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(251, 402, -1, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 490, -1, -1));
 
         jLabel7.setText("nombre");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(355, 402, -1, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(370, 490, -1, -1));
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
         jLabel2.setText("Nombre");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(224, 45, -1, -1));
+        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 140, -1, -1));
 
         jLabel8.setText("Tipo de diente");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(409, 402, -1, -1));
+        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(430, 490, -1, -1));
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("Fecha");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(487, 51, -1, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(500, 140, -1, -1));
 
         jLabel9.setText("tipo");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(495, 402, -1, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(510, 490, -1, -1));
 
         lbid.setForeground(new java.awt.Color(0, 102, 153));
-        getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(129, 44, 89, 19));
+        getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 130, 89, 19));
 
+        jButton1.setForeground(new java.awt.Color(0, 51, 153));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/dientes.jpg"))); // NOI18N
         jButton1.setText("selecionar diente");
-        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 398, -1, -1));
+        jButton1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(jButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 440, -1, -1));
 
         lbnombre.setForeground(new java.awt.Color(0, 102, 153));
-        getContentPane().add(lbnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(267, 45, 210, 18));
+        getContentPane().add(lbnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 140, 210, 18));
 
         jRadioButton1.setText("relleno");
-        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(79, 451, -1, -1));
+        getContentPane().add(jRadioButton1, new org.netbeans.lib.awtextra.AbsoluteConstraints(100, 540, -1, -1));
 
         lblnombre1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre1.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre1.setText("Motivo de la Consulta: ");
-        getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 77, -1, -1));
+        getContentPane().add(lblnombre1, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 170, -1, -1));
 
         jRadioButton2.setText("extraccion");
-        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 451, -1, -1));
+        getContentPane().add(jRadioButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 540, -1, -1));
 
         txtMotivoC.setEnabled(false);
         txtMotivoC.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -155,26 +159,43 @@ public class DetalleConsulta extends internalFrameImagen {
                 txtMotivoCKeyPressed(evt);
             }
         });
-        getContentPane().add(txtMotivoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 67, 350, -1));
+        getContentPane().add(txtMotivoC, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 160, 350, -1));
 
+        jButton2.setForeground(new java.awt.Color(0, 51, 153));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
         jButton2.setText("guardar");
-        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(462, 467, -1, -1));
+        jButton2.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton2.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(jButton2, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 540, -1, -1));
 
         lblnombre2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre2.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre2.setText("Historia Medica:");
-        getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(53, 116, 126, -1));
+        getContentPane().add(lblnombre2, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 210, 126, -1));
 
+        jButton3.setForeground(new java.awt.Color(0, 51, 153));
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
         jButton3.setText("salir");
-        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 467, -1, -1));
+        jButton3.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton3.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        getContentPane().add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 540, -1, 90));
 
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("ID consulta");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(551, 70, -1, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 160, -1, -1));
 
-        jButton4.setText("elegir consulta");
-        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(526, 15, -1, -1));
+        jButton4.setForeground(new java.awt.Color(0, 51, 153));
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/elegir tp.png"))); // NOI18N
+        jButton4.setText("Elegir Consulta");
+        jButton4.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        jButton4.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        jButton4.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton4ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(jButton4, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 20, -1, -1));
 
         txtHistoriaM.setEnabled(false);
         txtHistoriaM.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -182,11 +203,11 @@ public class DetalleConsulta extends internalFrameImagen {
                 txtHistoriaMKeyPressed(evt);
             }
         });
-        getContentPane().add(txtHistoriaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 106, 350, 50));
+        getContentPane().add(txtHistoriaM, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 200, 350, 50));
 
         lblidc.setForeground(new java.awt.Color(255, 255, 255));
         lblidc.setText("...");
-        getContentPane().add(lblidc, new org.netbeans.lib.awtextra.AbsoluteConstraints(623, 70, -1, -1));
+        getContentPane().add(lblidc, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 160, -1, -1));
 
         jfecha.setDateFormatString("yyyy-MM-dd");
         jfecha.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -194,7 +215,7 @@ public class DetalleConsulta extends internalFrameImagen {
                 jfechaKeyPressed(evt);
             }
         });
-        getContentPane().add(jfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(526, 45, 110, -1));
+        getContentPane().add(jfecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 140, 110, -1));
 
         txtExamenC.setEnabled(false);
         txtExamenC.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -202,12 +223,12 @@ public class DetalleConsulta extends internalFrameImagen {
                 txtExamenCKeyPressed(evt);
             }
         });
-        getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 234, 350, -1));
+        getContentPane().add(txtExamenC, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 320, 350, -1));
 
         lblnombre5.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre5.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre5.setText("DX Odontologico:");
-        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(43, 265, 130, -1));
+        getContentPane().add(lblnombre5, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 360, 130, -1));
 
         txtDX.setEnabled(false);
         txtDX.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -215,12 +236,12 @@ public class DetalleConsulta extends internalFrameImagen {
                 txtDXKeyPressed(evt);
             }
         });
-        getContentPane().add(txtDX, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 265, 350, 70));
+        getContentPane().add(txtDX, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 360, 350, 70));
 
         lblnombre6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre6.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre6.setText("Presupuesto:");
-        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(63, 345, 110, 20));
+        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(80, 440, 110, 20));
 
         txtpresupuesto.setEnabled(false);
         txtpresupuesto.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -231,17 +252,17 @@ public class DetalleConsulta extends internalFrameImagen {
                 txtpresupuestoKeyTyped(evt);
             }
         });
-        getContentPane().add(txtpresupuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 345, 350, 29));
+        getContentPane().add(txtpresupuesto, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 440, 350, 29));
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Numero de expediente");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 45, -1, -1));
+        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 140, -1, -1));
 
         lblnombre3.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre3.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre3.setText("Historia Odontologica:");
-        getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(23, 167, -1, -1));
+        getContentPane().add(lblnombre3, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 260, -1, -1));
 
         txtHistoriaO.setEnabled(false);
         txtHistoriaO.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -249,7 +270,7 @@ public class DetalleConsulta extends internalFrameImagen {
                 txtHistoriaOKeyPressed(evt);
             }
         });
-        getContentPane().add(txtHistoriaO, new org.netbeans.lib.awtextra.AbsoluteConstraints(183, 167, 350, 40));
+        getContentPane().add(txtHistoriaO, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 260, 350, 40));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -302,6 +323,10 @@ public class DetalleConsulta extends internalFrameImagen {
     private void txtHistoriaOKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtHistoriaOKeyPressed
 
     }//GEN-LAST:event_txtHistoriaOKeyPressed
+
+    private void jButton4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton4ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton4ActionPerformed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
