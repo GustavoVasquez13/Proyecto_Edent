@@ -26,7 +26,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
      */
     public ExpedienteO() {
         initComponents();
-       setImagenw("img.jpg");
+       setImagenw("fondo.jpg");
 
             ExpedienteO.txtanguloA1.setEnabled(false);
             ExpedienteO.txtanguloG1.setEnabled(false);
@@ -807,6 +807,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(txtMD, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 624, 380, -1));
 
         jLabel1.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
         jLabel1.setText("Indicacion especial antes de colocar Brackets");
         getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 360, 300, -1));
 
@@ -864,18 +865,22 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(jSeparator67, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 380, -1, 90));
 
         chmodelo.setBackground(new java.awt.Color(0, 0, 0));
+        chmodelo.setForeground(new java.awt.Color(255, 255, 255));
         chmodelo.setText("Modelo mx ");
         getContentPane().add(chmodelo, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 410, 93, -1));
 
         chfaciales.setBackground(new java.awt.Color(0, 0, 0));
+        chfaciales.setForeground(new java.awt.Color(255, 255, 255));
         chfaciales.setText("Faciales");
         getContentPane().add(chfaciales, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 380, -1, -1));
 
         chpanoramica.setBackground(new java.awt.Color(0, 0, 0));
+        chpanoramica.setForeground(new java.awt.Color(255, 255, 255));
         chpanoramica.setText("Panoramica");
         getContentPane().add(chpanoramica, new org.netbeans.lib.awtextra.AbsoluteConstraints(850, 440, 93, -1));
 
         chintraorales.setBackground(new java.awt.Color(0, 0, 0));
+        chintraorales.setForeground(new java.awt.Color(255, 255, 255));
         chintraorales.setText("Intraorales");
         getContentPane().add(chintraorales, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 380, 93, -1));
 
@@ -884,14 +889,17 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(jSeparator68, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 380, -1, 90));
 
         chmodeloMD.setBackground(new java.awt.Color(0, 0, 0));
+        chmodeloMD.setForeground(new java.awt.Color(255, 255, 255));
         chmodeloMD.setText("Modelo md");
         getContentPane().add(chmodeloMD, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 410, 93, -1));
 
         chcefalometrica.setBackground(new java.awt.Color(0, 0, 0));
+        chcefalometrica.setForeground(new java.awt.Color(255, 255, 255));
         chcefalometrica.setText("Cefalometrica");
         getContentPane().add(chcefalometrica, new org.netbeans.lib.awtextra.AbsoluteConstraints(950, 440, 93, -1));
 
         chincicivos.setBackground(new java.awt.Color(0, 0, 0));
+        chincicivos.setForeground(new java.awt.Color(255, 255, 255));
         chincicivos.setText("Incicivos");
         getContentPane().add(chincicivos, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 440, 70, -1));
 
