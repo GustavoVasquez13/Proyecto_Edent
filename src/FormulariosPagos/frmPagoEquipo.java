@@ -22,7 +22,7 @@ public class frmPagoEquipo extends internalFrameImagen {
     
     public frmPagoEquipo() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         mosEquipo();
     }
 

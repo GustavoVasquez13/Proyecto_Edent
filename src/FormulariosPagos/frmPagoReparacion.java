@@ -22,7 +22,7 @@ public class frmPagoReparacion extends internalFrameImagen {
     
     public frmPagoReparacion() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         MoRepa();
     }
 

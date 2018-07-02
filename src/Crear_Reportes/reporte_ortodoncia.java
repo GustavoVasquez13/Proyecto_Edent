@@ -38,7 +38,7 @@ public class reporte_ortodoncia extends internalFrameImagen{
      */
     public reporte_ortodoncia() {
         initComponents();
-         setImagenw("img.jpg");
+         setImagenw("fondo.jpg");
         mostrarpacientes();
     }
  private void mostrarpacientes() {

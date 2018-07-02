@@ -38,7 +38,7 @@ public class reporte_general extends internalFrameImagen {
      */
     public reporte_general() {
         initComponents();
-         setImagenw("img.jpg");
+         setImagenw("fondo.jpg");
         mostrarpacientes();
     }
  private void mostrarpacientes() {

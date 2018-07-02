@@ -22,7 +22,7 @@ public class frmPagoMateriales extends internalFrameImagen {
      
     public frmPagoMateriales() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
         MostMaterial();
     }
 

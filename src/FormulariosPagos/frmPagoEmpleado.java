@@ -23,7 +23,7 @@ public class frmPagoEmpleado extends internalFrameImagen {
     
     public frmPagoEmpleado() {
         initComponents();
-       setImagenw("img.jpg");
+       setImagenw("fondo.jpg");
         mostEmple();
     }
 

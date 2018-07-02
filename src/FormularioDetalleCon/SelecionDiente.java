@@ -18,7 +18,7 @@ public class SelecionDiente extends internalFrameImagen {
      */
     public SelecionDiente() {
         initComponents();
-                setImagenw("img.jpg");
+                setImagenw("fondo.jpg");
 
     }
 
