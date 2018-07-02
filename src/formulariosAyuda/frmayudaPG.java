@@ -17,7 +17,7 @@ public class frmayudaPG extends internalFrameImagen {
      */
     public frmayudaPG() {
         initComponents();
-          setImagenw("img.jpg");
+          setImagenw("fondo.jpg");
     }
 
     /**

@@ -17,7 +17,7 @@ public class frmayudaPO extends internalFrameImagen {
      */
     public frmayudaPO() {
         initComponents();
-          setImagenw("img.jpg");
+          setImagenw("fondo.jpg");
     }
 
     /**

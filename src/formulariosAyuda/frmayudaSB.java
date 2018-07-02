@@ -7,7 +7,7 @@ public class frmayudaSB extends internalFrameImagen{
 
     public frmayudaSB() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
     }
 
     @SuppressWarnings("unchecked")

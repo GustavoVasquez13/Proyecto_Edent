@@ -7,7 +7,7 @@ public class frmayudaPE extends internalFrameImagen{
 
     public frmayudaPE() {
         initComponents();
-        setImagenw("img.jpg");
+        setImagenw("fondo.jpg");
     }
 
     @SuppressWarnings("unchecked")

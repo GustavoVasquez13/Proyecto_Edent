@@ -17,7 +17,7 @@ public class frmayudaEG extends internalFrameImagen {
      */
     public frmayudaEG() {
         initComponents();
-          setImagenw("img.jpg");
+          setImagenw("fondo.jpg");
     }
 
     /**
