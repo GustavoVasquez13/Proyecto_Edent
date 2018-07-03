@@ -27,7 +27,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
 
     public ExpedienteOrtodoncia() {
         initComponents(); 
-        
+          txttelefono.setText("");
         ExpedienteOrtodoncia.jfecha.setEnabled(false);
 //        ExpedienteOrtodoncia.txtedad.setEnabled(false);
 //        ExpedienteOrtodoncia.txttelefono.setEnabled(false);
@@ -556,7 +556,8 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
     }//GEN-LAST:event_txtDXActionPerformed
 
     private void btnsalirActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnsalirActionPerformed
-       this.dispose();
+        limpiarTxt();
+        this.dispose();
     }//GEN-LAST:event_btnsalirActionPerformed
 
     private void txtnombreKeyTyped(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnombreKeyTyped
