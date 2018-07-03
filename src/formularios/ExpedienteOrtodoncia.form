@@ -271,6 +271,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txttelefono">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
       <Events>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txttelefonoKeyTyped"/>
       </Events>
@@ -290,6 +293,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtedad">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
       <Events>
         <EventHandler event="keyPressed" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtedadKeyPressed"/>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtedadKeyTyped"/>
@@ -310,6 +316,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtnombre">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
       <Events>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtnombreKeyTyped"/>
       </Events>
@@ -329,6 +338,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtdireccion">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
       <Events>
         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="txtdireccionActionPerformed"/>
       </Events>
@@ -472,6 +484,9 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="txtapellido">
+      <Properties>
+        <Property name="editable" type="boolean" value="false"/>
+      </Properties>
       <Events>
         <EventHandler event="keyTyped" listener="java.awt.event.KeyListener" parameters="java.awt.event.KeyEvent" handler="txtapellidoKeyTyped"/>
       </Events>

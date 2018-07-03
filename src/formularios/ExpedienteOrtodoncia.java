@@ -29,10 +29,10 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         initComponents(); 
         
         ExpedienteOrtodoncia.jfecha.setEnabled(false);
-        ExpedienteOrtodoncia.txtedad.setEnabled(false);
-        ExpedienteOrtodoncia.txttelefono.setEnabled(false);
-        ExpedienteOrtodoncia.txtnombre.setEnabled(false);
-        ExpedienteOrtodoncia.txtapellido.setEnabled(false);
+//        ExpedienteOrtodoncia.txtedad.setEnabled(false);
+//        ExpedienteOrtodoncia.txttelefono.setEnabled(false);
+//        ExpedienteOrtodoncia.txtnombre.setEnabled(false);
+//        ExpedienteOrtodoncia.txtapellido.setEnabled(false);
         ExpedienteOrtodoncia.txtMotivoC.setEnabled(false);
         ExpedienteOrtodoncia.btneditar.setEnabled(false);
         ExpedienteOrtodoncia.btnbuscaredicion.setEnabled(true);
@@ -41,7 +41,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         ExpedienteOrtodoncia.txtHistoriaM.setEnabled(false);
         ExpedienteOrtodoncia.txtExamenC.setEnabled(false);
         ExpedienteOrtodoncia.txtDX.setEnabled(false);
-        ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
+//        ExpedienteOrtodoncia.txtdireccion.setEnabled(false);
 //        ExpedienteOrtodoncia.btndientes.setEnabled(false);
         
         
@@ -102,6 +102,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lbltelefono.setForeground(new java.awt.Color(255, 255, 255));
         lbltelefono.setText("Telefono:");
 
+        txttelefono.setEditable(false);
         txttelefono.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txttelefonoKeyTyped(evt);
@@ -112,6 +113,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lbledad.setForeground(new java.awt.Color(255, 255, 255));
         lbledad.setText("Edad:");
 
+        txtedad.setEditable(false);
         txtedad.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtedadKeyPressed(evt);
@@ -125,6 +127,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lblnombre.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre.setText("Nombre: ");
 
+        txtnombre.setEditable(false);
         txtnombre.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtnombreKeyTyped(evt);
@@ -135,6 +138,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lbldireccion1.setForeground(new java.awt.Color(255, 255, 255));
         lbldireccion1.setText("Dirección: ");
 
+        txtdireccion.setEditable(false);
         txtdireccion.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtdireccionActionPerformed(evt);
@@ -218,6 +222,7 @@ public class ExpedienteOrtodoncia extends internalFrameImagen {
         lblnombre40.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre40.setText("Apellido:");
 
+        txtapellido.setEditable(false);
         txtapellido.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyTyped(java.awt.event.KeyEvent evt) {
                 txtapellidoKeyTyped(evt);
