@@ -19,6 +19,7 @@ public class frmReparacion extends internalFrameImagen {
     
     public frmReparacion() {
         initComponents();
+        txtRepa.setNextFocusableComponent (txtDesc); 
             setImagenw("fondo.jpg");
         MRepa();
     }
