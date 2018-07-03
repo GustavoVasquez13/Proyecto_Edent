@@ -56,7 +56,6 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         btnproveedores = new javax.swing.JButton();
         txtconta = new javax.swing.JButton();
         lbltitulo = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
         jMenuBar1 = new javax.swing.JMenuBar();
         jMenu1 = new javax.swing.JMenu();
         jMenuItem1 = new javax.swing.JMenuItem();
@@ -179,10 +178,6 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         lbltitulo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/logo1.png"))); // NOI18N
         lbltitulo.setOpaque(true);
 
-        jLabel1.setFont(new java.awt.Font("Arial", 1, 24)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel1.setText("Smiling By Dr. Canizalez");
-
         Dpanel.setLayer(lbhora, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(lblapellidos, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(lblnombres, javax.swing.JLayeredPane.DEFAULT_LAYER);
@@ -193,7 +188,6 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
         Dpanel.setLayer(txtconta, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(txtreportes, javax.swing.JLayeredPane.DEFAULT_LAYER);
         Dpanel.setLayer(lbltitulo, javax.swing.JLayeredPane.DEFAULT_LAYER);
-        Dpanel.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
         javax.swing.GroupLayout DpanelLayout = new javax.swing.GroupLayout(Dpanel);
         Dpanel.setLayout(DpanelLayout);
@@ -221,9 +215,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                     .addComponent(btnproveedores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnexpediente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(txtreportes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1)
-                .addGap(61, 61, 61))
+                .addGap(61, 990, Short.MAX_VALUE))
         );
         DpanelLayout.setVerticalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -233,9 +225,7 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 .addGap(18, 18, 18)
                 .addComponent(btnexpediente)
                 .addGap(14, 14, 14)
-                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel1))
+                .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addComponent(btnadministracion, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -798,7 +788,6 @@ public void run() {
     public static final javax.swing.JButton btnadministracion = new javax.swing.JButton();
     private javax.swing.JButton btnexpediente;
     private javax.swing.JButton btnproveedores;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu jMenu1;
     private javax.swing.JMenu jMenu2;
     private javax.swing.JMenu jMenu3;
