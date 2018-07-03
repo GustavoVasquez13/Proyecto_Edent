@@ -74,6 +74,9 @@ public class frmEquipo extends internalFrameImagen {
         jLabel8 = new javax.swing.JLabel();
         btnAyuda = new javax.swing.JButton();
 
+        setClosable(true);
+        setIconifiable(true);
+
         jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Agregar Equipo");
