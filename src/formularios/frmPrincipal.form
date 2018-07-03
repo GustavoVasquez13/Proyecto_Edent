@@ -408,26 +408,29 @@
                   <EmptySpace min="-2" pref="216" max="-2" attributes="0"/>
               </Group>
               <Group type="102" attributes="0">
-                  <EmptySpace min="110" pref="110" max="-2" attributes="0"/>
-                  <Component id="lblnombres" min="-2" pref="141" max="-2" attributes="0"/>
-                  <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
-                  <Component id="lblapellidos" min="-2" pref="153" max="-2" attributes="0"/>
-                  <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
-                  <Component id="lblacceso" min="-2" pref="132" max="-2" attributes="0"/>
-                  <EmptySpace min="448" pref="448" max="-2" attributes="0"/>
-                  <Component id="lbhora" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="32767" attributes="0"/>
-              </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="txtconta" max="32767" attributes="0"/>
-                      <Component id="btnadministracion" pref="187" max="32767" attributes="0"/>
-                      <Component id="btnproveedores" max="32767" attributes="0"/>
-                      <Component id="btnexpediente" max="32767" attributes="0"/>
-                      <Component id="txtreportes" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <EmptySpace min="110" pref="110" max="-2" attributes="0"/>
+                          <Component id="lblnombres" min="-2" pref="141" max="-2" attributes="0"/>
+                          <EmptySpace min="19" pref="19" max="-2" attributes="0"/>
+                          <Component id="lblapellidos" min="-2" pref="153" max="-2" attributes="0"/>
+                          <EmptySpace min="17" pref="17" max="-2" attributes="0"/>
+                          <Component id="lblacceso" min="-2" pref="132" max="-2" attributes="0"/>
+                          <EmptySpace min="448" pref="448" max="-2" attributes="0"/>
+                          <Component id="lbhora" min="-2" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="0" attributes="0">
+                          <EmptySpace min="-2" pref="98" max="-2" attributes="0"/>
+                          <Group type="103" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="txtconta" max="32767" attributes="0"/>
+                              <Component id="btnadministracion" pref="187" max="32767" attributes="0"/>
+                              <Component id="btnproveedores" max="32767" attributes="0"/>
+                              <Component id="btnexpediente" max="32767" attributes="0"/>
+                              <Component id="txtreportes" max="32767" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
-                  <EmptySpace min="61" pref="990" max="32767" attributes="0"/>
+                  <EmptySpace max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -439,14 +442,14 @@
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Component id="btnexpediente" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="14" max="-2" attributes="0"/>
-                  <Component id="btnproveedores" min="-2" pref="72" max="-2" attributes="0"/>
-                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                  <Component id="btnadministracion" min="-2" pref="68" max="-2" attributes="0"/>
+                  <Component id="btnproveedores" min="-2" pref="77" max="-2" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="btnadministracion" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
                   <Component id="txtconta" min="-2" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
-                  <Component id="txtreportes" min="-2" pref="71" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="17" max="-2" attributes="0"/>
+                  <Component id="txtreportes" min="-2" pref="77" max="-2" attributes="0"/>
+                  <EmptySpace type="unrelated" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Component id="lblnombres" min="-2" pref="40" max="-2" attributes="0"/>
                       <Component id="lblapellidos" min="-2" pref="44" max="-2" attributes="0"/>
@@ -466,17 +469,11 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Baskerville Old Face" size="36" style="1"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="hora de sistema"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="lblapellidos">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel4"/>
           </Properties>
           <AuxValues>
@@ -485,9 +482,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblnombres">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel3"/>
           </Properties>
           <AuxValues>
@@ -496,9 +490,6 @@
         </Component>
         <Component class="javax.swing.JLabel" name="lblacceso">
           <Properties>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="ff" green="ff" red="ff" type="rgb"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="jLabel5"/>
           </Properties>
           <AuxValues>

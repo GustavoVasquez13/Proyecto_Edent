@@ -9,6 +9,7 @@ import Clases.internalFrameImagen;
 import Clases.validaciones;
 import formulariosAyuda.frmayudaSB;
 import java.awt.Color;
+import java.awt.Component;
 import java.awt.KeyboardFocusManager;
 import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
@@ -29,6 +30,16 @@ public class frmEmpleados extends internalFrameImagen {
         initComponents();
             setImagenw("fondo.jpg");
         mostrarEmpl();
+         
+        this.txtNombreEmp.requestFocus();
+        txtNombreEmp.setNextFocusableComponent (txtApellidoEmp); 
+        txtApellidoEmp.setNextFocusableComponent (txtDireccionEmp); 
+        txtDireccionEmp.setNextFocusableComponent (txtDuiEmp); 
+        txtDuiEmp.setNextFocusableComponent (txtCorreoEmp); 
+        txtCorreoEmp.setNextFocusableComponent (txtTelEmp); 
+        txtTelEmp.setNextFocusableComponent (txtCargoEmp); 
+        txtCargoEmp.setNextFocusableComponent (txtSueldoEmp);    
+        txtSueldoEmp.setNextFocusableComponent (this.jdFechaInicio);   
     }
 
     //este metodo muestra en la tabla los empleados registrados
@@ -285,6 +296,11 @@ public class frmEmpleados extends internalFrameImagen {
             }
             public void mousePressed(java.awt.event.MouseEvent evt) {
                 txtDuiEmpMousePressed(evt);
+            }
+        });
+        txtDuiEmp.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyPressed(java.awt.event.KeyEvent evt) {
+                txtDuiEmpKeyPressed(evt);
             }
         });
 
@@ -619,7 +635,7 @@ public class frmEmpleados extends internalFrameImagen {
     }//GEN-LAST:event_btnAyudaActionPerformed
 
     private void txtNombreEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtNombreEmpKeyPressed
-        txtNombreEmp.setBackground(Color.WHITE);
+        txtNombreEmp.setBackground(Color.white);
         txtNombreEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
                 java.util.Collections.EMPTY_SET);
          if (evt.getKeyCode() == KeyEvent.VK_TAB){
@@ -692,6 +708,16 @@ public class frmEmpleados extends internalFrameImagen {
         txtSueldoEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
                 java.util.Collections.EMPTY_SET);
     }//GEN-LAST:event_txtSueldoEmpKeyPressed
+
+    private void txtDuiEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtDuiEmpKeyPressed
+        txtDuiEmp.setBackground(Color.WHITE);
+        txtDuiEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
+                java.util.Collections.EMPTY_SET);
+         if (evt.getKeyCode() == KeyEvent.VK_TAB){
+             txtCorreoEmp.requestFocus();
+             txtCorreoEmp.setBackground(Color.LIGHT_GRAY);
+         }
+    }//GEN-LAST:event_txtDuiEmpKeyPressed
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

@@ -20,6 +20,11 @@ public class frmmateriales extends internalFrameImagen {
      
     public frmmateriales() {
         initComponents();
+        this.txtNombre.requestFocus();
+         txtNombre.setNextFocusableComponent (txtDesc); 
+         txtDesc.setNextFocusableComponent (txtTipo); 
+         txtTipo.setNextFocusableComponent (txtCantidad); 
+         txtCantidad.setNextFocusableComponent (txtCosto); 
         setImagenw("fondo.jpg");
         mosMaterial();
     }

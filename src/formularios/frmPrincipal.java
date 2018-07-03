@@ -101,16 +101,12 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
 
         lbhora.setBackground(new java.awt.Color(0, 0, 0));
         lbhora.setFont(new java.awt.Font("Baskerville Old Face", 1, 36)); // NOI18N
-        lbhora.setForeground(new java.awt.Color(255, 255, 255));
         lbhora.setText("hora de sistema");
 
-        lblapellidos.setForeground(new java.awt.Color(255, 255, 255));
         lblapellidos.setText("jLabel4");
 
-        lblnombres.setForeground(new java.awt.Color(255, 255, 255));
         lblnombres.setText("jLabel3");
 
-        lblacceso.setForeground(new java.awt.Color(255, 255, 255));
         lblacceso.setText("jLabel5");
 
         btnexpediente.setBackground(new java.awt.Color(255, 255, 255));
@@ -198,24 +194,25 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 .addComponent(lbltitulo)
                 .addGap(216, 216, 216))
             .addGroup(DpanelLayout.createSequentialGroup()
-                .addGap(110, 110, 110)
-                .addComponent(lblnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(19, 19, 19)
-                .addComponent(lblapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
-                .addComponent(lblacceso, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(448, 448, 448)
-                .addComponent(lbhora)
+                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(DpanelLayout.createSequentialGroup()
+                        .addGap(110, 110, 110)
+                        .addComponent(lblnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 141, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(19, 19, 19)
+                        .addComponent(lblapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(17, 17, 17)
+                        .addComponent(lblacceso, javax.swing.GroupLayout.PREFERRED_SIZE, 132, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(448, 448, 448)
+                        .addComponent(lbhora))
+                    .addGroup(DpanelLayout.createSequentialGroup()
+                        .addGap(98, 98, 98)
+                        .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(txtconta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnadministracion, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
+                            .addComponent(btnproveedores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(btnexpediente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                            .addComponent(txtreportes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(DpanelLayout.createSequentialGroup()
-                .addGap(98, 98, 98)
-                .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(txtconta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnadministracion, javax.swing.GroupLayout.DEFAULT_SIZE, 187, Short.MAX_VALUE)
-                    .addComponent(btnproveedores, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnexpediente, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(txtreportes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(61, 990, Short.MAX_VALUE))
         );
         DpanelLayout.setVerticalGroup(
             DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -225,14 +222,14 @@ public class frmPrincipal extends javax.swing.JFrame implements  Runnable {
                 .addGap(18, 18, 18)
                 .addComponent(btnexpediente)
                 .addGap(14, 14, 14)
-                .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 72, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(btnadministracion, javax.swing.GroupLayout.PREFERRED_SIZE, 68, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(btnproveedores, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnadministracion)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(txtconta)
                 .addGap(10, 10, 10)
-                .addComponent(txtreportes, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(17, 17, 17)
+                .addComponent(txtreportes, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(DpanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(lblnombres, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblapellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)
