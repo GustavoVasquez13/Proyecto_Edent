@@ -20,6 +20,8 @@ public class frmEquipo extends internalFrameImagen {
     
     public frmEquipo() {
         initComponents();
+        txtEquipo.setNextFocusableComponent (txtDesc); 
+        txtDesc.setNextFocusableComponent (txtEstado); 
         setImagenw("fondo.jpg");
         mosEquipo();
     }

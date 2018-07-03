@@ -20,6 +20,9 @@ public class frmServBasicos extends internalFrameImagen {
     
     public frmServBasicos() {
         initComponents();
+         txtServicio.setNextFocusableComponent (txtProveedor); 
+         txtProveedor.setNextFocusableComponent (txtCorreo); 
+          txtCorreo.setNextFocusableComponent (txtTelefono); 
         //se utiliza el metodo setImagenw de la clase internalFrameImagen ya que esta clase fue heredada en este formulario
         setImagenw("fondo.jpg");
         mostrarServ();
