@@ -181,23 +181,23 @@ public class frmayudaPG extends internalFrameImagen {
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblRegMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para realizar una consulta para paciente general de click  <b>en el boton</b> "
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\">Para realizar una consulta para paciente general de click  <b>en el boton</b> "
             + "Elegir Agregar paciente para consulta, se mostraran los pacientes de odontologia General, seleccionar uno dando doblec click"
             + " sobre el nombre e insertar lso datos correspondientes</p></body></html>");
     }//GEN-LAST:event_lblRegMouseClicked
 
     private void lblRegMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseEntered
-        this.lblReg.setForeground(Color.blue);
+        this.lblReg.setForeground(Color.white);
         this.lblCL1.setText("Click Aqui");
     }//GEN-LAST:event_lblRegMouseEntered
 
     private void lblRegMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseExited
-        this.lblReg.setForeground(Color.black);
+        this.lblReg.setForeground(Color.white);
         this.lblCL1.setText("");
     }//GEN-LAST:event_lblRegMouseExited
 
     private void lblEditMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para <b>Para editar los datos de un paciente </b>debe dar click al boton Buscar para Editar "
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\">Para <b>Para editar los datos de un paciente </b>debe dar click al boton Buscar para Editar "
             + "<b>se mostrara un formulario</b> busque el paciente a editar <b> y de doble click sobre el nombre</b> "
             + "Los datos se cargaran en las <b>Cajas de Texto</b> correspondientes. Luego llenar los campos con la informacion necesaria, "
             + "es obligatorio <b>Seleccionar un Paciente </b> "
@@ -207,28 +207,28 @@ public class frmayudaPG extends internalFrameImagen {
     }//GEN-LAST:event_lblEditMouseClicked
 
     private void lblEditMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseEntered
-        this.lblEdit.setForeground(Color.blue);
+        this.lblEdit.setForeground(Color.white);
         this.lblCL2.setText("Click Aqui");
     }//GEN-LAST:event_lblEditMouseEntered
 
     private void lblEditMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseExited
-        this.lblEdit.setForeground(Color.black);
+        this.lblEdit.setForeground(Color.white);
         this.lblCL2.setText("");
     }//GEN-LAST:event_lblEditMouseExited
 
     private void lblErroresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\"><b>Problemas al Realizar la consulta</b> este tipo de problemas se puede presentar"
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\"><b>Problemas al Realizar la consulta</b> este tipo de problemas se puede presentar"
             + " cuando se ha perdido la <b>conexion con la base de datos,</b> causando que no se pueda realizar la operacion Solicitada.<br><br>"
             + "Para Solucionar este problema Porfavor Comuniquese con el <b>Administrador de Sistema.</b></p></body></html>");
     }//GEN-LAST:event_lblErroresMouseClicked
 
     private void lblErroresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseEntered
-        this.lblErrores.setForeground(Color.blue);
+        this.lblErrores.setForeground(Color.white);
         this.lblCL4.setText("Click Aqui");
     }//GEN-LAST:event_lblErroresMouseEntered
 
     private void lblErroresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseExited
-        this.lblErrores.setForeground(Color.black);
+        this.lblErrores.setForeground(Color.white);
         this.lblCL4.setText("");
     }//GEN-LAST:event_lblErroresMouseExited
 

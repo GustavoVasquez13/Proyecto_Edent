@@ -156,7 +156,7 @@ public class frmayudaVP extends internalFrameImagen{
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblRegMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para <b>Ver los Pagos Realizados</b> debe de dar click en la caja de seleccion. "
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\">Para <b>Ver los Pagos Realizados</b> debe de dar click en la caja de seleccion. "
                 + "Luego seleccionar el tipo de pago seleccionado "
                 + "para realizar exitosamente la operacion especificada. <br><br>"
                 + "Para ver los pagos en un <b>Rango de Fecha Especifico</b> debe de ingresar las fechas solicitadas en las cajas de texto de fechas "
@@ -164,45 +164,45 @@ public class frmayudaVP extends internalFrameImagen{
     }//GEN-LAST:event_lblRegMouseClicked
 
     private void lblEditMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para <b>Generar un Reporte</b> se debe de ingresar el rango de fechas y seleccionar el tipo de pago "
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\">Para <b>Generar un Reporte</b> se debe de ingresar el rango de fechas y seleccionar el tipo de pago "
                 + "<b>de la Caja de Seleccion</b> y luego se <b>mostrar en la tabla los registro que corresponden al rango de fechas ingresados.</b><br><br>"
                 + "Despues debe de dar <b>Click en el boton Generar Reporte</b> y se abrira una ventana "
                 + "donde mostrara el <b>Reporte listo para imprimir.</b> dar clic en el boton imprimir o guardar el archivo.</p></body></html>");
     }//GEN-LAST:event_lblEditMouseClicked
 
     private void lblErroresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\"><b>Problemas al mostrar registros o reportes</b> este tipo de problemas se puede presentar"
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\"><b>Problemas al mostrar registros o reportes</b> este tipo de problemas se puede presentar"
                 + " cuando se ha perdido la <b>conexion con la base de datos,</b> causando que no se pueda realizar la operacion Solicitada.<br><br>"
                 + "Para Solucionar este problema Porfavor Comuniquese con el <b>Administrador de Sistema.</b></p></body></html>");
     }//GEN-LAST:event_lblErroresMouseClicked
 
     private void lblRegMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseEntered
-        this.lblReg.setForeground(Color.blue);
+        this.lblReg.setForeground(Color.white);
          this.lblCL1.setText("Click Aqui");
     }//GEN-LAST:event_lblRegMouseEntered
 
     private void lblRegMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseExited
-        this.lblReg.setForeground(Color.black);
+        this.lblReg.setForeground(Color.white);
         this.lblCL1.setText("");
     }//GEN-LAST:event_lblRegMouseExited
 
     private void lblEditMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseEntered
-        this.lblEdit.setForeground(Color.blue);
+        this.lblEdit.setForeground(Color.white);
         this.lblCL2.setText("Click Aqui");
     }//GEN-LAST:event_lblEditMouseEntered
 
     private void lblEditMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseExited
-        this.lblEdit.setForeground(Color.black);
+        this.lblEdit.setForeground(Color.white);
         this.lblCL2.setText("");
     }//GEN-LAST:event_lblEditMouseExited
 
     private void lblErroresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseEntered
-        this.lblErrores.setForeground(Color.blue);
+        this.lblErrores.setForeground(Color.white);
         this.lblCL4.setText("Click Aqui");
     }//GEN-LAST:event_lblErroresMouseEntered
 
     private void lblErroresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseExited
-        this.lblErrores.setForeground(Color.black);
+        this.lblErrores.setForeground(Color.white);
         this.lblCL4.setText("");
     }//GEN-LAST:event_lblErroresMouseExited
 

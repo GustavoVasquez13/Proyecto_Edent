@@ -156,7 +156,7 @@ public class frmayudaSB extends internalFrameImagen{
     }// </editor-fold>//GEN-END:initComponents
 
     private void lblRegMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para <b>Agregar un Registro Nuevo</b> debe de llenar todos los campos requeridos. "
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\">Para <b>Agregar un Registro Nuevo</b> debe de llenar todos los campos requeridos. "
                 + "Es obligatorio ingresar los <b>Campos Requeridos </b> "
                 + "para realizar exitosamente una operacion especificada. <br><br>"
                 + "Despues debe de dar <b>Click en el boton Guardar</b> y aparecera un mensaje "
@@ -164,7 +164,7 @@ public class frmayudaSB extends internalFrameImagen{
     }//GEN-LAST:event_lblRegMouseClicked
 
     private void lblEditMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\">Para <b>Editar un Registro</b> existente se debe seleccionar el Registro desde la "
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\">Para <b>Editar un Registro</b> existente se debe seleccionar el Registro desde la "
                 + "<b>Tabla de Datos</b> y luego dar <b>Doble Click sobre el Registro seleccionado.</b> "
                 + "Los datos se cargaran en las <b>Cajas de Texto</b> correspondientes. De los datos cargados hacer los cambios que se desean, "
                 + "es obligatorio ingresar los <b>Campos Requeridos </b> "
@@ -174,38 +174,38 @@ public class frmayudaSB extends internalFrameImagen{
     }//GEN-LAST:event_lblEditMouseClicked
 
     private void lblErroresMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseClicked
-        this.lblMensaje.setText("<html><body><p ALIGN=\"justify\"><b>Problemas al Guardar o Editar los datos</b> este tipo de problemas se puede presentar"
+        this.lblMensaje.setText("<html><body><p style=\"color:#FFFFFF\" ALIGN=\"justify\"><b>Problemas al Guardar o Editar los datos</b> este tipo de problemas se puede presentar"
                 + " cuando se ha perdido la <b>conexion con la base de datos,</b> causando que no se pueda realizar la operacion Solicitada.<br><br>"
                 + "Para Solucionar este problema Porfavor Comuniquese con el <b>Administrador de Sistema.</b></p></body></html>");
     }//GEN-LAST:event_lblErroresMouseClicked
 
     private void lblRegMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseEntered
-        this.lblReg.setForeground(Color.blue);
+        this.lblReg.setForeground(Color.white);
          this.lblCL1.setText("Click Aqui");
     }//GEN-LAST:event_lblRegMouseEntered
 
     private void lblRegMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseExited
-        this.lblReg.setForeground(Color.black);
+        this.lblReg.setForeground(Color.white);
         this.lblCL1.setText("");
     }//GEN-LAST:event_lblRegMouseExited
 
     private void lblEditMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseEntered
-        this.lblEdit.setForeground(Color.blue);
+        this.lblEdit.setForeground(Color.white);
         this.lblCL2.setText("Click Aqui");
     }//GEN-LAST:event_lblEditMouseEntered
 
     private void lblEditMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseExited
-        this.lblEdit.setForeground(Color.black);
+        this.lblEdit.setForeground(Color.white);
         this.lblCL2.setText("");
     }//GEN-LAST:event_lblEditMouseExited
 
     private void lblErroresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseEntered
-        this.lblErrores.setForeground(Color.blue);
+        this.lblErrores.setForeground(Color.white);
         this.lblCL4.setText("Click Aqui");
     }//GEN-LAST:event_lblErroresMouseEntered
 
     private void lblErroresMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseExited
-        this.lblErrores.setForeground(Color.black);
+        this.lblErrores.setForeground(Color.white);
         this.lblCL4.setText("");
     }//GEN-LAST:event_lblErroresMouseExited
 
