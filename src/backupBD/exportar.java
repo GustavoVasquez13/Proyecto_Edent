@@ -47,7 +47,7 @@ public class exportar extends internalFrameImagen {
         txtruta.setFont(new java.awt.Font("Tahoma", 0, 12)); // NOI18N
 
         jButton2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
-        jButton2.setForeground(new java.awt.Color(255, 255, 255));
+        jButton2.setForeground(new java.awt.Color(0, 102, 153));
         jButton2.setText("Elegir Carpeta");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
