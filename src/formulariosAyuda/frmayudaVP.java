@@ -177,7 +177,7 @@ public class frmayudaVP extends internalFrameImagen{
     }//GEN-LAST:event_lblErroresMouseClicked
 
     private void lblRegMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblRegMouseEntered
-        this.lblReg.setForeground(Color.white);
+        this.lblReg.setForeground(Color.black);
          this.lblCL1.setText("Click Aqui");
     }//GEN-LAST:event_lblRegMouseEntered
 
@@ -187,7 +187,7 @@ public class frmayudaVP extends internalFrameImagen{
     }//GEN-LAST:event_lblRegMouseExited
 
     private void lblEditMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblEditMouseEntered
-        this.lblEdit.setForeground(Color.white);
+        this.lblEdit.setForeground(Color.black);
         this.lblCL2.setText("Click Aqui");
     }//GEN-LAST:event_lblEditMouseEntered
 
@@ -197,7 +197,7 @@ public class frmayudaVP extends internalFrameImagen{
     }//GEN-LAST:event_lblEditMouseExited
 
     private void lblErroresMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblErroresMouseEntered
-        this.lblErrores.setForeground(Color.white);
+        this.lblErrores.setForeground(Color.black);
         this.lblCL4.setText("Click Aqui");
     }//GEN-LAST:event_lblErroresMouseEntered
 
