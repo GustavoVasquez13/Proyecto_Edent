@@ -42,14 +42,15 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <EmptySpace min="-2" pref="40" max="-2" attributes="0"/>
-                              <Group type="103" groupAlignment="0" attributes="0">
+                              <Group type="103" groupAlignment="0" max="-2" attributes="0">
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblnombre5" min="-2" pref="90" max="-2" attributes="0"/>
-                                      <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="32" max="-2" attributes="0"/>
+                                      <Component id="lblnombre5" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="32767" attributes="0"/>
                                       <Component id="txtDX" min="-2" pref="500" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblnombre4" min="-2" pref="80" max="-2" attributes="0"/>
+                                      <Component id="lblnombre4" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                       <Component id="txtExamenC" min="-2" pref="500" max="-2" attributes="0"/>
                                   </Group>
@@ -59,7 +60,7 @@
                                       <Component id="txtHistoriaO" min="-2" pref="500" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="1" attributes="0">
-                                      <Component id="lblnombre2" min="-2" pref="80" max="-2" attributes="0"/>
+                                      <Component id="lblnombre2" min="-2" max="-2" attributes="0"/>
                                       <EmptySpace min="-2" pref="10" max="-2" attributes="0"/>
                                       <Component id="txtHistoriaM" min="-2" pref="500" max="-2" attributes="0"/>
                                   </Group>
@@ -149,7 +150,7 @@
                               <Component id="jLabel3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace type="separate" pref="33" max="32767" attributes="0"/>
+                      <EmptySpace type="separate" pref="37" max="32767" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           <Component id="jfecha" min="-2" max="-2" attributes="0"/>
