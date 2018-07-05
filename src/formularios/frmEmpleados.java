@@ -662,22 +662,11 @@ public class frmEmpleados extends internalFrameImagen {
     }//GEN-LAST:event_txtDireccionEmpKeyPressed
 
     private void txtDuiEmpMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_txtDuiEmpMousePressed
-        txtDuiEmp.setBackground(Color.WHITE);
-        txtDuiEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
-                java.util.Collections.EMPTY_SET);
-            txtCorreoEmp.requestFocus();
-             txtCorreoEmp.setBackground(Color.LIGHT_GRAY);
-        
+       
     }//GEN-LAST:event_txtDuiEmpMousePressed
 
     private void txtCorreoEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtCorreoEmpKeyPressed
-         txtCorreoEmp.setBackground(Color.WHITE);
-        txtCorreoEmp.setFocusTraversalKeys(KeyboardFocusManager.FORWARD_TRAVERSAL_KEYS,
-                java.util.Collections.EMPTY_SET);
-         if (evt.getKeyCode() == KeyEvent.VK_TAB){
-             txtTelEmp.requestFocus();
-             txtTelEmp.setBackground(Color.LIGHT_GRAY);
-         }
+
     }//GEN-LAST:event_txtCorreoEmpKeyPressed
 
     private void txtTelEmpKeyPressed(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtTelEmpKeyPressed
