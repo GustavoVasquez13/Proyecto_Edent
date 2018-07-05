@@ -1,5 +1,5 @@
 -- Created by Vertabelo (http://vertabelo.com)
--- Last modification date: 2018-06-26 04:48:36.958
+-- Last modification date: 2018-06-29 03:53:37.747
 
 -- tables
 -- Table: Cefalometria
@@ -67,6 +67,7 @@ CREATE TABLE DetalleIngresos (
     id_ingresos int NOT NULL AUTO_INCREMENT,
     ingresos_productos_id_ingresoP int NOT NULL,
     Tratamiento_paciente_id_tratamiento int NOT NULL,
+    detalleconsulta_id_detalleconsulta int NOT NULL,
     CONSTRAINT DetalleIngresos_pk PRIMARY KEY (id_ingresos)
 ) COMMENT 'aqui se registran los ingresos que tiene la clinica en consultas y venta de productos';
 
@@ -98,7 +99,7 @@ CREATE TABLE Equipo (
 -- Table: HistorialPaciente
 CREATE TABLE HistorialPaciente (
     id_historialP int NOT NULL AUTO_INCREMENT,
-    Tratamiento_paciente_id_tratamiento int NOT NULL,
+    detalleconsulta_id_detalleconsulta int NOT NULL,
     CONSTRAINT HistorialPaciente_pk PRIMARY KEY (id_historialP)
 ) COMMENT 'se alamcena el historial de los pacientes';
 
@@ -236,6 +237,8 @@ CREATE TABLE detalleconsulta (
     rellenodiente_id_diente int NOT NULL,
     Consulta_id_consulta int NOT NULL,
     fecha date NULL,
+    Tratamiento_reallizado varchar(200) NULL,
+    Abono double(9,2) NULL,
     CONSTRAINT detalleconsulta_pk PRIMARY KEY (id_detalleconsulta)
 ) COMMENT 'relaciones con las extracciones y rellenos de los dientes';
 
@@ -252,7 +255,7 @@ CREATE TABLE extracciondiente (
     id_extraccion int NOT NULL AUTO_INCREMENT,
     extraccion bool NULL,
     verificar_ext bool NULL,
-    Copy_of_extracciondiente_id_diente int NOT NULL,
+    diente_id_diente int NOT NULL,
     CONSTRAINT extracciondiente_pk PRIMARY KEY (id_extraccion)
 ) COMMENT 'extracciones de dientes';
 
@@ -324,7 +327,7 @@ CREATE TABLE rellenodiente (
     derecha bool NULL,
     izquierda bool NULL,
     centro bool NULL,
-    Copy_of_extracciondiente_id_diente int NOT NULL,
+    diente_id_diente int NOT NULL,
     CONSTRAINT rellenodiente_pk PRIMARY KEY (id_relleno)
 ) COMMENT 'rellenos de dientes';
 
@@ -369,13 +372,17 @@ ALTER TABLE DetalleGastos ADD CONSTRAINT DetalleGastos_pagoReparacion FOREIGN KE
 ALTER TABLE DetalleIngresos ADD CONSTRAINT DetalleIngresos_Tratamiento_paciente FOREIGN KEY DetalleIngresos_Tratamiento_paciente (Tratamiento_paciente_id_tratamiento)
     REFERENCES Tratamiento_paciente (id_tratamiento);
 
+-- Reference: DetalleIngresos_detalleconsulta (table: DetalleIngresos)
+ALTER TABLE DetalleIngresos ADD CONSTRAINT DetalleIngresos_detalleconsulta FOREIGN KEY DetalleIngresos_detalleconsulta (detalleconsulta_id_detalleconsulta)
+    REFERENCES detalleconsulta (id_detalleconsulta);
+
 -- Reference: DetalleIngresos_ingresos_productos (table: DetalleIngresos)
 ALTER TABLE DetalleIngresos ADD CONSTRAINT DetalleIngresos_ingresos_productos FOREIGN KEY DetalleIngresos_ingresos_productos (ingresos_productos_id_ingresoP)
     REFERENCES ingresos_productos (id_ingresoP);
 
--- Reference: HistorialPaciente_Tratamiento_paciente (table: HistorialPaciente)
-ALTER TABLE HistorialPaciente ADD CONSTRAINT HistorialPaciente_Tratamiento_paciente FOREIGN KEY HistorialPaciente_Tratamiento_paciente (Tratamiento_paciente_id_tratamiento)
-    REFERENCES Tratamiento_paciente (id_tratamiento);
+-- Reference: HistorialPaciente_detalleconsulta (table: HistorialPaciente)
+ALTER TABLE HistorialPaciente ADD CONSTRAINT HistorialPaciente_detalleconsulta FOREIGN KEY HistorialPaciente_detalleconsulta (detalleconsulta_id_detalleconsulta)
+    REFERENCES detalleconsulta (id_detalleconsulta);
 
 -- Reference: PacienteN_TipoPaciente (table: PacienteN)
 ALTER TABLE PacienteN ADD CONSTRAINT PacienteN_TipoPaciente FOREIGN KEY PacienteN_TipoPaciente (TipoPaciente_id_tipoPaciente)
@@ -421,8 +428,8 @@ ALTER TABLE detalleconsulta ADD CONSTRAINT detalleconsulta_extracciondiente FORE
 ALTER TABLE detalleconsulta ADD CONSTRAINT detalleconsulta_rellenodiente FOREIGN KEY detalleconsulta_rellenodiente (rellenodiente_id_diente)
     REFERENCES rellenodiente (id_relleno);
 
--- Reference: extracciondiente_Copy_of_extracciondiente (table: extracciondiente)
-ALTER TABLE extracciondiente ADD CONSTRAINT extracciondiente_Copy_of_extracciondiente FOREIGN KEY extracciondiente_Copy_of_extracciondiente (Copy_of_extracciondiente_id_diente)
+-- Reference: extracciondiente_diente (table: extracciondiente)
+ALTER TABLE extracciondiente ADD CONSTRAINT extracciondiente_diente FOREIGN KEY extracciondiente_diente (diente_id_diente)
     REFERENCES diente (id_diente);
 
 -- Reference: pagoEquipo_Equipo (table: pagoEquipo)
@@ -441,8 +448,8 @@ ALTER TABLE plan_trata_ortodon ADD CONSTRAINT plan_trata_ortodon_Cefalometria FO
 ALTER TABLE plan_trata_ortodon ADD CONSTRAINT plan_trata_ortodon_Consulta FOREIGN KEY plan_trata_ortodon_Consulta (Consulta_id_consulta)
     REFERENCES Consulta (id_consulta);
 
--- Reference: rellenodiente_Copy_of_extracciondiente (table: rellenodiente)
-ALTER TABLE rellenodiente ADD CONSTRAINT rellenodiente_Copy_of_extracciondiente FOREIGN KEY rellenodiente_Copy_of_extracciondiente (Copy_of_extracciondiente_id_diente)
+-- Reference: rellenodiente_diente (table: rellenodiente)
+ALTER TABLE rellenodiente ADD CONSTRAINT rellenodiente_diente FOREIGN KEY rellenodiente_diente (diente_id_diente)
     REFERENCES diente (id_diente);
 
 -- End of file.
