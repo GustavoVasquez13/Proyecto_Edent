@@ -991,7 +991,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(btnbuscaredicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 530, -1, 90));
         getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1101, 87, 57, 18));
-        getContentPane().add(lbidplan, new org.netbeans.lib.awtextra.AbsoluteConstraints(940, 50, 57, 18));
+        getContentPane().add(lbidplan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 90, 57, 18));
 
         btneditar.setForeground(new java.awt.Color(0, 0, 204));
         btneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
@@ -1642,21 +1642,9 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     }//GEN-LAST:event_txtrocabadoKeyPressed
 
     private void btndientesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btndientesActionPerformed
-//        if(this.jfecha.getDate()== null){
-//            JOptionPane.showMessageDialog(null, "Debe ingresar la fecha para continuar");
-//        }else{
-//            String dia = Integer.toString(jfecha.getCalendar().get(Calendar.DAY_OF_MONTH));
-//            String mes = Integer.toString(jfecha.getCalendar().get(Calendar.MONTH) + 1);
-//            String year = Integer.toString(jfecha.getCalendar().get(Calendar.YEAR));
-//            String fechaA = (year + "-" + mes+ "-" + dia);
-//            String date = fechaA;
-//            frm_indientes fr=new frm_indientes();
-//            Dpanel.add(fr);
-//            fr.show();
-//            //    frm_indientes.lbid.setText(lbid.getText());
-//            //     frm_indientes.lbnombre.setText(lbnombre.getText());
-//            //      frm_indientes.lbfecha.setText(date);
-//        }
+         frm_indientes formExGral = new frm_indientes();
+        Dpanel.add(formExGral);
+        formExGral.show();
 
     }//GEN-LAST:event_btndientesActionPerformed
 
