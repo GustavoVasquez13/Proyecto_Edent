@@ -236,6 +236,9 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         btneditar = new javax.swing.JButton();
         ayuda = new javax.swing.JButton();
         btndientes = new javax.swing.JButton();
+        btnbuscaredicion1 = new javax.swing.JButton();
+        btneditar1 = new javax.swing.JButton();
+        btnguardar1 = new javax.swing.JButton();
 
         setBackground(new java.awt.Color(0, 0, 0));
         setClosable(true);
@@ -250,33 +253,33 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1170, 116, 10, 110));
+        getContentPane().add(jSeparator1, new org.netbeans.lib.awtextra.AbsoluteConstraints(1140, 110, 10, 110));
 
         jSeparator2.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 116, 1140, -1));
+        getContentPane().add(jSeparator2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 1140, -1));
 
         jSeparator6.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 226, 1140, 10));
+        getContentPane().add(jSeparator6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 220, 1140, 10));
 
         jSeparator11.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 146, 1140, 10));
+        getContentPane().add(jSeparator11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 1140, 10));
 
         jSeparator12.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator12.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 116, -1, 110));
+        getContentPane().add(jSeparator12, new org.netbeans.lib.awtextra.AbsoluteConstraints(960, 110, -1, 110));
 
         jLabel3.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setText("IS-LS");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(570, 126, 40, -1));
+        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 120, 40, -1));
 
         jSeparator13.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 176, 1140, 20));
+        getContentPane().add(jSeparator13, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 170, 1140, 20));
 
         jLabel4.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setText("4");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 156, 40, -1));
+        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 150, 40, -1));
 
         txtEJE.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -288,21 +291,21 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtEJEKeyPressed(evt);
             }
         });
-        getContentPane().add(txtEJE, new org.netbeans.lib.awtextra.AbsoluteConstraints(480, 196, 59, -1));
+        getContentPane().add(txtEJE, new org.netbeans.lib.awtextra.AbsoluteConstraints(450, 190, 59, -1));
 
         jSeparator14.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator14.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 116, 20, 110));
+        getContentPane().add(jSeparator14, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, 20, 110));
 
         jLabel5.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setText("Angulo Articular");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 126, 90, -1));
+        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 120, 90, -1));
 
         jLabel6.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setText("150°");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(64, 156, 40, -1));
+        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 150, 40, -1));
 
         txtanguloA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -314,21 +317,21 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtanguloA1KeyPressed(evt);
             }
         });
-        getContentPane().add(txtanguloA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 196, 59, -1));
+        getContentPane().add(txtanguloA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 190, 59, -1));
 
         jSeparator15.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator15.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 116, 30, 110));
+        getContentPane().add(jSeparator15, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 110, 30, 110));
 
         jLabel7.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setText("Angulo Goniaco Inferior");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 126, 130, -1));
+        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 120, 130, -1));
 
         jLabel9.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel9.setForeground(new java.awt.Color(255, 255, 255));
         jLabel9.setText("75°");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 156, 30, -1));
+        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 150, 30, -1));
 
         txtanguloG1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -340,21 +343,21 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtanguloG1KeyPressed(evt);
             }
         });
-        getContentPane().add(txtanguloG1, new org.netbeans.lib.awtextra.AbsoluteConstraints(160, 196, 59, -1));
+        getContentPane().add(txtanguloG1, new org.netbeans.lib.awtextra.AbsoluteConstraints(130, 190, 59, -1));
 
         jSeparator16.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator16.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 116, 30, 110));
+        getContentPane().add(jSeparator16, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 110, 30, 110));
 
         jLabel18.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel18.setForeground(new java.awt.Color(255, 255, 255));
         jLabel18.setText("IMPA");
-        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 126, 40, -1));
+        getContentPane().add(jLabel18, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 120, 40, -1));
 
         jLabel19.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel19.setForeground(new java.awt.Color(255, 255, 255));
         jLabel19.setText("85-93-97°");
-        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 156, 60, -1));
+        getContentPane().add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 150, 60, -1));
 
         txtIMPA1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -366,27 +369,27 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtIMPA1KeyPressed(evt);
             }
         });
-        getContentPane().add(txtIMPA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 196, 59, -1));
+        getContentPane().add(txtIMPA1, new org.netbeans.lib.awtextra.AbsoluteConstraints(240, 190, 59, -1));
 
         jLabel20.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel20.setForeground(new java.awt.Color(255, 255, 255));
         jLabel20.setText("Porcentaje JARABAK");
-        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(348, 126, 130, -1));
+        getContentPane().add(jLabel20, new org.netbeans.lib.awtextra.AbsoluteConstraints(320, 120, 130, -1));
 
         jLabel21.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel21.setForeground(new java.awt.Color(255, 255, 255));
         jLabel21.setText("EJE FACIAL");
-        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 126, 70, -1));
+        getContentPane().add(jLabel21, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 120, 70, -1));
 
         jLabel22.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel22.setForeground(new java.awt.Color(255, 255, 255));
         jLabel22.setText("56%");
-        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 156, 40, -1));
+        getContentPane().add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(360, 150, 40, -1));
 
         jLabel23.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel23.setForeground(new java.awt.Color(255, 255, 255));
         jLabel23.setText("90");
-        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(490, 156, 30, -1));
+        getContentPane().add(jLabel23, new org.netbeans.lib.awtextra.AbsoluteConstraints(460, 150, 30, -1));
 
         txtJa1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -398,7 +401,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtJa1KeyPressed(evt);
             }
         });
-        getContentPane().add(txtJa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(380, 196, 59, -1));
+        getContentPane().add(txtJa1, new org.netbeans.lib.awtextra.AbsoluteConstraints(350, 190, 59, -1));
 
         txtIS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -410,21 +413,21 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtISKeyPressed(evt);
             }
         });
-        getContentPane().add(txtIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 196, 59, -1));
+        getContentPane().add(txtIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 190, 59, -1));
 
         jLabel24.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel24.setForeground(new java.awt.Color(255, 255, 255));
         jLabel24.setText("II-LS");
-        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 126, 40, -1));
+        getContentPane().add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 120, 40, -1));
 
         jSeparator17.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator17.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 116, 10, 110));
+        getContentPane().add(jSeparator17, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 110, 10, 110));
 
         jLabel25.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel25.setForeground(new java.awt.Color(255, 255, 255));
         jLabel25.setText("0");
-        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(650, 156, 20, -1));
+        getContentPane().add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 150, 20, -1));
 
         txtII.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -436,21 +439,21 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtIIKeyPressed(evt);
             }
         });
-        getContentPane().add(txtII, new org.netbeans.lib.awtextra.AbsoluteConstraints(640, 196, 59, -1));
+        getContentPane().add(txtII, new org.netbeans.lib.awtextra.AbsoluteConstraints(610, 190, 59, -1));
 
         jSeparator18.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator18.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(550, 116, 10, 110));
+        getContentPane().add(jSeparator18, new org.netbeans.lib.awtextra.AbsoluteConstraints(520, 110, 10, 110));
 
         jLabel26.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel26.setForeground(new java.awt.Color(255, 255, 255));
         jLabel26.setText("FHIS");
-        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 126, 40, -1));
+        getContentPane().add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 120, 40, -1));
 
         jLabel27.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel27.setForeground(new java.awt.Color(255, 255, 255));
         jLabel27.setText("110°-115°");
-        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(718, 156, 60, -1));
+        getContentPane().add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(690, 150, 60, -1));
 
         txtFHIS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -462,25 +465,25 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtFHISKeyPressed(evt);
             }
         });
-        getContentPane().add(txtFHIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 196, 59, -1));
+        getContentPane().add(txtFHIS, new org.netbeans.lib.awtextra.AbsoluteConstraints(700, 190, 59, -1));
 
         jSeparator19.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator19.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator19, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 116, 10, 110));
+        getContentPane().add(jSeparator19, new org.netbeans.lib.awtextra.AbsoluteConstraints(600, 110, 10, 110));
 
         jSeparator20.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator20.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 116, 90, 110));
+        getContentPane().add(jSeparator20, new org.netbeans.lib.awtextra.AbsoluteConstraints(220, 110, 90, 110));
 
         jLabel28.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel28.setForeground(new java.awt.Color(255, 255, 255));
         jLabel28.setText("ANB");
-        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 126, 40, -1));
+        getContentPane().add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 120, 40, -1));
 
         jLabel29.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel29.setForeground(new java.awt.Color(255, 255, 255));
         jLabel29.setText("2°");
-        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 156, 30, -1));
+        getContentPane().add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 150, 30, -1));
 
         txtANB82.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -492,43 +495,43 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtANB82KeyPressed(evt);
             }
         });
-        getContentPane().add(txtANB82, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 196, 20, -1));
+        getContentPane().add(txtANB82, new org.netbeans.lib.awtextra.AbsoluteConstraints(780, 190, 20, -1));
 
         jSeparator21.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator21.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator21, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 116, 10, 110));
+        getContentPane().add(jSeparator21, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 110, 10, 110));
 
         jSeparator22.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator22.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator22, new org.netbeans.lib.awtextra.AbsoluteConstraints(710, 116, 10, 110));
+        getContentPane().add(jSeparator22, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 110, 10, 110));
 
         jLabel30.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel30.setForeground(new java.awt.Color(255, 255, 255));
         jLabel30.setText("82°");
-        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 156, 30, -1));
+        getContentPane().add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 150, 30, -1));
 
         jLabel31.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel31.setForeground(new java.awt.Color(255, 255, 255));
         jLabel31.setText("80°");
-        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 156, 30, -1));
+        getContentPane().add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 150, 30, -1));
 
         jLabel32.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel32.setForeground(new java.awt.Color(255, 255, 255));
         jLabel32.setText("PALS");
-        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 126, 40, -1));
+        getContentPane().add(jLabel32, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 120, 40, -1));
 
         jLabel33.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel33.setForeground(new java.awt.Color(255, 255, 255));
         jLabel33.setText("4 mm");
-        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(920, 156, 40, -1));
+        getContentPane().add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 150, 40, -1));
 
         jSeparator24.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator24.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 146, 10, 80));
+        getContentPane().add(jSeparator24, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 140, 10, 80));
 
         jSeparator25.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator25.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator25, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 146, 10, 80));
+        getContentPane().add(jSeparator25, new org.netbeans.lib.awtextra.AbsoluteConstraints(830, 140, 10, 80));
 
         txtPALS.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -540,7 +543,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtPALSKeyPressed(evt);
             }
         });
-        getContentPane().add(txtPALS, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 196, 59, -1));
+        getContentPane().add(txtPALS, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 190, 59, -1));
 
         txtANB80.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -552,7 +555,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtANB80KeyPressed(evt);
             }
         });
-        getContentPane().add(txtANB80, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 196, 20, -1));
+        getContentPane().add(txtANB80, new org.netbeans.lib.awtextra.AbsoluteConstraints(810, 190, 20, -1));
 
         txtANB2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -564,17 +567,17 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtANB2KeyPressed(evt);
             }
         });
-        getContentPane().add(txtANB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 196, 20, -1));
+        getContentPane().add(txtANB2, new org.netbeans.lib.awtextra.AbsoluteConstraints(840, 190, 20, -1));
 
         jLabel78.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel78.setForeground(new java.awt.Color(255, 255, 255));
         jLabel78.setText("PALI");
-        getContentPane().add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 126, 50, -1));
+        getContentPane().add(jLabel78, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 120, 50, -1));
 
         jLabel79.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel79.setForeground(new java.awt.Color(255, 255, 255));
         jLabel79.setText("2 mm");
-        getContentPane().add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 156, 40, 20));
+        getContentPane().add(jLabel79, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 150, 40, 20));
 
         txtPALI.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -586,21 +589,21 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtPALIKeyPressed(evt);
             }
         });
-        getContentPane().add(txtPALI, new org.netbeans.lib.awtextra.AbsoluteConstraints(1010, 196, 59, -1));
+        getContentPane().add(txtPALI, new org.netbeans.lib.awtextra.AbsoluteConstraints(980, 190, 59, -1));
 
         jSeparator23.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator23.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator23, new org.netbeans.lib.awtextra.AbsoluteConstraints(890, 116, 10, 110));
+        getContentPane().add(jSeparator23, new org.netbeans.lib.awtextra.AbsoluteConstraints(860, 110, 10, 110));
 
         jLabel80.setFont(new java.awt.Font("Baskerville Old Face", 0, 11)); // NOI18N
         jLabel80.setForeground(new java.awt.Color(255, 255, 255));
         jLabel80.setText("PTB");
-        getContentPane().add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 126, 40, -1));
+        getContentPane().add(jLabel80, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 120, 40, -1));
 
         jLabel81.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         jLabel81.setForeground(new java.awt.Color(255, 255, 255));
         jLabel81.setText("-3 mm");
-        getContentPane().add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(1090, 156, 40, -1));
+        getContentPane().add(jLabel81, new org.netbeans.lib.awtextra.AbsoluteConstraints(1060, 150, 40, -1));
 
         txtPTB.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -612,47 +615,47 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 txtPTBKeyPressed(evt);
             }
         });
-        getContentPane().add(txtPTB, new org.netbeans.lib.awtextra.AbsoluteConstraints(1100, 196, 59, -1));
+        getContentPane().add(txtPTB, new org.netbeans.lib.awtextra.AbsoluteConstraints(1070, 190, 59, -1));
 
         jSeparator26.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator26.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator26, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 116, 10, 110));
+        getContentPane().add(jSeparator26, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 110, 10, 110));
 
         jSeparator27.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator27.setOrientation(javax.swing.SwingConstants.VERTICAL);
-        getContentPane().add(jSeparator27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1080, 116, 10, 110));
+        getContentPane().add(jSeparator27, new org.netbeans.lib.awtextra.AbsoluteConstraints(1050, 110, 10, 110));
 
         jSeparator28.setBackground(new java.awt.Color(0, 0, 0));
-        getContentPane().add(jSeparator28, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 146, 1140, 10));
+        getContentPane().add(jSeparator28, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 140, 1140, 10));
 
         lblnombre10.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre10.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre10.setText("Curva de Spee: ");
-        getContentPane().add(lblnombre10, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 242, 120, -1));
+        getContentPane().add(lblnombre10, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 240, 120, -1));
 
         chcurvaleve1.setForeground(new java.awt.Color(255, 255, 255));
         chcurvaleve1.setText("Leve");
-        getContentPane().add(chcurvaleve1, new org.netbeans.lib.awtextra.AbsoluteConstraints(470, 242, 60, -1));
+        getContentPane().add(chcurvaleve1, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 240, 60, -1));
 
         chcurvamoderada1.setForeground(new java.awt.Color(255, 255, 255));
         chcurvamoderada1.setText("Moderada");
-        getContentPane().add(chcurvamoderada1, new org.netbeans.lib.awtextra.AbsoluteConstraints(560, 242, 80, -1));
+        getContentPane().add(chcurvamoderada1, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 240, 80, -1));
 
         chcurvasevera.setForeground(new java.awt.Color(255, 255, 255));
         chcurvasevera.setText("Severa");
-        getContentPane().add(chcurvasevera, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 242, 70, -1));
+        getContentPane().add(chcurvasevera, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 240, 70, -1));
 
         lblnombre6.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre6.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre6.setText("DSD:");
-        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(750, 242, 40, -1));
+        getContentPane().add(lblnombre6, new org.netbeans.lib.awtextra.AbsoluteConstraints(720, 240, 40, -1));
 
         txtDSD.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtDSDKeyPressed(evt);
             }
         });
-        getContentPane().add(txtDSD, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 242, 60, -1));
+        getContentPane().add(txtDSD, new org.netbeans.lib.awtextra.AbsoluteConstraints(770, 240, 60, -1));
 
         lblnombre9.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre9.setForeground(new java.awt.Color(255, 255, 255));
@@ -662,26 +665,26 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         lblnombre8.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre8.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre8.setText("Clasificación Maxilares:");
-        getContentPane().add(lblnombre8, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 268, -1, -1));
+        getContentPane().add(lblnombre8, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 270, -1, -1));
 
         txtmaxilares.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtmaxilaresKeyPressed(evt);
             }
         });
-        getContentPane().add(txtmaxilares, new org.netbeans.lib.awtextra.AbsoluteConstraints(190, 270, 380, -1));
+        getContentPane().add(txtmaxilares, new org.netbeans.lib.awtextra.AbsoluteConstraints(170, 270, 380, -1));
 
         lblnombre7.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         lblnombre7.setForeground(new java.awt.Color(255, 255, 255));
         lblnombre7.setText("Entorno Dental:");
-        getContentPane().add(lblnombre7, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 268, -1, -1));
+        getContentPane().add(lblnombre7, new org.netbeans.lib.awtextra.AbsoluteConstraints(620, 270, -1, -1));
 
         txtEntornoD.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyPressed(java.awt.event.KeyEvent evt) {
                 txtEntornoDKeyPressed(evt);
             }
         });
-        getContentPane().add(txtEntornoD, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 270, 380, -1));
+        getContentPane().add(txtEntornoD, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 270, 380, -1));
 
         lblnombre11.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
         lblnombre11.setForeground(new java.awt.Color(255, 255, 255));
@@ -938,7 +941,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 btnguardarActionPerformed(evt);
             }
         });
-        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 530, -1, 90));
+        getContentPane().add(btnguardar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1250, 200, 90, 90));
 
         btnsalir.setForeground(new java.awt.Color(0, 0, 204));
         btnsalir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/cancelar.png"))); // NOI18N
@@ -977,7 +980,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
         jSeparator8.setForeground(new java.awt.Color(0, 0, 0));
         jSeparator8.setToolTipText("");
-        getContentPane().add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 1200, -1));
+        getContentPane().add(jSeparator8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 300, 1350, 10));
 
         btnbuscaredicion.setForeground(new java.awt.Color(0, 0, 204));
         btnbuscaredicion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar edicion.png"))); // NOI18N
@@ -989,7 +992,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 btnbuscaredicionActionPerformed(evt);
             }
         });
-        getContentPane().add(btnbuscaredicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 530, -1, 90));
+        getContentPane().add(btnbuscaredicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 100, -1, 90));
         getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1101, 87, 57, 18));
         getContentPane().add(lbidplan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 90, 57, 18));
 
@@ -1003,7 +1006,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 btneditarActionPerformed(evt);
             }
         });
-        getContentPane().add(btneditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 530, -1, 90));
+        getContentPane().add(btneditar, new org.netbeans.lib.awtextra.AbsoluteConstraints(1150, 200, 90, 90));
 
         ayuda.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/help (1).png"))); // NOI18N
         ayuda.addActionListener(new java.awt.event.ActionListener() {
@@ -1024,6 +1027,42 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
             }
         });
         getContentPane().add(btndientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 10, -1, -1));
+
+        btnbuscaredicion1.setForeground(new java.awt.Color(0, 0, 204));
+        btnbuscaredicion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar edicion.png"))); // NOI18N
+        btnbuscaredicion1.setText("Buscar paciente para editar");
+        btnbuscaredicion1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnbuscaredicion1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnbuscaredicion1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnbuscaredicion1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnbuscaredicion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(680, 530, -1, 90));
+
+        btneditar1.setForeground(new java.awt.Color(0, 0, 204));
+        btneditar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
+        btneditar1.setText("Editar");
+        btneditar1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btneditar1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btneditar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btneditar1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btneditar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(870, 530, -1, 90));
+
+        btnguardar1.setForeground(new java.awt.Color(0, 0, 204));
+        btnguardar1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/guardar.png"))); // NOI18N
+        btnguardar1.setText("Guardar");
+        btnguardar1.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
+        btnguardar1.setVerticalTextPosition(javax.swing.SwingConstants.BOTTOM);
+        btnguardar1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnguardar1ActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnguardar1, new org.netbeans.lib.awtextra.AbsoluteConstraints(990, 530, -1, 90));
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -1648,13 +1687,28 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
     }//GEN-LAST:event_btndientesActionPerformed
 
+    private void btnbuscaredicion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscaredicion1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnbuscaredicion1ActionPerformed
+
+    private void btneditar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btneditar1ActionPerformed
+
+    private void btnguardar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardar1ActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_btnguardar1ActionPerformed
+
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton ayuda;
     public static javax.swing.JButton btnbuscaredicion;
+    public static javax.swing.JButton btnbuscaredicion1;
     public static javax.swing.JButton btndientes;
     public static javax.swing.JButton btneditar;
+    public static javax.swing.JButton btneditar1;
     public static javax.swing.JButton btnguardar;
+    public static javax.swing.JButton btnguardar1;
     public static javax.swing.JButton btnpaciente;
     private javax.swing.JButton btnsalir;
     private javax.swing.JCheckBox chcefalometrica;
