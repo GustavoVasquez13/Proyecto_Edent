@@ -249,7 +249,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         jLabel82.setFont(new java.awt.Font("Baskerville Old Face", 1, 24)); // NOI18N
         jLabel82.setForeground(new java.awt.Color(255, 255, 255));
         jLabel82.setText("Expediente Ortodoncia");
-        getContentPane().add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 0, 280, 30));
+        getContentPane().add(jLabel82, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 0, 280, 30));
 
         jSeparator1.setBackground(new java.awt.Color(0, 0, 0));
         jSeparator1.setOrientation(javax.swing.SwingConstants.VERTICAL);
@@ -969,9 +969,18 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         getContentPane().add(lblnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(294, 75, 135, -1));
         getContentPane().add(lblapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(1021, 75, 135, -1));
         getContentPane().add(lblid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1174, 81, -1, -1));
-        getContentPane().add(lbnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(829, 87, 130, 18));
-        getContentPane().add(lbapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(965, 87, 130, 18));
-        getContentPane().add(lbidcefa, new org.netbeans.lib.awtextra.AbsoluteConstraints(1040, 50, 57, 18));
+
+        lbnombre.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
+        lbnombre.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(lbnombre, new org.netbeans.lib.awtextra.AbsoluteConstraints(590, 80, 130, 18));
+
+        lbapellido.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
+        lbapellido.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(lbapellido, new org.netbeans.lib.awtextra.AbsoluteConstraints(730, 80, 130, 18));
+
+        lbidcefa.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
+        lbidcefa.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(lbidcefa, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 40, 57, 18));
 
         jLabel2.setFont(new java.awt.Font("Baskerville Old Face", 1, 14)); // NOI18N
         jLabel2.setForeground(new java.awt.Color(255, 255, 255));
@@ -994,7 +1003,10 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         });
         getContentPane().add(btnbuscaredicion, new org.netbeans.lib.awtextra.AbsoluteConstraints(1160, 100, -1, 90));
         getContentPane().add(lbid, new org.netbeans.lib.awtextra.AbsoluteConstraints(1101, 87, 57, 18));
-        getContentPane().add(lbidplan, new org.netbeans.lib.awtextra.AbsoluteConstraints(1030, 90, 57, 18));
+
+        lbidplan.setFont(new java.awt.Font("Baskerville Old Face", 1, 11)); // NOI18N
+        lbidplan.setForeground(new java.awt.Color(255, 255, 255));
+        getContentPane().add(lbidplan, new org.netbeans.lib.awtextra.AbsoluteConstraints(790, 80, 57, 18));
 
         btneditar.setForeground(new java.awt.Color(0, 0, 204));
         btneditar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/editar.png"))); // NOI18N
@@ -1026,7 +1038,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                 btndientesActionPerformed(evt);
             }
         });
-        getContentPane().add(btndientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(910, 10, -1, -1));
+        getContentPane().add(btndientes, new org.netbeans.lib.awtextra.AbsoluteConstraints(880, 10, -1, -1));
 
         btnbuscaredicion1.setForeground(new java.awt.Color(0, 0, 204));
         btnbuscaredicion1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/iconos/buscar edicion.png"))); // NOI18N
@@ -1190,75 +1202,75 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
                     dsd,clasim,entornod,Consulta_id_consulta);
         
         
-        String bandas = this.txtbandas.getText();
-        String tubos = this.txttubos.getText();
-        String otros = this.txtotros.getText();
-        String aparato = this.txtAparato.getText();
-        String exodoncia = this.txtexodoncia.getText();
-        String brackets = this.txtBrakets.getText();
-        String retenciones = this.txtRetenciones.getText();
-        String arcos = this.txtsecuencia.getText();
-        String md = this.txtMD.getText();
+//        String bandas = this.txtbandas.getText();
+//        String tubos = this.txttubos.getText();
+//        String otros = this.txtotros.getText();
+//        String aparato = this.txtAparato.getText();
+//        String exodoncia = this.txtexodoncia.getText();
+//        String brackets = this.txtBrakets.getText();
+//        String retenciones = this.txtRetenciones.getText();
+//        String arcos = this.txtsecuencia.getText();
+//        String md = this.txtMD.getText();
         //validacion chfaciales
-        int seleccion3 = 0;
-        if(this.chfaciales.isSelected()== true ) {
-             seleccion3 = 1;
-            }else{
-            seleccion3 = 0;
-        }
-        int f_faciales= seleccion3;
-        // validaciones chintraorales
-        int seleccion4 = 0;
-        if(this.chintraorales.isSelected()== true ) {
-             seleccion4 = 1;
-            }else{
-            seleccion4 = 0;
-        }
-        int f_intraorales = seleccion4;
-        //validacion chmodelo
-        int seleccion5 = 0;
-        if(this.chmodelo.isSelected()== true ) {
-             seleccion5 = 1;
-            }else{
-            seleccion5 = 0;
-        }
-        int modelo_mx = seleccion5;
-        //validacion chmodeloMD
-        int seleccion6 = 0;
-        if(this.chmodeloMD.isSelected()== true ) {
-             seleccion6 = 1;
-            }else{
-            seleccion6 = 0;
-        }
-        int modelo_md = seleccion6;
-        //validacion chpanoramica
-        int seleccion7 = 0;
-        if(this.chpanoramica.isSelected()== true ) {
-             seleccion7 = 1;
-            }else{
-            seleccion7 = 0;
-        }
-        int rx_panoramica = seleccion7;
-        //validacion chcefalometrica
-        int seleccion8 = 0;
-        if(this.chcefalometrica.isSelected()== true ) {
-             seleccion8 = 1;
-            }else{
-            seleccion8 = 0;
-        }
-        int rx_cefalometria = seleccion8;
-        //validacion chincicivos
-         int seleccion9 = 0;
-        if(this.chincicivos.isSelected()== true ) {
-             seleccion9 = 1;
-            }else{
-            seleccion9 = 0;
-        }
-        int rx_incicivos = seleccion9;
-        String rx_rocabado = this.txtrocabado.getText();
-        
-        IsertarDatosBD2 insertar = new IsertarDatosBD2();
-        insertar.insertartrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, f_faciales, f_intraorales, modelo_mx, modelo_md, rx_panoramica, rx_cefalometria, rx_incicivos, rx_rocabado, Consulta_id_consulta);
+//        int seleccion3 = 0;
+//        if(this.chfaciales.isSelected()== true ) {
+//             seleccion3 = 1;
+//            }else{
+//            seleccion3 = 0;
+//        }
+//        int f_faciales= seleccion3;
+//        // validaciones chintraorales
+//        int seleccion4 = 0;
+//        if(this.chintraorales.isSelected()== true ) {
+//             seleccion4 = 1;
+//            }else{
+//            seleccion4 = 0;
+//        }
+//        int f_intraorales = seleccion4;
+//        //validacion chmodelo
+//        int seleccion5 = 0;
+//        if(this.chmodelo.isSelected()== true ) {
+//             seleccion5 = 1;
+//            }else{
+//            seleccion5 = 0;
+//        }
+//        int modelo_mx = seleccion5;
+//        //validacion chmodeloMD
+//        int seleccion6 = 0;
+//        if(this.chmodeloMD.isSelected()== true ) {
+//             seleccion6 = 1;
+//            }else{
+//            seleccion6 = 0;
+//        }
+//        int modelo_md = seleccion6;
+//        //validacion chpanoramica
+//        int seleccion7 = 0;
+//        if(this.chpanoramica.isSelected()== true ) {
+//             seleccion7 = 1;
+//            }else{
+//            seleccion7 = 0;
+//        }
+//        int rx_panoramica = seleccion7;
+//        //validacion chcefalometrica
+//        int seleccion8 = 0;
+//        if(this.chcefalometrica.isSelected()== true ) {
+//             seleccion8 = 1;
+//            }else{
+//            seleccion8 = 0;
+//        }
+//        int rx_cefalometria = seleccion8;
+//        //validacion chincicivos
+//         int seleccion9 = 0;
+//        if(this.chincicivos.isSelected()== true ) {
+//             seleccion9 = 1;
+//            }else{
+//            seleccion9 = 0;
+//        }
+//        int rx_incicivos = seleccion9;
+//        String rx_rocabado = this.txtrocabado.getText();
+//        
+//        IsertarDatosBD2 insertar = new IsertarDatosBD2();
+//        insertar.insertartrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, f_faciales, f_intraorales, modelo_mx, modelo_md, rx_panoramica, rx_cefalometria, rx_incicivos, rx_rocabado, Consulta_id_consulta);
         }
         limpiarTXT();
          //se habilitan y desabilitan los campos necesarios para que el usuario continue haciendo uso del formulario
@@ -1696,7 +1708,77 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     }//GEN-LAST:event_btneditar1ActionPerformed
 
     private void btnguardar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardar1ActionPerformed
-        // TODO add your handling code here:
+        String bandas = this.txtbandas.getText();
+        String tubos = this.txttubos.getText();
+        String otros = this.txtotros.getText();
+        String aparato = this.txtAparato.getText();
+        String exodoncia = this.txtexodoncia.getText();
+        String brackets = this.txtBrakets.getText();
+        String retenciones = this.txtRetenciones.getText();
+        String arcos = this.txtsecuencia.getText();
+        String md = this.txtMD.getText();
+        String Consulta_id_consulta = this.lbidcefa.getText();
+                //validacion chfaciales
+        int seleccion3 = 0;
+        if(this.chfaciales.isSelected()== true ) {
+             seleccion3 = 1;
+            }else{
+            seleccion3 = 0;
+        }
+        int f_faciales= seleccion3;
+        // validaciones chintraorales
+        int seleccion4 = 0;
+        if(this.chintraorales.isSelected()== true ) {
+             seleccion4 = 1;
+            }else{
+            seleccion4 = 0;
+        }
+        int f_intraorales = seleccion4;
+        //validacion chmodelo
+        int seleccion5 = 0;
+        if(this.chmodelo.isSelected()== true ) {
+             seleccion5 = 1;
+            }else{
+            seleccion5 = 0;
+        }
+        int modelo_mx = seleccion5;
+        //validacion chmodeloMD
+        int seleccion6 = 0;
+        if(this.chmodeloMD.isSelected()== true ) {
+             seleccion6 = 1;
+            }else{
+            seleccion6 = 0;
+        }
+        int modelo_md = seleccion6;
+        //validacion chpanoramica
+        int seleccion7 = 0;
+        if(this.chpanoramica.isSelected()== true ) {
+             seleccion7 = 1;
+            }else{
+            seleccion7 = 0;
+        }
+        int rx_panoramica = seleccion7;
+        //validacion chcefalometrica
+        int seleccion8 = 0;
+        if(this.chcefalometrica.isSelected()== true ) {
+             seleccion8 = 1;
+            }else{
+            seleccion8 = 0;
+        }
+        int rx_cefalometria = seleccion8;
+        //validacion chincicivos
+         int seleccion9 = 0;
+        if(this.chincicivos.isSelected()== true ) {
+             seleccion9 = 1;
+            }else{
+            seleccion9 = 0;
+        }
+        int rx_incicivos = seleccion9;
+        String rx_rocabado = this.txtrocabado.getText();
+        
+        IsertarDatosBD2 insertar = new IsertarDatosBD2();
+        insertar.insertartrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, f_faciales, f_intraorales, modelo_mx, modelo_md, rx_panoramica, rx_cefalometria, rx_incicivos, rx_rocabado, Consulta_id_consulta);
+        
     }//GEN-LAST:event_btnguardar1ActionPerformed
 
 
