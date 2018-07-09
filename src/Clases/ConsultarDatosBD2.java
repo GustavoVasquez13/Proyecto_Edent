@@ -369,7 +369,6 @@ public class ConsultarDatosBD2 {
                 registros[1] = rs.getString("id_ortodoncia");
                 registros[2] = rs.getString("nombre_pacte");
                 registros[3] = rs.getString("apellido_pacte");
-
                 registros[4] = rs.getString("articular");
                 registros[5] = rs.getString("goniaco");
                 registros[6] = rs.getString("impa");
@@ -384,7 +383,6 @@ public class ConsultarDatosBD2 {
                 registros[15] = rs.getString("pals");
                 registros[16] = rs.getString("pali");
                 registros[17] = rs.getString("ptb");
-           
                 registros[18] = rs.getString("dsd");
                 registros[19] = rs.getString("clasim");
                 registros[20] = rs.getString("entornod");
