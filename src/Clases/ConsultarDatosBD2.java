@@ -497,7 +497,7 @@ public class ConsultarDatosBD2 {
         String[] titulo
                 = {"ID Consulta","ID ortodoncia","Nombre","Apellido","bandas","tubos","otros","aparato","exodoncia","brakets"
                   ,"retenciones", "arcos", "md"};
-        String[] registros = new String[40];
+        String[] registros = new String[13];
         totalRegistros = 0;
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
@@ -511,43 +511,18 @@ public class ConsultarDatosBD2 {
                 registros[1] = rs.getString("id_ortodoncia");
                 registros[2] = rs.getString("nombre_pacte");
                 registros[3] = rs.getString("apellido_pacte");
-//              registros[4] = rs.getString("apellido_pacte");
-                registros[4] = rs.getString("articular");
-                registros[5] = rs.getString("goniaco");
-                registros[6] = rs.getString("impa");
-                registros[7] = rs.getString("jarabak");
-                registros[8] = rs.getString("facial");
-                registros[9] = rs.getString("cefalometria.is");
-                registros[10] = rs.getString("ii");
-                registros[11] = rs.getString("fhis");
-                registros[12] = rs.getString("anb82");
-                registros[13] = rs.getString("anb80");
-                registros[14] = rs.getString("anb2");
-                registros[15] = rs.getString("pals");
-                registros[16] = rs.getString("pali");
-                registros[17] = rs.getString("ptb");
-                registros[18] = rs.getString("speeleve");
-                registros[19] = rs.getString("speemoderada");
-                registros[20] = rs.getString("speesvera");
-                registros[21] = rs.getString("dsd");
-                registros[22] = rs.getString("clasim");
-                registros[23] = rs.getString("entornod");
-                registros[24] = rs.getString("bandas");
-                registros[25] = rs.getString("tubos");
-                registros[26] = rs.getString("otros");
-                registros[27] = rs.getString("aparato");
-                registros[28] = rs.getString("exodoncia");
-                registros[29] = rs.getString("brackets");
-                registros[30] = rs.getString("retenciones");
-                registros[31] = rs.getString("arcos");
-                registros[32] = rs.getString("md");
-                registros[33] = rs.getString("f_faciales");
-                registros[34] = rs.getString("f_intraorales");
-                registros[35] = rs.getString("modelo_mx");
-                registros[36] = rs.getString("rx_panoramica");
-                registros[37] = rs.getString("rx_cefalometrica");
-                registros[38] = rs.getString("rx_incicivos");
-                registros[39] = rs.getString("rx_rocabado");
+                registros[4] = rs.getString("bandas");
+                registros[5] = rs.getString("tubos");
+                registros[6] = rs.getString("otros");
+                registros[7] = rs.getString("aparato");
+                registros[8] = rs.getString("exodoncia");
+                registros[9] = rs.getString("brackets");
+                registros[10] = rs.getString("retenciones");
+                registros[11] = rs.getString("arcos");
+                registros[12] = rs.getString("md");
+                
+            
+                
 //                registros[41] = rs.getString("nombre_pacte");
                 
                 
