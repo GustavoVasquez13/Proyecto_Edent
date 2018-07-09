@@ -1345,22 +1345,8 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
           int code = Integer.valueOf(this.lbidcefa.getText());
           ActualizarDatosBD actpaciente = new ActualizarDatosBD();
           actpaciente.ActualizarCefalometria(articular, goniaco, impa, jarabak, facial, is, ii, fhis, anb82, anb80, anb2, pals, pali, ptb, dsd, clasim, entornod, code);
-         
-          String bandas = this.txtbandas.getText().toUpperCase();
-          String tubos = this.txttubos.getText().toUpperCase();
-          String otros = this.txtotros.getText().toUpperCase();
-          String aparato = this.txtAparato.getText().toUpperCase();
-          String exodoncia = this.txtexodoncia.getText().toUpperCase();
-          String brackets = this.txtBrakets.getText().toUpperCase();
-          String retenciones = this.txtRetenciones.getText().toUpperCase();
-          String arcos = this.txtsecuencia.getText().toUpperCase();
-          String md = this.txtMD.getText().toUpperCase();
-          String rocabado = this.txtrocabado.getText().toUpperCase();
-          int code1 = Integer.valueOf(this.lbidplan.getText());
-          
-          ActualizarDatosBD actpaciente1 = new ActualizarDatosBD();
-          actpaciente1.ActualizarPlanTrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, rocabado, code1);
           limpiarTXT();
+         
             //se habilitan y desabilitan los campos necesarios para que el usuario continue haciendo uso del formulario
           ExpedienteO.txtanguloA1.setEnabled(false);
             ExpedienteO.txtanguloG1.setEnabled(false);
@@ -1379,20 +1365,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
             ExpedienteO.txtDSD.setEnabled(false);
             ExpedienteO.txtmaxilares.setEnabled(false);
             ExpedienteO.txtEntornoD.setEnabled(false);
-            ExpedienteO.txtbandas.setEnabled(false);
-            ExpedienteO.txttubos.setEnabled(false);
-            ExpedienteO.txtotros.setEnabled(false);
-            ExpedienteO.txtAparato.setEnabled(false);
-            ExpedienteO.txtexodoncia.setEnabled(false);
-            ExpedienteO.txtBrakets.setEnabled(false);
-            ExpedienteO.txtRetenciones.setEnabled(false);
-            ExpedienteO.txtsecuencia.setEnabled(false);
-            ExpedienteO.txtMD.setEnabled(false);
-            ExpedienteO.txtrocabado.setEnabled(false);
-            ExpedienteO.btnguardar.setEnabled(false);
-            ExpedienteO.btneditar.setEnabled(false);
-            ExpedienteO.btnbuscaredicion.setEnabled(true);
-            ExpedienteO.btnpaciente.setEnabled(true);
+            
           
     }//GEN-LAST:event_btneditarActionPerformed
 
@@ -1706,7 +1679,35 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     }//GEN-LAST:event_btnbuscaredicion1ActionPerformed
 
     private void btneditar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditar1ActionPerformed
-        // TODO add your handling code here:
+          String bandas = this.txtbandas.getText().toUpperCase();
+          String tubos = this.txttubos.getText().toUpperCase();
+          String otros = this.txtotros.getText().toUpperCase();
+          String aparato = this.txtAparato.getText().toUpperCase();
+          String exodoncia = this.txtexodoncia.getText().toUpperCase();
+          String brackets = this.txtBrakets.getText().toUpperCase();
+          String retenciones = this.txtRetenciones.getText().toUpperCase();
+          String arcos = this.txtsecuencia.getText().toUpperCase();
+          String md = this.txtMD.getText().toUpperCase();
+          String rocabado = this.txtrocabado.getText().toUpperCase();
+          int code1 = Integer.valueOf(this.lbidplan.getText());
+          
+          ActualizarDatosBD actpaciente1 = new ActualizarDatosBD();
+          actpaciente1.ActualizarPlanTrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, rocabado, code1);
+          limpiarTXT();
+            ExpedienteO.txtbandas.setEnabled(false);
+            ExpedienteO.txttubos.setEnabled(false);
+            ExpedienteO.txtotros.setEnabled(false);
+            ExpedienteO.txtAparato.setEnabled(false);
+            ExpedienteO.txtexodoncia.setEnabled(false);
+            ExpedienteO.txtBrakets.setEnabled(false);
+            ExpedienteO.txtRetenciones.setEnabled(false);
+            ExpedienteO.txtsecuencia.setEnabled(false);
+            ExpedienteO.txtMD.setEnabled(false);
+            ExpedienteO.txtrocabado.setEnabled(false);
+            ExpedienteO.btnguardar.setEnabled(false);
+            ExpedienteO.btneditar.setEnabled(false);
+            ExpedienteO.btnbuscaredicion.setEnabled(true);
+            ExpedienteO.btnpaciente.setEnabled(true);
     }//GEN-LAST:event_btneditar1ActionPerformed
 
     private void btnguardar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardar1ActionPerformed

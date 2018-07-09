@@ -215,9 +215,9 @@ private void mostrarpacientes() {
             ExpedienteO.txtsecuencia.setEnabled(true);
             ExpedienteO.txtMD.setEnabled(true);
             ExpedienteO.txtrocabado.setEnabled(true);
-            ExpedienteO.btnbuscaredicion.setEnabled(false);
-            ExpedienteO.btnguardar.setEnabled(false);
-            ExpedienteO.btneditar.setEnabled(true);
+            ExpedienteO.btnbuscaredicion1.setEnabled(false);
+            ExpedienteO.btnguardar1.setEnabled(false);
+            ExpedienteO.btneditar1.setEnabled(true);
             ExpedienteO.btnpaciente.setEnabled(false);
         
         }
