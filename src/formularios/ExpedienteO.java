@@ -1700,7 +1700,9 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
     }//GEN-LAST:event_btndientesActionPerformed
 
     private void btnbuscaredicion1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnbuscaredicion1ActionPerformed
-        // TODO add your handling code here:
+       frmEditarOrtodoncia1 formExGral = new frmEditarOrtodoncia1();
+       Dpanel.add(formExGral);
+       formExGral.show();
     }//GEN-LAST:event_btnbuscaredicion1ActionPerformed
 
     private void btneditar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btneditar1ActionPerformed
