@@ -57,6 +57,8 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
             ExpedienteO.txtrocabado.setEnabled(false);
             ExpedienteO.btnguardar.setEnabled(false);
             ExpedienteO.btneditar.setEnabled(false);
+            ExpedienteO.btnguardar1.setEnabled(false);
+            ExpedienteO.btneditar1.setEnabled(false);
     }
     public void limpiarTXT(){
         txtanguloA1.setText("");
@@ -78,6 +80,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         txtmaxilares.setText("");
         txtEntornoD.setText("");
         txttubos.setText("");
+        txtbandas.setText("");
         txtotros.setText("");
         txtAparato.setText("");
         txtexodoncia.setText("");
@@ -1153,8 +1156,9 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
 
     private void btnguardarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardarActionPerformed
         //validaciones
-        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbidcefa.getText().length()==0){
-            JOptionPane.showMessageDialog(null, "Debe elegir un paciente");
+        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbidcefa.getText().length()==0
+                || this.txtanguloA1.getText().length()==0){
+            JOptionPane.showMessageDialog(null, "Debe elegir un paciente o completar los datos para su inserción");
         }else{
             
         String articular=this.txtanguloA1.getText();
@@ -1365,6 +1369,10 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
             ExpedienteO.txtDSD.setEnabled(false);
             ExpedienteO.txtmaxilares.setEnabled(false);
             ExpedienteO.txtEntornoD.setEnabled(false);
+             ExpedienteO.btnguardar.setEnabled(false);
+            ExpedienteO.btneditar.setEnabled(false);
+            ExpedienteO.btnbuscaredicion.setEnabled(true);
+            ExpedienteO.btnpaciente.setEnabled(true);
             
           
     }//GEN-LAST:event_btneditarActionPerformed
@@ -1693,7 +1701,7 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
           
           ActualizarDatosBD actpaciente1 = new ActualizarDatosBD();
           actpaciente1.ActualizarPlanTrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, rocabado, code1);
-          limpiarTXT();
+         
             ExpedienteO.txtbandas.setEnabled(false);
             ExpedienteO.txttubos.setEnabled(false);
             ExpedienteO.txtotros.setEnabled(false);
@@ -1704,13 +1712,19 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
             ExpedienteO.txtsecuencia.setEnabled(false);
             ExpedienteO.txtMD.setEnabled(false);
             ExpedienteO.txtrocabado.setEnabled(false);
-            ExpedienteO.btnguardar.setEnabled(false);
-            ExpedienteO.btneditar.setEnabled(false);
-            ExpedienteO.btnbuscaredicion.setEnabled(true);
+            ExpedienteO.btnguardar1.setEnabled(false);
+            ExpedienteO.btneditar1.setEnabled(false);
+            ExpedienteO.btnbuscaredicion1.setEnabled(true);
             ExpedienteO.btnpaciente.setEnabled(true);
+             limpiarTXT();
     }//GEN-LAST:event_btneditar1ActionPerformed
 
     private void btnguardar1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnguardar1ActionPerformed
+        if (this.lbnombre.getText().length()==0 || this.lbapellido.getText().length()==0|| this.lbidcefa.getText().length()==0
+                || this.txtbandas.getText().length()==0 || this.txttubos.getText().length()==0 || this.txtAparato.getText().length()==0
+                || this.txtBrakets.getText().length()==0){
+            JOptionPane.showMessageDialog(null, "Debe elegir un paciente o completar los datos para su inserción");
+        }else{
         String bandas = this.txtbandas.getText();
         String tubos = this.txttubos.getText();
         String otros = this.txtotros.getText();
@@ -1781,7 +1795,39 @@ IsertarDatosBD2 i=new IsertarDatosBD2();
         
         IsertarDatosBD2 insertar = new IsertarDatosBD2();
         insertar.insertartrata(bandas, tubos, otros, aparato, exodoncia, brackets, retenciones, arcos, md, f_faciales, f_intraorales, modelo_mx, modelo_md, rx_panoramica, rx_cefalometria, rx_incicivos, rx_rocabado, Consulta_id_consulta);
-        
+          ExpedienteO.txtanguloA1.setEnabled(false);
+            ExpedienteO.txtanguloG1.setEnabled(false);
+            ExpedienteO.txtIMPA1.setEnabled(false);
+            ExpedienteO.txtJa1.setEnabled(false);
+            ExpedienteO.txtEJE.setEnabled(false);
+            ExpedienteO.txtIS.setEnabled(false);
+            ExpedienteO.txtII.setEnabled(false);
+            ExpedienteO.txtFHIS.setEnabled(false);
+            ExpedienteO.txtANB82.setEnabled(false);
+            ExpedienteO.txtANB80.setEnabled(false);
+            ExpedienteO.txtANB2.setEnabled(false);
+            ExpedienteO.txtPALS.setEnabled(false);
+            ExpedienteO.txtPALI.setEnabled(false);
+            ExpedienteO.txtPTB.setEnabled(false);
+            ExpedienteO.txtDSD.setEnabled(false);
+            ExpedienteO.txtmaxilares.setEnabled(false);
+            ExpedienteO.txtEntornoD.setEnabled(false);
+            ExpedienteO.txtbandas.setEnabled(false);
+            ExpedienteO.txttubos.setEnabled(false);
+            ExpedienteO.txtotros.setEnabled(false);
+            ExpedienteO.txtAparato.setEnabled(false);
+            ExpedienteO.txtexodoncia.setEnabled(false);
+            ExpedienteO.txtBrakets.setEnabled(false);
+            ExpedienteO.txtRetenciones.setEnabled(false);
+            ExpedienteO.txtsecuencia.setEnabled(false);
+            ExpedienteO.txtMD.setEnabled(false);
+            ExpedienteO.txtrocabado.setEnabled(false);
+            ExpedienteO.btnguardar1.setEnabled(false);
+            ExpedienteO.btneditar1.setEnabled(false);
+            ExpedienteO.btnbuscaredicion1.setEnabled(true);
+            ExpedienteO.btnpaciente.setEnabled(true);
+            
+        }
     }//GEN-LAST:event_btnguardar1ActionPerformed
 
 

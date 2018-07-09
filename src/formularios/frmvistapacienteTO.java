@@ -206,8 +206,11 @@ public class frmvistapacienteTO extends internalFrameImagen{
             ExpedienteO.txtMD.setEnabled(true);
             ExpedienteO.txtrocabado.setEnabled(true);
             ExpedienteO.btnbuscaredicion.setEnabled(false);
+            ExpedienteO.btnbuscaredicion1.setEnabled(false);
             ExpedienteO.btnguardar.setEnabled(true);
+            ExpedienteO.btnguardar1.setEnabled(true);
             ExpedienteO.btneditar.setEnabled(false);
+             ExpedienteO.btneditar1.setEnabled(false);
     }//GEN-LAST:event_jtPacientesMousePressed
 
     private void btnCancelarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCancelarActionPerformed
