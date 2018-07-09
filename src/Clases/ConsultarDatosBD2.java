@@ -353,17 +353,14 @@ public class ConsultarDatosBD2 {
         DefaultTableModel modelo;
         //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
         String[] titulo
-                = {"ID Consulta","ID ortodoncia","Nombre","Apellido", "articular","impa","jarabak","facial"
-                  ,"is","ii", "fhis","anb82", "anb80", "anb2", "pals", "pali","ptb", "speedleve","speemoderada"
-                  ,"speesevera","dsd","clasim","entornod","bandas","tubos","otros","aparato","exodoncia","brakets"
-                  ,"retenciones", "arcos", "md","f_facieles","f_intraorales","modelo_mx","modelo_md","rx_panoramica"
-                  , "rx_cefalometrica","rx_incicivos","rx_rocabado"};
-        String[] registros = new String[40];
+                = {"ID Consulta","ID ortodoncia","Nombre","Apellido", "articular","goniaco","impa","jarabak","facial"
+                  ,"is","ii", "fhis","anb82", "anb80", "anb2", "pals", "pali","ptb","dsd","clasim","entornod"};
+        String[] registros = new String[21];
         totalRegistros = 0;
         //se agregan los campos del arreglo al modelo de la tabla
         modelo = new DefaultTableModel(null, titulo);
         //consulta para mostrar los datos de la base de datos
-        sSQL = "SELECT id_cefalometria,id_ortodoncia,nombre_pacte, apellido_pacte, articular,goniaco,impa,jarabak,facial,cefalometria.is,ii,fhis,anb82,anb80,anb2,pals, pali,ptb, speeleve,speemoderada,speesvera,dsd,clasim,entornod,bandas,tubos,otros,aparato,exodoncia,brackets,retenciones,arcos,md,f_faciales, f_intraorales,modelo_mx,modelo_md,rx_panoramica,rx_cefalometrica,rx_incicivos,rx_rocabado from consulta inner join pacienten ON consulta.PacienteN_id_pacienteN = pacienten.id_pacienteN inner join cefalometria on cefalometria.Consulta_id_consulta = consulta.id_consulta inner join plan_trata_ortodon on plan_trata_ortodon.Consulta_id_consulta = consulta.id_consulta";
+        sSQL = "SELECT id_cefalometria,id_ortodoncia,nombre_pacte, apellido_pacte, articular,goniaco,impa,jarabak,facial,cefalometria.is,ii,fhis,anb82,anb80,anb2,pals, pali,ptb,dsd,clasim,entornod from consulta inner join pacienten ON consulta.PacienteN_id_pacienteN = pacienten.id_pacienteN inner join cefalometria on cefalometria.Consulta_id_consulta = consulta.id_consulta inner join plan_trata_ortodon on plan_trata_ortodon.Consulta_id_consulta = consulta.id_consulta";
         try {
             Statement st = cn.createStatement();
             ResultSet rs = st.executeQuery(sSQL);
@@ -372,7 +369,7 @@ public class ConsultarDatosBD2 {
                 registros[1] = rs.getString("id_ortodoncia");
                 registros[2] = rs.getString("nombre_pacte");
                 registros[3] = rs.getString("apellido_pacte");
-//              registros[4] = rs.getString("apellido_pacte");
+
                 registros[4] = rs.getString("articular");
                 registros[5] = rs.getString("goniaco");
                 registros[6] = rs.getString("impa");
@@ -387,29 +384,11 @@ public class ConsultarDatosBD2 {
                 registros[15] = rs.getString("pals");
                 registros[16] = rs.getString("pali");
                 registros[17] = rs.getString("ptb");
-                registros[18] = rs.getString("speeleve");
-                registros[19] = rs.getString("speemoderada");
-                registros[20] = rs.getString("speesvera");
-                registros[21] = rs.getString("dsd");
-                registros[22] = rs.getString("clasim");
-                registros[23] = rs.getString("entornod");
-                registros[24] = rs.getString("bandas");
-                registros[25] = rs.getString("tubos");
-                registros[26] = rs.getString("otros");
-                registros[27] = rs.getString("aparato");
-                registros[28] = rs.getString("exodoncia");
-                registros[29] = rs.getString("brackets");
-                registros[30] = rs.getString("retenciones");
-                registros[31] = rs.getString("arcos");
-                registros[32] = rs.getString("md");
-                registros[33] = rs.getString("f_faciales");
-                registros[34] = rs.getString("f_intraorales");
-                registros[35] = rs.getString("modelo_mx");
-                registros[36] = rs.getString("rx_panoramica");
-                registros[37] = rs.getString("rx_cefalometrica");
-                registros[38] = rs.getString("rx_incicivos");
-                registros[39] = rs.getString("rx_rocabado");
-//                registros[41] = rs.getString("nombre_pacte");
+           
+                registros[18] = rs.getString("dsd");
+                registros[19] = rs.getString("clasim");
+                registros[20] = rs.getString("entornod");
+          
                 
                 
                 totalRegistros = totalRegistros + 1;
@@ -510,6 +489,77 @@ public class ConsultarDatosBD2 {
            return modelo;
         }catch(Exception ex){
             JOptionPane.showMessageDialog(null, "problemas al consultar los datos del tipo "+ex);
+            con.closeBd();
+            return null;
+        }
+    }
+       public DefaultTableModel mostrarPacientesConsultaOrtodoncia2() {
+        DefaultTableModel modelo;
+        //Arreglo para crear los campos necesarios de la tabla donde se mostraran los datos
+        String[] titulo
+                = {"ID Consulta","ID ortodoncia","Nombre","Apellido","bandas","tubos","otros","aparato","exodoncia","brakets"
+                  ,"retenciones", "arcos", "md"};
+        String[] registros = new String[40];
+        totalRegistros = 0;
+        //se agregan los campos del arreglo al modelo de la tabla
+        modelo = new DefaultTableModel(null, titulo);
+        //consulta para mostrar los datos de la base de datos
+        sSQL = "SELECT id_cefalometria,id_ortodoncia,nombre_pacte, apellido_pacte,bandas,tubos,otros,aparato,exodoncia,brackets,retenciones,arcos,md,f_faciales, f_intraorales,modelo_mx,modelo_md from consulta inner join pacienten ON consulta.PacienteN_id_pacienteN = pacienten.id_pacienteN inner join cefalometria on cefalometria.Consulta_id_consulta = consulta.id_consulta inner join plan_trata_ortodon on plan_trata_ortodon.Consulta_id_consulta = consulta.id_consulta";
+        try {
+            Statement st = cn.createStatement();
+            ResultSet rs = st.executeQuery(sSQL);
+            while (rs.next()) {
+                registros[0] = rs.getString("id_cefalometria");
+                registros[1] = rs.getString("id_ortodoncia");
+                registros[2] = rs.getString("nombre_pacte");
+                registros[3] = rs.getString("apellido_pacte");
+//              registros[4] = rs.getString("apellido_pacte");
+                registros[4] = rs.getString("articular");
+                registros[5] = rs.getString("goniaco");
+                registros[6] = rs.getString("impa");
+                registros[7] = rs.getString("jarabak");
+                registros[8] = rs.getString("facial");
+                registros[9] = rs.getString("cefalometria.is");
+                registros[10] = rs.getString("ii");
+                registros[11] = rs.getString("fhis");
+                registros[12] = rs.getString("anb82");
+                registros[13] = rs.getString("anb80");
+                registros[14] = rs.getString("anb2");
+                registros[15] = rs.getString("pals");
+                registros[16] = rs.getString("pali");
+                registros[17] = rs.getString("ptb");
+                registros[18] = rs.getString("speeleve");
+                registros[19] = rs.getString("speemoderada");
+                registros[20] = rs.getString("speesvera");
+                registros[21] = rs.getString("dsd");
+                registros[22] = rs.getString("clasim");
+                registros[23] = rs.getString("entornod");
+                registros[24] = rs.getString("bandas");
+                registros[25] = rs.getString("tubos");
+                registros[26] = rs.getString("otros");
+                registros[27] = rs.getString("aparato");
+                registros[28] = rs.getString("exodoncia");
+                registros[29] = rs.getString("brackets");
+                registros[30] = rs.getString("retenciones");
+                registros[31] = rs.getString("arcos");
+                registros[32] = rs.getString("md");
+                registros[33] = rs.getString("f_faciales");
+                registros[34] = rs.getString("f_intraorales");
+                registros[35] = rs.getString("modelo_mx");
+                registros[36] = rs.getString("rx_panoramica");
+                registros[37] = rs.getString("rx_cefalometrica");
+                registros[38] = rs.getString("rx_incicivos");
+                registros[39] = rs.getString("rx_rocabado");
+//                registros[41] = rs.getString("nombre_pacte");
+                
+                
+                totalRegistros = totalRegistros + 1;
+                modelo.addRow(registros);
+            }
+            con.closeBd();
+            return modelo;
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, "Problema al Consultar los Datos de Paciente");
             con.closeBd();
             return null;
         }
