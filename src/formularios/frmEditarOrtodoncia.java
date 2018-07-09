@@ -150,7 +150,7 @@ private void mostrarpacientes() {
             int fila =jtPacientes.getSelectedRow();
             String nombre, idconsulta,idortoncia,apellido,articular,goniaco,impa,jarabak,facial,is,ii;
             String fhis,anb82,anb80,anb2,pals,pali,ptb,dsd,clasim,entornod;
-            String bandas,tubos,otros,aparato,exodoncia,brackets,retenciones,arcos,md,rocabado;
+           
             nombre=jtPacientes.getValueAt(fila, 2).toString();
             apellido=jtPacientes.getValueAt(fila,3).toString();
             idconsulta=jtPacientes.getValueAt(fila, 0).toString();
@@ -169,19 +169,19 @@ private void mostrarpacientes() {
             pals = jtPacientes.getValueAt(fila,15).toString();
             pali = jtPacientes.getValueAt(fila,16).toString();
             ptb=jtPacientes.getValueAt(fila, 17).toString();
-            dsd=jtPacientes.getValueAt(fila,21).toString();
-            clasim=jtPacientes.getValueAt(fila, 22).toString();
-            entornod=jtPacientes.getValueAt(fila, 23).toString();
-            bandas = jtPacientes.getValueAt(fila,24).toString();
-            tubos = jtPacientes.getValueAt(fila,25).toString();
-            otros = jtPacientes.getValueAt(fila,26).toString();
-            aparato = jtPacientes.getValueAt(fila,27).toString();
-            exodoncia=jtPacientes.getValueAt(fila, 28).toString();
-            brackets=jtPacientes.getValueAt(fila,29).toString();
-            retenciones=jtPacientes.getValueAt(fila, 30).toString();
-            arcos=jtPacientes.getValueAt(fila, 31).toString();
-            md = jtPacientes.getValueAt(fila,32).toString();
-            rocabado = jtPacientes.getValueAt(fila,39).toString();
+            dsd=jtPacientes.getValueAt(fila,18).toString();
+            clasim=jtPacientes.getValueAt(fila, 19).toString();
+            entornod=jtPacientes.getValueAt(fila, 20).toString();
+//            bandas = jtPacientes.getValueAt(fila,24).toString();
+//            tubos = jtPacientes.getValueAt(fila,25).toString();
+//            otros = jtPacientes.getValueAt(fila,26).toString();
+//            aparato = jtPacientes.getValueAt(fila,27).toString();
+//            exodoncia=jtPacientes.getValueAt(fila, 28).toString();
+//            brackets=jtPacientes.getValueAt(fila,29).toString();
+//            retenciones=jtPacientes.getValueAt(fila, 30).toString();
+//            arcos=jtPacientes.getValueAt(fila, 31).toString();
+//            md = jtPacientes.getValueAt(fila,32).toString();
+//            rocabado = jtPacientes.getValueAt(fila,39).toString();
        
             
 
@@ -207,20 +207,20 @@ private void mostrarpacientes() {
             ExpedienteO.txtDSD.setText(dsd);
             ExpedienteO.txtmaxilares.setText(clasim);
             ExpedienteO.txtEntornoD.setText(entornod);
-            ExpedienteO.txtbandas.setText(bandas);
-            ExpedienteO.txttubos.setText(tubos);
-            ExpedienteO.txtotros.setText(otros);
-            ExpedienteO.txtAparato.setText(aparato);
-            ExpedienteO.txtexodoncia.setText(exodoncia);
-            ExpedienteO.txtBrakets.setText(brackets);
-            ExpedienteO.txtRetenciones.setText(retenciones);
-            ExpedienteO.txtsecuencia.setText(arcos);
-            ExpedienteO.txtMD.setText(md);
-            ExpedienteO.txtrocabado.setText(rocabado);
-//            ExpedienteO.txtPALS.setText(pals);
+//            ExpedienteO.txtbandas.setText(bandas);
+//            ExpedienteO.txttubos.setText(tubos);
+//            ExpedienteO.txtotros.setText(otros);
+//            ExpedienteO.txtAparato.setText(aparato);
+//            ExpedienteO.txtexodoncia.setText(exodoncia);
+//            ExpedienteO.txtBrakets.setText(brackets);
+//            ExpedienteO.txtRetenciones.setText(retenciones);
+//            ExpedienteO.txtsecuencia.setText(arcos);
+//            ExpedienteO.txtMD.setText(md);
+//            ExpedienteO.txtrocabado.setText(rocabado);
+
             
             this.dispose();
-ExpedienteO.txtanguloA1.setEnabled(true);
+            ExpedienteO.txtanguloA1.setEnabled(true);
             ExpedienteO.txtanguloG1.setEnabled(true);
             ExpedienteO.txtIMPA1.setEnabled(true);
             ExpedienteO.txtJa1.setEnabled(true);
@@ -237,20 +237,20 @@ ExpedienteO.txtanguloA1.setEnabled(true);
             ExpedienteO.txtDSD.setEnabled(true);
             ExpedienteO.txtmaxilares.setEnabled(true);
             ExpedienteO.txtEntornoD.setEnabled(true);
-            ExpedienteO.txtbandas.setEnabled(true);
-            ExpedienteO.txttubos.setEnabled(true);
-            ExpedienteO.txtotros.setEnabled(true);
-            ExpedienteO.txtAparato.setEnabled(true);
-            ExpedienteO.txtexodoncia.setEnabled(true);
-            ExpedienteO.txtBrakets.setEnabled(true);
-            ExpedienteO.txtRetenciones.setEnabled(true);
-            ExpedienteO.txtsecuencia.setEnabled(true);
-            ExpedienteO.txtMD.setEnabled(true);
-            ExpedienteO.txtrocabado.setEnabled(true);
-            ExpedienteO.btnbuscaredicion.setEnabled(false);
-            ExpedienteO.btnguardar.setEnabled(false);
-            ExpedienteO.btneditar.setEnabled(true);
-            ExpedienteO.btnpaciente.setEnabled(false);
+//            ExpedienteO.txtbandas.setEnabled(true);
+//            ExpedienteO.txttubos.setEnabled(true);
+//            ExpedienteO.txtotros.setEnabled(true);
+//            ExpedienteO.txtAparato.setEnabled(true);
+//            ExpedienteO.txtexodoncia.setEnabled(true);
+//            ExpedienteO.txtBrakets.setEnabled(true);
+//            ExpedienteO.txtRetenciones.setEnabled(true);
+//            ExpedienteO.txtsecuencia.setEnabled(true);
+//            ExpedienteO.txtMD.setEnabled(true);
+//            ExpedienteO.txtrocabado.setEnabled(true);
+//            ExpedienteO.btnbuscaredicion.setEnabled(false);
+//            ExpedienteO.btnguardar.setEnabled(false);
+//            ExpedienteO.btneditar.setEnabled(true);
+//            ExpedienteO.btnpaciente.setEnabled(false);
         
         }
         
